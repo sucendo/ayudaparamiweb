@@ -16,6 +16,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/entornos-colaborativos', function(request, response) {
+  response.render('news/20-entornos-colaborativos');
+});
+
 app.get('/backlink-que-es-como-construir-red-de-enlaces', function(request, response) {
   response.render('news/13-backlink-que-es-como-construir-red-de-enlaces');
 });

@@ -17,7 +17,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/entornos-colaborativos', function(request, response) {
-  response.render('news/20-entornos-colaborativos');
+  response.render('news/21-entornos-colaborativos');
 });
 
 app.get('/backlink-que-es-como-construir-red-de-enlaces', function(request, response) {

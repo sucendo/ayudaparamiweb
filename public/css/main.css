@@ -1510,7 +1510,7 @@ a.ct-demo-link:hover {
     padding: 28px;
 	background-color: #fff;
 	border-bottom-style: solid;
-    border-bottom-width: 3px;
+    border-bottom-width: 10px;
 }
 
 .ct-blue {border-bottom-color:#a5ceff;}

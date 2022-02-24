@@ -16,6 +16,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/rusia-ataca-ucrania', function(request, response) {
+  response.render('experiments/2-rusia-ataca-ucrania');
+});
+
 app.get('/entornos-colaborativos', function(request, response) {
   response.render('news/21-entornos-colaborativos');
 });

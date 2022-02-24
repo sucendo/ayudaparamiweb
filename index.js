@@ -16,6 +16,11 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/experimentos', function(request, response) {
+  response.render('pages/experiments');
+});
+
+
 app.get('/rusia-ataca-ucrania', function(request, response) {
   response.render('experiments/2-rusia-ataca-ucrania');
 });

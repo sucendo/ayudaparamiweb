@@ -3,8 +3,8 @@
         container: 'map',
         center: [31.597998528844894, 48.837209748314],
         zoom: 5,
-        pitch: 85,
-        bearing: 80,
+        pitch: 50,
+        bearing: 0,
         style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y'
     });
 

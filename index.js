@@ -20,9 +20,12 @@ app.get('/experimentos', function(request, response) {
   response.render('pages/experiments');
 });
 
-
 app.get('/rusia-ataca-ucrania', function(request, response) {
   response.render('experiments/2-rusia-ataca-ucrania');
+});
+
+app.get('/mapa-guerra-ucrania-rusia', function(request, response) {
+  response.render('experiments/3-mapa-guerra-ucrania-rusia');
 });
 
 app.get('/entornos-colaborativos', function(request, response) {

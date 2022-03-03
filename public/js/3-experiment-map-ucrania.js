@@ -2,7 +2,7 @@
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/outdoors-v11',
-        center: [30.258364199779855, 50.79195834929412],
+        center: [30.990291823008818, 49.22516351743668],
         zoom: 5
     });
 

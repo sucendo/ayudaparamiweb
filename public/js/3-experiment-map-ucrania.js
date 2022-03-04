@@ -1255,14 +1255,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'symbol',
             'source': 'nuclear-ucraine',
             'layout': {
-            'icon-image': '{icon}',
-            'icon-allow-overlap': true
-            },
-            'paint': {
-                'circle-radius': 6,
-                'circle-color': '#e5be01'
-            },
-            'filter': ['==', '$type', 'Point']
+                'icon-image': '{icon}',
+                'icon-allow-overlap': true
+            }
         });
               
         // When a click event occurs on a feature in the places layer, open a popup at the

@@ -1216,8 +1216,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     {
                         'type': 'Feature',
                         'properties': {
-                            'description': '<strong>Ataque a la central Nuclear</strong><p> 04/03/2020 a las 8:45am</p>',
-                            'icon': 'nuclear-1'
+                            'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
+                            'icon': 'nuclear'
                          },
                         'geometry': {
                             'type': 'Point',

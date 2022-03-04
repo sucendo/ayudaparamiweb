@@ -1230,7 +1230,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'source': 'nuclear-ucraine',
             'paint': {
                 'circle-radius': 6,
-                'circle-color': 'yellow'
+                'circle-color': '#e5be01'
             },
             'filter': ['==', '$type', 'Point']
         });

@@ -655,7 +655,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'source': 'war-ucraine',
             'paint': {
                 'fill-color': '#B32428',
-                'fill-opacity': 0.4
+                'fill-opacity': 0.2
             },
             'filter': ['==', '$type', 'Polygon']
         });

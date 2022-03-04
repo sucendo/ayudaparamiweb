@@ -1217,18 +1217,29 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         'type': 'Feature',
                         'properties': {
                             'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
-                            'icon': 'nuclear'
+                            'icon': 'fire-station-15'
                          },
                         'geometry': {
                             'type': 'Point',
                             'coordinates': [34.58918, 47.50421]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
+                            'icon': 'police-15'
+                         },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [34.63779890090975, 47.48544001421603]
                         }
                     }
                 ]
             }
         });
       
-        map.addLayer({
+        /*map.addLayer({
             'id': 'places',
             'type': 'circle',
             'source': 'nuclear-ucraine',
@@ -1237,17 +1248,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'circle-color': '#e5be01'
             },
             'filter': ['==', '$type', 'Point']
-        });
+        });*/
         
-        /*map.addLayer({
+        map.addLayer({
             'id': 'places',
             'type': 'symbol',
             'source': 'nuclear-ucraine',
             'layout': {
             'icon-image': '{icon}',
             'icon-allow-overlap': true
-            }
-        });*/
+            },
+            'paint': {
+                'circle-radius': 6,
+                'circle-color': '#e5be01'
+            },
+            'filter': ['==', '$type', 'Point']
+        });
               
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.

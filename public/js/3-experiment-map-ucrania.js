@@ -1525,7 +1525,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         map.on('load', () => {
         // Add an image to use as a custom marker
         map.loadImage(
-            'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
+            'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
             (error, image) => {
                 if (error) throw error;
                 map.addImage('custom-marker', image);

@@ -1522,63 +1522,43 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'filter': ['==', '$type', 'Point']
         });
         
-
         map.loadImage(
             'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
             (error, image) => {
                 if (error) throw error;
-                map.addImage('custom-marker', image);
-                // Add a GeoJSON source with 2 points
-                map.addSource('points', {
+
+                // Add the image to the map style.
+                map.addImage('cat', image);
+
+                // Add a data source containing one point feature.
+                map.addSource('point', {
                     'type': 'geojson',
                     'data': {
                         'type': 'FeatureCollection',
                         'features': [
                             {
-                                // feature for Mapbox DC
                                 'type': 'Feature',
                                 'geometry': {
                                     'type': 'Point',
-                                    'coordinates': [
-                                        -77.03238901390978, 38.913188059745586
-                                    ]
-                                },
-                                'properties': {
-                                    'title': 'Mapbox DC'
-                                }
-                            },
-                            {
-                                // feature for Mapbox SF
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-122.414, 37.776]
-                                },
-                                'properties': {
-                                    'title': 'Mapbox SF'
+                                    'coordinates': [-77.4144, 25.0759]
                                 }
                             }
                         ]
                     }
                 });
 
-                // Add a symbol layer
+                // Add a layer to use the image to represent the data.
                 map.addLayer({
                     'id': 'points',
                     'type': 'symbol',
-                    'source': 'points',
+                    'source': 'point', // reference the data source
                     'layout': {
-                        'icon-image': 'custom-marker',
-                        // get the title name from the source's "title" property
-                        'text-field': ['get', 'title'],
-                        'text-font': [
-                            'Open Sans Semibold',
-                            'Arial Unicode MS Bold'
-                        ],
-                        'text-offset': [0, 1.25],
-                        'text-anchor': 'top'
+                        'icon-image': 'cat', // reference the image
+                        'icon-size': 0.25
                     }
                 });
+            }
+        );
                
         //iconos symbol        
         /*map.addLayer({

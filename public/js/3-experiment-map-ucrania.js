@@ -1561,13 +1561,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         ]
     };
 
-    const map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-65.017, -16.457],
-        zoom: 5
-    });
-
     // Add markers to the map.
     for (const marker of geojson.features) {
         // Create a DOM element for each marker.

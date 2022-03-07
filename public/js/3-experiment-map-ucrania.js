@@ -1518,26 +1518,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 
                 // Add the image to the map style.
                 map.addImage('cat', image);
-
-                // Add a data source containing one point feature.
-                map.addSource('point', {
-                    'type': 'geojson',
-                    'data': {
-                        'type': 'FeatureCollection',
-                         'properties': {
-                            'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>'
-                         },
-                        'features': [
-                            {
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [34.63779890090975, 47.48544001421603]
-                                }
-                            }
-                        ]
-                    }
-                });
                 
                 // Add a data source containing one point feature.
                 map.addSource('point', {

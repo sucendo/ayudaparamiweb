@@ -1489,7 +1489,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         'type': 'Feature',
                         'properties': {
                             'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
-                            'icon': 'fire-station-15'
+                            'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png'
                          },
                         'geometry': {
                             'type': 'Point',
@@ -1500,7 +1500,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         'type': 'Feature',
                         'properties': {
                             'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
-                            'icon': 'police-15'
+                            'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg'
                          },
                         'geometry': {
                             'type': 'Point',

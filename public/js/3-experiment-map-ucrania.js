@@ -1522,66 +1522,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'filter': ['==', '$type', 'Point']
         });
         
-        const geojson = {
-        'type': 'FeatureCollection',
-        'features': [
-            {
-                'type': 'Feature',
-                'properties': {
-                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
-                    'iconSize': [60, 60]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [33.63779890090975, 47.48544001421603]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
-                    'iconSize': [50, 50]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [33.63779890090975, 47.48544001421603]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [33.63779890090975, 47.48544001421603]
-                }
-            }
-        ]
-    };
 
-    // Add markers to the map.
-    for (const marker of geojson.features) {
-        // Create a DOM element for each marker.
-        const el = document.createElement('div');
-        const width = marker.properties.iconSize[0];
-        const height = marker.properties.iconSize[1];
-        el.className = 'marker';
-        el.style.backgroundImage = `url(http://www.ayudaparamiweb.com/icons/bombardeo-red.svg)`;
-        el.style.width = `${width}px`;
-        el.style.height = `${height}px`;
-        el.style.backgroundSize = '100%';
-
-        el.addEventListener('click', () => {
-            window.alert(marker.properties.message);
-        });
-
-        // Add markers to the map.
-        new mapboxgl.Marker(el)
-            .setLngLat(marker.geometry.coordinates)
-            .addTo(map);
-    }
         
                
         //iconos symbol        
@@ -1594,67 +1535,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'icon-allow-overlap': true
             }
         });*/
-        
-        map.loadImage(
-            'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
-            (error, image) => {
-                if (error) throw error;
-                map.addImage('custom-marker', image);
-                // Add a GeoJSON source with 2 points
-                map.addSource('points', {
-                    'type': 'geojson',
-                    'data': {
-                        'type': 'FeatureCollection',
-                        'features': [
-                            {
-                                // feature for Mapbox DC
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [
-                                        -77.03238901390978, 38.913188059745586
-                                    ]
-                                },
-                                'properties': {
-                                    'title': 'Mapbox DC'
-                                }
-                            },
-                            {
-                                // feature for Mapbox SF
-                                'type': 'Feature',
-                                'geometry': {
-                                    'type': 'Point',
-                                    'coordinates': [-122.414, 37.776]
-                                },
-                                'properties': {
-                                    'title': 'Mapbox SF'
-                                }
-                            }
-                        ]
-                    }
-                });
-
-                // Add a symbol layer
-                map.addLayer({
-                    'id': 'points',
-                    'type': 'symbol',
-                    'source': 'points',
-                    'layout': {
-                        'icon-image': 'custom-marker',
-                        // get the title name from the source's "title" property
-                        'text-field': ['get', 'title'],
-                        'text-font': [
-                            'Open Sans Semibold',
-                            'Arial Unicode MS Bold'
-                        ],
-                        'text-offset': [0, 1.25],
-                        'text-anchor': 'top'
-                    }
-                });
-
-        
-        
-              
+          
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.
         map.on('click', 'places', (e) => {

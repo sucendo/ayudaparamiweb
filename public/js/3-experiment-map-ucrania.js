@@ -1522,9 +1522,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'filter': ['==', '$type', 'Point']
         });
         
-        map.on('load', () => {
-        // Load an image from an external URL.
-        map.loadImage(
+         map.loadImage(
             'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
             (error, image) => {
                 if (error) throw error;
@@ -1560,8 +1558,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     }
                 });
             }
-        );
-    });
                
         //iconos symbol        
         /*map.addLayer({

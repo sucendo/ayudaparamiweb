@@ -1512,12 +1512,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
         
         map.loadImage(
-            'http://www.ayudaparamiweb.com/icons/blindado-blue.png',
+            'http://www.ayudaparamiweb.com/icons/blindado-red.png',
             (error, image) => {
                 if (error) throw error;
 
                 // Add the image to the map style.
-                map.addImage('cat', image);
+                map.addImage('blindado-blue', image);
 
                 // Add a data source containing one point feature.
                 map.addSource('point', {
@@ -1538,6 +1538,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         ]
                     }
                 });
+                
+                // Add a data source containing one point feature.
+                map.addSource('point', {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                         'properties': {
+                            'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>'
+                         },
+                        'features': [
+                            {
+                                'type': 'Feature',
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [34.33779890090975, 47.48544001421603]
+                                }
+                            }
+                        ]
+                    }
+                });
 
                 // Add a layer to use the image to represent the data.
                 map.addLayer({
@@ -1545,8 +1565,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'symbol',
                     'source': 'point', // reference the data source
                     'layout': {
-                        'icon-image': 'cat', // reference the image
-                        'icon-size': 0.25
+                        'icon-image': 'blindado-red', // reference the image
+                        'icon-size': 0.50
                     }
                 });
             }

@@ -1512,7 +1512,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
         
         map.loadImage(
-            'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+            'http://www.ayudaparamiweb.com/icons/blindado-blue.png',
             (error, image) => {
                 if (error) throw error;
 

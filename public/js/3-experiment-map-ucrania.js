@@ -1558,7 +1558,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     }
                 });
             }
-        });     
+        );     
                
         //iconos symbol        
         /*map.addLayer({

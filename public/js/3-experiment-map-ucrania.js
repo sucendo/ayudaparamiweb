@@ -1512,12 +1512,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
         
         map.loadImage(
-            'http://www.ayudaparamiweb.com/icons/blindado-red.png',
+            'http://www.ayudaparamiweb.com/icons/blindado-blue.png',
             (error, image) => {
                 if (error) throw error;
 
                 // Add the image to the map style.
-                map.addImage('blindado-red', image);
+                map.addImage('cat', image);
 
                 // Add a data source containing one point feature.
                 map.addSource('point', {
@@ -1565,7 +1565,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'symbol',
                     'source': 'point', // reference the data source
                     'layout': {
-                        'icon-image': 'blindado-red', // reference the image
+                        'icon-image': 'cat', // reference the image
                         'icon-size': 0.25
                     }
                 });

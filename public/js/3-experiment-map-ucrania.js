@@ -1504,7 +1504,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                          },
                         'geometry': {
                             'type': 'Point',
-                            'coordinates': [34.63779890090975, 47.48544001421603]
+                            'coordinates': [33.63779890090975, 47.48544001421603]
                         }
                     }
                 ]
@@ -1517,7 +1517,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 if (error) throw error;
 
                 // Add the image to the map style.
-                map.addImage('blindado-blue', image);
+                map.addImage('blindado-red', image);
 
                 // Add a data source containing one point feature.
                 map.addSource('point', {
@@ -1566,7 +1566,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'source': 'point', // reference the data source
                     'layout': {
                         'icon-image': 'blindado-red', // reference the image
-                        'icon-size': 0.50
+                        'icon-size': 0.25
                     }
                 });
             }

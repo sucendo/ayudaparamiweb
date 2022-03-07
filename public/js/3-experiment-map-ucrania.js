@@ -1511,18 +1511,88 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             }
         });
 
-        /*map.addLayer({
+        map.addLayer({
             'id': 'places',
             'type': 'circle',
             'source': 'nuclear-ucraine',
             'paint': {
                 'circle-radius': 6,
-                'circle-color': '#e5be01'
+                'circle-color': '#e5be01',
             },
             'filter': ['==', '$type', 'Point']
-        });*/
+        });
         
-        map.addLayer({
+        const geojson = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'properties': {
+                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
+                    'iconSize': [60, 60]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [33.63779890090975, 47.48544001421603]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [33.63779890090975, 47.48544001421603]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [33.63779890090975, 47.48544001421603]
+                }
+            }
+        ]
+    };
+
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-65.017, -16.457],
+        zoom: 5
+    });
+
+    // Add markers to the map.
+    for (const marker of geojson.features) {
+        // Create a DOM element for each marker.
+        const el = document.createElement('div');
+        const width = marker.properties.iconSize[0];
+        const height = marker.properties.iconSize[1];
+        el.className = 'marker';
+        el.style.backgroundImage = `url(http://www.ayudaparamiweb.com/icons/bombardeo-red.svg)`;
+        el.style.width = `${width}px`;
+        el.style.height = `${height}px`;
+        el.style.backgroundSize = '100%';
+
+        el.addEventListener('click', () => {
+            window.alert(marker.properties.message);
+        });
+
+        // Add markers to the map.
+        new mapboxgl.Marker(el)
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(map);
+    }
+        
+               
+        //iconos symbol        
+        /*map.addLayer({
             'id': 'places',
             'type': 'symbol',
             'source': 'nuclear-ucraine',
@@ -1530,7 +1600,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'icon-image': '{icon}',
                 'icon-allow-overlap': true
             }
-        });
+        });*/
         
         
               

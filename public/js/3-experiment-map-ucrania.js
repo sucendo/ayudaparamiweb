@@ -1,77 +1,70 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
-   const geojson = {
-        'type': 'FeatureCollection',
-        'features': [
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Foo',
-                    'iconSize': [60, 60]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [-66.324462, -16.024695]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Bar',
-                    'iconSize': [50, 50]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [-61.21582, -15.971891]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Baz',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [-63.292236, -18.281518]
-                }
-            }
-        ]
-    };
 
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-65.017, -16.457],
-        zoom: 5
+        center: [31.597998528844894, 48.837209748314],
+        zoom: 5,
+        pitch: 50,
+        bearing: 0,
+        style: 'mapbox://styles/mapbox/outdoors-v11'
     });
 
-    // Add markers to the map.
-    for (const marker of geojson.features) {
-        // Create a DOM element for each marker.
-        const el = document.createElement('div');
-        const width = marker.properties.iconSize[0];
-        const height = marker.properties.iconSize[1];
-        el.className = 'marker';
-        el.style.backgroundImage = `url(https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png)`;
-        el.style.width = `${width}px`;
-        el.style.height = `${height}px`;
-        el.style.backgroundSize = '100%';
+    map.on('load', () => {
+        map.addSource('mapbox-dem', {
+        'type': 'raster-dem',
+        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        'tileSize': 512,
+        'maxzoom': 14
+    });
+    // add the DEM source as a terrain layer with exaggerated height
+    map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+    // add a sky layer that will show when the map is highly pitched
+    map.addLayer({
+        'id': 'sky',
+        'type': 'sky',
+        'paint': {
+        'sky-type': 'atmosphere',
+        'sky-atmosphere-sun': [0.0, 0.0],
+        'sky-atmosphere-sun-intensity': 15
+        }
+     });
       
-      if (marker.properties.iconSize[0] == '40') {
-        el.style.backgroundImage = `url(https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg)`;
-      }
-        
-        el.addEventListener('click', () => {
-            window.alert(marker.properties.message);
-        });
+     map.addLayer({
+        'id': '3d-buildings',
+        'source': 'composite',
+        'source-layer': 'building',
+        'filter': ['==', 'extrude', 'true'],
+        'type': 'fill-extrusion',
+        'minzoom': 15,
+        'paint': {
+        'fill-extrusion-color': '#aaa',
 
-        // Add markers to the map.
-        new mapboxgl.Marker(el)
-            .setLngLat(marker.geometry.coordinates)
-            .addTo(map);
-    }
+        // use an 'interpolate' expression to add a smooth transition effect to the
+        // buildings as the user zooms in
+        'fill-extrusion-height': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        15,
+        0,
+        15.05,
+        ['get', 'height']
+        ],
+        'fill-extrusion-base': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        15,
+        0,
+        15.05,
+        ['get', 'min_height']
+        ],
+        'fill-extrusion-opacity': 0.6
+        }
+     });
 
-map.addSource('war-ucraine', {
+        map.addSource('war-ucraine', {
             'type': 'geojson',
             'data': {
                 'type': 'FeatureCollection',
@@ -1458,7 +1451,7 @@ map.addSource('war-ucraine', {
                     {
                         'type': 'Feature',
                         'geometry': {
-                            'type': 'Point',
+                            'type': 'Point1',
                             'coordinates': [36.820290276031166, 49.9210829459584]
                         }
                     }
@@ -1476,3 +1469,59 @@ map.addSource('war-ucraine', {
             },
             'filter': ['==', '$type', 'Polygon']
         });
+
+        map.addLayer({
+            'id': 'park-volcanoes',
+            'type': 'circle',
+            'source': 'war-ucraine',
+            'paint': {
+                'circle-radius': 6,
+                'circle-color': '#B42222'
+            },
+            'filter': ['==', '$type', 'Point']
+        });
+       
+        map.addLayer({
+            'id': 'park-vo',
+            'type': 'circle',
+            'source': 'war-ucraine',
+            'backgroundImage': 'url(https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png)',
+            'paint': {
+                'circle-radius': 6,
+                'circle-color': 'red'
+            },
+            'filter': ['==', '$type', 'Point1']
+        });
+       
+          
+        // When a click event occurs on a feature in the places layer, open a popup at the
+        // location of the feature, with description HTML from its properties.
+        map.on('click', 'points', (e) => {
+        // Copy coordinates array.
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const description = e.features[0].properties.description;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(description)
+        .addTo(map);
+        });
+
+        // Change the cursor to a pointer when the mouse is over the places layer.
+        map.on('mouseenter', 'points', () => {
+        map.getCanvas().style.cursor = 'pointer';
+        });
+
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'points', () => {
+        map.getCanvas().style.cursor = '';
+        });
+        
+    });

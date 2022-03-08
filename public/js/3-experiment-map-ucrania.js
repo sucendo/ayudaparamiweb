@@ -1524,7 +1524,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         
 
         
-        map.on('load', () => {
+   map.on('load', () => {
         // Add an image to use as a custom marker
         map.loadImage(
             'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
@@ -1542,9 +1542,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                                 'type': 'Feature',
                                 'geometry': {
                                     'type': 'Point',
-                                    'coordinates': [
-                                        30.03238901390978, 50.913188059745586
-                                    ]
+                                    'coordinates': [30.0323, 50.913]
                                 },
                                 'properties': {
                                     'title': 'Mapbox DC'

@@ -1469,7 +1469,7 @@
             },
             'filter': ['==', '$type', 'Polygon']
         });
-
+/*
         map.addLayer({
             'id': 'park-volcanoes',
             'type': 'circle',
@@ -1479,7 +1479,19 @@
                 'circle-color': '#B42222'
             },
             'filter': ['==', '$type', 'Point']
-        });       
+        });    
+  */      
+                map.addLayer({
+            'id': 'park-vo',
+            'type': 'circle',
+            'source': 'war-ucraine',
+            'backgroundImage': 'url(https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png)',
+            'paint': {
+                'circle-radius': 6,
+                'circle-color': 'red'
+            },
+            'filter': ['==', '$type', 'Point']
+        });
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.

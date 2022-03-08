@@ -1435,7 +1435,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Foo',
-                    'description': 'description': '<strong>Bombardeo en Chuhuiv</strong><p>, cohete BM-30 "Smerch" sin explotar</p><p>08/03/2022 a las 8:20am</p>',
+                    'description': '<strong>Bombardeo en Chuhuiv</strong><p>, cohete BM-30 "Smerch" sin explotar</p><p>08/03/2022 a las 8:20am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
                     'iconSize': [40, 40]
                 },

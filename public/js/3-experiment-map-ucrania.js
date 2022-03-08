@@ -1495,6 +1495,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [28.17, 50.54]
                 }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Baz',
+                    'description': '<p><strong>Explosiones en Odesa</strong>, aún no se sabe la causa</p><p>07/03/2022 a las 9:58pm</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
+                    'iconSize': [30, 30]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.41, 46.29]
+                }
             }
         ]
     };

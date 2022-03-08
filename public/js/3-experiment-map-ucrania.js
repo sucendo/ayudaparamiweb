@@ -1435,7 +1435,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Proyectil Impacta en Hryhorivka',
-                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><p>08/03/2022 a las 3:52pm</p>',
+                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><p>08/03/2022 a las 3:52pm</p><img src="https://liveuamap.com/pics/2022/03/08/22403865_1.jpg"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },

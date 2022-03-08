@@ -1435,39 +1435,39 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Foo',
-                    'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
+                    'description': 'description': '<strong>Bombardeo en Chuhuiv</strong><p>, cohete BM-30 "Smerch" sin explotar</p><p>08/03/2022 a las 8:20am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
-                    'iconSize': [60, 60]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.324462, 50.024695]
+                    'coordinates': [36.41, 49.50]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bar',
-                    'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
+                    'description': '<strong>Bombardeo en Sumy</strong><p>, un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p><p>08/03/2022 a las 5:30am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
-                    'iconSize': [50, 50]
+                    'iconSize': [30, 30]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.21582, 50.971891]
+                    'coordinates': [34.45, 50.45]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Baz',
-                    'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
+                    'description': '<strong>Ataques aéreos en la región de Sumy</strong><p>, esta noche por parte del ejército ruso Por la noche. En la ciudad de Sumy, varias viviendas son destruidas.</p><p>08/03/2020 a las 3:30am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
-                    'iconSize': [40, 40]
+                    'iconSize': [30, 30]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.292236, 50.281518]
+                    'coordinates': [34.47, 50.54]
                 }
             }
         ]

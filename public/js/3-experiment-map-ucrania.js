@@ -1500,7 +1500,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         el.style.backgroundSize = '100%';
         
         // create the popup
-        const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+        const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
           marker.properties.description
         );
 
@@ -1510,36 +1510,3 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             .setPopup(popup) // sets a popup on this marker
             .addTo(map);
     }
-        
-          
-        // When a click event occurs on a feature in the places layer, open a popup at the
-        // location of the feature, with description HTML from its properties.
-        map.on('click', 'marker', (e) => {
-        // Copy coordinates array.
-        const coordinates = e.features[0].geometry.coordinates.slice();
-        const description = e.features[0].properties.description;
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(description)
-        .addTo(map);
-        });
-
-        // Change the cursor to a pointer when the mouse is over the places layer.
-        map.on('mouseenter', 'marker', () => {
-        map.getCanvas().style.cursor = 'pointer';
-        });
-
-        // Change it back to a pointer when it leaves.
-        map.on('mouseleave', 'marker', () => {
-        map.getCanvas().style.cursor = '';
-        });
-        
-    });

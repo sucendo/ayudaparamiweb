@@ -1,44 +1,5 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
 
-const geojson = {
-            'type': 'FeatureCollection',
-            'features': [
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'message': 'Foo',
-                        'iconSize': [60, 60]
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [-66.324462, -16.024695]
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'message': 'Bar',
-                        'iconSize': [50, 50]
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [-61.21582, -15.971891]
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'message': 'Baz',
-                        'iconSize': [40, 40]
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [-63.292236, -18.281518]
-                    }
-                }
-            ]
-        };
-
     const map = new mapboxgl.Map({
         container: 'map',
         center: [31.597998528844894, 48.837209748314],
@@ -1519,6 +1480,45 @@ const geojson = {
             },
             'filter': ['==', '$type', 'Point']
         });
+                
+        const geojson = {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'message': 'Foo',
+                        'iconSize': [60, 60]
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [-66.324462, -16.024695]
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'message': 'Bar',
+                        'iconSize': [50, 50]
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [-61.21582, -15.971891]
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'message': 'Baz',
+                        'iconSize': [40, 40]
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [-63.292236, -18.281518]
+                    }
+                }
+            ]
+        };
 
         // Add markers to the map.
         for (const marker of geojson.features) {

@@ -1485,7 +1485,9 @@
             'id': 'park-vo',
             'type': 'circle',
             'source': 'war-ucraine',
-            'backgroundImage': 'url(https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png)',
+            'style': {
+                'backgroundImage': 'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png'
+            }
             'paint': {
                 'circle-radius': 6,
                 'circle-color': 'green'

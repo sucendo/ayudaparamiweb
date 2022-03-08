@@ -1542,7 +1542,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 map.addImage('bombardeo-red', image);
 
                 // Add a data source containing one point feature.
-                map.addSource('point', {
+                map.addSource('bombardeo-red', {
                     'type': 'geojson',
                     'data': {
                         'type': 'FeatureCollection',
@@ -1580,19 +1580,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         ]
                     }
                 });
-
-                // Add a layer to use the image to represent the data.
+            }
+        );
+        
+         // Add a layer to use the image to represent the data.
                 map.addLayer({
-                    'id': 'points-bombardeo-red',
+                    'id': 'points',
                     'type': 'symbol',
-                    'source': 'point', // reference the data source
+                    'source': 'borbardeo-red', // reference the data source
                     'layout': {
                         'icon-image': 'bombardeo-red', // reference the image
                         'icon-size': 0.50
                     }
                 });
-            }
-        );
         
         map.loadImage(
             'http://www.ayudaparamiweb.com/icons/blindado-red.png',
@@ -1603,7 +1603,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 map.addImage('blindado-red', image);
 
                 // Add a data source containing one point feature.
-                map.addSource('point', {
+                map.addSource('blindado-red', {
                     'type': 'geojson',
                     'data': {
                         'type': 'FeatureCollection',
@@ -1621,19 +1621,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         ]
                     }
                 });
-
+            }
+        ); 
+        
                 // Add a layer to use the image to represent the data.
                 map.addLayer({
-                    'id': 'points-blindado-red',
+                    'id': 'points',
                     'type': 'symbol',
-                    'source': 'point', // reference the data source
+                    'source': 'blindado-red', // reference the data source
                     'layout': {
                         'icon-image': 'blindado-red', // reference the image
                         'icon-size': 0.50
                     }
                 });
-            }
-        ); 
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.

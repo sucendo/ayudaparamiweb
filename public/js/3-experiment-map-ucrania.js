@@ -1482,6 +1482,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.17, 50.54]
                 }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Baz',
+                    'description': '<p><strong>Blindados en Irpin</strong>, se encuentran blindados en la ciudad de Irpin</p><p>07/03/2022 a las 2:20am</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
+                    'iconSize': [30, 30]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [28.17, 50.54]
+                }
             }
         ]
     };

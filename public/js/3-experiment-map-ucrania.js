@@ -74,7 +74,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                    [29.3248759, 51.3788689], 
+                [29.3248759, 51.3788689], 
                 [29.2932737, 51.3646745], 
                 [29.346864, 51.2338225], 
                 [29.7046991, 50.9713925], 
@@ -168,7 +168,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                   [30.6421517, 51.3373938], 
+                [30.6421517, 51.3373938], 
                 [30.6929635, 51.3485457], 
                 [30.7684945, 51.3348199], 
                 [30.8055733, 51.3232356], 
@@ -206,7 +206,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                    [31.2175697, 51.6248356], 
+                [31.2175697, 51.6248356], 
                 [31.228556, 51.6303768], 
                 [31.2216896, 51.6580729], 
                 [31.1880439, 51.7746364], 
@@ -273,7 +273,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                    [31.4274502, 52.1413099], 
+                [31.4274502, 52.1413099], 
                 [31.4185238, 52.089025], 
                 [31.4130306, 51.927568], 
                 [31.4209271, 51.7170576], 
@@ -327,7 +327,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                    [34.2276621, 51.9176059], 
+                [34.2276621, 51.9176059], 
                 [33.8350418, 51.7669877], 
                 [33.453126, 51.6303936], 
                 [33.4366465, 51.5348192], 
@@ -500,7 +500,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                   [39.282785, 48.7356087], 
+                [39.282785, 48.7356087], 
                 [39.1725294, 48.8814866], 
                 [39.1243466, 48.9706458], 
                 [38.9351058, 48.9843491], 
@@ -694,7 +694,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                   [37.7556716, 50.0832014], 
+                [37.7556716, 50.0832014], 
                 [37.6513014, 50.0038272], 
                 [37.5743972, 49.8942523], 
                 [37.5881301, 49.8526547], 
@@ -819,7 +819,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                  [35.391918, 50.5795932], 
+                [35.391918, 50.5795932], 
                 [35.22163, 50.4923077], 
                 [34.9737509, 50.3696175], 
                 [34.8707635, 50.3637062], 
@@ -1063,7 +1063,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                    [40.0640806, 49.4156384], 
+                [40.0640806, 49.4156384], 
                 [39.9130186, 49.3691587], 
                 [39.8216318, 49.355793], 
                 [39.6823057, 49.3154736], 
@@ -1163,7 +1163,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             'type': 'Polygon',
                             'coordinates': [
                                 [
-                                    [35.0060714, 45.7201889], 
+                [35.0060714, 45.7201889], 
                 [34.952513, 45.812156], 
                 [34.9140609, 45.8838999], 
                 [34.8467697, 46.0356909], 
@@ -1397,6 +1397,24 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     {
                         'type': 'Feature',
                         'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [
+                                [
+                [29.862538, 45.4725912], 
+                [29.9202162, 45.233256], 
+                [30.3734022, 45.157772], 
+                [30.6590468, 45.3472595], 
+                [30.5766493, 45.5457333], 
+                [30.3239638, 45.6245431], 
+                [29.9202162, 45.5457333], 
+                [29.862538, 45.4725912]
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
                             'type': 'Point',
                             'coordinates': [30.193004876077445, 50.60402783716925]
                         }
@@ -1420,24 +1438,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         'geometry': {
                             'type': 'Point',
                             'coordinates': [29.897815533668712, 50.9210829459584]
-                        }
-                    },
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'Polygon',
-                            'coordinates': [
-                                [
-                                    [29.862538, 45.4725912], 
-                [29.9202162, 45.233256], 
-                [30.3734022, 45.157772], 
-                [30.6590468, 45.3472595], 
-                [30.5766493, 45.5457333], 
-                [30.3239638, 45.6245431], 
-                [29.9202162, 45.5457333], 
-                [29.862538, 45.4725912]
-                                ]
-                            ]
                         }
                     },
                     {
@@ -1512,7 +1512,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
 
         map.addLayer({
-            'id': 'places',
+            'id': 'points',
             'type': 'circle',
             'source': 'nuclear-ucraine',
             'paint': {
@@ -1522,7 +1522,18 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'filter': ['==', '$type', 'Point']
         });
         
-         map.loadImage(
+        //iconos symbol        
+        /*map.addLayer({
+            'id': 'places',
+            'type': 'symbol',
+            'source': 'nuclear-ucraine',
+            'layout': {
+                'icon-image': '{icon}',
+                'icon-allow-overlap': true
+            }
+        });*/
+        
+        map.loadImage(
             'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
             (error, image) => {
                 if (error) throw error;
@@ -1581,18 +1592,48 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     }
                 });
             }
-        );     
-               
-        //iconos symbol        
-        /*map.addLayer({
-            'id': 'places',
-            'type': 'symbol',
-            'source': 'nuclear-ucraine',
-            'layout': {
-                'icon-image': '{icon}',
-                'icon-allow-overlap': true
+        );
+        
+        map.loadImage(
+            'http://www.ayudaparamiweb.com/icons/blindado-red.png',
+            (error, image) => {
+                if (error) throw error;
+
+                // Add the image to the map style.
+                map.addImage('blindado-red', image);
+
+                // Add a data source containing one point feature.
+                map.addSource('point', {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description': '<p><strong>Blindados en Irpin</strong>, se encuentran blindados en la ciudad de Irpin</p><p>07/03/2022 a las 2:20am</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [30.170288919305975, 50.54764498089335]
+                                }
+                            }
+                        ]
+                    }
+                });
+
+                // Add a layer to use the image to represent the data.
+                map.addLayer({
+                    'id': 'points',
+                    'type': 'symbol',
+                    'source': 'point', // reference the data source
+                    'layout': {
+                        'icon-image': 'blindado-red', // reference the image
+                        'icon-size': 0.50
+                    }
+                });
             }
-        });*/
+        ); 
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.

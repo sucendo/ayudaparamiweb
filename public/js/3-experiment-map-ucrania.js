@@ -1431,11 +1431,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       const geojson = {
         'type': 'FeatureCollection',
         'features': [
-            {Un proyectil impactó en un estadio escolar en la aldea de Hryhorivka del distrito de Vasylkiv en la región de Dnipropetrovsk
+            {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Proyectil Impacta en Hryhorivka',
-                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en la aldea de Hryhorivka del distrito de Vasylkiv en la región de Dnipropetrovsk</p><p>08/03/2022 a las 3:52pm</p>',
+                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><p>08/03/2022 a las 3:52pm</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },

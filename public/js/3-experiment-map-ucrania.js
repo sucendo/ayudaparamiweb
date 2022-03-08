@@ -1436,7 +1436,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Foo',
                     'description': '<strong>Bombardeo en Chuhuiv</strong><p>, cohete BM-30 "Smerch" sin explotar</p><p>08/03/2022 a las 8:20am</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
@@ -1449,7 +1449,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Bar',
                     'description': '<strong>Bombardeo en Sumy</strong><p>, un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p><p>08/03/2022 a las 5:30am</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
                 'geometry': {
@@ -1462,7 +1462,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Baz',
                     'description': '<strong>Ataques aéreos en la región de Sumy</strong><p>, esta noche por parte del ejército ruso Por la noche. En la ciudad de Sumy, varias viviendas son destruidas.</p><p>08/03/2020 a las 3:30am</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
                 'geometry': {
@@ -1475,7 +1475,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Baz',
                     'description': '<p><strong>Blindados en Irpin</strong>, se encuentran blindados en la ciudad de Irpin</p><p>07/03/2022 a las 2:20am</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.png',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
                     'iconSize': [30, 30]
                 },
                 'geometry': {

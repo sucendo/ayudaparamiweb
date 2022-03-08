@@ -1443,8 +1443,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [32.44868043344817, 46.62674617568507]
                 }
-            },            
+            },        
             {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Avión Derribado',
+                    'description': '<h3><strong>Avión derribado en Bilozerka</strong><h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos </p><p>08/03/2022 a las 9:10am</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [30, 30]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.403020611337467, 50.662688384517715]
+                }
+           },
+           {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Foo',

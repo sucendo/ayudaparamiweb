@@ -1559,7 +1559,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             {
                                 'type': 'Feature',
                                 'properties': {
-                                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>'
+                                    'description': '<strong>Ataques aéreos en la región de Sumy</strong><p>, esta noche por parte del ejército ruso Por la noche. En la ciudad de Sumy, varias viviendas son destruidas.</p><p>08/03/2020 a las 3:30am</p>'
                                 },
                                 'geometry': {
                                     'type': 'Point',
@@ -1596,7 +1596,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.
-        map.on('click', 'places', (e) => {
+        map.on('click', 'points', (e) => {
         // Copy coordinates array.
         const coordinates = e.features[0].geometry.coordinates.slice();
         const description = e.features[0].properties.description;
@@ -1615,12 +1615,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
 
         // Change the cursor to a pointer when the mouse is over the places layer.
-        map.on('mouseenter', 'places', () => {
+        map.on('mouseenter', 'points', () => {
         map.getCanvas().style.cursor = 'pointer';
         });
 
         // Change it back to a pointer when it leaves.
-        map.on('mouseleave', 'places', () => {
+        map.on('mouseleave', 'points', () => {
         map.getCanvas().style.cursor = '';
         });
         

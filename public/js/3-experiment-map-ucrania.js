@@ -1448,7 +1448,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Avión Derribado',
-                    'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos </p><p>08/03/2022 a las 9:10am</p>',
+                    'description': '<h3><strong>Bombardeo en las afueras de Kiev</strong></h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos </p><p>08/03/2022 a las 9:10am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1473,20 +1473,20 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Bar',
+                    'message': 'Bombardeo en Sumy',
                     'description': '<h3><strong>Bombardeo en Sumy</strong></h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p><p>08/03/2022 a las 5:30am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [34.45, 50.45]
+                    'coordinates': [34.761078335687664, 50.89530308657344]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Baz',
+                    'message': 'Ataques aéreos en la región de Sumy',
                     'description': '<h3><strong>Ataques aéreos en la región de Sumy</strong></h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p><p>08/03/2020 a las 3:30am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
@@ -1499,20 +1499,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Baz',
-                    'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los vehículos blindados se encuentran en la ciudad de Irpin</p><p>07/03/2022 a las 2:20am</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
-                    'iconSize': [30, 30]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [30.17, 50.54]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Baz',
+                    'message': 'Explosiones en Odesa',
                     'description': '<h3><strong>Explosiones en Odesa</strong></h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p><p>07/03/2022 a las 9:58pm</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [20, 20]
@@ -1520,6 +1507,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [30.691249923655178, 46.49410123392493]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Blindados Ocultos en Irpin',
+                    'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los ejército Ruso oculta sus vehículos blindados en un complejo residencial de Irpin, a las afueras de Kiev</p><p>07/03/2022 a las 10:15am</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
+                    'iconSize': [30, 30]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.223759100750442, 50.52287759050594]
                 }
             }
         ]

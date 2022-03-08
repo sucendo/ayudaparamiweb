@@ -1,4 +1,5 @@
-    mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
+    
+	    mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
 
     const map = new mapboxgl.Map({
         container: 'map',
@@ -1412,48 +1413,6 @@
                                 ]
                             ]
                         }
-                    },
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'Point',
-                            'coordinates': [30.193004876077445, 50.60402783716925]
-                        }
-                    },
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'Point',
-                            'coordinates': [30.525051068781647, 50.44968568335718]
-                        }
-                    },
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'Point',
-                            'coordinates': [30.254364199779855, 50.79795834929412]
-                        }
-                    },
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'Point',
-                            'coordinates': [29.897815533668712, 50.9210829459584]
-                        }
-                    },
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'Point',
-                            'coordinates': [36.23277841842557, 49.98872794792197]
-                        }
-                    },
-                    {
-                        'type': 'Feature',
-                        'geometry': {
-                            'type': 'Point',
-                            'coordinates': [36.820290276031166, 49.9210829459584]
-                        }
                     }
                 ]
             }
@@ -1469,36 +1428,75 @@
             },
             'filter': ['==', '$type', 'Polygon']
         });
-/*
-        map.addLayer({
-            'id': 'park-volcanoes',
-            'type': 'circle',
-            'source': 'war-ucraine',
-            'paint': {
-                'circle-radius': 6,
-                'circle-color': '#B42222'
+      
+      const geojson = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Foo',
+                    'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
+                    'iconSize': [60, 60]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.324462, 50.024695]
+                }
             },
-            'filter': ['==', '$type', 'Point']
-        });    
-  */      
-                map.addLayer({
-            'id': 'park-vo',
-            'type': 'circle',
-            'source': 'war-ucraine',
-            'style': {
-                'backgroundImage': 'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png'
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Bar',
+                    'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.21582, 50.971891]
+                }
             },
-            'paint': {
-                'circle-radius': 6,
-                'circle-color': 'green'
-            },
-            'filter': ['==', '$type', 'Point']
-        });
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Baz',
+                    'description': '<strong>Las tropas de Rusia ocupan la central nuclear de Zaporiyia</strong><p> 04/03/2020 a las 8:50am</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.png',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.292236, 50.281518]
+                }
+            }
+        ]
+    };
+      
+       // Add markers to the map.
+    for (const marker of geojson.features) {
+        // Create a DOM element for each marker.
+        const el = document.createElement('div');
+        const width = marker.properties.iconSize[0];
+        const height = marker.properties.iconSize[1];
+        const icon = marker.properties.icon;
+        el.className = 'marker';
+        el.style.backgroundImage = `url(${icon})`;
+        el.style.width = `${width}px`;
+        el.style.height = `${height}px`;
+        el.style.backgroundSize = '100%';
+
+        // Add markers to the map.
+        new mapboxgl.Marker(el)
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(map);
+    }
         
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.
-        map.on('click', 'points', (e) => {
+        map.on('click', 'marker', (e) => {
         // Copy coordinates array.
         const coordinates = e.features[0].geometry.coordinates.slice();
         const description = e.features[0].properties.description;
@@ -1517,12 +1515,12 @@
         });
 
         // Change the cursor to a pointer when the mouse is over the places layer.
-        map.on('mouseenter', 'points', () => {
+        map.on('mouseenter', 'marker', () => {
         map.getCanvas().style.cursor = 'pointer';
         });
 
         // Change it back to a pointer when it leaves.
-        map.on('mouseleave', 'points', () => {
+        map.on('mouseleave', 'marker', () => {
         map.getCanvas().style.cursor = '';
         });
         

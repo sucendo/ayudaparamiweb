@@ -1431,13 +1431,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       const geojson = {
         'type': 'FeatureCollection',
         'features': [
+            {Un proyectil impactó en un estadio escolar en la aldea de Hryhorivka del distrito de Vasylkiv en la región de Dnipropetrovsk
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Proyectil Impacta en Hryhorivka',
+                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en la aldea de Hryhorivka del distrito de Vasylkiv en la región de Dnipropetrovsk</p><p>08/03/2022 a las 3:52pm</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.11611261969156, 48.11273609382977]
+                }
+            },
             {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Avión Derribado',
                     'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p><p>08/03/2022 a las 9:50am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/avion-red.svg',
-                    'iconSize': [40, 40]
+                    'iconSize': [30, 30]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1546,6 +1559,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [31.503806052076275, 50.56732420269373]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Bombadeo Ucraniano a posiciones Rusas',
+                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p><p>06/03/2022 a las 11:35pm</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [25, 25]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             }
         ]

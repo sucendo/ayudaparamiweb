@@ -1528,7 +1528,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 if (error) throw error;
 
                 // Add the image to the map style.
-                map.addImage('cat', image);
+                map.addImage('bombardeo-red', image);
 
                 // Add a data source containing one point feature.
                 map.addSource('point', {
@@ -1538,6 +1538,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         'features': [
                             {
                                 'type': 'Feature',
+                                'properties': {
+                                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>'
+                                },
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [33.4144, 47.0759]
@@ -1545,6 +1548,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             },
                             {
                                 'type': 'Feature',
+                                'properties': {
+                                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>'
+                                },
                                 'geometry': {
                                     'type': 'Point',
                                     'coordinates': [33.6144, 47.1759]
@@ -1556,12 +1562,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 
                 // Add a layer to use the image to represent the data.
                 map.addLayer({
-                    'id': 'points',
+                    'id': 'places',
                     'type': 'symbol',
                     'source': 'point', // reference the data source
                     'layout': {
-                        'icon-image': 'cat', // reference the image
-                        'icon-size': 0.25
+                        'icon-image': 'bombardeo-red', // reference the image
+                        'icon-size': 0.50
                     }
                 });
             }

@@ -1622,10 +1622,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     }
                 });
             }
-        ); */
+        ); 
+        */
         
                 // Add a layer to use the image to represent the data./*
-                map.addLayer({
+        /*        
+        map.addLayer({
                     'id': 'points',
                     'type': 'symbol',
                     'source': 'blindado-red', // reference the data source
@@ -1633,7 +1635,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                         'icon-image': 'blindado-red', // reference the image
                         'icon-size': 0.50
                     }
-                });*/
+                });
+        */
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.

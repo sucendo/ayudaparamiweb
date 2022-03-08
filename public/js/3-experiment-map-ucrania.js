@@ -1573,6 +1573,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Volado el puente Bucha-Irpin',
+                    'description': '<h3><strong><strong>Volado el puente Bucha-Irpin</strong></h3><p>El puente Bucha-Irpin ha sido volado para frenar el avance ruso hacia Kiev</p><p>27/02/2022 a las 8:3am</p><img src="https://pbs.twimg.com/media/FMlj1OvX0AUQwOp?format=jpg&name=large"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-blue.svg',
+                    'iconSize': [20, 20]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [32.18661672757826, 47.37986007755012]
+                }
             }
         ]
     };

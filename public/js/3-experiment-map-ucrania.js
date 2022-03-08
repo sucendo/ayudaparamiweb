@@ -1512,6 +1512,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Edificio residencial atacado en Zabuchhia',
+                    'description': '<h3><strong><strong>Edificio residencial atacado en Zabuchhia</strong></h3><p>El ejército Ruso ha disparado a un edificio Residencial en Zabuchhia, a las afueras de Kiev</p><p>07/03/2022 a las 7:38pm</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
+                    'iconSize': [30, 30]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.169928937247896, 50.49561041694798]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Blindados Ocultos en Irpin',
                     'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los ejército Ruso oculta sus vehículos blindados en un complejo residencial de Irpin, a las afueras de Kiev</p><p>07/03/2022 a las 10:15am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',

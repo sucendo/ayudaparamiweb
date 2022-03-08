@@ -1534,6 +1534,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.223759100750442, 50.52287759050594]
                 }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Bombadeo Ucraniano a posiciones Rusas',
+                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las Fuerzas Armadas de Ucranianas bombardean posiciones de concentración de tropas rusas en Novaya Basana y Skripali, el ejército ruso sufre pérdidas significativas, redistribuyendo fuerzas adicionales para reponerlo.</p><p>06/03/2022 a las 11:38pm</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
+                    'iconSize': [25, 25]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.223759100750442, 50.52287759050594]
+                }
             }
         ]
     };

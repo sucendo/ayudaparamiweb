@@ -1435,7 +1435,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Avión Derribado',
-                    'description': '<h3><strong>Avión derribado en Bilozerka</strong><h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p><p>08/03/2022 a las 9:50am</p>',
+                    'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p><p>08/03/2022 a las 9:50am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/avion-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1448,7 +1448,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Avión Derribado',
-                    'description': '<h3><strong>Avión derribado en Bilozerka</strong><h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos </p><p>08/03/2022 a las 9:10am</p>',
+                    'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos </p><p>08/03/2022 a las 9:10am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1461,7 +1461,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Foo',
-                    'description': '<h3><strong>Bombardeo en Chuhuiv</strong><h3><p> Un cohete BM-30 "Smerch" cae sin llegar a explotar</p><p>08/03/2022 a las 8:20am</p>',
+                    'description': '<h3><strong>Bombardeo en Chuhuiv</strong></h3><p> Un cohete BM-30 "Smerch" cae sin llegar a explotar</p><p>08/03/2022 a las 8:20am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1474,7 +1474,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bar',
-                    'description': '<h3><strong>Bombardeo en Sumy</strong><h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p><p>08/03/2022 a las 5:30am</p>',
+                    'description': '<h3><strong>Bombardeo en Sumy</strong></h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p><p>08/03/2022 a las 5:30am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1487,7 +1487,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Baz',
-                    'description': '<h3><strong>Ataques aéreos en la región de Sumy</strong><h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p><p>08/03/2020 a las 3:30am</p>',
+                    'description': '<h3><strong>Ataques aéreos en la región de Sumy</strong></h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p><p>08/03/2020 a las 3:30am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1500,7 +1500,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Baz',
-                    'description': '<h3><strong><strong>Blindados en Irpin</strong><h3><p>Los vehículos blindados se encuentran en la ciudad de Irpin</p><p>07/03/2022 a las 2:20am</p>',
+                    'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los vehículos blindados se encuentran en la ciudad de Irpin</p><p>07/03/2022 a las 2:20am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1513,7 +1513,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Baz',
-                    'description': '<h3><strong>Explosiones en Odesa</strong><h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p><p>07/03/2022 a las 9:58pm</p>',
+                    'description': '<h3><strong>Explosiones en Odesa</strong></h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p><p>07/03/2022 a las 9:58pm</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [20, 20]
                 },

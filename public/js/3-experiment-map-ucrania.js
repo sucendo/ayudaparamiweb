@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
 
     const map = new mapboxgl.Map({
         container: 'map',
@@ -1451,7 +1451,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     {
                         'type': 'Feature',
                         'geometry': {
-                            'type': 'Point1',
+                            'type': 'Point',
                             'coordinates': [36.820290276031166, 49.9210829459584]
                         }
                     }
@@ -1479,20 +1479,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'circle-color': '#B42222'
             },
             'filter': ['==', '$type', 'Point']
-        });
-       
-        map.addLayer({
-            'id': 'park-vo',
-            'type': 'circle',
-            'source': 'war-ucraine',
-            'backgroundImage': 'url(https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png)',
-            'paint': {
-                'circle-radius': 6,
-                'circle-color': 'red'
-            },
-            'filter': ['==', '$type', 'Point1']
-        });
-       
+        });       
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.

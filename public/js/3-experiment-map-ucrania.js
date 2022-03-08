@@ -1487,7 +1487,7 @@
             'source': 'war-ucraine',
             'style': {
                 'backgroundImage': 'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png'
-            }
+            },
             'paint': {
                 'circle-radius': 6,
                 'circle-color': 'green'
@@ -1495,31 +1495,6 @@
             'filter': ['==', '$type', 'Point']
         });
         
-        // Add markers to the map.
-    for (const marker of geojson.features) {
-        // Create a DOM element for each marker.
-        const el = document.createElement('div');
-        const width = marker.properties.iconSize[0];
-        const height = marker.properties.iconSize[1];
-        el.className = 'marker';
-        el.style.backgroundImage = `url(https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png)`;
-        el.style.width = `${width}px`;
-        el.style.height = `${height}px`;
-        el.style.backgroundSize = '100%';
-      
-      if (marker.properties.iconSize[0] == '40') {
-        el.style.backgroundImage = `url(https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg)`;
-      }
-        
-        el.addEventListener('click', () => {
-            window.alert(marker.properties.message);
-        });
-
-        // Add markers to the map.
-        new mapboxgl.Marker(el)
-            .setLngLat(marker.geometry.coordinates)
-            .addTo(map);
-    }
           
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.

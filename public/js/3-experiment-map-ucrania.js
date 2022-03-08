@@ -1498,10 +1498,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         el.style.width = `${width}px`;
         el.style.height = `${height}px`;
         el.style.backgroundSize = '100%';
+        
+        // create the popup
+        const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+          marker.properties.description
+        );
 
         // Add markers to the map.
         new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
+            .setPopup(popup) // sets a popup on this marker
             .addTo(map);
     }
         

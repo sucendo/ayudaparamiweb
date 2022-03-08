@@ -1539,11 +1539,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                             {
                                 'type': 'Feature',
                                 'properties': {
-                                    'description': '<strong>Enfrentamientos en Enerhodar</strong><p> cerca de la Central Nuclear de Zaporizhiye</p><p>03/03/2020 a las 9:36pm</p>'
+                                    'description': '<strong>Bombardeo en Chuhuiv</strong><p>, cohete BM-30 "Smerch" sin explotar</p><p>08/03/2022 a las 8:20am</p>'
                                 },
                                 'geometry': {
                                     'type': 'Point',
-                                    'coordinates': [33.4144, 47.0759]
+                                    'coordinates': [36.41, 49.50]
+                                }
+                            },
+                            {
+                                'type': 'Feature',
+                                'properties': {
+                                    'description': '<strong>Bombardeo en Sumy</strong><p>, un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p><p>08/03/2022 a las 5:30am</p>'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [34.45, 50.45]
                                 }
                             },
                             {
@@ -1553,7 +1563,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                                 },
                                 'geometry': {
                                     'type': 'Point',
-                                    'coordinates': [33.6144, 47.1759]
+                                    'coordinates': [34.47, 50.54]
                                 }
                             }
                         ]
@@ -1562,7 +1572,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 
                 // Add a layer to use the image to represent the data.
                 map.addLayer({
-                    'id': 'places',
+                    'id': 'points',
                     'type': 'symbol',
                     'source': 'point', // reference the data source
                     'layout': {

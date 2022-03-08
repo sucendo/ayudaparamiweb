@@ -1434,10 +1434,23 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Avión Derribado',
+                    'description': '<p><strong>Avión derribado en Bilozerka</strong>, avión expulsa a sus pilotos antes de ser derribado en la región de Kherson</p><p>08/03/2022 a las 9:50am</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/avion-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [32.44868043344817, 46.62674617568507]
+                }
+            },            
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Foo',
                     'description': '<strong>Bombardeo en Chuhuiv</strong><p>, cohete BM-30 "Smerch" sin explotar</p><p>08/03/2022 a las 8:20am</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [40, 40]
+                    'iconSize': [30, 30]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1487,26 +1500,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Baz',
-                    'description': '<p><strong>Blindados en Irpin</strong>, se encuentran blindados en la ciudad de Irpin</p><p>07/03/2022 a las 2:20am</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
-                    'iconSize': [30, 30]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [28.17, 50.54]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Baz',
-                    'description': '<p><strong>Explosiones en Odesa</strong>, aún no se sabe la causa</p><p>07/03/2022 a las 9:58pm</p>',
+                    'description': '<p><strong>Explosiones en Odesa</strong>, aún no se sabe la causa, posible bombardeo marítimo</p><p>07/03/2022 a las 9:58pm</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [20, 20]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.41, 46.29]
+                    'coordinates': [30.691249923655178, 46.49410123392493]
                 }
             }
         ]

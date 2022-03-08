@@ -1583,7 +1583,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 
                 // Add a layer to use the image to represent the data.
                 map.addLayer({
-                    'id': 'points',
+                    'id': 'points-bombardeo-red',
                     'type': 'symbol',
                     'source': 'point', // reference the data source
                     'layout': {

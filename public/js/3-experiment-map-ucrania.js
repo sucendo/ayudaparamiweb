@@ -1838,7 +1838,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         
         // create the popup
         const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-          `<time>${marker.properties.date} a las ${marker.properties.time}<time>` + marker.properties.description
+          `<time class="ct-subline__pubtime">${marker.properties.date} a las ${marker.properties.time}h<time>` + marker.properties.description
         );
 
         // Add markers to the map.

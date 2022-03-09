@@ -2046,8 +2046,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         const fechaEvento = marker.properties.date;
         const f = Date.now();
 
-        var hoy = (//i, '-');
-    hoy = hoy.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
+        var fEvento = (//i, '-');
+      var hoy = fEvento.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
       var day1 = new Date(hoy); 
       var day2 = new Date(f);
 

@@ -2046,16 +2046,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         const fechaEvento = marker.properties.date;
         const f = Date.now();
 
-        var fEvento = (//i, '-');
-      var hoy = fEvento.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
-      var day1 = new Date(hoy); 
+      var fEvento = (//i, '-');
+      var fHoy = fEvento.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
+      var day1 = new Date(fHoy); 
       var day2 = new Date(f);
 
       var difference= Math.abs(day2-day1);
       var days = difference/(1000 * 3600 * 24)
       
       el.addEventListener('click', () => {
-        window.alert(hoy + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
+        window.alert(fHoy + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
       });
         
         el.style.width = `${width}px`;

@@ -1628,12 +1628,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Violación del Alto el Fuego en Izyum',
+                    'date':'09/03/2022',
+                    'time':'12:11',
+                    'description': '<h3>Violación del Alto el Fuego en Izyum</h3><p>El ejército ruso viola el alto el fuego e impide la evacuación de Izyum</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [49.165806677056025, 37.27887172533673]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Suenan las sirenas en Kiev',
                     'date':'09/03/2022',
                     'time':'10:32',
                     'description': '<h3>Suenan las sirenas en Kiev</h3><p>Amenaza aérea. Sirenas sonando. ¡Peligro!</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

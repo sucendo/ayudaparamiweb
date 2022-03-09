@@ -2050,7 +2050,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         var mm = fechaEvento.padStart(2, '0');
         var yyyy = fechaEvento.padStart(4, '0');
         
-      var hoy = mm + '/' + dd + '/' yyyy;
+      var hoy = mm + '/' + dd + '/' + yyyy;
       var day1 = new Date(hoy); 
       var day2 = new Date(f);
 

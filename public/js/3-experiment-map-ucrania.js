@@ -1723,7 +1723,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'8:30',
                     'description': '<h3>Convoy ruso destruido</h3>Gran convoy militar ruso destruido cerca de Járkov (Kharkiv)',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
-                    'iconSize': [25, 25]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1738,7 +1738,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'8:30',
                     'description': 'Se escuchan explosiones en Kharkiv, quédense en los refugios',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [25, 25]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1783,7 +1783,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'8:30',
                     'description': 'Incendio en un edificio residencial del distrito de Saltivka en Kharkiv después del bombardeo del ejército ruso',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [25, 25]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1843,7 +1843,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'8:21',
                     'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1858,7 +1858,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'15:52',
                     'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1873,7 +1873,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'9:50',
                     'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/avion-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1888,7 +1888,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'9:10',
                     'description': '<h3><strong>Bombardeo en las afueras de Kiev</strong></h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1903,7 +1903,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'8:20',
                     'description': '<h3><strong>Bombardeo en Chuhuiv</strong></h3><p> Un cohete BM-30 "Smerch" cae sin llegar a explotar</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1918,7 +1918,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'5:30',
                     'description': '<h3><strong>Bombardeo en Sumy</strong></h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1933,7 +1933,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'3:30',
                     'description': '<h3><strong>Ataques aéreos en la región de Sumy</strong></h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1948,7 +1948,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'21:58',
                     'description': '<h3><strong>Explosiones en Odesa</strong></h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
-                    'iconSize': [20, 20]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1963,7 +1963,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'19:38',
                     'description': '<h3><strong><strong>Edificio residencial atacado en Zabuchhia</strong></h3><p>El ejército Ruso ha disparado a un edificio Residencial en Zabuchhia, a las afueras de Kiev</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1978,7 +1978,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'10:15',
                     'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los ejército Ruso oculta sus vehículos blindados en un complejo residencial de Irpin, a las afueras de Kiev</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
-                    'iconSize': [30, 30]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1993,7 +1993,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'23:38',
                     'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las Fuerzas Armadas de Ucranianas bombardean posiciones de concentración de tropas rusas en Novaya Basana y Skripali, el ejército ruso sufre pérdidas significativas, redistribuyendo fuerzas adicionales para reponerlo.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
-                    'iconSize': [25, 25]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -2008,7 +2008,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'23:35',
                     'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [25, 25]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -2023,7 +2023,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'8:30',
                     'description': '<h3><strong><strong>Volado el puente Bucha-Irpin</strong></h3><p>El puente Bucha-Irpin ha sido volado para frenar el avance ruso hacia Kiev</p><img src="https://pbs.twimg.com/media/FMlj1OvX0AUQwOp?format=jpg&name=large"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-blue.svg',
-                    'iconSize': [20, 20]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

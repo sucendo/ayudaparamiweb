@@ -2057,13 +2057,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       var days = difference/(1000 * 3600 * 24)
         
         days = days * 4;
-        if (days > 7)(
+        if (days > 7) {
             width = Math.abs(width-30);
             height = Math.abs(width-30);
-        )else(    
+        } else {  
             width = Math.abs(width-days);
             height = Math.abs(width-days);
-        );
+        };
         
         el.style.width = `${width}px`;
         el.style.height = `${height}px`;

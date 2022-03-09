@@ -2042,6 +2042,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         const icon = marker.properties.icon;
         el.className = 'marker';
         el.style.backgroundImage = `url(${icon})`;
+        
+             const fechaEvento = marker.properties.date;
+        const f = Date.now();
+      
+      var hoy = fechaEvento.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
+      var day1 = new Date(hoy); 
+      var day2 = new Date(f);
+
+      var difference= Math.abs(day2-day1);
+      var days = difference/(1000 * 3600 * 24)
+      
+      el.addEventListener('click', () => {
+        //window.alert(fechaEvento);
+        window.alert(hoy + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
+      });
+        
         el.style.width = `${width}px`;
         el.style.height = `${height}px`;
         el.style.backgroundSize = '100%';

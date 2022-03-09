@@ -2046,9 +2046,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         const fechaEvento = marker.properties.date;
         const f = Date.now();
       
-        var dd = String(fechaEvento.getDate()).padStart(2, '0');
-        var mm = String(fechaEvento.getMonth() + 1).padStart(2, '0'); //January is 0!
-        var yyyy = fechaEvento.getFullYear();
+        var dd = String(fechaEvento).padStart(2, '0');
+        var mm = String(fechaEvento).padStart(2, '0');
+        var yyyy = '2022';
         
       var hoy = mm + '/' + dd + '/' yyyy;
       var day1 = new Date(hoy); 

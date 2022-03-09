@@ -2046,7 +2046,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         const fechaEvento = marker.properties.date;
         const f = Date.now();
       
-      var hoy = fechaEvento.replace(/^(\d{2})-(\d{2})-(\d{4})$/g,'$2/$1/$3');
+      var hoy = fechaEvento.replace(/^(\d{2})-(\d{2})-(\d{4})$/g,'$1/$2/$3');
       var day1 = new Date(hoy); 
       var day2 = new Date(f);
 
@@ -2054,7 +2054,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       var days = difference/(1000 * 3600 * 24)
       
       el.addEventListener('click', () => {
-        window.alert(fechaEvento);
+        window.alert(fechaEvento + ' = ' + days);
         //window.alert(hoy + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
       });
         

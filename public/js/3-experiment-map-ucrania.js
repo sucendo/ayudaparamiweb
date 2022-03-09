@@ -2059,10 +2059,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         days = days * 4;
         if (days > 7) {
             width = Math.abs(width-30);
-            height = Math.abs(width-30);
+            height = Math.abs(height-30);
         } else {  
             width = Math.abs(width-days);
-            height = Math.abs(width-days);
+            height = Math.abs(height-days);
         };
         
         el.style.width = `${width}px`;

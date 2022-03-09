@@ -1643,7 +1643,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
+                    'message': 'Suenan las sirenas en Járkov',
                     'date':'09/03/2022',
                     'time':'10:27',
                     'description': '<h3>Suenan las sirenas en Járkov</h3><p>Amenaza aérea. Sirenas sonando. ¡Peligro!</p>',
@@ -1652,7 +1652,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [36.22808571823988, 49.98956817621031]
+                    'coordinates': [36.2305, 49.98826817621031]
                 }
             },
             {
@@ -1660,14 +1660,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Tropas rusas en Skadovsk',
                     'date':'09/03/2022',
-                    'time':'8:30',
+                    'time':'9:27',
                     'description': '<h3>Tropas rusas en Skadovsk</h3><p>Región de Kherson</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [32.905641, 46.109382]
                 }
             },
             {
@@ -1675,7 +1675,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Evacuación de Bucha, Vorzel, Hostomiel y Borodyanka',
                     'date':'09/03/2022',
-                    'time':'8:30',
+                    'time':'9:27',
                     'description': '<h3>Evacuación de Bucha, Vorzel, Hostomiel y Borodyanka</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]

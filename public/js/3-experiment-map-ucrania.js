@@ -1767,7 +1767,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'8:30',
                     'description': 'Declaraciones del vicecanciller de Polonia sobre el rechazo del Pentágono a la propuesta polaca de transferir aviones MiG29; no puede ser que Polonia sea el único país de la OTAN que asuma el riesgo, y otros países no tendrían que compensar o compartir esto de ninguna manera, continuaremos las conversaciones con los aliados',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/aviones-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/avion-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
@@ -1812,7 +1812,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'8:30',
                     'description': '<h3>Pentágono sobre Propuesta Aviones Polacos</h3><p>Respuesta del Pentágono a la propuesta de Polonia sobre aviones: "Continuaremos consultando con Polonia y nuestros otros aliados de la OTAN sobre este tema y los difíciles desafíos logísticos que presenta, pero no creemos que la propuesta de Polonia sea sostenible".</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/aviones-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/avion-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
@@ -1827,7 +1827,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'0:00',
                     'description': '<h3>El Estado Mayor de Ucrania informa</h3><p>En la región de Kiev, las tropas rusas intentaron moverse desde Buzova hacia Yasnohorodka. Batalla por la ciudad de Izyum. Batallas en Chernihiv, regiones de Sumy. Las tropas rusas capturaron la ciudad de Polohy en la región de Zaporizhiye</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armadas-red.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {

@@ -1625,13 +1625,30 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       const geojson = {
         'type': 'FeatureCollection',
         'features': [
+             {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Proyectil Impacta en Hryhorivka',
+                    'date':'09/03/2022',
+                    'time':'8:21',
+                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.22674032781308, 49.990484359111754]
+                }
+            },
             {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Proyectil Impacta en Hryhorivka',
-                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><p>08/03/2022 a las 3:52pm</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
+                    'date':'08/03/2022',
+                    'time':'15:52',
+                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [40, 40]
+                    'iconSize': [30, 30]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1642,7 +1659,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Avión Derribado',
-                    'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p><p>08/03/2022 a las 9:50am</p>',
+                    'date':'08/03/2022',
+                    'time':'9:50',
+                    'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/avion-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1655,7 +1674,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Avión Derribado',
-                    'description': '<h3><strong>Bombardeo en las afueras de Kiev</strong></h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos </p><p>08/03/2022 a las 9:10am</p>',
+                    'date':'08/03/2022',
+                    'time':'9:10',
+                    'description': '<h3><strong>Bombardeo en las afueras de Kiev</strong></h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1668,7 +1689,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Foo',
-                    'description': '<h3><strong>Bombardeo en Chuhuiv</strong></h3><p> Un cohete BM-30 "Smerch" cae sin llegar a explotar</p><p>08/03/2022 a las 8:20am</p>',
+                    'date':'08/03/2022',
+                    'time':'8:20',
+                    'description': '<h3><strong>Bombardeo en Chuhuiv</strong></h3><p> Un cohete BM-30 "Smerch" cae sin llegar a explotar</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1681,7 +1704,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombardeo en Sumy',
-                    'description': '<h3><strong>Bombardeo en Sumy</strong></h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p><p>08/03/2022 a las 5:30am</p>',
+                    'date':'08/03/2022',
+                    'time':'5:30',
+                    'description': '<h3><strong>Bombardeo en Sumy</strong></h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1694,7 +1719,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Ataques aéreos en la región de Sumy',
-                    'description': '<h3><strong>Ataques aéreos en la región de Sumy</strong></h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p><p>08/03/2020 a las 3:30am</p>',
+                    'date':'08/03/2022',
+                    'time':'3:30',
+                    'description': '<h3><strong>Ataques aéreos en la región de Sumy</strong></h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1707,7 +1734,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Explosiones en Odesa',
-                    'description': '<h3><strong>Explosiones en Odesa</strong></h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p><p>07/03/2022 a las 9:58pm</p>',
+                    'date':'07/03/2022',
+                    'time':'21:58',
+                    'description': '<h3><strong>Explosiones en Odesa</strong></h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [20, 20]
                 },
@@ -1720,7 +1749,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Edificio residencial atacado en Zabuchhia',
-                    'description': '<h3><strong><strong>Edificio residencial atacado en Zabuchhia</strong></h3><p>El ejército Ruso ha disparado a un edificio Residencial en Zabuchhia, a las afueras de Kiev</p><p>07/03/2022 a las 7:38pm</p>',
+                    'date':'07/03/2022',
+                    'time':'19:38',
+                    'description': '<h3><strong><strong>Edificio residencial atacado en Zabuchhia</strong></h3><p>El ejército Ruso ha disparado a un edificio Residencial en Zabuchhia, a las afueras de Kiev</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1733,7 +1764,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Blindados Ocultos en Irpin',
-                    'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los ejército Ruso oculta sus vehículos blindados en un complejo residencial de Irpin, a las afueras de Kiev</p><p>07/03/2022 a las 10:15am</p>',
+                    'date':'07/03/2022',
+                    'time':'10:15',
+                    'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los ejército Ruso oculta sus vehículos blindados en un complejo residencial de Irpin, a las afueras de Kiev</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
                     'iconSize': [30, 30]
                 },
@@ -1746,7 +1779,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombadeo Ucraniano a posiciones Rusas',
-                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las Fuerzas Armadas de Ucranianas bombardean posiciones de concentración de tropas rusas en Novaya Basana y Skripali, el ejército ruso sufre pérdidas significativas, redistribuyendo fuerzas adicionales para reponerlo.</p><p>06/03/2022 a las 11:38pm</p>',
+                    'date':'06/03/2022',
+                    'time':'23:38',
+                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las Fuerzas Armadas de Ucranianas bombardean posiciones de concentración de tropas rusas en Novaya Basana y Skripali, el ejército ruso sufre pérdidas significativas, redistribuyendo fuerzas adicionales para reponerlo.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
                     'iconSize': [25, 25]
                 },
@@ -1759,7 +1794,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombadeo Ucraniano a posiciones Rusas',
-                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p><p>06/03/2022 a las 11:35pm</p>',
+                    'date':'06/03/2022',
+                    'time':'23:35',
+                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [25, 25]
                 },
@@ -1772,7 +1809,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
-                    'description': '<h3><strong><strong>Volado el puente Bucha-Irpin</strong></h3><p>El puente Bucha-Irpin ha sido volado para frenar el avance ruso hacia Kiev</p><p>27/02/2022 a las 8:3am</p><img src="https://pbs.twimg.com/media/FMlj1OvX0AUQwOp?format=jpg&name=large"/>',
+                    'date':'27/02/2022',
+                    'time':'8:30',
+                    'description': '<h3><strong><strong>Volado el puente Bucha-Irpin</strong></h3><p>El puente Bucha-Irpin ha sido volado para frenar el avance ruso hacia Kiev</p><img src="https://pbs.twimg.com/media/FMlj1OvX0AUQwOp?format=jpg&name=large"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-blue.svg',
                     'iconSize': [20, 20]
                 },
@@ -1799,7 +1838,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         
         // create the popup
         const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-          marker.properties.description
+          `<time>${marker.properties.date} a las ${marker.properties.time}<time>` + marker.properties.description
         );
 
         // Add markers to the map.

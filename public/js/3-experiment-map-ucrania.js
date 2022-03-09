@@ -1647,7 +1647,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'12:04',
                     'description': '<h3>Suenan explosiones en el Norte de Kiev</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiarea-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {

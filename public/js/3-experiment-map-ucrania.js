@@ -1625,7 +1625,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       const geojson = {
         'type': 'FeatureCollection',
         'features': [
-             { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Suenan las sirenas en Kiev',
                     'date':'09/03/2022',
@@ -1639,7 +1640,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.522261190967264, 50.448167534381774]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1653,7 +1655,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [36.22808571823988, 49.98956817621031]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Tropas rusas en Skadovsk',
                     'date':'09/03/2022',
@@ -1667,7 +1670,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Evacuación de Bucha, Vorzel, Hostomiel y Borodyanka',
                     'date':'09/03/2022',
@@ -1681,7 +1685,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Tropas rusas entran en Skadovsk',
                     'date':'09/03/2022',
@@ -1695,7 +1700,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Convoy ruso destruido',
                     'date':'09/03/2022',
@@ -1709,7 +1715,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1723,7 +1730,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1737,7 +1745,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1751,7 +1760,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1765,7 +1775,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1779,7 +1790,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1793,7 +1805,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'09/03/2022',
@@ -1807,7 +1820,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18661672757826, 47.37986007755012]
                 }
             },
-            { 'Feature',
+            {
+                'type': 'Feature',
                 'properties': {
                     'message': 'El Estado Mayor de Ucrania informa:',
                     'date':'09/03/2022',

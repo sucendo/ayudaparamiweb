@@ -1721,7 +1721,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Convoy ruso destruido',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': '<h3>Convoy ruso destruido</h3>Gran convoy militar ruso destruido cerca de Járkov (Kharkiv)',
+                    'description': '<h3>Convoy ruso destruido</h3><p>Gran convoy militar ruso destruido cerca de Járkov (Kharkiv)</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1736,7 +1736,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Explosiones en Járkov (Kharkiv)',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': 'Se escuchan explosiones en Kharkiv, quédense en los refugios',
+                    'description': '<h3>Explosiones en Járkov (Kharkiv)</h3><p>Se escuchan explosiones en Kharkiv, quédense en los refugios</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1751,7 +1751,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'La IAEA sobre el personal nuclear',
                     'date':'09/03/2022',
                     'time':'8:02',
-                    'description': '<h3>La IAEA sobre el personal nuclear</h3>La IAEA dice que es cada vez más urgente e importante permitir la rotación del personal en los sitios nucleares en UA - Chernobyl y Zhaporizhzhya. Los de Chernobyl no lo han hecho durante 2 semanas y hay informes de que los de Zhaporizhzhya están siendo torturados.',
+                    'description': '<h3>La IAEA sobre el personal nuclear</h3><p>La IAEA dice que es cada vez más urgente e importante permitir la rotación del personal en los sitios nucleares en UA - Chernobyl y Zhaporizhzhya. Los de Chernobyl no lo han hecho durante 2 semanas y hay informes de que los de Zhaporizhzhya están siendo torturados.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/nuclear-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1766,7 +1766,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Declaraciones del vicecanciller de Polonia',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': 'Declaraciones del vicecanciller de Polonia sobre el rechazo del Pentágono a la propuesta polaca de transferir aviones MiG29; no puede ser que Polonia sea el único país de la OTAN que asuma el riesgo, y otros países no tendrían que compensar o compartir esto de ninguna manera, continuaremos las conversaciones con los aliados',
+                    'description': '<h3>Declaraciones del vicecanciller de Polonia</h3><p>sobre el rechazo del Pentágono a la propuesta polaca de transferir aviones MiG29; no puede ser que Polonia sea el único país de la OTAN que asuma el riesgo, y otros países no tendrían que compensar o compartir esto de ninguna manera, continuaremos las conversaciones con los aliados</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/avion-blue.svg',
                     'iconSize': [40, 40]
                 },
@@ -1781,7 +1781,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Incendio en un edificio residencial del distrito',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': 'Incendio en un edificio residencial del distrito de Saltivka en Kharkiv después del bombardeo del ejército ruso',
+                    'description': '<h3>Incendio en un edificio residencial del distrito de Saltivka</h3><p> en Kharkiv después del bombardeo del ejército ruso.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1796,7 +1796,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Los voluntarios extranjeros podrán obtener la ciudadanía ucraniana',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': 'Los voluntarios extranjeros podrán obtener la ciudadanía ucraniana si así lo desean, dijo el 9 de marzo el primer viceministro del Interior, Yevhen Yenin. Veinte mil voluntarios extranjeros se han unido a las fuerzas ucranianas para luchar contra Rusia desde el 6 de marzo.',
+                    'description': '<h3>Los voluntarios extranjeros podrán obtener la ciudadanía ucraniana</h3><p>Siempre que así lo desesen, dijo el 9 de marzo el primer viceministro del Interior, Yevhen Yenin. Veinte mil voluntarios extranjeros se han unido a las fuerzas ucranianas para luchar contra Rusia desde el 6 de marzo.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1841,7 +1841,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Proyectil Impacta en Hryhorivka',
                     'date':'09/03/2022',
                     'time':'8:21',
-                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
+                    'description': '<h3>Proyectil Impacta en Hryhorivka</h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1856,7 +1856,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Proyectil Impacta en Hryhorivka',
                     'date':'08/03/2022',
                     'time':'15:52',
-                    'description': '<h3><strong>Proyectil Impacta en Hryhorivka</strong></h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
+                    'description': '<h3>Proyectil Impacta en Hryhorivka</h3><p>Un proyectil impacta cerca de una escuela en Hryhorivka, del distrito de Vasylkiv en la región de Dnipropetrovsk</p><img src="https://pbs.twimg.com/media/FNVdrX6XIAEPTp8?format=jpg&name=medium"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1871,7 +1871,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Avión Derribado',
                     'date':'08/03/2022',
                     'time':'9:50',
-                    'description': '<h3><strong>Avión derribado en Bilozerka</strong></h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p>',
+                    'description': '<h3>Avión derribado en Bilozerka</h3><p>La aeronave expulsa a sus pilotos antes de caer derribado en la región de Kherson</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/avion-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1886,7 +1886,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Avión Derribado',
                     'date':'08/03/2022',
                     'time':'9:10',
-                    'description': '<h3><strong>Bombardeo en las afueras de Kiev</strong></h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos.</p>',
+                    'description': '<h3>Bombardeo en las afueras de Kiev</h3><p> Las tropas rusas bombardean aldeas y autobuses de evacuación en la región de Kiev. 3 heridos.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1901,7 +1901,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Foo',
                     'date':'08/03/2022',
                     'time':'8:20',
-                    'description': '<h3><strong>Bombardeo en Chuhuiv</strong></h3><p> Un cohete BM-30 "Smerch" cae sin llegar a explotar</p>',
+                    'description': '<h3>Bombardeo en Chuhuiv</h3><p> Un cohete BM-30 "Smerch" cae sin llegar a explotar</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1916,7 +1916,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Bombardeo en Sumy',
                     'date':'08/03/2022',
                     'time':'5:30',
-                    'description': '<h3><strong>Bombardeo en Sumy</strong></h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p>',
+                    'description': '<h3>>Bombardeo en Sumy</h3><p>Un proyectil alcanza un edificio residencial. El impacto destruye varias viviendas. Hay al menos diez muertos y varios heridos, entre las víctimas niños.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1931,7 +1931,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Ataques aéreos en la región de Sumy',
                     'date':'08/03/2022',
                     'time':'3:30',
-                    'description': '<h3><strong>Ataques aéreos en la región de Sumy</strong></h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p>',
+                    'description': '<h3>Ataques aéreos en la región de Sumy</h3><p>Esta pasada noche el ejército ruso realiza un bombardeo en la ciudad de Sumy, varias viviendas son destruidas.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1946,7 +1946,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Explosiones en Odesa',
                     'date':'07/03/2022',
                     'time':'21:58',
-                    'description': '<h3><strong>Explosiones en Odesa</strong></h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p>',
+                    'description': '<h3>Explosiones en Odesa</h3><p>Aún no se sabe la causa, posible bombardeo marítimo</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1961,7 +1961,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Edificio residencial atacado en Zabuchhia',
                     'date':'07/03/2022',
                     'time':'19:38',
-                    'description': '<h3><strong><strong>Edificio residencial atacado en Zabuchhia</strong></h3><p>El ejército Ruso ha disparado a un edificio Residencial en Zabuchhia, a las afueras de Kiev</p>',
+                    'description': '<h3>Edificio residencial atacado en Zabuchhia</h3><p>El ejército Ruso ha disparado a un edificio Residencial en Zabuchhia, a las afueras de Kiev</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1976,7 +1976,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Blindados Ocultos en Irpin',
                     'date':'07/03/2022',
                     'time':'10:15',
-                    'description': '<h3><strong><strong>Blindados en Irpin</strong></h3><p>Los ejército Ruso oculta sus vehículos blindados en un complejo residencial de Irpin, a las afueras de Kiev</p>',
+                    'description': '<h3>Blindados en Irpin</h3><p>Los ejército Ruso oculta sus vehículos blindados en un complejo residencial de Irpin, a las afueras de Kiev</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1991,7 +1991,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Bombadeo Ucraniano a posiciones Rusas',
                     'date':'06/03/2022',
                     'time':'23:38',
-                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las Fuerzas Armadas de Ucranianas bombardean posiciones de concentración de tropas rusas en Novaya Basana y Skripali, el ejército ruso sufre pérdidas significativas, redistribuyendo fuerzas adicionales para reponerlo.</p>',
+                    'description': '<h3>Bombadeo Ucraniano a posiciones Rusas</h3><p>Las Fuerzas Armadas de Ucranianas bombardean posiciones de concentración de tropas rusas en Novaya Basana y Skripali, el ejército ruso sufre pérdidas significativas, redistribuyendo fuerzas adicionales para reponerlo.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
                     'iconSize': [40, 40]
                 },
@@ -2006,7 +2006,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Bombadeo Ucraniano a posiciones Rusas',
                     'date':'06/03/2022',
                     'time':'23:35',
-                    'description': '<h3><strong><strong>Bombadeo Ucraniano a posiciones Rusas</strong></h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p>',
+                    'description': '<h3>Bombadeo Ucraniano a posiciones Rusas</h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -2021,7 +2021,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'27/02/2022',
                     'time':'8:30',
-                    'description': '<h3><strong><strong>Volado el puente Bucha-Irpin</strong></h3><p>El puente Bucha-Irpin ha sido volado para frenar el avance ruso hacia Kiev</p><img src="https://pbs.twimg.com/media/FMlj1OvX0AUQwOp?format=jpg&name=large"/>',
+                    'description': '<h3>Volado el puente Bucha-Irpin</h3><p>El puente Bucha-Irpin ha sido volado para frenar el avance ruso hacia Kiev</p><img src="https://pbs.twimg.com/media/FMlj1OvX0AUQwOp?format=jpg&name=large"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-blue.svg',
                     'iconSize': [40, 40]
                 },

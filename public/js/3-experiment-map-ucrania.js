@@ -2056,10 +2056,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       var difference= Math.abs(day2-day1);
       var days = difference/(1000 * 3600 * 24)
         
-        days = days * 4;
+        days = days * 3;
         if (days > 7) {
-            width = Math.abs(width-30);
-            height = Math.abs(height-30);
+            width = Math.abs(width-20);
+            height = Math.abs(height-20);
         } else {  
             width = Math.abs(width-days);
             height = Math.abs(height-days);

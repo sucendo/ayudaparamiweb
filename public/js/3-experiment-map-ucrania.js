@@ -1647,7 +1647,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'10:27',
                     'description': '<h3>Suenan las sirenas en Járkov</h3><p>Amenaza aérea. Sirenas sonando. ¡Peligro!</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/sirenas-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
@@ -1661,7 +1661,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Tropas rusas en Skadovsk',
                     'date':'09/03/2022',
                     'time':'9:27',
-                    'description': '<h3>Tropas rusas en Skadovsk</h3><p>Región de Kherson</p>',
+                    'description': '<h3>Tropas rusas en Skadovsk</h3><p>Trupas rusas formadas en Skadovsk en la región de Kherson.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1673,31 +1673,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Evacuación de Bucha, Vorzel, Hostomiel y Borodyanka',
+                    'message': 'Evacuación de las poblaciones de Bucha, Vorzel, Hostomiel y Borodyanka',
                     'date':'09/03/2022',
-                    'time':'9:27',
-                    'description': '<h3>Evacuación de Bucha, Vorzel, Hostomiel y Borodyanka</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'time':'9:26',
+                    'description': '<h3>Evacuación de las poblaciones de Bucha, Vorzel, Hostomiel y Borodyanka</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bus-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Tropas rusas entran en Skadovsk',
-                    'date':'09/03/2022',
-                    'time':'8:30',
-                    'description': 'Tropas rusas entran en Skadovsk',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [30.170598, 50.547667]
                 }
             },
             {
@@ -1706,94 +1691,79 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Convoy ruso destruido',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': '<h3>Convoy ruso destruido</h3>Gran convoy militar ruso destruido cerca de Kharkiv',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'description': '<h3>Convoy ruso destruido</h3>Gran convoy militar ruso destruido cerca de Járkov (Kharkiv)',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
                     'iconSize': [25, 25]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [36.26565753405639, 50.122959094585454]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
+                    'message': 'Explosiones en Járkov (Kharkiv)',
                     'date':'09/03/2022',
                     'time':'8:30',
                     'description': 'Se escuchan explosiones en Kharkiv, quédense en los refugios',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [25, 25]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [36.26565753405639, 50.182959094585454]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
+                    'message': 'La IAEA sobre el personal nuclear',
                     'date':'09/03/2022',
-                    'time':'8:30',
-                    'description': 'Durante el último día, diez habitantes de Severodonetsk murieron y nueve resultaron heridos en el bombardeo de las tropas rusas, informa el jefe de la Administración Civil-Militar Regional de Lugansk, Serhiy Haidai.',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'time':'8:02',
+                    'description': '<h3>La IAEA sobre el personal nuclear</h3>La IAEA dice que es cada vez más urgente e importante permitir la rotación del personal en los sitios nucleares en UA - Chernobyl y Zhaporizhzhya. Los de Chernobyl no lo han hecho durante 2 semanas y hay informes de que los de Zhaporizhzhya están siendo torturados.',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/nuclear-red.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [30.10988615412782, 51.38891282181196]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
+                    'message': 'Declaraciones del vicecanciller de Polonia',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': '@IAEA dice que es cada vez más urgente e importante permitir la rotación del personal en los sitios nucleares en UA - Chernobyl y Zhaporizhzhya. Los de Chernobyl no lo han hecho durante 2 semanas y hay informes de que los de Zhaporizhzhya están siendo torturados.',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [25, 25]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
-                    'date':'09/03/2022',
-                    'time':'8:30',
-                    'description': ' El vicecanciller de Polonia @paweljabIonski sobre el rechazo del Pentágono a la propuesta polaca de transferir aviones MiG29; no puede ser que Polonia sea el único país de la OTAN que asuma el riesgo, y otros países no tendrían que compensar o compartir esto de ninguna manera, continuaremos las conversaciones con los aliados',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'description': 'Declaraciones del vicecanciller de Polonia sobre el rechazo del Pentágono a la propuesta polaca de transferir aviones MiG29; no puede ser que Polonia sea el único país de la OTAN que asuma el riesgo, y otros países no tendrían que compensar o compartir esto de ninguna manera, continuaremos las conversaciones con los aliados',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/aviones-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [21.016853162357737, 52.24298829038197]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
+                    'message': 'Incendio en un edificio residencial del distrito',
                     'date':'09/03/2022',
                     'time':'8:30',
                     'description': 'Incendio en un edificio residencial del distrito de Saltivka en Kharkiv después del bombardeo del ejército ruso',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [25, 25]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [36.353141553874536, 50.04206652441891]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
+                    'message': 'Los voluntarios extranjeros podrán obtener la ciudadanía ucraniana',
                     'date':'09/03/2022',
                     'time':'8:30',
                     'description': 'Los voluntarios extranjeros podrán obtener la ciudadanía ucraniana si así lo desean, dijo el 9 de marzo el primer viceministro del Interior, Yevhen Yenin. Veinte mil voluntarios extranjeros se han unido a las fuerzas ucranianas para luchar contra Rusia desde el 6 de marzo.',
@@ -1808,16 +1778,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Volado el puente Bucha-Irpin',
+                    'message': 'Pentágono sobre Propuesta Aviones Polacos',
                     'date':'09/03/2022',
                     'time':'8:30',
-                    'description': 'Respuesta del Pentágono a la propuesta de Polonia sobre aviones: "Continuaremos consultando con Polonia y nuestros otros aliados de la OTAN sobre este tema y los difíciles desafíos logísticos que presenta, pero no creemos que la propuesta de Polonia sea sostenible".',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'description': '<h3>Pentágono sobre Propuesta Aviones Polacos</h3><p>Respuesta del Pentágono a la propuesta de Polonia sobre aviones: "Continuaremos consultando con Polonia y nuestros otros aliados de la OTAN sobre este tema y los difíciles desafíos logísticos que presenta, pero no creemos que la propuesta de Polonia sea sostenible".</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/aviones-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [-77.0559021542296, 38.87084604327927]
                 }
             },
             {

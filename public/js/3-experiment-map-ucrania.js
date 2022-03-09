@@ -2037,8 +2037,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
     for (const marker of geojson.features) {
         // Create a DOM element for each marker.
         const el = document.createElement('div');
-        var width = 50; //marker.properties.iconSize[0];
-        var height = 50; //marker.properties.iconSize[1];
+        var width = 40; //marker.properties.iconSize[0];
+        var height = 40; //marker.properties.iconSize[1];
         const icon = marker.properties.icon;
         el.className = 'marker';
         el.style.backgroundImage = `url(${icon})`;
@@ -2055,14 +2055,15 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 
       var difference= Math.abs(day2-day1);
       var days = difference/(1000 * 3600 * 24)
-      
-      el.addEventListener('click', () => {
-        window.alert(fEvento + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
-      });
         
-        days = days * 2;
-        width = Math.abs(width-days);
-        height = Math.abs(width-days);
+        days = days * 4;
+        if (days > 7)(
+            width = 10;
+            height = 10;
+        )else(    
+            width = Math.abs(width-days);
+            height = Math.abs(width-days);
+        );
         
         el.style.width = `${width}px`;
         el.style.height = `${height}px`;

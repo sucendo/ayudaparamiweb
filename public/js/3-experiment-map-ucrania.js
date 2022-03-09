@@ -2047,9 +2047,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         const f = Date.now();
 
       
-      fechaEvento = fechaEvento.replace('/', "-");
-      fechaEvento = fechaEvento.replace('/', "-");
-      var fHoy = fEvento.replace(/^(\d{2})-(\d{2})-(\d{4})$/g,'$2/$1/$3');
+      var fEvento = fechaEvento.replace('/', "-");
+      fEvento = fEvento.replace('/', "-");
+      fEvento = fEvento.replace(/^(\d{2})-(\d{2})-(\d{4})$/g,'$2/$1/$3');
       var day1 = new Date(fEvento); 
       var day2 = new Date(f);
 
@@ -2057,7 +2057,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       var days = difference/(1000 * 3600 * 24)
       
       el.addEventListener('click', () => {
-        window.alert(fHoy + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
+        window.alert(fEvento + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
       });
         
         el.style.width = `${width}px`;

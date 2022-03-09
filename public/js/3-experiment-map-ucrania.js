@@ -2054,7 +2054,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       var days = difference/(1000 * 3600 * 24)
       
       el.addEventListener('click', () => {
-        window.alert(mm + '/' + dd + '/' + yyyy + ' = ' + days);
+        window.alert(hoy + f + ' = ' + days);
         //window.alert(hoy + ' @ ' + day2 + ' - ' + day1 + ' = ' + days);
       });
         

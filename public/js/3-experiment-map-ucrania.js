@@ -1733,6 +1733,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Manifestación en Melitopol por la Ocupación Rusa',
+                    'date':'09/03/2022',
+                    'time':'14:10',
+                    'description': '<h3>Manifestación en Melitopol por la Ocupación Rusa</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/manifestacion-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.36040492162686,46.83865967175554]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Gran convoy Ruso en Melitopol',
                     'date':'09/03/2022',
                     'time':'15:49',

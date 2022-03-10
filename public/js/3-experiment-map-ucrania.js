@@ -1628,6 +1628,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Rastro de misil en Mazyr',
+                    'date':'10/03/2022',
+                    'time':'13:54',
+                    'description': '<h3>Rastro de misil en Mazyr</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/cohete-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [29.24953114212453, 51.98969936236027]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Suenan las Sirenas en Járkov',
                     'date':'10/03/2022',
                     'time':'13:07',

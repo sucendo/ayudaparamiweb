@@ -1628,6 +1628,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Suenan las sirenas en Chernihiv',
+                    'date':'10/03/2022',
+                    'time':'10:20',
+                    'description': '<h3>Sirenas Suenan en Chernihiv</h3><p>Alerta! Chernihiv esta siendo bombardeada.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [31.29123707303483, 51.496568064549606]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Sirenas Suenan en Dnipro',
                     'date':'10/03/2022',
                     'time':'09:34',

@@ -1628,6 +1628,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Situación en el frente de Mykolaiv',
+                    'date':'10/03/2022',
+                    'time':'10:20',
+                    'description': '<h3>Situación en el frente de Mykolaiv</h3><p>El Estado Mayor ucraniano informa que en el frente de Mykolaiv, las tropas rusas avanzan e intentan afianzarse en las poblaciones de Oleksandrivka, Burgunka, Bereslav, Tavriyask</p>',
+             </p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [55, 55]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [33.28188168391385, 47.31457711016216]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Suenan las sirenas en Chernihiv',
                     'date':'10/03/2022',
                     'time':'10:20',
@@ -1640,7 +1656,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [31.29123707303483, 51.496568064549606]
                 }
             },
-             {
+            {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Korosten Bombardeado',

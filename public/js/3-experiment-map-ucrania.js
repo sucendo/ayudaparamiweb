@@ -1712,7 +1712,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.522261190967264, 50.448167534381774]
+                    'coordinates': [30.523261190967264, 50.444167534381774]
                 }
             },
             {

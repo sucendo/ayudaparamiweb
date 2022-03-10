@@ -1648,7 +1648,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'13:07',
                     'description': '<h3>Suenan las Sirenas en Járkov</h3><p>Alerta! Bombardeos en Járkov.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

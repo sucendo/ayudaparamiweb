@@ -1628,12 +1628,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Suenan las Sirenas en Járkov',
+                    'date':'10/03/2022',
+                    'time':'13:07',
+                    'description': '<h3>Suenan las Sirenas en Járkov</h3><p>Alerta! Bombardeos en Járkov.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.233750598665, 49.9879791076946]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'El ejército ucraniano elimina las tropas rusas en la ciudad de Moshchun',
                     'date':'10/03/2022',
                     'time':'12:56',
                     'description': '<h3>El ejército ucraniano elimina las tropas rusas en la ciudad de Moshchun</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

@@ -1673,6 +1673,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'La fuerzas Ucranianas repelen un ataque a Brovary',
+                    'date':'10/03/2022',
+                    'time':'07:30',
+                    'description': '<h3>La fuerzas Ucranianas repelen un ataque a Brovary</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antitanque-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.829588970807926, 50.57475443658947]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Bombardeado el Hospital materno de Mariupol',
                     'date':'09/03/2022',
                     'time':'15:42',

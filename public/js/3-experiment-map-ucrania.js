@@ -1633,7 +1633,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'10:20',
                     'description': '<h3>Sirenas Suenan en Chernihiv</h3><p>Alerta! Chernihiv esta siendo bombardeada.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1648,7 +1648,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'09:34',
                     'description': '<h3>Sirenas Suenan en Dnipro</h3><p>Alerta! Bombardeos aéreos Rusos en Dnipro.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1663,7 +1663,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'09:34',
                     'description': '<h3>Sirenas Suenan en Járkov</h3><p>Alerta! Bombardeos aéreos Rusos en Járkov.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1678,7 +1678,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'09:08',
                     'description': '<h3>Sirenas Suenan en Sumy</h3><p>Alerta! Bombardeos aéreos Rusos en Sumy.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

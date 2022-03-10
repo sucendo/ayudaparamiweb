@@ -2288,6 +2288,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Enorme convoy Ruso dirigiendose a Kiev en Ivankiv',
+                    'date':'01/03/2022',
+                    'time':'10:30',
+                    'description': '<h3>Enorme convoy Ruso dirigiendose a Kiev en Ivankiv</h3><p>El convoy Ruso que se dirige hacia Kiev tiene una longitud de 64kms.</p><img src="https://pbs.twimg.com/media/FMlj1OvX0AUQwOp?format=jpg&name=large"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [29.89777845858527, 50.92103138498985]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Volado el puente Bucha-Irpin',
                     'date':'27/02/2022',
                     'time':'8:30',
@@ -2327,7 +2342,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         var days = difference/(1000 * 3600 * 24)
         
         days = days * 3;
-        if (days > 7) {
+        if (days > 14) {
+            width = Math.abs(width-30);
+            height = Math.abs(height-30);
+        } else if (days > 7) {  
             width = Math.abs(width-20);
             height = Math.abs(height-20);
         } else {  

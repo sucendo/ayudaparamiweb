@@ -2238,18 +2238,18 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         el.className = 'marker';
         el.style.backgroundImage = `url(${icon})`;
         
+        // Tamaño iconos tiempo
         const fechaEvento = marker.properties.date;
         const f = Date.now();
 
-      
-      var fEvento = fechaEvento.replace('/', "-");
-      fEvento = fEvento.replace('/', "-");
-      fEvento = fEvento.replace(/^(\d{2})-(\d{2})-(\d{4})$/g,'$2/$1/$3');
-      var day1 = new Date(fEvento); 
-      var day2 = new Date(f);
+        var fEvento = fechaEvento.replace('/', "-");
+        fEvento = fEvento.replace('/', "-");
+        fEvento = fEvento.replace(/^(\d{2})-(\d{2})-(\d{4})$/g,'$2/$1/$3');
+        var day1 = new Date(fEvento); 
+        var day2 = new Date(f);
 
-      var difference= Math.abs(day2-day1);
-      var days = difference/(1000 * 3600 * 24)
+        var difference= Math.abs(day2-day1);
+        var days = difference/(1000 * 3600 * 24)
         
         days = days * 3;
         if (days > 7) {

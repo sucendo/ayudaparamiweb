@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="42.118" cy="42.09" r="41.5" style="fill: rgba(179, 36, 41, 0.51);" transform="matrix(0.596876, 0, 0, 0.598408, -0.006575, -0.146619)"/>
+  <g transform="matrix(0.691234, 0, 0, 0.698059, -9.624619, -8.975335)" style=""/>
+  <g transform="matrix(1, 0, 0, 1, 17.910539, -31.330046)">
+    <g transform="matrix(1, 0, 0, 1, 21.834737, 37.828335)">
+      <g transform="matrix(1, 0, 0, 1, -57.857472, -23.44613)">
+        <polyline fill="#FFFFFF" points="54.59 22.056 45.62 37.396 56.943 37.396 31.804 62.794 42.127 45.098 31.005 45.098 44.481 22.057" style=""/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1633,7 +1633,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'15:42',
                     'description': '<h3>Bombardeado el Hospital materno de Mariupol</h3><p>Durante la tregua el ejército Ruso bombardea con ataques aéreos el Hospital materno de la ciudad de Mariupol</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [40, 40]
+                    'iconSize': [60, 60]
                 },
                 'geometry': {
                     'type': 'Point',

@@ -1703,6 +1703,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Bombardeada la población de Piskivka',
+                    'date':'09/03/2022',
+                    'time':'21:15',
+                    'description': '<h3>Bombardeada la población de Piskivka</h3><p>El resultado del bombardeo efectuado sobre la población de Piskivka, es de un muerto, dos heridos y 9 edificios destruidos.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [29.598238757136954, 50.69670772993184]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Bombardeado el Hospital materno de Mariupol',
                     'date':'09/03/2022',
                     'time':'15:42',
@@ -1750,7 +1765,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Manifestación en Melitopol por la Ocupación Rusa',
                     'date':'09/03/2022',
-                    'time':'14:10',
+                    'time':'15:10',
                     'description': '<h3>Manifestación en Melitopol por la Ocupación Rusa</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/manifestacion-blue.svg',
                     'iconSize': [40, 40]
@@ -1765,7 +1780,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Gran convoy Ruso en Melitopol',
                     'date':'09/03/2022',
-                    'time':'15:49',
+                    'time':'14:49',
                     'description': '<h3>Gran convoy militar Ruso en Melitopol</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
                     'iconSize': [40, 40]

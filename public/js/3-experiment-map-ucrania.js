@@ -1628,12 +1628,42 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'El ejército ucraniano elimina las tropas rusas en la ciudad de Moshchun',
+                    'date':'10/03/2022',
+                    'time':'12:56',
+                    'description': '<h3>El ejército ucraniano elimina las tropas rusas en la ciudad de Moshchun</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.31792387251741, 50.60402715021165]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Bombardeos al noreste de Járkov',
+                    'date':'10/03/2022',
+                    'time':'12:15',
+                    'description': '<h3>Bombardeos al noreste de Járkov</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.31931336281875, 50.024088340862946]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Situación en el frente de Mykolaiv',
                     'date':'10/03/2022',
                     'time':'11:47',
                     'description': '<h3>Situación en el frente de Mykolaiv</h3><p>El Estado Mayor ucraniano informa que en el frente de Mykolaiv, las tropas rusas avanzan e intentan afianzarse en las poblaciones de Oleksandrivka, Burgunka, Bereslav, Tavriyask</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [55, 55]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

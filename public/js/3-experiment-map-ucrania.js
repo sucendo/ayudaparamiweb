@@ -1708,7 +1708,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'21:15',
                     'description': '<h3>Bombardeada la población de Piskivka</h3><p>El resultado del bombardeo efectuado sobre la población de Piskivka, es de un muerto, dos heridos y 9 edificios destruidos.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

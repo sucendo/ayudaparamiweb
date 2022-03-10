@@ -1170,6 +1170,11 @@ article .ct-subline a {
     background: #fff;
 }
 
+.ct-post article .content-interactive {
+   	margin-left: -70px;
+	margin-right: -70px;
+}
+
 .ct-post article.type-page {
     margin-bottom: 20px
 }
@@ -4927,6 +4932,11 @@ body .bsa-cart-zone {
     .ct-post article {
         padding: 40px 30px
     }
+	
+.ct-post article .content-interactive {
+   	margin-left: -30px;
+	margin-right: -30px;
+}
 
     .ct-ad-article-wrapper {
         margin: 0 -30px 15px -30px;

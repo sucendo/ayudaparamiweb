@@ -1931,8 +1931,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Pérdida de energía en la planta de energía nuclear de Chernobyl',
                     'date':'09/03/2022',
                     'time':'10:32',
-                    'description': '<h3>OIEA: Ucrania ha informado a la OIEA de la pérdida de energía en la planta de energía nuclear de Chernobyl<h3><p> dice que el desarrollo viola un pilar clave de seguridad para garantizar un suministro de energía ininterrumpido; en este caso, el OIEA no ve un impacto crítico en la seguridad</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/electricidad-blue.svg',
+                    'description': '<h3>Ucrania ha informado a la OIEA de la pérdida de energía en la planta de energía nuclear de Chernobyl<h3><p> dice que el desarrollo viola un pilar clave de seguridad para garantizar un suministro de energía ininterrumpido; en este caso, el OIEA no ve un impacto crítico en la seguridad</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/apagon-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {

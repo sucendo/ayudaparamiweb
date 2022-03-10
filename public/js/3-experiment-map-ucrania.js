@@ -1625,20 +1625,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       const geojson = {
         'type': 'FeatureCollection',
         'features': [
-
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Suenan las sirenas en Kiev',
+                    'message': 'Bombardeado el Hospital materno de Mariupol',
                     'date':'09/03/2022',
                     'time':'10:32',
-                    'description': '<h3>El ayuntamiento de Mariupol dice que los bombardeos rusos han destruido completamente el hospital infantil de la ciudad</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'description': '<h3>Bombardeado el Hospital materno de Mariupol</h3><p>Durante la tregua el ejército Ruso bombardea con ataques aéreos el Hospital materno de la ciudad de Mariupol</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.59333752009986, 50.537224721903115]
+                    'coordinates': [37.53247701477742, 47.09576545826169]
                 }
             },
             {
@@ -1646,78 +1645,46 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Suenan las sirenas en Kiev',
                     'date':'09/03/2022',
-                    'time':'10:32',
-                    'description': '<h3>El ejército ruso atacó el hospital de la ciudad de Mariupol en ataques aéreos</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'time':'15:50',
+                    'description': '<h3>Sirenas suenan en Kiev</h3> Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.59333752009986, 50.537224721903115]
+                    'coordinates': [30.522261190967264, 50.448167534381774]
                 }
             },
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Suenan las sirenas en Kiev',
+                    'message': 'Sirenas suenan en Bila Tserkva',
                     'date':'09/03/2022',
-                    'time':'10:32',
-                    'description': '<h3>Confirmado: interrupción importante de Internet registrada en Kherson Oblast, sur de Ucrania, con un alto impacto para el proveedor estatal Ukrtelecom y Volia; El incidente se produce en medio de informes de que unos 400 ciudadanos fueron detenidos por la Guardia Nacional de Rusia.</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'time':'15:49',
+                    'description': '<h3>Sirenas suenan en Bila Tserkva, Vasylkiv, Myronivka</h3><p>Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.59333752009986, 50.537224721903115]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Suenan las sirenas en Kiev',
-                    'date':'09/03/2022',
-                    'time':'10:32',
-                    'description': '<h3>Kiev (15:50). Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [30.59333752009986, 50.537224721903115]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Suenan las sirenas en Kiev',
-                    'date':'09/03/2022',
-                    'time':'10:32',
-                    'description': '<h3>Bila Tserkva, Vasylkiv, Myronivka (15:49). Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [30.59333752009986, 50.537224721903115]
+                    'coordinates': [30.12806756667516, 49.79686954023688]
                 }
             }, 
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Suenan las sirenas en Kiev',
+                    'message': 'Pérdida de energía en la planta de energía nuclear de Chernobyl',
                     'date':'09/03/2022',
                     'time':'10:32',
-                    'description': '<h3>OIEA: Ucrania ha informado a la OIEA de la pérdida de energía en la planta de energía nuclear de Chernobyl, @rafaelmgrossi dice que el desarrollo viola un pilar clave de seguridad para garantizar un suministro de energía ininterrumpido; en este caso, el OIEA no ve un impacto crítico en la seguridad</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'description': '<h3>OIEA: Ucrania ha informado a la OIEA de la pérdida de energía en la planta de energía nuclear de Chernobyl<h3><p> dice que el desarrollo viola un pilar clave de seguridad para garantizar un suministro de energía ininterrumpido; en este caso, el OIEA no ve un impacto crítico en la seguridad</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/electricidad-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.59333752009986, 50.537224721903115]
+                    'coordinates': [30.01588615412782, 51.38891282181196]
                 }
-            },
-            
-            
+            },       
             {
                 'type': 'Feature',
                 'properties': {
@@ -1730,7 +1697,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [35.44848253828134, 46.83019300919504]
+                    'coordinates': [35.44648253828134, 46.83019300919504]
                 }
             },
             {
@@ -2003,7 +1970,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [36.25539009284283, 47.47784139696324]
                 }
             },
-             {
+            {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Proyectil Impacta en Hryhorivka',

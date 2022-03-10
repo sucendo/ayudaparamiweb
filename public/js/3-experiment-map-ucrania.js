@@ -1733,6 +1733,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Gran convoy Ruso en Melitopol',
+                    'date':'09/03/2022',
+                    'time':'15:49',
+                    'description': '<h3>Gran convoy militar Ruso en Melitopol</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.29414363025558, 46.82785540853719]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Pérdida de energía en la planta de energía nuclear de Chernobyl',
                     'date':'09/03/2022',
                     'time':'10:32',

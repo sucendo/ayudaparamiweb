@@ -1932,12 +1932,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'8:30',
                     'description': '<h3>Los voluntarios extranjeros podrán obtener la ciudadanía ucraniana</h3><p>Siempre que así lo desesen, dijo el 9 de marzo el primer viceministro del Interior, Yevhen Yenin. Veinte mil voluntarios extranjeros se han unido a las fuerzas ucranianas para luchar contra Rusia desde el 6 de marzo.</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/declaracion-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [32.18661672757826, 47.37986007755012]
+                    'coordinates': [30.536978484276492, 50.44730950118309]
                 }
             },
             {
@@ -2123,10 +2123,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Bombadeo Ucraniano a posiciones Rusas',
+                    'message': 'Las tropas rusas capturan Kashpero-Mykolaivka',
                     'date':'06/03/2022',
                     'time':'23:35',
-                    'description': '<h3>Bombadeo Ucraniano a posiciones Rusas</h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p>',
+                    'description': '<h3>Las tropas rusas capturan Kashpero-Mykolaivka</h3><p>Las tropas rusas capturan Kashpero-Mykolaivka en la región de Mykolaiv</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]
                 },

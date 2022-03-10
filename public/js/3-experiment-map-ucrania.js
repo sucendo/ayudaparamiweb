@@ -1625,6 +1625,159 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       const geojson = {
         'type': 'FeatureCollection',
         'features': [
+
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>El ayuntamiento de Mariupol dice que los bombardeos rusos han destruido completamente el hospital infantil de la ciudad</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.59333752009986, 50.537224721903115]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>El ejército ruso atacó el hospital de la ciudad de Mariupol en ataques aéreos</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.59333752009986, 50.537224721903115]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>Confirmado: interrupción importante de Internet registrada en Kherson Oblast, sur de Ucrania, con un alto impacto para el proveedor estatal Ukrtelecom y Volia; El incidente se produce en medio de informes de que unos 400 ciudadanos fueron detenidos por la Guardia Nacional de Rusia.</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.59333752009986, 50.537224721903115]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>Kiev (15:50). Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.59333752009986, 50.537224721903115]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>Bila Tserkva, Vasylkiv, Myronivka (15:49). Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.59333752009986, 50.537224721903115]
+                }
+            }, 
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>OIEA: Ucrania ha informado a la OIEA de la pérdida de energía en la planta de energía nuclear de Chernobyl, @rafaelmgrossi dice que el desarrollo viola un pilar clave de seguridad para garantizar un suministro de energía ininterrumpido; en este caso, el OIEA no ve un impacto crítico en la seguridad</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.59333752009986, 50.537224721903115]
+                }
+            },
+            
+            
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Manifestacion en Melitopol',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>Nueva manifestación contra la ocupación rusa en Melitopol</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/manifestacion-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.44848253828134, 46.83019300919504]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Convoy Militar ruso en Melitopol',
+                    'date':'09/03/2022',
+                    'time':'13:16',
+                    'description': '<h3>Gran convoy militar ruso en Melitopol</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.44848253828134, 46.83019300919504]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Columna de caminiones sospechosos Rusos',
+                    'date':'09/03/2022',
+                    'time':'13:03',
+                    'description': '<h3>Columna de caminiones sospechosos Rusos</h3><p>Una columna de 7 camiones militares KamAZ de las Fuerzas Armadas rusas con marcas de identificación "V" y letreros "Inflamable" se movía a lo largo de la carretera R-149 desde Zhlobin hacia Svetlahorsk. Llama la atención que los vehículos no contaban con placas</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/camion-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [29.951821356724246, 52.89207506805303]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Bombardeo en Novoluhanske',
+                    'date':'09/03/2022',
+                    'time':'12:11',
+                    'description': '<h3>Las tropas rusas bombardean Novoluhanske</h3><p>con morteros, sin víctimas, daños materiales</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/mortero-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.173898912333755, 48.42611762039795]
+                }
+            },
             {
                 'type': 'Feature',
                 'properties': {
@@ -1647,12 +1800,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'12:11',
                     'description': '<h3>Violación del Alto el Fuego en Izyum</h3><p>El ejército ruso viola el alto el fuego e impide la evacuación de Izyum</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [49.165806677056025, 37.27887172533673]
+                    'coordinates': [37.27887172533673, 49.165806677056025]
                 }
             },
             {

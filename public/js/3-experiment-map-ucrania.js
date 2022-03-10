@@ -1640,6 +1640,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [31.29123707303483, 51.496568064549606]
                 }
             },
+             {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Korosten Bombardeado',
+                    'date':'10/03/2022',
+                    'time':'09:47',
+                    'description': '<h3>Korosten Bombardeado</h3><p>El bombardeo nocturo, tuvo como consecuencia un muerto y varios heridos graves.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [28.649952135961392, 50.9555714487725]
+                }
+            },
             {
                 'type': 'Feature',
                 'properties': {

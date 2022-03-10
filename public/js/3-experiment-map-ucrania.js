@@ -1630,9 +1630,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Situación en el frente de Mykolaiv',
                     'date':'10/03/2022',
-                    'time':'10:20',
+                    'time':'11:47',
                     'description': '<h3>Situación en el frente de Mykolaiv</h3><p>El Estado Mayor ucraniano informa que en el frente de Mykolaiv, las tropas rusas avanzan e intentan afianzarse en las poblaciones de Oleksandrivka, Burgunka, Bereslav, Tavriyask</p>',
-             </p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [55, 55]
                 },

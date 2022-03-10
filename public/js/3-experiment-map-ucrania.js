@@ -1748,10 +1748,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Columna rusa camino a Brovary destruida',
+                    'message': 'Columna rusa destruida, camino a Brovary',
                     'date':'09/03/2022',
                     'time':'11:45',
-                    'description': '<h3>Columna rusa camino a Brovary destruida<h3><p>La columna rusa en el camino a Brovary fue destruida cerca de los pueblos de Velyka Dymerka, Bohdanivka, Rudnya. El Servicio de Seguridad de Ucrania pide a los ciudadanos que informen sobre los soldados rusos que huyeron a las zonas cercanas</p>',
+                    'description': '<h3>Columna rusa destruida, camino a Brovary</h3><p>La columna rusa en el camino a Brovary fue destruida cerca de los pueblos de Velyka Dymerka, Bohdanivka, Rudnya. El Servicio de Seguridad de Ucrania pide a los ciudadanos que informen sobre los soldados rusos que huyeron a las zonas cercanas</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
                     'iconSize': [40, 40]
                 },

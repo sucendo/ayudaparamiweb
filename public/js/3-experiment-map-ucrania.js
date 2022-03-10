@@ -1733,6 +1733,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Bombardeado el puente de Berdychiv en Zhymtomyr',
+                    'date':'09/03/2022',
+                    'time':'21:15',
+                    'description': '<h3>Bombardeado el puente de Berdychiv en Zhymtomyr</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [28.679126013051047, 50.238964590735954]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Bombardeado el Hospital materno de Mariupol',
                     'date':'09/03/2022',
                     'time':'15:42',

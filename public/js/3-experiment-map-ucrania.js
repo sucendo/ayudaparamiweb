@@ -1628,6 +1628,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Barco ruso lanza un proyectil cerca de Odesa',
+                    'date':'10/03/2022',
+                    'time':'14:06',
+                    'description': '<h3>Barco ruso lanza un proyectil cerca de Odesa</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/buque-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.915721783480198, 45.59011353906731]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Rastro de misil en Mazyr',
                     'date':'10/03/2022',
                     'time':'13:54',

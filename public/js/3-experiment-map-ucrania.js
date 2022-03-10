@@ -1628,12 +1628,57 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Sirenas Suenan en Dnipro',
+                    'date':'10/03/2022',
+                    'time':'09:34',
+                    'description': '<h3>Sirenas Suenan en Dnipro</h3><p>Alerta! Bombardeos aéreos Rusos en Dnipro.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.04056632917259, 48.46742005229823]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Sirenas Suenan en Járkov',
+                    'date':'10/03/2022',
+                    'time':'09:34',
+                    'description': '<h3>Sirenas Suenan en Járkov</h3><p>Alerta! Bombardeos aéreos Rusos en Járkov.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.232750598665, 49.9870791076946]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Sirenas Suenan en Sumy',
+                    'date':'10/03/2022',
+                    'time':'09:08',
+                    'description': '<h3>Sirenas Suenan en Sumy</h3><p>Alerta! Bombardeos aéreos Rusos en Sumy.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [34.80457729855631, 50.91335730943844]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Bombardeado el Hospital materno de Mariupol',
                     'date':'09/03/2022',
                     'time':'15:42',
                     'description': '<h3>Bombardeado el Hospital materno de Mariupol</h3><p>Durante la tregua el ejército Ruso bombardea con ataques aéreos el Hospital materno de la ciudad de Mariupol</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [60, 60]
+                    'iconSize': [50, 50]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1647,7 +1692,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'15:50',
                     'description': '<h3>Sirenas suenan en Kiev</h3> Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {
@@ -1662,7 +1707,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'09/03/2022',
                     'time':'15:49',
                     'description': '<h3>Sirenas suenan en Bila Tserkva, Vasylkiv, Myronivka</h3><p>Alerta Roja: amenaza aérea. Sirenas sonando. ¡Cúbrete ahora!</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaerea-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {

@@ -1759,44 +1759,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [35.29414363025558, 46.82785540853719]
                 }
-            },
+            },    
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Pérdida de energía en la planta de energía nuclear de Chernobyl',
-                    'date':'09/03/2022',
-                    'time':'10:32',
-                    'description': '<h3>OIEA: Ucrania ha informado a la OIEA de la pérdida de energía en la planta de energía nuclear de Chernobyl<h3><p> dice que el desarrollo viola un pilar clave de seguridad para garantizar un suministro de energía ininterrumpido; en este caso, el OIEA no ve un impacto crítico en la seguridad</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/electricidad-blue.svg',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [30.01588615412782, 51.38891282181196]
-                }
-            },       
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Manifestacion en Melitopol',
-                    'date':'09/03/2022',
-                    'time':'10:32',
-                    'description': '<h3>Nueva manifestación contra la ocupación rusa en Melitopol</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/manifestacion-blue.svg',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [35.44648253828134, 46.83019300919504]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Convoy Militar ruso en Melitopol',
+                    'message': 'Fuerzas armadas rusas entran en Melitopol',
                     'date':'09/03/2022',
                     'time':'13:16',
-                    'description': '<h3>Gran convoy militar ruso en Melitopol</h3>',
+                    'description': '<h3>Fuerzas armadas rusas entran en Melitopol</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
                     'iconSize': [40, 40]
                 },
@@ -1838,21 +1808,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Columna rusa destruida, camino a Brovary',
-                    'date':'09/03/2022',
-                    'time':'11:45',
-                    'description': '<h3>Columna rusa destruida, camino a Brovary</h3><p>La columna rusa en el camino a Brovary fue destruida cerca de los pueblos de Velyka Dymerka, Bohdanivka, Rudnya. El Servicio de Seguridad de Ucrania pide a los ciudadanos que informen sobre los soldados rusos que huyeron a las zonas cercanas</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [30.8453, 50.5920]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
                     'message': 'Violación del Alto el Fuego en Izyum',
                     'date':'09/03/2022',
                     'time':'12:11',
@@ -1883,6 +1838,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Columna rusa destruida, camino a Brovary',
+                    'date':'09/03/2022',
+                    'time':'11:45',
+                    'description': '<h3>Columna rusa destruida, camino a Brovary</h3><p>La columna rusa en el camino a Brovary fue destruida cerca de los pueblos de Velyka Dymerka, Bohdanivka, Rudnya. El Servicio de Seguridad de Ucrania pide a los ciudadanos que informen sobre los soldados rusos que huyeron a las zonas cercanas</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.8453, 50.5920]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Suenan las sirenas en Kiev',
                     'date':'09/03/2022',
                     'time':'10:32',
@@ -1895,6 +1865,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.522261190967264, 50.448167534381774]
                 }
             },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Pérdida de energía en la planta de energía nuclear de Chernobyl',
+                    'date':'09/03/2022',
+                    'time':'10:32',
+                    'description': '<h3>OIEA: Ucrania ha informado a la OIEA de la pérdida de energía en la planta de energía nuclear de Chernobyl<h3><p> dice que el desarrollo viola un pilar clave de seguridad para garantizar un suministro de energía ininterrumpido; en este caso, el OIEA no ve un impacto crítico en la seguridad</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/electricidad-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.01588615412782, 51.38891282181196]
+                }
+            }, 
             {
                 'type': 'Feature',
                 'properties': {

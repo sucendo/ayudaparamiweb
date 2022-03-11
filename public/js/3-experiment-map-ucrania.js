@@ -1815,6 +1815,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Sirenas suenan en Kiev',
+                    'date':'11/03/2022',
+                    'time':'12:22',
+                    'description': '<h3>Sirenas suenan en Kiev</h3> Alerta! amenaza aérea. Sirenas sonando. </h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/apagon-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.505863136515025, 50.455531490506615]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Dispersado el largo convoy Ruso',
                     'date':'11/03/2022',
                     'time':'00:59',

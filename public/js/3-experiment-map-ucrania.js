@@ -1815,6 +1815,81 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'10/03/2022',
+                    'time':'17:23',
+                    'description': '<h3>Protesta contra la ocupación rusa en Berdyansk</h3><p>Protesta pacífica contra la ocupación rusa en Berdyansk, región de Zaporizhiya</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/manifestacion-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.79040903085111, 46.76123092393328]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Evacuada la ciudad de Korosten',
+                    'date':'10/03/2022',
+                    'time':'16:21',
+                    'description': '<h3>Evacuada la ciudad de Korosten</h3><p>Hasta el 70% de la población ya ha sido evacuada de Korosten</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bus-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [28.647408933017335, 50.95063088356955]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Tropas rusas dispara en Daryivka',
+                    'date':'10/03/2022',
+                    'time':'16:15',
+                    'description': '<h3>Tropas rusas dispara en Daryivka</h3><p>En la aldea de Daryivka de la región de Kherson, las tropas rusas dispararon contra un automóvil civil y mataron a un conductor.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [32.7827845424767, 46.750334421758716]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Minas alrededor de la central nuclear de Zaporizhiya',
+                    'date':'10/03/2022',
+                    'time':'15:55',
+                    'description': '<h3>Minas alrededor de la central nuclear de Zaporizhiya</h3><p>El ejército ruso ha plantado minas en la orilla del depósito de agua de Kahovske junto a la central nuclear de Zaporizhiya</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/minas-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [34.630844517086615, 47.51246344116496]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Ayuda humanitaria llega a Enerhodar',
+                    'date':'10/03/2022',
+                    'time':'15:29',
+                    'description': '<h3>Ayuda humanitaria llega a Enerhodar</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/suministros-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [34.63946114667492, 47.50438893131695]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Barco ruso lanza un proyectil cerca de Odesa',
                     'date':'10/03/2022',
                     'time':'14:06',

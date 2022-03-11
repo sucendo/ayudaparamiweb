@@ -1800,12 +1800,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Dispersado el largo convoy Ruso',
+                    'date':'11/03/2022',
+                    'time':'00:59',
+                    'description': '<h3>Dispersado el largo convoy Ruso</h3><p>La compañía de satélites estadounidense Maxar afirma que han podido detectar que el largo convoy militar ruso que se había estancado a unos kilometros de Kiev ahora se ha "dispersado".</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/buque-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [29.96929998790423, 50.89415390507775]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Barco ruso lanza un proyectil cerca de Odesa',
                     'date':'10/03/2022',
                     'time':'14:06',
                     'description': '<h3>Barco ruso lanza un proyectil cerca de Odesa</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/buque-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1820,7 +1835,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'13:54',
                     'description': '<h3>Rastro de misil en Mazyr</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/cohete-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -2015,7 +2030,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'15:42',
                     'description': '<h3>Bombardeado el Hospital materno de Mariupol</h3><p>Durante la tregua el ejército Ruso bombardea con ataques aéreos el Hospital materno de la ciudad de Mariupol</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

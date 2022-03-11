@@ -1804,7 +1804,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'11/03/2022',
                     'time':'00:59',
                     'description': '<h3>Dispersado el largo convoy Ruso</h3><p>La compañía de satélites estadounidense Maxar afirma que han podido detectar que el largo convoy militar ruso que se había estancado a unos kilometros de Kiev ahora se ha "dispersado".</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/buque-red.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
                     'iconSize': [50, 50]
                 },
                 'geometry': {

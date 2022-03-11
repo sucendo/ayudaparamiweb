@@ -1817,6 +1817,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'properties': {
                     'message': 'Suenan las sirenas en Kiev',
                     'date':'10/03/2022',
+                    'time':'21:15',
+                    'description': '<h3>Las fuerzas rusas avanzan por las inmediaciones del aeropuerto de Hostomel</h3><p>El ejército ruso avanza 5km y toma posiciones en las cercanias del aeropuerto de Hostomel, ya cerca de los limites de la capital de Ucraniana, Kiev.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blidnado-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.24132017078246, 50.57818026166025]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas en Kiev',
+                    'date':'10/03/2022',
                     'time':'17:23',
                     'description': '<h3>Protesta contra la ocupación rusa en Berdyansk</h3><p>Protesta pacífica contra la ocupación rusa en Berdyansk, región de Zaporizhiya</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/manifestacion-blue.svg',

@@ -25,7 +25,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         'type': 'sky',
         'paint': {
         'sky-type': 'atmosphere',
-        'sky-atmosphere-sun': [0.0, 0.0],
+        'sky-atmosphere-sun': [0.1, 0.1],
         'sky-atmosphere-sun-intensity': 15
         }
      });

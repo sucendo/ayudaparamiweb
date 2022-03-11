@@ -1819,7 +1819,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'10/03/2022',
                     'time':'21:15',
                     'description': '<h3>Las fuerzas rusas avanzan por las inmediaciones del aeropuerto de Hostomel</h3><p>El ejército ruso avanza 5km y toma posiciones en las cercanias del aeropuerto de Hostomel, ya cerca de los limites de la capital de Ucraniana, Kiev.</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/blidnado-red.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
                     'iconSize': [40, 40]
                 },
                 'geometry': {

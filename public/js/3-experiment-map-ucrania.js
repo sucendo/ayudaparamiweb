@@ -1800,12 +1800,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Suministro de gas interrumpido en Popasna',
+                    'date':'11/03/2022',
+                    'time':'13:32',
+                    'description': '<h3>Suministro de gas interrumpido en Popasna</h3><p>Suministro de gas interrumpido en Popasna como resultado de bombardeos del ejército ruso</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/apagon-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.40001698742611, 48.63109632479285]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Dispersado el largo convoy Ruso',
                     'date':'11/03/2022',
                     'time':'00:59',
                     'description': '<h3>Dispersado el largo convoy Ruso</h3><p>La compañía de satélites estadounidense Maxar afirma que han podido detectar que el largo convoy militar ruso que se había estancado a unos kilometros de Kiev ahora se ha "dispersado".</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1815,7 +1830,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Suenan las sirenas en Kiev',
+                    'message': 'Las fuerzas rusas avanzan por las inmediaciones del aeropuerto de Hostomel',
                     'date':'10/03/2022',
                     'time':'21:15',
                     'description': '<h3>Las fuerzas rusas avanzan por las inmediaciones del aeropuerto de Hostomel</h3><p>El ejército ruso avanza 5km y toma posiciones en las cercanias del aeropuerto de Hostomel, ya cerca de los limites de la capital de Ucraniana, Kiev.</p>',
@@ -1830,7 +1845,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Suenan las sirenas en Kiev',
+                    'message': 'Protesta contra la ocupación rusa en Berdyansk',
                     'date':'10/03/2022',
                     'time':'17:23',
                     'description': '<h3>Protesta contra la ocupación rusa en Berdyansk</h3><p>Protesta pacífica contra la ocupación rusa en Berdyansk, región de Zaporizhiya</p>',

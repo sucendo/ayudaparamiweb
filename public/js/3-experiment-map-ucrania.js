@@ -2735,11 +2735,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'07:29',
                     'description': '<h3>Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev</h3><p>La planta de aviones de Antonov, en Kiev, ha sido bombardeada por las fuerzas rusas, según han anunciado la alcaldía de la ciudad.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [30.392666174509916, 50.462220163572354]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Ofensiva rusa cerca de Donetsk',
+                    'date':'14/03/2022',
+                    'time':'07:50',
+                    'description': '<h3>Ofensiva terreste rusa cerca de Donetsk</h3><p>Fuentes Rusas informan de una ofensiva por parte del ejército ruso a las ciudades de Solodke, Stepne, Taramchuk, Slavne y Vodyane</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.499348810659626, 47.787347397224536]
                 }
             }
         ]

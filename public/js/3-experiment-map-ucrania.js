@@ -2739,7 +2739,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [23.521000766299487, 50.02048522336594]
+                    'coordinates': [23.500370731943796, 50.00513592244891]
                 }
             },
 	    {

@@ -2712,12 +2712,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [23.521000766299487, 50.02048522336594]
                 }
             },
-			{
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Bombardeo a un edificio residencial en el norte de Kiev',
+                    'date':'14/03/2022',
+                    'time':'07:26',
+                    'description': '<h3>Bombardeo a un edificio residencial en el norte de Kiev</h3><p>Al menos dos muertos y 12 heridos como resultado de un bombardeo a un edificio residencial en el norte de Kiev</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.486453205280093, 50.52269613410897]
+                }
+            },
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev',
                     'date':'14/03/2022',
-                    'time':'07:25',
+                    'time':'07:29',
                     'description': '<h3>Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev</h3><p>La planta de aviones de Antonov, en Kiev, ha sido bombardeada por las fuerzas rusas, según han anunciado la alcaldía de la ciudad.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [50, 50]

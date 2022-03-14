@@ -2718,7 +2718,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'message': 'Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev',
                     'date':'14/03/2022',
                     'time':'07:25',
-                    'description': '<h3>Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev</h3><p></p>',
+                    'description': '<h3>Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev</h3><p>La planta de aviones de Antonov, en Kiev, ha sido bombardeada por las fuerzas rusas, según han anunciado la alcaldía de la ciudad.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [50, 50]
                 },

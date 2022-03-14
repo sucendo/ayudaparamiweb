@@ -2700,6 +2700,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Las fuerzas rusas disparan su artilleria desde Trostyanets',
+                    'date':'12/03/2022',
+                    'time':'09:15',
+                    'description': '<h3>Las fuerzas rusas disparan su artilleria desde Trostyanets</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/artilleria-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [34.96571826217886, 50.481097284769845]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Ataque aéreo contra la Base de Yavoriv, en la región de Leópolis',
                     'date':'12/03/2022',
                     'time':'18:50',

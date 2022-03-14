@@ -2750,11 +2750,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'07:50',
                     'description': '<h3>Ofensiva terreste rusa cerca de Donetsk</h3><p>Fuentes Rusas informan de una ofensiva por parte del ejército ruso a las ciudades de Solodke, Stepne, Taramchuk, Slavne y Vodyane</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [37.499348810659626, 47.787347397224536]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Suenan las sirenas antiaereas en Járkov',
+                    'date':'14/03/2022',
+                    'time':'10:01',
+                    'description': '<h3>Suenan las sirenas antiaereas en Járkov</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaereo-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.23528038743257, 49.98542617885501]
                 }
             }
         ]

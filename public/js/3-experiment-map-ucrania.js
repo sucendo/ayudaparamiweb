@@ -1796,7 +1796,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       
       const geojson = {
         'type': 'FeatureCollection',
-        'features': [A destroyed bridge in Vyshgorod
+        'features': [
 	      {
                 'type': 'Feature',
                 'properties': {
@@ -1842,7 +1842,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.231617467501735, 50.53795853872888]
                 }
             },
-			{
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Enorme convoy Ruso dirigiendose a Kiev en Ivankiv',
@@ -1872,7 +1872,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18224284461808, 47.37120126219106]
                 }
             },
-			{
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombadeo Ucraniano a posiciones Rusas',

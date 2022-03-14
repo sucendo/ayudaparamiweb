@@ -1800,12 +1800,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev',
+                    'date':'14/03/2022',
+                    'time':'07:25',
+                    'description': '<h3>Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.392666174509916, 50.462220163572354]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Ataque aéreo contra la Base de Yavoriv, en la región de Leópolis',
                     'date':'13/03/2022',
                     'time':'06:15',
                     'description': '<h3>Ataque aéreo contra la Base de Yavoriv, en la región de Leópolis.</h3><p>El ejército ruso ha llevado a cabo un ataque aéreo contra el Centro Internacional para el Mantenimiento de la Paz y la Seguridad de Yavoriv. Según datos preliminares, se han disparado 8 misiles. El número de muertos por el ataque ruso es de 35 y 134 heridos.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -1820,7 +1835,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'13:32',
                     'description': '<h3>Suministro de gas interrumpido en Popasna</h3><p>Suministro de gas interrumpido en Popasna como resultado de bombardeos del ejército ruso</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/apagon-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',

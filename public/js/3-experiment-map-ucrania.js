@@ -1796,7 +1796,37 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       
       const geojson = {
         'type': 'FeatureCollection',
-        'features': [
+        'features': [A destroyed bridge in Vyshgorod
+	      {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Destruido el puente de Vyshgorod',
+                    'date':'25/02/2022',
+                    'time':'11:34',
+                    'description': '<h3>Destruido el puente de Vyshgorod</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.23510996432313, 50.44684315428579]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Volado el puente de la autopista M-06 Kiev-Zhytomir cerca de Stoyanka',
+                    'date':'26/02/2022',
+                    'time':'8:39',
+                    'description': '<h3>Volado el puente de la autopista M-06 Kiev-Zhytomir cerca de Stoyanka</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.23510996432313, 50.44684315428579]
+                }
+            },
             {
                 'type': 'Feature',
                 'properties': {
@@ -1827,7 +1857,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [29.89777845858527, 50.92103138498985]
                 }
             },
-			{
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Las tropas rusas capturan Kashpero-Mykolaivka',

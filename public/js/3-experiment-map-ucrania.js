@@ -2831,6 +2831,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.518641868452907, 50.45562758657535]
                 }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Un cohete cae al noreste de Kiev',
+                    'date':'14/03/2022',
+                    'time':'11:27',
+                    'description': '<h3>Un cohete cae al noreste de Kiev</h3><p>En Kiev, los restos de un cohete cayeron en la carretera de Kurenivka: una persona murió y seis resultaron heridas. Un trolebús quedó completamente destruido: no tenía pasajeros, las casas circundantes sufrieron daños.</p><img src="https://telegra.ph/file/27d48890d6a96688d01a1.jpg"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.42618183519792, 50.495015613055656]
+                }
             }
         ]
     };

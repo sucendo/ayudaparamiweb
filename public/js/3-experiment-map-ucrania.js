@@ -2652,7 +2652,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.24132017078246, 50.57818026166025]
                 }
             },
-			{
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Dispersado el largo convoy Ruso',
@@ -2667,7 +2667,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [29.96929998790423, 50.89415390507775]
                 }
             },
-			{
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Sirenas suenan en Kiev',
@@ -2682,7 +2682,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.505863136515025, 50.455531490506615]
                 }
             },
-			{
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Suministro de gas interrumpido en Popasna',
@@ -2697,7 +2697,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [38.40001698742611, 48.63109632479285]
                 }
             },
-			{
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Ataque aéreo contra la Base de Yavoriv, en la región de Leópolis',
+                    'date':'12/03/2022',
+                    'time':'18:50',
+                    'description': '<h3>Tanques rusos a las afueras occidentales de Mariupol</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/blindado-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.511000246048766, 47.11027408342846]
+                }
+            },
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Ataque aéreo contra la Base de Yavoriv, en la región de Leópolis',

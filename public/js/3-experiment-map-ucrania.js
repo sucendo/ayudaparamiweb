@@ -2760,6 +2760,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Fuertes enfrentamientos reportados cerca de Brovary',
+                    'date':'14/03/2022',
+                    'time':'08:27',
+                    'description': '<h3>Fuertes enfrentamientos reportados cerca de Brovary</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.86508016546705, 50.544559664961874]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Suenan las sirenas antiaereas en Járkov',
                     'date':'14/03/2022',
                     'time':'10:01',

@@ -2764,7 +2764,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'14/03/2022',
                     'time':'10:01',
                     'description': '<h3>Suenan las sirenas antiaereas en Járkov</h3><p></p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/antiaereo-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
                     'iconSize': [50, 50]
                 },
                 'geometry': {

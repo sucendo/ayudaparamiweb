@@ -2825,7 +2825,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'10:29',
                     'description': '<h3>Suenan las sirenas antiaereas en Kiev</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -2839,12 +2839,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'14/03/2022',
                     'time':'11:27',
                     'description': '<h3>Un cohete cae al noreste de Kiev</h3><p>En Kiev, los restos de un cohete cayeron en la carretera de Kurenivka: una persona murió y seis resultaron heridas. Un trolebús quedó completamente destruido: no tenía pasajeros, las casas circundantes sufrieron daños.</p><img src="https://telegra.ph/file/27d48890d6a96688d01a1.jpg"/>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/sirena-blue.svg',
-                    'iconSize': [50, 50]
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [30.42618183519792, 50.495015613055656]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Gran destrucción como resultado de los bombardeos en el centro de Járkov',
+                    'date':'14/03/2022',
+                    'time':'12:25',
+                    'description': '<h3>Gran destrucción como resultado de los bombardeos en el centro de Járkov</h3><p></p><img src="https://liveuamap.com/pics/2022/03/14/22407030_0.jpg"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.240446378195, 50.00253021405988]
                 }
             }
         ]

@@ -2757,7 +2757,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [37.499348810659626, 47.787347397224536]
                 }
             },
-	    {50.45562758657535, 30.518641868452907
+	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Suenan las sirenas antiaereas en Járkov',

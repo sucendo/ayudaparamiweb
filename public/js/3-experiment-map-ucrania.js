@@ -2891,6 +2891,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [36.240446378195, 50.00253021405988]
                 }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Fustrado un intento de romper las líneas defensivas al noroeste de Kiev',
+                    'date':'15/03/2022',
+                    'time':'12:25',
+                    'description': '<h3>Fustrado un intento de romper las líneas defensivas al noroeste de Kiev</h3><p>El ejército ucraniano afirma haber frustrado otro intento de las fuerzas rusas de romper la línea defensiva a lo largo del río Irpin al norte de Kiev, esta vez en dirección a Huta Mezhyhirska y Lyutizh.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.29522219600498, 50.6687435635732]
+                }
             }
         ]
     };

@@ -2895,9 +2895,24 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Bombardeado un edificio residencial en el distrito Svyatoshinsky de Kiev',
+                    'date':'15/03/2022',
+                    'time':'07:40',
+                    'description': '<h3>Bombardeado un edificio residencial en el distrito Svyatoshinsky de Kiev</h3><p>2 muertos como resultado del bombardeo del ejército ruso contra casas residenciales en el distrito Svyatoshinsky de Kiev</p><img src="https://liveuamap.com/pics/2022/03/14/22407030_0.jpg"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.346429048731014, 50.46354740595913]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Los bombardeos rusos atacaran el Barrio de Lukyanivska en Kiev',
-                    'date':'14/03/2022',
-                    'time':'9:11',
+                    'date':'15/03/2022',
+                    'time':'09:11',
                     'description': '<h3>Los bombardeos rusos atacaran el Barrio de Lukyanivska en Kiev</h3><p></p><img src="https://pbs.twimg.com/media/FN4FJPFWUAImU63?format=jpg&name=900x900"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
                     'iconSize': [40, 40]

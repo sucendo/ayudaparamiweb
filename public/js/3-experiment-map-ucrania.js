@@ -2885,7 +2885,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'12:25',
                     'description': '<h3>Gran destrucción como resultado de los bombardeos en el centro de Járkov</h3><p></p><img src="https://liveuamap.com/pics/2022/03/14/22407030_0.jpg"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -2895,16 +2895,61 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Los bombardeos rusos atacaran el Barrio de Lukyanivska en Kiev',
+                    'date':'14/03/2022',
+                    'time':'9:11',
+                    'description': '<h3>Los bombardeos rusos atacaran el Barrio de Lukyanivska en Kiev</h3><p></p><img src="https://pbs.twimg.com/media/FN4FJPFWUAImU63?format=jpg&name=900x900"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.481430099309243, 50.46167915862856]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Dos misiles rusos bombardean el aeropuerto de en la ciudad de Dnipro',
+                    'date':'15/03/2022',
+                    'time':'10:40',
+                    'description': '<h3>Dos misiles rusos bombardean el aeropuerto de en la ciudad de Dnipro</h3><p>La terminal está dañada y la pista destruida.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.09382089094837, 48.36715966557559]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Dos misiles rusos bombardean el aeropuerto de en la ciudad de Dnipro',
+                    'date':'15/03/2022',
+                    'time':'10:40',
+                    'description': '<h3>Dos misiles rusos bombardean el aeropuerto de en la ciudad de Dnipro</h3><p>La terminal está dañada y la pista destruida.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.1012898460177, 48.35749622036678]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Fustrado un intento de romper las líneas defensivas al noroeste de Kiev',
                     'date':'15/03/2022',
                     'time':'12:25',
                     'description': '<h3>Fustrado un intento de romper las líneas defensivas al noroeste de Kiev</h3><p>El ejército ucraniano afirma haber frustrado otro intento de las fuerzas rusas de romper la línea defensiva a lo largo del río Irpin al norte de Kiev, esta vez en dirección a Huta Mezhyhirska y Lyutizh.</p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
                     'iconSize': [50, 50]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [30.29522219600498, 50.6687435635732]
+                    'coordinates': [48.36715966557559, 35.09382089094837]
                 }
             }
         ]

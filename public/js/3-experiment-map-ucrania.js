@@ -2970,11 +2970,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'09:28',
                     'description': '<h3>Amanece en Vinnytsia, bombardeada por misiles rusos durante la noche</h3><p></p><img src="https://telegra.ph/file/841907b2895ec3c30a9cf.jpg"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [28.5247676239981, 49.228137420847965]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Amanece en Vinnytsia, bombardeada por misiles rusos durante la noche',
+                    'date':'16/03/2022',
+                    'time':'12:10',
+                    'description': '<h3>Buques de guerra rusos bombardean la costa en el área de Lebedevka, Sanzheyka, Zatoka y Belenky</h3><p></p><img src="https://telegra.ph/file/841907b2895ec3c30a9cf.jpg"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.600608983162573, 46.22035502868877]
                 }
             }
         ]

@@ -2955,11 +2955,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'12:25',
                     'description': '<h3>Fustrado un intento de romper las líneas defensivas al noroeste de Kiev</h3><p>El ejército ucraniano afirma haber frustrado otro intento de las fuerzas rusas de romper la línea defensiva a lo largo del río Irpin al norte de Kiev, esta vez en dirección a Huta Mezhyhirska y Lyutizh.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [48.36715966557559, 35.09382089094837]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Amanece en Vinnytsia, bombardeada por misiles rusos durante la noche',
+                    'date':'16/03/2022',
+                    'time':'09:28',
+                    'description': '<h3>Amanece en Vinnytsia, bombardeada por misiles rusos durante la noche</h3><p></p><img src="https://telegra.ph/file/841907b2895ec3c30a9cf.jpg"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [28.5247676239981, 49.228137420847965]
                 }
             }
         ]

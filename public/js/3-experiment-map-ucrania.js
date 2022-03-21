@@ -2985,7 +2985,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'12:10',
                     'description': '<h3>Buques de guerra rusos bombardean la costa en el área de Lebedevka, Sanzheyka, Zatoka y Belenky</h3><p></p><img src="https://telegra.ph/file/841907b2895ec3c30a9cf.jpg"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
@@ -3000,11 +3000,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'17:05',
                     'description': '<h3>Continua la batalla urbana al sureste de Mariupol</h3><p></p><img src="https://pbs.twimg.com/media/FOThvVZWYAMZTDX?format=jpg&name=small"/>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [37.660350481631596, 47.09965704369272]
+                }
+            }, 
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'La artillería naval rusa bombardea y daña varios edificios en Odesa',
+                    'date':'21/03/2022',
+                    'time':'09:05',
+                    'description': '<h3>La artillería naval rusa bombardea y daña varios edificios en Odesa</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.758936018372136, 46.46685407389331]
                 }
             }
         ]

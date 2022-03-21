@@ -2991,6 +2991,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.600608983162573, 46.22035502868877]
                 }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Continua la batalla urbana al sureste de Mariupol',
+                    'date':'20/03/2022',
+                    'time':'17:05',
+                    'description': '<h3>Continua la batalla urbana al sureste de Mariupol</h3><p></p><img src="https://pbs.twimg.com/media/FOThvVZWYAMZTDX?format=jpg&name=small"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.660350481631596, 47.09965704369272]
+                }
             }
         ]
     };

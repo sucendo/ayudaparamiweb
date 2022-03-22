@@ -16,6 +16,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/herramientas', function(request, response) {
+  response.render('pages/tools');
+});
+
 app.get('/experimentos', function(request, response) {
   response.render('pages/experiments');
 });

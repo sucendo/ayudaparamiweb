@@ -2826,10 +2826,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
-                    'message': 'Se encuentra 410 cuerpos de civiles en Bucha',
+                    'message': 'Se encuentra 410 cuerpos de civiles en las calles de Bucha',
                     'date':'03/04/2022',
                     'time':'18:08',
-                    'description': '<h3>Se encuentra 410 cuerpos de civiles en Bucha</h3><p></p>',
+                    'description': '<h3>Se encuentra 410 cuerpos de civiles en las calles de Bucha</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/muertes-blue.svg',
                     'iconSize': [50, 50]
                 },

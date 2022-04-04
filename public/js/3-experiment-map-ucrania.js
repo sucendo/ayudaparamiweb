@@ -1577,7 +1577,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
 		
 		map.addLayer({
-            'id': 'park-boundary',
+            'id': 'park-boundary-uc',
             'type': 'fill',
             'source': 'war-ucraine-uc',
             'paint': {

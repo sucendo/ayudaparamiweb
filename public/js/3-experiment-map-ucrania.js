@@ -2794,13 +2794,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'09:05',
                     'description': '<h3>La artillería naval rusa bombardea y daña varios edificios en Odesa</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [30.758936018372136, 46.46685407389331]
                 }
-            }
+            }, 
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Se encuentra 410 cuerpos de civiles en Bucha',
+                    'date':'03/04/2022',
+                    'time':'18:08',
+                    'description': '<h3>Se encuentra 410 cuerpos de civiles en Bucha</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/muerte-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.223617135553532, 50.54720183210865]
+                }
+	    }    
         ]
     };
       

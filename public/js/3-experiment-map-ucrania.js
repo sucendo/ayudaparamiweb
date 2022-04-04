@@ -2875,7 +2875,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'date':'04/04/2022',
                     'time':'07:42',
                     'description': '<h3>Ucrania restablece el control hasta la frontera con Rusia, en la región de Sumy</h3><p></p>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/muertes-blue.svg',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
                     'iconSize': [50, 50]
                 },
                 'geometry': {

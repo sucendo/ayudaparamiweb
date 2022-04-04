@@ -2826,6 +2826,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Tropas de asalto aerotransportadas ucranianas controlan la ciudad de Pripyat',
+                    'date':'03/04/2022',
+                    'time':'11:00',
+                    'description': '<h3>Tropas de asalto aerotransportadas ucranianas controlan la ciudad de Pripyat</h3><p></p><img src="https://telegra.ph/file/a3b1e8ad7a53abd20db95.jpg"/>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.077322968741427, 51.39357475082056]
+                }
+	    },
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Tropas ucranianas controlan partes de la frontera estatal entre Bielorrusia y Ucrania',
                     'date':'03/04/2022',
                     'time':'11:31',

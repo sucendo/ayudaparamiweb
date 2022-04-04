@@ -2822,7 +2822,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.758936018372136, 46.46685407389331]
                 }
-            }, 
+            },  
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Tropas ucranianas controlan partes de la frontera estatal entre Bielorrusia y Ucrania',
+                    'date':'03/04/2022',
+                    'time':'11:31',
+                    'description': '<h3>Tropas ucranianas controlan partes de la frontera estatal entre Bielorrusia y Ucrania</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [29.45244189300245  , 51.40546239855933]
+                }
+	    },	
 	    {
                 'type': 'Feature',
                 'properties': {
@@ -2837,7 +2852,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.223617135553532, 50.54720183210865]
                 }
-	    }    
+	    }
         ]
     };
       

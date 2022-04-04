@@ -2861,13 +2861,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'18:08',
                     'description': '<h3>Se encuentra 410 cuerpos de civiles en las calles de Bucha</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/muertes-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [30.223617135553532, 50.54720183210865]
                 }
-	    }
+	    },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Ucrania restablece el control hasta la frontera con Rusia, en la región de Sumy',
+                    'date':'04/04/2022',
+                    'time':'07:42',
+                    'description': '<h3>Ucrania restablece el control hasta la frontera con Rusia, en la región de Sumy</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/muertes-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [34.321257221219426, 51.87406593746017]
+                }
+	    } 
         ]
     };
       

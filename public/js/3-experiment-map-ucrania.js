@@ -1034,7 +1034,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
               [29.862538, 45.472591]
                                 ]
                             ]
-                        },
+                    	}
+                    },
                     {
                         'type': 'Feature',
                         'geometry': {

@@ -63,7 +63,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         'fill-extrusion-opacity': 0.6
         }
      });
-	    
+	
+	    // Add imagen bucha
 	map.addSource('radar', {
             'type': 'image',
             'url': 'https://media.urgente24.com/p/805a75793838e06ba6a508e07b9f4c99/adjuntos/319/imagenes/002/658/0002658006/el-nyt-analiza-imagenes-satelitales-bucha-maxar.png',
@@ -74,6 +75,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 [30.229510267516442, 50.541150514087995]
             ]
         });
+	map.addLayer({
+            id: 'radar-layer',
+            'type': 'raster',
+            'source': 'radar',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });    
 
 	    
 	    

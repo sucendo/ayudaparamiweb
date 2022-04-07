@@ -104,6 +104,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             }
         });    
 	    
+	// Add imagen Batalla por Mariupol  
+	map.addSource('2022-03-29-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-03-29-00_00_2022-03-29-23_59_Sentinel-2_L1C_Wildfires.jpg',
+            'coordinates': [
+                [37.54088, 47.09660],
+                [37.57054, 47.09660],
+                [37.57054, 47.08222],
+                [37.54088, 47.08222]
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-29-layer',
+            'type': 'raster',
+            'source': '2022-03-29-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });        
+	    
 	map.addSource('radar', {
             'type': 'image',
             'url': 'https://media.urgente24.com/p/805a75793838e06ba6a508e07b9f4c99/adjuntos/319/imagenes/002/658/0002658006/el-nyt-analiza-imagenes-satelitales-bucha-maxar.png',
@@ -3130,6 +3150,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.20597, 50.54164]
                 }
             },	
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Consecuencias de la Batalla por Mariupol',
+                    'date':'29/03/2022',
+                    'time':'09:05',
+                    'description': '<h3>Consecuencias de la Batalla por Mariupol</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.54088, 47.09660]
+                }
+            },			
 	    {
                 'type': 'Feature',
                 'properties': {

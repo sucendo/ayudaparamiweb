@@ -83,6 +83,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'raster-fade-duration': 0
             }
         });
+	 
+	// Add imagen Batalla por Irpin  
+	map.addSource('2022-03-23-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-03-23-00_00_2022-03-23-23_59_Sentinel-2_L1C_Wildfires.jpg',
+            'coordinates': [
+                [30.20597, 50.54164],
+                [30.30244, 50.54164],
+                [30.30244, 50.50862],
+                [30.20597, 50.50862]
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-23-layer',
+            'type': 'raster',
+            'source': '2022-03-23-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });    
 	    
 	map.addSource('radar', {
             'type': 'image',

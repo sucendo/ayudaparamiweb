@@ -1868,6 +1868,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)',
+                    'date':'26/02/2022',
+                    'time':'8:39',
+                    'description': '<h3>Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.15644, 50.60863]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Volado el puente de la autopista M-06 Kiev-Zhytomir cerca de Stoyanka',
                     'date':'26/02/2022',
                     'time':'8:39',

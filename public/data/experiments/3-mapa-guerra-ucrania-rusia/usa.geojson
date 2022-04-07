@@ -3,7 +3,7 @@
 	"features":[
 		{
 			"type":"Feature",
-			"properties":{"name":"Frente Norte","name_alt":"N1|Kiev","wikipedia":"http://en.wikipedia.org/wiki/Minnesota"},
+			"properties":{"name":"Frente Norte","name_alt":"N1|Kiev","date":"2022-04-06""url":"https://www.elmundo.es/internacional/2022/03/17/6232cedcfc6c831a798b45a9.html"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[

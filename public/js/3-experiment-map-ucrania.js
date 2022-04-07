@@ -64,7 +64,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         }
      });
 	
-	    // Add imagen bucha
+	// Add imagen Gostomel Airport (Ataque)
+	map.addSource('2022-02-26-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-02-26-00_00_2022-02-26-23_59_Sentinel-2_L1C_Wildfires.jpg',
+            'coordinates': [
+                [30.15644, 50.60863],
+                [30.23086, 50.60863],
+                [30.23060, 50.58258],
+                [30.15644, 50.58258]
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-layer',
+            'type': 'raster',
+            'source': '2022-02-26-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });
+	    
 	map.addSource('radar', {
             'type': 'image',
             'url': 'https://media.urgente24.com/p/805a75793838e06ba6a508e07b9f4c99/adjuntos/319/imagenes/002/658/0002658006/el-nyt-analiza-imagenes-satelitales-bucha-maxar.png',

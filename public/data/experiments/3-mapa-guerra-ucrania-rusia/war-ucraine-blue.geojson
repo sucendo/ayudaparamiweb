@@ -1,11 +1,11 @@
 {
-	'type': 'FeatureCollection',
-	'features': [
+	"type": "FeatureCollection",
+	"features": [
 		{
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Polygon',
-				'coordinates': [
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
 					[
 						[29.324872, 51.379307], 
 						[29.293269, 51.365112], 
@@ -107,10 +107,10 @@
 			}
 		},
 {
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Polygon',
-				'coordinates': [
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
 					[
 						[30.642152, 51.337394], 
 						[30.692964, 51.348546], 
@@ -149,10 +149,10 @@
 			}
 		},
 		{
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Polygon',
-				'coordinates': [
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
 					[
 						[31.21757, 51.624836], 
 						[31.228556, 51.630377], 
@@ -217,10 +217,10 @@
 			}
 		},
 		{
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Polygon',
-				'coordinates': [
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
 					[
 						[33.290526, 52.35813], 
 						[33.255948, 52.365166], 
@@ -253,10 +253,10 @@
 			}
 		},
 		{
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Polygon',
-				'coordinates': [
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
 					[
 						[31.42745, 52.14131], 
 						[31.330633, 52.109272], 
@@ -321,10 +321,10 @@
 			}
 		},
 		{
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Polygon',
-				'coordinates': [
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
 					[
 						[32.541201, 52.32893], 
 						[32.483523, 52.318858], 
@@ -355,10 +355,10 @@
 			}
 		},
 {
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Polygon',
-				'coordinates': [
+			"type": "Feature",
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
 					[
 						[33.905958, 51.655754], 
 						[33.858315, 51.674358], 

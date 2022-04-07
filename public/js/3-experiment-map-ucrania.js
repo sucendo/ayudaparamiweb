@@ -3118,6 +3118,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Consecuencias de la Batalla por Irpin',
+                    'date':'23/03/2022',
+                    'time':'09:05',
+                    'description': '<h3>Consecuencias de la Batalla por Irpin</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [30.20597, 50.54164]
+                }
+            },	
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'Tropas de asalto aerotransportadas ucranianas controlan la ciudad de Pripyat',
                     'date':'03/04/2022',
                     'time':'11:00',

@@ -1336,7 +1336,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
 		
 	map.addLayer({
-            'id': 'war-ucraine-control-blue',
+            'id': 'war-ucraine-blue-layer',
             'type': 'fill',
             'source': 'war-ucraine-blue',
             'paint': {

@@ -3114,13 +3114,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'07:42',
                     'description': '<h3>Ucrania restablece el control hasta la frontera con Rusia, en la región de Sumy</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [34.321257221219426, 51.87406593746017]
                 }
-	    } 
+	    },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Tropas Rusas Bombardean Sievierodonetsk, Lysychansk, Hirske y Zolote en la región de Lugansk',
+                    'date':'07/04/2022',
+                    'time':'08:12',
+                    'description': '<h3>Tropas Rusas Bombardean Sievierodonetsk, Lysychansk, Hirske y Zolote en la región de Lugansk</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.47345612578738, 48.89078569706745]
+                }
+	    }  
         ]
     };
       

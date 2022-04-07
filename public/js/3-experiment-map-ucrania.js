@@ -1332,7 +1332,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	map.addSource('war-ucraine-blue', {
             'type': 'geojson',
 	    // Use a URL for the value for the `data` property.	
-            'data': 'http://www.ayudaparamiweb.com/data/experiments/3-mapa-guerra-ucrania-rusia/war-ucraine-blue.json'
+            'data': 'http://www.ayudaparamiweb.com/data/experiments/3-mapa-guerra-ucrania-rusia/war-ucraine-blue.geojson'
         });
 		
 	map.addLayer({

@@ -2,12 +2,35 @@
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "id": "ak16994521", "mag": 2.3, "time": 1507425650893, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -151.5129, 63.1016, 0.0 ] } },
-{ "type": "Feature", "properties": { "id": "ak16994519", "mag": 1.7, "time": 1507425289659, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -150.4048, 63.1224, 105.5 ] } },
-{ "type": "Feature", "properties": { "id": "ak16994517", "mag": 1.6, "time": 1507424832518, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -151.3597, 63.0781, 0.0 ] } },
-{ "type": "Feature", "properties": { "id": "ci38021336", "mag": 1.42, "time": 1507423898710, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -118.497, 34.299667, 7.64 ] } },
-{ "type": "Feature", "properties": { "id": "us2000b2nn", "mag": 4.2, "time": 1507422626990, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -87.6901, 12.0623, 46.41 ] } },
-{ "type": "Feature", "properties": { "id": "ak16994510", "mag": 1.6, "time": 1507422449194, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -151.5053, 63.0719, 0.0 ] } },
-{ "type": "Feature", "properties": { "id": "us2000b2nb", "mag": 4.6, "time": 1507420784440, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ -178.4576, -20.2873, 614.26 ] } }
+{ 
+                "type": "Feature",
+                "properties": {
+                    "message": "Destruido el puente de Vyshgorod",
+                    "date":"25/02/2022",
+                    "time":"11:34",
+                    "description": "<h3>Destruido el puente de Vyshgorod</h3>",
+                    "icon": "http://www.ayudaparamiweb.com/icons/explosion-blue.svg",
+                    "iconSize": [40, 40]
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [30.23510996432313, 50.44684315428579]
+                }
+},
+{ 
+                "type": "Feature",
+                "properties": {
+                    "message": "Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)",
+                    "date":"26/02/2022",
+                    "time":"8:39",
+                    "description": "<h3>Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)</h3>",
+                    "icon": "http://www.ayudaparamiweb.com/icons/satelite-white.svg",
+                    "iconSize": [40, 40]
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [30.15644, 50.60863]
+                }
+}
 ]
 }

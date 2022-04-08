@@ -175,10 +175,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'filter': ['==', '$type', 'Polygon']
         });
       
-      const geojson = 'http://www.ayudaparamiweb.com/data/experiments/3-mapa-guerra-ucrania-rusia/war-ucraine-events.geojson';
+	    
+	map.addSource('war-ucraine-events', {
+            'type': 'geojson',
+	    // Use a URL for the value for the `data` property.	
+            'data': 'http://www.ayudaparamiweb.com/data/experiments/3-mapa-guerra-ucrania-rusia/war-ucraine-events.geojson'
+        });
+      //const geojson = 'http://www.ayudaparamiweb.com/data/experiments/3-mapa-guerra-ucrania-rusia/war-ucraine-events.geojson';
       
        // Add markers to the map.
-    for (const marker of geojson.features) {
+    for (const marker of war-ucraine-events.features) {
         // Create a DOM element for each marker.
         const el = document.createElement('div');
         var width = marker.properties.iconSize[0];

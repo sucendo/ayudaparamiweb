@@ -1,34 +1,34 @@
 {
-        'type': 'FeatureCollection',
-        'features': [
+        "type": "FeatureCollection",
+        "features": [
 	      {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Destruido el puente de Vyshgorod',
-                    'date':'25/02/2022',
-                    'time':'11:34',
-                    'description': '<h3>Destruido el puente de Vyshgorod</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-blue.svg',
-                    'iconSize': [40, 40]
+                "type": "Feature",
+                "properties": {
+                    "message": "Destruido el puente de Vyshgorod",
+                    "date":"25/02/2022",
+                    "time":"11:34",
+                    "description": "<h3>Destruido el puente de Vyshgorod</h3>",
+                    "icon": "http://www.ayudaparamiweb.com/icons/explosion-blue.svg",
+                    "iconSize": [40, 40]
                 },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [30.23510996432313, 50.44684315428579]
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [30.23510996432313, 50.44684315428579]
                 }
             },
 	    {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)',
-                    'date':'26/02/2022',
-                    'time':'8:39',
-                    'description': '<h3>Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
-                    'iconSize': [40, 40]
+                "type": "Feature",
+                "properties": {
+                    "message": "Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)",
+                    "date":"26/02/2022",
+                    "time":"8:39",
+                    "description": "<h3>Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)</h3>",
+                    "icon": "http://www.ayudaparamiweb.com/icons/satelite-white.svg",
+                    "iconSize": [40, 40]
                 },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [30.15644, 50.60863]
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [30.15644, 50.60863]
                 }
             }
         ]

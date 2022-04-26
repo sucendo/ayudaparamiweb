@@ -142,7 +142,67 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });      
+        });   
+	
+	// Add imagen Batalla por Mariupol  
+	map.addSource('2022-04-23-sentinel-2', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires-2.png',
+            'coordinates': [
+                [49.17615, 37.01311],
+		[49.14399, 37.01311],
+		[49.14399, 37.09611],
+		[49.17615, 37.09611]
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-20220423-2-layer',
+            'type': 'raster',
+            'source': '2022-04-23-sentinel-2',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });
+	    
+	// Add imagen Batalla por Mariupol  
+	map.addSource('2022-04-23-sentinel-3', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires-3.png',
+            'coordinates': [
+                [49.02262, 37.29592],
+		[48.99047, 37.29592],
+		[48.99047, 37.37866],
+		[49.02262, 37.37866],
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-20220423-3-layer',
+            'type': 'raster',
+            'source': '2022-04-23-sentinel-3',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });
+	    
+	// Add imagen Batalla por Mariupol  
+	map.addSource('2022-04-23-sentinel-4', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires-4.png',
+            'coordinates': [
+		[48.63114, 38.36960],
+		[48.62301, 38.36960],
+		[48.62301, 38.39031],
+		[48.63114, 38.39031]
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-20220423-4-layer',
+            'type': 'raster',
+            'source': '2022-04-23-sentinel-4',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });    
 	    
 	map.addSource('radar', {
             'type': 'image',

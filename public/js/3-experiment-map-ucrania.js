@@ -204,6 +204,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             }
         });    
 	    
+	// Add imagen Batalla por Mariupol  
+	map.addSource('2022-04-26-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-04-26-00_00_2022-04-26-23_59_Sentinel-2_L1C_Wildfires.png',
+            'coordinates': [
+		[47.83776, 36.78137],
+		[47.78894, 36.78137],
+		[47.78894, 36.86093],
+		[47.83776, 36.86093]
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-20220426-layer',
+            'type': 'raster',
+            'source': '2022-04-26-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });      
+	    
 	map.addSource('radar', {
             'type': 'image',
             'url': 'https://media.urgente24.com/p/805a75793838e06ba6a508e07b9f4c99/adjuntos/319/imagenes/002/658/0002658006/el-nyt-analiza-imagenes-satelitales-bucha-maxar.png',

@@ -122,7 +122,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });        
+        });    
+	    
+	// Add imagen Batalla por Mariupol  
+	map.addSource('2022-04-23-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires.png',
+            'coordinates': [
+                [48.94293, 37.24453],
+                [48.93488, 37.24453],
+                [48.93488, 37.26528],
+                [48.94293, 37.26528]
+            ]
+        });
+	map.addLayer({
+            id: 'sentinel-20220423-layer',
+            'type': 'raster',
+            'source': '2022-04-23-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });      
 	    
 	map.addSource('radar', {
             'type': 'image',

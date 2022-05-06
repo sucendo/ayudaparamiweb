@@ -36,8 +36,6 @@ app.get('/comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primari
   response.render('experiments/4-comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022.ejs');
 });
 
-
-
 app.get('/entornos-colaborativos', function(request, response) {
   response.render('news/21-entornos-colaborativos');
 });

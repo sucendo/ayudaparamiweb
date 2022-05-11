@@ -1628,13 +1628,43 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'08:12',
                     'description': '<h3>Tropas Rusas Bombardean Sievierodonetsk, Lysychansk, Hirske y Zolote en la región de Lugansk</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [38.47345612578738, 48.89078569706745]
                 }
-	    }  
+	    },
+        { 
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Varias poblaciones han sido liberadas en la región Noreste de Jarkov',
+                    'date':'10/05/2022',
+                    'time':'17:12',
+                    'description': '<h3>Varias poblaciones han sido liberadas en la región Noreste de Jarkov</h3><p>El Estado Mayor de las Fuerzas Armadas de Ucrania informa: Que como resulatdo de las acciones coordinadas de las Fuerzas de Defensa de Ucrania en la región de Jarkov, liberan las poblaciones de Cherkasy Tyshky, Rusky Tyshky, Rubizhne y Bayrak.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.82998280204848, 50.16567275683486]
+                }
+        },
+        {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Fuerte explosión en el distrito de Kramatorsk',
+                    'date':'11/05/2022',
+                    'time':'12:46',
+                    'description': '<h3>El ejército ruso bombardea almacenes con nitrato de amonio en el distrito de Kramatorsk</h3><p></p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.59281677952075, 48.78118566613954]
+                }
+        }
         ]
     };
       

@@ -26,7 +26,7 @@ app.get('/experimentos', function(request, response) {
 });
 
 //autores
-app.get('/autores/sucender', function(request, response) {
+app.get('/sucender', function(request, response) {
   response.render('authors/sucender');
 });
 

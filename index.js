@@ -12,6 +12,7 @@ app.use(opbeat.middleware.express())
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
+//principales
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
@@ -24,6 +25,12 @@ app.get('/experimentos', function(request, response) {
   response.render('pages/experiments');
 });
 
+//autores
+app.get('/autores/sucender', function(request, response) {
+  response.render('authors/sucender');
+});
+
+//experimentos
 app.get('/rusia-ataca-ucrania', function(request, response) {
   response.render('experiments/2-rusia-ataca-ucrania');
 });
@@ -36,6 +43,7 @@ app.get('/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-me
   response.render('experiments/4-comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022.ejs');
 });
 
+//articulos
 app.get('/entornos-colaborativos', function(request, response) {
   response.render('news/21-entornos-colaborativos');
 });

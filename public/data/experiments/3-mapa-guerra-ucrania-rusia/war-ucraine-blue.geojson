@@ -3,12 +3,12 @@
 	"features":[
 		{
 			"type":"Feature",
-			"properties":{"scalerank":2,"adm1_code":"USA-3514","diss_me":3514,"adm1_cod_1":"USA-3514","iso_3166_2":"US-MN","wikipedia":"http://en.wikipedia.org/wiki/Minnesota","sr_sov_a3":"US1","sr_adm0_a3":"USA","iso_a2":"US","adm0_sr":1,"admin0_lab":2,"name":"Minnesota","name_alt":"MN|Minn.","name_local":null,"type":"State","type_en":"State","code_local":"US32","code_hasc":"US.MN","note":null,"hasc_maybe":null,"region":"Midwest","region_cod":null,"region_big":"West North Central","big_code":null,"provnum_ne":0,"gadm_level":1,"check_me":10,"scaleran_1":2,"datarank":1,"abbrev":"Minn.","postal":"MN","area_sqkm":0,"sameascity":-99,"labelrank":0,"featurec_1":"Admin-1 scale rank","admin":"United States of America","name_len":9,"mapcolor9":1,"mapcolor13":1,"featureclass":"Admin-1 scale rank"},
+			"properties":{"name":"N1","name_alt":"Contraofensiva N1","date":"2022-05-11"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[
 					[
-[29.324872, 51.379307], 
+						[29.324872, 51.379307], 
 						[29.293269, 51.365112], 
 						[29.34686, 51.23426], 
 						[29.704698, 50.97183], 
@@ -109,7 +109,7 @@
 		},
 		{
 			"type":"Feature",
-			"properties":{"scalerank":2,"adm1_code":"USA-3514","diss_me":3514,"adm1_cod_1":"USA-3514","iso_3166_2":"US-MN","wikipedia":"http://en.wikipedia.org/wiki/Minnesota","sr_sov_a3":"US1","sr_adm0_a3":"USA","iso_a2":"US","adm0_sr":1,"admin0_lab":2,"name":"Minnesota","name_alt":"MN|Minn.","name_local":null,"type":"State","type_en":"State","code_local":"US32","code_hasc":"US.MN","note":null,"hasc_maybe":null,"region":"Midwest","region_cod":null,"region_big":"West North Central","big_code":null,"provnum_ne":0,"gadm_level":1,"check_me":10,"scaleran_1":2,"datarank":1,"abbrev":"Minn.","postal":"MN","area_sqkm":0,"sameascity":-99,"labelrank":0,"featurec_1":"Admin-1 scale rank","admin":"United States of America","name_len":9,"mapcolor9":1,"mapcolor13":1,"featureclass":"Admin-1 scale rank"},
+			"properties":{"name":"N2","name_alt":"Contraofensiva N2","date":"2022-05-11"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[
@@ -152,7 +152,7 @@
 		},
 		{
 			"type":"Feature",
-			"properties":{"scalerank":2,"adm1_code":"USA-3514","diss_me":3514,"adm1_cod_1":"USA-3514","iso_3166_2":"US-MN","wikipedia":"http://en.wikipedia.org/wiki/Minnesota","sr_sov_a3":"US1","sr_adm0_a3":"USA","iso_a2":"US","adm0_sr":1,"admin0_lab":2,"name":"Minnesota","name_alt":"MN|Minn.","name_local":null,"type":"State","type_en":"State","code_local":"US32","code_hasc":"US.MN","note":null,"hasc_maybe":null,"region":"Midwest","region_cod":null,"region_big":"West North Central","big_code":null,"provnum_ne":0,"gadm_level":1,"check_me":10,"scaleran_1":2,"datarank":1,"abbrev":"Minn.","postal":"MN","area_sqkm":0,"sameascity":-99,"labelrank":0,"featurec_1":"Admin-1 scale rank","admin":"United States of America","name_len":9,"mapcolor9":1,"mapcolor13":1,"featureclass":"Admin-1 scale rank"},
+			"properties":{"name":"N3","name_alt":"Contraofensiva N3","date":"2022-05-11"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[
@@ -221,7 +221,7 @@
 		},
 		{
 			"type":"Feature",
-			"properties":{"scalerank":2,"adm1_code":"USA-3514","diss_me":3514,"adm1_cod_1":"USA-3514","iso_3166_2":"US-MN","wikipedia":"http://en.wikipedia.org/wiki/Minnesota","sr_sov_a3":"US1","sr_adm0_a3":"USA","iso_a2":"US","adm0_sr":1,"admin0_lab":2,"name":"Minnesota","name_alt":"MN|Minn.","name_local":null,"type":"State","type_en":"State","code_local":"US32","code_hasc":"US.MN","note":null,"hasc_maybe":null,"region":"Midwest","region_cod":null,"region_big":"West North Central","big_code":null,"provnum_ne":0,"gadm_level":1,"check_me":10,"scaleran_1":2,"datarank":1,"abbrev":"Minn.","postal":"MN","area_sqkm":0,"sameascity":-99,"labelrank":0,"featurec_1":"Admin-1 scale rank","admin":"United States of America","name_len":9,"mapcolor9":1,"mapcolor13":1,"featureclass":"Admin-1 scale rank"},
+			"properties":{"name":"N4","name_alt":"Contraofensiva N4","date":"2022-05-11"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[
@@ -258,7 +258,7 @@
 		},
 		{
 			"type":"Feature",
-			"properties":{"scalerank":2,"adm1_code":"USA-3514","diss_me":3514,"adm1_cod_1":"USA-3514","iso_3166_2":"US-MN","wikipedia":"http://en.wikipedia.org/wiki/Minnesota","sr_sov_a3":"US1","sr_adm0_a3":"USA","iso_a2":"US","adm0_sr":1,"admin0_lab":2,"name":"Minnesota","name_alt":"MN|Minn.","name_local":null,"type":"State","type_en":"State","code_local":"US32","code_hasc":"US.MN","note":null,"hasc_maybe":null,"region":"Midwest","region_cod":null,"region_big":"West North Central","big_code":null,"provnum_ne":0,"gadm_level":1,"check_me":10,"scaleran_1":2,"datarank":1,"abbrev":"Minn.","postal":"MN","area_sqkm":0,"sameascity":-99,"labelrank":0,"featurec_1":"Admin-1 scale rank","admin":"United States of America","name_len":9,"mapcolor9":1,"mapcolor13":1,"featureclass":"Admin-1 scale rank"},
+			"properties":{"name":"N5","name_alt":"Contraofensiva N5","date":"2022-05-11"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[
@@ -327,7 +327,7 @@
 		},
 		{
 			"type":"Feature",
-			"properties":{"scalerank":2,"adm1_code":"USA-3514","diss_me":3514,"adm1_cod_1":"USA-3514","iso_3166_2":"US-MN","wikipedia":"http://en.wikipedia.org/wiki/Minnesota","sr_sov_a3":"US1","sr_adm0_a3":"USA","iso_a2":"US","adm0_sr":1,"admin0_lab":2,"name":"Minnesota","name_alt":"MN|Minn.","name_local":null,"type":"State","type_en":"State","code_local":"US32","code_hasc":"US.MN","note":null,"hasc_maybe":null,"region":"Midwest","region_cod":null,"region_big":"West North Central","big_code":null,"provnum_ne":0,"gadm_level":1,"check_me":10,"scaleran_1":2,"datarank":1,"abbrev":"Minn.","postal":"MN","area_sqkm":0,"sameascity":-99,"labelrank":0,"featurec_1":"Admin-1 scale rank","admin":"United States of America","name_len":9,"mapcolor9":1,"mapcolor13":1,"featureclass":"Admin-1 scale rank"},
+			"properties":{"name":"N6","name_alt":"Contraofensiva N6","date":"2022-05-11"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[
@@ -362,7 +362,7 @@
 		},
 		{
 			"type":"Feature",
-			"properties":{"scalerank":2,"adm1_code":"USA-3514","diss_me":3514,"adm1_cod_1":"USA-3514","iso_3166_2":"US-MN","wikipedia":"http://en.wikipedia.org/wiki/Minnesota","sr_sov_a3":"US1","sr_adm0_a3":"USA","iso_a2":"US","adm0_sr":1,"admin0_lab":2,"name":"Minnesota","name_alt":"MN|Minn.","name_local":null,"type":"State","type_en":"State","code_local":"US32","code_hasc":"US.MN","note":null,"hasc_maybe":null,"region":"Midwest","region_cod":null,"region_big":"West North Central","big_code":null,"provnum_ne":0,"gadm_level":1,"check_me":10,"scaleran_1":2,"datarank":1,"abbrev":"Minn.","postal":"MN","area_sqkm":0,"sameascity":-99,"labelrank":0,"featurec_1":"Admin-1 scale rank","admin":"United States of America","name_len":9,"mapcolor9":1,"mapcolor13":1,"featureclass":"Admin-1 scale rank"},
+			"properties":{"name":"NE","name_alt":"Contraofensiva Ucrania Summy","date":"2022-05-11"},
 			"geometry":{
 				"type":"Polygon",
 				"coordinates":[
@@ -542,6 +542,274 @@
 						[33.957295, 51.680279], 
 						[33.947069, 51.654815], 
 						[33.905958, 51.655754]
+					]
+				]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{"name":"CO-JE","name_alt":"Contraofensiva Ucraniana Jarkov E","date":"2022-05-11"},
+			"geometry":{
+				"type":"Polygon",
+				"coordinates":[
+					[
+						[36.575245, 49.736995], 
+              [36.572171, 49.730293], 
+              [36.711207, 49.694457], 
+              [36.74081, 49.60507], 
+              [36.73841, 49.516578], 
+              [36.851289, 49.498322], 
+              [36.916788, 49.586778], 
+              [36.896851, 49.619072], 
+              [36.841134, 49.683378], 
+              [36.818306, 49.695438], 
+              [36.773237, 49.709235], 
+              [36.7357, 49.716577], 
+              [36.751204, 49.73614], 
+              [36.789136, 49.72813], 
+              [36.898064, 49.773792], 
+              [36.942312, 49.758458], 
+              [36.998091, 49.764971], 
+              [37.038362, 49.783303], 
+              [37.02555, 49.809315], 
+              [37.014415, 49.82592], 
+              [36.996235, 49.835324], 
+              [36.991692, 49.843486], 
+              [36.986886, 49.865178], 
+              [36.986886, 49.880667], 
+              [36.973153, 49.885091], 
+              [36.975212, 49.896593], 
+              [36.95118, 49.915166], 
+              [36.925774, 49.931965], 
+              [36.881829, 49.955827], 
+              [36.859856, 49.986299], 
+              [36.842003, 50.009251], 
+              [36.806561, 50.028545], 
+              [36.8016444, 50.0396814], 
+              [36.8032048, 50.0669339], 
+              [36.8146285, 50.0721859], 
+              [36.8047666, 50.0831669], 
+              [36.8037702, 50.1015348], 
+              [36.812738, 50.1218836], 
+              [36.8134699, 50.1404713], 
+              [36.8281392, 50.1543233], 
+              [36.8475827, 50.1575108], 
+              [36.8425449, 50.1716409], 
+              [36.8309783, 50.1897285], 
+              [36.8388297, 50.1992353], 
+              [36.8548308, 50.1992424], 
+              [36.8550401, 50.2051825], 
+              [36.8437857, 50.2192597], 
+              [36.8171502, 50.2250032], 
+              [36.7645225, 50.1954499], 
+              [36.7231609, 50.1872263], 
+              [36.6052591, 50.1046584], 
+              [36.5663119, 50.0967876], 
+              [36.5530116, 50.0728728], 
+              [36.4691496, 50.0581887], 
+              [36.4391947, 50.0731079], 
+              [36.428235, 50.0918985], 
+              [36.4284316, 50.09582], 
+              [36.4580674, 50.1482243], 
+              [36.4018534, 50.1499485], 
+              [36.3859887, 50.1336225], 
+              [36.4091938, 50.1194569], 
+              [36.4212694, 50.1153393], 
+              [36.4204339, 50.1000337], 
+              [36.387853, 50.061904], 
+              [36.378386, 50.051696], 
+              [36.437916, 49.990172], 
+              [36.448902, 49.945123], 
+              [36.424183, 49.900031], 
+              [36.461262, 49.845156], 
+              [36.513447, 49.791993], 
+              [36.575245, 49.736995]
+					]
+				]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{"name":"CO-JNE","name_alt":"Contraofensiva Ucraniana Jarkov NE","date":"2022-05-11"},
+			"geometry":{
+				"type":"Polygon",
+				"coordinates":[
+					[
+						[36.241642, 50.124163], 
+              [36.21761, 50.21037], 
+              [36.186902, 50.257938], 
+              [36.153407, 50.260659], 
+              [36.136522, 50.282984], 
+              [36.158901, 50.341798], 
+              [36.196406, 50.374478], 
+              [36.170574, 50.409456], 
+              [36.168518, 50.414308], 
+              [36.117359, 50.43811], 
+              [36.07307, 50.447074], 
+              [35.97179, 50.437672], 
+              [35.936771, 50.43133], 
+              [35.871883, 50.422363], 
+              [35.803562, 50.398077], 
+              [35.791889, 50.388884], 
+              [35.756184, 50.368304], 
+              [35.737644, 50.354067], 
+              [35.772383, 50.345514], 
+              [35.845167, 50.327545], 
+              [35.933744, 50.271403], 
+              [36.005842, 50.255601], 
+              [36.009275, 50.209921], 
+              [36.035368, 50.168596], 
+              [36.066652, 50.15139], 
+              [36.092745, 50.101647], 
+              [36.115404, 50.090194], 
+              [36.147676, 50.102968], 
+              [36.159349, 50.118821], 
+              [36.241642, 50.124163]
+					]
+				]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{"name":"CO-M","name_alt":"Contraofensiva Ucraniana Mykolaiv","date":"2022-05-11"},
+			"geometry":{
+				"type":"Polygon",
+				"coordinates":[
+					[
+						[32.081945, 46.603193], 
+              [32.114072, 46.589902], 
+              [32.129374, 46.612329], 
+              [32.116347, 46.622373], 
+              [32.090955, 46.632945], 
+              [32.090721, 46.649458], 
+              [32.088179, 46.660959], 
+              [32.089791, 46.671572], 
+              [32.096439, 46.680648], 
+              [32.108696, 46.696488], 
+              [32.094532, 46.719124], 
+              [32.126917, 46.731618], 
+              [32.174385, 46.739963], 
+              [32.188879, 46.730224], 
+              [32.215688, 46.716868], 
+              [32.289134, 46.742008], 
+              [32.377746, 46.750644], 
+              [32.455564, 46.813931], 
+              [32.513096, 46.856928], 
+              [32.662559, 46.867569], 
+              [32.706412, 46.867374], 
+              [32.726562, 46.905628], 
+              [32.746746, 47.005968], 
+              [32.762889, 47.040302], 
+              [32.746072, 47.076508], 
+              [32.770484, 47.097895], 
+              [32.771751, 47.114084], 
+              [32.642662, 47.115953], 
+              [32.530308, 47.225193], 
+              [32.351524, 47.302534], 
+              [32.175724, 47.309586], 
+              [32.070009, 47.282268], 
+              [31.986375, 47.249283], 
+              [31.982919, 47.069597], 
+              [32.005428, 47.055012], 
+              [32.091061, 47.022624], 
+              [32.104691, 46.986859], 
+              [32.071835, 46.939707], 
+              [32.034411, 46.933381], 
+              [32.00935, 46.935487], 
+              [32.003857, 46.898904], 
+              [31.964032, 46.862296], 
+              [31.932446, 46.834118], 
+              [31.906353, 46.792765], 
+              [31.920086, 46.744793], 
+              [31.949612, 46.72644], 
+              [31.952359, 46.691598], 
+              [31.966092, 46.636464], 
+              [32.054669, 46.610527], 
+              [32.081945, 46.603193]
+					]
+				]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{"name":"CO-K","name_alt":"Contraofensiva Ucraniana Karpivka","date":"2022-05-11"},
+			"geometry":{
+				"type":"Polygon",
+				"coordinates":[
+					[
+						[32.96049, 47.521898], 
+              [32.974223, 47.515406], 
+              [32.994706, 47.424413], 
+              [33.012559, 47.350962], 
+              [33.094886, 47.337042], 
+              [33.131465, 47.339348], 
+              [33.11549, 47.390812], 
+              [33.148375, 47.442201], 
+              [33.18337, 47.453317], 
+              [33.246043, 47.450855], 
+              [33.294913, 47.45791], 
+              [33.312904, 47.482595], 
+              [33.372673, 47.486872], 
+              [33.480534, 47.498976], 
+              [33.546296, 47.510628], 
+              [33.558008, 47.475988], 
+              [33.574879, 47.417212], 
+              [33.647726, 47.404412], 
+              [33.787868, 47.429663], 
+              [33.835761, 47.413519], 
+              [33.968197, 47.403651], 
+              [33.939646, 47.516797], 
+              [33.820755, 47.504202], 
+              [33.715641, 47.492892], 
+              [33.661528, 47.579224], 
+              [33.614176, 47.601593], 
+              [33.468607, 47.59048], 
+              [33.436999, 47.565752], 
+              [33.384132, 47.533911], 
+              [33.324407, 47.524753], 
+              [33.301097, 47.563655], 
+              [33.266047, 47.589554], 
+              [33.180593, 47.589581], 
+              [33.097819, 47.631216], 
+              [33.000308, 47.642825], 
+              [32.902812, 47.623812], 
+              [32.887705, 47.559907], 
+              [32.96049, 47.521898]              
+					]
+				]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{"name":"CO-P","name_alt":"Contraofensiva Ucraniana Pavlivka","date":"2022-05-11"},
+			"geometry":{
+				"type":"Polygon",
+				"coordinates":[
+					[
+						[37.331342, 47.755915], 
+              [37.257088, 47.763826], 
+              [37.15877, 47.774902], 
+              [37.038256, 47.800624], 
+              [36.940629, 47.818247], 
+              [36.868188, 47.835304], 
+              [36.837804, 47.822397], 
+              [36.819929, 47.824558], 
+              [36.829005, 47.817498], 
+              [36.827932, 47.813059], 
+              [36.835056, 47.81156], 
+              [36.838319, 47.79219], 
+              [36.835566, 47.750353], 
+              [36.851306, 47.7226], 
+              [36.992343, 47.719796], 
+              [37.066294, 47.723762], 
+              [37.119994, 47.723996], 
+              [37.166904, 47.74192], 
+              [37.268984, 47.747631], 
+              [37.33645, 47.742016], 
+              [37.347802, 47.747856], 
+              [37.377339, 47.740224], 
+              [37.380781, 47.742342], 
+              [37.331342, 47.755915]
 					]
 				]
 			}

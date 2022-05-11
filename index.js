@@ -32,7 +32,7 @@ app.get('/mapa-guerra-ucrania-rusia', function(request, response) {
   response.render('experiments/3-mapa-guerra-ucrania-rusia');
 });
 
-app.get('/comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022', function(request, response) {
+app.get('/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019', function(request, response) {
   response.render('experiments/4-comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022.ejs');
 });
 

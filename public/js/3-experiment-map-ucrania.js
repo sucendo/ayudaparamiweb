@@ -242,7 +242,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });     
+        });   
+
+    // Add imagen Incencios Rio Donest  
+    map.addSource('2022-05-08-sentinel-2', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-05-08-00_00_2022-05-08-23_59_Sentinel-2_L2A_Wildfires_38.07793-48.98912_38.31190-48.91517.png',
+            'coordinates': [
+        [38.07793, 48.98912],
+        [38.31190, 48.98912],
+        [38.31190, 48.91517],
+        [38.07793, 48.91517]
+            ]
+        });
+    map.addLayer({
+            id: 'sentinel-20220508-2-layer',
+            'type': 'raster',
+            'source': '2022-05-08-sentinel-2',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });
 
     // Add imagen Incencios Rio Donest  
     map.addSource('2022-05-11-sentinel', {
@@ -262,7 +282,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });       
+        });  
+
+    // Add imagen Incencios Sur 
+    map.addSource('2022-05-11-sentinel-2', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-05-11-00_00_2022-05-11-23_59_Sentinel-2_L2A_Wildfires_35.76917-47.56917_35.84058-47.53975.png',
+            'coordinates': [
+        [35.76917, 47.56917],
+        [35.84058, 47.56917],
+        [35.84058, 47.53975],
+        [35.76917, 47.53975]
+            ]
+        });
+    map.addLayer({
+            id: 'sentinel-20220511-2-layer',
+            'type': 'raster',
+            'source': '2022-05-08-sentinel-2',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });           
 	    
 	map.addSource('radar', {
             'type': 'image',
@@ -1728,11 +1768,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'12:46',
                     'description': '<h3>El ejército ruso bombardea almacenes con nitrato de amonio en el distrito de Kramatorsk</h3><p></p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [37.59281677952075, 48.78118566613954]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Las fuerzas ucranianas destruyen un intento ruso de paso sobre el río Donets en Seversky',
+                    'date':'11/05/2022',
+                    'time':'16:32',
+                    'description': '<h3>Las fuerzas ucranianas destruyen un intento ruso de paso sobre el río Donets en Seversky</h3><p>Un puente de pontones y varios vehículos fueron destruidos.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.246530, 48.954734]
                 }
             }
         ]

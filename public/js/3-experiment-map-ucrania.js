@@ -229,10 +229,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-05-11-00_00_2022-05-11-23_59_Sentinel-2_L2A_Wildfires_49.36617-36.97037_49.29278-37.20434.jpg',
             'coordinates': [
-        [49.36617, 36.97037],
-        [49.29278, 36.97037],
-        [49.29278, 37.20434],
-        [49.36617, 37.20434]
+        [36.97037, 49.36617],
+        [37.20434, 49.36617],
+        [37.20434, 49.29278],
+        [36.97037, 49.29278]
             ]
         });
     map.addLayer({
@@ -1682,7 +1682,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [49.36617, 36.97037]
+                    'coordinates': [36.97037, 49.36617]
                 }
             },
         {

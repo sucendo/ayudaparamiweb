@@ -298,7 +298,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
     map.addLayer({
             id: 'sentinel-20220511-2-layer',
             'type': 'raster',
-            'source': '2022-05-08-sentinel-2',
+            'source': '2022-05-11-sentinel-2',
             'paint': {
                 'raster-fade-duration': 0
             }
@@ -1715,6 +1715,36 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [38.47345612578738, 48.89078569706745]
                 }
 	        }, 
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite de los incencios cerca en los alrededores de Sievierodonetsk (08/05/2022)',
+                    'date':'08/05/2022',
+                    'time':'8:36',
+                    'description': '<h3>Imagen Satelite de los incencios cerca en los alrededores de Sievierodonetsk (08/05/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.51189, 48.97025]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite de los incencios cerca del río Donetsk (08/05/2022)',
+                    'date':'08/05/2022',
+                    'time':'8:36',
+                    'description': '<h3>Imagen Satelite de los incencios cerca del río Donetsk (08/05/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [36.97037, 49.36617]
+                }
+            },
             { 
                 'type': 'Feature',
                 'properties': {
@@ -1729,22 +1759,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [36.82998280204848, 50.16567275683486]
                 }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Imagen Satelite de los incencios cerca en los alrededores de Sievierodonetsk (08/05/2022)',
-                    'date':'11/05/2022',
-                    'time':'8:36',
-                    'description': '<h3>Imagen Satelite de los incencios cerca en los alrededores de Sievierodonetsk (08/05/2022)</h3>',
-                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [38.51189, 48.97025]
-                }
-            },           
+            },          
             {
                 'type': 'Feature',
                 'properties': {
@@ -1758,6 +1773,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [36.97037, 49.36617]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite de los incencios cerca de Orikhiv (11/05/2022)',
+                    'date':'11/05/2022',
+                    'time':'8:47',
+                    'description': '<h3>Imagen Satelite de los incencios cerca de Orikhiv (11/05/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [35.76917, 47.56917]
                 }
             },
             {

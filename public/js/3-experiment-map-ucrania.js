@@ -222,7 +222,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });      
+        });   
+
+    // Add imagen Incencios Rio Donest  
+    map.addSource('2022-05-11-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-05-11-00_00_2022-05-11-23_59_Sentinel-2_L2A_Wildfires_49.36617-36.97037_49.29278-37.20434.jpg',
+            'coordinates': [
+        [49.36617, 36.97037],
+        [49.29278, 36.97037],
+        [49.29278, 37.20434],
+        [49.36617, 37.20434]
+            ]
+        });
+    map.addLayer({
+            id: 'sentinel-20220511-layer',
+            'type': 'raster',
+            'source': '2022-05-11-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });       
 	    
 	map.addSource('radar', {
             'type': 'image',

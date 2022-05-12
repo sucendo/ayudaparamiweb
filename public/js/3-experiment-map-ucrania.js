@@ -320,7 +320,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.23510996432313, 50.44684315428579]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Imagen Satelite de las consecuencias del ataque al Aeropuerto de Gostomel (24/02/2022)',
@@ -1670,6 +1670,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [36.82998280204848, 50.16567275683486]
                 }
         },
+        {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite de los incencios cerca del río Donetsk (11/05/2022)',
+                    'date':'11/05/2022',
+                    'time':'8:46',
+                    'description': '<h3>Imagen Satelite de los incencios cerca del río Donetsk (11/05/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [49.36617, 36.97037]
+                }
+            },
         {
                 'type': 'Feature',
                 'properties': {

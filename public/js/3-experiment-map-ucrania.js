@@ -222,7 +222,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });   
+        });  
+
+    // Add imagen Combates en Severodonetsk  
+    map.addSource('2022-05-08-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-05-08-00_00_2022-05-08-23_59_Sentinel-2_L2A_Wildfires_38.51189-48.97025_38.62905-4893327.png',
+            'coordinates': [
+        [38.51189, 48.97025],
+        [38.62905, 48.97025],
+        [38.62905, 48.93327],
+        [38.51189, 48.93327]
+            ]
+        });
+    map.addLayer({
+            id: 'sentinel-20220508-layer',
+            'type': 'raster',
+            'source': '2022-05-08-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });     
 
     // Add imagen Incencios Rio Donest  
     map.addSource('2022-05-11-sentinel', {
@@ -305,7 +325,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
       const geojson = {
         'type': 'FeatureCollection',
         'features': [
-	      {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Destruido el puente de Vyshgorod',
@@ -335,7 +355,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.15644, 50.60863]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Volado el puente de la autopista M-06 Kiev-Zhytomir cerca de Stoyanka',
@@ -365,7 +385,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.231617467501735, 50.53795853872888]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Enorme convoy Ruso dirigiendose a Kiev en Ivankiv',
@@ -380,7 +400,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [29.89777845858527, 50.92103138498985]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Las tropas rusas capturan Kashpero-Mykolaivka',
@@ -395,7 +415,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [32.18224284461808, 47.37120126219106]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombadeo Ucraniano a posiciones Rusas',
@@ -1205,7 +1225,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.24132017078246, 50.57818026166025]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Dispersado el largo convoy Ruso',
@@ -1220,7 +1240,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [29.96929998790423, 50.89415390507775]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Sirenas suenan en Kiev',
@@ -1235,7 +1255,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.505863136515025, 50.455531490506615]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Suministro de gas interrumpido en Popasna',
@@ -1250,7 +1270,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [38.40001698742611, 48.63109632479285]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Las fuerzas rusas disparan su artilleria desde Trostyanets',
@@ -1265,7 +1285,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [34.96571826217886, 50.481097284769845]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Ataque aéreo contra la Base de Yavoriv, en la región de Leópolis',
@@ -1280,7 +1300,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [37.511000246048766, 47.11027408342846]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Ataque aéreo contra la Base de Yavoriv, en la región de Leópolis',
@@ -1295,7 +1315,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [23.500370731943796, 50.00513592244891]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombardeo a un edificio residencial en el norte de Kiev',
@@ -1310,7 +1330,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.486453205280093, 50.52269613410897]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombardeo ruso con objetivo la fábrica de aviones "Antonov" de Kiev',
@@ -1325,7 +1345,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.392666174509916, 50.462220163572354]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Ofensiva rusa cerca de Donetsk',
@@ -1340,7 +1360,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [37.499348810659626, 47.787347397224536]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Fuertes enfrentamientos reportados cerca de Brovary',
@@ -1355,7 +1375,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.86508016546705, 50.544559664961874]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Suenan las sirenas antiaereas en Járkov',
@@ -1370,7 +1390,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [36.23528038743257, 49.98542617885501]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Suenan las sirenas antiaereas en Kiev',
@@ -1385,7 +1405,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.518641868452907, 50.45562758657535]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Un cohete cae al noreste de Kiev',
@@ -1400,7 +1420,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.42618183519792, 50.495015613055656]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Gran destrucción como resultado de los bombardeos en el centro de Járkov',
@@ -1415,7 +1435,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [36.240446378195, 50.00253021405988]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Bombardeado un edificio residencial en el distrito Svyatoshinsky de Kiev',
@@ -1430,7 +1450,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.346429048731014, 50.46354740595913]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Los bombardeos rusos atacaran el Barrio de Lukyanivska en Kiev',
@@ -1445,7 +1465,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.481430099309243, 50.46167915862856]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Dos misiles rusos bombardean el aeropuerto de en la ciudad de Dnipro',
@@ -1460,7 +1480,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [35.09382089094837, 48.36715966557559]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Dos misiles rusos bombardean el aeropuerto de en la ciudad de Dnipro',
@@ -1475,7 +1495,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [35.1012898460177, 48.35749622036678]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Fustrado un intento de romper las líneas defensivas al noroeste de Kiev',
@@ -1490,7 +1510,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [48.36715966557559, 35.09382089094837]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Amanece en Vinnytsia, bombardeada por misiles rusos durante la noche',
@@ -1505,7 +1525,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [28.5247676239981, 49.228137420847965]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Amanece en Vinnytsia, bombardeada por misiles rusos durante la noche',
@@ -1520,7 +1540,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.600608983162573, 46.22035502868877]
                 }
             },
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Continua la batalla urbana al sureste de Mariupol',
@@ -1535,7 +1555,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [37.660350481631596, 47.09965704369272]
                 }
             }, 
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'La artillería naval rusa bombardea y daña varios edificios en Odesa',
@@ -1550,7 +1570,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [30.758936018372136, 46.46685407389331]
                 }
             },  
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Consecuencias de la Batalla por Irpin',
@@ -1580,7 +1600,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [37.54088, 47.09660]
                 }
             },			
-	    {
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Tropas de asalto aerotransportadas ucranianas controlan la ciudad de Pripyat',
@@ -1594,8 +1614,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.077322968741427, 51.39357475082056]
                 }
-	    },
-	    {
+	        },
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Tropas ucranianas controlan partes de la frontera estatal entre Bielorrusia y Ucrania',
@@ -1609,8 +1629,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [29.45244189300245  , 51.40546239855933]
                 }
-	    },	
-	    {
+    	    },	
+    	    {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Se encuentra 410 cuerpos de civiles en las calles de Bucha',
@@ -1624,8 +1644,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [30.223617135553532, 50.54720183210865]
                 }
-	    },
-	    {
+	        },
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Ucrania restablece el control hasta la frontera con Rusia, en la región de Sumy',
@@ -1639,8 +1659,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [34.321257221219426, 51.87406593746017]
                 }
-	    },
-	    {
+	        },
+	        {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Tropas Rusas Bombardean Sievierodonetsk, Lysychansk, Hirske y Zolote en la región de Lugansk',
@@ -1654,8 +1674,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [38.47345612578738, 48.89078569706745]
                 }
-	    },
-        { 
+	        }, 
+            { 
                 'type': 'Feature',
                 'properties': {
                     'message': 'Varias poblaciones han sido liberadas en la región Noreste de Jarkov',
@@ -1669,8 +1689,23 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [36.82998280204848, 50.16567275683486]
                 }
-        },
-        {
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite de los incencios cerca en los alrededores de Sievierodonetsk (08/05/2022)',
+                    'date':'11/05/2022',
+                    'time':'8:36',
+                    'description': '<h3>Imagen Satelite de los incencios cerca en los alrededores de Sievierodonetsk (08/05/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.51189, 48.97025]
+                }
+            },           
+            {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Imagen Satelite de los incencios cerca del río Donetsk (11/05/2022)',
@@ -1685,7 +1720,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'coordinates': [36.97037, 49.36617]
                 }
             },
-        {
+            {
                 'type': 'Feature',
                 'properties': {
                     'message': 'Fuerte explosión en el distrito de Kramatorsk',
@@ -1699,7 +1734,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [37.59281677952075, 48.78118566613954]
                 }
-        }
+            }
         ]
     };
       

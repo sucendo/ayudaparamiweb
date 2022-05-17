@@ -129,10 +129,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires.png',
             'coordinates': [
-                [48.94293, 37.24453],
-                [48.93488, 37.24453],
-                [48.93488, 37.26528],
-                [48.94293, 37.26528]
+                [37.24453, 48.94293],
+                [37.26528, 48.94293],
+                [37.26528, 48.93488],
+                [37.24453, 48.93488]
             ]
         });
 	map.addLayer({
@@ -149,10 +149,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires-2.png',
             'coordinates': [
-                [49.17615, 37.01311],
-		[49.14399, 37.01311],
-		[49.14399, 37.09611],
-		[49.17615, 37.09611]
+                [37.01311, 49.17615],
+		        [37.09611, 49.17615],
+        		[37.09611, 49.14399],
+        		[37.01311, 49.14399]
             ]
         });
 	map.addLayer({
@@ -169,10 +169,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires-3.png',
             'coordinates': [
-                [49.02262, 37.29592],
-		[48.99047, 37.29592],
-		[48.99047, 37.37866],
-		[49.02262, 37.37866],
+                [37.29592, 49.02262],
+        		[37.37866, 49.02262],
+        		[37.37866, 48.99047],
+        		[37.29592, 48.99047]
             ]
         });
 	map.addLayer({
@@ -189,10 +189,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-04-23-00_00_2022-04-23-23_59_Sentinel-2_L1C_Wildfires-4.png',
             'coordinates': [
-		[48.63114, 38.36960],
-		[48.62301, 38.36960],
-		[48.62301, 38.39031],
-		[48.63114, 38.39031]
+        		[38.36960, 48.63114],
+        		[38.39031, 48.63114],
+        		[38.39031, 48.62301],
+        		[38.36960, 48.62301]
             ]
         });
 	map.addLayer({
@@ -209,10 +209,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-04-26-00_00_2022-04-26-23_59_Sentinel-2_L1C_Wildfires.png',
             'coordinates': [
-		[47.83776, 36.78137],
-		[47.78894, 36.78137],
-		[47.78894, 36.86093],
-		[47.83776, 36.86093]
+        		[36.78137, 47.83776],
+        		[36.86093, 47.83776],
+        		[36.86093, 47.78894],
+        		[36.78137, 47.78894]
             ]
         });
 	map.addLayer({
@@ -229,10 +229,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-05-08-00_00_2022-05-08-23_59_Sentinel-2_L2A_Wildfires_38.51189-48.97025_38.62905-4893327.png',
             'coordinates': [
-        [38.51189, 48.97025],
-        [38.62905, 48.97025],
-        [38.62905, 48.93327],
-        [38.51189, 48.93327]
+                [38.51189, 48.97025],
+                [38.62905, 48.97025],
+                [38.62905, 48.93327],
+                [38.51189, 48.93327]
             ]
         });
     map.addLayer({
@@ -249,10 +249,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-05-08-00_00_2022-05-08-23_59_Sentinel-2_L2A_Wildfires_38.07793-48.98912_38.31190-48.91517.png',
             'coordinates': [
-        [38.07793, 48.98912],
-        [38.31190, 48.98912],
-        [38.31190, 48.91517],
-        [38.07793, 48.91517]
+                [38.07793, 48.98912],
+                [38.31190, 48.98912],
+                [38.31190, 48.91517],
+                [38.07793, 48.91517]
             ]
         });
     map.addLayer({
@@ -269,10 +269,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-05-11-00_00_2022-05-11-23_59_Sentinel-2_L2A_Wildfires_49.36617-36.97037_49.29278-37.20434.jpg',
             'coordinates': [
-        [36.97037, 49.36617],
-        [37.20434, 49.36617],
-        [37.20434, 49.29278],
-        [36.97037, 49.29278]
+                [36.97037, 49.36617],
+                [37.20434, 49.36617],
+                [37.20434, 49.29278],
+                [36.97037, 49.29278]
             ]
         });
     map.addLayer({
@@ -289,10 +289,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'type': 'image',
             'url': './img/experiments/sentinel/2022-05-11-00_00_2022-05-11-23_59_Sentinel-2_L2A_Wildfires_35.76917-47.56917_35.84058-47.53975.png',
             'coordinates': [
-        [35.76917, 47.56917],
-        [35.84058, 47.56917],
-        [35.84058, 47.53975],
-        [35.76917, 47.53975]
+                [35.76917, 47.56917],
+                [35.84058, 47.56917],
+                [35.84058, 47.53975],
+                [35.76917, 47.53975]
             ]
         });
     map.addLayer({

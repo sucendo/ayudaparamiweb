@@ -302,7 +302,47 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });           
+        });   
+	    
+	 // Add imagen 20220513 Pospasna
+    map.addSource('20220513-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-05-13-00_00_2022-05-13-23_59_Sentinel-2_L1C_Wildfires-38.25560-48.71373_38.42031-48.66092.png',
+            'coordinates': [
+                [38.25560, 48.71373],
+                [38.42031, 48.71373],
+                [38.42031, 48.66092],
+                [38.25560, 48.66092]
+            ]
+        });
+    map.addLayer({
+            id: '20220513-sentinel-layer',
+            'type': 'raster',
+            'source': '20220513-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });    
+	    
+	// Add imagen 20220523 Liman
+    map.addSource('20220523-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-05-23-00_00_2022-05-23-23_59_Sentinel-2_L1C_Wildfires-37.73546_49.01361-37.90017-48.95345.png',
+            'coordinates': [
+                [37.73546, 49.01361],
+                [37.90017, 49.01361],
+                [37.90017, 48.95345],
+                [37.73546, 48.95345]
+            ]
+        });
+    map.addLayer({
+            id: '20220523-sentinel-layer',
+            'type': 'raster',
+            'source': '20220523-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });     
 	    
 	map.addSource('radar', {
             'type': 'image',

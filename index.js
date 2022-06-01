@@ -32,72 +32,72 @@ app.get('/sucender', function(request, response) {
 
 //experimentos
 app.get('/rusia-ataca-ucrania', function(request, response) {
-  response.render('experiments/2-rusia-ataca-ucrania');
+  response.render('experiments/0002-rusia-ataca-ucrania');
 });
 
 app.get('/mapa-guerra-ucrania-rusia', function(request, response) {
-  response.render('experiments/3-mapa-guerra-ucrania-rusia');
+  response.render('experiments/0003-mapa-guerra-ucrania-rusia');
 });
 
 app.get('/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019', function(request, response) {
-  response.render('experiments/4-comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022.ejs');
+  response.render('experiments/0004-comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022.ejs');
 });
 
 //articulos
 app.get('/entornos-colaborativos', function(request, response) {
-  response.render('news/21-entornos-colaborativos');
+  response.render('news/0021-entornos-colaborativos');
 });
 
 app.get('/backlink-que-es-como-construir-red-de-enlaces', function(request, response) {
-  response.render('news/13-backlink-que-es-como-construir-red-de-enlaces');
+  response.render('news/0013-backlink-que-es-como-construir-red-de-enlaces');
 });
 
 app.get('/investigacion-palabras-clave', function(request, response) {
-  response.render('news/12-investigacion-palabras-clave');
+  response.render('news/0012-investigacion-palabras-clave');
 });
 
 app.get('/contenido-y-seo', function(request, response) {
-  response.render('news/11-contenido-y-seo');
+  response.render('news/0011-contenido-y-seo');
 });
 
 app.get('/seo-on-page-aspectos-tecnicos', function(request, response) {
-  response.render('news/10-seo-on-page-aspectos-tecnicos');
+  response.render('news/0010-seo-on-page-aspectos-tecnicos');
 });
 
 app.get('/motores-de-busqueda', function(request, response) {
-  response.render('news/9-motores-de-busqueda');
+  response.render('news/0009-motores-de-busqueda');
 });
 
 app.get('/seo-que-es', function(request, response) {
-  response.render('news/8-seo-que-es');
+  response.render('news/0008-seo-que-es');
 });
 
 app.get('/como-crear-una-pagina-web', function(request, response) {
-  response.render('news/7-como-crear-una-pagina-web');
+  response.render('news/0007-como-crear-una-pagina-web');
 });
 
 app.get('/el-mundo-del-programador-web', function(request, response) {
-  response.render('news/6-el-mundo-del-programador-web');
+  response.render('news/0006-el-mundo-del-programador-web');
 });
 
 app.get('/que-es-bluetooth', function(request, response) {
-  response.render('news/5-que-es-bluetooth');
+  response.render('news/0005-que-es-bluetooth');
 });
 
 app.get('/problemas-canon-digital-ecommerce', function(request, response) {
-  response.render('news/4-problemas-canon-digital-ecommerce');
+  response.render('news/0004-problemas-canon-digital-ecommerce');
 });
 
 app.get('/quantum-pacific-group', function(request, response) {
-  response.render('news/3-quantum-pacific-group');
+  response.render('news/0003-quantum-pacific-group');
 });
 
 app.get('/codigo-traductor-google-blog', function(request, response) {
-  response.render('news/2-codigo-traductor-google-blog');
+  response.render('news/0002-codigo-traductor-google-blog');
 });
 
 app.get('/contador-caracteres-seo', function(request, response) {
-  response.render('news/1-contador-caracteres-seo');
+  response.render('news/0001-contador-caracteres-seo');
 });
 
 app.listen(app.get('port'), function() {

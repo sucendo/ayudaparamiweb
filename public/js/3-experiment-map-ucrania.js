@@ -1913,13 +1913,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'11:11',
                     'description': '<h3>El ejército ruso vuela el puente en Davydiv Brid</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [33.19196, 47.2427]
                 }
-            }	
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'El ejercito Ucraniano mantiene sus posiciones entre el río Donets y el sur de Lyman',
+                    'date':'01/06/2022',
+                    'time':'10:18',
+                    'description': '<h3>El ejercito Ucraniano mantiene sus posiciones entre el río Donets y el sur de Lyman</h3><p>Según constatán las imagenes satelite, la lucha al sur de Lyman continúa y el puente sobre el Donets sigue en pie. Esto sugiere que tropas ucranianss no se han retirado por completo de sus posiciones hacia Slovyansk.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.757919388667496, 48.925608633249894]
+                }
+            }		
         ]
     };
       

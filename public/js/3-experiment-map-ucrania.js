@@ -1863,16 +1863,46 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 	    {
                 'type': 'Feature',
                 'properties': {
+                    'message': 'Las tropas rusas avanzan en a dirección de Bakhmut',
+                    'date':'23/05/2022',
+                    'time':'07:11',
+                    'description': '<h3>Las tropas rusas avanzan en a dirección de Bakhmut</h3><p>El ejército ruso tras asegurar Popasna, lleva a cabo acciones hostiles cerca de Oleksandropillya en dirección a Bakhmut. También las tropas rusas intantan lanzar una ofensiva cerca de Lypove y Trypillya sin éxito por el momento.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.38122, 48.68168]
+                }
+            },    
+	    {
+                'type': 'Feature',
+                'properties': {
                     'message': 'El ejército Ucraniano lanza una ofensiva en la región de Kherson',
                     'date':'28/05/2022',
                     'time':'19:22',
                     'description': '<h3>El ejército Ucraniano lanza una ofensiva en la región de Kherson</h3><p>El ejército Ucraniano lanza una ofensiva cerca de Andriyivka, Lozove y Bilohirka de la región de Kherson, las fuerzas rusas intentan mantener el terreno sufriendo númerosas pérdidas. La batalla continúa.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [33.19142, 47.19932]
+                }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Las fuerzas rusas realizan acciones de asalto cerca de Sieverodonetsk, Toshkivka y Ustynivka',
+                    'date':'30/05/2022',
+                    'time':'18:19',
+                    'description': '<h3>Las fuerzas rusas realizan acciones de asalto cerca de Sieverodonetsk, Toshkivka y Ustynivka</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.49518, 48.96066]
                 }
             },		
 	    {

@@ -1853,13 +1853,43 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'16:32',
                     'description': '<h3>Las fuerzas ucranianas destruyen un intento ruso de paso sobre el río Donets en Seversky</h3><p>Un puente de pontones y varios vehículos fueron destruidos.</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-blue.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [38.246530, 48.954734]
                 }
-            }
+            },
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'El ejército Ucraniano lanza una ofensiva en la región de Kherson',
+                    'date':'28/05/2022',
+                    'time':'19:22',
+                    'description': '<h3>El ejército Ucraniano lanza una ofensiva en la región de Kherson</h3><p>El ejército Ucraniano lanza una ofensiva cerca de Andriyivka, Lozove y Bilohirka de la región de Kherson, las fuerzas rusas intentan mantener el terreno sufriendo númerosas pérdidas. La batalla continúa.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-blue.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [33.19142, 47.19932]
+                }
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'El ejército ruso vuela el puente en Davydiv Brid',
+                    'date':'31/05/2022',
+                    'time':'11:11',
+                    'description': '<h3>El ejército ruso vuela el puente en Davydiv Brid</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/explosion-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [33.19196, 47.2427]
+                }
+            }	
         ]
     };
       

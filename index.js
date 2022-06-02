@@ -89,7 +89,7 @@ app.get('/problemas-canon-digital-ecommerce', function(request, response) {
 });
 
 app.get('/quantum-pacific-group', function(request, response) {
-  response.render('news/0003-quantum-pacific-group');
+  response.render('experiments/0001-quantum-pacific-group');
 });
 
 app.get('/codigo-traductor-google-blog', function(request, response) {
@@ -97,7 +97,7 @@ app.get('/codigo-traductor-google-blog', function(request, response) {
 });
 
 app.get('/contador-caracteres-seo', function(request, response) {
-  response.render('news/0001-contador-caracteres-seo');
+  response.render('tools/0002-contador-caracteres-seo');
 });
 
 app.listen(app.get('port'), function() {

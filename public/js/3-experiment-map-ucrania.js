@@ -325,7 +325,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });    
 	    
 	// Add imagen 20220523 Liman
-    map.addSource('20220523-sentinel', {
+    	map.addSource('20220523-sentinel', {
             'type': 'image',
             'url': './img/experiments/sentinel/2022-05-23-00_00_2022-05-23-23_59_Sentinel-2_L1C_Wildfires-37.73546_49.01361-37.90017-48.95345.png',
             'coordinates': [
@@ -335,14 +335,34 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 [37.73546, 48.95345]
             ]
         });
-    map.addLayer({
+    	map.addLayer({
             id: '20220523-sentinel-layer',
             'type': 'raster',
             'source': '20220523-sentinel',
             'paint': {
                 'raster-fade-duration': 0
             }
-        });     
+        });  
+	    
+	// Add imagen 20220531 Lyman
+    	map.addSource('20220531-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-05-31-00_00_2022-05-31-23_59_Sentinel-2_L2A_Wildfires_37.61925-49.00184_37.85082-48.89757.png',
+            'coordinates': [
+                [37.61925, 49.00184],
+                [37.85082, 49.00184],
+                [37.85082, 48.89757],
+                [37.61925, 48.89757]
+            ]
+        });
+    	map.addLayer({
+            id: '20220531-sentinel-layer',
+            'type': 'raster',
+            'source': '20220531-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });	    
 	    
 	map.addSource('radar', {
             'type': 'image',
@@ -1903,6 +1923,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [38.49518, 48.96066]
+                }
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite de los combates al sur de Lyman (31/05/2022)',
+                    'date':'31/05/2022',
+                    'time':'08:46',
+                    'description': '<h3>Imagen Satelite de los combates al sur de Lyman (31/05/2022)</h3><p>Combates entre el sur de Lyman y el río Donets.</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.61925, 49.00184]
                 }
             },		
 	    {

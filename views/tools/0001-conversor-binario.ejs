@@ -1,350 +1,391 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Conversor Binario - Total Stats</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
-	<style media="screen">
-		body {
-			background-color: #b0bec5;
-			height: 100%;
-			margin: 0 auto;
-			padding: 0;
-		}
-		#AppStructure {
-			min-height: 100%;
-			max-height: 100%;
-		}
-	  	li {list-style:none;}
-		ul {-webkit-padding-start:0px;}
-	</style>
-	
-	<% include ../partials/head.ejs %>
-  </head>
-  <body>
-	<% include ../partials/header.ejs %>
-	
-<!-- partial:index.partial.html -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-<div class="ct-content">
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<form>
-				<!-- BINARIO A ENTERO -->
-				<div class="col-lg-12"><h3>Convertir binario a decimal</h3></div>
-				<div class="col-lg-6">
-					<div class="form-group">
-						<label for="">Binario</label>
-						<input type="text" class="form-control" id="binario" placeholder="Digite...">
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="form-group">
-						<label for="">Decimal</label>
-						<input type="text" class="form-control" readonly="" id="entero" placeholder="Resultado">
-					</div>
-				</div>
-				
-				<!-- ENTERO A BINARIO -->
-				<div class="col-lg-12"><h3>Convertir decimal a binario</h3></div>
-				<div class="col-lg-6">
-					<div class="form-group">
-						<label for="">Decimal</label>
-						<input type="text" class="form-control" id="decimal" placeholder="Digite...">
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="form-group">
-						<label for="">Binario</label>
-						<input type="text" class="form-control" readonly="" id="entero_conv" placeholder="Resultado">
-					</div>
-				</div>
-
-				<!-- SUMA DE BINARIOS -->
-				<div class="col-lg-12"><h3>Suma de binarios</h3></div>
-				<div class="col-lg-4">
-					<div class="form-group">
-						<label for="">Binario 1</label>
-						<input type="text" class="form-control sumbin1" id="" placeholder="Digite...">
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="form-group">
-						<label for="">Binario 2</label>
-						<input type="text" class="form-control sumbin2" id="" placeholder="Resultado">
-					</div>
-				</div>
-				<div class="col-lg-2">
-					<div class="form-group">
-						<label for="">Resultado en binario:</label>
-						<input type="text" class="form-control ressuma" readonly="" id="" placeholder="Resultado">
-					</div>
-				</div>
-				<div class="col-lg-2">
-					<div class="form-group">
-						<label for="">Resultado en decimal:</label>
-						<input type="text" class="form-control ressumadec" readonly="" id="" placeholder="Resultado">
-					</div>
-				</div>
-
-				<!-- RESTA DE BINARIOS -->
-				<div class="col-lg-12"><h3>Resta de binarios</h3></div>
-				<div class="col-lg-4">
-					<div class="form-group">
-						<label for="">Binario 1</label>
-						<input type="text" class="form-control restabin" id="" placeholder="Digite...">
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="form-group">
-						<label for="">Binario 2</label>
-						<input type="text" class="form-control restabin2" id="" placeholder="Resultado">
-					</div>
-				</div>
-				<div class="col-lg-2">
-					<div class="form-group">
-						<label for="">Resultado binario</label>
-						<input type="text" class="form-control restatotal" readonly="" id="" placeholder="Resultado">
-					</div>
-				</div>
-				<div class="col-lg-2">
-					<div class="form-group">
-						<label for="">Resultado decimal</label>
-						<input type="text" class="form-control restadec" readonly="" id="" placeholder="Resultado">
-					</div>
-				</div>
-
-			</form>
-		</div>
-	</div>
-</div>
-</div>
-
-<% include ../partials/footer.ejs %>
-</body>
-
-<style>
-	  header {
-	    box-sizing: border-box;
-	    background-color: #607d8b !important;
-	    display: flex;
-	    flex-direction: row;
-	    justify-content: flex-start;
-	    margin: 0;
-	    padding: 1rem;
-	    .title {
-	      align-self: center;
-	      color: #eceff1;
-	      font-size: 1.2rem;
-	      font-weight: bold;
-	      margin-right: 1rem;
-	    }
-	  }
-	  .btn-header {
-	    background-color: #455A64;
-	    border: none;
-	    border-radius: 3px;
-	    box-shadow: 0 0 0 0.5px rgba(49,49,93,.03),
-	      0 2px 5px 0 rgba(49,49,93,.1),
-	      0 1px 2px 0 rgba(0,0,0,.08);
-	    color: #B0BEC5;
-	    cursor: pointer;
-	    text-decoration: none;
-	    padding: 0.5rem;
-	    margin: 0 0.5rem
-	  }
-	  .btn-login {
-	    background-color: #00695c;
-	    color: #fafafa;
-	  }
-	  .userinfo {
-	    align-items: center;
-	    display: flex;
-	    flex-direction: row;
-	    justify-content: space-between;
-	    span {
-	      color: #fafafa;
-	      font-size: 0.9rem;
-	      font-weight: normal;
-	    }
-	  }
-	  img {
-	    width: 32px;
-	    border-radius: 50%;
-	    margin: 0 1rem;
-		background: #fff;
-	  }
-	  .title{
-	  color: #CCE2FF;
-	    font-size: 1.5em;
-	    position: relative;
-	    vertical-align: middle;
-	    line-height: 1;
-	    padding: 0.92857143em 1.14285714em;
-	 }
-	</style>
-	<style>
-	  footer {
-	    box-sizing: border-box;
-	    background-color: #cfd8dc;
-	    bottom: 0;
-	    left: 0;
-	    padding: 1rem;
-	    position: absolute;
-	    width: 100%;
-	    a {
-	      text-decoration: none;
-	      color: #546E7A;
-	    }
-	  }
-	</style>
-
-<!-- partial -->
-  <script>
-  //SCRIPT CONVERTIR BINARIO A ENTERO
-	function convertir_binario(valor){
-		var array = [];
-		var numeros = valor.split("");
-		var entero = 0;
-		var contador = 0;
-		for(var i = numeros.length-1; i>=0;i--){
-			if(numeros[i] == 0){
-				array[i] = 0;
-			}
-			else{
-				array[i] = Math.pow(2,contador);
-			}
-			contador++;
-		}
-		for(var a = 0; a < array.length; a++){
-			entero += array[a];
-		}
-		return entero;
-	}
-
-	//SCRIPT CONVERTIR ENTERO A BINARIO
-	function convertir_entero(valor){
-		var resul_div = [];
-		var entradas = 0;
-		var resultado_binario = '';
-		while(valor > 0){
-			residuo = parseInt(valor % 2);
-			valor = parseInt(valor/2);
-			resul_div[entradas] = residuo;
-			entradas++;
-		}
-		for (var i = resul_div.length - 1; i >= 0; i--) {
-			resultado_binario += resul_div[i];
-		}
-		return resultado_binario;
-	}
-
-	//SCRIPT PARA SUMAR BINARIOS
-	function suma_binarios(b1,b2){
-
-		var numerob1 = b1.split("");
-		var numerob2 = b2.split("");
-		var principal = (numerob1.length>numerob2.length || numerob1.length==numerob2.length) ? b1 : b2;
-		var secundario = (numerob1.length<numerob2.length) ? b1 : b2;
-		var minuendo = principal.split("");
-		var sustraendo = secundario.split("");
-		var lleva = 0;
-		var resultado_arreglo = [];
-		var array_sus = [];
-		var pos;
-
-		for (var i = 0; i < minuendo.length; i++) {
-			array_sus.push(sustraendo[i]);
-			if(array_sus[i] === undefined){
-				array_sus.unshift('');
-				array_sus.pop();
-			}
-		}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active"><!--<![endif]-->
+	<head> 
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		for (var i = minuendo.length - 1; i >= 0; i--) {
-			if(minuendo[i] == lleva){
-				minuendo[i] = 0;
-			} else {
-				minuendo[i] = 1;
-				lleva = 0;
-			}
-			if(minuendo[i] != array_sus[i]){
-				resultado_arreglo[i] = 1;
-			} else if(minuendo[i] == array_sus[i] && minuendo[i] != 1 && array_sus[i] != 1){
-				resultado_arreglo[i] = 0;
-			} else if(minuendo[i] == array_sus[i] && minuendo[i] == 1 && array_sus[i] == 1){
-				lleva = 1;
-				resultado_arreglo[i] = 0;
-			}
-			if(i == 0 && lleva == 1){
-				resultado_arreglo.unshift(1);
-			}
-		};
+		<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+		<meta name="theme-color" content="#537b7b">
+		<!-- iOs Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#537b7b">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#537b7b">
 
-		var resultado_suma_binario = '';
-		for(var a = 0; a < resultado_arreglo.length; a++){
-			resultado_suma_binario+=resultado_arreglo[a];
-		}
-		$(".ressumadec").val(convertir_binario(resultado_suma_binario));
-		return resultado_suma_binario;
+		<title>Conversor Binario | Ayuda para mi Web</title>
+		<meta name="description" content="Conversor de Número Binario a Decimal y de Número Decimal a Binario" />
+		<meta name="author" content="Sucender" />
 
-	}
+		<% include ../partials/head.ejs %>	
+	</head>
+	
+	<body id="codrops-body">
+		<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				
+		<div class="ct-container">
+			
+			<% include ../partials/header.ejs %>
+			
+		<div class="ct-content">
 
-	//SCRIPT PARA RESTAR BINARIOS
-	function resta_binarios(b1,b2){
-		if(b1 != b2){
-			var numerob1 = b1.split("");
-			var numerob2 = b2.split("");
-			var principal = (numerob1.length>numerob2.length || numerob1.length==numerob2.length) ? b1 : b2;
-			var secundario = (numerob1.length<numerob2.length) ? b1 : b2;
-			var minuendo = principal.split("");
-			var sustraendo = secundario.split("");
-			var sustraendo_inicial = '1';
-			var invertir_minuendo = [];
-			var minuendo_suma_final = [];
-			var invertir_minuendo_suma_final = [];
-			var minuendo_final = '';
-			for(var i = 0; i < minuendo.length; i++){
-				invertir_minuendo[i] = (minuendo[i] == 0) ? 1 : 0;
-			}
-			var primera_suma = suma_binarios(invertir_minuendo.join(""),sustraendo_inicial);
-			var seg_suma_binarios = suma_binarios(primera_suma,sustraendo.join(""));
-			minuendo_suma_final = seg_suma_binarios.split("");
-			for(var j = 0; j < minuendo_suma_final.length; j++){
-				invertir_minuendo_suma_final[j] = (minuendo_suma_final[j] == 0) ? 1 : 0;
-			}
-			var resta_final = suma_binarios(invertir_minuendo_suma_final.join(""),sustraendo_inicial);
-			$(".restadec").val(convertir_binario(resta_final));
-			return resta_final;
-		} else {
-			$(".restadec").val(0);
-			return 0;
-		}
+			<div class="ct-inner">
+			
+				<div class="ct-main ct-main-post" id="ct-main" role="main">
+					<div class="ct-post">
+						
+						<article id="post-1" itemscope="" itemtype="http://schema.org/Article" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials tag-animation tag-canvas tag-slideshow">
+							<header>
+								<div class="ct-subline entry-meta">
+								
+									<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+										<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+										  <img alt="" src="http://www.ayudaparamiweb.com/img/author/sucender.png" srcset="img/author/sucender.png" class="avatar avatar-36 photo" height="36" width="36">
+										  <meta itemprop="url" content="http://www.ayudaparamiweb.com/img/author/sucender.png">
+										  <meta itemprop="width" content="36">
+										  <meta itemprop="height" content="36">
+										</div>
+										<meta itemprop="name" content="Sucender">
+									</div>
+								
+									<div class="ct-subline__author">
+										<span class="byline author vcard" span itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="http://www.ayudaparamiweb.com/" title="Posts by Sucender" rel="author" itemprop="name">Sucender</a></span>                                  
+										en 
+										<a href="http://www.ayudaparamiweb.com/">Herramientas</a>
+									</div>
+									
+									<div class="ct-subline__time">
+										<time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="2018-02-14">14/02/2018</time> 
+										<strong>11</strong> votos. Media: <strong>4.3</strong> de 5
+										<div style="display: none;" class="post-ratings" name="post-ratings-1606" data-nonce="f164d6d75a">
+											<div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+												<meta itemprop="bestRating" content="5">
+												<meta itemprop="worstRating" content="1">
+												<meta itemprop="ratingValue" content="4.3">
+												<meta itemprop="ratingCount" content="7">
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<h1 class="ct-h-shd entry-title" itemprop="headline">Conversor Binario</h1>
+							</header>
+							<div class="ct-post-content">
+							
+								<div class="ct-post-excerpt" itemprop="description">Conversor de Número Binario a Decimal y de Número Decimal a Binario</div>
+								<div class="bg-img bg-purple" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">	
+									<img src="img/articulo/conversor-binario.png" alt="Conversor Binario"/>
+									<meta itemprop="url" content="http://www.ayudaparamiweb.com/img/articulo/conversor-binario.png">
+									<meta itemprop="width" content="800">
+									<meta itemprop="height" content="200">
+								</div>
+								
+								<h2>Contador de Caracteres Meta-Title</h2>
+								<p>En SEO un buen título de página es fundamental. Es muy importante usar la palabras claves en el título y asegurarse de que sea relevante al tema a tratar en el contenido.</p> 
+									
+								<h2>Contador de Caracteres Meta-Description</h2>
+								<p>Para la meta-descripción, Google solo muestra 160 caracteres. Mi recomendación es que la meta-descripción sea entre 150-155 caracteres. Incluya también palabras clave en la meta-descripción.</p>
+																							
+								<form>
+									<!-- BINARIO A ENTERO -->
+									<div class="col-lg-12"><h3>Convertir binario a decimal</h3></div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="">Binario</label>
+											<input type="text" class="form-control" id="binario" placeholder="Digite...">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="">Decimal</label>
+											<input type="text" class="form-control" readonly="" id="entero" placeholder="Resultado">
+										</div>
+									</div>
 
-	}
+									<!-- ENTERO A BINARIO -->
+									<div class="col-lg-12"><h3>Convertir decimal a binario</h3></div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="">Decimal</label>
+											<input type="text" class="form-control" id="decimal" placeholder="Digite...">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="">Binario</label>
+											<input type="text" class="form-control" readonly="" id="entero_conv" placeholder="Resultado">
+										</div>
+									</div>
 
-	$(function(){
-		$("#binario").keyup(function(){
-			$("#entero").val(convertir_binario($(this).val()));
-		});
-		$("#decimal").keyup(function(){
-			$("#entero_conv").val(convertir_entero($(this).val()));
-		});
-		$(".sumbin2").keyup(function(){
-			$(".ressuma").val(suma_binarios($(this).val(),$(".sumbin1").val()));
+									<!-- SUMA DE BINARIOS -->
+									<div class="col-lg-12"><h3>Suma de binarios</h3></div>
+									<div class="col-lg-4">
+										<div class="form-group">
+											<label for="">Binario 1</label>
+											<input type="text" class="form-control sumbin1" id="" placeholder="Digite...">
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="form-group">
+											<label for="">Binario 2</label>
+											<input type="text" class="form-control sumbin2" id="" placeholder="Resultado">
+										</div>
+									</div>
+									<div class="col-lg-2">
+										<div class="form-group">
+											<label for="">Resultado en binario:</label>
+											<input type="text" class="form-control ressuma" readonly="" id="" placeholder="Resultado">
+										</div>
+									</div>
+									<div class="col-lg-2">
+										<div class="form-group">
+											<label for="">Resultado en decimal:</label>
+											<input type="text" class="form-control ressumadec" readonly="" id="" placeholder="Resultado">
+										</div>
+									</div>
 
-		});
-		$(".restabin2").keyup(function(){
-			$(".restatotal").val(resta_binarios($(this).val(),$(".restabin").val()));
+									<!-- RESTA DE BINARIOS -->
+									<div class="col-lg-12"><h3>Resta de binarios</h3></div>
+									<div class="col-lg-4">
+										<div class="form-group">
+											<label for="">Binario 1</label>
+											<input type="text" class="form-control restabin" id="" placeholder="Digite...">
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="form-group">
+											<label for="">Binario 2</label>
+											<input type="text" class="form-control restabin2" id="" placeholder="Resultado">
+										</div>
+									</div>
+									<div class="col-lg-2">
+										<div class="form-group">
+											<label for="">Resultado binario</label>
+											<input type="text" class="form-control restatotal" readonly="" id="" placeholder="Resultado">
+										</div>
+									</div>
+									<div class="col-lg-2">
+										<div class="form-group">
+											<label for="">Resultado decimal</label>
+											<input type="text" class="form-control restadec" readonly="" id="" placeholder="Resultado">
+										</div>
+									</div>
 
-		});
-	});
-  </script>
+								</form>
+								
+								 <script>
+								  	//SCRIPT CONVERTIR BINARIO A ENTERO
+									function convertir_binario(valor){
+										var array = [];
+										var numeros = valor.split("");
+										var entero = 0;
+										var contador = 0;
+										for(var i = numeros.length-1; i>=0;i--){
+											if(numeros[i] == 0){
+												array[i] = 0;
+											}
+											else{
+												array[i] = Math.pow(2,contador);
+											}
+											contador++;
+										}
+										for(var a = 0; a < array.length; a++){
+											entero += array[a];
+										}
+										return entero;
+									}
 
-</html>
+									//SCRIPT CONVERTIR ENTERO A BINARIO
+									function convertir_entero(valor){
+										var resul_div = [];
+										var entradas = 0;
+										var resultado_binario = '';
+										while(valor > 0){
+											residuo = parseInt(valor % 2);
+											valor = parseInt(valor/2);
+											resul_div[entradas] = residuo;
+											entradas++;
+										}
+										for (var i = resul_div.length - 1; i >= 0; i--) {
+											resultado_binario += resul_div[i];
+										}
+										return resultado_binario;
+									}
+
+									//SCRIPT PARA SUMAR BINARIOS
+									function suma_binarios(b1,b2){
+
+										var numerob1 = b1.split("");
+										var numerob2 = b2.split("");
+										var principal = (numerob1.length>numerob2.length || numerob1.length==numerob2.length) ? b1 : b2;
+										var secundario = (numerob1.length<numerob2.length) ? b1 : b2;
+										var minuendo = principal.split("");
+										var sustraendo = secundario.split("");
+										var lleva = 0;
+										var resultado_arreglo = [];
+										var array_sus = [];
+										var pos;
+
+										for (var i = 0; i < minuendo.length; i++) {
+											array_sus.push(sustraendo[i]);
+											if(array_sus[i] === undefined){
+												array_sus.unshift('');
+												array_sus.pop();
+											}
+										}
+
+										for (var i = minuendo.length - 1; i >= 0; i--) {
+											if(minuendo[i] == lleva){
+												minuendo[i] = 0;
+											} else {
+												minuendo[i] = 1;
+												lleva = 0;
+											}
+											if(minuendo[i] != array_sus[i]){
+												resultado_arreglo[i] = 1;
+											} else if(minuendo[i] == array_sus[i] && minuendo[i] != 1 && array_sus[i] != 1){
+												resultado_arreglo[i] = 0;
+											} else if(minuendo[i] == array_sus[i] && minuendo[i] == 1 && array_sus[i] == 1){
+												lleva = 1;
+												resultado_arreglo[i] = 0;
+											}
+											if(i == 0 && lleva == 1){
+												resultado_arreglo.unshift(1);
+											}
+										};
+
+										var resultado_suma_binario = '';
+										for(var a = 0; a < resultado_arreglo.length; a++){
+											resultado_suma_binario+=resultado_arreglo[a];
+										}
+										$(".ressumadec").val(convertir_binario(resultado_suma_binario));
+										return resultado_suma_binario;
+
+									}
+
+									//SCRIPT PARA RESTAR BINARIOS
+									function resta_binarios(b1,b2){
+										if(b1 != b2){
+											var numerob1 = b1.split("");
+											var numerob2 = b2.split("");
+											var principal = (numerob1.length>numerob2.length || numerob1.length==numerob2.length) ? b1 : b2;
+											var secundario = (numerob1.length<numerob2.length) ? b1 : b2;
+											var minuendo = principal.split("");
+											var sustraendo = secundario.split("");
+											var sustraendo_inicial = '1';
+											var invertir_minuendo = [];
+											var minuendo_suma_final = [];
+											var invertir_minuendo_suma_final = [];
+											var minuendo_final = '';
+											for(var i = 0; i < minuendo.length; i++){
+												invertir_minuendo[i] = (minuendo[i] == 0) ? 1 : 0;
+											}
+											var primera_suma = suma_binarios(invertir_minuendo.join(""),sustraendo_inicial);
+											var seg_suma_binarios = suma_binarios(primera_suma,sustraendo.join(""));
+											minuendo_suma_final = seg_suma_binarios.split("");
+											for(var j = 0; j < minuendo_suma_final.length; j++){
+												invertir_minuendo_suma_final[j] = (minuendo_suma_final[j] == 0) ? 1 : 0;
+											}
+											var resta_final = suma_binarios(invertir_minuendo_suma_final.join(""),sustraendo_inicial);
+											$(".restadec").val(convertir_binario(resta_final));
+											return resta_final;
+										} else {
+											$(".restadec").val(0);
+											return 0;
+										}
+
+									}
+
+									$(function(){
+										$("#binario").keyup(function(){
+											$("#entero").val(convertir_binario($(this).val()));
+										});
+										$("#decimal").keyup(function(){
+											$("#entero_conv").val(convertir_entero($(this).val()));
+										});
+										$(".sumbin2").keyup(function(){
+											$(".ressuma").val(suma_binarios($(this).val(),$(".sumbin1").val()));
+
+										});
+										$(".restabin2").keyup(function(){
+											$(".restatotal").val(resta_binarios($(this).val(),$(".restabin").val()));
+
+										});
+									});
+								  </script>
+								
+																
+							</div>
+						</article>
+						
+						<p class="ct-tags">Tagged with: <a href="http://www.ayudaparamiweb.com/" rel="tag">Herramientas</a> <a href="http://www.ayudaparamiweb.com/" rel="tag">SEO</a> <a href="http://www.ayudaparamiweb.com/" rel="tag">Conversor</a></p>
+						<div class="clr"></div>
+					</div>
+
+					<div class="ct-row">
+						<div class="ct-author-info ct-box ct-green">
+							<% include ../authors/sucender-short.ejs %>
+						</div>
+
+						<div class="ct-row-wrapper">
+							<div class="ct-row">
+							
+								<div class="ct-sharing ct-box ct-green">
+									<h4>Stay connected with us:</h4>
+									<div class="ct-link-list">
+										<a href="http://feeds2.feedburner.com/" class="ct-link-list-rss">Grab the <strong>RSS Feed</strong></a>
+										<a href="http://feedburner.google.com/" class="ct-link-list-mail">Get <strong>email updates</strong></a>
+										<a href="http://www.twitter.com/" class="ct-link-list-twitter">Follow us on <strong>Twitter</strong></a>
+										<a href="http://www.facebook.com/" class="ct-link-list-fb">Join us on <strong>Facebook</strong></a>
+									</div>
+								</div>
+							<div class="ct-bottom-ads ct-box ct-green">
+								<h4>CSS Reference</h4>
+								<p>Learn about all important CSS properties from the basics with our extensive and easy-to-read CSS Reference.</p><p>It doesn't matter if you are a beginner or intermediate, start learning CSS now.</p>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+		
+				<aside class="ct-sidebar">		
+					
+					<% include ../partials/aside.ejs %>	
+					
+				</aside>
+	
+			<div class="clr"></div>
+				
+			</div><!--//ct-inner-->
+			
+		</div><!--//ct-content-->
+
+		<footer class="ct-footer">
+		
+			<% include ../partials/footer.ejs %>	
+				
+		</footer>
+		
+		<script type="text/javascript" src="js/typeahead.min.js"></script>
+		<script type="text/javascript" src="js/hogan.min.js"></script>
+		<script type="text/javascript" src="js/wp-typeahead.js"></script>
+		<script type="text/javascript" src="js/wp-embed.min.js"></script>
+		</div><!--ct-container-->
+
+	</body>
+ </html>

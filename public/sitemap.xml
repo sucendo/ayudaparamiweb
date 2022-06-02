@@ -6,6 +6,11 @@
 <priority>1.00</priority>
 </url>
 <url>
+<loc>http://www.ayudaparamiweb.com/herramientas</loc>
+<lastmod>2022-02-24T10:35:21+00:00</lastmod>
+<priority>0.80</priority>
+</url>  
+<url>
 <loc>http://www.ayudaparamiweb.com/experimentos</loc>
 <lastmod>2022-02-24T10:35:21+00:00</lastmod>
 <priority>0.80</priority>
@@ -76,6 +81,12 @@
 <priority>0.80</priority>
 </url>
 <url>
+<url>
+<loc>http://www.ayudaparamiweb.com/conversor-binario</loc>
+<lastmod>2022-06-01T11:02:21+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>  
 <loc>http://www.ayudaparamiweb.com/rusia-ataca-ucrania</loc>
 <lastmod>2022-02-24T10:35:21+00:00</lastmod>
 <priority>0.80</priority>

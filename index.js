@@ -13,6 +13,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 //principales
+
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
@@ -26,24 +27,41 @@ app.get('/experimentos', function(request, response) {
 });
 
 //autores
+
 app.get('/sucender', function(request, response) {
   response.render('authors/sucender');
 });
 
 //experimentos
+
+app.get('/mapa-guerra-ucrania-rusia', function(request, response) {
+  response.render('experiments/0003-mapa-guerra-ucrania-rusia');
+});
+
 app.get('/rusia-ataca-ucrania', function(request, response) {
   response.render('experiments/0002-rusia-ataca-ucrania');
 });
 
-app.get('/mapa-guerra-ucrania-rusia', function(request, response) {
-  response.render('experiments/0003-mapa-guerra-ucrania-rusia');
+app.get('/quantum-pacific-group', function(request, response) {
+  response.render('experiments/0001-quantum-pacific-group');
 });
 
 app.get('/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019', function(request, response) {
   response.render('experiments/0004-comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022.ejs');
 });
 
+//tools
+
+app.get('/contador-caracteres-seo', function(request, response) {
+  response.render('tools/0002-contador-caracteres-seo');
+});
+
+app.get('/conversor-binario', function(request, response) {
+  response.render('tools/0001-conversor-binario');
+});
+
 //articulos
+
 app.get('/entornos-colaborativos', function(request, response) {
   response.render('news/0021-entornos-colaborativos');
 });
@@ -88,17 +106,11 @@ app.get('/problemas-canon-digital-ecommerce', function(request, response) {
   response.render('news/0004-problemas-canon-digital-ecommerce');
 });
 
-app.get('/quantum-pacific-group', function(request, response) {
-  response.render('experiments/0001-quantum-pacific-group');
-});
-
 app.get('/codigo-traductor-google-blog', function(request, response) {
   response.render('news/0002-codigo-traductor-google-blog');
 });
 
-app.get('/contador-caracteres-seo', function(request, response) {
-  response.render('tools/0002-contador-caracteres-seo');
-});
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));

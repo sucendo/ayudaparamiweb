@@ -1,104 +1,112 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>http://www.ayudaparamiweb.com/</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>http://www.ayudaparamiweb.com/</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/herramientas</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
-</url>  
-<url>
-<loc>http://www.ayudaparamiweb.com/experimentos</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/herramientas</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/entornos-colaborativos</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/experimentos</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/backlink-que-es-como-construir-red-de-enlaces</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/entornos-colaborativos</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/investigacion-palabras-clave</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/backlink-que-es-como-construir-red-de-enlaces</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/contenido-y-seo</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/investigacion-palabras-clave</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/seo-on-page-aspectos-tecnicos</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/contenido-y-seo</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/motores-de-busqueda</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/seo-on-page-aspectos-tecnicos</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/seo-que-es</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/motores-de-busqueda</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/como-crear-una-pagina-web</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/seo-que-es</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/el-mundo-del-programador-web</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/como-crear-una-pagina-web</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/que-es-bluetooth</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/el-mundo-del-programador-web</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/quantum-pacific-group</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/que-es-bluetooth</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/codigo-traductor-google-blog</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/quantum-pacific-group</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/contador-caracteres-seo</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/codigo-traductor-google-blog</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<url>
-<loc>http://www.ayudaparamiweb.com/conversor-binario</loc>
-<lastmod>2022-06-01T11:02:21+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>  
-<loc>http://www.ayudaparamiweb.com/rusia-ataca-ucrania</loc>
-<lastmod>2022-02-24T10:35:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/contador-caracteres-seo</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/mapa-guerra-ucrania-rusia</loc>
-<lastmod>2022-03-10T12:20:21+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>http://www.ayudaparamiweb.com/conversor-binario</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>http://www.ayudaparamiweb.com/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019</loc>
-<lastmod>2022-05-05T16:50:21+00:00</lastmod>
-<priority>0.80</priority>
-</url>  
+  <loc>http://www.ayudaparamiweb.com/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.ayudaparamiweb.com/mapa-guerra-ucrania-rusia</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.ayudaparamiweb.com/rusia-ataca-ucrania</loc>
+  <lastmod>2022-06-07T13:37:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>

@@ -1978,13 +1978,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'08:30',
                     'description': '<h3>El ejército ruso intenta avanzar sin éxito en el área de Lozove-Bila Krinitsa</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [33.11829, 47.19916]
                 }
-            }	
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Las tropas rusas bombardean un refugio en Bakhmut, donde se encontraban varias personas',
+                    'date':'08/06/2022',
+                    'time':'11:50',
+                    'description': '<h3>Las tropas rusas bombardean un refugio en Bakhmut, donde se encontraban varias personas</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [37.9898627661939, 48.589881062402654]
+                }
+            }		
         ]
     };
       

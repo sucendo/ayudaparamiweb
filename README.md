@@ -1,7 +1,7 @@
 # ayudaparamiweb
 website
 
-## Cosas Chulas para repricar
+## Cosas Chulas para replicar
 * https://www.samlearner.com/projects
 * https://ig.ft.com/russias-war-in-ukraine-mapped/
 * https://pittsburgh-steps.samlearner.com/

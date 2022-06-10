@@ -1993,11 +1993,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'11:50',
                     'description': '<h3>Las tropas rusas bombardean un refugio en Bakhmut, donde se encontraban varias personas</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/bombardeo-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [37.9898627661939, 48.589881062402654]
+                }
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'El ejército ruso asalta Nyrkove y Mykolaivka',
+                    'date':'10/06/2022',
+                    'time':'10:12',
+                    'description': '<h3>El ejército ruso asalta Nyrkove y Mykolaivka</h3><p>Las fuerzas rusas, apoyadas por la aviación, han llevado a cabo acciones de asalto en las proximidades de Nyrkove y Mykolaivka</p>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.33548696121583, 48.75026317348431]
                 }
             }		
         ]

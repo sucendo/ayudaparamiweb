@@ -2008,13 +2008,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'time':'10:12',
                     'description': '<h3>El ejército ruso asalta Nyrkove y Mykolaivka</h3><p>Las fuerzas rusas, apoyadas por la aviación, han llevado a cabo acciones de asalto en las proximidades de Nyrkove y Mykolaivka</p>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
-                    'iconSize': [50, 50]
+                    'iconSize': [40, 40]
                 },
                 'geometry': {
                     'type': 'Point',
                     'coordinates': [38.33548696121583, 48.75026317348431]
                 }
-            }		
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Las fuerzas rusas avanzan con éxito parcial hacia Vozdvyzhenka-Roty',
+                    'date':'10/06/2022',
+                    'time':'10:12',
+                    'description': '<h3>Las fuerzas rusas avanzan con éxito parcial hacia Vozdvyzhenka-Roty</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/armados-red.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.26572680723417, 48.50143014476897]
+                }
+            }	
         ]
     };
       

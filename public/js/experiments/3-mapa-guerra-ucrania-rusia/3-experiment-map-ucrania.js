@@ -362,7 +362,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             'paint': {
                 'raster-fade-duration': 0
             }
-        });	    
+        });
+	    
+	// Add imagen 20220612 Severodonetsk
+    	map.addSource('20220612-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-06-12-00_00_2022-06-12-23_59_Sentinel-2_L2A_Wildfires_38.43979-48.97994_38.60450-48.91912.png',
+            'coordinates': [
+                [38.43979, 48.97994],
+                [38.60450, 48.97994],
+                [38.60450, 48.91912],
+                [38.43979, 48.91912]
+            ]
+        });
+    	map.addLayer({
+            id: '20220612-sentinel-layer',
+            'type': 'raster',
+            'source': '20220612-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });    
 	    
 	map.addSource('radar', {
             'type': 'image',
@@ -2029,7 +2049,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                     'type': 'Point',
                     'coordinates': [38.26572680723417, 48.50143014476897]
                 }
-            }	
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite de los combates en Severodonetsk (12/06/2022)',
+                    'date':'12/05/2022',
+                    'time':'08:36',
+                    'description': '<h3>Imagen Satelite de los combates en Severodonetsk (12/06/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [50, 50]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.43979, 48.97994]
+                }
+            }		
         ]
     };
       

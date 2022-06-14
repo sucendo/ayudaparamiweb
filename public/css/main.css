@@ -575,7 +575,7 @@ input[type="submit"],
 }
 
 .ct-post p.ct-tags a:hover {
-    background: #30abd5;
+    background: #c1c1c1; /* Sucendo (14/06/2022): #30abd5 */
     color: #fff;
 }
 

@@ -1493,7 +1493,8 @@ a.ct-demo-link:hover {
 }
 
 .ct-tags {
-    margin: 15px 0 40px 0
+    margin: 15px 0 40px 0;
+    color: #ffffff; /* Sucendo (14/06/2022) */
 }
 
 .ct-tags a {

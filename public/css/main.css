@@ -2947,7 +2947,7 @@ input[type="submit"].ct-search-submit {
 
 .ct-icon-search {
     z-index: 90;
-    background: #537b7b;
+    background: ##c1c1c1; /* Sucendo (14/06/2022): #537b7b */
     color: #ffffff;
 }
 

@@ -703,7 +703,7 @@ a.ct-commenttime,
 .ct-nav-main ul li a {
     font-weight: bold;
     margin: 0 14px 0 10px;
-    color: #fff;
+    color: #414a51; /* Sucendo (14/06/2022) #fff */
     text-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 

@@ -2954,7 +2954,7 @@ input[type="submit"].ct-search-submit {
 
 .ct-search.ct-search-open .ct-icon-search {
     z-index: 1;
-    background: #237dac;
+    background: #333d46; /* Sucender (14/06/2022): #237dac */ 
     color: #fff;
     pointer-events: none;
 }

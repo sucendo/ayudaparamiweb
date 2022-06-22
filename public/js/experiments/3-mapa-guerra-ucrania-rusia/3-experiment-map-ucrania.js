@@ -384,6 +384,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             }
         });    
 	    
+	// Add imagen 20220621 Plataforma Petrolifera
+    	map.addSource('20220621-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-06-21-00_00_2022-06-21-23_59_Sentinel-2_L2A_True_color_30.85562-45.39869_31.07637-45.29783.png',
+            'coordinates': [
+                [30.85562, 45.39869],
+                [31.07637, 45.39869],
+                [31.07637, 45.29783],
+                [30.85562, 45.29783]
+            ]
+        });
+    	map.addLayer({
+            id: '20220621-sentinel-layer',
+            'type': 'raster',
+            'source': '20220621-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });
+	    
 	map.addSource('radar', {
             'type': 'image',
             'url': 'https://media.urgente24.com/p/805a75793838e06ba6a508e07b9f4c99/adjuntos/319/imagenes/002/658/0002658006/el-nyt-analiza-imagenes-satelitales-bucha-maxar.png',

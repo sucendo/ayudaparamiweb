@@ -2074,15 +2074,30 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'type': 'Feature',
                 'properties': {
                     'message': 'Imagen Satelite de los combates en Severodonetsk (12/06/2022)',
-                    'date':'12/05/2022',
+                    'date':'12/06/2022',
                     'time':'08:36',
                     'description': '<h3>Imagen Satelite de los combates en Severodonetsk (12/06/2022)</h3>',
+                    'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [38.43979, 48.97994]
+                }
+            },		
+	    {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Imagen Satelite del incencio producido en la plataforma petrolifera (21/06/2022)',
+                    'date':'21/06/2022',
+                    'time':'09:07',
+                    'description': '<h3>Imagen Satelite del incencio producido tras el ataque con misiles ucraniano en la plataforma de perforación "Petro Godovanets" (21/06/2022)</h3>',
                     'icon': 'http://www.ayudaparamiweb.com/icons/satelite-white.svg',
                     'iconSize': [50, 50]
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [38.43979, 48.97994]
+                    'coordinates': [30.85562, 45.39869]
                 }
             }		
         ]

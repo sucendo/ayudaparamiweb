@@ -34,6 +34,10 @@ app.get('/sucender', function(request, response) {
 
 //experimentos
 
+app.get('/historia', function(request, response) {
+  response.render('historia/historia');
+});
+
 app.get('/mapa-guerra-ucrania-rusia', function(request, response) {
   response.render('experiments/0003-mapa-guerra-ucrania-rusia');
 });

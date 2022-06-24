@@ -32,7 +32,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         });
 
         // setup the viewport
-        map.jumpTo({ 'center': coordinates[0], 'zoom': 12 });
+        map.jumpTo({ 'center': coordinates[0], 'zoom': 8 });
         map.setPitch(30);
 
         // on a regular basis, add more coordinates from the saved list and update the map

@@ -2,8 +2,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
     (async () => {
         const map = new mapboxgl.Map({
             container: 'map',
-            zoom: 13,
-            center: [6.58968, 45.39701],
+            zoom: 10,
+            center: [-33.4680191, -7.0035429],
             pitch: 76,
             bearing: 150,
             style: 'mapbox://styles/mapbox/satellite-v9',

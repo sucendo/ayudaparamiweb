@@ -9,7 +9,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         // We fetch the JSON here so that we can parse and use it separately
         // from GL JS's use in the added source.
         const response = await fetch(
-            'https://ayudaparamiweb.herokuapp.com/data/experiments/historia/hike.geojson'
+            'http://www.ayudaparamiweb.com/data/experiments/historia/hike.geojson'
         );
         const data = await response.json();
         // save full coordinate list for later

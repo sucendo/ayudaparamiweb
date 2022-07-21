@@ -404,6 +404,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             }
         });
 	    
+	// Add imagen 20220720
+    	map.addSource('20220720-sentinel', {
+            'type': 'image',
+            'url': './img/experiments/sentinel/2022-07-20-00_00_2022-07-20-23_59_Sentinel-2_L2A_Wildfires_37.11405-49.19175_37.18052-49.17096.png',
+            'coordinates': [
+                [37.11405, 49.19175],
+                [37.18052, 49.19175],
+                [37.18052, 49.17096],
+                [37.11405, 49.17096]
+            ]
+        });
+    	map.addLayer({
+            id: '20220720-sentinel-layer',
+            'type': 'raster',
+            'source': '20220720-sentinel',
+            'paint': {
+                'raster-fade-duration': 0
+            }
+        });    
+	    
 	map.addSource('radar', {
             'type': 'image',
             'url': 'https://media.urgente24.com/p/805a75793838e06ba6a508e07b9f4c99/adjuntos/319/imagenes/002/658/0002658006/el-nyt-analiza-imagenes-satelitales-bucha-maxar.png',

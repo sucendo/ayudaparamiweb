@@ -8,7 +8,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             pitch: 76,
             bearing: 150,
             style: 'mapbox://styles/mapbox/satellite-v9',
-            interactive: true,
+            interactive: false,
             hash: false
         });
 

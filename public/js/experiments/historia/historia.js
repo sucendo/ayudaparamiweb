@@ -1,5 +1,5 @@
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
     const map = new mapboxgl.Map({
         container: 'map',
         zoom: 11.53,
@@ -7,7 +7,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         pitch: 75,
         bearing: -180,
         style: 'mapbox://styles/mapbox/satellite-streets-v11',
-        interactive: false
+        projection: 'globe',
+        interactive: true
     });
 
     // `routes` comes from https://docs.mapbox.com/mapbox-gl-js/assets/routes.js,
@@ -75,8 +76,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
 
     // wait for the terrain and sky to load before starting animation
     map.on('load', () => {
-        const animationDuration = 800000;
-        const cameraAltitude = 80000;
+        const animationDuration = 100000;
+        const cameraAltitude = 40000;
         // get the overall distance of each route so we can interpolate along them
         const routeDistance = turf.lineDistance(turf.lineString(targetRoute));
         const cameraRouteDistance = turf.lineDistance(

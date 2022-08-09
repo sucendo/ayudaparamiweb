@@ -1,69 +1,44 @@
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
-    (async () => {
-        const map = new mapboxgl.Map({
-            container: 'map',
-            zoom: 10,
-            center: [-33.4680191, -7.0035429],
-            pitch: 76,
-            bearing: 150,
-            style: 'mapbox://styles/mapbox/satellite-v9',
-            interactive: true,
-            hash: false
+    const map = new mapboxgl.Map({
+        container: 'map',
+        zoom: 11.53,
+        center: [6.5615, 46.0598],
+        pitch: 40,
+        bearing: -180,
+        style: 'mapbox://styles/mapbox/satellite-streets-v11',
+        interactive: false
+    });
+
+    // `routes` comes from https://docs.mapbox.com/mapbox-gl-js/assets/routes.js,
+    // which has properties that are in the shape of an array of arrays that correspond
+    //  to the `coordinates` property of a GeoJSON linestring, for example:
+    // [
+    //   [6.56158, 46.05989],
+    //   [6.56913, 46.05679],
+    //   ...
+    // ]
+    // this is the path the camera will look at
+    const targetRoute = routes.target;
+    // this is the path the camera will move along
+    const cameraRoute = routes.camera;
+
+    // add terrain, sky, and line layers once the style has loaded
+    map.on('load', () => {
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
         });
-
-        // Start downloading the route data, and wait for map load to occur in parallel
-        const [pinRouteGeojson] = await Promise.all([
-            fetch(
-                'http://www.ayudaparamiweb.com/data/experiments/historia/ruta-primera-vuelta-mundo.geojson'
-            ).then((response) => response.json()),
-            map.once('load')
-        ]);
-
-        const pinRoute = pinRouteGeojson.features[0].geometry.coordinates;
-        // Create the marker and popup that will display the elevation queries
-        const popup = new mapboxgl.Popup({ closeButton: false });
-        const marker = new mapboxgl.Marker({
-            color: 'red',
-            scale: 0.8,
-            draggable: false,
-            pitchAlignment: 'auto',
-            rotationAlignment: 'auto'
-        })
-            .setLngLat(pinRoute[0])
-            .setPopup(popup)
-            .addTo(map)
-            .togglePopup();
-
-        // Add a line feature and layer. This feature will get updated as we progress the animation
-        map.addSource('line', {
-            type: 'geojson',
-            // Line metrics is required to use the 'line-progress' property
-            lineMetrics: true,
-            data: pinRouteGeojson
-        });
-        map.addLayer({
-            type: 'line',
-            source: 'line',
-            id: 'line',
-            paint: {
-                'line-color': 'rgba(0,0,0,0)',
-                'line-width': 5
-            },
-            layout: {
-                'line-cap': 'round',
-                'line-join': 'round'
-            }
-        });
-
-        // Add some fog in the background
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+      // Add some fog in the background
         map.setFog({
             'range': [-0.5, 2],
             'color': 'white',
             'horizon-blend': 0.2
-        });
-
-        // Add a sky layer over the horizon
+        });  
+      // Add a sky layer over the horizon
         map.addLayer({
             'id': 'sky',
             'type': 'sky',
@@ -72,67 +47,92 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
                 'sky-atmosphere-color': 'rgba(85, 151, 210, 0.5)'
             }
         });
-
-        // Add terrain source, with slight exaggeration
-        map.addSource('mapbox-dem', {
-            'type': 'raster-dem',
-            'url': 'mapbox://mapbox.terrain-rgb',
-            'tileSize': 512,
-            'maxzoom': 14
+        map.addSource('trace', {
+            type: 'geojson',
+            data: {
+                'type': 'Feature',
+                'properties': {},
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': targetRoute
+                }
+            }
         });
-        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+        map.addLayer({
+            type: 'line',
+            source: 'trace',
+            id: 'line',
+            paint: {
+                'line-color': 'orange',
+                'line-width': 5
+            },
+            layout: {
+                'line-cap': 'round',
+                'line-join': 'round'
+            }
+        });
+    });
 
-        await map.once('idle');
-        // The total animation duration, in milliseconds
-        const animationDuration = 20000;
-        // Use the https://turfjs.org/ library to calculate line distances and
-        // sample the line at a given percentage with the turf.along function.
-        const path = turf.lineString(pinRoute);
-        // Get the total line distance
-        const pathDistance = turf.lineDistance(path);
+    // wait for the terrain and sky to load before starting animation
+    map.on('load', () => {
+        const animationDuration = 80000;
+        const cameraAltitude = 4000;
+        // get the overall distance of each route so we can interpolate along them
+        const routeDistance = turf.lineDistance(turf.lineString(targetRoute));
+        const cameraRouteDistance = turf.lineDistance(
+            turf.lineString(cameraRoute)
+        );
+
         let start;
+
         function frame(time) {
             if (!start) start = time;
-            const animationPhase = (time - start) / animationDuration;
-            if (animationPhase > 1) {
-                return;
+            // phase determines how far through the animation we are
+            const phase = (time - start) / animationDuration;
+
+            // phase is normalized between 0 and 1
+            // when the animation is finished, reset start to loop the animation
+            if (phase > 1) {
+                // wait 1.5 seconds before looping
+                setTimeout(() => {
+                    start = 0.0;
+                }, 1500);
             }
 
-            // Get the new latitude and longitude by sampling along the path
-            const alongPath = turf.along(path, pathDistance * animationPhase)
-                .geometry.coordinates;
-            const lngLat = {
-                lng: alongPath[0],
-                lat: alongPath[1]
-            };
+            // use the phase to get a point that is the appropriate distance along the route
+            // this approach syncs the camera and route positions ensuring they move
+            // at roughly equal rates even if they don't contain the same number of points
+            const alongRoute = turf.along(
+                turf.lineString(targetRoute),
+                routeDistance * phase
+            ).geometry.coordinates;
 
-            // Sample the terrain elevation. We round to an integer value to
-            // prevent showing a lot of digits during the animation
-            const elevation = Math.floor(
-                // Do not use terrain exaggeration to get actual meter values
-                map.queryTerrainElevation(lngLat, { exaggerated: false })
+            const alongCamera = turf.along(
+                turf.lineString(cameraRoute),
+                cameraRouteDistance * phase
+            ).geometry.coordinates;
+
+            const camera = map.getFreeCameraOptions();
+
+            // set the position and altitude of the camera
+            camera.position = mapboxgl.MercatorCoordinate.fromLngLat(
+                {
+                    lng: alongCamera[0],
+                    lat: alongCamera[1]
+                },
+                cameraAltitude
             );
 
-            // Update the popup altitude value and marker location
-            popup.setHTML('Altitude: ' + elevation + 'm<br/>');
-            marker.setLngLat(lngLat);
+            // tell the camera to look at a point along the route
+            camera.lookAtPoint({
+                lng: alongRoute[0],
+                lat: alongRoute[1]
+            });
 
-            // Reduce the visible length of the line by using a line-gradient to cutoff the line
-            // animationPhase is a value between 0 and 1 that reprents the progress of the animation
-            map.setPaintProperty('line', 'line-gradient', [
-                'step',
-                ['line-progress'],
-                'red',
-                animationPhase,
-                'rgba(255, 0, 0, 0)'
-            ]);
-
-            // Rotate the camera at a slightly lower speed to give some parallax effect in the background
-            const rotation = 150 - animationPhase * 40.0;
-            map.setBearing(rotation % 360);
+            map.setFreeCameraOptions(camera);
 
             window.requestAnimationFrame(frame);
         }
 
         window.requestAnimationFrame(frame);
-    })();
+    });

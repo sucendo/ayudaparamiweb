@@ -14,7 +14,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         // Start downloading the route data, and wait for map load to occur in parallel
         const [pinRouteGeojson] = await Promise.all([
             fetch(
-                'http://www.ayudaparamiweb.com/data/experiments/historia/ruta-primera-vuelta-mundo.geojson'
+                'http://www.ayudaparamiweb.com/data/experiments/historia/hike.geojson'
             ).then((response) => response.json()),
             map.once('load')
         ]);

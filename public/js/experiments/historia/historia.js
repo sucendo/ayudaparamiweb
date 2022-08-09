@@ -3,8 +3,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
     const map = new mapboxgl.Map({
         container: 'map',
         zoom: 11.53,
-        center: [6.5615, 46.0598],
-        pitch: 40,
+        center: [-33.4680191, -7.0035429],
+        pitch: 75,
         bearing: -180,
         style: 'mapbox://styles/mapbox/satellite-streets-v11',
         interactive: false
@@ -76,7 +76,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
     // wait for the terrain and sky to load before starting animation
     map.on('load', () => {
         const animationDuration = 800000;
-        const cameraAltitude = 4000;
+        const cameraAltitude = 5000;
         // get the overall distance of each route so we can interpolate along them
         const routeDistance = turf.lineDistance(turf.lineString(targetRoute));
         const cameraRouteDistance = turf.lineDistance(

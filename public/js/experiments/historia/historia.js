@@ -1,21 +1,21 @@
 
-	mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
     (async () => {
         const map = new mapboxgl.Map({
             container: 'map',
-            zoom: 13,
-            center: [6.58968, 45.39701],
+            zoom: 10,
+            center: [-33.4680191, -7.0035429],
             pitch: 76,
             bearing: 150,
-            style: 'mapbox://styles/mapbox/satellite-streets-v11',
-            interactive: false,
+            style: 'mapbox://styles/mapbox/satellite-v9',
+            interactive: true,
             hash: false
         });
 
         // Start downloading the route data, and wait for map load to occur in parallel
         const [pinRouteGeojson] = await Promise.all([
             fetch(
-                'http://ayudaparamiweb/public/data/experiments/historia/ruta-primera-vuelta-mundo.geojson'
+                'http://www.ayudaparamiweb.com/data/experiments/historia/ruta-primera-vuelta-mundo.geojson'
             ).then((response) => response.json()),
             map.once('load')
         ]);

@@ -2,7 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
     (async () => {
         const map = new mapboxgl.Map({
             container: 'map',
-            zoom: 10,
+            zoom: 13,
             center: [6.58968, 45.39701],
             pitch: 76,
             bearing: 150,

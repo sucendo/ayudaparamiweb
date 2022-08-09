@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         const map = new mapboxgl.Map({
             container: 'map',
             zoom: 10,
-            center: [-33.4680191, -7.0035429],
+            center: [6.58968, 45.39701],
             pitch: 76,
             bearing: 150,
             style: 'mapbox://styles/mapbox/satellite-v9',
@@ -14,7 +14,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         // Start downloading the route data, and wait for map load to occur in parallel
         const [pinRouteGeojson] = await Promise.all([
             fetch(
-                'http://www.ayudaparamiweb.com/data/experiments/historia/hike.geojson'
+                'http://www.ayudaparamiweb.com/data/experiments/historia/route-pin.geojson'
             ).then((response) => response.json()),
             map.once('load')
         ]);

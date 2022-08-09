@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
     (async () => {
         const map = new mapboxgl.Map({
             container: 'map',
@@ -6,15 +6,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
             center: [6.58968, 45.39701],
             pitch: 76,
             bearing: 150,
-            style: 'mapbox://styles/mapbox/satellite-v9',
+            style: 'mapbox://styles/mapbox/satellite-streets-v11',
             interactive: false,
             hash: false
         });
 
         // Start downloading the route data, and wait for map load to occur in parallel
+        // http://www.ayudaparamiweb.com/data/experiments/historia/route-pin.geojson
         const [pinRouteGeojson] = await Promise.all([
             fetch(
-                'http://www.ayudaparamiweb.com/data/experiments/historia/route-pin.geojson'
+                'https://docs.mapbox.com/mapbox-gl-js/assets/route-pin.geojson'
             ).then((response) => response.json()),
             map.once('load')
         ]);

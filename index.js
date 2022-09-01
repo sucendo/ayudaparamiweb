@@ -18,6 +18,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/articulos', function(request, response) {
+  response.render('pages/articles');
+});
+
 app.get('/herramientas', function(request, response) {
   response.render('pages/tools');
 });

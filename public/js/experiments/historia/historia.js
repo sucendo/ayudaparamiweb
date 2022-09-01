@@ -1,9 +1,8 @@
-
-	mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3BycXZocXB6In0.JzhjXlVPZEUl_lr4mBw8zw';
     const map = new mapboxgl.Map({
         container: 'map',
         zoom: 11.53,
-        center: [6.5615, 46.0598],
+        center: [-33.0680191, -6.5035429],
         pitch: 75,
         bearing: -180,
         style: 'mapbox://styles/mapbox/satellite-streets-v11',
@@ -48,6 +47,15 @@
                 'sky-atmosphere-color': 'rgba(85, 151, 210, 0.5)'
             }
         });
+        map.addLayer({
+            'id': 'sky',
+            'type': 'sky',
+            'paint': {
+                'sky-type': 'atmosphere',
+                'sky-atmosphere-sun': [0.0, 90.0],
+                'sky-atmosphere-sun-intensity': 15
+            }
+        });
         map.addSource('trace', {
             type: 'geojson',
             data: {
@@ -64,7 +72,7 @@
             source: 'trace',
             id: 'line',
             paint: {
-                'line-color': 'orange',
+                'line-color': 'yellow',
                 'line-width': 5
             },
             layout: {
@@ -76,8 +84,8 @@
 
     // wait for the terrain and sky to load before starting animation
     map.on('load', () => {
-        const animationDuration = 10000;
-        const cameraAltitude = 4000;
+        const animationDuration = 900000;
+        const cameraAltitude = 45000;
         // get the overall distance of each route so we can interpolate along them
         const routeDistance = turf.lineDistance(turf.lineString(targetRoute));
         const cameraRouteDistance = turf.lineDistance(

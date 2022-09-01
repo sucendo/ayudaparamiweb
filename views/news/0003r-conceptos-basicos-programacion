@@ -1,0 +1,353 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active"><!--<![endif]-->
+	<head> 
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+		<meta name="theme-color" content="#537b7b">
+		<!-- iOs Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#537b7b">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#537b7b">
+
+		<title>¿Cómo crear una página web? | Ayuda para mi Web</title>
+		<meta name="description" content="Cómo crear una página web es lo primero que se pregunta todo nuevo webmaster. Te explico todo lo que necesitas para hacer una página web." />
+		<meta name="author" content="Sucender" />
+
+		<% include ../partials/head.ejs %>
+	</head>
+	
+	<body id="codrops-body">
+		<!-- BuySellAds.com Ad Code -->
+		<script type="text/javascript">
+			(function(){
+				var bsa = document.createElement('script');
+				bsa.type = 'text/javascript';
+				bsa.async = true;
+				bsa.src = '//s3.buysellads.com/ac/bsa.js';
+				(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+			})();
+		</script>
+		<!-- END BuySellAds.com Ad Code -->	
+				
+		<div class="ct-container">
+			
+			<% include ../partials/header.ejs %>
+			
+		<div class="ct-content">
+
+			<div class="ct-inner">
+			
+				<div class="ct-main ct-main-post" id="ct-main" role="main">
+					<div class="ct-post">
+						
+						<article id="post-7" itemscope="" itemtype="http://schema.org/Article" class="post-7 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials tag-animation tag-canvas tag-slideshow" itemscope="" itemtype="http://schema.org/Article">
+							<header>
+									<div class="ct-subline entry-meta">
+									
+										<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+											<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+											  <img alt="" src="http://www.ayudaparamiweb.com/img/author/sucender.png" srcset="img/author/sucender.png" class="avatar avatar-36 photo" height="36" width="36">
+											  <meta itemprop="url" content="http://www.ayudaparamiweb.com/img/author/sucender.png">
+											  <meta itemprop="width" content="36">
+											  <meta itemprop="height" content="36">
+											</div>
+											<meta itemprop="name" content="Sucender">
+										</div>
+									
+										<div class="ct-subline__author">
+											<span class="byline author vcard" span itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="http://www.ayudaparamiweb.com/" title="Posts by Sucender" rel="author" itemprop="name">Sucender</a></span>                                  
+											in 
+											<a href="http://www.ayudaparamiweb.com/">Tutorials</a>
+										</div>
+										
+										<div class="ct-subline__time">
+											Actualizado el 
+											<time class="ct-subline__pubtime" pubdate="pubdate" itemprop="dateModified" content="2022-03-31">31/03/2022</time> 
+											Publicado el 
+											<time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="2019-02-07">07/02/2019</time> 
+											<strong>12</strong> votos. Media: <strong>4.4</strong> de 5
+											<div style="display: none;" class="post-ratings" name="post-ratings-1606" data-nonce="f164d6d75a">
+												<div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+													<meta itemprop="bestRating" content="5">
+													<meta itemprop="worstRating" content="1">
+													<meta itemprop="ratingValue" content="4.4">
+													<meta itemprop="ratingCount" content="12">
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									
+									<h1 class="ct-h-shd entry-title" itemprop="headline">¿Cómo crear una página web?</h1>								
+								</header>
+							
+							<div class="ct-post-content">
+								<div class="ct-post-excerpt" itemprop="description">Ya sea que esté considerando construir un nuevo sitio web o desee volver a hacer su sitio web actual, se enfrenta a algunas decisiones básicas, pero importantes.</div>
+								
+								<div class="ct-post-featured-img" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+								    <img width="800" height="500" src="../img/articulo/como-crear-una-pagina-web.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="¿Cómo crear una página Web?" srcset="../img/articulo/como-crear-una-pagina-web.webp 800w, ../img/articulo/como-crear-una-pagina-web.webp 300w, ../img/articulo/como-crear-una-pagina-web.webp 768w" sizes="(max-width: 800px) 100vw, 800px"></a>
+									<meta itemprop="url" content="http://www.ayudaparamiweb.com/img/articulo/como-crear-una-pagina-web.webp">
+									<meta itemprop="width" content="800">
+									<meta itemprop="height" content="500">
+								</div>
+																
+								<p>En esta guía, le ayudaremos con estas decisiones mostrando sus elecciones y explicando cómo las opciones específicas se adaptarán a sus necesidades únicas. Cubriremos todo, desde comprender qué tipo de sitio web necesita y elegir un nombre de dominio, hasta los toques finales que le ayudarán a lanzar su sitio web con éxito, sin importar cuáles sean sus objetivos.</p>
+								<p>Además, le mostraremos cómo usar herramientas o sistemas específicos para crear su website. Como ejemplo, explicaremos cómo puede crear un sitio web paso a paso con uno de los sistemas de administración de contenido (CMS) más populares, WordPress.org.</p>
+								
+								<h4>Los pasos esenciales para lanzar un sitio web:</h4>
+								<ul>
+									<li>Comprender qué tipo de sitio se necesita</li>
+									<li>Elegir un nombre de dominio y proveedor de alojamiento (Hosting)</li>
+									<li>Instalar y configurar WordPress CMS</li>
+									<li>Diseñar tu sitio y hacer que se vea genial</li>
+									<li>Escribir y preparar contenido</li>
+									<li>Probar antes y después del lanzamiento</li>
+								</ul>
+								<p>Esperamos que esté entusiasmado con la posibilidad de tener su sitio web. Ahora, veamos cuáles son los pasos que debe seguir para hacerlo bien.</p>
+								
+								<h2>Comprenda qué tipo de sitio necesita</h2>
+								<p>Hay diferentes tipos de sitios web. </font><font style="vertical-align: inherit;">El tipo o los tipos de combinación que elijas dependerán de lo que quieras lograr con tu sitio y de la funcionalidad que necesitarás para lograrlo.</p>
+								
+								<h3>Los siguientes son los principales tipos de sitios web:</h3>
+								
+								<p>Un blog puede ser una característica adicional para cualquier sitio web, o puede ser un tipo de sitio independiente por sí mismo. </font><font style="vertical-align: inherit;">Los blogs generalmente se organizan en orden cronológico, con la entrada más reciente en la parte superior de la página principal y las entradas antiguas en la parte inferior.</p>
+								<p>Sitio de tarjeta de visita. Para algunas pequeñas empresas, un simple sitio web de una página con el nombre, la descripción, la información de contacto y tal vez un logotipo puede ser todo lo que se necesita. También puede incluir información sobre el producto, pero el concepto básico es un sitio web de una página que representa a su empresa o usted mismo.</p>
+								<p>Sitio de cartera. Un sitio de portafolio es similar al sitio web de tarjetas de visita, excepto que tendrá una sección en la página web donde exhibirá su trabajo y le dará opciones a las personas para contactarlo. Los estudios de fotografía comúnmente utilizan este tipo de sitio web, al igual que las empresas de diseño y otros esfuerzos creativos.</p>
+								<p>Sitio del folleto del producto. Este tipo de sitio web es una extensión de los esfuerzos de ventas y marketing de su empresa. Podrá incluir los bienes y servicios que ofrece su empresa para que los visitantes naveguen. Este sitio web puede incluir algunas pautas de precios, pero no permite a los clientes realizar compras en línea.</p>
+								<p>Sitio de comercio electrónico. Con un sitio de comercio electrónico, podrá exhibir sus productos o servicios y permitir que los visitantes los compren en línea. Al principio, el proceso de instalación de un sitio de comercio electrónico puede parecer desalentador, pero hoy en día existen muchos métodos y herramientas simplificados que le permitirán vender en línea.</p>
+								
+								<h2>Seleccione la herramienta adecuada para construir un sitio web</h2>
+								
+								<p>Con tantas opciones disponibles en la actualidad, puede ser difícil elegir los mejores instrumentos para el trabajo. Elegir la plataforma en la que construyas tu sitio será una de las decisiones más importantes que tomes. Esta elección es fundamental porque estará vinculado a esa plataforma durante un tiempo y nunca es fácil (o posible) mover su sitio web de una plataforma a otra.</p>
+								<p>Las soluciones de creación de sitios web se pueden dividir en dos grupos: sistemas de administración de contenido autohospedado y plataformas hospedadoras de sitios web alojadas.</p>
+								<p>La mejor y más popular herramienta para hacer un sitio web es el sistema de gestión de contenido (CMS) de WordPress. Lo recomienda el 90 por ciento de los expertos que hemos encuestado .</p>
+								<p>Puede crear cualquier sitio web con WordPress, ya sea un sitio web de tarjetas de presentación de una página, un sitio con un blog e incluso un sitio web de comercio electrónico.</p>
+								
+								<h2>Elija un nombre de dominio y proveedor de alojamiento</h2>
+								
+								<p>Para crear su nuevo sitio web con la plataforma recomendada de WordPress, necesitará un nombre de dominio y un proveedor de alojamiento web.</p>
+								
+								<h3>Nombre de dominio</h3>
+								
+								<p>Una vez que haya seleccionado la plataforma adecuada para su sitio, debe comenzar a pensar en un nombre de dominio. Este dominio será yourname.com, yourbusiness.com o algo similar.</p>
+								
+								<p>Si está promocionando usted mismo, querrá usar su nombre y apellido. Piensa johnsmith.com. Incluso si no se está promocionando, no es una mala idea obtener su nombre como dominio ahora, en caso de que quiera usarlo en el futuro. Si está promocionando su negocio, querrá usar el nombre de su compañía. Piensa en "yourbusiness.com".</p>
+								<p>Para la mayoría de los sitios web, el primer objetivo al elegir un nombre de dominio es obtener el dominio .com de primer nivel siempre que sea posible. Aquí hay una guía útil para ayudarlo a conocer los detalles y secretos para seleccionar un nombre de dominio válido.</p>
+								
+								<h3>Proveedor de alojamiento web</h3>
+								
+								<p>Después de elegir un nombre de dominio, seleccionar servicios de alojamiento confiables será una de las decisiones más importantes que tomará. En gran medida, la funcionalidad y el rendimiento de su sitio web dependerán de su proveedor de alojamiento. El host se asegura de que su sitio esté disponible para lectores potenciales las 24 horas del día, los 7 días de la semana, y es donde se almacenan sus archivos en línea.</p>
+								<p>El host web incorrecto puede causar muchos problemas con su sitio web. Imagínese elegir una empresa de telefonía móvil que no tiene recepción. Su proveedor de alojamiento web es una pieza importante del rompecabezas para mantener un sitio de Internet exitoso. Por lo tanto, es crucial que elija un proveedor confiable.</p>
+								
+								<p class="lead">La idea de construir un sitio web desde cero puede ser algo desalentador para los principiantes. Pero no tiene por qué serlo. De hecho, codificar un sitio web básico puede ser extremadamente simple, siempre y cuando se conozcan algunas etiquetas HTML.</p>
+								<p>Aquí te muestro cómo codificar tu propio sitio web y luego publicarlo en la web. Tampoco tardará mucho. Como pronto descubrirás, ¡construir tu propio sitio web es mucho más fácil de lo que parece!</p>
+								<h2>¿Qué es un sitio web?</h2>
+								<p>Antes de crear nuestro propio sitio web, debemos entender qué es realmente un sitio web.</p>
+								<p>Un sitio web es simplemente una colección de páginas web. Las páginas web suelen estar enlazadas entre sí, pero no siempre. Para crear un sitio web, simplemente crea una o más páginas web.</p>
+								<p>Para que el mundo lo vea, el sitio web (o colección de páginas web) debe estar alojado en un servidor web. Este alojamiento web normalmente lo realiza un <dfn>proveedor de alojamiento</dfn> (también conocido como <dfn>empresa de alojamiento</dfn> o <dfn>alojamiento web</dfn> ). Un proveedor de alojamiento es simplemente una empresa que proporciona alojamiento web a sus clientes.</p>
+								<h2>¿Qué es una página web?</h2>
+								<p>Una página web es un archivo de texto que contiene una combinación de texto y código de "marca". Cuando el documento se visualiza en un navegador web, se muestra (o se "procesa") según lo previsto. Cuando se ve en un editor de texto (como el Bloc de notas), muestra el texto y el código de marcado.</p>
+								<p>Por lo tanto, una página web consta de 2 vistas:</p>
+								<ul>
+								<li>La vista "renderizada": esto es lo que ve cuando ve la página web en su navegador.</li>
+								<li>La vista del "código fuente": este es el código "detrás de la escena" que especifica el contenido y cómo debe aparecer la página.</li>
+								</ul>
+								<p>Puede ver el código fuente de cualquier página web en la web. El código fuente generalmente se abrirá en una nueva pestaña.</p>
+								<p>Para ello, utiliza la <kbd>View Page Source</kbd>función de tu navegador . Por ejemplo, si usas Google Chrome, ve <kbd>View &gt; Developer &gt; View Source</kbd>. Si usas Firefox, ve <kbd>Tools &gt; Web Developer &gt; Page Source</kbd>. Según el dispositivo y el navegador, también puede hacer clic con el botón derecho en cualquier lugar de la página para que aparezca la <kbd>View Source</kbd>opción.</p>
+								<aside class="tip">
+								<p>También hay otras opciones para ver el código fuente de una página, como lo <kbd>Inspect Element</kbd>que le permite abrir el código fuente en un panel lateral con el elemento seleccionado resaltado en el código fuente. Los desarrolladores suelen utilizar esto al depurar sus sitios web.</p>
+								</aside>
+								<p>El código fuente de una página web está formado por etiquetas HTML. Algunas etiquetas son obligatorias (todas las páginas web deben usarlas), pero la mayoría de las etiquetas son opcionales. Las etiquetas reales que utilice dependerán del contenido que desee que aparezca.</p>
+								<p>Echa un vistazo al siguiente código.</p>
+								<p>Código de ejemplo 1:</p>								
+								<pre class="line-numbers" data-start="0"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt; &lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+								<p>El código anterior puede ser una plantilla para cualquier página web. Si ve el código fuente de cualquier página web, debe encontrar estas etiquetas. Puede que necesites buscarlos, pero deberían estar allí.</p>
+								<div class="tip">
+								<p>Debería poder ver la <code class="language-html">&lt;html&gt;</code> etiqueta cerca de la parte superior y <code class="language-html">&lt;/html&gt;</code> cerca de la parte inferior. Esto se debe a que todas las demás etiquetas HTML deben ir entre las <code class="language-html">&lt;html&gt;</code>etiquetas y <code class="language-html">&lt;/html&gt;</code>. (La única excepción a esto es la etiqueta <code class="language-html">&lt;! DOCTYPE ...&gt;</code>, que especifica la versión de HTML / XHTML que usa el documento. No entraremos en esta etiqueta aquí, pero si está interesado, aquí hay más información ).</p>
+								</div>
+								<p>Las <code class="language-html">&lt;body&gt;</code>etiquetas contienen todo el contenido que se mostrará en la página. Por ejemplo, si desea mostrar las palabras "Bienvenido a mi página web", deberá colocarlas entre las etiquetas <code class="language-html">&lt;body&gt;</code> y <code class="language-html">&lt;/body&gt;</code>.</p>
+								<p>Aquí hay otro ejemplo. Esta vez, vamos a añadir algo de contenido.</p>
+								<p>Ejemplo de código 2:</p>
+								<pre class="line-numbers" data-start="0"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;¡Hola mundo!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;Mi primera página web&lt;/h1&gt;
+    &lt;p&gt;¡Bienvenido a mi primera página web!&lt;/p&gt;
+    &lt;p&gt;Aquí hay un nuevo párrafo...&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+								<p>Si tuviera que abrir el archivo HTML anterior en su navegador, debería verse algo como esto:</p>
+								
+								<p>Como puede ver, cualquier texto rodeado por <code class="language-html">&lt;h1&gt;</code>y <code class="language-html">&lt;/h1&gt;</code>aparece como un encabezado (el encabezado nivel 1 es exacto). El texto dentro de las <code class="language-html">&lt;p&gt;</code>etiquetas se muestra como texto de párrafo normal. Puede agregar tantas etiquetas HTML como desee a una página web.</p>
+								<p>Hay muchas más etiquetas HTML (más de 100). Algunas etiquetas se usan para formatear (como <code class="language-html">&lt;h1&gt;</code>), otras se usan para mostrar objetos (como imágenes, formularios, tablas, etc.).</p>
+								<h2>¿Cómo uso este código?</h2>
+								<p>Hasta ahora te he mostrado el código utilizado para crear una página web básica. También te he mostrado cómo se ve esa página web en un navegador. Ahora te voy a mostrar cómo hacer esto tú mismo.</p>
+								<p>Para crear una página web como el ejemplo anterior, haga lo siguiente:</p>
+								<ol>
+								<li>Abre un editor de texto (como Notepad o Simpletext) o editor HTML</li>
+								<li>Abra una página nueva (en blanco) (por ejemplo, <kbd>File &gt; New...</kbd>)</li>
+								<li>Copie el código del Ejemplo de código 2 y péguelo en su archivo de texto en blanco (o vuelva a escribirlo si lo prefiere)</li>
+								<li>Guarde el archivo como <kbd>index.html</kbd>(tome nota de donde lo guardó)</li>
+								</ol>
+								<p>¡Felicidades! ¡Acabas de crear tu primera página web!</p>
+								<p>Ahora, puede seguir adelante y ver su nueva página web en su navegador. Para ello, puede hacer doble clic en el archivo. Si esto no funciona, intente abrir una nueva ventana del navegador y luego arrastre el archivo a ella. De lo contrario, dependiendo de tu navegador, deberías poder ir<kbd>File &gt; Open...</kbd></p>
+								<h2>Agregando otra página web</h2>
+								<p>Agregar otra página web es tan fácil como crear la primera. De hecho, solo puede hacer una copia de la primera si así lo desea, y luego modificarla como desee. Por ejemplo, podría crear un hipervínculo para que las dos páginas estén vinculadas. De esa manera, al hacer clic en el enlace se mostrará la otra página.</p>
+								<p>Entonces, vamos a crear otra página web. En esta página web, tendremos un hipervínculo que apunta a nuestra primera página web. Para hacer esto, nuestro código se vería así.</p>
+								<p>Código de ejemplo 3:</p>
+								<pre class="line-numbers" data-start="0"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;¡Hola mundo!&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;h1&gt;Mi segunda página web&lt;/h1&gt;
+    &lt;p&gt;¡Bienvenido a mi segunda página web!&lt;/p&gt;
+    &lt;p&gt;Aquí &lt;a  href = "index.html"&gt;mi primera página web&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+								<p>La página HTML anterior se verá así en un navegador:</p>
+								<p>Entonces, adelante, crea tu segunda página web. Esta vez lo llaman, dicen ... <kbd>page_two.html</kbd>.</p>
+								<p>Por lo tanto, en caso de que haya olvidado cómo hacerlo, estos son los pasos para crear su segunda página web:</p>
+								<ol>
+								<li>Abre un editor de texto (como Notepad o Simpletext)</li>
+								<li>Abra una página nueva (en blanco) (por ejemplo, <kbd>File &gt; New...</kbd>)</li>
+								<li>Copie el código del Ejemplo de código 3 y péguelo en su archivo de texto en blanco (o vuelva a escribirlo si lo prefiere)</li>
+								<li>Guarde el archivo como <kbd>page_two.html</kbd>(guárdelo en el mismo directorio que su archivo anterior)</li>
+								</ol>
+								<p>¡Felicidades! Acabas de crear tu segunda página web. ¡Podrías decir que has creado tu primer sitio web!</p>
+								<h2>Agregando más contenido a su página web</h2>
+								<p>Ahora que ha creado su primer sitio web, puede agregar todo el contenido que desee. Por ejemplo, podría agregar más texto y formatearlo, podría agregar elementos de formulario, imágenes y mucho más.</p>
+								<p>Ayuda para mi Web proporciona muchos códigos HTML que puede copiar y pegar en sus propias páginas web. Estos están disponibles en la biblioteca de códigos HTML y en la página de ejemplos HTML.</p>
+								<p>Siéntase libre de copiar / pegar cualquiera de estos códigos HTML en su propia página web y cambiarlos como desee. No tengas miedo de experimentar.</p>
+								<h2>Listo para publicar su sitio web?</h2>
+								<p>Todo lo que has hecho hasta ahora ha estado en tu computadora local. Las únicas personas que pueden ver su página web son aquellas que tienen acceso a su computadora.</p>
+								<p>Para publicar su sitio web para que todo el mundo lo vea, deberá "subir" su sitio web al servidor de un proveedor de alojamiento de sitios web. Para hacer esto, necesita abrir una cuenta con un proveedor de alojamiento web. Una vez que hayas hecho esto, podrás dar tu propia dirección ".com" a quien quieras ver en tu sitio web.</p>
+								<p>La apertura de una cuenta de alojamiento suele ser sencillo. La parte más difícil a menudo es decidir qué plan de hosting usar. Si recién estás comenzando, un plan de alojamiento básico suele ser suficiente.</p>
+								<p>Entonces, para publicar su sitio web, usted simplemente:</p>
+								<ol>
+								<li>Abra una cuenta con un proveedor de hosting</li>
+								<li>Suba su (s) página (s) web (su proveedor de alojamiento web le explicará cómo hacerlo una vez que se registre)</li>
+								</ol>
+								<p>¡Es así de simple!</p>
+								<p>Nuestro sitio asociado, ZappyHost, ofrece excelentes <a href="https://www.secureserver.net/hosting/web-hosting_4.aspx?prog_id=zappyhost" target="_blank" rel="nofollow">planes de hospedaje</a> para principiantes hasta profesionales. <small>(Revelación completa: ZappyHost es un sitio asociado y gano una comisión por las ventas de cualquier producto).</small></p>
+								<p>Por ahora, el plan de Economía de Linux debería ser más que suficiente. Es el plan más barato, pero obtienes muchas funciones y suficiente espacio en disco. Si tiene muchas fotos / imágenes para su sitio web, podría estar mejor con un plan Deluxe o Premium, ya que estos planes ofrecen mucho más espacio en el disco.</p>
+								<p>Si prefieres comparar precios primero, revisa mi <a href="http://www.ayudaparamiweb.com/">Tutorial de Alojamiento Web</a> . Este tutorial explica con más detalle, qué es el alojamiento web y cómo elegir un proveedor de alojamiento.</p>
+								<h2>Constructores de sitios web en línea</h2>
+								<p>Me doy cuenta de que no todos quieren pasar el tiempo aprendiendo HTML, etc. para crear su propio sitio web. ¡Muchas personas solo necesitan tener un sitio web en funcionamiento lo antes posible sin tener que hacer todo lo técnico!</p>
+								<p>Si te suena así, ¡este creador de <a href="https://www.secureserver.net/hosting/website-builder2.aspx?prog_id=zappyhost" target="_blank" rel="nofollow">sitios web en línea</a> de ZappyHost se creó solo para ti! Esta es una herramienta que le permite crear un sitio web en minutos. Simplemente elige una plantilla, agrega contenido. Es así de simple. Por supuesto, puede personalizar su plantilla cargando sus propias imágenes o seleccionando entre las miles de fotos de archivo.</p>
+								<p>Y obtén esto ... ¡el alojamiento y el nombre de dominio están incluidos absolutamente GRATIS! ¡Si te gusta el sonido de eso, échale un vistazo!</p>
+								<p><small>(Revelación completa: ZappyHost es un sitio asociado y gano una comisión por las ventas de cualquier producto).</small></p>
+								<h2>Más recursos</h2>
+								<p>Aquí, en Ayuda para mi Web, encontrarás miles de páginas de información útil sobre la creación de sitios web. A continuación hay algunos que podrían ser útiles para hacer su propio sitio web:</p>
+								<ul>
+								<li>El <a href="http://www.ayudaparamiweb.com/">tutorial Crear un sitio web</a> describe los dos enfoques principales para crear un sitio web (es decir, codifíquelo usted mismo o use un creador de sitios web). ¡Este artículo le muestra cómo ahorrar dinero en una cuenta de creador de sitios web, así como obtener un nombre de dominio gratis en el proceso!</li>
+								<li>El <a href="http://www.ayudaparamiweb.com/">tutorial Construir un sitio web</a> es una gran página para marcar. Es el principal punto de entrada a todos los tutoriales relacionados con el desarrollo de sitios web.</li>
+								<li>Como se mencionó, tenemos Códigos de Copiar / Pegar y <a href="http://www.ayudaparamiweb.com/">Ejemplos de HTML</a>que puede usar para copiar y pegar en sus propias páginas web.</li>
+								<li>Y, siempre puedes visitar la <a href="http://www.ayudaparamiweb.com/">página</a> de <a href="http://www.ayudaparamiweb.com/">inicio de Ayuda para mi Web</a> para ver rápidamente lo que puedes encontrar en Ayuda para mi Web</li>
+								</ul>
+								
+								
+								
+								
+								
+									
+							</div>
+						</article>
+						
+						<p class="ct-tags">Tagged with: <a href="http://www.ayudaparamiweb.com/" rel="tag">animation</a> <a href="http://www.ayudaparamiweb.com/" rel="tag">canvas</a> <a href="http://www.ayudaparamiweb.com/" rel="tag">slideshow</a></p>
+						<div class="clr"></div>
+					</div>
+
+					<div class="ct-row">
+						<div class="ct-author-info ct-box">
+							<div class="ct-author-avatar">
+								<img alt="" src="http://www.ayudaparamiweb.com/img/author/sucender.png" srcset="img/author/sucender.png" class="avatar avatar-80 photo" height="80" width="80">
+							</div>
+							<div class="ct-author-page-desc">
+								<h4><a href="http://www.ayudaparamiweb.com/" title="Posts by Sucender" rel="author">Sucender</a></h4>
+								<p>Sucender es un desarrollador informatico, apasionado del diseño web, HTML, CSS, JavaScript y Node.js. Available for <a href="mailto:sucender@gmail.com">hire</a>.</p>
+								<p class="ct-author-page-url"><strong>View all contributions by <a href="http://www.ayudaparamiweb.com/" title="Posts by Sucender" rel="author">Sucender</a></strong></p>
+																		
+								<p class="ct-author-page-url">
+									<strong>Website: </strong>
+									<a href="http://www.ayudaparamiweb.com/" target="_blank">http://www.ayudaparamiweb.com/</a>
+								</p>
+																		
+								<div>
+									<ul class="ct-social-profiles">
+										<li><a class="ct-social-twitter" href="https://twitter.com/ayudaparamiweb">https://twitter.com/ayudaparamiweb<span>Sucender on Twitter</span></a></li>
+										<li><a class="ct-social-github" href="https://github.com/ayudaparamiweb">https://github.com/ayudaparamiweb<span>Sucender on Github</span></a></li>																																																																	
+									</ul>
+								</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+					</div>
+
+												
+					<div class="ct-row-wrapper">
+						<div class="ct-row">
+							
+							<div class="ct-sharing ct-box">
+								<h4>Stay connected with us:</h4>
+								<div class="ct-link-list">
+									<a href="http://feeds2.feedburner.com/" class="ct-link-list-rss">Grab the <strong>RSS Feed</strong></a>
+									<a href="http://feedburner.google.com/" class="ct-link-list-mail">Get <strong>email updates</strong></a>
+									<a href="http://www.twitter.com/" class="ct-link-list-twitter">Follow us on <strong>Twitter</strong></a>
+									<a href="http://www.facebook.com/" class="ct-link-list-fb">Join us on <strong>Facebook</strong></a>
+									<a href="https://plus.google.com/" class="ct-link-list-gplus">Add us on <strong>Google+</strong></a>
+								</div>
+							</div>
+							<div class="ct-bottom-ads ct-box">
+								<h4>CSS Reference</h4>
+								<p>Learn about all important CSS properties from the basics with our extensive and easy-to-read CSS Reference.</p><p>It doesn't matter if you are a beginner or intermediate, start learning CSS now.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+		
+				<aside class="ct-sidebar">		
+					
+					<% include ../partials/aside.ejs %>	
+					
+				</aside>
+	
+			<div class="clr"></div>
+				
+			</div><!--//ct-inner-->
+			
+		</div><!--//ct-content-->
+
+		<footer class="ct-footer">
+		
+			<% include ../partials/footer.ejs %>	
+				
+		</footer>
+		
+		<script type="text/javascript" src="js/typeahead.min.js"></script>
+		<script type="text/javascript" src="js/hogan.min.js"></script>
+		<script type="text/javascript" src="js/wp-typeahead.js"></script>
+		<script type="text/javascript" src="js/wp-embed.min.js"></script>
+		</div><!--ct-container-->
+
+	</body>
+ </html>

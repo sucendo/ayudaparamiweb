@@ -5,7 +5,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic3VjZW5kbyIsImEiOiJja3dvd243c3EwNzFhMm5sY3Byc
         center: [-33.0680191, -6.5035429],
         pitch: 75,
         bearing: -180,
-        style: 'mapbox://styles/mapbox/satellite-streets-v11',
+        style: 'mapbox://styles/mapbox/satellite-v9',
         projection: 'globe',
         interactive: true
     });

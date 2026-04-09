@@ -31,14 +31,19 @@
 								<div class="ct-post-content seo-tool">
 									<div class="ct-post-excerpt">Introduce una URL y obtén un informe SEO realista: rastreo básico, metadatos, contenido, imágenes, enlazado, social/schema e indexabilidad.</div>
 
-									<form id="seo-analyzer-form" class="seo-tool__form">
-										<label for="seo-url" class="seo-tool__label">URL a analizar</label>
-										<div class="seo-tool__row">
-											<input id="seo-url" name="url" type="url" placeholder="https://www.ejemplo.com" required />
-											<button type="submit">Analizar SEO</button>
-										</div>
-										<p class="seo-tool__hint">Esta herramienta necesita un endpoint backend/serverless para recuperar el HTML remoto y evitar problemas de CORS en navegador.</p>
-									</form>
+										<form id="seo-analyzer-form" class="seo-tool__form">
+											<label for="seo-url" class="seo-tool__label">URL a analizar</label>
+											<div class="seo-tool__row">
+												<input id="seo-url" name="url" type="url" placeholder="https://www.ejemplo.com" required />
+												<button type="submit">Analizar SEO</button>
+											</div>
+											<details class="seo-tool__advanced">
+												<summary>Configuración avanzada (API)</summary>
+												<label for="seo-api-endpoint" class="seo-tool__label seo-tool__label--small">Endpoint de análisis (opcional)</label>
+												<input id="seo-api-endpoint" name="apiEndpoint" type="url" placeholder="https://tu-backend.com/api/seo-analyze" />
+											</details>
+											<p class="seo-tool__hint">En despliegue estático (ej. GitHub Pages), configura un endpoint backend/serverless público. Si no lo haces, <code>/api/seo-analyze</code> puede devolver HTML y fallará el parseo JSON.</p>
+										</form>
 
 									<div id="seo-state" class="seo-tool__state" aria-live="polite"></div>
 									<div id="seo-report" class="seo-report" hidden></div>

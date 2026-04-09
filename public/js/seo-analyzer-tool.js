@@ -5,9 +5,11 @@
   }
 
   var input = document.getElementById('seo-url');
+  var apiInput = document.getElementById('seo-api-endpoint');
   var state = document.getElementById('seo-state');
   var reportContainer = document.getElementById('seo-report');
   var button = form.querySelector('button');
+  var defaultApiEndpoint = '/api/seo-analyze';
 
   function escapeHtml(value) {
     return String(value || '')
@@ -36,6 +38,26 @@
     if (score >= 80) return { label: 'Buen estado', type: 'ok' };
     if (score >= 60) return { label: 'Mejorable', type: 'warning' };
     return { label: 'Prioritario', type: 'error' };
+  }
+
+  function getApiEndpoint() {
+    var fromWindow = window.__SEO_ANALYZER_API_BASE__;
+    var fromInput = apiInput ? (apiInput.value || '').trim() : '';
+    var fromStorage = window.localStorage ? (window.localStorage.getItem('seoAnalyzerApiEndpoint') || '').trim() : '';
+    var endpoint = fromInput || fromWindow || fromStorage || defaultApiEndpoint;
+
+    if (window.localStorage && fromInput) {
+      window.localStorage.setItem('seoAnalyzerApiEndpoint', fromInput);
+    }
+
+    return endpoint;
+  }
+
+  if (apiInput && window.localStorage) {
+    var savedEndpoint = window.localStorage.getItem('seoAnalyzerApiEndpoint');
+    if (savedEndpoint) {
+      apiInput.value = savedEndpoint;
+    }
   }
 
   function renderReport(report) {
@@ -103,13 +125,31 @@
     reportContainer.hidden = true;
     setState('loading', 'Analizando URL... esto puede tardar unos segundos.');
 
-    fetch('/api/seo-analyze?url=' + encodeURIComponent(url))
+    var endpoint = getApiEndpoint();
+    var requestUrl = endpoint + (endpoint.indexOf('?') === -1 ? '?' : '&') + 'url=' + encodeURIComponent(url);
+
+    fetch(requestUrl, {
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
       .then(function(response) {
+        var contentType = (response.headers.get('content-type') || '').toLowerCase();
+
+        if (contentType.indexOf('application/json') === -1) {
+          return response.text().then(function(rawBody) {
+            var sample = (rawBody || '').slice(0, 80).replace(/\s+/g, ' ');
+            var looksLikeHtml = sample.toLowerCase().indexOf('<!doctype') !== -1 || sample.indexOf('<html') !== -1;
+            var message = looksLikeHtml
+              ? 'El endpoint devolvió HTML en lugar de JSON. Si estás en hosting estático (GitHub Pages), configura un backend/serverless en “Configuración avanzada (API)”.'
+              : 'El endpoint no devolvió JSON válido.';
+
+            throw new Error(message + ' Estado HTTP: ' + response.status + '.');
+          });
+        }
+
         return response.json().then(function(payload) {
-          return {
-            status: response.status,
-            payload: payload
-          };
+          return { status: response.status, payload: payload };
         });
       })
       .then(function(result) {

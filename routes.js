@@ -1,4 +1,4 @@
-module.exports = [
+const routes = [
   { path: '/', view: 'pages/index' },
   { path: '/articulos', view: 'pages/articles' },
   { path: '/herramientas', view: 'pages/tools' },
@@ -30,14 +30,19 @@ module.exports = [
   { path: '/como-crear-una-pagina-web', view: 'news/0007-como-crear-una-pagina-web' },
   { path: '/el-mundo-del-programador-web', view: 'news/0006-el-mundo-del-programador-web' },
   { path: '/que-es-bluetooth', view: 'news/0005-que-es-bluetooth' },
-  { path: '/problemas-canon-digital-ecommerce', view: 'news/0004r-problemas-canon-digital-ecommerce' },
+  { path: '/problemas-canon-digital-ecommerce', view: 'news/0004r-problemas-canon-digital-ecommerce', published: false },
   { path: '/codigo-traductor-google-blog', view: 'news/0002-codigo-traductor-google-blog' },
-  { path: '/google-shopping-actions', view: 'news/0001r-google-shopping-actions' },
-  { path: '/experiencia-de-usuario-ux-y-seo', view: 'news/0014r-experiencia-de-usuario-ux-y-seo' },
-  { path: '/herramientas-seo', view: 'news/0015r-herramientas-seo' },
-  { path: '/autoridad-de-dominio', view: 'news/0016r-autoridad-de-dominio' },
-  { path: '/node-js-que-es', view: 'news/0017r-node-js-que-es' },
-  { path: '/express-js-para-que-sirve', view: 'news/0018r-express-js-para-que-sirve' },
-  { path: '/vue-js-que-es', view: 'news/0020r-vue-js-que-es' },
-  { path: '/herramientas-seo-gratuitas', view: 'news/0022r-herramientas-seo-gratuitas' }
+  { path: '/google-shopping-actions', view: 'news/0001r-google-shopping-actions', published: false },
+  { path: '/experiencia-de-usuario-ux-y-seo', view: 'news/0014r-experiencia-de-usuario-ux-y-seo', published: false },
+  { path: '/herramientas-seo', view: 'news/0015r-herramientas-seo', published: false },
+  { path: '/autoridad-de-dominio', view: 'news/0016r-autoridad-de-dominio', published: false },
+  { path: '/node-js-que-es', view: 'news/0017r-node-js-que-es', published: false },
+  { path: '/express-js-para-que-sirve', view: 'news/0018r-express-js-para-que-sirve', published: false },
+  { path: '/vue-js-que-es', view: 'news/0020r-vue-js-que-es', published: false },
+  { path: '/herramientas-seo-gratuitas', view: 'news/0022r-herramientas-seo-gratuitas', published: false }
 ];
+
+module.exports = routes;
+module.exports.publishedRoutes = routes.filter(function(route) {
+  return route.published !== false;
+});

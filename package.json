@@ -14,11 +14,6 @@
     "build:static:gh": "BASE_PATH=/${npm_package_name}/ node scripts/build-static.js"
   },
   "dependencies": {
-    "ejs": "^3.1.10",
-
-    "start:node": "APP_MODE=node node index.js"
-  },
-  "dependencies": {
     "ejs": "^2.7.4",
     "express": "4.13.3",
     "opbeat": "^3.14.0"

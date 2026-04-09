@@ -24,6 +24,19 @@ function copyPublic() {
   fs.cpSync(publicDir, outputDir, { recursive: true });
 }
 
+function walkFiles(dir, visitor) {
+  fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
+    const fullPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      walkFiles(fullPath, visitor);
+      return;
+    }
+
+    visitor(fullPath);
+  });
+}
+
 function createNoJekyllFlag() {
   fs.writeFileSync(path.join(outputDir, '.nojekyll'), '');
 }
@@ -92,6 +105,51 @@ function injectBaseTag(html) {
   return html.replace(/<head(.*?)>/i, `<head$1>\n\t\t<base href="${basePath}">`);
 }
 
+function rewritePublicAssetUrls() {
+  if (basePath === '/') {
+    return;
+  }
+
+  const rewriteLikeHtml = (content) =>
+    content
+      .replace(
+        /(\b(?:href|src|action|poster)\s*=\s*["'])\/(?!\/)([^"']*)(["'])/gi,
+        (_, prefix, pathFromRoot, suffix) => `${prefix}${prependBasePath(pathFromRoot)}${suffix}`
+      )
+      .replace(
+        /(url\(\s*["'])\/(?!\/)([^"')]*)(["']\s*\))/gi,
+        (_, prefix, pathFromRoot, suffix) => `${prefix}${prependBasePath(pathFromRoot)}${suffix}`
+      )
+      .replace(
+        /(url\(\s*)\/(?!\/)([^)"']*)(\s*\))/gi,
+        (_, prefix, pathFromRoot, suffix) => `${prefix}${prependBasePath(pathFromRoot)}${suffix}`
+      )
+      .replace(
+        /("(?:(?:start_url)|(?:src)|(?:scope))"\s*:\s*")\/(?!\/)([^"]*)(")/gi,
+        (_, prefix, pathFromRoot, suffix) => `${prefix}${prependBasePath(pathFromRoot)}${suffix}`
+      );
+
+  walkFiles(outputDir, (filePath) => {
+    const ext = path.extname(filePath).toLowerCase();
+    const fileName = path.basename(filePath).toLowerCase();
+    const shouldRewrite =
+      ext === '.css' ||
+      ext === '.xml' ||
+      fileName.endsWith('.webmanifest');
+
+    if (!shouldRewrite) {
+      return;
+    }
+
+    const content = fs.readFileSync(filePath, 'utf8');
+    const rewritten = rewriteLikeHtml(content);
+
+    if (rewritten !== content) {
+      fs.writeFileSync(filePath, rewritten, 'utf8');
+    }
+  });
+}
+
 function renderRoute(route) {
   const viewFile = toViewFile(route.view);
   const outputFile = toOutputFile(route.path);
@@ -112,6 +170,7 @@ function renderRoute(route) {
 function build() {
   cleanDist();
   copyPublic();
+  rewritePublicAssetUrls();
   createNoJekyllFlag();
   routes.forEach(renderRoute);
   console.log(`Static site generated at ${outputDir} with BASE_PATH=${basePath}`);

@@ -3,6 +3,7 @@ module.exports = [
   { path: '/articulos', view: 'pages/articles' },
   { path: '/herramientas', view: 'pages/tools' },
   { path: '/experimentos', view: 'pages/experiments' },
+  { path: '/tags', view: 'pages/tags' },
   { path: '/sucender', view: 'authors/sucender' },
   { path: '/historia', view: 'historia/historia' },
   { path: '/mapa-guerra-ucrania-rusia', view: 'experiments/0003-mapa-guerra-ucrania-rusia' },

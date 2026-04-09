@@ -3,14 +3,17 @@
   "version": "0.0.1",
   "description": "Todo lo necesarío para crear una web",
   "engines": {
-    "node": "5.9.1"
+    "node": ">=18"
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build:static": "node scripts/build-static.js",
+    "start:static": "APP_MODE=static node index.js",
+    "start:node": "APP_MODE=node node index.js"
   },
   "dependencies": {
-    "ejs": ">=3.1.7",
+    "ejs": "^2.7.4",
     "express": "4.13.3",
     "opbeat": "^3.14.0"
   },

@@ -18,6 +18,7 @@ module.exports = [
   { path: '/seo-tecnico-core-web-vitals-2026', view: 'news/0023-seo-tecnico-core-web-vitals-2026' },
   { path: '/ia-generativa-estrategia-contenidos-seo', view: 'news/0024-ia-generativa-estrategia-contenidos-seo' },
   { path: '/checklist-lanzamiento-web-2026', view: 'news/0025-checklist-lanzamiento-web-2026' },
+  { path: '/guia-seo-pymes-2026', view: 'news/0026-guia-seo-pymes-2026' },
   { path: '/backlink-que-es-como-construir-red-de-enlaces', view: 'news/0013-backlink-que-es-como-construir-red-de-enlaces' },
   { path: '/investigacion-palabras-clave', view: 'news/0012-investigacion-palabras-clave' },
   { path: '/contenido-y-seo', view: 'news/0011-contenido-y-seo' },

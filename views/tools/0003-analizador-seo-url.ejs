@@ -1,0 +1,65 @@
+<!doctype html>
+<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#537b7b">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#537b7b">
+		<meta name="msapplication-navbutton-color" content="#537b7b">
+
+		<title>Analizador SEO de URL | Ayuda para mi Web</title>
+		<meta name="description" content="Analiza el SEO on-page de cualquier URL con un informe claro, puntuación por bloques y recomendaciones accionables en español." />
+		<meta name="author" content="Sucender" />
+
+		<%- include('../partials/head.ejs') %>
+		<link rel="stylesheet" href="/css/seo-analyzer-tool.css">
+	</head>
+
+	<body id="codrops-body">
+		<div class="ct-container">
+			<%- include('../partials/header.ejs') %>
+
+			<div class="ct-content">
+				<div class="ct-inner">
+					<div class="ct-main ct-main-post" role="main">
+						<div class="ct-post">
+							<article class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+								<header>
+									<h1 class="ct-h-shd entry-title">Analizador SEO de URL</h1>
+								</header>
+								<div class="ct-post-content seo-tool">
+									<div class="ct-post-excerpt">Introduce una URL y obtén un informe SEO realista: rastreo básico, metadatos, contenido, imágenes, enlazado, social/schema e indexabilidad.</div>
+
+									<form id="seo-analyzer-form" class="seo-tool__form">
+										<label for="seo-url" class="seo-tool__label">URL a analizar</label>
+										<div class="seo-tool__row">
+											<input id="seo-url" name="url" type="url" placeholder="https://www.ejemplo.com" required />
+											<button type="submit">Analizar SEO</button>
+										</div>
+										<p class="seo-tool__hint">Esta herramienta necesita un endpoint backend/serverless para recuperar el HTML remoto y evitar problemas de CORS en navegador.</p>
+									</form>
+
+									<div id="seo-state" class="seo-tool__state" aria-live="polite"></div>
+									<div id="seo-report" class="seo-report" hidden></div>
+								</div>
+							</article>
+						</div>
+					</div>
+
+					<aside class="ct-sidebar">
+						<%- include('../partials/aside.ejs') %>
+					</aside>
+
+					<div class="clr"></div>
+				</div>
+			</div>
+
+			<footer class="ct-footer">
+				<%- include('../partials/footer.ejs') %>
+			</footer>
+		</div>
+
+		<script src="/js/seo-analyzer-tool.js"></script>
+	</body>
+</html>

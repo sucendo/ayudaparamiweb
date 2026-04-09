@@ -14,6 +14,7 @@ module.exports = [
   },
   { path: '/contador-caracteres-seo', view: 'tools/0002-contador-caracteres-seo' },
   { path: '/conversor-binario', view: 'tools/0001-conversor-binario' },
+  { path: '/analizador-seo-url', view: 'tools/0003-analizador-seo-url' },
   { path: '/entornos-colaborativos', view: 'news/0021-entornos-colaborativos' },
   { path: '/seo-tecnico-core-web-vitals-2026', view: 'news/0023-seo-tecnico-core-web-vitals-2026' },
   { path: '/ia-generativa-estrategia-contenidos-seo', view: 'news/0024-ia-generativa-estrategia-contenidos-seo' },

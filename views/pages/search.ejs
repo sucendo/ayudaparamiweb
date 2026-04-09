@@ -1,0 +1,54 @@
+<!doctype html>
+<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultados de búsqueda | Ayuda para mi Web</title>
+    <meta name="description" content="Resultados de búsqueda en Ayuda para mi Web" />
+    <meta name="author" content="Sucender" />
+    <%- include('../partials/head.ejs') %>
+  </head>
+
+  <body id="codrops-body">
+    <div class="ct-container">
+      <%- include('../partials/header.ejs') %>
+
+      <div class="ct-content">
+        <div class="ct-inner">
+          <div class="ct-main ct-main-archive" role="main">
+            <div class="ct-archive">
+              <h1>Resultados de búsqueda</h1>
+
+              <% if (!query) { %>
+                <p>Escribe un término para buscar contenido en la web.</p>
+              <% } else { %>
+                <div class="ct-cat-desc">
+                  <p>
+                    Mostrando resultados para <strong>"<%= query %>"</strong>.
+                  </p>
+                </div>
+
+                <% if (results.length === 0) { %>
+                  <p>No se han encontrado resultados para tu búsqueda.</p>
+                <% } else { %>
+                  <ul>
+                    <% results.forEach(function(result) { %>
+                      <li>
+                        <a href="<%= result.path %>"><%= result.title %></a>
+                      </li>
+                    <% }); %>
+                  </ul>
+                <% } %>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <%- include('../partials/footer.ejs') %>
+    </div>
+
+    <%- include('../partials/shared.ejs') %>
+  </body>
+</html>

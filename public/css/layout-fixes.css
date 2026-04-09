@@ -1,0 +1,21 @@
+.ct-main-archive .ct-archive-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ct-main-archive .ct-archive-container .ct-row {
+  display: contents;
+}
+
+.ct-main-archive .ct-archive-container .ct-box {
+  margin: 0;
+  width: auto;
+  float: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .ct-main-archive .ct-archive-container {
+    grid-template-columns: 1fr;
+  }
+}

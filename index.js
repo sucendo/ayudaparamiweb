@@ -3,6 +3,7 @@ var opbeat = require('opbeat').start();
 var express = require('express');
 var path = require('path');
 var routes = require('./routes');
+var seoAnalyzeHandler = require('./services/seo/seo-analyze-handler');
 var app = express();
 
 var appMode = process.env.APP_MODE || 'node';
@@ -40,6 +41,8 @@ if (appMode === 'static') {
 
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
+
+  app.get('/api/seo-analyze', seoAnalyzeHandler.handleSeoAnalyzeRequest);
 
   app.get('/buscar', function(request, response) {
     var query = (request.query.q || '').trim();

@@ -1,15 +1,19 @@
 (function() {
   var form = document.getElementById('seo-analyzer-form');
-  if (!form) {
-    return;
-  }
+  if (!form) return;
 
-  var input = document.getElementById('seo-url');
-  var apiInput = document.getElementById('seo-api-endpoint');
+  var urlInput = document.getElementById('seo-url');
+  var htmlInput = document.getElementById('seo-html-source');
+  var loadButton = document.getElementById('seo-load-url');
+  var submitButton = form.querySelector('button[type="submit"]');
   var state = document.getElementById('seo-state');
   var reportContainer = document.getElementById('seo-report');
-  var button = form.querySelector('button');
-  var defaultApiEndpoint = '/api/seo-analyze';
+
+  var STOPWORDS = {
+    de: 1, la: 1, que: 1, el: 1, en: 1, y: 1, a: 1, los: 1, del: 1, se: 1, las: 1, por: 1,
+    un: 1, para: 1, con: 1, una: 1, su: 1, al: 1, es: 1, lo: 1, como: 1, más: 1, o: 1,
+    the: 1, and: 1, for: 1, this: 1, that: 1, from: 1, with: 1
+  };
 
   function escapeHtml(value) {
     return String(value || '')
@@ -20,151 +24,169 @@
       .replace(/'/g, '&#39;');
   }
 
-  function statusBadge(level, text) {
-    return '<span class="seo-badge seo-badge--' + level + '">' + escapeHtml(text) + '</span>';
+  function setState(type, message) {
+    state.className = 'seo-tool__state';
+    if (type) state.classList.add('seo-state--' + type);
+    state.textContent = message || '';
+  }
+
+  function normalize(text) {
+    return (text || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function getMeta(doc, name) {
+    var node = doc.querySelector('meta[name="' + name + '"]');
+    return normalize(node ? node.getAttribute('content') : '');
+  }
+
+  function getTopTerms(text) {
+    var terms = (text.toLowerCase().match(/[\p{L}\p{N}]{3,}/gu) || []);
+    var freq = {};
+
+    terms.forEach(function(term) {
+      if (STOPWORDS[term]) return;
+      freq[term] = (freq[term] || 0) + 1;
+    });
+
+    return Object.keys(freq)
+      .map(function(key) { return { term: key, count: freq[key] }; })
+      .sort(function(a, b) { return b.count - a.count; })
+      .slice(0, 10);
+  }
+
+  function analyzeHtml(rawHtml) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(rawHtml, 'text/html');
+
+    var bodyText = normalize(doc.body ? doc.body.innerText : '');
+    var h1 = Array.prototype.map.call(doc.querySelectorAll('h1'), function(n) { return normalize(n.textContent); });
+    var h2 = Array.prototype.map.call(doc.querySelectorAll('h2'), function(n) { return normalize(n.textContent); });
+    var h3 = Array.prototype.map.call(doc.querySelectorAll('h3'), function(n) { return normalize(n.textContent); });
+    var images = Array.prototype.slice.call(doc.querySelectorAll('img'));
+    var links = Array.prototype.slice.call(doc.querySelectorAll('a[href]'));
+
+    var words = (bodyText.toLowerCase().match(/[\p{L}\p{N}]+/gu) || []).length;
+    var topTerms = getTopTerms(bodyText);
+    var weakAnchors = links.filter(function(link) {
+      var text = normalize(link.textContent).toLowerCase();
+      return !text || text === 'haz clic aquí' || text === 'click here' || text === 'leer más';
+    });
+
+    return {
+      onPage: {
+        title: normalize(doc.title),
+        titleLength: normalize(doc.title).length,
+        metaDescription: getMeta(doc, 'description'),
+        metaDescriptionLength: getMeta(doc, 'description').length,
+        canonical: normalize((doc.querySelector('link[rel="canonical"]') || {}).href || ''),
+        robots: getMeta(doc, 'robots'),
+        lang: normalize((doc.documentElement || {}).lang || ''),
+        viewport: getMeta(doc, 'viewport')
+      },
+      content: {
+        h1Count: h1.length,
+        h1Main: h1[0] || '',
+        h2Count: h2.length,
+        h3Count: h3.length,
+        words: words,
+        topTerms: topTerms,
+        suggestedKeyword: topTerms[0] ? topTerms[0].term : ''
+      },
+      images: {
+        total: images.length,
+        withAlt: images.filter(function(img) { return normalize(img.alt); }).length,
+        withoutAlt: images.filter(function(img) { return !normalize(img.alt); }).length
+      },
+      links: {
+        total: links.length,
+        weakAnchorCount: weakAnchors.length
+      },
+      authority: {
+        domainAuthority: 'No disponible sin API externa',
+        pageAuthority: 'No disponible sin API externa',
+        citationFlow: 'No disponible sin API externa',
+        trustFlow: 'No disponible sin API externa',
+        backlinks: 'No disponible sin API externa'
+      }
+    };
   }
 
   function renderList(items) {
-    if (!items || !items.length) {
-      return '<p>Sin elementos detectados.</p>';
-    }
-
+    if (!items || !items.length) return '<p>Sin datos.</p>';
     return '<ul class="seo-list">' + items.map(function(item) {
       return '<li>' + escapeHtml(item) + '</li>';
     }).join('') + '</ul>';
   }
 
-  function classifyScore(score) {
-    if (score >= 80) return { label: 'Buen estado', type: 'ok' };
-    if (score >= 60) return { label: 'Mejorable', type: 'warning' };
-    return { label: 'Prioritario', type: 'error' };
-  }
-
-  function getApiEndpoint() {
-    var fromWindow = window.__SEO_ANALYZER_API_BASE__;
-    var fromInput = apiInput ? (apiInput.value || '').trim() : '';
-    var fromStorage = window.localStorage ? (window.localStorage.getItem('seoAnalyzerApiEndpoint') || '').trim() : '';
-    var endpoint = fromInput || fromWindow || fromStorage || defaultApiEndpoint;
-
-    if (window.localStorage && fromInput) {
-      window.localStorage.setItem('seoAnalyzerApiEndpoint', fromInput);
-    }
-
-    return endpoint;
-  }
-
-  if (apiInput && window.localStorage) {
-    var savedEndpoint = window.localStorage.getItem('seoAnalyzerApiEndpoint');
-    if (savedEndpoint) {
-      apiInput.value = savedEndpoint;
-    }
-  }
-
-  function renderReport(report) {
-    var scoreState = classifyScore(report.scores.overall);
-    var blocks = report.scores.byBlock;
-
+  function renderReport(data) {
     var html = '';
     html += '<section class="seo-card seo-report__header">';
-    html += '<div><h2>Resumen ejecutivo</h2><p>URL final: <strong>' + escapeHtml(report.crawl.finalUrl) + '</strong></p><p>Estado HTTP: ' + escapeHtml(report.crawl.status) + ' · Tiempo: ' + escapeHtml(report.crawl.elapsedMs) + ' ms</p></div>';
-    html += '<div><div class="seo-score">' + escapeHtml(report.scores.overall) + '/100</div>' + statusBadge(scoreState.type, scoreState.label) + '<p>Puntuación SEO orientativa general.</p></div>';
-    html += '<div><h3>Subpuntuaciones</h3><ul class="seo-list"><li>Indexabilidad: ' + escapeHtml(blocks.indexabilidad) + '</li><li>Metadatos: ' + escapeHtml(blocks.metadatos) + '</li><li>Contenido: ' + escapeHtml(blocks.contenido) + '</li><li>Imágenes: ' + escapeHtml(blocks.imagenes) + '</li><li>Enlazado: ' + escapeHtml(blocks.enlazado) + '</li><li>Social/schema: ' + escapeHtml(blocks.socialSchema) + '</li></ul></div>';
+    html += '<div><h2>Resumen</h2><p><strong>Title:</strong> ' + escapeHtml(data.onPage.title || 'No detectado') + '</p><p><strong>Description:</strong> ' + escapeHtml(data.onPage.metaDescription || 'No detectada') + '</p></div>';
+    html += '<div><h3>Contenido</h3><ul class="seo-list"><li>H1: ' + escapeHtml(data.content.h1Count) + '</li><li>H2: ' + escapeHtml(data.content.h2Count) + '</li><li>H3: ' + escapeHtml(data.content.h3Count) + '</li><li>Palabras: ' + escapeHtml(data.content.words) + '</li><li>Keyword sugerida: ' + escapeHtml(data.content.suggestedKeyword || 'N/A') + '</li></ul></div>';
+    html += '<div><h3>Imágenes y enlaces</h3><ul class="seo-list"><li>Imágenes: ' + escapeHtml(data.images.total) + ' (sin alt: ' + escapeHtml(data.images.withoutAlt) + ')</li><li>Enlaces totales: ' + escapeHtml(data.links.total) + '</li><li>Anchors débiles: ' + escapeHtml(data.links.weakAnchorCount) + '</li></ul></div>';
     html += '</section>';
 
-    html += '<section class="seo-card"><h3>Recomendaciones priorizadas</h3>';
-    html += '<p>' + statusBadge('error', 'Críticas') + statusBadge('warning', 'Importantes') + statusBadge('ok', 'Mejoras recomendadas') + '</p>';
-    html += '<div class="seo-grid">';
-    html += '<div><strong>Críticas</strong>' + renderList(report.recommendations.critical) + '</div>';
-    html += '<div><strong>Importantes</strong>' + renderList(report.recommendations.important) + '</div>';
-    html += '<div><strong>Mejoras recomendadas</strong>' + renderList(report.recommendations.recommended) + '</div>';
-    html += '</div></section>';
+    html += '<section class="seo-card"><h3>Términos frecuentes</h3>';
+    html += renderList(data.content.topTerms.map(function(t) { return t.term + ' (' + t.count + ')'; }));
+    html += '</section>';
 
-    html += '<details class="seo-card" open><summary>SEO on-page principal</summary>';
-    html += '<ul class="seo-list"><li>Title (' + escapeHtml(report.onPage.titleLength) + '): ' + escapeHtml(report.onPage.title || 'No detectado') + '</li><li>Meta description (' + escapeHtml(report.onPage.metaDescriptionLength) + '): ' + escapeHtml(report.onPage.metaDescription || 'No detectada') + '</li><li>Canonical: ' + escapeHtml(report.onPage.canonical || 'No detectada') + '</li><li>Meta robots: ' + escapeHtml(report.onPage.metaRobots || 'No detectada') + '</li><li>Lang: ' + escapeHtml(report.onPage.lang || 'No detectado') + '</li><li>Viewport: ' + escapeHtml(report.onPage.viewport || 'No detectado') + '</li></ul>';
-    html += '</details>';
-
-    html += '<details class="seo-card"><summary>Contenido y jerarquía</summary>';
-    html += '<ul class="seo-list"><li>H1: ' + escapeHtml(report.content.h1Count) + ' (' + escapeHtml(report.content.h1Main || 'No detectado') + ')</li><li>H2: ' + escapeHtml(report.content.h2.length) + '</li><li>H3: ' + escapeHtml(report.content.h3.length) + '</li><li>Palabras visibles aprox.: ' + escapeHtml(report.content.visibleWordCount) + '</li><li>Keyword sugerida: ' + escapeHtml(report.content.suggestedMainKeyword || 'No estimable') + '</li></ul>';
-    html += '<h4>Problemas de jerarquía</h4>' + renderList(report.content.headingIssues);
-    html += '<h4>Términos frecuentes</h4>' + renderList((report.content.topTerms || []).map(function(item) { return item.term + ' (' + item.count + ')'; }));
-    html += '</details>';
-
-    html += '<details class="seo-card"><summary>Imágenes y enlaces</summary>';
-    html += '<ul class="seo-list"><li>Imágenes totales: ' + escapeHtml(report.images.total) + '</li><li>Con alt: ' + escapeHtml(report.images.withAlt) + '</li><li>Sin alt: ' + escapeHtml(report.images.withoutAlt) + '</li><li>Posibles pesadas: ' + escapeHtml(report.images.possibleHeavy) + '</li><li>Enlaces internos: ' + escapeHtml(report.links.internal) + '</li><li>Enlaces externos: ' + escapeHtml(report.links.external) + '</li><li>Anchors débiles: ' + escapeHtml(report.links.weakAnchorCount) + '</li></ul>';
-    html += '<h4>Problemas de imágenes</h4>' + renderList(report.images.problems);
-    html += '</details>';
-
-    html += '<details class="seo-card"><summary>Social, schema e indexabilidad</summary>';
-    html += '<ul class="seo-list"><li>Open Graph title: ' + escapeHtml(report.social.openGraph.title || 'No detectado') + '</li><li>Open Graph description: ' + escapeHtml(report.social.openGraph.description || 'No detectado') + '</li><li>Twitter card: ' + escapeHtml(report.social.twitter.card || 'No detectado') + '</li><li>JSON-LD detectados: ' + escapeHtml(report.social.structuredData.jsonLdCount) + '</li><li>Schema microdata: ' + escapeHtml(report.social.structuredData.schemaOrgMicrodata ? 'Sí' : 'No') + '</li><li>Favicon: ' + escapeHtml(report.social.favicon || 'No detectado') + '</li></ul>';
-    html += '<h4>Notas</h4>' + renderList(report.notes);
-    html += '</details>';
+    html += '<section class="seo-card"><h3>Métricas de autoridad/backlinks</h3>';
+    html += '<ul class="seo-list">';
+    html += '<li>Domain Authority: ' + escapeHtml(data.authority.domainAuthority) + '</li>';
+    html += '<li>Page Authority: ' + escapeHtml(data.authority.pageAuthority) + '</li>';
+    html += '<li>Citation Flow: ' + escapeHtml(data.authority.citationFlow) + '</li>';
+    html += '<li>Trust Flow: ' + escapeHtml(data.authority.trustFlow) + '</li>';
+    html += '<li>Backlinks: ' + escapeHtml(data.authority.backlinks) + '</li>';
+    html += '</ul></section>';
 
     reportContainer.innerHTML = html;
     reportContainer.hidden = false;
   }
 
-  function setState(type, message) {
-    state.className = 'seo-tool__state';
-    if (type) {
-      state.classList.add('seo-state--' + type);
+  loadButton.addEventListener('click', function() {
+    var url = normalize(urlInput.value);
+    if (!url) {
+      setState('error', 'Introduce una URL para intentar cargar su HTML.');
+      return;
     }
-    state.textContent = message || '';
-  }
+
+    loadButton.disabled = true;
+    setState('loading', 'Intentando descargar HTML desde la URL...');
+
+    fetch(url)
+      .then(function(response) { return response.text(); })
+      .then(function(html) {
+        htmlInput.value = html;
+        setState('', 'HTML cargado correctamente. Ya puedes analizar.');
+      })
+      .catch(function() {
+        setState('error', 'No se pudo cargar la URL por CORS o bloqueo del servidor. Pega el HTML manualmente.');
+      })
+      .finally(function() {
+        loadButton.disabled = false;
+      });
+  });
 
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var url = (input.value || '').trim();
-    if (!url) {
-      setState('error', 'Introduce una URL válida para comenzar el análisis.');
-      reportContainer.hidden = true;
+    var rawHtml = normalize(htmlInput.value);
+    if (!rawHtml) {
+      setState('error', 'Pega el HTML para ejecutar el análisis on-page.');
       return;
     }
 
-    button.disabled = true;
-    reportContainer.hidden = true;
-    setState('loading', 'Analizando URL... esto puede tardar unos segundos.');
+    submitButton.disabled = true;
+    setState('loading', 'Analizando HTML...');
 
-    var endpoint = getApiEndpoint();
-    var requestUrl = endpoint + (endpoint.indexOf('?') === -1 ? '?' : '&') + 'url=' + encodeURIComponent(url);
-
-    fetch(requestUrl, {
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-      .then(function(response) {
-        var contentType = (response.headers.get('content-type') || '').toLowerCase();
-
-        if (contentType.indexOf('application/json') === -1) {
-          return response.text().then(function(rawBody) {
-            var sample = (rawBody || '').slice(0, 80).replace(/\s+/g, ' ');
-            var looksLikeHtml = sample.toLowerCase().indexOf('<!doctype') !== -1 || sample.indexOf('<html') !== -1;
-            var message = looksLikeHtml
-              ? 'El endpoint devolvió HTML en lugar de JSON. Si estás en hosting estático (GitHub Pages), configura un backend/serverless en “Configuración avanzada (API)”.'
-              : 'El endpoint no devolvió JSON válido.';
-
-            throw new Error(message + ' Estado HTTP: ' + response.status + '.');
-          });
-        }
-
-        return response.json().then(function(payload) {
-          return { status: response.status, payload: payload };
-        });
-      })
-      .then(function(result) {
-        if (!result.payload.ok) {
-          throw new Error(result.payload.error || 'No se pudo generar el informe SEO.');
-        }
-
-        setState('', 'Análisis completado correctamente.');
-        renderReport(result.payload.report);
-      })
-      .catch(function(error) {
-        setState('error', error.message || 'Error inesperado analizando la URL.');
-      })
-      .finally(function() {
-        button.disabled = false;
-      });
+    try {
+      var result = analyzeHtml(rawHtml);
+      renderReport(result);
+      setState('', 'Análisis completado.');
+    } catch (error) {
+      setState('error', 'No se pudo analizar el HTML proporcionado.');
+    } finally {
+      submitButton.disabled = false;
+    }
   });
 })();

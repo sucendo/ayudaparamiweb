@@ -27,6 +27,17 @@ function inferBasePath() {
     return normalizeBasePath(process.env.SITE_BASE_PATH);
   }
 
+  if (process.env.SITE_URL) {
+    try {
+      const siteHost = new URL(process.env.SITE_URL).hostname.toLowerCase();
+      if (!siteHost.endsWith('github.io')) {
+        return '';
+      }
+    } catch (error) {
+      // Ignore malformed SITE_URL and continue with repository-based inference.
+    }
+  }
+
   const repository = process.env.GITHUB_REPOSITORY || '';
   const [owner = 'sucendo', repoName = 'ayudaparamiweb'] = repository.split('/');
 

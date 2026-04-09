@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const ejs = require('ejs');
-const routes = require('../routes');
+const routeCatalog = require('../routes');
+const routes = routeCatalog.publishedRoutes || routeCatalog;
 
 const projectRoot = path.resolve(__dirname, '..');
 const viewsDir = path.join(projectRoot, 'views');

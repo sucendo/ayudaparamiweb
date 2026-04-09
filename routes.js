@@ -36,7 +36,11 @@ const routes = [
   { path: '/experiencia-de-usuario-ux-y-seo', view: 'news/0014r-experiencia-de-usuario-ux-y-seo', published: false },
   { path: '/herramientas-seo', view: 'news/0015r-herramientas-seo', published: false },
   { path: '/autoridad-de-dominio', view: 'news/0016r-autoridad-de-dominio', published: false },
+<<<<<<< codex/revise-and-create-unpublished-articles-te58x7
+  { path: '/node-js-que-es', view: 'news/0017r-node-js-que-es' },
+=======
   { path: '/node-js-que-es', view: 'news/0017r-node-js-que-es', published: false },
+>>>>>>> main
   { path: '/express-js-para-que-sirve', view: 'news/0018r-express-js-para-que-sirve', published: false },
   { path: '/vue-js-que-es', view: 'news/0020r-vue-js-que-es', published: false },
   { path: '/herramientas-seo-gratuitas', view: 'news/0022r-herramientas-seo-gratuitas', published: false }

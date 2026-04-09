@@ -2,7 +2,8 @@ var opbeat = require('opbeat').start();
 
 var express = require('express');
 var path = require('path');
-var routes = require('./routes');
+var routeCatalog = require('./routes');
+var routes = routeCatalog.publishedRoutes || routeCatalog;
 var seoAnalyzeHandler = require('./services/seo/seo-analyze-handler');
 var app = express();
 

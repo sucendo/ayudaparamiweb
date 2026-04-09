@@ -1,5 +1,6 @@
 (function () {
   var POSTS = [
+    { title: 'Primeros pasos en Python: guía completa con ejemplos', url: '/primeros-pasos-python', dateLabel: '9 de abril de 2026', date: '2026-04-09', excerpt: 'Guía extensa para empezar Python desde cero con ejercicios y código.', tags: ['Python', 'Programación', 'Backend'] },
     { title: 'Google Shopping Actions: qué fue y qué aprendimos', url: '/google-shopping-actions', dateLabel: '20 de mayo de 2018', date: '2018-05-20', excerpt: 'Lecciones de Google Shopping Actions para ecommerce y marketplaces.', tags: ['Ecommerce', 'Google Shopping', 'Marketing digital'] },
     { title: 'Conceptos básicos de programación', url: '/conceptos-basicos-programacion', dateLabel: '24 de junio de 2018', date: '2018-06-24', excerpt: 'Variables, condicionales, funciones y lógica para empezar a programar.', tags: ['Programación', 'Fundamentos', 'Desarrollo web'] },
     { title: 'Problemas del canon digital en ecommerce', url: '/problemas-canon-digital-ecommerce', dateLabel: '5 de julio de 2018', date: '2018-07-05', excerpt: 'Impacto legal y operativo del canon digital en tiendas online.', tags: ['Ecommerce', 'Legal', 'España'] },

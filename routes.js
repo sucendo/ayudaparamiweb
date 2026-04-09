@@ -21,6 +21,7 @@ const routes = [
   { path: '/ia-generativa-estrategia-contenidos-seo', view: 'news/0024-ia-generativa-estrategia-contenidos-seo' },
   { path: '/checklist-lanzamiento-web-2026', view: 'news/0025-checklist-lanzamiento-web-2026' },
   { path: '/guia-seo-pymes-2026', view: 'news/0026-guia-seo-pymes-2026' },
+  { path: '/primeros-pasos-python', view: 'news/0027-primeros-pasos-python' },
   { path: '/backlink-que-es-como-construir-red-de-enlaces', view: 'news/0013-backlink-que-es-como-construir-red-de-enlaces' },
   { path: '/investigacion-palabras-clave', view: 'news/0012-investigacion-palabras-clave' },
   { path: '/contenido-y-seo', view: 'news/0011-contenido-y-seo' },

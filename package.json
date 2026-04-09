@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "build:static": "node scripts/build-static.js",
+    "build:pages": "node scripts/build-pages.js",
     "start:static": "APP_MODE=static node index.js",
     "start:node": "APP_MODE=node node index.js",
     "build:static:gh": "BASE_PATH=/${npm_package_name}/ node scripts/build-static.js"

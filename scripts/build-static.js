@@ -47,6 +47,43 @@ function rewriteDomainLinks(html) {
     .replace(/https?:\/\/www\.ayudaparamiweb\.com(?=["'])/g, basePath.slice(0, -1));
 }
 
+function prependBasePath(pathFromRoot) {
+  const normalizedBaseName = basePath.replace(/^\/|\/$/g, '');
+
+  if (!pathFromRoot) {
+    return basePath;
+  }
+
+  if (
+    normalizedBaseName &&
+    (pathFromRoot === normalizedBaseName || pathFromRoot.startsWith(`${normalizedBaseName}/`))
+  ) {
+    return `/${pathFromRoot}`;
+  }
+
+  return `${basePath}${pathFromRoot}`;
+}
+
+function rewriteRootRelativeUrls(html) {
+  if (basePath === '/') {
+    return html;
+  }
+
+  return html
+    .replace(
+      /(\b(?:href|src|action|poster)\s*=\s*["'])\/(?!\/)([^"']*)(["'])/gi,
+      (_, prefix, pathFromRoot, suffix) => `${prefix}${prependBasePath(pathFromRoot)}${suffix}`
+    )
+    .replace(
+      /(url\(\s*["'])\/(?!\/)([^"')]*)(["']\s*\))/gi,
+      (_, prefix, pathFromRoot, suffix) => `${prefix}${prependBasePath(pathFromRoot)}${suffix}`
+    )
+    .replace(
+      /(url\(\s*)\/(?!\/)([^)"']*)(\s*\))/gi,
+      (_, prefix, pathFromRoot, suffix) => `${prefix}${prependBasePath(pathFromRoot)}${suffix}`
+    );
+}
+
 function injectBaseTag(html) {
   if (/<base\s+href=/i.test(html)) {
     return html;
@@ -65,6 +102,7 @@ function renderRoute(route) {
   });
 
   html = rewriteDomainLinks(html);
+  html = rewriteRootRelativeUrls(html);
   html = injectBaseTag(html);
 
   fs.mkdirSync(path.dirname(outputFile), { recursive: true });

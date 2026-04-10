@@ -10,16 +10,13 @@
 
 <% (items || []).forEach(function(item, index) { %>
   <% if (index % 2 === 0) { %><div class="ct-row"><% } %>
-    <article class="ct-box ct-card-auto">
-      <a class="ct-card-auto__media" href="<%= item.path %>">
-        <img src="<%= item.image %>" alt="<%= item.title %>" loading="lazy" />
-      </a>
-      <div class="ct-card-auto__accent" style="background-color: <%= item.accentColor %>;"></div>
+    <article class="ct-box <%= item.colorClass %> ct-card-auto">
       <div class="ct-box-inner">
-        <p class="ct-card-auto__category"><%= categories[item.category] ? categories[item.category].name : item.category %></p>
         <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
-        <p class="ct-subline">Por <a href="/">Sucender</a> · <time pubdate="pubdate"><%= item.date %></time></p>
+        <p class="ct-subline">Por <a href="/sucender">Sucender</a> el <time pubdate="pubdate"><%= item.displayDate || item.date %></time></p>
         <p class="ct-feat-excerpt"><%= item.excerpt %></p>
+        <p class="ct-card-auto__section"><%= categories[item.category] ? categories[item.category].name.toUpperCase() : item.category %></p>
+        <div class="clr"></div>
       </div>
     </article>
   <% if (index % 2 === 1 || index === items.length - 1) { %></div><% } %>

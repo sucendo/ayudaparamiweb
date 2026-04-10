@@ -34,6 +34,15 @@ const ACCENT_BY_BG_CLASS = {
   'bg-yellow': '#f1c40f'
 };
 
+const CT_CLASS_BY_BG_CLASS = {
+  'bg-purple': 'ct-purple',
+  'bg-blue': 'ct-blue',
+  'bg-green': 'ct-green',
+  'bg-red': 'ct-red',
+  'bg-orange': 'ct-orange',
+  'bg-yellow': 'ct-yellow'
+};
+
 const stripTags = (value) => (value || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const getSlug = (routePath) => routePath.replace(/^\//, '');
 const getViewFile = (route) => path.join(__dirname, '..', 'views', `${route.view}.ejs`);
@@ -90,10 +99,25 @@ function extractImage(source) {
 }
 
 
-function extractAccentFromBgClass(source) {
+function extractBgClass(source) {
   const bgMatch = source.match(/class="[^"]*bg-img\s+(bg-[a-z]+)[^"]*"/i);
-  if (!bgMatch) return null;
-  return ACCENT_BY_BG_CLASS[bgMatch[1].toLowerCase()] || null;
+  return bgMatch ? bgMatch[1].toLowerCase() : null;
+}
+
+function formatDateEs(isoDate) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return isoDate;
+  const [year, month, day] = isoDate.split('-');
+  const monthNames = {
+    '01': 'enero','02': 'febrero','03': 'marzo','04': 'abril','05': 'mayo','06': 'junio',
+    '07': 'julio','08': 'agosto','09': 'septiembre','10': 'octubre','11': 'noviembre','12': 'diciembre'
+  };
+  return `${parseInt(day, 10)} de ${monthNames[month] || month} de ${year}`;
+}
+
+function extractAccentFromBgClass(source) {
+  const bgClass = extractBgClass(source);
+  if (!bgClass) return null;
+  return ACCENT_BY_BG_CLASS[bgClass] || null;
 }
 
 function paethPredictor(a, b, c) {
@@ -224,15 +248,18 @@ async function buildCatalog() {
     const source = readSource(route);
     const slug = getSlug(route.path);
     const image = extractImage(source);
+    const date = extractDate(source);
 
     return {
       title: extractTitle(source, slug),
       slug,
       path: route.path,
-      date: extractDate(source),
+      date,
+      displayDate: formatDateEs(date),
       excerpt: extractExcerpt(source),
       category: CATEGORY_BY_SLUG[slug] || 'guias',
       image,
+      colorClass: CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
       accentColor: computeAccentColor(image, source),
       view: route.view
     };

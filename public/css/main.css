@@ -5230,31 +5230,24 @@ body .bsa-cart-zone {
     }
 }
 
+
+.ct-archive .ct-box {
+    font-style: normal;
+}
+
+.ct-red {
+    border-bottom-color: #ff7a7a;
+}
+
 .ct-card-auto {
-    overflow: hidden;
-    background: #fff;
+    position: relative;
 }
 
-.ct-card-auto__media {
-    display: block;
-    background: #f1f4f9;
-}
-
-.ct-card-auto__media img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-}
-
-.ct-card-auto__accent {
-    height: 8px;
-}
-
-.ct-card-auto__category {
+.ct-card-auto__section {
     text-transform: uppercase;
-    font-size: 12px;
     letter-spacing: 0.08em;
-    margin-bottom: 8px;
-    color: #657580;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 12px;
+    color: #4a5b69;
 }

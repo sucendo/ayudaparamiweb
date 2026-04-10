@@ -36,28 +36,19 @@
     return payload;
   }
 
-  function analyticsAlreadyLoaded() {
-    return !!document.querySelector('script[data-cookie-consent="analytics"]');
-  }
-
-  function loadAnalyticsIfAllowed(consent) {
-    if (!consent || !consent.analytics || analyticsAlreadyLoaded()) {
-      return;
-    }
-
+  function applyConsentMode(consent) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function gtag() {
       window.dataLayer.push(arguments);
     };
 
-    var analyticsScript = document.createElement('script');
-    analyticsScript.async = true;
-    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=UA-114140363-1';
-    analyticsScript.dataset.cookieConsent = 'analytics';
-    document.head.appendChild(analyticsScript);
-
-    window.gtag('js', new Date());
-    window.gtag('config', 'UA-114140363-1');
+    var granted = !!(consent && consent.analytics);
+    window.gtag('consent', 'update', {
+      ad_storage: granted ? 'granted' : 'denied',
+      analytics_storage: granted ? 'granted' : 'denied',
+      ad_user_data: granted ? 'granted' : 'denied',
+      ad_personalization: granted ? 'granted' : 'denied'
+    });
   }
 
   function createBanner() {
@@ -102,18 +93,19 @@
 
     banner.querySelector('[data-cookie-accept]').addEventListener('click', function () {
       var consent = writeConsent({ analytics: true });
-      loadAnalyticsIfAllowed(consent);
+      applyConsentMode(consent);
       closeBanner(banner);
     });
 
     banner.querySelector('[data-cookie-reject]').addEventListener('click', function () {
-      writeConsent({ analytics: false });
+      var consent = writeConsent({ analytics: false });
+      applyConsentMode(consent);
       closeBanner(banner);
     });
 
     banner.querySelector('[data-cookie-save]').addEventListener('click', function () {
       var consent = writeConsent({ analytics: analyticsToggle.checked });
-      loadAnalyticsIfAllowed(consent);
+      applyConsentMode(consent);
       closeBanner(banner);
     });
 
@@ -134,8 +126,9 @@
     bindActions(banner);
 
     if (consent) {
-      loadAnalyticsIfAllowed(consent);
+      applyConsentMode(consent);
     } else {
+      applyConsentMode({ analytics: false });
       openBanner(banner, null);
     }
   });

@@ -16,7 +16,9 @@
         <p class="ct-subline">
           Por <a href="/sucender">Sucender</a>
           · Publicado el <time pubdate="pubdate"><%= item.displayPublishedDate || item.publishedDate || item.displayDate || item.date %></time>
-          · Actualizado el <time pubdate="pubdate"><%= item.displayModifiedDate || item.modifiedDate || item.displayDate || item.date %></time>
+          <% if (item.hasModifiedDate) { %>
+            · Actualizado el <time pubdate="pubdate"><%= item.displayModifiedDate || item.modifiedDate || item.displayDate || item.date %></time>
+          <% } %>
         </p>
         <p class="ct-feat-excerpt"><%= item.excerpt %></p>
         <p class="ct-card-auto__section"><%= categories[item.category] ? categories[item.category].name.toUpperCase() : item.category %></p>

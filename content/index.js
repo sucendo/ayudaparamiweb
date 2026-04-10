@@ -101,8 +101,9 @@ function extractDates(source) {
   const fallbackDate = extractDate(source);
   const publishedDate = publishedMatch ? publishedMatch[1] : fallbackDate;
   const modifiedDate = modifiedMatch ? modifiedMatch[1] : publishedDate;
+  const hasModifiedDate = Boolean(modifiedMatch);
 
-  return { publishedDate, modifiedDate };
+  return { publishedDate, modifiedDate, hasModifiedDate };
 }
 
 function extractImage(source) {
@@ -265,7 +266,7 @@ async function buildCatalog() {
     const source = readSource(route);
     const slug = getSlug(route.path);
     const image = extractImage(source);
-    const { publishedDate, modifiedDate } = extractDates(source);
+    const { publishedDate, modifiedDate, hasModifiedDate } = extractDates(source);
 
     return {
       title: extractTitle(source, slug),
@@ -277,6 +278,7 @@ async function buildCatalog() {
       modifiedDate,
       displayPublishedDate: formatDateEs(publishedDate),
       displayModifiedDate: formatDateEs(modifiedDate),
+      hasModifiedDate,
       excerpt: extractExcerpt(source),
       category: CATEGORY_BY_SLUG[slug] || 'guias',
       image,

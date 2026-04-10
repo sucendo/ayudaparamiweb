@@ -809,7 +809,7 @@ a.ct-commenttime,
     margin-top: 5px;
     width: 145px;
     height: 36px;
-    background: transparent url(../images/cs.png) no-repeat 0 -456px;
+    background: transparent url(../img/logo.png) no-repeat 0 -456px;
 }
 
 .ct-copyright a:hover,
@@ -826,7 +826,7 @@ a.ct-commenttime,
     margin-top: 12px;
     width: 106px;
     height: 18px;
-    background: transparent url(../images/cs.png) no-repeat 0 -588px;
+    background: transparent url(../img/logo.png) no-repeat 0 -588px;
 }
 
 .ct-cdn a:hover,

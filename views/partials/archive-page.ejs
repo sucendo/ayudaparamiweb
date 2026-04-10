@@ -1,0 +1,34 @@
+<!doctype html>
+<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= pageTitle %> | Ayuda para mi Web</title>
+    <meta name="description" content="<%= pageDescription %>" />
+    <meta name="author" content="Sucender" />
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body id="codrops-body">
+    <div class="ct-container">
+      <%- include('../partials/header.ejs') %>
+      <div class="ct-content">
+        <div class="ct-inner">
+          <div class="ct-main ct-main-archive" role="main">
+            <div class="ct-archive">
+              <h1><%= heading %></h1>
+              <div class="ct-cat-desc"><p><%= subtitle %></p></div>
+              <div class="ct-archive-container">
+                <%- include('../partials/content-grid.ejs', { items: items, categories: categories }) %>
+              </div>
+              <div class="clr"></div>
+            </div>
+          </div>
+          <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <footer class="ct-footer"><%- include('../partials/footer.ejs') %></footer>
+    </div>
+  </body>
+</html>

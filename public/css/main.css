@@ -5229,3 +5229,25 @@ body .bsa-cart-zone {
         display: none
     }
 }
+
+
+.ct-archive .ct-box {
+    font-style: normal;
+}
+
+.ct-red {
+    border-bottom-color: #ff7a7a;
+}
+
+.ct-card-auto {
+    position: relative;
+}
+
+.ct-card-auto__section {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 12px;
+    color: #4a5b69;
+}

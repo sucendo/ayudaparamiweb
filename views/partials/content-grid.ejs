@@ -1,0 +1,23 @@
+<% if (!items || !items.length) { %>
+  <div class="ct-row">
+    <article class="ct-box ct-red">
+      <div class="ct-box-inner">
+        <h3>No hay contenidos publicados todavía.</h3>
+      </div>
+    </article>
+  </div>
+<% } %>
+
+<% (items || []).forEach(function(item, index) { %>
+  <% if (index % 2 === 0) { %><div class="ct-row"><% } %>
+    <article class="ct-box <%= item.colorClass %> ct-card-auto">
+      <div class="ct-box-inner">
+        <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
+        <p class="ct-subline">Por <a href="/sucender">Sucender</a> el <time pubdate="pubdate"><%= item.displayDate || item.date %></time></p>
+        <p class="ct-feat-excerpt"><%= item.excerpt %></p>
+        <p class="ct-card-auto__section"><%= categories[item.category] ? categories[item.category].name.toUpperCase() : item.category %></p>
+        <div class="clr"></div>
+      </div>
+    </article>
+  <% if (index % 2 === 1 || index === items.length - 1) { %></div><% } %>
+<% }) %>

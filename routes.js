@@ -21,6 +21,7 @@ const routes = [
   { path: '/ia-generativa-estrategia-contenidos-seo', view: 'news/0024-ia-generativa-estrategia-contenidos-seo' },
   { path: '/checklist-lanzamiento-web-2026', view: 'news/0025-checklist-lanzamiento-web-2026' },
   { path: '/guia-seo-pymes-2026', view: 'news/0026-guia-seo-pymes-2026' },
+  { path: '/primeros-pasos-python', view: 'news/0027-primeros-pasos-python' },
   { path: '/backlink-que-es-como-construir-red-de-enlaces', view: 'news/0013-backlink-que-es-como-construir-red-de-enlaces' },
   { path: '/investigacion-palabras-clave', view: 'news/0012-investigacion-palabras-clave' },
   { path: '/contenido-y-seo', view: 'news/0011-contenido-y-seo' },
@@ -30,20 +31,17 @@ const routes = [
   { path: '/como-crear-una-pagina-web', view: 'news/0007-como-crear-una-pagina-web' },
   { path: '/el-mundo-del-programador-web', view: 'news/0006-el-mundo-del-programador-web' },
   { path: '/que-es-bluetooth', view: 'news/0005-que-es-bluetooth' },
-  { path: '/problemas-canon-digital-ecommerce', view: 'news/0004r-problemas-canon-digital-ecommerce', published: false },
+  { path: '/problemas-canon-digital-ecommerce', view: 'news/0004-problemas-canon-digital-ecommerce' },
   { path: '/codigo-traductor-google-blog', view: 'news/0002-codigo-traductor-google-blog' },
-  { path: '/google-shopping-actions', view: 'news/0001r-google-shopping-actions', published: false },
-  { path: '/experiencia-de-usuario-ux-y-seo', view: 'news/0014r-experiencia-de-usuario-ux-y-seo', published: false },
-  { path: '/herramientas-seo', view: 'news/0015r-herramientas-seo', published: false },
-  { path: '/autoridad-de-dominio', view: 'news/0016r-autoridad-de-dominio', published: false },
-<<<<<<< codex/revise-and-create-unpublished-articles-te58x7
-  { path: '/node-js-que-es', view: 'news/0017r-node-js-que-es' },
-=======
-  { path: '/node-js-que-es', view: 'news/0017r-node-js-que-es', published: false },
->>>>>>> main
-  { path: '/express-js-para-que-sirve', view: 'news/0018r-express-js-para-que-sirve', published: false },
-  { path: '/vue-js-que-es', view: 'news/0020r-vue-js-que-es', published: false },
-  { path: '/herramientas-seo-gratuitas', view: 'news/0022r-herramientas-seo-gratuitas', published: false }
+  { path: '/conceptos-basicos-programacion', view: 'news/0003-conceptos-basicos-programacion' },
+  { path: '/google-shopping-actions', view: 'news/0001-google-shopping-actions' },
+  { path: '/experiencia-de-usuario-ux-y-seo', view: 'news/0014-experiencia-de-usuario-ux-y-seo' },
+  { path: '/herramientas-seo', view: 'news/0015-herramientas-seo' },
+  { path: '/autoridad-de-dominio', view: 'news/0016-autoridad-de-dominio' },
+  { path: '/node-js-que-es', view: 'news/0017-node-js-que-es' },
+  { path: '/express-js-para-que-sirve', view: 'news/0018-express-js-para-que-sirve' },
+  { path: '/vue-js-que-es', view: 'news/0020-vue-js-que-es' },
+  { path: '/herramientas-seo-gratuitas', view: 'news/0022-herramientas-seo-gratuitas' }
 ];
 
 module.exports = routes;

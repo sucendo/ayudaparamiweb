@@ -95,24 +95,23 @@
 									<meta itemprop="height" content="500">
 								</div>
 																
-								<p>Today we’d like to show you how to create a playful slider with an original fragmented look. Each element of the slider will be divided into pieces that will animate in different ways, using <a href="https://github.com/ayudaparamiweb/pieces" target="_blank">Pieces</a>, a library that I’ve created for achieving interesting effects like these easily.</p>
-								<p>The animations are powered by <a href="http://animejs.com/">anime.js</a>.</p>
-								<p><strong>The demo is kindly sponsored by: <a href="http://go.thoughtleaders.io/NorthwesternCodrops200218" rel="nofollow">Northwestern’s Online Master’s in Information Design and Strategy</a></strong>.<br>
-								<em>If you would like to sponsor one of our demos, find out more here.</em></p>
+								<p>Si tu blog recibe visitas de varios países, añadir un traductor visible puede ayudarte a mejorar la experiencia del usuario en segundos.</p>
+								<p>En este artículo te dejo un ejemplo sencillo para colocar un selector de idiomas con banderas que abre Google Translate con la URL actual de tu página.</p>
+								<p>Es una solución rápida y fácil de mantener, ideal para blogs personales o webs pequeñas que todavía no tienen una estrategia de internacionalización completa.</p>
 								
-								<h2>La idea original</h2>
-								<p>The source of inspiration for this kind of effect came from the Dribbble shot <a href="https://dribbble.com/shots/3849329-Shift-Animation" target="_blank">Shift Animation</a> by Alexander Saunki:</p>
-								<p>Since I saw it, I wanted to implement an effect like that for my new personal website, which I recently launched: <a href="http://www.ayudaparamiweb.com/" target="_blank">www.ayudaparamiweb.com</a>.</p>
-								<p>To achieve the desired effects, I developed a library that I called “Pieces”, since it allows to draw and animate text, images and SVG paths through rectangular pieces. So, without further ado, let’s see how to use this library!</p>
+								<h2>¿Cómo funciona este método?</h2>
+								<p>La idea es crear varios enlaces, uno por idioma. Cada enlace ejecuta <code>window.open()</code> con una URL de Google Translate que incluye:</p>
+								<p><code>u</code>: la dirección de la página que se está visitando.</p>
+								<p><code>langpair</code>: combinación idioma automático a idioma destino (por ejemplo, <code>auto|en</code> para inglés).</p>
+								<p>Así, cuando el usuario pulsa una bandera, se abre la versión traducida sin tocar tu estructura de contenidos original.</p>
 
-								<h2>El tiempo en abril</h2>
-								<p>All the detailed documentation about the Pieces library can be found in its <a href="https://github.com/ayudaparamiweb/pieces" target="_blank">Github repository</a>. But anyway, let’s quickly see some essential concepts to be able to start using this library.</p>
-								<p>Assuming that we want to draw and animate an image, these are the basic elements that make up the scene:</p>
-								<p>As you can see, the image we want to draw will be our <code>item</code>, which will be divided into several <code>pieces</code>, which can also vary in size and position according to the options we define. To see all the possible options I recommend you check out the <a href="https://github.com/ayudaparamiweb/pieces" target="_blank">documentation on Github</a>.</p>
-								<p>Throughout the tutorial we will explain each piece of code, so you can learn how to implement your own animations using the Pieces library. Let’s start!</p>
+								<h2>Cuándo usarlo (y cuándo no)</h2>
+								<p>Este enfoque es útil cuando necesitas una mejora rápida para visitantes internacionales.</p>
+								<p>Si tu proyecto depende mucho del SEO internacional, de la precisión legal o de conversiones por país, te conviene crear contenidos nativos por idioma en lugar de depender solo de traducción automática.</p>
+								<p>Como punto de partida, sin embargo, este widget sigue siendo práctico y fácil de implementar.</p>
 
 								<h2>La estructura HTML</h2>
-								<p>Before starting to write Javascript code, let’s see how we have defined the HTML for our slider. The markup is quite simple, since we have each slide with a corresponding image and text, the <code>canvas</code> element to animate things, and buttons to navigate through the slider.</p>
+								<p>A continuación tienes el bloque completo. Incluye estilos básicos para los iconos y los enlaces de idioma listos para copiar y adaptar a tu web.</p>
 								<pre class="line-numbers" data-start="0"><code class="language-html">&lt;style&gt;
 .google_translate img {
 filter:alpha(opacity=100);
@@ -152,17 +151,15 @@ border:0;
 &lt;div 0px 0pxâ?? style="â??font-size:10px;margin:8px" 3px&gt;&lt;/div&gt;
 &lt;br/&gt;
 &lt;a href="http://www.ayudaparamiweb.com/"&gt;&lt;font size="1px"&gt;Widget ofrecido por www.ayudaparamiweb.com&lt;/font&gt;&lt;/a&gt;</code></pre>							
-								<h2>Styling the slider</h2>
-								<p>The slideshow needs some special styling for our effect. We’ll need to hide the images and texts as we’ll be redrawing them with our library. But we also want them to fallback to their initial markup if no JavaScript is available. Finally, we need to make sure that the slider is responsive with a couple of media queries:</p>
-								<p>As you can see, we have hidden the HTML elements that we defined for our slider (except for the buttons), since we will draw everything in the <code>canvas</code> element.</p>
+								<h2>Consejos antes de publicarlo</h2>
+								<p>Prueba los enlaces desde móvil y escritorio para comprobar que todos los idiomas abren correctamente.</p>
+								<p>Revisa también que las imágenes de banderas sigan disponibles (en este ejemplo son URLs externas) o, mejor aún, súbelas a tu propio servidor para evitar dependencias.</p>
+								<p>Si quieres mejorar accesibilidad, añade textos alternativos claros y aumenta el tamaño de los iconos cuando se vean en pantallas pequeñas.</p>
 
 								<h2>En conclusión</h2>
-								<p>Let’s start by defining some variables and getting the slider info from the DOM:</p>
-								<p>Then we need to define indexes variables to handle all the items we will draw on the canvas:</p>
-								<p>In addition to building the array of elements, in the previous code block we defined a simple mechanism to call the <code>initSlider</code> function only when all the images have been loaded. This is very important, since we will not be able to use Pieces to draw an image that is not available.</p>
-								<p>So, to show and hide the current items we need to call <code>showItems</code> and <code>hideItems</code> functions respectively. We have implemented them as follows:</p>
-								<p>We are almost done :) We just need to implement a responsive behavior, listening to the <code>resize</code> event, saving the current window <code>width</code>, and reinitializing the slider:</p>
-								<p>We really hope this tutorial has been useful, and that you have found inspiration in these effects!</p>
+								<p>Este widget de traducción es una forma rápida de hacer tu blog más accesible para lectores de otros idiomas sin una implementación compleja.</p>
+								<p>No sustituye una estrategia multidioma profesional, pero como solución inicial cumple muy bien su objetivo.</p>
+								<p>Si te interesa, en un siguiente tutorial puedo compartir una versión más moderna con diseño responsive y mejores métricas de usabilidad.</p>
 
 																
 								

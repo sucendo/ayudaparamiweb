@@ -94,6 +94,17 @@ function extractDate(source) {
   return '1970-01-01';
 }
 
+function extractDates(source) {
+  const modifiedMatch = source.match(/itemprop="dateModified"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+  const publishedMatch = source.match(/itemprop="datePublished"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+
+  const fallbackDate = extractDate(source);
+  const publishedDate = publishedMatch ? publishedMatch[1] : fallbackDate;
+  const modifiedDate = modifiedMatch ? modifiedMatch[1] : publishedDate;
+
+  return { publishedDate, modifiedDate };
+}
+
 function extractImage(source) {
   const postContentMatch = source.match(/<div[^>]*class="[^"]*ct-post-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/article>/i);
   const scope = postContentMatch ? postContentMatch[1] : source;
@@ -254,14 +265,18 @@ async function buildCatalog() {
     const source = readSource(route);
     const slug = getSlug(route.path);
     const image = extractImage(source);
-    const date = extractDate(source);
+    const { publishedDate, modifiedDate } = extractDates(source);
 
     return {
       title: extractTitle(source, slug),
       slug,
       path: route.path,
-      date,
-      displayDate: formatDateEs(date),
+      date: modifiedDate,
+      displayDate: formatDateEs(modifiedDate),
+      publishedDate,
+      modifiedDate,
+      displayPublishedDate: formatDateEs(publishedDate),
+      displayModifiedDate: formatDateEs(modifiedDate),
       excerpt: extractExcerpt(source),
       category: CATEGORY_BY_SLUG[slug] || 'guias',
       image,

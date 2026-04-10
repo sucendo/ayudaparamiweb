@@ -25,6 +25,15 @@ const CATEGORY_BY_SLUG = {
 
 const COLOR_CACHE = Object.create(null);
 
+const ACCENT_BY_BG_CLASS = {
+  'bg-purple': '#64448f',
+  'bg-blue': '#47a3da',
+  'bg-green': '#2fa06a',
+  'bg-red': '#d25565',
+  'bg-orange': '#ee9e2d',
+  'bg-yellow': '#f1c40f'
+};
+
 const stripTags = (value) => (value || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const getSlug = (routePath) => routePath.replace(/^\//, '');
 const getViewFile = (route) => path.join(__dirname, '..', 'views', `${route.view}.ejs`);
@@ -78,6 +87,13 @@ function extractImage(source) {
   const raw = imageMatch[1].trim();
   if (raw.startsWith('http://') || raw.startsWith('https://') || raw.startsWith('//')) return FALLBACK_IMAGE;
   return raw.startsWith('/') ? raw : `/${raw.replace(/^\.\//, '')}`;
+}
+
+
+function extractAccentFromBgClass(source) {
+  const bgMatch = source.match(/class="[^"]*bg-img\s+(bg-[a-z]+)[^"]*"/i);
+  if (!bgMatch) return null;
+  return ACCENT_BY_BG_CLASS[bgMatch[1].toLowerCase()] || null;
 }
 
 function paethPredictor(a, b, c) {
@@ -175,7 +191,10 @@ function extractColorFromSvg(content) {
   return Object.keys(frequency).sort((a, b) => frequency[b] - frequency[a])[0];
 }
 
-function computeAccentColor(imagePath) {
+function computeAccentColor(imagePath, source) {
+  const accentFromClass = extractAccentFromBgClass(source);
+  if (accentFromClass) return accentFromClass;
+
   if (!imagePath || imagePath === FALLBACK_IMAGE) return FALLBACK_ACCENT;
   if (COLOR_CACHE[imagePath]) return COLOR_CACHE[imagePath];
 
@@ -214,7 +233,7 @@ async function buildCatalog() {
       excerpt: extractExcerpt(source),
       category: CATEGORY_BY_SLUG[slug] || 'guias',
       image,
-      accentColor: computeAccentColor(image),
+      accentColor: computeAccentColor(image, source),
       view: route.view
     };
   });

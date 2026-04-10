@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const ejs = require('ejs');
 const routeCatalog = require('../routes');
+const contentCatalog = require('../content');
 const routes = routeCatalog.publishedRoutes || routeCatalog;
 
 const projectRoot = path.resolve(__dirname, '..');
@@ -116,11 +117,30 @@ function rewriteLegacyDomain(html) {
     .replace(/https?:\/\/ayudaparamiweb\.com/gi, siteUrl);
 }
 
-function renderRoute(route) {
+
+function resolvePageContext(route, allContent) {
+  const sectionByPath = {
+    '/': allContent,
+    '/guias': contentCatalog.filterByCategory(allContent, 'guias'),
+    '/tutoriales': contentCatalog.filterByCategory(allContent, 'tutoriales'),
+    '/herramientas': contentCatalog.filterByCategory(allContent, 'herramientas'),
+    '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
+    '/analisis': contentCatalog.filterByCategory(allContent, 'analisis'),
+    '/articulos': contentCatalog.filterByCategory(allContent, 'guias'),
+    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio')
+  };
+
+  return {
+    contentItems: sectionByPath[route.path] || [],
+    categories: contentCatalog.CATEGORY_DEFINITIONS
+  };
+}
+
+function renderRoute(route, allContent) {
   const viewFile = toViewFile(route.view);
   const outputFile = toOutputFile(route.path);
 
-  const html = ejs.render(fs.readFileSync(viewFile, 'utf8'), {}, {
+  const html = ejs.render(fs.readFileSync(viewFile, 'utf8'), resolvePageContext(route, allContent), {
     filename: viewFile,
     root: viewsDir
   });
@@ -135,10 +155,11 @@ function renderRoute(route) {
   fs.writeFileSync(outputFile, processedHtml, 'utf8');
 }
 
-function build() {
+async function build() {
   cleanDist();
   copyPublic();
-  routes.forEach(renderRoute);
+  const allContent = await contentCatalog.buildCatalog();
+  routes.forEach((route) => renderRoute(route, allContent));
   writeNoJekyll();
 
   console.log(`GitHub Pages site generated at ${outputDir}`);

@@ -3,6 +3,7 @@ var opbeat = require('opbeat').start();
 var express = require('express');
 var path = require('path');
 var routeCatalog = require('./routes');
+var contentCatalog = require('./content');
 var routes = routeCatalog.publishedRoutes || routeCatalog;
 var seoAnalyzeHandler = require('./services/seo/seo-analyze-handler');
 var app = express();
@@ -10,33 +11,65 @@ var app = express();
 var appMode = process.env.APP_MODE || 'node';
 app.set('port', (process.env.PORT || 5000));
 
-var searchableRoutes = routes
-  .filter(function(route) {
-    return route.path !== '/';
-  })
-  .map(function(route) {
-    var normalizedPath = route.path.replace(/^\//, '');
-    var generatedTitle = normalizedPath
-      .split('-')
-      .filter(Boolean)
-      .map(function(part) {
-        return part.charAt(0).toUpperCase() + part.slice(1);
-      })
-      .join(' ');
+function buildSearchableRoutes(contentItems) {
+  var itemTitlesByPath = contentItems.reduce(function(acc, item) {
+    acc[item.path] = item.title;
+    return acc;
+  }, {});
 
-    return {
-      path: route.path,
-      title: generatedTitle || 'Inicio'
-    };
-  });
+  return routes
+    .filter(function(route) {
+      return route.path !== '/';
+    })
+    .map(function(route) {
+      var normalizedPath = route.path.replace(/^\//, '');
+      var generatedTitle = normalizedPath
+        .split('-')
+        .filter(Boolean)
+        .map(function(part) {
+          return part.charAt(0).toUpperCase() + part.slice(1);
+        })
+        .join(' ');
 
-if (appMode === 'static') {
-  app.use(express.static(path.join(__dirname, 'dist')));
+      return {
+        path: route.path,
+        title: itemTitlesByPath[route.path] || generatedTitle || 'Inicio'
+      };
+    });
+}
 
-  app.listen(app.get('port'), function() {
-    console.log('Static mode running on port', app.get('port'));
-  });
-} else {
+function resolvePageContext(route, allContent) {
+  var categories = contentCatalog.CATEGORY_DEFINITIONS;
+  var sectionByPath = {
+    '/': allContent,
+    '/guias': contentCatalog.filterByCategory(allContent, 'guias'),
+    '/tutoriales': contentCatalog.filterByCategory(allContent, 'tutoriales'),
+    '/herramientas': contentCatalog.filterByCategory(allContent, 'herramientas'),
+    '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
+    '/analisis': contentCatalog.filterByCategory(allContent, 'analisis'),
+    '/articulos': contentCatalog.filterByCategory(allContent, 'guias'),
+    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio')
+  };
+
+  return {
+    contentItems: sectionByPath[route.path] || [],
+    categories: categories
+  };
+}
+
+async function bootstrap() {
+  var allContent = await contentCatalog.buildCatalog();
+  var searchableRoutes = buildSearchableRoutes(allContent);
+
+  if (appMode === 'static') {
+    app.use(express.static(path.join(__dirname, 'dist')));
+
+    app.listen(app.get('port'), function() {
+      console.log('Static mode running on port', app.get('port'));
+    });
+    return;
+  }
+
   app.use(express.static(__dirname + '/public'));
   app.use(opbeat.middleware.express());
 
@@ -64,7 +97,7 @@ if (appMode === 'static') {
 
   routes.forEach(function(route) {
     app.get(route.path, function(request, response) {
-      response.render(route.view);
+      response.render(route.view, resolvePageContext(route, allContent));
     });
   });
 
@@ -72,3 +105,5 @@ if (appMode === 'static') {
     console.log('Node mode running on port', app.get('port'));
   });
 }
+
+bootstrap();

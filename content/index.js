@@ -67,6 +67,12 @@ function extractExcerpt(source) {
 }
 
 function extractDate(source) {
+  const modifiedMatch = source.match(/itemprop="dateModified"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+  if (modifiedMatch) return modifiedMatch[1];
+
+  const publishedMatch = source.match(/itemprop="datePublished"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+  if (publishedMatch) return publishedMatch[1];
+
   const contentDateMatch = source.match(/content="(\d{4}-\d{2}-\d{2})/i);
   if (contentDateMatch) return contentDateMatch[1];
 

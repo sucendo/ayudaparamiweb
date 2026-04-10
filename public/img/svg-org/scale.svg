@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 101 479 385" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradient-1" gradientUnits="userSpaceOnUse" cx="-152.416" cy="343.368" r="0">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: #758d29"/>
+    </radialGradient>
+  </defs>
+  <path d="M -152.416 343.368 Z" style="fill: url(#gradient-1); stroke: rgb(0, 0, 0);"/>
+  <rect style="fill: rgb(255, 255, 255); fill-opacity: 0.2; stroke-opacity: 0.2; stroke: rgb(255, 255, 255);" x="12.845" y="325.629" width="87.766" height="148.455"/>
+  <rect style="stroke-opacity: 0.4; fill: rgb(255, 255, 255); fill-opacity: 0.4; stroke: rgb(255, 255, 255);" x="104.346" y="300.419" width="87.766" height="173.665"/>
+  <rect x="195.847" y="268.673" width="87.766" height="205.41" style="fill: rgb(255, 255, 255); fill-opacity: 0.65; stroke-opacity: 0.65; stroke: rgb(255, 255, 255);"/>
+  <rect style="stroke-opacity: 0.8; fill: rgb(255, 255, 255); fill-opacity: 0.8; stroke: rgb(255, 255, 255);" x="287.347" y="212.653" width="87.766" height="261.431"/>
+  <rect x="378.848" y="110.882" width="87.766" height="363.202" style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);"/>
+</svg>

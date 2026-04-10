@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 101 479 385" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="pattern-0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" viewBox="0 0 100 100">
+      <path d="M 0 0 L 50 0 L 50 100 L 0 100 Z" style="fill: black;"/>
+    </pattern>
+  </defs>
+  <g transform="matrix(20.252144, 0, 0, 22.808277, 263.138916, 93.506813)" style="">
+    <g id="text2987" style="fill:#cf5e01" transform="matrix(0.15337, 0, 0, 0.15337, -59.641232, -89.833527)"/>
+  </g>
+  <g>
+    <g transform="matrix(-20.252144, 0, 0, -22.808277, 217.633682, 592.096313)" style="">
+      <g id="g-1" style="fill:#cf5e01" transform="matrix(0.15337, 0, 0, 0.15337, -59.641232, -89.833527)">
+        <g/>
+      </g>
+    </g>
+  </g>
+  <g transform="matrix(2.205096, 0, 0, 2.197236, 47.295815, 119.918327)" style="">
+    <g id="g-5" style="stroke-linejoin:round;stroke:#0f2d59;stroke-linecap:round;fill:#f4f6f8" transform="translate(-1,55)"/>
+    <g id="g-6" style="stroke-linejoin:round;stroke:#0f2d59;stroke-linecap:round;fill:#f4f6f8" transform="translate(55,55)"/>
+    <g id="g-7" style="stroke-linejoin: round; stroke: rgb(15, 45, 89); stroke-linecap: round; fill: rgb(244, 246, 248);" transform="matrix(3.879239, 0, 0, 4.020514, 2.306491, -18.615534)">
+      <path id="path-26" d="m31.5 5.5h-22a1 1 0 0 0 -1 1v35a1 1 0 0 0 1 1h29a1 1 0 0 0 1 -1v-28" style="stroke: rgb(255, 255, 255); fill: rgba(255, 255, 255, 0.47);"/>
+      <path id="path-27" d="m13 26.5h22m-22 9h17m-17-3h22m-22-3h22m-22-6h22m-22-3h22m-22-3h22" style="stroke: rgb(255, 255, 255); fill: rgba(255, 255, 255, 0.47);"/>
+      <path id="path-28" d="m31.5 5.5v7a1 1 0 0 0 1 1h7z" style="stroke: rgb(255, 255, 255); fill: rgba(255, 255, 255, 0.47);"/>
+    </g>
+    <g id="g-8" style="stroke-linejoin:round;stroke:#0f2d59;stroke-linecap:round;fill:#f4f6f8" transform="translate(-1,111)"/>
+  </g>
+</svg>

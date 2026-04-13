@@ -8,11 +8,10 @@ const FALLBACK_IMAGE = '/img/logo-color.svg';
 const FALLBACK_ACCENT = '#537b7b';
 
 const CATEGORY_DEFINITIONS = {
-  guias: { slug: 'guias', name: 'Guías', description: 'Contenido de referencia, estratégico y evergreen.' },
+  guias: { slug: 'articulos', name: 'Artículos', description: 'Guías y análisis de referencia para desarrollo web y SEO.' },
   tutoriales: { slug: 'tutoriales', name: 'Tutoriales', description: 'Contenido paso a paso para aprender haciendo.' },
   herramientas: { slug: 'herramientas', name: 'Herramientas', description: 'Utilidades prácticas e interactivas.' },
-  laboratorio: { slug: 'laboratorio', name: 'Laboratorio', description: 'Pruebas, demos y experimentos editoriales.' },
-  analisis: { slug: 'analisis', name: 'Análisis', description: 'Valoraciones y lectura crítica de tendencias y casos.' }
+  laboratorio: { slug: 'laboratorio', name: 'Laboratorio', description: 'Pruebas, demos y experimentos editoriales.' }
 };
 
 const CATEGORY_BY_SLUG = {
@@ -20,7 +19,7 @@ const CATEGORY_BY_SLUG = {
   'primeros-pasos-python': 'tutoriales','codigo-traductor-google-blog': 'tutoriales','entornos-colaborativos': 'tutoriales',
   'contador-caracteres-seo': 'herramientas','conversor-binario': 'herramientas','analizador-seo-url': 'herramientas',
   'mapa-guerra-ucrania-rusia': 'laboratorio','rusia-ataca-ucrania': 'laboratorio','quantum-pacific-group': 'laboratorio','calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019': 'laboratorio',
-  'google-shopping-actions': 'analisis','problemas-canon-digital-ecommerce': 'analisis','que-es-bluetooth': 'analisis','el-mundo-del-programador-web': 'analisis','backlink-que-es-como-construir-red-de-enlaces': 'analisis','experiencia-de-usuario-ux-y-seo': 'analisis','herramientas-seo': 'analisis','autoridad-de-dominio': 'analisis','herramientas-seo-gratuitas': 'analisis','ia-generativa-estrategia-contenidos-seo': 'analisis'
+  'google-shopping-actions': 'guias','problemas-canon-digital-ecommerce': 'guias','que-es-bluetooth': 'guias','el-mundo-del-programador-web': 'guias','backlink-que-es-como-construir-red-de-enlaces': 'guias','experiencia-de-usuario-ux-y-seo': 'guias','herramientas-seo': 'guias','autoridad-de-dominio': 'guias','herramientas-seo-gratuitas': 'guias','ia-generativa-estrategia-contenidos-seo': 'guias'
 };
 
 const COLOR_CACHE = Object.create(null);

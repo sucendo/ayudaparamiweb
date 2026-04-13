@@ -71,10 +71,13 @@
   }
 
   function updateAggregateNode(aggregateNode, projection) {
-    var strongNodes = aggregateNode.querySelectorAll('strong');
-    if (strongNodes.length >= 2) {
-      strongNodes[0].textContent = String(projection.votes);
-      strongNodes[1].textContent = String(projection.average);
+    var sublineNode = aggregateNode.closest('.ct-subline__time');
+    if (sublineNode) {
+      var strongNodes = sublineNode.querySelectorAll('strong');
+      if (strongNodes.length >= 2) {
+        strongNodes[0].textContent = String(projection.votes);
+        strongNodes[1].textContent = String(projection.average);
+      }
     }
 
     var ratingValueMeta = aggregateNode.querySelector('[itemprop="ratingValue"]');

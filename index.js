@@ -48,7 +48,9 @@ function resolvePageContext(route, allContent) {
     '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/analisis': contentCatalog.filterByCategory(allContent, 'analisis'),
     '/articulos': contentCatalog.filterByCategory(allContent, 'guias'),
-    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio')
+    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio'),
+    '/tags': allContent,
+    '/sucender': allContent
   };
 
   return {
@@ -77,6 +79,9 @@ async function bootstrap() {
   app.set('view engine', 'ejs');
 
   app.get('/api/seo-analyze', seoAnalyzeHandler.handleSeoAnalyzeRequest);
+  app.get('/api/content-index', function(request, response) {
+    response.json(allContent);
+  });
 
   app.get('/buscar', function(request, response) {
     var query = (request.query.q || '').trim();

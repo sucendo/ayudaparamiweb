@@ -75,6 +75,16 @@ function copyPublic() {
   fs.cpSync(publicDir, outputDir, { recursive: true });
 }
 
+function writeContentIndex(allContent) {
+  const dataDir = path.join(outputDir, 'data');
+  fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(dataDir, 'content-index.json'),
+    JSON.stringify(allContent, null, 2),
+    'utf8'
+  );
+}
+
 function writeNoJekyll() {
   fs.writeFileSync(path.join(outputDir, '.nojekyll'), '', 'utf8');
 }
@@ -127,7 +137,9 @@ function resolvePageContext(route, allContent) {
     '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/analisis': contentCatalog.filterByCategory(allContent, 'analisis'),
     '/articulos': contentCatalog.filterByCategory(allContent, 'guias'),
-    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio')
+    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio'),
+    '/tags': allContent,
+    '/sucender': allContent
   };
 
   return {
@@ -159,6 +171,7 @@ async function build() {
   cleanDist();
   copyPublic();
   const allContent = await contentCatalog.buildCatalog();
+  writeContentIndex(allContent);
   routes.forEach((route) => renderRoute(route, allContent));
   writeNoJekyll();
 

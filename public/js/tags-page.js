@@ -1,22 +1,88 @@
-window.TAGS_POSTS = [
-  { title: 'Guia SEO Pymes 2026', url: '/guia-seo-pymes-2026', dateLabel: '9 de abril de 2026', date: '2026-04-09', excerpt: 'Resumen accionable sobre guia seo pymes 2026.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Checklist Lanzamiento Web 2026', url: '/checklist-lanzamiento-web-2026', dateLabel: '12 de marzo de 2026', date: '2026-03-12', excerpt: 'Resumen accionable sobre checklist lanzamiento web 2026.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'SEO Local Y Visibilidad Para Pymes 2026', url: '/seo-local-y-visibilidad-para-pymes-2026', dateLabel: '14 de febrero de 2026', date: '2026-02-14', excerpt: 'Resumen accionable sobre seo local y visibilidad para pymes 2026.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'SEO Tecnico Core Web Vitals 2026', url: '/seo-tecnico-core-web-vitals-2026', dateLabel: '18 de enero de 2026', date: '2026-01-18', excerpt: 'Resumen accionable sobre seo tecnico core web vitals 2026.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Plan SEO Y Contenidos Para 2026', url: '/plan-seo-y-contenidos-para-2026', dateLabel: '11 de diciembre de 2025', date: '2025-12-11', excerpt: 'Resumen accionable sobre plan seo y contenidos para 2026.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Mantenimiento Web Proactivo', url: '/mantenimiento-web-proactivo', dateLabel: '13 de noviembre de 2025', date: '2025-11-13', excerpt: 'Resumen accionable sobre mantenimiento web proactivo.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Dashboard GA4 Para Direccion', url: '/dashboard-ga4-para-direccion', dateLabel: '9 de octubre de 2025', date: '2025-10-09', excerpt: 'Resumen accionable sobre dashboard ga4 para direccion.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Auditoria Tecnica Rapida De Una Web', url: '/auditoria-tecnica-rapida-de-una-web', dateLabel: '11 de septiembre de 2025', date: '2025-09-11', excerpt: 'Resumen accionable sobre auditoria tecnica rapida de una web.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Accesibilidad Y SEO', url: '/accesibilidad-y-seo', dateLabel: '14 de agosto de 2025', date: '2025-08-14', excerpt: 'Resumen accionable sobre accesibilidad y seo.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Estrategias De Captacion B2B', url: '/estrategias-de-captacion-b2b', dateLabel: '10 de julio de 2025', date: '2025-07-10', excerpt: 'Resumen accionable sobre estrategias de captacion b2b.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Analisis De Logs Para SEO', url: '/analisis-de-logs-para-seo', dateLabel: '12 de junio de 2025', date: '2025-06-12', excerpt: 'Resumen accionable sobre analisis de logs para seo.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Arquitectura Web Para Catalogos Grandes', url: '/arquitectura-web-para-catalogos-grandes', dateLabel: '15 de mayo de 2025', date: '2025-05-15', excerpt: 'Resumen accionable sobre arquitectura web para catalogos grandes.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Contenidos Utiles Y EEAT', url: '/contenidos-utiles-y-eeat', dateLabel: '10 de abril de 2025', date: '2025-04-10', excerpt: 'Resumen accionable sobre contenidos utiles y eeat.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Automatizar Informes SEO', url: '/automatizar-informes-seo', dateLabel: '13 de marzo de 2025', date: '2025-03-13', excerpt: 'Resumen accionable sobre automatizar informes seo.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Optimizacion De Google Business Profile', url: '/optimizacion-de-google-business-profile', dateLabel: '13 de febrero de 2025', date: '2025-02-13', excerpt: 'Resumen accionable sobre optimizacion de google business profile.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'SEO Local Avanzado Para Pymes', url: '/seo-local-avanzado-para-pymes', dateLabel: '16 de enero de 2025', date: '2025-01-16', excerpt: 'Resumen accionable sobre seo local avanzado para pymes.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Checklist IA Y SEO Para 2025', url: '/checklist-ia-y-seo-para-2025', dateLabel: '12 de diciembre de 2024', date: '2024-12-12', excerpt: 'Resumen accionable sobre checklist ia y seo para 2025.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Pipelines De Contenido Con IA', url: '/pipelines-de-contenido-con-ia', dateLabel: '14 de noviembre de 2024', date: '2024-11-14', excerpt: 'Resumen accionable sobre pipelines de contenido con ia.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Auditoria SEO Con IA', url: '/auditoria-seo-con-ia', dateLabel: '10 de octubre de 2024', date: '2024-10-10', excerpt: 'Resumen accionable sobre auditoria seo con ia.', tags: ['SEO', 'Web', 'Estrategia'] },
-  { title: 'Programacion Asistida Por IA', url: '/programacion-asistida-por-ia', dateLabel: '12 de septiembre de 2024', date: '2024-09-12', excerpt: 'Resumen accionable sobre programacion asistida por ia.', tags: ['SEO', 'Web', 'Estrategia'] },
-];
+(function () {
+  var POSTS = [
+    { title: 'Primeros pasos en Python: guía completa con ejemplos', url: '/primeros-pasos-python', dateLabel: '9 de abril de 2026', date: '2026-04-09', excerpt: 'Guía extensa para empezar Python desde cero con ejercicios y código.', tags: ['Python', 'Programación', 'Backend'] },
+    { title: 'Google Shopping Actions: qué fue y qué aprendimos', url: '/google-shopping-actions', dateLabel: '20 de mayo de 2018', date: '2018-05-20', excerpt: 'Lecciones de Google Shopping Actions para ecommerce y marketplaces.', tags: ['Ecommerce', 'Google Shopping', 'Marketing digital'] },
+    { title: 'Conceptos básicos de programación', url: '/conceptos-basicos-programacion', dateLabel: '24 de junio de 2018', date: '2018-06-24', excerpt: 'Variables, condicionales, funciones y lógica para empezar a programar.', tags: ['Programación', 'Fundamentos', 'Desarrollo web'] },
+    { title: 'Problemas del canon digital en ecommerce', url: '/problemas-canon-digital-ecommerce', dateLabel: '5 de julio de 2018', date: '2018-07-05', excerpt: 'Impacto legal y operativo del canon digital en tiendas online.', tags: ['Ecommerce', 'Legal', 'España'] },
+    { title: 'Experiencia de usuario (UX) y SEO', url: '/experiencia-de-usuario-ux-y-seo', dateLabel: '12 de enero de 2019', date: '2019-01-12', excerpt: 'Cómo UX y SEO se complementan para mejorar conversiones y ranking.', tags: ['SEO', 'UX'] },
+    { title: 'Herramientas SEO', url: '/herramientas-seo', dateLabel: '15 de enero de 2019', date: '2019-01-15', excerpt: 'Set base de herramientas para keyword research, auditoría y seguimiento.', tags: ['SEO', 'Herramientas', 'Marketing digital'] },
+    { title: 'Autoridad de dominio', url: '/autoridad-de-dominio', dateLabel: '20 de enero de 2019', date: '2019-01-20', excerpt: 'Qué es la autoridad de dominio y cómo mejorarla con enlaces de calidad.', tags: ['SEO', 'Autoridad de dominio', 'Link building'] },
+    { title: '¿Qué es Node.js y para qué sirve en 2026?', url: '/node-js-que-es', dateLabel: '5 de marzo de 2026', date: '2026-03-05', excerpt: 'Fundamentos de Node.js, arquitectura y casos reales.', tags: ['Node.js', 'Backend', 'JavaScript'] },
+    { title: 'Express.js: para qué sirve', url: '/express-js-para-que-sirve', dateLabel: '6 de marzo de 2026', date: '2026-03-06', excerpt: 'Cómo crear APIs con Express.js de forma segura y escalable.', tags: ['Node.js', 'Express', 'JavaScript'] },
+    { title: '¿Qué es Vue.js?', url: '/vue-js-que-es', dateLabel: '7 de marzo de 2026', date: '2026-03-07', excerpt: 'Introducción a Vue.js para aplicaciones frontend modernas.', tags: ['Vue.js', 'JavaScript', 'Frontend'] },
+    { title: '20 herramientas SEO gratuitas', url: '/herramientas-seo-gratuitas', dateLabel: '8 de marzo de 2026', date: '2026-03-08', excerpt: 'Listado práctico de herramientas SEO sin coste para empezar hoy.', tags: ['SEO', 'Herramientas', 'Marketing digital'] },
+    { title: 'Guía SEO para pymes en 2026', url: '/guia-seo-pymes-2026', dateLabel: '9 de abril de 2026', date: '2026-04-09', excerpt: 'Plan SEO orientado a negocio para pymes.', tags: ['SEO', 'Pymes', 'Estrategia digital'] },
+    { title: 'Checklist de lanzamiento web (marzo 2026)', url: '/checklist-lanzamiento-web-2026', dateLabel: '12 de marzo de 2026', date: '2026-03-12', excerpt: 'Checklist para lanzar una web sin errores críticos.', tags: ['Lanzamiento web', 'SEO'] },
+    { title: 'IA generativa y contenidos SEO', url: '/ia-generativa-estrategia-contenidos-seo', dateLabel: '14 de febrero de 2026', date: '2026-02-14', excerpt: 'Uso práctico de IA en estrategia editorial SEO.', tags: ['IA', 'SEO'] },
+    { title: 'SEO técnico en 2026: Core Web Vitals', url: '/seo-tecnico-core-web-vitals-2026', dateLabel: '18 de enero de 2026', date: '2026-01-18', excerpt: 'Buenas prácticas de rendimiento e indexabilidad.', tags: ['SEO técnico', 'Core Web Vitals'] },
+    { title: 'Contenido y SEO', url: '/contenido-y-seo', dateLabel: '22 de marzo de 2019', date: '2019-03-22', excerpt: 'Cómo alinear contenido y posicionamiento orgánico.', tags: ['SEO', 'Contenido'] },
+    { title: 'Backlink, ¿Que és?¿Cómo construir una red de enlaces?', url: '/backlink-que-es-como-construir-red-de-enlaces', dateLabel: '1 de abril de 2019', date: '2019-04-01', excerpt: 'Introducción a backlinks y estrategia de enlaces.', tags: ['SEO', 'Backlinks'] },
+    { title: 'Entornos Colaborativos', url: '/entornos-colaborativos', dateLabel: '10 de febrero de 2022', date: '2022-02-10', excerpt: 'Qué son y cómo ayudan a tu empresa.', tags: ['Colaboración'] },
+    { title: 'Contador de Caracteres SEO', url: '/contador-caracteres-seo', dateLabel: '14 de febrero de 2018', date: '2018-02-14', excerpt: 'Herramienta para títulos y metadescripciones.', tags: ['Herramientas', 'SEO', 'Contador'] },
+    { title: 'Conversor binario', url: '/conversor-binario', dateLabel: '14 de febrero de 2018', date: '2018-02-14', excerpt: 'Conversión de binario a decimal.', tags: ['Herramientas', 'SEO', 'Conversor'] },
+    { title: 'Mapa de la Guerra de Ucrania y Rusia', url: '/mapa-guerra-ucrania-rusia', dateLabel: '24 de febrero de 2022', date: '2022-02-24', excerpt: 'Seguimiento visual del conflicto.', tags: ['Experimentos', 'Guerra'] }
+  ];
+
+  var COLORS = ['ct-blue', 'ct-purple', 'ct-green', 'ct-red', 'ct-orange', 'ct-yellow'];
+
+  function getTag() {
+    var params = new URLSearchParams(window.location.search);
+    return (params.get('tag') || '').trim();
+  }
+
+  function buildCard(post, index) {
+    var article = document.createElement('article');
+    article.className = 'ct-box ' + COLORS[index % COLORS.length];
+    article.innerHTML = '<div class="ct-box-inner">'
+      + '<h3><a href="' + post.url + '">' + post.title + '</a></h3>'
+      + '<p class="ct-subline">Por <a href="/sucender">Sucender</a> el <time pubdate="pubdate">' + post.dateLabel + '</time></p>'
+      + '<p class="ct-feat-excerpt">' + post.excerpt + '</p>'
+      + '<div class="clr"></div>'
+      + '</div>';
+    return article;
+  }
+
+  function renderGrid(posts, list) {
+    list.innerHTML = '';
+    for (var i = 0; i < posts.length; i += 2) {
+      var row = document.createElement('div');
+      row.className = 'ct-row';
+      row.appendChild(buildCard(posts[i], i));
+      if (posts[i + 1]) {
+        row.appendChild(buildCard(posts[i + 1], i + 1));
+      }
+      list.appendChild(row);
+    }
+  }
+
+  function render() {
+    var currentTag = getTag();
+    var title = document.querySelector('[data-tag-title]');
+    var list = document.querySelector('[data-tag-list]');
+    if (!title || !list) return;
+
+    title.textContent = currentTag ? 'Tag: ' + currentTag : 'Tag no indicado';
+
+    if (!currentTag) {
+      list.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue"><div class="ct-box-inner"><p>Selecciona un tag desde un artículo para ver contenido relacionado.</p></div></article></div>';
+      return;
+    }
+
+    var matches = POSTS.filter(function (post) {
+      return post.tags.some(function (tag) {
+        return tag.toLowerCase() === currentTag.toLowerCase();
+      });
+    }).sort(function (a, b) {
+      return new Date(b.date) - new Date(a.date);
+    });
+
+    if (!matches.length) {
+      list.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue"><div class="ct-box-inner"><p>No hay publicaciones asociadas a este tag todavía.</p></div></article></div>';
+      return;
+    }
+
+    renderGrid(matches, list);
+  }
+
+  document.addEventListener('DOMContentLoaded', render);
+})();

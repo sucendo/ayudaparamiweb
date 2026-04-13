@@ -97,6 +97,9 @@ function toOutputFile(routePath) {
   if (routePath === '/') {
     return path.join(outputDir, 'index.html');
   }
+  if (routePath === '/404') {
+    return path.join(outputDir, '404.html');
+  }
 
   const cleaned = routePath.replace(/^\/+/, '');
   return path.join(outputDir, cleaned, 'index.html');

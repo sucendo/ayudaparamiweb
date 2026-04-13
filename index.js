@@ -19,7 +19,7 @@ function buildSearchableRoutes(contentItems) {
 
   return routes
     .filter(function(route) {
-      return route.path !== '/';
+      return route.path !== '/' && route.path !== '/404';
     })
     .map(function(route) {
       var normalizedPath = route.path.replace(/^\//, '');
@@ -103,6 +103,13 @@ async function bootstrap() {
   routes.forEach(function(route) {
     app.get(route.path, function(request, response) {
       response.render(route.view, resolvePageContext(route, allContent));
+    });
+  });
+
+  app.use(function(request, response) {
+    response.status(404).render('pages/404', {
+      contentItems: [],
+      categories: contentCatalog.CATEGORY_DEFINITIONS
     });
   });
 

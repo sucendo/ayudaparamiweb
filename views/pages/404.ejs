@@ -1,0 +1,45 @@
+<!doctype html>
+<html dir="ltr" lang="es" xml:lang="es" class="js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error 404 | Ayuda para mi Web</title>
+  <meta name="description" content="La página que buscas no existe o ha sido movida." />
+  <meta name="author" content="Sucender" />
+  <%- include('../partials/head.ejs') %>
+</head>
+<body id="codrops-body">
+  <div class="ct-container">
+    <%- include('../partials/header.ejs') %>
+
+    <div class="ct-content">
+      <div class="ct-inner">
+        <div class="ct-main ct-main-archive" role="main">
+          <div class="ct-archive">
+            <div class="ct-row">
+              <article class="ct-box ct-red">
+                <div class="ct-box-inner">
+                  <h1>Error 404</h1>
+                  <p class="ct-feat-excerpt">La URL solicitada no existe o ya no está disponible.</p>
+                  <p><a href="/">Volver al inicio</a> o usar el buscador para encontrar contenido.</p>
+                </div>
+              </article>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <aside class="ct-sidebar">
+          <%- include('../partials/aside.ejs') %>
+        </aside>
+        <div class="clr"></div>
+      </div>
+    </div>
+
+    <footer class="ct-footer">
+      <%- include('../partials/footer.ejs') %>
+    </footer>
+  </div>
+</body>
+</html>

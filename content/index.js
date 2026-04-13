@@ -66,6 +66,36 @@ function extractExcerpt(source) {
   return 'Contenido publicado en Ayuda para mi Web.';
 }
 
+function extractAuthor(source) {
+  const metaAuthorMatch = source.match(/<meta[^>]*name=["']author["'][^>]*content=["']([^"']+)["']/i);
+  if (metaAuthorMatch) return stripTags(metaAuthorMatch[1]);
+
+  const itemPropAuthorMatch = source.match(/itemprop=["']author["'][\s\S]*?itemprop=["']name["'][^>]*>([\s\S]*?)<\/a>/i);
+  if (itemPropAuthorMatch) return stripTags(itemPropAuthorMatch[1]);
+
+  const bylineAuthorMatch = source.match(/class=["'][^"']*author[^"']*["'][^>]*>\s*<a[^>]*>([\s\S]*?)<\/a>/i);
+  if (bylineAuthorMatch) return stripTags(bylineAuthorMatch[1]);
+
+  return 'Sucender';
+}
+
+function extractTags(source) {
+  const tagsBlockMatch = source.match(/<p[^>]*class=["'][^"']*ct-tags[^"']*["'][^>]*>([\s\S]*?)<\/p>/i);
+  if (!tagsBlockMatch) return [];
+
+  const tags = [];
+  const anchorPattern = /<a[^>]*rel=["']tag["'][^>]*>([\s\S]*?)<\/a>/gi;
+  let anchorMatch = anchorPattern.exec(tagsBlockMatch[1]);
+
+  while (anchorMatch) {
+    const normalized = stripTags(anchorMatch[1]);
+    if (normalized && !tags.includes(normalized)) tags.push(normalized);
+    anchorMatch = anchorPattern.exec(tagsBlockMatch[1]);
+  }
+
+  return tags;
+}
+
 function extractDate(source) {
   const modifiedMatch = source.match(/itemprop="dateModified"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
   if (modifiedMatch) return modifiedMatch[1];
@@ -280,6 +310,8 @@ async function buildCatalog() {
       displayModifiedDate: formatDateEs(modifiedDate),
       hasModifiedDate,
       excerpt: extractExcerpt(source),
+      author: extractAuthor(source),
+      tags: extractTags(source),
       category: CATEGORY_BY_SLUG[slug] || 'guias',
       image,
       colorClass: CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',

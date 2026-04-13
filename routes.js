@@ -3,12 +3,11 @@ const path = require('path');
 
 const staticRoutes = [
   { path: '/', view: 'pages/index' },
-  { path: '/guias', view: 'pages/guias' },
+  { path: '/guias', view: 'pages/articles' },
   { path: '/tutoriales', view: 'pages/tutoriales' },
   { path: '/herramientas', view: 'pages/herramientas' },
   { path: '/laboratorio', view: 'pages/laboratorio' },
-  { path: '/analisis', view: 'pages/analisis' },
-  { path: '/articulos', view: 'pages/guias' },
+  { path: '/articulos', view: 'pages/articles' },
   { path: '/experimentos', view: 'pages/laboratorio' },
   { path: '/404', view: 'pages/404' },
   { path: '/tags', view: 'pages/tags' },

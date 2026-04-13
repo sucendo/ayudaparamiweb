@@ -19,7 +19,7 @@ function buildSearchableRoutes(contentItems) {
 
   return routes
     .filter(function(route) {
-      return route.path !== '/';
+      return route.path !== '/' && route.path !== '/404';
     })
     .map(function(route) {
       var normalizedPath = route.path.replace(/^\//, '');
@@ -48,7 +48,9 @@ function resolvePageContext(route, allContent) {
     '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/analisis': contentCatalog.filterByCategory(allContent, 'analisis'),
     '/articulos': contentCatalog.filterByCategory(allContent, 'guias'),
-    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio')
+    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio'),
+    '/tags': allContent,
+    '/sucender': allContent
   };
 
   return {
@@ -77,6 +79,9 @@ async function bootstrap() {
   app.set('view engine', 'ejs');
 
   app.get('/api/seo-analyze', seoAnalyzeHandler.handleSeoAnalyzeRequest);
+  app.get('/api/content-index', function(request, response) {
+    response.json(allContent);
+  });
 
   app.get('/buscar', function(request, response) {
     var query = (request.query.q || '').trim();
@@ -98,6 +103,13 @@ async function bootstrap() {
   routes.forEach(function(route) {
     app.get(route.path, function(request, response) {
       response.render(route.view, resolvePageContext(route, allContent));
+    });
+  });
+
+  app.use(function(request, response) {
+    response.status(404).render('pages/404', {
+      contentItems: [],
+      categories: contentCatalog.CATEGORY_DEFINITIONS
     });
   });
 

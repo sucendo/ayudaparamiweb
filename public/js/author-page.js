@@ -1,22 +1,49 @@
-window.AUTHOR_POSTS = [
-  { title: 'Guia SEO Pymes 2026', url: '/guia-seo-pymes-2026', date: '9 de abril de 2026', excerpt: 'Guía práctica sobre guia seo pymes 2026.' },
-  { title: 'Checklist Lanzamiento Web 2026', url: '/checklist-lanzamiento-web-2026', date: '12 de marzo de 2026', excerpt: 'Guía práctica sobre checklist lanzamiento web 2026.' },
-  { title: 'SEO Local Y Visibilidad Para Pymes 2026', url: '/seo-local-y-visibilidad-para-pymes-2026', date: '14 de febrero de 2026', excerpt: 'Guía práctica sobre seo local y visibilidad para pymes 2026.' },
-  { title: 'SEO Tecnico Core Web Vitals 2026', url: '/seo-tecnico-core-web-vitals-2026', date: '18 de enero de 2026', excerpt: 'Guía práctica sobre seo tecnico core web vitals 2026.' },
-  { title: 'Plan SEO Y Contenidos Para 2026', url: '/plan-seo-y-contenidos-para-2026', date: '11 de diciembre de 2025', excerpt: 'Guía práctica sobre plan seo y contenidos para 2026.' },
-  { title: 'Mantenimiento Web Proactivo', url: '/mantenimiento-web-proactivo', date: '13 de noviembre de 2025', excerpt: 'Guía práctica sobre mantenimiento web proactivo.' },
-  { title: 'Dashboard GA4 Para Direccion', url: '/dashboard-ga4-para-direccion', date: '9 de octubre de 2025', excerpt: 'Guía práctica sobre dashboard ga4 para direccion.' },
-  { title: 'Auditoria Tecnica Rapida De Una Web', url: '/auditoria-tecnica-rapida-de-una-web', date: '11 de septiembre de 2025', excerpt: 'Guía práctica sobre auditoria tecnica rapida de una web.' },
-  { title: 'Accesibilidad Y SEO', url: '/accesibilidad-y-seo', date: '14 de agosto de 2025', excerpt: 'Guía práctica sobre accesibilidad y seo.' },
-  { title: 'Estrategias De Captacion B2B', url: '/estrategias-de-captacion-b2b', date: '10 de julio de 2025', excerpt: 'Guía práctica sobre estrategias de captacion b2b.' },
-  { title: 'Analisis De Logs Para SEO', url: '/analisis-de-logs-para-seo', date: '12 de junio de 2025', excerpt: 'Guía práctica sobre analisis de logs para seo.' },
-  { title: 'Arquitectura Web Para Catalogos Grandes', url: '/arquitectura-web-para-catalogos-grandes', date: '15 de mayo de 2025', excerpt: 'Guía práctica sobre arquitectura web para catalogos grandes.' },
-  { title: 'Contenidos Utiles Y EEAT', url: '/contenidos-utiles-y-eeat', date: '10 de abril de 2025', excerpt: 'Guía práctica sobre contenidos utiles y eeat.' },
-  { title: 'Automatizar Informes SEO', url: '/automatizar-informes-seo', date: '13 de marzo de 2025', excerpt: 'Guía práctica sobre automatizar informes seo.' },
-  { title: 'Optimizacion De Google Business Profile', url: '/optimizacion-de-google-business-profile', date: '13 de febrero de 2025', excerpt: 'Guía práctica sobre optimizacion de google business profile.' },
-  { title: 'SEO Local Avanzado Para Pymes', url: '/seo-local-avanzado-para-pymes', date: '16 de enero de 2025', excerpt: 'Guía práctica sobre seo local avanzado para pymes.' },
-  { title: 'Checklist IA Y SEO Para 2025', url: '/checklist-ia-y-seo-para-2025', date: '12 de diciembre de 2024', excerpt: 'Guía práctica sobre checklist ia y seo para 2025.' },
-  { title: 'Pipelines De Contenido Con IA', url: '/pipelines-de-contenido-con-ia', date: '14 de noviembre de 2024', excerpt: 'Guía práctica sobre pipelines de contenido con ia.' },
-  { title: 'Auditoria SEO Con IA', url: '/auditoria-seo-con-ia', date: '10 de octubre de 2024', excerpt: 'Guía práctica sobre auditoria seo con ia.' },
-  { title: 'Programacion Asistida Por IA', url: '/programacion-asistida-por-ia', date: '12 de septiembre de 2024', excerpt: 'Guía práctica sobre programacion asistida por ia.' },
-];
+(function () {
+  var POSTS = [
+    { title: 'Guía SEO para pymes en 2026', url: '/guia-seo-pymes-2026', date: '9 de abril de 2026', excerpt: 'Plan SEO orientado a negocio para pymes.' },
+    { title: 'Checklist de lanzamiento web (marzo 2026)', url: '/checklist-lanzamiento-web-2026', date: '12 de marzo de 2026', excerpt: 'Checklist para lanzar una web sin errores críticos.' },
+    { title: 'IA generativa y contenidos SEO', url: '/ia-generativa-estrategia-contenidos-seo', date: '14 de febrero de 2026', excerpt: 'Uso práctico de IA en estrategia editorial SEO.' },
+    { title: 'SEO técnico en 2026: Core Web Vitals', url: '/seo-tecnico-core-web-vitals-2026', date: '18 de enero de 2026', excerpt: 'Buenas prácticas de rendimiento e indexabilidad.' },
+    { title: 'Entornos Colaborativos', url: '/entornos-colaborativos', date: '10 de febrero de 2022', excerpt: 'Qué son y cómo ayudan a tu empresa.' },
+    { title: 'Backlink, ¿Que és?¿Cómo construir una red de enlaces?', url: '/backlink-que-es-como-construir-red-de-enlaces', date: '1 de abril de 2019', excerpt: 'Introducción a backlinks y estrategia de enlaces.' },
+    { title: 'Investigación de palabras clave', url: '/investigacion-palabras-clave', date: '26 de marzo de 2019', excerpt: 'Cómo elegir keywords para posicionar.' },
+    { title: 'Contenido y SEO', url: '/contenido-y-seo', date: '22 de marzo de 2019', excerpt: 'Cómo alinear contenido y posicionamiento orgánico.' },
+    { title: 'SEO On-Page, aspectos técnicos', url: '/seo-on-page-aspectos-tecnicos', date: '15 de marzo de 2019', excerpt: 'Fundamentos técnicos para mejorar SEO.' },
+    { title: 'Motores de búsqueda', url: '/motores-de-busqueda', date: '11 de marzo de 2019', excerpt: 'Cómo funcionan los buscadores.' },
+    { title: 'SEO ¿Qué es?', url: '/seo-que-es', date: '1 de marzo de 2019', excerpt: 'Guía introductoria de SEO.' },
+    { title: '¿Cómo crear una página Web?', url: '/como-crear-una-pagina-web', date: '7 de febrero de 2019', excerpt: 'Pasos para crear tu web.' },
+    { title: 'El mundo del programador Web', url: '/el-mundo-del-programador-web', date: '23 de agosto de 2018', excerpt: 'Experiencia y herramientas de desarrollo.' },
+    { title: '¿Que es Bluetooth?', url: '/que-es-bluetooth', date: '21 de agosto de 2018', excerpt: 'Qué es y para qué sirve Bluetooth.' }
+  ];
+
+  var COLORS = ['ct-red', 'ct-blue', 'ct-purple', 'ct-green', 'ct-orange', 'ct-yellow'];
+
+  function createCard(post, index) {
+    var article = document.createElement('article');
+    article.className = 'ct-box ' + COLORS[index % COLORS.length];
+    article.innerHTML = '<div class="ct-box-inner">'
+      + '<h3><a href="' + post.url + '">' + post.title + '</a></h3>'
+      + '<p class="ct-subline">Por <a href="/sucender">Sucender</a> el <time pubdate="pubdate">' + post.date + '</time></p>'
+      + '<p class="ct-feat-excerpt">' + post.excerpt + '</p>'
+      + '<div class="clr"></div>'
+      + '</div>';
+    return article;
+  }
+
+  function render() {
+    var list = document.querySelector('[data-author-list]');
+    if (!list) return;
+
+    for (var i = 0; i < POSTS.length; i += 2) {
+      var row = document.createElement('div');
+      row.className = 'ct-row';
+      row.appendChild(createCard(POSTS[i], i));
+      if (POSTS[i + 1]) {
+        row.appendChild(createCard(POSTS[i + 1], i + 1));
+      }
+      list.appendChild(row);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', render);
+})();

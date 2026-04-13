@@ -1,1 +1,8 @@
-<%- include('./guias.ejs') %>
+<%- include('../partials/archive-page.ejs', {
+  pageTitle: 'Artículos',
+  pageDescription: 'Guías y análisis de referencia para desarrollo web y SEO.',
+  heading: 'Artículos',
+  subtitle: 'Contenido editorial de referencia, incluyendo guías y análisis.',
+  items: contentItems,
+  categories: categories
+}) %>

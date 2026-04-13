@@ -132,14 +132,14 @@ function rewriteLegacyDomain(html) {
 
 
 function resolvePageContext(route, allContent) {
+  const articles = contentCatalog.filterByCategory(allContent, 'guias').concat(contentCatalog.filterByCategory(allContent, 'analisis'));
   const sectionByPath = {
     '/': allContent,
-    '/guias': contentCatalog.filterByCategory(allContent, 'guias'),
+    '/guias': articles,
     '/tutoriales': contentCatalog.filterByCategory(allContent, 'tutoriales'),
     '/herramientas': contentCatalog.filterByCategory(allContent, 'herramientas'),
     '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
-    '/analisis': contentCatalog.filterByCategory(allContent, 'analisis'),
-    '/articulos': contentCatalog.filterByCategory(allContent, 'guias'),
+    '/articulos': articles,
     '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/tags': allContent,
     '/sucender': allContent

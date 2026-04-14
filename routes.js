@@ -10,6 +10,7 @@ const staticRoutes = [
   { path: '/articulos', view: 'pages/articles' },
   { path: '/experimentos', view: 'pages/laboratorio' },
   { path: '/404', view: 'pages/404' },
+  { path: '/buscar', view: 'pages/search' },
   { path: '/tags', view: 'pages/tags' },
   { path: '/sucender', view: 'authors/sucender' },
   { path: '/historia', view: 'historia/historia' },

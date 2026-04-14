@@ -26,6 +26,16 @@ function copyPublic() {
   fs.cpSync(publicDir, outputDir, { recursive: true });
 }
 
+function writeContentIndex(allContent) {
+  const dataDir = path.join(outputDir, 'data');
+  fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(dataDir, 'content-index.json'),
+    JSON.stringify(allContent, null, 2),
+    'utf8'
+  );
+}
+
 function walkFiles(dir, visitor) {
   fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
     const fullPath = path.join(dir, entry.name);
@@ -167,7 +177,9 @@ function resolvePageContext(route, allContent) {
 
   return {
     contentItems: sectionByPath[route.path] || [],
-    categories: contentCatalog.CATEGORY_DEFINITIONS
+    categories: contentCatalog.CATEGORY_DEFINITIONS,
+    query: '',
+    results: []
   };
 }
 
@@ -194,6 +206,7 @@ async function build() {
   rewritePublicAssetUrls();
   createNoJekyllFlag();
   const allContent = await contentCatalog.buildCatalog();
+  writeContentIndex(allContent);
   routes.forEach((route) => renderRoute(route, allContent));
   console.log(`Static site generated at ${outputDir} with BASE_PATH=${basePath}`);
 }

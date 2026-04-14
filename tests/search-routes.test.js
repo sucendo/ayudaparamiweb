@@ -59,7 +59,7 @@ test('GET /buscar?q=seo devuelve 200 con resultados', async function() {
 
   assert.equal(response.status, 200);
   assert.match(body, /Resultados de búsqueda/);
-  assert.match(body, /Mostrando resultados para <strong>"seo"<\/strong>/);
+  assert.match(body, /resultado\(s\) para <strong>"seo"<\/strong>/);
 });
 
 test('GET /buscar?s=seo devuelve 200 con resultados', async function() {
@@ -68,7 +68,7 @@ test('GET /buscar?s=seo devuelve 200 con resultados', async function() {
 
   assert.equal(response.status, 200);
   assert.match(body, /Resultados de búsqueda/);
-  assert.match(body, /Mostrando resultados para <strong>"seo"<\/strong>/);
+  assert.match(body, /resultado\(s\) para <strong>"seo"<\/strong>/);
 });
 
 test('GET /?s=seo redirige a /buscar?s=seo', async function() {

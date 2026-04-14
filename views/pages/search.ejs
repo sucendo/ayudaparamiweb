@@ -19,30 +19,38 @@
           <div class="ct-main ct-main-archive" role="main">
             <div class="ct-archive">
               <h1>Resultados de búsqueda</h1>
-
-              <% if (!query) { %>
-                <p>Escribe un término para buscar contenido en la web.</p>
-              <% } else { %>
-                <div class="ct-cat-desc">
-                  <p>
-                    Mostrando resultados para <strong>"<%= query %>"</strong>.
-                  </p>
-                </div>
-
-                <% if (results.length === 0) { %>
-                  <p>No se han encontrado resultados para tu búsqueda.</p>
-                <% } else { %>
-                  <ul>
-                    <% results.forEach(function(result) { %>
-                      <li>
-                        <a href="<%= result.path %>"><%= result.title %></a>
-                      </li>
-                    <% }); %>
-                  </ul>
-                <% } %>
-              <% } %>
+              <div class="ct-cat-desc">
+                <p>Busca por título, extracto, etiquetas y URL. Los resultados se actualizan automáticamente.</p>
+              </div>
+              <form method="get" action="/buscar" class="ct-search-page-form">
+                <input
+                  id="search-page-input"
+                  class="ct-search-page-input"
+                  type="search"
+                  name="q"
+                  value="<%= query || '' %>"
+                  placeholder="Ejemplo: bluetooth, seo local, wordpress..."
+                  autocomplete="off"
+                />
+              </form>
+              <div class="ct-cat-desc">
+                <p id="search-status-text">
+                  <% if (!query) { %>
+                    Escribe un término para buscar contenido en la web.
+                  <% } else if (!results || !results.length) { %>
+                    No se han encontrado resultados para <strong>"<%= query %>"</strong>.
+                  <% } else { %>
+                    Mostrando <strong><%= results.length %></strong> resultado(s) para <strong>"<%= query %>"</strong>.
+                  <% } %>
+                </p>
+              </div>
+              <div id="search-results-container" class="ct-archive-container">
+                <%- include('../partials/content-grid.ejs', { items: results || [], categories: categories || {} }) %>
+              </div>
             </div>
           </div>
+          <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
+          <div class="clr"></div>
         </div>
       </div>
 
@@ -50,5 +58,13 @@
     </div>
 
     <%- include('../partials/shared.ejs') %>
+    <script>
+      window.__SEARCH_BOOTSTRAP__ = {
+        query: <%- JSON.stringify(query || '') %>,
+        results: <%- JSON.stringify(results || []) %>,
+        categories: <%- JSON.stringify(categories || {}) %>
+      };
+    </script>
+    <script src="/js/search-page.js"></script>
   </body>
 </html>

@@ -91,59 +91,59 @@
 									<h2>Primer ejemplo: un servidor HTTP mínimo con Node.js</h2>
 									<p>Antes de utilizar frameworks, merece la pena ver cómo responde Node.js por sí solo. Este ejemplo básico crea un pequeño servidor HTTP:</p>
 								
-									<pre><code class="language-javascript">const http = require('http');
-								
-								const server = http.createServer((req, res) =&gt; {
-								  if (req.url === '/salud') {
-								    res.writeHead(200, { 'Content-Type': 'application/json' });
-								    return res.end(JSON.stringify({ ok: true, servicio: 'api-node' }));
-								  }
-								
-								  res.writeHead(404, { 'Content-Type': 'application/json' });
-								  res.end(JSON.stringify({ error: 'Ruta no encontrada' }));
-								});
-								
-								server.listen(3000, () =&gt; {
-								  console.log('Servidor activo en http://localhost:3000');
-								});</code></pre>
+									<pre class="line-numbers" data-start="0"><code class="language-javascript">const http = require('http');
+
+const server = http.createServer((req, res) =&gt; {
+  if (req.url === '/salud') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    return res.end(JSON.stringify({ ok: true, servicio: 'api-node' }));
+  }
+
+  res.writeHead(404, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ error: 'Ruta no encontrada' }));
+});
+
+server.listen(3000, () =&gt; {
+  console.log('Servidor activo en http://localhost:3000');
+});</code></pre>
 								
 									<p>Este ejemplo es muy simple, pero sirve para entender una idea importante: Node.js puede levantar un servidor sin necesidad de recurrir a un framework desde el primer momento. Después, si el proyecto crece, ya se pueden añadir herramientas que hagan más cómodo el trabajo.</p>
 								
 									<h2>Segundo ejemplo: una API sencilla con Express</h2>
 									<p>Cuando se empieza a trabajar con rutas, formularios o respuestas más organizadas, Express suele ser una opción muy popular por su sencillez. Este sería un ejemplo básico:</p>
 								
-									<pre><code class="language-javascript">const express = require('express');
-								const app = express();
-								
-								app.use(express.json());
-								
-								const tareas = [
-								  { id: 1, titulo: 'Definir estructura del proyecto', hecho: true },
-								  { id: 2, titulo: 'Crear endpoint /tareas', hecho: false }
-								];
-								
-								app.get('/tareas', (req, res) =&gt; {
-								  res.json({ total: tareas.length, data: tareas });
-								});
-								
-								app.post('/tareas', (req, res) =&gt; {
-								  const nueva = {
-								    id: tareas.length + 1,
-								    titulo: req.body.titulo,
-								    hecho: false
-								  };
-								
-								  if (!nueva.titulo) {
-								    return res.status(400).json({ error: 'El título es obligatorio' });
-								  }
-								
-								  tareas.push(nueva);
-								  res.status(201).json(nueva);
-								});
-								
-								app.listen(3000, () =&gt; {
-								  console.log('API en puerto 3000');
-								});</code></pre>
+									<pre class="line-numbers" data-start="0"><code class="language-javascript">const express = require('express');
+const app = express();
+
+app.use(express.json());
+
+const tareas = [
+  { id: 1, titulo: 'Definir estructura del proyecto', hecho: true },
+  { id: 2, titulo: 'Crear endpoint /tareas', hecho: false }
+];
+
+app.get('/tareas', (req, res) =&gt; {
+  res.json({ total: tareas.length, data: tareas });
+});
+
+app.post('/tareas', (req, res) =&gt; {
+  const nueva = {
+    id: tareas.length + 1,
+    titulo: req.body.titulo,
+    hecho: false
+  };
+
+  if (!nueva.titulo) {
+    return res.status(400).json({ error: 'El título es obligatorio' });
+  }
+
+  tareas.push(nueva);
+  res.status(201).json(nueva);
+});
+
+app.listen(3000, () =&gt; {
+  console.log('API en puerto 3000');
+});</code></pre>
 								
 									<p>Con una base así ya es posible empezar a construir una pequeña API REST y, a partir de ahí, añadir autenticación, conexión con base de datos, validaciones y lógica de negocio.</p>
 								
@@ -179,20 +179,18 @@
 									<h2>Una estructura sencilla que puede servir de base</h2>
 									<p>No existe una única forma correcta de organizar un proyecto, pero una estructura limpia ayuda mucho cuando la aplicación empieza a crecer. Un ejemplo simple podría ser este:</p>
 								
-									<pre class="line-numbers" data-start="0"><code class="language-text">
-src/
+									<pre class="line-numbers" data-start="0"><code class="language-text">src/
   app.js
   routes/
-	tareas.routes.js
+    tareas.routes.js
   controllers/
-	tareas.controller.js
+    tareas.controller.js
   services/
-	tareas.service.js
+    tareas.service.js
   config/
-	env.js
+    env.js
 tests/
-  tareas.test.js
-									</code></pre>
+  tareas.test.js</code></pre>
 								
 									<p>La idea no es complicarlo todo desde el principio, sino evitar que el proyecto se convierta demasiado pronto en una mezcla difícil de mantener.</p>
 								
@@ -225,13 +223,13 @@ tests/
 								
 									<p>Después ya tiene sentido construir pequeños ejemplos: un servidor simple, una API con unas pocas rutas, una conexión básica a base de datos o una pequeña aplicación con Express. Ese camino suele ser mucho más útil que intentar copiar una arquitectura grande sin entender bien qué hace cada parte.</p>
 								
-									<pre><code class="language-text">Un orden razonable para empezar:
-								1. Repasar JavaScript moderno
-								2. Entender cómo funciona HTTP
-								3. Crear un servidor básico con Node
-								4. Probar Express con rutas sencillas
-								5. Añadir base de datos y validaciones
-								6. Mejorar estructura y control de errores</code></pre>
+									<pre class="line-numbers" data-start="0"><code class="language-text">Un orden razonable para empezar:
+1. Repasar JavaScript moderno
+2. Entender cómo funciona HTTP
+3. Crear un servidor básico con Node
+4. Probar Express con rutas sencillas
+5. Añadir base de datos y validaciones
+6. Mejorar estructura y control de errores</code></pre>
 								
 									<h2>Conclusión</h2>
 									<p>Node.js se ha convertido en una herramienta muy importante dentro del desarrollo web porque permite llevar JavaScript al servidor de una forma práctica y eficiente. Su modelo orientado a eventos, su ecosistema y su flexibilidad lo hacen especialmente interesante para APIs, aplicaciones en tiempo real y proyectos donde se valora mucho la agilidad.</p>

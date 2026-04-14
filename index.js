@@ -84,7 +84,7 @@ async function bootstrap() {
   });
 
   app.get('/buscar', function(request, response) {
-    var query = (request.query.q || '').trim();
+    var query = (request.query.q || request.query.s || '').trim();
     var normalizedQuery = query.toLowerCase();
 
     var results = normalizedQuery
@@ -102,6 +102,11 @@ async function bootstrap() {
 
   routes.forEach(function(route) {
     app.get(route.path, function(request, response) {
+      if (route.path === '/' && typeof request.query.s === 'string' && request.query.s.trim()) {
+        response.redirect('/buscar?s=' + encodeURIComponent(request.query.s.trim()));
+        return;
+      }
+
       response.render(route.view, resolvePageContext(route, allContent));
     });
   });

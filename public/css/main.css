@@ -2992,6 +2992,44 @@ input[type="text"].tt-hint {
     opacity: 1
 }
 
+/* Search page form */
+
+.ct-search-page-form {
+    position: relative;
+    margin: 0 0 18px 0;
+    max-width: 680px;
+}
+
+.ct-search-page-input {
+    width: 100%;
+    height: 46px;
+    padding: 10px 46px 10px 14px;
+    border: none;
+    background: #fff;
+    color: #333d46;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ct-search-page-input:focus {
+    outline: 2px solid #333d46;
+    outline-offset: 0;
+}
+
+.ct-search-page-form:after {
+    content: "\e006";
+    font-family: "codropsicons";
+    font-size: 18px;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #537b7b;
+    pointer-events: none;
+}
+
 ::-webkit-input-placeholder {
     color: #ddd
 }
@@ -5209,6 +5247,10 @@ body .bsa-cart-zone {
 
     .ct-search input[type="submit"].ct-search-submit {
         z-index: 100
+    }
+
+    .ct-search-page-form {
+        max-width: none;
     }
 }
 

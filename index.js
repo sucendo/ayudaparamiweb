@@ -11,31 +11,28 @@ var app = express();
 var appMode = process.env.APP_MODE || 'node';
 app.set('port', (process.env.PORT || 5000));
 
-function buildSearchableRoutes(contentItems) {
-  var itemTitlesByPath = contentItems.reduce(function(acc, item) {
-    acc[item.path] = item.title;
-    return acc;
-  }, {});
+function normalizeSearchableText(value) {
+  return String(value || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
 
-  return routes
-    .filter(function(route) {
-      return route.path !== '/' && route.path !== '/404';
-    })
-    .map(function(route) {
-      var normalizedPath = route.path.replace(/^\//, '');
-      var generatedTitle = normalizedPath
-        .split('-')
-        .filter(Boolean)
-        .map(function(part) {
-          return part.charAt(0).toUpperCase() + part.slice(1);
-        })
-        .join(' ');
+function searchContent(contentItems, query) {
+  var normalizedQuery = normalizeSearchableText(query).trim();
+  if (!normalizedQuery) return [];
 
-      return {
-        path: route.path,
-        title: itemTitlesByPath[route.path] || generatedTitle || 'Inicio'
-      };
-    });
+  return contentItems.filter(function(item) {
+    var haystack = [
+      item.title,
+      item.excerpt,
+      item.path,
+      item.category,
+      (item.tags || []).join(' ')
+    ].map(normalizeSearchableText).join(' ');
+
+    return haystack.indexOf(normalizedQuery) !== -1;
+  });
 }
 
 function resolvePageContext(route, allContent) {
@@ -61,7 +58,6 @@ function resolvePageContext(route, allContent) {
 
 async function bootstrap() {
   var allContent = await contentCatalog.buildCatalog();
-  var searchableRoutes = buildSearchableRoutes(allContent);
 
   if (appMode === 'static') {
     app.use(express.static(path.join(__dirname, 'dist')));
@@ -85,18 +81,13 @@ async function bootstrap() {
 
   app.get('/buscar', function(request, response) {
     var query = (request.query.q || request.query.s || '').trim();
-    var normalizedQuery = query.toLowerCase();
-
-    var results = normalizedQuery
-      ? searchableRoutes.filter(function(route) {
-          return route.title.toLowerCase().indexOf(normalizedQuery) !== -1 ||
-            route.path.toLowerCase().indexOf(normalizedQuery) !== -1;
-        })
-      : [];
+    var results = searchContent(allContent, query);
 
     response.render('pages/search', {
       query: query,
-      results: results
+      results: results,
+      contentItems: [],
+      categories: contentCatalog.CATEGORY_DEFINITIONS
     });
   });
 

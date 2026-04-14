@@ -147,7 +147,9 @@ function resolvePageContext(route, allContent) {
 
   return {
     contentItems: sectionByPath[route.path] || [],
-    categories: contentCatalog.CATEGORY_DEFINITIONS
+    categories: contentCatalog.CATEGORY_DEFINITIONS,
+    query: '',
+    results: []
   };
 }
 

@@ -2,8 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
 const routeCatalog = require('../routes');
+const contentLoader = require('../lib/content/loader');
 
 const CONTENT_VIEW_PATTERN = /^(news|tools|experiments)\//;
+const LEGACY_ARTICLE_VIEW_PATTERN = /^news\//;
+const LEGACY_NON_ARTICLE_VIEW_PATTERN = /^(tools|experiments)\//;
 const FALLBACK_IMAGE = '/img/logo-color.svg';
 const FALLBACK_ACCENT = '#537b7b';
 
@@ -288,36 +291,156 @@ function computeAccentColor(imagePath, source) {
   }
 }
 
-async function buildCatalog() {
-  const routes = (routeCatalog.publishedRoutes || routeCatalog).filter((route) => CONTENT_VIEW_PATTERN.test(route.view));
+function normalizeCatalogItem(item) {
+  const date = item.date || item.modifiedDate || item.publishedDate || '1970-01-01';
+  const publishedDate = item.publishedDate || date;
+  const modifiedDate = item.modifiedDate || date;
+  const tags = Array.isArray(item.tags) ? item.tags : [];
+  const category = item.category || 'guias';
 
-  const items = routes.map((route) => {
-    const source = readSource(route);
-    const slug = getSlug(route.path);
-    const image = extractImage(source);
-    const { publishedDate, modifiedDate, hasModifiedDate } = extractDates(source);
+  return {
+    title: item.title || '',
+    slug: item.slug || '',
+    path: item.path || `/${item.slug || ''}`,
+    date,
+    displayDate: formatDateEs(date),
+    publishedDate,
+    modifiedDate,
+    displayPublishedDate: formatDateEs(publishedDate),
+    displayModifiedDate: formatDateEs(modifiedDate),
+    hasModifiedDate: Boolean(item.hasModifiedDate || (publishedDate && modifiedDate && publishedDate !== modifiedDate)),
+    excerpt: item.excerpt || 'Contenido publicado en Ayuda para mi Web.',
+    author: item.author || 'Sucender',
+    tags,
+    category,
+    type: item.type || 'article',
+    image: item.image || FALLBACK_IMAGE,
+    colorClass: item.colorClass || 'ct-red',
+    accentColor: item.accentColor || FALLBACK_ACCENT,
+    view: item.view || ''
+  };
+}
 
-    return {
-      title: extractTitle(source, slug),
-      slug,
-      path: route.path,
-      date: modifiedDate,
-      displayDate: formatDateEs(modifiedDate),
-      publishedDate,
-      modifiedDate,
-      displayPublishedDate: formatDateEs(publishedDate),
-      displayModifiedDate: formatDateEs(modifiedDate),
-      hasModifiedDate,
-      excerpt: extractExcerpt(source),
-      author: extractAuthor(source),
-      tags: extractTags(source),
-      category: CATEGORY_BY_SLUG[slug] || 'guias',
-      image,
-      colorClass: CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
-      accentColor: computeAccentColor(image, source),
-      view: route.view
-    };
+function mapLegacyRouteToCatalogItem(route) {
+  const source = readSource(route);
+  const slug = getSlug(route.path);
+  const image = extractImage(source);
+  const { publishedDate, modifiedDate, hasModifiedDate } = extractDates(source);
+
+  return normalizeCatalogItem({
+    title: extractTitle(source, slug),
+    slug,
+    path: route.path,
+    date: modifiedDate,
+    publishedDate,
+    modifiedDate,
+    hasModifiedDate,
+    excerpt: extractExcerpt(source),
+    author: extractAuthor(source),
+    tags: extractTags(source),
+    category: CATEGORY_BY_SLUG[slug] || (LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'guias' : 'laboratorio'),
+    type: LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'article' : 'content',
+    image,
+    colorClass: CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
+    accentColor: computeAccentColor(image, source),
+    view: route.view
   });
+}
+
+function loadLegacyNews() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => LEGACY_ARTICLE_VIEW_PATTERN.test(route.view));
+
+  return routes.map(mapLegacyRouteToCatalogItem);
+}
+
+function loadArticles() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => route.view === 'content/render' && route.contentType === 'article' && route.contentSlug);
+
+  return routes.map((route) => {
+    const metadata = contentLoader.loadArticle(route.contentSlug);
+    const slug = metadata.slug || route.contentSlug;
+    const category = CATEGORY_BY_SLUG[slug] || metadata.category || 'guias';
+    const date = metadata.modifiedDate || metadata.publishedDate || '1970-01-01';
+    const image = metadata.featuredImage || FALLBACK_IMAGE;
+    const heroClass = metadata.heroClass || 'bg-purple';
+
+    return normalizeCatalogItem({
+      title: metadata.title,
+      slug,
+      path: metadata.canonical || route.path || `/${slug}`,
+      date,
+      publishedDate: metadata.publishedDate || date,
+      modifiedDate: metadata.modifiedDate || metadata.publishedDate || date,
+      hasModifiedDate: Boolean(metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate),
+      excerpt: metadata.description || 'Contenido publicado en Ayuda para mi Web.',
+      author: metadata.author || 'Sucender',
+      tags: metadata.tags || [],
+      category,
+      type: 'article',
+      image,
+      colorClass: CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red',
+      accentColor: ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      view: route.view
+    });
+  });
+}
+
+function getAllArticles() {
+  const bySlug = new Map();
+
+  loadLegacyNews().forEach((item) => bySlug.set(item.slug, item));
+  loadArticles().forEach((item) => bySlug.set(item.slug, item));
+
+  return Array.from(bySlug.values())
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+function loadLegacyNonArticles() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => LEGACY_NON_ARTICLE_VIEW_PATTERN.test(route.view));
+
+  return routes.map(mapLegacyRouteToCatalogItem);
+}
+
+function loadMigratedNonArticles() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => route.view === 'content/render' && (route.contentType === 'tool' || route.contentType === 'laboratory') && route.contentSlug);
+
+  return routes.map((route) => {
+    const metadata = contentLoader.loadByType(route.contentType, route.contentSlug);
+    const slug = metadata.slug || route.contentSlug;
+    const date = metadata.modifiedDate || metadata.publishedDate || '1970-01-01';
+    const image = metadata.featuredImage || FALLBACK_IMAGE;
+    const heroClass = metadata.heroClass || 'bg-purple';
+    const category = route.contentType === 'tool' ? 'herramientas' : 'laboratorio';
+
+    return normalizeCatalogItem({
+      title: metadata.title,
+      slug,
+      path: metadata.canonical || route.path || `/${slug}`,
+      date,
+      publishedDate: metadata.publishedDate || date,
+      modifiedDate: metadata.modifiedDate || metadata.publishedDate || date,
+      hasModifiedDate: Boolean(metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate),
+      excerpt: metadata.description || 'Contenido publicado en Ayuda para mi Web.',
+      author: metadata.author || 'Sucender',
+      tags: metadata.tags || [],
+      category,
+      type: route.contentType,
+      image,
+      colorClass: CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red',
+      accentColor: ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      view: route.view
+    });
+  });
+}
+
+async function buildCatalog() {
+  const items = getAllArticles()
+    .concat(loadLegacyNonArticles())
+    .concat(loadMigratedNonArticles());
 
   return items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
@@ -326,4 +449,4 @@ function filterByCategory(items, categorySlug) {
   return items.filter((item) => item.category === categorySlug);
 }
 
-module.exports = { CATEGORY_DEFINITIONS, buildCatalog, filterByCategory };
+module.exports = { CATEGORY_DEFINITIONS, loadLegacyNews, loadArticles, getAllArticles, buildCatalog, filterByCategory };

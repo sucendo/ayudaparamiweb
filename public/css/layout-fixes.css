@@ -19,3 +19,129 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Migrated article visual polish: recover legacy editorial hierarchy */
+.page-type-article .ct-content {
+  padding: 26px 0 38px;
+}
+
+.page-type-article .article-shell {
+  margin-right: 350px;
+  min-height: 0;
+}
+
+.page-type-article .article-card {
+  padding: 34px 38px 42px;
+  background: #fdfdfd;
+  border: 1px solid #e0e6eb;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.page-type-article .article-breadcrumbs {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6f7c86;
+}
+
+.page-type-article .article-breadcrumbs a {
+  color: #456272;
+  font-weight: 700;
+}
+
+.page-type-article .article-header {
+  margin-bottom: 10px;
+}
+
+.page-type-article .article-meta {
+  margin: 0;
+  padding: 0;
+  color: #4f6979;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.page-type-article .article-title {
+  margin: 10px 0 14px;
+  padding: 0 0 14px;
+  border-bottom: 1px solid #dbe2e8;
+  color: #1f2b33;
+  line-height: 1.08;
+  text-shadow: none;
+}
+
+.page-type-article .article-excerpt {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5a6974;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.page-type-article .article-hero {
+  margin: 0 0 26px;
+  overflow: hidden;
+  border: 1px solid #d8e0e7;
+}
+
+.page-type-article .article-body {
+  color: #2f3e47;
+  line-height: 1.72;
+}
+
+.page-type-article .article-body p,
+.page-type-article .article-body li {
+  color: #2f3e47;
+}
+
+.page-type-article .article-body h2,
+.page-type-article .article-body h3,
+.page-type-article .article-body h4 {
+  color: #1f2b33;
+}
+
+.page-type-article .article-body blockquote {
+  border-left-color: #9aaebd;
+  background: #f5f8fb;
+  color: #3f4f59;
+}
+
+.page-type-article .article-tags {
+  margin-top: 14px;
+  color: #4e5c67;
+}
+
+.page-type-article .article-sidebar {
+  top: 26px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .page-type-article .article-shell {
+    margin-right: 330px;
+  }
+
+  .page-type-article .article-card {
+    padding: 28px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .page-type-article .ct-content {
+    padding: 16px 0 28px;
+  }
+
+  .page-type-article .article-shell {
+    margin-right: 0;
+  }
+
+  .page-type-article .article-card {
+    padding: 24px 22px 28px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+  }
+
+  .page-type-article .article-sidebar {
+    top: auto;
+  }
+}

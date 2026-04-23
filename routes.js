@@ -4,6 +4,7 @@ const path = require('path');
 
 const migratedContentRoutes = [
   { path: '/guia-seo-pymes-2026', view: 'content/render', contentType: 'article', contentSlug: 'guia-seo-pymes-2026' },
+  { path: '/como-crear-una-pagina-web', view: 'content/render', contentType: 'article', contentSlug: 'como-crear-una-pagina-web' },
   { path: '/analizador-seo-url', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-seo-url' },
   { path: '/mapa-guerra-ucrania-rusia', view: 'content/render', contentType: 'laboratory', contentSlug: 'mapa-guerra-ucrania-rusia' }
 ];

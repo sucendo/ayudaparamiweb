@@ -15,3 +15,39 @@
     </article>
   </div>
 </div>
+
+<% const sidebarTopArticles = typeof topArticles !== 'undefined' ? topArticles : []; %>
+<% if (sidebarTopArticles.length) { %>
+<div class="ct-widget-wrapper">
+  <div class="ct-widget ct-widget-default ct-widget-popular">
+    <h5>Artículos más leídos</h5>
+    <ol class="ct-popular-list">
+      <% sidebarTopArticles.forEach(function(item) { %>
+        <li>
+          <a href="<%= item.path %>"><%= item.title %></a>
+          <% if (item.views) { %><span><%= Number(item.views).toLocaleString('es-ES') %> visitas</span><% } %>
+        </li>
+      <% }) %>
+    </ol>
+  </div>
+</div>
+<% } %>
+
+<% const sidebarTopRated = typeof topRatedArticles !== 'undefined' ? topRatedArticles : []; %>
+<% if (sidebarTopRated.length) { %>
+<div class="ct-widget-wrapper">
+  <div class="ct-widget ct-widget-default ct-widget-rated">
+    <h5>Artículos mejor valorados</h5>
+    <ol class="ct-rated-list">
+      <% sidebarTopRated.forEach(function(item) { %>
+        <li>
+          <a href="<%= item.path %>"><%= item.title %></a>
+          <span><%= item.ratingValue.toFixed(1) %>/5 · <%= item.ratingCount %> voto(s)</span>
+        </li>
+      <% }) %>
+    </ol>
+  </div>
+</div>
+<% } %>
+
+<%- include('./friend-links.ejs', { friendLinks: typeof friendLinks !== 'undefined' ? friendLinks : [] }) %>

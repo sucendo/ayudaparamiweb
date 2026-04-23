@@ -2896,6 +2896,7 @@ ul.ct-social-profiles {
 .ct-icon-search:before {
     content: "\e006";
     font-size: 20px;
+    display: inline-block;
 }
 
 /* Search */
@@ -2954,7 +2955,7 @@ input[type="submit"].ct-search-submit {
 
 .ct-icon-search {
     z-index: 90;
-    background: ##c1c1c1; /* Sucender (14/06/2022): #537b7b */
+    background: #c1c1c1; /* Sucender (14/06/2022): #537b7b */
     color: #ffffff;
 }
 
@@ -3026,7 +3027,7 @@ input[type="text"].tt-hint {
 
 .ct-search-page-form:after {
     content: "\e006";
-    font-family: "apmwicons";
+    font-family: "apmw-social","fontawesome";
     font-size: 18px;
     position: absolute;
     right: 14px;
@@ -5298,4 +5299,33 @@ body .bsa-cart-zone {
     text-align: right;
     margin-top: 12px;
     color: #4a5b69;
+}
+
+
+.ct-widget-popular .ct-popular-list,
+.ct-widget-rated .ct-rated-list,
+.ct-widget-friends .ct-friends-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.ct-widget-popular .ct-popular-list li,
+.ct-widget-rated .ct-rated-list li,
+.ct-widget-friends .ct-friends-list li {
+    margin: 0 0 12px 0;
+}
+
+.ct-widget-popular .ct-popular-list a,
+.ct-widget-rated .ct-rated-list a,
+.ct-widget-friends .ct-friends-list a {
+    font-weight: bold;
+}
+
+.ct-widget-popular .ct-popular-list span,
+.ct-widget-rated .ct-rated-list span,
+.ct-widget-friends .ct-friends-list small {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #6d7680;
 }

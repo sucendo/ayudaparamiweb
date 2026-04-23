@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Twitter de Ayuda para mi Web",
+    "url": "https://twitter.com/ayudaparamiweb",
+    "description": "Perfil histórico del proyecto con publicaciones y enlaces útiles."
+  },
+  {
+    "title": "GitHub de Ayuda para mi Web",
+    "url": "https://github.com/ayudaparamiweb",
+    "description": "Repositorio y recursos técnicos relacionados con la web."
+  },
+  {
+    "title": "Facebook de Ayuda para mi Web",
+    "url": "https://www.facebook.com/ayudaparamiweb",
+    "description": "Canal social legacy que se enlazaba en artículos antiguos."
+  }
+]

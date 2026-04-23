@@ -15,7 +15,7 @@
     <%- include('../partials/header.ejs') %>
     <div class="ct-content">
       <div class="ct-inner">
-        <%- include(contentLayout, { metadata: metadata }) %>
+        <%- include(contentLayout, { metadata: metadata, friendLinks: friendLinks || [], topArticles: topArticles || [], topRatedArticles: topRatedArticles || [] }) %>
         <div class="clr"></div>
       </div>
     </div>

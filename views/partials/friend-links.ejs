@@ -1,0 +1,16 @@
+<% const sidebarFriendLinks = typeof friendLinks !== 'undefined' ? friendLinks : []; %>
+<% if (sidebarFriendLinks.length) { %>
+<div class="ct-widget-wrapper">
+  <div class="ct-widget ct-widget-default ct-widget-friends">
+    <h5>Páginas amigas</h5>
+    <ul class="ct-friends-list">
+      <% sidebarFriendLinks.forEach(function(link) { %>
+        <li>
+          <a href="<%= link.url %>" target="_blank" rel="noopener noreferrer"><%= link.title %></a>
+          <% if (link.description) { %><small><%= link.description %></small><% } %>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</div>
+<% } %>

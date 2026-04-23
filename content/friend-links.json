@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Twitter de Ayuda para mi Web",
+    "href": "https://twitter.com/ayudaparamiweb",
+    "description": "Publicaciones y novedades técnicas del proyecto."
+  },
+  {
+    "label": "GitHub de Ayuda para mi Web",
+    "href": "https://github.com/ayudaparamiweb",
+    "description": "Código y recursos abiertos relacionados con la web."
+  },
+  {
+    "label": "Facebook de Ayuda para mi Web",
+    "href": "https://www.facebook.com/ayudaparamiweb",
+    "description": "Canal histórico de comunidad y contenidos compartidos."
+  }
+]

@@ -4,6 +4,7 @@ const ejs = require('ejs');
 const routeCatalog = require('../routes');
 const contentCatalog = require('../content');
 const contentLoader = require('../lib/content/loader');
+const siteData = require('../lib/site-data');
 const routes = routeCatalog.publishedRoutes || routeCatalog;
 
 const projectRoot = path.resolve(__dirname, '..');
@@ -25,6 +26,15 @@ function cleanDist() {
 
 function copyPublic() {
   fs.cpSync(publicDir, outputDir, { recursive: true });
+}
+
+function copyGeneratedContent() {
+  const generatedDir = path.join(projectRoot, 'content', 'generated');
+  if (!fs.existsSync(generatedDir)) return;
+
+  const targetDir = path.join(outputDir, 'data', 'generated');
+  fs.mkdirSync(targetDir, { recursive: true });
+  fs.cpSync(generatedDir, targetDir, { recursive: true });
 }
 
 function writeContentIndex(allContent) {
@@ -165,13 +175,17 @@ function rewritePublicAssetUrls() {
 
 
 function resolvePageContext(route, allContent) {
+  var topArticles = siteData.loadTopArticles();
+  var friendLinks = siteData.loadFriendLinks();
   if (route.contentType && route.contentSlug) {
     return {
       metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       query: '',
-      results: []
+      results: [],
+      topArticles: topArticles,
+      friendLinks: friendLinks
     };
   }
 
@@ -193,7 +207,9 @@ function resolvePageContext(route, allContent) {
     contentItems: sectionByPath[route.path] || [],
     categories: categories,
     query: '',
-    results: []
+    results: [],
+    topArticles: topArticles,
+    friendLinks: friendLinks
   };
 }
 
@@ -217,6 +233,7 @@ function renderRoute(route, allContent) {
 async function build() {
   cleanDist();
   copyPublic();
+  copyGeneratedContent();
   rewritePublicAssetUrls();
   createNoJekyllFlag();
   const allContent = await contentCatalog.buildCatalog();

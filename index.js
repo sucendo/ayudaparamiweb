@@ -40,6 +40,7 @@ function searchContent(contentItems, query) {
 function resolvePageContext(route, allContent) {
   var topArticles = siteData.loadTopArticles();
   var friendLinks = siteData.loadFriendLinks();
+  var topRatedArticles = siteData.loadTopRatedArticles(5);
   if (route.contentType && route.contentSlug) {
     return {
       metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
@@ -48,7 +49,8 @@ function resolvePageContext(route, allContent) {
       query: '',
       results: [],
       topArticles: topArticles,
-      friendLinks: friendLinks
+      friendLinks: friendLinks,
+      topRatedArticles: topRatedArticles
     };
   }
 
@@ -72,7 +74,8 @@ function resolvePageContext(route, allContent) {
     query: '',
     results: [],
     topArticles: topArticles,
-    friendLinks: friendLinks
+    friendLinks: friendLinks,
+    topRatedArticles: topRatedArticles
   };
 }
 
@@ -109,7 +112,8 @@ async function bootstrap() {
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       topArticles: siteData.loadTopArticles(),
-      friendLinks: siteData.loadFriendLinks()
+      friendLinks: siteData.loadFriendLinks(),
+      topRatedArticles: siteData.loadTopRatedArticles(5)
     });
   });
 
@@ -129,7 +133,8 @@ async function bootstrap() {
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       topArticles: siteData.loadTopArticles(),
-      friendLinks: siteData.loadFriendLinks()
+      friendLinks: siteData.loadFriendLinks(),
+      topRatedArticles: siteData.loadTopRatedArticles(5)
     });
   });
 

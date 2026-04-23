@@ -126,6 +126,17 @@ function extractDate(source) {
   return '1970-01-01';
 }
 
+
+function extractRatings(source) {
+  const ratingValueMatch = source.match(/itemprop=["']ratingValue["'][^>]*content=["']([0-9.]+)["']/i);
+  const ratingCountMatch = source.match(/itemprop=["']ratingCount["'][^>]*content=["']([0-9]+)["']/i);
+
+  return {
+    ratingValue: ratingValueMatch ? Number(ratingValueMatch[1]) : 0,
+    ratingCount: ratingCountMatch ? Number(ratingCountMatch[1]) : 0
+  };
+}
+
 function extractDates(source) {
   const modifiedMatch = source.match(/itemprop="dateModified"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
   const publishedMatch = source.match(/itemprop="datePublished"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
@@ -317,6 +328,8 @@ function normalizeCatalogItem(item) {
     image: item.image || FALLBACK_IMAGE,
     colorClass: item.colorClass || 'ct-red',
     accentColor: item.accentColor || FALLBACK_ACCENT,
+    ratingValue: Number(item.ratingValue || 0),
+    ratingCount: Number(item.ratingCount || 0),
     view: item.view || ''
   };
 }
@@ -326,6 +339,7 @@ function mapLegacyRouteToCatalogItem(route) {
   const slug = getSlug(route.path);
   const image = extractImage(source);
   const { publishedDate, modifiedDate, hasModifiedDate } = extractDates(source);
+  const { ratingValue, ratingCount } = extractRatings(source);
 
   return normalizeCatalogItem({
     title: extractTitle(source, slug),
@@ -343,6 +357,8 @@ function mapLegacyRouteToCatalogItem(route) {
     image,
     colorClass: CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
     accentColor: computeAccentColor(image, source),
+    ratingValue,
+    ratingCount,
     view: route.view
   });
 }
@@ -382,6 +398,8 @@ function loadArticles() {
       image,
       colorClass: CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red',
       accentColor: ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      ratingValue: Number(metadata.ratingValue || 0),
+      ratingCount: Number(metadata.ratingCount || 0),
       view: route.view
     });
   });
@@ -432,6 +450,8 @@ function loadMigratedNonArticles() {
       image,
       colorClass: CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red',
       accentColor: ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      ratingValue: Number(metadata.ratingValue || 0),
+      ratingCount: Number(metadata.ratingCount || 0),
       view: route.view
     });
   });

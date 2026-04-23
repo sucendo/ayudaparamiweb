@@ -5302,45 +5302,30 @@ body .bsa-cart-zone {
 }
 
 
-.ct-widget-popular .ct-popular-list {
+.ct-widget-popular .ct-popular-list,
+.ct-widget-rated .ct-rated-list,
+.ct-widget-friends .ct-friends-list {
     margin: 0;
     padding-left: 18px;
 }
 
-.ct-widget-popular .ct-popular-list li {
+.ct-widget-popular .ct-popular-list li,
+.ct-widget-rated .ct-rated-list li,
+.ct-widget-friends .ct-friends-list li {
     margin: 0 0 12px 0;
 }
 
-.ct-widget-popular .ct-popular-list a {
+.ct-widget-popular .ct-popular-list a,
+.ct-widget-rated .ct-rated-list a,
+.ct-widget-friends .ct-friends-list a {
     font-weight: bold;
 }
 
-.ct-widget-popular .ct-popular-list span {
+.ct-widget-popular .ct-popular-list span,
+.ct-widget-rated .ct-rated-list span,
+.ct-widget-friends .ct-friends-list small {
     display: block;
     margin-top: 3px;
     font-size: 12px;
-    color: #6d7680;
-}
-
-.ct-friend-links {
-    margin: 10px 0 5px 0;
-}
-
-.ct-friend-links h4 {
-    margin-bottom: 10px;
-}
-
-.ct-friend-links ul {
-    margin: 0;
-    padding-left: 18px;
-}
-
-.ct-friend-links li {
-    margin: 0 0 10px 0;
-}
-
-.ct-friend-links small {
-    display: block;
-    margin-top: 2px;
     color: #6d7680;
 }

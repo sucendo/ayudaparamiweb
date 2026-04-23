@@ -1,0 +1,43 @@
+---
+title: "Html Css Y JavaScript Por Donde Empezar"
+description: "Guía práctica sobre html css y javascript por donde empezar, con pasos aplicables, errores frecuentes y recomendaciones para mejorar resultados."
+author: "Sucender"
+canonical: "/html-css-y-javascript-por-donde-empezar"
+category: "tutoriales"
+tags: ["SEO", "Web", "Estrategia digital"]
+publishedDate: "2021-02-11"
+featuredImage: "/img/articulo/searching.svg"
+heroClass: "bg-purple"
+themeColor: "#537b7b"
+robots: "index,follow"
+---
+<h2>¿Por dónde empezar de verdad?</h2>
+									<p>Si estás empezando en desarrollo web, lo más importante es entender el orden: primero HTML, después CSS y luego JavaScript. Ese camino te permite construir una base sólida y evitar frustraciones.</p>
+									<p>HTML define la estructura de la página (títulos, párrafos, listas, imágenes, enlaces). CSS se encarga del diseño visual (colores, espacios, tipografía, diseño responsive). JavaScript añade comportamiento (interacciones, validaciones, contenido dinámico).</p>
+									<p>Aprender estas tres tecnologías a la vez suele generar confusión. Es mejor avanzar por etapas, con pequeños proyectos reales y objetivos concretos.</p>
+									<h2>Fase 1: dominar HTML (1 a 2 semanas)</h2>
+									<p>Empieza creando páginas simples: una portada, una página “Sobre mí” y una de contacto. Practica etiquetas semánticas como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;footer&gt;</code>.</p>
+									<p>Objetivo de esta fase: construir contenido ordenado y accesible. Si sabes estructurar bien una página sin estilos, ya tienes medio camino hecho.</p>
+									<h2>Fase 2: aplicar CSS con criterio (2 a 3 semanas)</h2>
+									<p>Cuando tengas estructura, aprende CSS enfocándote en lo esencial: modelo de caja, selectores, tipografía, colores, márgenes, flexbox y grid. No te obsesiones con animaciones avanzadas al principio.</p>
+									<p>Practica diseño responsive desde el inicio para que tu web se vea bien en móvil y escritorio. La mayoría de visitas suelen llegar desde teléfonos.</p>
+									<h2>Fase 3: JavaScript para interactividad (3 a 4 semanas)</h2>
+									<p>Comienza con fundamentos: variables, condicionales, funciones, arrays y objetos. Luego pasa al DOM para manipular elementos de la página y responder a eventos como clic o envío de formularios.</p>
+									<p>Con eso podrás crear menús desplegables, validación de formularios, pestañas, modales y filtros básicos sin depender de librerías externas.</p>
+									<h2>Proyectos recomendados para aprender más rápido</h2>
+									<ul>
+										<li>Una landing de negocio local con llamada a la acción.</li>
+										<li>Un portafolio personal con sección de proyectos.</li>
+										<li>Una lista de tareas (to-do) en JavaScript con almacenamiento local.</li>
+										<li>Un formulario de contacto con validación en cliente.</li>
+									</ul>
+									<p>Aprender con proyectos te obliga a resolver problemas reales y te prepara mejor que memorizar teoría.</p>
+									<h2>Errores frecuentes de principiantes</h2>
+									<p>Uno de los errores más comunes es saltar demasiado pronto a frameworks. React, Vue o Angular son útiles, pero antes necesitas dominar HTML, CSS y JavaScript puro para entender lo que ocurre detrás.</p>
+									<p>Otro error es copiar código sin comprenderlo. Puedes apoyarte en ejemplos, pero siempre debes modificar, probar y explicar con tus palabras lo que hace cada bloque.</p>
+									<h2>Ruta de estudio sugerida (90 días)</h2>
+									<p><strong>Mes 1:</strong> HTML + CSS básico, maquetación y responsive. <strong>Mes 2:</strong> JavaScript básico + DOM + formularios. <strong>Mes 3:</strong> proyectos completos, Git/GitHub y publicación de tu web.</p>
+									<p>Si estudias 45-60 minutos al día con constancia, al final de ese periodo tendrás nivel suficiente para construir sitios web funcionales y seguir creciendo hacia front-end profesional.</p>
+									<h2>Conclusión</h2>
+									<p>No necesitas aprender todo a la vez. Necesitas orden, práctica y consistencia. Empieza por lo esencial, construye proyectos pequeños y mejora cada semana.</p>
+									<p>Con esa metodología, HTML, CSS y JavaScript dejan de ser “tres mundos separados” y se convierten en una sola habilidad práctica para crear webs útiles, rápidas y bien estructuradas.</p>

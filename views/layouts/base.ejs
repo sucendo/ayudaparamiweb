@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%- include('../partials/seo-meta.ejs', { metadata: metadata }) %>
+  <%- include('../partials/head.ejs') %>
+  <% (extraStyles || []).forEach(function(stylePath) { %>
+    <link rel="stylesheet" href="<%= stylePath %>">
+  <% }) %>
+</head>
+<body id="apmw-body" class="page-type-<%= metadata.type %>">
+  <div class="ct-container">
+    <%- include('../partials/header.ejs') %>
+    <div class="ct-content">
+      <div class="ct-inner">
+        <%- include(contentLayout, { metadata: metadata }) %>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <footer class="ct-footer"><%- include('../partials/footer.ejs') %></footer>
+  </div>
+  <% (globalScripts || []).forEach(function(scriptPath) { %>
+    <script src="<%= scriptPath %>"></script>
+  <% }) %>
+  <% (extraScripts || []).forEach(function(scriptPath) { %>
+    <script src="<%= scriptPath %>"></script>
+  <% }) %>
+</body>
+</html>

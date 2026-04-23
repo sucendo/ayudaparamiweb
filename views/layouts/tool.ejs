@@ -1,0 +1,26 @@
+<div class="ct-main ct-main-post" id="ct-main" role="main">
+  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry">
+    <nav aria-label="breadcrumbs" class="ct-breadcrumbs">
+      <% metadata.breadcrumb.forEach(function(item, index) { %>
+        <% if (index > 0) { %> / <% } %>
+        <a href="<%= item.url %>"><%= item.name %></a>
+      <% }) %>
+    </nav>
+    <header>
+      <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
+      <p class="ct-post-excerpt"><%= metadata.intro || metadata.description %></p>
+      <div class="bg-img bg-red"><img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>"></div>
+    </header>
+    <section class="ct-post-content seo-tool">
+      <div id="<%= metadata.toolMountId %>"></div>
+      <% if ((metadata.faq || []).length) { %>
+      <h2>Preguntas frecuentes</h2>
+      <% metadata.faq.forEach(function(item) { %>
+        <h3><%= item.q %></h3>
+        <p><%= item.a %></p>
+      <% }); %>
+      <% } %>
+    </section>
+  </article>
+</div>
+<aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>

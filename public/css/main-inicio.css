@@ -1,9 +1,12 @@
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'codrops-social';
-    src: url('../fonts/fontawesond/codrops-social.eot');
-    src: url('../fonts/codrops-social.eot?#iefix') format('embedded-opentype'), url('../fonts/codrops-social.woff') format('woff'), url('../fonts/codrops-social.ttf') format('truetype'), url('../fonts/codrops-social.svg#codrops-social') format('svg');
+    font-family: 'apmw-social';
+    src:url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
+    src:url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
+        url('../fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),
+        url('../fonts/fontawesome/fontawesome.ttf?-e43dk9') format('truetype'),
+        url('../fonts/fontawesome/fontawesome.svg?-e43dk9#fontawesome') format('svg');
 }
 
 .ct-cf:before,
@@ -426,7 +429,7 @@ textarea {
     font-style: normal;
     font-variant: normal;
     font-size: 18px;
-    font-family: 'codrops-social';
+    font-family: 'apmw-social';
     line-height: 40px;
     line-height: 1;
     speak: none;

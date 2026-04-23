@@ -1,0 +1,53 @@
+<%
+const seo = metadata || {};
+const siteName = 'Ayuda para mi Web';
+const pageTitle = seo.title ? `${seo.title} | ${siteName}` : siteName;
+const canonicalUrl = seo.canonical || '/';
+const ogType = seo.type === 'article' ? 'article' : 'website';
+const ogImage = seo.featuredImage || '/img/logo-color.svg';
+const robotsContent = seo.robots || 'index,follow';
+const breadcrumbsJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: (seo.breadcrumb || []).map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    item: item.url
+  }))
+};
+%>
+<title><%= pageTitle %></title>
+<meta name="description" content="<%= seo.description || '' %>">
+<meta name="author" content="<%= seo.author || 'Sucender' %>">
+<meta name="robots" content="<%= robotsContent %>">
+<link rel="canonical" href="<%= canonicalUrl %>">
+<meta name="theme-color" content="<%= seo.themeColor || '#537b7b' %>">
+
+<meta property="og:type" content="<%= ogType %>">
+<meta property="og:site_name" content="<%= siteName %>">
+<meta property="og:title" content="<%= seo.title || siteName %>">
+<meta property="og:description" content="<%= seo.description || '' %>">
+<meta property="og:url" content="<%= canonicalUrl %>">
+<meta property="og:image" content="<%= ogImage %>">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<%= seo.title || siteName %>">
+<meta name="twitter:description" content="<%= seo.description || '' %>">
+<meta name="twitter:image" content="<%= ogImage %>">
+
+<% if (seo.type === 'article') { %>
+<script type="application/ld+json"><%- JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: seo.title,
+  description: seo.description,
+  author: { '@type': 'Person', name: seo.author || 'Sucender' },
+  datePublished: seo.publishedDate,
+  dateModified: seo.modifiedDate || seo.publishedDate,
+  image: seo.featuredImage,
+  mainEntityOfPage: seo.canonical,
+  keywords: (seo.tags || []).join(', ')
+}) %></script>
+<% } %>
+<script type="application/ld+json"><%- JSON.stringify(breadcrumbsJsonLd) %></script>

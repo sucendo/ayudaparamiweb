@@ -1,0 +1,26 @@
+<div class="ct-main ct-main-post" id="ct-main" role="main">
+  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry">
+    <nav aria-label="breadcrumbs" class="ct-breadcrumbs">
+      <% metadata.breadcrumb.forEach(function(item, index) { %>
+        <% if (index > 0) { %> / <% } %>
+        <a href="<%= item.url %>"><%= item.name %></a>
+      <% }) %>
+    </nav>
+    <header>
+      <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
+      <p class="ct-subline"><%= metadata.author %> · <time datetime="<%= metadata.publishedDate %>"><%= metadata.publishedDate %></time></p>
+      <div class="ct-post-excerpt"><%= metadata.description %></div>
+      <div class="bg-img <%= metadata.heroClass || 'bg-purple' %>"><img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>"></div>
+    </header>
+    <div class="ct-post-content"><%- metadata.bodyHtml %></div>
+    <% if ((metadata.tags || []).length) { %>
+      <p class="ct-tags">Etiquetas:
+      <% metadata.tags.forEach(function(tag) { %>
+        <span><%= tag %></span>
+      <% }); %>
+      </p>
+    <% } %>
+    <div class="ct-row"><div class="ct-author-info ct-box ct-purple"><%- include('../authors/sucender-short.ejs') %></div></div>
+  </article>
+</div>
+<aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>

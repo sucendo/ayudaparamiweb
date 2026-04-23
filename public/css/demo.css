@@ -210,12 +210,12 @@ body {
 @font-face {
 	font-weight: normal;
 	font-style: normal;
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-family: 'apmwicons';
+	src:url('../fonts/apmwicons/apmwicons.eot');
+	src:url('../fonts/apmwicons/apmwicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/apmwicons/apmwicons.woff') format('woff'),
+		url('../fonts/apmwicons/apmwicons.ttf') format('truetype'),
+		url('../fonts/apmwicons/apmwicons.svg#apmwicons') format('svg');
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -326,7 +326,7 @@ a:hover, a:focus {
 }
 
 /* To Navigation Style */
-.codrops-top {
+.apmw-top {
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -339,7 +339,7 @@ a:hover, a:focus {
 	z-index: 10000;
 }
 
-.codrops-top a {
+.apmw-top a {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
@@ -347,41 +347,41 @@ a:hover, a:focus {
 	transform: translateY(20px);
 }
 
-.codrops-top span.right {
+.apmw-top span.right {
 	float: right;
 }
 
-.codrops-top span.right a {
+.apmw-top span.right a {
 	display: block;
 	float: left;
 }
 
-.codrops-icon:before {
+.apmw-icon:before {
 	text-transform: none;
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
-	font-family: 'codropsicons';
+	font-family: 'apmwicons';
 	text-align: center;
 	speak: none;
 	margin: 0 0.55em 0 0;
 	-webkit-font-smoothing: antialiased;
 }
 
-.codrops-icon-drop:before {
+.apmw-icon-drop:before {
 	content: "\e001";
 }
 
-.codrops-icon-prev:before {
+.apmw-icon-prev:before {
 	content: "\e004";
 }
 
-.codrops-demos {
+.apmw-demos {
 	padding: 0 0 1em;
 	position: relative;
 }
 
-.codrops-demos a {
+.apmw-demos a {
 	font-weight: 800;
 	text-transform: uppercase;
 	font-size: 0.6em;
@@ -394,13 +394,13 @@ a:hover, a:focus {
 	color: #cf4a5c;
 }
 
-.codrops-demos a:hover,
-.codrops-demos a.current-demo {
+.apmw-demos a:hover,
+.apmw-demos a.current-demo {
 	opacity: 1;
 	color: #69606b;
 }
 
-.codrops-demos a.current-demo {
+.apmw-demos a.current-demo {
 	border-bottom: 3px solid #69606b;
 }
 
@@ -425,7 +425,7 @@ a:hover, a:focus {
 
 @media screen and (max-width: 40em) {
 
-	.codrops-icon span {
+	.apmw-icon span {
 		display: none;
 	}
 

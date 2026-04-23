@@ -1,12 +1,12 @@
 /**
  * cbpGridGallery.js v1.0.0
- * http://www.codrops.com
+ * http://www.apmw.com
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
+ * Copyright 2014, APMW
+ * http://www.apmw.com
  */
 ;( function( window ) {
 	

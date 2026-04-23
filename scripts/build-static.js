@@ -3,6 +3,7 @@ const path = require('path');
 const ejs = require('ejs');
 const routeCatalog = require('../routes');
 const contentCatalog = require('../content');
+const contentLoader = require('../lib/content/loader');
 const routes = routeCatalog.publishedRoutes || routeCatalog;
 
 const projectRoot = path.resolve(__dirname, '..');
@@ -164,20 +165,33 @@ function rewritePublicAssetUrls() {
 
 
 function resolvePageContext(route, allContent) {
-  const articles = contentCatalog.filterByCategory(allContent, 'guias').concat(contentCatalog.filterByCategory(allContent, 'analisis'));
-  const sectionByPath = {
+  if (route.contentType && route.contentSlug) {
+    return {
+      metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
+      contentItems: [],
+      categories: contentCatalog.CATEGORY_DEFINITIONS,
+      query: '',
+      results: []
+    };
+  }
+
+  var categories = contentCatalog.CATEGORY_DEFINITIONS;
+  var articles = contentCatalog.filterByCategory(allContent, 'guias').concat(contentCatalog.filterByCategory(allContent, 'analisis'));
+  var sectionByPath = {
     '/': allContent,
     '/guias': articles,
     '/tutoriales': contentCatalog.filterByCategory(allContent, 'tutoriales'),
     '/herramientas': contentCatalog.filterByCategory(allContent, 'herramientas'),
     '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/articulos': articles,
-    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio')
+    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio'),
+    '/tags': allContent,
+    '/sucender': allContent
   };
 
   return {
     contentItems: sectionByPath[route.path] || [],
-    categories: contentCatalog.CATEGORY_DEFINITIONS,
+    categories: categories,
     query: '',
     results: []
   };

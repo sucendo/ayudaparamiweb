@@ -217,12 +217,12 @@ button.trigger span::before {
 }
 
 .intro-effect-jam3:not(.notrans) .header h1,
-.intro-effect-jam3:not(.notrans) .codrops-top a {
+.intro-effect-jam3:not(.notrans) .apmw-top a {
 	-webkit-transition-property: color;
 	transition-property: color;
 }
 
-.intro-effect-jam3:not(.notrans) .codrops-demos a {
+.intro-effect-jam3:not(.notrans) .apmw-demos a {
 	-webkit-transition-property: border-color, color;
 	transition-property: border-color, color;
 }
@@ -239,8 +239,8 @@ button.trigger span::before {
 
 .intro-effect-jam3:not(.notrans) .bg-img,
 .intro-effect-jam3:not(.notrans) .header h1,
-.intro-effect-jam3:not(.notrans) .codrops-top a,
-.intro-effect-jam3:not(.notrans) .codrops-demos a,
+.intro-effect-jam3:not(.notrans) .apmw-top a,
+.intro-effect-jam3:not(.notrans) .apmw-demos a,
 .intro-effect-jam3:not(.notrans) .content > div {
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
@@ -274,19 +274,19 @@ button.trigger span::before {
 	transition-duration: 1.5s;
 }
 
-.intro-effect-jam3 .codrops-demos a {
+.intro-effect-jam3 .apmw-demos a {
 	color: #fff;
 }
 
-.intro-effect-jam3 .codrops-demos a.current-demo {
+.intro-effect-jam3 .apmw-demos a.current-demo {
 	border-color: #fff;
 }
 
-.intro-effect-jam3.modify .codrops-demos a {
+.intro-effect-jam3.modify .apmw-demos a {
 	color: #c03b5d;
 }
 
-.intro-effect-jam3.modify .codrops-demos a.current-demo {
+.intro-effect-jam3.modify .apmw-demos a.current-demo {
 	border-color: #c03b5d;
 }
 
@@ -347,7 +347,7 @@ button.trigger span::before {
 	transform: translateY(0);
 }
 
-.intro-effect-jam3.modify .codrops-top a {
+.intro-effect-jam3.modify .apmw-top a {
 	color: #514753;
 }
 
@@ -496,7 +496,7 @@ button.trigger span::before {
 }
 
 .intro-effect-sliced:not(.notrans) .header h1,
-.intro-effect-sliced:not(.notrans) .codrops-demos a {
+.intro-effect-sliced:not(.notrans) .apmw-demos a {
 	-webkit-transition-property: color;
 	transition-property: color;
 }
@@ -516,7 +516,7 @@ button.trigger span::before {
 .intro-effect-sliced:not(.notrans) .title,
 .intro-effect-sliced:not(.notrans) .header p,
 .intro-effect-sliced:not(.notrans) .content > div,
-.intro-effect-sliced:not(.notrans) .codrops-demos a {
+.intro-effect-sliced:not(.notrans) .apmw-demos a {
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	-webkit-transition-duration: 0.5s;
@@ -527,7 +527,7 @@ button.trigger span::before {
 .intro-effect-sliced.modify:not(.notrans) .title,
 .intro-effect-sliced.modify:not(.notrans) .header p,
 .intro-effect-sliced.modify:not(.notrans) .content > div,
-.intro-effect-sliced.modify:not(.notrans) .codrops-demos a {
+.intro-effect-sliced.modify:not(.notrans) .apmw-demos a {
 	-webkit-transition-timing-function: ease;
 	transition-timing-function: ease;
 }
@@ -556,16 +556,16 @@ button.trigger span::before {
 	transform: translateY(100%);
 }
 
-.intro-effect-sliced .codrops-demos {
+.intro-effect-sliced .apmw-demos {
 	text-align: center;
 }
 
-.intro-effect-sliced .codrops-demos a {
+.intro-effect-sliced .apmw-demos a {
 	color: #fff;
 	font-size: 0.8em;
 }
 
-.intro-effect-sliced.modify .codrops-demos a {
+.intro-effect-sliced.modify .apmw-demos a {
 	color: #cf4a5c;
 }
 
@@ -646,7 +646,7 @@ button.trigger span::before {
 	transition-duration: 0.5s;
 }
 
-.intro-effect-side .codrops-top a {
+.intro-effect-side .apmw-top a {
 	color: #7b8d92;
 }
 
@@ -689,11 +689,11 @@ button.trigger span::before {
 	background-color: rgba(255,255,255,0);
 }
 
-.intro-effect-side .codrops-demos a {
+.intro-effect-side .apmw-demos a {
 	color: #43939d;
 }
 
-.intro-effect-side .codrops-demos a.current-demo {
+.intro-effect-side .apmw-demos a.current-demo {
 	border-bottom: 3px solid #43939d;
 }
 
@@ -854,7 +854,7 @@ button.trigger span::before {
 	background-color: rgba(247,214,169,0.4);
 }
 
-.intro-effect-sidefixed .codrops-demos a {
+.intro-effect-sidefixed .apmw-demos a {
 	color: #f68f6c;
 }
 
@@ -952,7 +952,7 @@ button.trigger span::before {
 	transition-duration: 1.2s;
 }
 
-.intro-effect-push .codrops-demos a {
+.intro-effect-push .apmw-demos a {
 	color: #108576;
 }
 
@@ -1025,7 +1025,7 @@ button.trigger span::before {
 }
 
 .intro-effect-grid:not(.notrans) .header h1,
-.intro-effect-grid:not(.notrans) .codrops-demos a {
+.intro-effect-grid:not(.notrans) .apmw-demos a {
 	-webkit-transition-property: color;
 	transition-property: color;
 }
@@ -1035,26 +1035,26 @@ button.trigger span::before {
 .intro-effect-grid:not(.notrans) .title,
 .intro-effect-grid:not(.notrans) .header h1,
 .intro-effect-grid:not(.notrans) .header p,
-.intro-effect-grid:not(.notrans) .codrops-demos a {
+.intro-effect-grid:not(.notrans) .apmw-demos a {
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	-webkit-transition-duration: 1s;
 	transition-duration: 1s;
 }
 
-.intro-effect-grid .codrops-demos a {
+.intro-effect-grid .apmw-demos a {
 	color: #fff;
 }
 
-.intro-effect-grid.modify .codrops-demos a {
+.intro-effect-grid.modify .apmw-demos a {
 	color: #cf7000;
 }
 
-.intro-effect-grid .codrops-demos a.current-demo {
+.intro-effect-grid .apmw-demos a.current-demo {
 	border-bottom: 3px solid #fff;
 }
 
-.intro-effect-grid.modify .codrops-demos a.current-demo {
+.intro-effect-grid.modify .apmw-demos a.current-demo {
 	border-color: #cf7000;
 }
 
@@ -1238,7 +1238,7 @@ button.trigger span::before {
 		margin-top: 8em;
 	}
 
-	.codrops-demos a {
+	.apmw-demos a {
 		font-size: 80%;
 	}
 	

@@ -1,0 +1,23 @@
+{
+  "title": "Mapa guerra Ucrania-Rusia",
+  "description": "Seguimiento experimental en formato cronológico con mapas y notas editoriales.",
+  "author": "Sucender",
+  "canonical": "/mapa-guerra-ucrania-rusia",
+  "category": "laboratorio",
+  "tags": ["Laboratorio", "Mapas", "Análisis"],
+  "publishedDate": "2022-03-01",
+  "modifiedDate": "2026-04-23",
+  "featuredImage": "/img/experiments/mapa-guerra-ucrania-rusia-20220623.webp",
+  "themeColor": "#64448f",
+  "robots": "index,follow",
+  "sections": [
+    {
+      "title": "Contexto",
+      "content": "Página de laboratorio mantenida como histórico editorial con actualización progresiva del formato."
+    },
+    {
+      "title": "Estado de migración",
+      "content": "Esta página ya usa layout global, breadcrumbs, metadatos SEO consistentes y estructura reusable."
+    }
+  ]
+}

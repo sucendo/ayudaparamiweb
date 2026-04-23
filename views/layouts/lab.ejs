@@ -1,0 +1,27 @@
+<div class="ct-main ct-main-post" id="ct-main" role="main">
+  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry">
+    <nav aria-label="breadcrumbs" class="ct-breadcrumbs">
+      <% metadata.breadcrumb.forEach(function(item, index) { %>
+        <% if (index > 0) { %> / <% } %>
+        <a href="<%= item.url %>"><%= item.name %></a>
+      <% }) %>
+    </nav>
+    <header>
+      <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
+      <p class="ct-post-excerpt"><%= metadata.description %></p>
+      <div class="bg-img bg-purple"><img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>"></div>
+    </header>
+    <div class="ct-post-content">
+      <% (metadata.sections || []).forEach(function(section) { %>
+        <h2><%= section.title %></h2>
+        <p><%= section.content %></p>
+      <% }) %>
+    </div>
+    <p class="ct-tags">
+      <% (metadata.tags || []).forEach(function(tag) { %>
+        <span><%= tag %></span>
+      <% }) %>
+    </p>
+  </article>
+</div>
+<aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>

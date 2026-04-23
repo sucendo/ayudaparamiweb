@@ -12,17 +12,23 @@
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'codrops-social';
-    src: url('../fonts/fontawesond/codrops-social.eot');
-    src: url('../fonts/codrops-social.eot?#iefix') format('embedded-opentype'), url('../fonts/codrops-social.woff') format('woff'), url('../fonts/codrops-social.ttf') format('truetype'), url('../fonts/codrops-social.svg#codrops-social') format('svg');
+    font-family: 'apmw-social';
+    src:url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
+    src:url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
+        url('../fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),
+        url('../fonts/fontawesome/fontawesome.ttf?-e43dk9') format('truetype'),
+        url('../fonts/fontawesome/fontawesome.svg?-e43dk9#fontawesome') format('svg');
 }
 
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'codrops-icons';
-    src: url('../fonts/codrops-icons.eot');
-    src: url('../fonts/codrops-icons.eot?#iefix') format('embedded-opentype'), url('../fonts/codrops-icons.woff') format('woff'), url('../fonts/codrops-icons.ttf') format('truetype'), url('../fonts/codrops-icons.svg#codrops-icons') format('svg');
+    font-family: 'apmw-icons';
+    src:url('../fonts/icomoon/icomoon.eot');
+    src:url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.woff') format('woff'),
+        url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
 }
 
 @font-face {
@@ -136,7 +142,7 @@ strong {
     font-weight: 700
 }
 
-/* Codrops Main Style */
+/* Proyecto Main Style */
 body {
     overflow-x: hidden;
     overflow-y: scroll;
@@ -182,7 +188,7 @@ h4 {
 }
 
 .ct-post-content h2 + pre,
-.ct-post-content h2 + .codrops-playground-embed {
+.ct-post-content h2 + .apmw-playground-embed {
     margin-top: 25px;
 }
 
@@ -455,7 +461,7 @@ ul.browser-support li::after {
     padding: 1em
 }
 
-.codrops-playground-embed {
+.apmw-playground-embed {
     margin: 10px 0;
 }
 
@@ -618,7 +624,7 @@ a.ct-commenttime,
 .ct-latest-any-bottom a::after,
 .ct-archive-link a::after,
 .ct-feat-bottom a::after {
-    font-family: 'codrops-icons';
+    font-family: 'apmw-icons';
     content: '\e604';
     padding-left: 0.5em;
 }
@@ -2082,7 +2088,7 @@ h3#reply-title a {
     text-align: center;
     font-weight: 400;
     font-size: 24px;
-    font-family: 'codrops-icons';
+    font-family: 'apmw-icons';
     line-height: 30px;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
@@ -2112,7 +2118,7 @@ h3#reply-title a {
 .ct-coll-nav-bottom-next a::after,
 .ct-coll-nav-bottom-prev a::before {
     font-size: 0.85em;
-    font-family: 'codrops-icons';
+    font-family: 'apmw-icons';
 }
 
 .ct-coll-nav-bottom-prev a::before {
@@ -2370,7 +2376,7 @@ h3#reply-title a {
     content: "\e604";
     margin-left: 5px;
     font-size: 0.85em;
-    font-family: 'codrops-icons';
+    font-family: 'apmw-icons';
 }
 
 /* Normal Archive Style */
@@ -2848,7 +2854,7 @@ ul.ct-social-profiles {
     font-style: normal;
     font-variant: normal;
     font-size: 18px;
-    font-family: 'codrops-social';
+    font-family: 'apmw-social';
     line-height: 40px;
     line-height: 1;
     speak: none;
@@ -3020,7 +3026,7 @@ input[type="text"].tt-hint {
 
 .ct-search-page-form:after {
     content: "\e006";
-    font-family: "codropsicons";
+    font-family: "apmwicons";
     font-size: 18px;
     position: absolute;
     right: 14px;
@@ -3054,7 +3060,7 @@ input[type="text"].tt-hint {
     width: 33px;
     height: 33px;
     outline: none;
-    background: transparent url(../images/profile_icons.gif) no-repeat top left;
+    background: transparent url(../images/profile-icons.png) no-repeat top left;
     text-indent: -9000px;
 }
 
@@ -4499,7 +4505,7 @@ div.bsap_1279993 iframe {
 }
 
 .ct-cssref-widget__footer a::after {
-    font-family: 'codrops-icons';
+    font-family: 'apmw-icons';
     content: '\e604';
     padding-left: 0.5em;
 }

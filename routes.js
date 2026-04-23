@@ -1,6 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
+
+const migratedContentRoutes = [
+  { path: '/guia-seo-pymes-2026', view: 'content/render', contentType: 'article', contentSlug: 'guia-seo-pymes-2026' },
+  { path: '/analizador-seo-url', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-seo-url' },
+  { path: '/mapa-guerra-ucrania-rusia', view: 'content/render', contentType: 'laboratory', contentSlug: 'mapa-guerra-ucrania-rusia' }
+];
+
 const staticRoutes = [
   { path: '/', view: 'pages/index' },
   { path: '/guias', view: 'pages/articles' },
@@ -14,7 +21,6 @@ const staticRoutes = [
   { path: '/tags', view: 'pages/tags' },
   { path: '/sucender', view: 'authors/sucender' },
   { path: '/historia', view: 'historia/historia' },
-  { path: '/mapa-guerra-ucrania-rusia', view: 'experiments/0003-mapa-guerra-ucrania-rusia' },
   { path: '/rusia-ataca-ucrania', view: 'experiments/0002-rusia-ataca-ucrania' },
   { path: '/quantum-pacific-group', view: 'experiments/0001-quantum-pacific-group' },
   {
@@ -23,7 +29,6 @@ const staticRoutes = [
   },
   { path: '/contador-caracteres-seo', view: 'tools/0002-contador-caracteres-seo' },
   { path: '/conversor-binario', view: 'tools/0001-conversor-binario' },
-  { path: '/analizador-seo-url', view: 'tools/0003-analizador-seo-url' }
 ];
 
 function getNewsRoutes() {
@@ -43,7 +48,7 @@ function getNewsRoutes() {
     });
 }
 
-const routes = [...staticRoutes, ...getNewsRoutes()];
+const routes = [...migratedContentRoutes, ...staticRoutes, ...getNewsRoutes().filter((route) => !migratedContentRoutes.some((item) => item.path === route.path))];
 
 module.exports = routes;
 module.exports.publishedRoutes = routes.filter(function(route) {

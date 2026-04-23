@@ -1,0 +1,26 @@
+{
+  "title": "Analizador SEO de URL",
+  "description": "Analiza una URL con una auditoría on-page rápida y recomendaciones accionables.",
+  "author": "Sucender",
+  "canonical": "/analizador-seo-url",
+  "category": "herramientas",
+  "tags": ["SEO", "Auditoría", "Herramientas"],
+  "publishedDate": "2026-04-08",
+  "modifiedDate": "2026-04-23",
+  "featuredImage": "/img/tools/seo-analyzer-hero.svg",
+  "themeColor": "#d25565",
+  "robots": "index,follow",
+  "intro": "Introduce una URL y obtén un informe SEO básico sobre metadatos, encabezados, imágenes y enlaces.",
+  "toolMountId": "seo-analyzer-app",
+  "scripts": ["/js/seo-analyzer-tool.js"],
+  "faq": [
+    {
+      "q": "¿Necesita login?",
+      "a": "No. La herramienta está disponible públicamente."
+    },
+    {
+      "q": "¿Reemplaza una auditoría completa?",
+      "a": "No. Es un diagnóstico rápido para detectar oportunidades iniciales."
+    }
+  ]
+}

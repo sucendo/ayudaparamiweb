@@ -4,6 +4,7 @@ var express = require('express');
 var path = require('path');
 var routeCatalog = require('./routes');
 var contentCatalog = require('./content');
+var contentLoader = require('./lib/content/loader');
 var routes = routeCatalog.publishedRoutes || routeCatalog;
 var seoAnalyzeHandler = require('./services/seo/seo-analyze-handler');
 var app = express();
@@ -36,6 +37,16 @@ function searchContent(contentItems, query) {
 }
 
 function resolvePageContext(route, allContent) {
+  if (route.contentType && route.contentSlug) {
+    return {
+      metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
+      contentItems: [],
+      categories: contentCatalog.CATEGORY_DEFINITIONS,
+      query: '',
+      results: []
+    };
+  }
+
   var categories = contentCatalog.CATEGORY_DEFINITIONS;
   var articles = contentCatalog.filterByCategory(allContent, 'guias').concat(contentCatalog.filterByCategory(allContent, 'analisis'));
   var sectionByPath = {
@@ -52,7 +63,9 @@ function resolvePageContext(route, allContent) {
 
   return {
     contentItems: sectionByPath[route.path] || [],
-    categories: categories
+    categories: categories,
+    query: '',
+    results: []
   };
 }
 

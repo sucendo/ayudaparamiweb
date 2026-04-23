@@ -12,7 +12,7 @@
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'apmw-social';
+    font-family: 'apmw-social','fontawesome';
     src:url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
     src:url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
         url('../fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),

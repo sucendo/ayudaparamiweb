@@ -1,3 +1,8 @@
+<%
+  const headerSearchQuery = typeof searchQuery !== "undefined"
+    ? searchQuery
+    : (typeof query !== "undefined" ? query : "");
+%>
 <header class="ct-header">
   <div class="ct-inner ct-cf">
     <div class="ct-branding">
@@ -19,7 +24,7 @@
       <div class="ct-search" id="ct-search">
         <form method="get" id="searchform" action="/buscar">
           <div class="ct-search-input-wrap">
-            <input class="ct-search-input" placeholder="Buscar en Ayuda para mi Web..." type="text" value="" name="q" id="s" autocomplete="off" spellcheck="false" dir="auto">
+            <input class="ct-search-input" placeholder="Buscar en Ayuda para mi Web..." type="text" value="<%= headerSearchQuery %>" name="q" id="s" autocomplete="off" spellcheck="false" dir="auto">
           </div>
           <input class="ct-search-submit" type="submit" id="go" value=""><span class="ct-icon-search"></span>
         </form>

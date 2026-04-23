@@ -7,6 +7,7 @@ var contentCatalog = require('./content');
 var contentLoader = require('./lib/content/loader');
 var routes = routeCatalog.publishedRoutes || routeCatalog;
 var seoAnalyzeHandler = require('./services/seo/seo-analyze-handler');
+var siteData = require('./lib/site-data');
 var app = express();
 
 var appMode = process.env.APP_MODE || 'node';
@@ -37,13 +38,17 @@ function searchContent(contentItems, query) {
 }
 
 function resolvePageContext(route, allContent) {
+  var topArticles = siteData.loadTopArticles();
+  var friendLinks = siteData.loadFriendLinks();
   if (route.contentType && route.contentSlug) {
     return {
       metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       query: '',
-      results: []
+      results: [],
+      topArticles: topArticles,
+      friendLinks: friendLinks
     };
   }
 
@@ -65,7 +70,9 @@ function resolvePageContext(route, allContent) {
     contentItems: sectionByPath[route.path] || [],
     categories: categories,
     query: '',
-    results: []
+    results: [],
+    topArticles: topArticles,
+    friendLinks: friendLinks
   };
 }
 
@@ -100,7 +107,9 @@ async function bootstrap() {
       query: query,
       results: results,
       contentItems: [],
-      categories: contentCatalog.CATEGORY_DEFINITIONS
+      categories: contentCatalog.CATEGORY_DEFINITIONS,
+      topArticles: siteData.loadTopArticles(),
+      friendLinks: siteData.loadFriendLinks()
     });
   });
 
@@ -118,7 +127,9 @@ async function bootstrap() {
   app.use(function(request, response) {
     response.status(404).render('pages/404', {
       contentItems: [],
-      categories: contentCatalog.CATEGORY_DEFINITIONS
+      categories: contentCatalog.CATEGORY_DEFINITIONS,
+      topArticles: siteData.loadTopArticles(),
+      friendLinks: siteData.loadFriendLinks()
     });
   });
 

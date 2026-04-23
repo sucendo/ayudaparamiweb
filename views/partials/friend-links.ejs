@@ -1,0 +1,13 @@
+<% if ((friendLinks || []).length) { %>
+  <section class="ct-friend-links ct-box" aria-label="Páginas amigas">
+    <h4>Páginas amigas</h4>
+    <ul>
+      <% friendLinks.forEach(function(link) { %>
+        <li>
+          <a href="<%= link.href %>" target="_blank" rel="noopener noreferrer"><%= link.label %></a>
+          <% if (link.description) { %><small><%= link.description %></small><% } %>
+        </li>
+      <% }) %>
+    </ul>
+  </section>
+<% } %>

@@ -12,7 +12,7 @@
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'apmw-social';
+    font-family: 'apmw-social','fontawesome';
     src:url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
     src:url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
         url('../fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),
@@ -2896,6 +2896,7 @@ ul.ct-social-profiles {
 .ct-icon-search:before {
     content: "\e006";
     font-size: 20px;
+    display: inline-block;
 }
 
 /* Search */
@@ -2954,7 +2955,7 @@ input[type="submit"].ct-search-submit {
 
 .ct-icon-search {
     z-index: 90;
-    background: ##c1c1c1; /* Sucender (14/06/2022): #537b7b */
+    background: #c1c1c1; /* Sucender (14/06/2022): #537b7b */
     color: #ffffff;
 }
 
@@ -3026,7 +3027,7 @@ input[type="text"].tt-hint {
 
 .ct-search-page-form:after {
     content: "\e006";
-    font-family: "apmwicons";
+    font-family: "apmw-social","fontawesome";
     font-size: 18px;
     position: absolute;
     right: 14px;
@@ -5298,4 +5299,48 @@ body .bsa-cart-zone {
     text-align: right;
     margin-top: 12px;
     color: #4a5b69;
+}
+
+
+.ct-widget-popular .ct-popular-list {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.ct-widget-popular .ct-popular-list li {
+    margin: 0 0 12px 0;
+}
+
+.ct-widget-popular .ct-popular-list a {
+    font-weight: bold;
+}
+
+.ct-widget-popular .ct-popular-list span {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #6d7680;
+}
+
+.ct-friend-links {
+    margin: 10px 0 5px 0;
+}
+
+.ct-friend-links h4 {
+    margin-bottom: 10px;
+}
+
+.ct-friend-links ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.ct-friend-links li {
+    margin: 0 0 10px 0;
+}
+
+.ct-friend-links small {
+    display: block;
+    margin-top: 2px;
+    color: #6d7680;
 }

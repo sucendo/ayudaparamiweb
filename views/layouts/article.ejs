@@ -1,26 +1,32 @@
-<div class="ct-main ct-main-post" id="ct-main" role="main">
-  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry">
-    <nav aria-label="breadcrumbs" class="ct-breadcrumbs">
+<div class="ct-main ct-main-post article-shell" id="ct-main" role="main">
+  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry article-card">
+    <nav aria-label="breadcrumbs" class="ct-breadcrumbs article-breadcrumbs">
       <% metadata.breadcrumb.forEach(function(item, index) { %>
         <% if (index > 0) { %> / <% } %>
         <a href="<%= item.url %>"><%= item.name %></a>
       <% }) %>
     </nav>
-    <header>
-      <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
-      <p class="ct-subline"><%= metadata.author %> · <time datetime="<%= metadata.publishedDate %>"><%= metadata.publishedDate %></time></p>
-      <div class="ct-post-excerpt"><%= metadata.description %></div>
-      <div class="bg-img <%= metadata.heroClass || 'bg-purple' %>"><img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>"></div>
+
+    <header class="article-header">
+      <p class="ct-subline article-meta"><%= metadata.author %> · <time datetime="<%= metadata.publishedDate %>"><%= metadata.publishedDate %></time></p>
+      <h1 class="ct-h-shd entry-title article-title"><%= metadata.title %></h1>
+      <div class="ct-post-excerpt article-excerpt"><%= metadata.description %></div>
+      <figure class="bg-img <%= metadata.heroClass || 'bg-purple' %> article-hero">
+        <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>">
+      </figure>
     </header>
-    <div class="ct-post-content"><%- metadata.bodyHtml %></div>
+
+    <div class="ct-post-content article-body"><%- metadata.bodyHtml %></div>
+
     <% if ((metadata.tags || []).length) { %>
-      <p class="ct-tags">Etiquetas:
+      <p class="ct-tags article-tags">Etiquetas:
       <% metadata.tags.forEach(function(tag) { %>
         <span><%= tag %></span>
       <% }); %>
       </p>
     <% } %>
-    <div class="ct-row"><div class="ct-author-info ct-box ct-purple"><%- include('../authors/sucender-short.ejs') %></div></div>
+
+    <div class="ct-row article-author-row"><div class="ct-author-info ct-box ct-purple"><%- include('../authors/sucender-short.ejs') %></div></div>
   </article>
 </div>
-<aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
+<aside class="ct-sidebar article-sidebar"><%- include('../partials/aside.ejs') %></aside>

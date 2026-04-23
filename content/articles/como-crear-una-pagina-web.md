@@ -7,6 +7,8 @@ category: "tutoriales"
 tags: ["Desarrollo web", "Guía", "SEO"]
 publishedDate: "2018-04-07"
 modifiedDate: "2022-03-31"
+ratingCount: "12"
+ratingValue: "4.4"
 featuredImage: "/img/articulo/como-crear-una-pagina-web.webp"
 heroClass: "bg-teal"
 themeColor: "#537b7b"

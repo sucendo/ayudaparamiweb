@@ -1,4 +1,36 @@
-<div class="ct-main ct-main-post" id="ct-main" role="main">
+<%
+  const resolveArticleToneClass = function(articleMetadata) {
+    const heroClass = String(articleMetadata && articleMetadata.heroClass ? articleMetadata.heroClass : '').toLowerCase();
+    const themeColor = String(articleMetadata && articleMetadata.themeColor ? articleMetadata.themeColor : '').toLowerCase();
+    const toneByHero = {
+      'bg-purple': 'ct-purple',
+      'bg-orange': 'ct-orange',
+      'bg-blue': 'ct-blue',
+      'bg-green': 'ct-green',
+      'bg-red': 'ct-red',
+      'bg-yellow': 'ct-yellow'
+    };
+
+    if (toneByHero[heroClass]) return toneByHero[heroClass];
+    if (heroClass.indexOf('purple') !== -1) return 'ct-purple';
+    if (heroClass.indexOf('orange') !== -1) return 'ct-orange';
+    if (heroClass.indexOf('blue') !== -1) return 'ct-blue';
+    if (heroClass.indexOf('green') !== -1) return 'ct-green';
+    if (heroClass.indexOf('red') !== -1) return 'ct-red';
+    if (heroClass.indexOf('yellow') !== -1) return 'ct-yellow';
+
+    if (themeColor === '#64448f') return 'ct-purple';
+    if (themeColor === '#e2674a') return 'ct-orange';
+    if (themeColor === '#46a4da') return 'ct-blue';
+    if (themeColor === '#58b391') return 'ct-green';
+    if (themeColor === '#f06a6a') return 'ct-red';
+    if (themeColor === '#d4bf4a') return 'ct-yellow';
+
+    return 'ct-purple';
+  };
+  const articleToneClass = resolveArticleToneClass(metadata || {});
+%>
+<div class="ct-main ct-main-post" id="ct-main" role="main" data-article-tone="<%= articleToneClass %>">
   <div class="ct-post">
     <article class="post type-post status-publish format-standard has-post-thumbnail hentry" itemscope itemtype="http://schema.org/Article">
       <header>
@@ -69,7 +101,7 @@
     <div class="clr"></div>
   </div>
   <div class="ct-row">
-    <div class="ct-author-info ct-box"><%- include('../authors/sucender-short.ejs') %></div>
+    <div class="ct-author-info ct-box <%= articleToneClass %>"><%- include('../authors/sucender-short.ejs') %></div>
   </div>
 </div>
 <aside class="ct-sidebar article-sidebar"><%- include('../partials/aside.ejs') %></aside>

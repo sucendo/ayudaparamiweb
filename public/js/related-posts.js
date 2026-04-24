@@ -1,6 +1,6 @@
 (function () {
   var RELATED_LIMIT = 4;
-  var COLORS = ['ct-purple', 'ct-blue', 'ct-green', 'ct-red'];
+  var SUPPORTED_TONES = ['ct-purple', 'ct-blue', 'ct-green', 'ct-red', 'ct-orange', 'ct-yellow'];
 
   function normalize(text) {
     return (text || '').toString().trim().toLowerCase();
@@ -69,12 +69,28 @@
       });
   }
 
-  function createRelatedSection(relatedPosts) {
+  function resolveArticleToneClass() {
+    var mainPost = document.querySelector('.ct-main.ct-main-post');
+    var toneFromData = mainPost && mainPost.getAttribute('data-article-tone');
+    if (SUPPORTED_TONES.indexOf(toneFromData) !== -1) return toneFromData;
+
+    var authorBox = document.querySelector('.ct-author-info.ct-box');
+    if (!authorBox) return 'ct-purple';
+
+    var classNames = authorBox.className.split(/\s+/);
+    for (var i = 0; i < classNames.length; i += 1) {
+      if (SUPPORTED_TONES.indexOf(classNames[i]) !== -1) return classNames[i];
+    }
+
+    return 'ct-purple';
+  }
+
+  function createRelatedSection(relatedPosts, toneClass) {
     var wrapper = document.createElement('div');
     wrapper.className = 'ct-row';
 
     var box = document.createElement('article');
-    box.className = 'ct-box ' + COLORS[Math.floor(Math.random() * COLORS.length)];
+    box.className = 'ct-box ' + toneClass;
 
     var items = relatedPosts.map(function (post) {
       return '<li><a href="' + post.path + '">' + post.title + '</a></li>';
@@ -83,7 +99,7 @@
     box.innerHTML = '<div class="ct-box-inner">'
       + '<h3>Artículos relacionados</h3>'
       + '<p class="ct-feat-excerpt">Lecturas recomendadas por temática y categoría:</p>'
-      + '<ul>' + items + '</ul>'
+      + '<ul class="ct-related-links">' + items + '</ul>'
       + '</div>';
 
     wrapper.appendChild(box);
@@ -106,7 +122,7 @@
 
     if (document.querySelector('[data-related-posts]')) return;
 
-    var relatedSection = createRelatedSection(relatedPosts);
+    var relatedSection = createRelatedSection(relatedPosts, resolveArticleToneClass());
     relatedSection.setAttribute('data-related-posts', 'true');
     tagsBlock.parentNode.insertBefore(relatedSection, tagsBlock.nextSibling);
   }

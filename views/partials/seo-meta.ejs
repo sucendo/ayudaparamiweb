@@ -1,11 +1,21 @@
 <%
 const seo = metadata || {};
 const siteName = 'Ayuda para mi Web';
+const siteUrl = 'https://ayudaparamiweb.com';
+
+function toAbsoluteUrl(url) {
+  const value = String(url || '').trim();
+  if (!value) return siteUrl;
+  if (/^https?:\/\//i.test(value)) return value;
+  return `${siteUrl}${value.startsWith('/') ? value : `/${value}`}`;
+}
+
 const pageTitle = seo.title ? `${seo.title} | ${siteName}` : siteName;
-const canonicalUrl = seo.canonical || '/';
+const canonicalUrl = toAbsoluteUrl(seo.canonical || '/');
 const ogType = seo.type === 'article' ? 'article' : 'website';
-const ogImage = seo.featuredImage || '/img/logo-color.svg';
+const ogImage = toAbsoluteUrl(seo.featuredImage || '/img/logo-color.svg');
 const robotsContent = seo.robots || 'index,follow';
+
 const breadcrumbsJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -13,7 +23,7 @@ const breadcrumbsJsonLd = {
     '@type': 'ListItem',
     position: index + 1,
     name: item.name,
-    item: item.url
+    item: toAbsoluteUrl(item.url)
   }))
 };
 %>
@@ -45,8 +55,8 @@ const breadcrumbsJsonLd = {
   author: { '@type': 'Person', name: seo.author || 'Sucender' },
   datePublished: seo.publishedDate,
   dateModified: seo.modifiedDate || seo.publishedDate,
-  image: seo.featuredImage,
-  mainEntityOfPage: seo.canonical,
+  image: ogImage,
+  mainEntityOfPage: canonicalUrl,
   keywords: (seo.tags || []).join(', ')
 }) %></script>
 <% } %>

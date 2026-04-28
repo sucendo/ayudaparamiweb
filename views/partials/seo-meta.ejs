@@ -14,7 +14,7 @@ const pageTitle = seo.title ? `${seo.title} | ${siteName}` : siteName;
 const canonicalUrl = toAbsoluteUrl(seo.canonical || '/');
 const ogType = seo.type === 'article' ? 'article' : 'website';
 const ogImage = toAbsoluteUrl(seo.featuredImage || '/img/logo-color.svg');
-const robotsContent = seo.robots || 'index,follow';
+const robotsContent = seo.robots || 'index, follow';
 
 const breadcrumbsJsonLd = {
   '@context': 'https://schema.org',
@@ -60,4 +60,7 @@ const breadcrumbsJsonLd = {
   keywords: (seo.tags || []).join(', ')
 }) %></script>
 <% } %>
+
+<% if ((seo.breadcrumb || []).length) { %>
 <script type="application/ld+json"><%- JSON.stringify(breadcrumbsJsonLd) %></script>
+<% } %>

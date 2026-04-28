@@ -8,8 +8,8 @@ category: "tutoriales"
 tags: ["IA", "Programación", "Productividad", "Herramientas de desarrollo"]
 publishedDate: "2026-04-28"
 featuredImage: "/img/articulo/searching.svg"
-heroClass: "bg-purple"
-themeColor: "#537b7b"
+heroClass: "bg-green"
+themeColor: "#2fa06a"
 robots: "index, follow"
 ---
 

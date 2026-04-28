@@ -113,7 +113,7 @@ const migratedContentRoutes = [
   { path: '/seo-tecnico-core-web-vitals-2026', view: 'content/render', contentType: 'article', contentSlug: 'seo-tecnico-core-web-vitals-2026' },
   { path: '/seo-local-y-visibilidad-para-pymes-2026', view: 'content/render', contentType: 'article', contentSlug: 'seo-local-y-visibilidad-para-pymes-2026' },
   { path: '/checklist-lanzamiento-web-2026', view: 'content/render', contentType: 'article', contentSlug: 'checklist-lanzamiento-web-2026' },
-  { path: '/editores-con-ia-para-programar', view: 'content/render', contentType: 'article', contentSlug: 'editores-con-ia-para-programar' },
+  { path: '/editores-con-ia-y-agentes-de-desarrollo', view: 'content/render', contentType: 'article', contentSlug: 'editores-con-ia-y-agentes-de-desarrollo' },
   { path: '/mi-web-no-carga-que-hacer-10-minutos', view: 'content/render', contentType: 'article', contentSlug: 'mi-web-no-carga-que-hacer-10-minutos' },
   { path: '/wordpress-lento-diagnostico-real-paso-a-paso', view: 'content/render', contentType: 'article', contentSlug: 'wordpress-lento-diagnostico-real-paso-a-paso' },
   { path: '/mapa-guerra-ucrania-rusia', view: 'content/render', contentType: 'laboratory', contentSlug: 'mapa-guerra-ucrania-rusia' }

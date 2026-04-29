@@ -7,6 +7,8 @@ canonical: "/auditoria-tecnica-rapida-de-una-web"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "Auditoria Tecnica Rapida De"]
 publishedDate: "2025-09-11"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

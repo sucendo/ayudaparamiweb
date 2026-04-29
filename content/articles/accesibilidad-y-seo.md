@@ -7,6 +7,8 @@ canonical: "/accesibilidad-y-seo"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "Accesibilidad Y SEO"]
 publishedDate: "2025-08-14"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

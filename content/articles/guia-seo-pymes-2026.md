@@ -7,6 +7,8 @@ category: "guias"
 tags: ["SEO", "Pymes", "SEO técnico", "SEO local", "Estrategia digital"]
 publishedDate: "2026-04-09"
 modifiedDate: "2026-04-23"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/backlink-que-es-como-construir-red-de-enlaces.png"
 heroClass: "bg-purple"
 themeColor: "#64448f"

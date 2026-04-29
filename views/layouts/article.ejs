@@ -64,12 +64,6 @@
             <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
             <% if (metadata.ratingCount && metadata.ratingValue) { %>
               <strong><%= metadata.ratingCount %></strong> votos. Media: <strong><%= metadata.ratingValue %></strong> de 5
-              <div style="display: none;" class="post-ratings" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-                <meta itemprop="bestRating" content="5">
-                <meta itemprop="worstRating" content="1">
-                <meta itemprop="ratingValue" content="<%= metadata.ratingValue %>">
-                <meta itemprop="ratingCount" content="<%= metadata.ratingCount %>">
-              </div>
             <% } %>
           </div>
         </div>

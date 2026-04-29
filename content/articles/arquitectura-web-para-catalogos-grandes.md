@@ -7,6 +7,8 @@ canonical: "/arquitectura-web-para-catalogos-grandes"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "Arquitectura Web Para Catalo"]
 publishedDate: "2025-05-15"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

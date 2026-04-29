@@ -15,18 +15,18 @@
 
   function parseDateFromDocument() {
     var publishedMeta = document.querySelector('meta[itemprop="datePublished"]');
-    if (publishedMeta && /^\d{4}-\d{2}-\d{2}/.test(publishedMeta.content || '')) {
+    if (publishedMeta && /^\\d{4}-\\d{2}-\\d{2}/.test(publishedMeta.content || '')) {
       return new Date(publishedMeta.content + 'T00:00:00Z');
     }
 
     var timeNode = document.querySelector('time[itemprop="datePublished"], time');
     if (timeNode) {
-      var isoDate = (timeNode.getAttribute('datetime') || '').match(/\d{4}-\d{2}-\d{2}/);
+      var isoDate = (timeNode.getAttribute('datetime') || '').match(/\\d{4}-\\d{2}-\\d{2}/);
       if (isoDate) {
         return new Date(isoDate[0] + 'T00:00:00Z');
       }
 
-      var textDate = (timeNode.textContent || '').match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+      var textDate = (timeNode.textContent || '').match(/(\\d{1,2})\\/(\\d{1,2})\\/(\\d{4})/);
       if (textDate) {
         var day = textDate[1].padStart(2, '0');
         var month = textDate[2].padStart(2, '0');
@@ -39,7 +39,12 @@
 
   function getVoteProjection(seed, publishedDate) {
     var now = new Date();
-    var daysSincePublication = Math.max(0, Math.floor((Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - publishedDate.getTime()) / 86400000));
+    var daysSincePublication = Math.max(
+      0,
+      Math.floor(
+        (Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - publishedDate.getTime()) / 86400000
+      )
+    );
 
     var startDelay = 1 + Math.floor(seededUnit(seed, 'start-delay') * 2);
     var activeDays = Math.max(0, daysSincePublication - startDelay);
@@ -70,8 +75,8 @@
     };
   }
 
-  function updateAggregateNode(aggregateNode, projection) {
-    var sublineNode = aggregateNode.closest('.ct-subline__time');
+  function updateRatingsNode(ratingsNode, projection) {
+    var sublineNode = ratingsNode.closest('.ct-subline__time');
     if (sublineNode) {
       var strongNodes = sublineNode.querySelectorAll('strong');
       if (strongNodes.length >= 2) {
@@ -80,8 +85,8 @@
       }
     }
 
-    var ratingValueMeta = aggregateNode.querySelector('[itemprop="ratingValue"]');
-    var ratingCountMeta = aggregateNode.querySelector('[itemprop="ratingCount"]');
+    var ratingValueMeta = ratingsNode.querySelector('[data-rating-value], [itemprop="ratingValue"]');
+    var ratingCountMeta = ratingsNode.querySelector('[data-rating-count], [itemprop="ratingCount"]');
 
     if (ratingValueMeta) {
       ratingValueMeta.setAttribute('content', String(projection.average));
@@ -98,14 +103,14 @@
       return;
     }
 
-    var slug = window.location.pathname.replace(/\/+$/, '') || '/';
+    var slug = window.location.pathname.replace(/\\/+$/, '') || '/';
     var seed = slug + '|' + publishedDate.toISOString().slice(0, 10);
 
     var projection = getVoteProjection(seed, publishedDate);
-    var aggregateNodes = document.querySelectorAll('[itemprop="aggregateRating"]');
+    var ratingsNodes = document.querySelectorAll('.post-ratings, [itemprop="aggregateRating"]');
 
-    for (var i = 0; i < aggregateNodes.length; i += 1) {
-      updateAggregateNode(aggregateNodes[i], projection);
+    for (var i = 0; i < ratingsNodes.length; i += 1) {
+      updateRatingsNode(ratingsNodes[i], projection);
     }
   }
 

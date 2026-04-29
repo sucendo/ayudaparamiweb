@@ -7,6 +7,8 @@ canonical: "/vue-js-que-es"
 category: "tutoriales"
 tags: ["Vue.js", "JavaScript", "Frontend"]
 publishedDate: "2021-04-07"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/el-mundo-del-programador-web.png"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

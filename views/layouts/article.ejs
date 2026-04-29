@@ -62,7 +62,7 @@
             <% } %>
             Publicado el
             <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
-            <% if (metadata.ratingCount && metadata.ratingValue) { %>
+            <% if (metadata.ratingCount !== undefined && metadata.ratingValue !== undefined) { %>
               <strong><%= metadata.ratingCount %></strong> votos. Media: <strong><%= metadata.ratingValue %></strong> de 5
               <div style="display: none;" class="post-ratings">
                 <meta data-rating-best content="5">

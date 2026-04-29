@@ -42,7 +42,7 @@
       <% sidebarTopRated.forEach(function(item) { %>
         <li>
           <a href="<%= item.path %>"><%= item.title %></a>
-          <span><%= item.ratingValue.toFixed(1) %>/5 · <%= item.ratingCount %> voto(s)</span>
+          <span><%= item.ratingValue.toFixed(1) %>/5 · <%= item.ratingCount %> <%= item.ratingCount === 1 ? 'voto' : 'votos' %></span>
         </li>
       <% }) %>
     </ol>

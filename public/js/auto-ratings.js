@@ -68,20 +68,45 @@
   }
 
   function getSimulatedVote(seed, index) {
-    // Sesgo general del artículo: la mayoría tenderán a estar bien valorados,
-    // pero no todos tendrán exactamente el mismo patrón.
-    var articleBias = 4.15 + seededUnit(seed, 'article-bias') * 0.75; // 4.15 - 4.90
-    var trend = (seededUnit(seed, 'article-trend') - 0.5) * 0.35; // ligera deriva con el tiempo
-    var localTarget = articleBias + trend * Math.min(1, index / 40);
+    // Calidad base del artículo: entre 3.8 y 5.0
+    var articleTarget = 3.8 + seededUnit(seed, 'article-target') * 1.2;
 
-    // Los primeros votos son más volátiles; luego la media se estabiliza.
-    var volatility = index < 3 ? 2.2 : index < 10 ? 1.5 : 0.9;
-    var noise = (seededUnit(seed, 'vote:' + index) - 0.5) * volatility;
+    // Los primeros votos son más volátiles; luego se estabiliza
+    var volatility = index < 3 ? 0.9 : index < 10 ? 0.65 : 0.45;
+    var noise = (seededUnit(seed, 'vote:' + index) - 0.5) * volatility * 2;
 
-    var raw = clamp(localTarget + noise, 1, 5);
+    var raw = clamp(articleTarget + noise, 3, 5);
 
-    // Simulamos votos reales por estrellas enteras.
+    // Simulamos votos por estrellas enteras
     return Math.round(raw);
+  }
+
+  function normalizeAverageRange(votesArray) {
+    if (!votesArray.length) {
+      return 0;
+    }
+
+    var total = votesArray.reduce(function(sum, vote) {
+      return sum + vote;
+    }, 0);
+
+    var average = total / votesArray.length;
+
+    // Si cae por debajo de 3.8, corregimos suavemente algunos votos bajos
+    if (average < 3.8) {
+      for (var i = 0; i < votesArray.length && average < 3.8; i += 1) {
+        if (votesArray[i] < 5) {
+          var increment = (5 - votesArray[i] >= 2) ? 2 : 1;
+          votesArray[i] = Math.min(5, votesArray[i] + increment);
+          total += increment;
+          average = total / votesArray.length;
+        }
+      }
+    }
+
+    average = clamp(average, 3.8, 5.0);
+
+    return Number(average.toFixed(1));
   }
 
   function getVoteProjection(seed, publishedDate) {
@@ -94,14 +119,14 @@
       };
     }
 
-    var total = 0;
+    var votesArray = [];
     for (var i = 0; i < votes; i += 1) {
-      total += getSimulatedVote(seed, i);
+      votesArray.push(getSimulatedVote(seed, i));
     }
 
     return {
       votes: votes,
-      average: Number((total / votes).toFixed(1))
+      average: normalizeAverageRange(votesArray)
     };
   }
 

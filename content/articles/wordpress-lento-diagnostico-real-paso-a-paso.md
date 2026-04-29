@@ -7,6 +7,8 @@ canonical: "/wordpress-lento-diagnostico-real-paso-a-paso"
 category: "tutoriales"
 tags: []
 publishedDate: "2018-01-01"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/logo-color.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

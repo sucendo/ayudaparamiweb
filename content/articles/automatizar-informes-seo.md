@@ -7,6 +7,8 @@ canonical: "/automatizar-informes-seo"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "Automatizar Informes SEO"]
 publishedDate: "2025-03-13"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

@@ -7,6 +7,8 @@ canonical: "/auditoria-seo-con-ia"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "Auditoría SEO con IA"]
 publishedDate: "2024-10-10"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

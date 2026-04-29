@@ -7,6 +7,8 @@ canonical: "/automatizacion-de-tareas-en-la-empresa"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2022-01-13"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

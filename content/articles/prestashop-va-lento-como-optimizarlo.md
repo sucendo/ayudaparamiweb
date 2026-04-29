@@ -7,6 +7,8 @@ canonical: "/prestashop-va-lento-como-optimizarlo"
 category: "tutoriales"
 tags: ["PrestaShop", "Velocidad web", "Ecommerce", "Rendimiento web"]
 publishedDate: "2024-08-22"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-red"
 themeColor: "#537b7b"

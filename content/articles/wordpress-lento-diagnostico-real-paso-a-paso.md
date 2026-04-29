@@ -5,7 +5,7 @@ excerpt: "Cuando WordPress va lento, el problema no suele ser uno solo. En este 
 author: "Sucender"
 canonical: "/wordpress-lento-diagnostico-real-paso-a-paso"
 category: "tutoriales"
-tags: []
+tags: ["wordpress"]
 publishedDate: "2018-01-01"
 ratingCount: "0"
 ratingValue: "0.0"

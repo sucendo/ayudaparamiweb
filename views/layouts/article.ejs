@@ -42,6 +42,10 @@
   const featuredImageUrl = metadata.featuredImage
     ? `${siteUrl}${String(metadata.featuredImage).startsWith('/') ? metadata.featuredImage : `/${metadata.featuredImage}`}`
     : `${siteUrl}/img/logo-color.svg`;
+
+  const ratingValueNum = Number(metadata && metadata.ratingValue ? metadata.ratingValue : 0);
+  const ratingCountNum = Number(metadata && metadata.ratingCount ? metadata.ratingCount : 0);
+  const maxStars = 5;
 %>
 
 <div class="ct-main ct-main-post" id="ct-main" role="main" data-article-tone="<%= articleToneClass %>">
@@ -77,10 +81,27 @@
             Publicado el
             <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
 
-            <% if (metadata.ratingCount && metadata.ratingValue) { %>
-              <span class="ct-rating-summary">
-                <strong><%= metadata.ratingCount %></strong> votos. Media: <strong><%= metadata.ratingValue %></strong> de 5
-              </span>
+            <% if (ratingCountNum > 0 && ratingValueNum > 0) { %>
+              <div
+                class="ct-rating-summary"
+                aria-label="Valoración media de <%= metadata.ratingValue %> sobre 5 basada en <%= metadata.ratingCount %> votos"
+                style="display:inline-flex;align-items:center;gap:8px;margin-left:10px;font-size:14px;line-height:1.2;"
+              >
+                <span class="ct-rating-stars" aria-hidden="true" style="display:inline-flex;gap:2px;">
+                  <% for (let i = 1; i <= maxStars; i++) { %>
+                    <% if (ratingValueNum >= i) { %>
+                      <span style="color:#f5b301;font-size:16px;">★</span>
+                    <% } else if (ratingValueNum >= (i - 0.5)) { %>
+                      <span style="color:#f5b301;opacity:.55;font-size:16px;">★</span>
+                    <% } else { %>
+                      <span style="color:#cfcfcf;font-size:16px;">★</span>
+                    <% } %>
+                  <% } %>
+                </span>
+                <span class="ct-rating-text" style="color:#444;">
+                  <strong><%= metadata.ratingValue %></strong>/5 · <strong><%= metadata.ratingCount %></strong> votos
+                </span>
+              </div>
             <% } %>
           </div>
         </div>

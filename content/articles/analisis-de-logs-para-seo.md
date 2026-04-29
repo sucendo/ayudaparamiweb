@@ -7,6 +7,8 @@ canonical: "/analisis-de-logs-para-seo"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "Analisis De Logs Para SEO"]
 publishedDate: "2025-06-12"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

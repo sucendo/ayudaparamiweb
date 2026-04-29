@@ -28,79 +28,47 @@
 
     return 'ct-purple';
   };
-
-  const formatDate = function(dateString) {
-    const [year, month, day] = String(dateString || '').split('-');
-    return (day && month && year) ? `${day}/${month}/${year}` : dateString;
-  };
-
   const articleToneClass = resolveArticleToneClass(metadata || {});
-  const siteName = 'Ayuda para mi Web';
-  const siteUrl = 'https://ayudaparamiweb.com';
-  const authorUrl = `${siteUrl}/sucender`;
-  const publisherLogoUrl = `${siteUrl}/img/author/sucender.png`;
-  const featuredImageUrl = metadata.featuredImage
-    ? `${siteUrl}${String(metadata.featuredImage).startsWith('/') ? metadata.featuredImage : `/${metadata.featuredImage}`}`
-    : `${siteUrl}/img/logo-color.svg`;
-
-  const ratingValueNum = Number(metadata && metadata.ratingValue ? metadata.ratingValue : 0);
-  const ratingCountNum = Number(metadata && metadata.ratingCount ? metadata.ratingCount : 0);
-  const maxStars = 5;
 %>
-
 <div class="ct-main ct-main-post" id="ct-main" role="main" data-article-tone="<%= articleToneClass %>">
   <div class="ct-post">
-    <article class="post type-post status-publish format-standard has-post-thumbnail hentry" itemscope itemtype="https://schema.org/Article">
+    <article class="post type-post status-publish format-standard has-post-thumbnail hentry" itemscope itemtype="http://schema.org/Article">
       <header>
         <div class="ct-subline entry-meta">
           <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
             <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-              <img alt="<%= siteName %>" src="<%= publisherLogoUrl %>" class="avatar avatar-36 photo" height="36" width="36">
-              <meta itemprop="url" content="<%= publisherLogoUrl %>">
+              <img alt="" src="http://www.ayudaparamiweb.com/img/author/sucender.png" srcset="img/author/sucender.png" class="avatar avatar-36 photo" height="36" width="36">
+              <meta itemprop="url" content="http://www.ayudaparamiweb.com/img/author/sucender.png">
               <meta itemprop="width" content="36">
               <meta itemprop="height" content="36">
             </div>
-            <meta itemprop="name" content="<%= siteName %>">
+            <meta itemprop="name" content="<%= metadata.author %>">
           </div>
 
           <div class="ct-subline__author">
-            <span class="byline author vcard" itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <meta itemprop="name" content="<%= metadata.author %>">
-              <meta itemprop="url" content="<%= authorUrl %>">
-              <a href="/sucender" title="Posts by <%= metadata.author %>" rel="author"><%= metadata.author %></a>
-            </span>
+            <span class="byline author vcard" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="/sucender" title="Posts by <%= metadata.author %>" rel="author" itemprop="name"><%= metadata.author %></a></span>
             in
-            <a href="/articulos">Artículos</a>
+            <a href="/articulos">Articulos</a>
           </div>
 
           <div class="ct-subline__time">
+            <% const formatDate = function(dateString) {
+              const [year, month, day] = String(dateString || '').split('-');
+              return (day && month && year) ? `${day}/${month}/${year}` : dateString;
+            }; %>
             <% if (metadata.modifiedDate) { %>
               Actualizado el
               <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="dateModified" content="<%= metadata.modifiedDate %>"><%= formatDate(metadata.modifiedDate) %></time>
             <% } %>
             Publicado el
             <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
-
-            <% if (ratingCountNum > 0 && ratingValueNum > 0) { %>
-              <div
-                class="ct-rating-summary"
-                aria-label="Valoración media de <%= metadata.ratingValue %> sobre 5 basada en <%= metadata.ratingCount %> votos"
-                style="display:inline-flex;align-items:center;gap:8px;margin-left:10px;font-size:14px;line-height:1.2;"
-              >
-                <span class="ct-rating-stars" aria-hidden="true" style="display:inline-flex;gap:2px;">
-                  <% for (let i = 1; i <= maxStars; i++) { %>
-                    <% if (ratingValueNum >= i) { %>
-                      <span style="color:#f5b301;font-size:16px;">★</span>
-                    <% } else if (ratingValueNum >= (i - 0.5)) { %>
-                      <span style="color:#f5b301;opacity:.55;font-size:16px;">★</span>
-                    <% } else { %>
-                      <span style="color:#cfcfcf;font-size:16px;">★</span>
-                    <% } %>
-                  <% } %>
-                </span>
-                <span class="ct-rating-text" style="color:#444;">
-                  <strong><%= metadata.ratingValue %></strong>/5 · <strong><%= metadata.ratingCount %></strong> votos
-                </span>
+            <% if (metadata.ratingCount && metadata.ratingValue) { %>
+              <strong><%= metadata.ratingCount %></strong> votos. Media: <strong><%= metadata.ratingValue %></strong> de 5
+              <div style="display: none;" class="post-ratings" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                <meta itemprop="bestRating" content="5">
+                <meta itemprop="worstRating" content="1">
+                <meta itemprop="ratingValue" content="<%= metadata.ratingValue %>">
+                <meta itemprop="ratingCount" content="<%= metadata.ratingCount %>">
               </div>
             <% } %>
           </div>
@@ -114,7 +82,7 @@
 
         <div class="ct-post-featured-img" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>">
-          <meta itemprop="url" content="<%= featuredImageUrl %>">
+          <meta itemprop="url" content="https://www.ayudaparamiweb.com<%= metadata.featuredImage %>">
           <meta itemprop="width" content="800">
           <meta itemprop="height" content="500">
         </div>

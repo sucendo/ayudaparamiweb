@@ -9,7 +9,7 @@ publishedDate: "2018-05-22"
 ratingCount: "0"
 ratingValue: "0.0"
 featuredImage: "/img/articulo/el-mundo-del-programador-web.png"
-heroClass: "bg-purple"
+heroClass: "bg-blue"
 themeColor: "#64448f"
 robots: "index, follow"
 ---

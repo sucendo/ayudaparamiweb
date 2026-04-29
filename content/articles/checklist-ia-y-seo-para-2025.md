@@ -7,6 +7,8 @@ canonical: "/checklist-ia-y-seo-para-2025"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "Checklist IA Y SEO Para 2025"]
 publishedDate: "2024-12-12"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

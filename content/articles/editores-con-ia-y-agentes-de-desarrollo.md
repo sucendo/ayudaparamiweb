@@ -7,6 +7,8 @@ canonical: "/editores-con-ia-y-agentes-de-desarrollo"
 category: "tutoriales"
 tags: ["IA", "Programación", "Productividad", "Herramientas de desarrollo"]
 publishedDate: "2026-04-28"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-green"
 themeColor: "#2fa06a"

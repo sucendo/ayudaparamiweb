@@ -15,18 +15,18 @@
 
   function parseDateFromDocument() {
     var publishedMeta = document.querySelector('meta[itemprop="datePublished"]');
-    if (publishedMeta && /^\\d{4}-\\d{2}-\\d{2}/.test(publishedMeta.content || '')) {
+    if (publishedMeta && /^\d{4}-\d{2}-\d{2}/.test(publishedMeta.content || '')) {
       return new Date(publishedMeta.content + 'T00:00:00Z');
     }
 
     var timeNode = document.querySelector('time[itemprop="datePublished"], time');
     if (timeNode) {
-      var isoDate = (timeNode.getAttribute('datetime') || '').match(/\\d{4}-\\d{2}-\\d{2}/);
+      var isoDate = (timeNode.getAttribute('datetime') || '').match(/\d{4}-\d{2}-\d{2}/);
       if (isoDate) {
         return new Date(isoDate[0] + 'T00:00:00Z');
       }
 
-      var textDate = (timeNode.textContent || '').match(/(\\d{1,2})\\/(\\d{1,2})\\/(\\d{4})/);
+      var textDate = (timeNode.textContent || '').match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
       if (textDate) {
         var day = textDate[1].padStart(2, '0');
         var month = textDate[2].padStart(2, '0');
@@ -103,7 +103,7 @@
       return;
     }
 
-    var slug = window.location.pathname.replace(/\\/+$/, '') || '/';
+    var slug = window.location.pathname.replace(/\/+$/, '') || '/';
     var seed = slug + '|' + publishedDate.toISOString().slice(0, 10);
 
     var projection = getVoteProjection(seed, publishedDate);

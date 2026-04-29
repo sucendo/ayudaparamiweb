@@ -6,6 +6,8 @@ canonical: "/wordpress-o-desarrollo-a-medida"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2020-01-16"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

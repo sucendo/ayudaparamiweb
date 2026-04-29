@@ -7,6 +7,8 @@ canonical: "/automatizacion-de-respuestas-y-procesos"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2023-04-13"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/searching.svg"
 heroClass: "bg-purple"
 themeColor: "#537b7b"

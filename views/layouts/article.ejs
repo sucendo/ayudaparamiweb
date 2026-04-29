@@ -65,10 +65,10 @@
             <% if (metadata.ratingCount && metadata.ratingValue) { %>
               <strong><%= metadata.ratingCount %></strong> votos. Media: <strong><%= metadata.ratingValue %></strong> de 5
               <div style="display: none;" class="post-ratings">
-                <meta content="5">
-                <meta content="1">
-                <meta content="<%= metadata.ratingValue %>">
-                <meta content="<%= metadata.ratingCount %>">
+                <meta data-rating-best content="5">
+                <meta data-rating-worst content="1">
+                <meta data-rating-value content="<%= metadata.ratingValue %>">
+                <meta data-rating-count content="<%= metadata.ratingCount %>">
               </div>
             <% } %>
           </div>

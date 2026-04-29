@@ -1,193 +1,167 @@
 ---
 title: "El mundo del programador Web"
-description: "El mundo de la programación web ha evolucionado mucho desde mis primeros años como desarrollador, en este artículo expongo mis herramientas para desarrollar."
+description: "El mundo de la programación web ha evolucionado mucho desde mis primeros años como desarrollador. En este artículo expongo las herramientas y áreas que considero más importantes para desarrollar."
 author: "Sucender"
 canonical: "/el-mundo-del-programador-web"
 category: "tutoriales"
 tags: ["Desarrollo web", "Programación", "Productividad"]
 publishedDate: "2018-05-22"
-ratingCount: "4"
-ratingValue: "4.5"
+ratingCount: "0"
+ratingValue: "0.0"
 featuredImage: "/img/articulo/el-mundo-del-programador-web.png"
 heroClass: "bg-purple"
-themeColor: "#537b7b"
-robots: "index,follow"
+themeColor: "#64448f"
+robots: "index, follow"
 ---
-<p>Ahora bien, un proyecto web esta dividido principalmente en dos capas, el Front-End (que es lo que el usuario ve) y el Back-End (la tecnología que hay en una capa detrás) complementadas con un buen diseño capaz de ofrecer una buena usabilidad y una eficiente arquitectura de la información, es decir la base de datos.</p>
-								
-								<h2 id="backend">Back End</h2>
-								<p>Es la capa que se encarga de procesar la información que llega del usuario, ya sea para almacenarla en base de datos o devolverla al usuario. Detrás de esto se encuentra el software de la aplicación, el servidor que la maneja y la base de datos que la almacena. Los <strong>lenguajes de programación</strong> que existen en esta parte son:</p>
-								
-								<ul>
-									<li><a href="http://php.net/">PHP</a></li>
-									<li><a href="http://www.java.com/es/">Java</a></li>
-									<li><a href="https://www.ruby-lang.org/es/">Ruby</a></li>
-									<li><a href="http://python.org">Python</a></li>
-									<li><a href="http://nodejs.org">Node.js</a></li>
-								</ul>
-								<p>Los 3 últimos son los más utilizados hoy en día en las principales <em>Startups</em> y aplicaciones web, pero no funcionan solos, tienen con ellos poderosos <strong>frameworks</strong> y extensiones que los hacen más manejables y productivos.</p>
-								<ul>
-									<li><a href="http://rubyonrails.org/">Rails</a> (Ruby)</li>
-									<li><a href="https://www.djangoproject.com/">Django</a> (Python)</li>
-									<li><a href="http://expressjs.com/">Express </a>y <a href="http://socket.io">Socket.io</a> (Node.js)</li>
-								</ul>
-								<p>La información o datos que manejan las aplicaciones normalmente es almacenada en una <strong>base de datos.</strong> Existen dos tipos: Relacionales en las que unas tablas están relacionadas con otras a través de una clave. Y no relacionales (NoSQL) que guardan los datos en documentos y para ciertas aplicaciones son más rápidas</p>
-								<ul>
-									<li><strong>Relacionales</strong>
-										<ul>
-											<li><a href="http://www.mysql.com/">MySQL</a></li>
-											<li><a href="http://www.postgresql.org/">PostgreSQL</a></li>
-											<li><a href="https://mariadb.org/">MariaDB</a></li>
-											<li><a href="http://www.sqlite.org/">SQLite</a></li>
-										</ul>
-									</li>
-									<li><strong>No Relacionales</strong>
-										<ul>
-											<li><a href="http://www.mongodb.org/">MongoDB</a></li>
-											<li><a href="https://cassandra.apache.org/">Cassandra</a></li>
-											<li><a href="http://couchdb.apache.org/">CouchDB</a></li>
-										</ul>
-									</li>
-								</ul>
-								
-								<h2 id="frontend"><strong>Front End</strong></h2>
-								<p>El Front-End es le aparece al usuario en pantalla, la parte visual de una aplicación o proyecto web. Antiguamente se limitaba a la maquetación de un sitio con HTML, se le añadia estilo con CSS y alguna animación o efecto con JavaScript. Pero eso paso a la historia, ahora tenemos aplicaciones web que funcionan enteramente en el navegador y únicamente reciben datos desde un API en formato JSON a través de AJAX o WebSockets.</p>
-								<p>Las tecnologías que operan en esta parte son:</p>
-								<ul>
-									<li><strong>HTML5</strong>, aporta semántica al contenido y estructura la información</li>
-									<li><strong>CSS3</strong>, maqueta la información y diseña</li>
-									<li><strong>JavaScript</strong>, permite la programación en el cliente y su conexión con el servidor, maneja el DOM, añade interacción, etc</li>
-								</ul>
-								<p>Por supuesto exiten herramientas para el Front-End:</p>
-								<ul>
-									<li><strong>Frameworks CSS</strong>
-										<ul>
-											<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
-											<li><a href="http://foundation.zurb.com/">Zurb Foundation</a></li>
-										</ul>
-									</li>
-									<li><strong>Preprocesadores de CSS</strong> (Compilan código a CSS)
-										<ul>
-											<li><a href="http://learnboost.github.io/stylus/">Stylus</a></li>
-											<li><a href="http://lesscss.org/">Less</a></li>
-											<li><a href="http://sass-lang.com/">Sass</a></li>
-										</ul>
-									</li>
-									<li><strong>Preprocesadores de JS</strong> (convierten código a JS)
-										<ul>
-											<li><a href="https://www.dartlang.org/">Dart</a></li>
-											<li><a href="http://coffeescript.org/">CoffeeScript</a></li>
-										</ul>
-									</li>
-									<li><strong>Frameworks y Librerias JS</strong>
-										<ul>
-											<li><a href="http://jquery.org">jQuery</a></li>
-											<li><a href="http://backbonejs.org">Backbone.js</a></li>
-											<li><a href="http://angularjs.org">Angular.js</a></li>
-											<li><a href="http://emberjs.org">Ember.js</a></li>
-										</ul>
-									</li>
-									<li><strong>Sistemas de templates</strong>
-										<ul>
-											<li><a href="http://mustache.github.io/">Mustache</a></li>
-											<li><a href="http://paularmstrong.github.io/swig/">Swig</a></li>
-											<li><a href="http://embeddedjs.com/">EJS</a></li>
-											<li><a href="http://underscorejs.org/">Underscore</a></li>
-										</ul>
-									</li>
-								</ul>
-								
-								<h2 id="diseoexperienciadeusuarioyusabilidaduiux">Diseño, Experiencia de Usuario y Usabilidad (UI/UX)</h2>
-								<p>Con el avance del Front-End, ahora el diseño y la interacción con los usuarios ocupan una nueva especialidad. En esta parte se tocan cosas como:</p>
-								<ul>
-									<li>Diseño de interfaces
-										<ul>
-											<li><a href="http://designshack.net/articles/css/mobilefirst/">Mobile First</a></li>
-											<li><a href="http://en.wikipedia.org/wiki/Responsive_web_design">Responsive Design</a></li>
-											<li><a href="http://bjango.com/articles/designingforretina/">Retina Design</a></li>
-										</ul>
-									</li>
-									<li>Diseño de Workflows</li>
-									<li>Usabilidad</li>
-									<li>UX, Experiencia de usuario</li>
-								</ul>
-								
-								<h2 id="arquitecturadeinformacion">Arquitectura de Información</h2>
-								<p>El contenido en la web actual no es estático, está generado en su mayor parte por los usuarios y ellos interaccionan entre ellos. Hay que saber estructurarlo, como redactarlo, como presentarlo. En esta parte entra el <strong>SEO</strong> (Search Engine Optimization), la <strong>estrategia digital</strong> de la marca/proyecto (Inbound Marketing, Outbund Marketing) y el Social Media.</p>
-								<p>Y eso es en resumen las partes más importantes y roles que conlleva un proyecto web hoy en día. Lo recomendable es especializarse en lo que más te guste pero saber un poco de todo para tener una visión general del proyecto.</p>
-								
-								<h2 id="herramientasparaprogramar">Herramientas para programar</h2>
-								<p>Os voy a exponer algunas de las herramientas que utilizo como desarrollador web y que me facilitan bastante la productividad.</p>
-								
-								
-									<ul>
-										<li>
-											<p><strong>Editor de texto</strong>: <a href="http://www.sublimetext.com/">Sublime Text 2</a>, Multiplataforma. Escrito en Python. Muy rápido, y ligero. Contiene numerosos paquetes y funcionalidades que lo hacen ser EL EDITOR. Bien es cierto que si programas en Objective-C te es más útil XCode, y si lo haces para Android te sea mejor (aunque sea un dolor) utilizar Eclipse. Pero si te dedicas al desarrollo web, es lo mejor.</p>
-										</li>
-										<li>
-											<p><strong>Cliente FTP</strong>: <a href="http://cyberduck.ch/">Cyberduck</a>, para Mac. Tiene una UI agradable y permite conexiones SFTP con archivos de clave secreta. Ideal si quieres acceder a un servidor creador en AWS.</p>
-										</li>
-										<li>
-											<p><strong>Navegador Web</strong>: <a href="https://www.google.com/intl/en/chrome/browser/">Google Chrome</a>. Es mi navegador por defecto. Hace tiempo usaba Firefox por su consola firebug para depurar, pero ahora con chrome se puede hacer lo mismo gracias a sus extensiones de las que hablará más adelante en otra entrada</p>
-										</li>
-										<li>
-											<p><strong>Servidor Web local</strong>: <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>. Multiplaforma, ideal para montar un servidor Apache + PHP + MySQL local en pocos minutos. Incluye phpmyAdmin para gestionar la base de datos. Si tu proyecto utiliza alguna de estas tecnologías te lo recomiendo.</p>
-										</li>
-										<li>
-											<p><strong>Comunicación</strong>: Utilizo varios:</p>
-											<ul>
-												<li><a href="http://skype.com">Skype</a> para conversaciones con una sola persona, normalmente para trabajos freelance con clientes extranjeros, son la mejor herramienta.</li>
-												<li><a href="http://google.com/hangouts">Hangouts</a> si son con varias personas y puedes compartir escritorio,</li>
-											</ul>
-										</li>
-										<li>
-										<p><strong>Gestor de tareas</strong>: <a href="https://trello.com/">Trello</a>. Básico y muy simple pero muy útil. Multidispositivo</p>
-										</li>
-										<li>
-											<p><strong>Repositorios y control de versiones</strong></p>
-											<ul>
-												<li><a href="http://github.com">GitHub</a>, para proyectos open source o colaborativos. Como cliente Desktop: <a href="http://mac.github.com/">GitHub for Mac</a></li>
-												<li><a href="http://bitbucket.com">Bitbucket</a>, para proyectos privados (5 repositorios gratuitos). Como cliente Desktop: <a href="http://www.sourcetreeapp.com/">Sourcetree</a></li>
-											</ul>
-										</li>
-										<li>
-											<p><strong>Tratamiento de imágenes</strong>:<br>
-											<a href="http://www.photoshop.com/"> Photoshop CS6</a></p>
-										</li>
-										<li>
-											<p><strong>Manejo de archivos</strong></p>
-											<ul>
-												<li><a href="https://www.dropbox.com/">Dropbox</a>, genial para compartir documentos e imágenes entre miembros del equipo</li>
-												<li><a href="http://drive.google.com">Google Drive</a>, perfecto para guardar ideas, escribir documentación y modificar en linea con otros miembros del equipo. Te olvidas de tener documentos en tu ordenador con mútltiples versiones. A si los tienes siempre a mano y en cualquier dispositvo y cuando quieras (siempre que tengas conexión a mano).</li>
-											</ul>
-										</li>
-										<li>
-											<p><strong>Diseño de Mockups y Wireframes</strong>:<br>
-											<a href="https://moqups.com/">Moqups</a>: Excelente herramienta para realizar Mockups de una manera sencilla y rápida, se integra con Google Drive.</p>
-										</li>
-										<li>
-										<p><strong>Virtualización</strong>: <a href="http://www.parallels.com/">Parallels 8</a>, De pago. Funciona realmente bien en Mac. Suelo tener alguna distribución Linux (Ubuntu) y copia de Windows XP para probar rarezas.</p>
-										</li>
-									</ul>
-								
-								<h2 id="paraqueprogramar">¿Para qué programar?</h2>
-								<p>Cuando no estoy trabajando en la oficina o haciendo encargos freelance me gusta <em>trastear</em> con otras tecnologías y lenguajes que no suelo utilizar. Voy a exponer algunos mótivos por los que desarrollar proyectos propios puede acabar siendo rentable en muchos aspectos:</p>
-								<h3 id="esdivertido">Es divertido</h3>
-								<p>No hay nada cómo poder trabajar para uno mismo. Tu planificas tus horarios, nadie te supervisa, creas algo a tu gusto, tu decides que detalles son importantes y cuales no. Es una buena manera de probarse a uno mismo y conocer nuevas áreas.</p>
-								<h3 id="aprendes">Aprendes</h3>
-								<p>¿Cuál es la mejor forma de aprender una tecnología nueva como pueden ser Node? ¿O usar una base de datos que no has usado nunca? En un proyecto de consultoría tradicional de traje y corbata ya te adelanto que no será. Prueba a hacer un “hola mundo” en un lenguaje que no conozcas, después amplíalo, descubre que puedes hacer con esa nueva plataforma, lee documentación, etc. En definitiva: juega.</p>
-								<h3 id="ganasexperiencia">Ganas experiencia</h3>
-								<p>Imagina que al poco de haber hecho un pequeño proyecto en un lenguaje que hace unos meses ni conozcas, aparece ante tí una oferta de trabajo (ya sea freelance o contratado) ¡Ya tienes el primer paso dado! Sin apenas darte cuenta has ganado experiencia. Puede que an no seas experto, pero con el tiempo irás mejorando.</p>
-								<h3 id="amplasportafolio">Amplías portafolio</h3>
-								<p>Hoy en día da igual que tengas 2 carreras, 3 máster y 40 certificados. Incluso me atrevería a decir que ni siquiera que hayas trabajado X años en una empresa pueda servir dentro de un tiempo. Ahora prima más lo quá has hecho o sabes hacer qué lo que has estudiado. Ahora la gente quiere algo visible para saber si eres la persona que necesitan.</p>
-								<p>Si haces un diseño, súbelo a <a href="http://dribbble.com">Dribbble</a>, si haces código, súbelo a <a href="http://github.com">GitHub</a>. Estos portales son ahora tanto o más importantes que un buen perfil en <a href="http://linkedin.com">Linkedin</a>.</p>
-								<p>Esa es una de las razones por las me decidí a desarrollar&nbsp;<a href="http://totalstats.herokuapp.com" title="Totalstats | Totalstats para todo">TotalStats</a>. No tenemos modelo de negocio definido y no esperamos ganar dinero por ahora. Después de un tiempo trabajando para empresas o clientes privados, tienes trabajo hecho que no puedes enseñar por contrato u otras razones y de esta manera amplias tu portafolio.</p>
-								<h3 id="consiguesclientes">Consigues clientes o trabajo</h3>
-								<p>Cuando te inscribes a una oferta o te contacta alguien y te pide un portafolio, ahora ya tienes algo que poder enseñar, tuyo 100%. Es una manera de probar tanto tus conocimientos técnicos como tus habilidades. Has invertido tiempo en desarrollar tu proyecto, pero esa inversión puede verse amortizada con una buena oferta posterior.</p>
-								<p>Por eso os animo a que invirtáis vuestro tiempo libre en aprender cosas nuevas y realizar pequeños proyectos propios, nunca se sabe quién puede estar al otro lado viendo tu trabajo.</p>
-									
-							</div>
-						</article>
-						
-						<p class="ct-tags">Etiquetado en: <a href="http://www.ayudaparamiweb.com/" rel="tag">Desarrollo web</a> <a href="http://www.ayudaparamiweb.com/" rel="tag">Programación</a> <a href="http://www.ayudaparamiweb.com/" rel="tag">Productividad</a></p>
-						<div class="clr"></div>
+
+Ahora bien, un proyecto web está dividido principalmente en dos capas: el **Front-End** —que es lo que el usuario ve— y el **Back-End** —la tecnología que trabaja por detrás—, todo ello complementado con un buen diseño capaz de ofrecer una buena usabilidad y una arquitectura de la información eficiente.
+
+## Back End
+
+Es la capa que se encarga de procesar la información que llega del usuario, ya sea para almacenarla en base de datos o para devolver una respuesta. Detrás de esto se encuentran el software de la aplicación, el servidor que la ejecuta y la base de datos que la almacena.
+
+Los **lenguajes de programación** más habituales en esta parte son:
+
+- [PHP](http://php.net/)
+- [Java](http://www.java.com/es/)
+- [Ruby](https://www.ruby-lang.org/es/)
+- [Python](http://python.org)
+- [Node.js](http://nodejs.org)
+
+Los tres últimos son especialmente utilizados en muchas *startups* y aplicaciones web modernas, pero no funcionan solos: se apoyan en potentes **frameworks** y extensiones que los hacen más manejables y productivos.
+
+- [Rails](http://rubyonrails.org/) (Ruby)
+- [Django](https://www.djangoproject.com/) (Python)
+- [Express](http://expressjs.com/) y [Socket.io](http://socket.io) (Node.js)
+
+La información o los datos que manejan las aplicaciones normalmente se almacenan en una **base de datos**. Existen dos grandes tipos:
+
+- **Relacionales**
+  - [MySQL](http://www.mysql.com/)
+  - [PostgreSQL](http://www.postgresql.org/)
+  - [MariaDB](https://mariadb.org/)
+  - [SQLite](http://www.sqlite.org/)
+
+- **No relacionales**
+  - [MongoDB](http://www.mongodb.org/)
+  - [Cassandra](https://cassandra.apache.org/)
+  - [CouchDB](http://couchdb.apache.org/)
+
+## Front End
+
+El Front-End es la parte que aparece al usuario en pantalla: la parte visual de una aplicación o proyecto web. Antiguamente se limitaba a maquetar un sitio con HTML, añadir estilos con CSS y sumar alguna animación o efecto con JavaScript. Pero eso cambió hace tiempo: hoy existen aplicaciones web que funcionan enteramente en el navegador y reciben datos desde una API en formato JSON a través de AJAX o WebSockets.
+
+Las tecnologías que operan en esta parte son:
+
+- **HTML5**, que aporta semántica al contenido y estructura la información
+- **CSS3**, que maqueta la información y define el diseño
+- **JavaScript**, que permite la programación en cliente, la conexión con el servidor, el manejo del DOM y la interacción
+
+Por supuesto, también existen muchas herramientas para el Front-End:
+
+- **Frameworks CSS**
+  - [Bootstrap](http://getbootstrap.com/)
+  - [Zurb Foundation](http://foundation.zurb.com/)
+
+- **Preprocesadores de CSS** (compilan código a CSS)
+  - [Stylus](http://learnboost.github.io/stylus/)
+  - [Less](http://lesscss.org/)
+  - [Sass](http://sass-lang.com/)
+
+- **Preprocesadores de JS** (convierten código a JavaScript)
+  - [Dart](https://www.dartlang.org/)
+  - [CoffeeScript](http://coffeescript.org/)
+
+- **Frameworks y librerías JS**
+  - [jQuery](http://jquery.org)
+  - [Backbone.js](http://backbonejs.org)
+  - [Angular.js](http://angularjs.org)
+  - [Ember.js](http://emberjs.org)
+
+- **Sistemas de plantillas**
+  - [Mustache](http://mustache.github.io/)
+  - [Swig](http://paularmstrong.github.io/swig/)
+  - [EJS](http://embeddedjs.com/)
+  - [Underscore](http://underscorejs.org/)
+
+## Diseño, experiencia de usuario y usabilidad (UI/UX)
+
+Con el avance del Front-End, el diseño y la interacción con los usuarios se han convertido en una especialidad propia. En esta parte se trabajan aspectos como:
+
+- Diseño de interfaces
+  - [Mobile First](http://designshack.net/articles/css/mobilefirst/)
+  - [Responsive Design](http://en.wikipedia.org/wiki/Responsive_web_design)
+  - [Retina Design](http://bjango.com/articles/designingforretina/)
+- Diseño de flujos de trabajo
+- Usabilidad
+- UX o experiencia de usuario
+
+## Arquitectura de la información
+
+El contenido en la web actual no es estático. En gran parte está generado por los propios usuarios y, además, estos interactúan entre sí. Por eso hay que saber estructurarlo, redactarlo y presentarlo correctamente.
+
+Aquí entran en juego el **SEO** (*Search Engine Optimization*), la **estrategia digital** del proyecto o de la marca —como el *Inbound Marketing* o el *Outbound Marketing*— y también el *Social Media*.
+
+En definitiva, estas son algunas de las áreas y roles más importantes que intervienen hoy en un proyecto web. Lo recomendable es especializarse en aquello que más te guste, pero sin perder una visión global del conjunto.
+
+## Herramientas para programar
+
+Voy a exponer algunas de las herramientas que utilizo como desarrollador web y que me facilitan bastante la productividad.
+
+- **Editor de texto**: [Sublime Text 2](http://www.sublimetext.com/). Multiplataforma, escrito en Python, muy rápido y ligero. Tiene numerosos paquetes y funcionalidades que lo convierten en una gran opción. Es cierto que si programas en Objective-C puede resultarte más útil Xcode, y si desarrollas para Android quizá te convenga otro entorno, pero para desarrollo web me ha parecido durante mucho tiempo una herramienta excelente.
+
+- **Cliente FTP**: [Cyberduck](http://cyberduck.ch/), para Mac. Tiene una interfaz agradable y permite conexiones SFTP con archivos de clave secreta. Muy útil si quieres acceder a servidores en AWS.
+
+- **Navegador web**: [Google Chrome](https://www.google.com/intl/en/chrome/browser/). Es mi navegador por defecto. Hace tiempo usaba Firefox por su consola Firebug para depurar, pero con Chrome también se puede hacer muy bien gracias a sus herramientas y extensiones.
+
+- **Servidor web local**: [XAMPP](http://www.apachefriends.org/en/xampp.html). Multiplataforma, ideal para montar un servidor Apache + PHP + MySQL local en pocos minutos. Incluye phpMyAdmin para gestionar la base de datos. Si tu proyecto utiliza alguna de estas tecnologías, merece la pena.
+
+- **Comunicación**:
+  - [Skype](http://skype.com), para conversaciones con una sola persona, sobre todo en trabajos freelance con clientes extranjeros
+  - [Hangouts](http://google.com/hangouts), cuando participaban varias personas y era necesario compartir pantalla
+
+- **Gestor de tareas**: [Trello](https://trello.com/). Básico, simple y muy útil. Además, funciona bien en distintos dispositivos.
+
+- **Repositorios y control de versiones**:
+  - [GitHub](http://github.com), para proyectos open source o colaborativos. Como cliente de escritorio, antes utilicé [GitHub for Mac](http://mac.github.com/)
+  - [Bitbucket](http://bitbucket.com), útil para proyectos privados. Como cliente de escritorio, [Sourcetree](http://www.sourcetreeapp.com/)
+
+- **Tratamiento de imágenes**: [Photoshop CS6](http://www.photoshop.com/)
+
+- **Manejo de archivos**:
+  - [Dropbox](https://www.dropbox.com/), genial para compartir documentos e imágenes entre miembros del equipo
+  - [Google Drive](http://drive.google.com), perfecto para guardar ideas, escribir documentación y modificar documentos en línea con otras personas. Así te olvidas de tener múltiples versiones repartidas por distintos equipos.
+
+- **Diseño de mockups y wireframes**: [Moqups](https://moqups.com/), una herramienta muy cómoda para crear mockups de forma rápida y sencilla, además de integrarse bien con Google Drive.
+
+- **Virtualización**: [Parallels 8](http://www.parallels.com/). De pago, pero con muy buen funcionamiento en Mac. Suelo tener alguna distribución Linux como Ubuntu y alguna copia de Windows para hacer pruebas concretas.
+
+## ¿Para qué programar?
+
+Cuando no estoy trabajando en la oficina o haciendo encargos freelance, me gusta *trastear* con otras tecnologías y lenguajes que no suelo utilizar. Voy a exponer algunos motivos por los que desarrollar proyectos propios puede acabar siendo rentable en muchos aspectos.
+
+### Es divertido
+
+No hay nada como poder trabajar para uno mismo. Tú planificas tus horarios, nadie te supervisa, creas algo a tu gusto y decides qué detalles son importantes y cuáles no. Es una buena manera de ponerte a prueba y conocer nuevas áreas.
+
+### Aprendes
+
+¿Cuál es la mejor forma de aprender una tecnología nueva como Node? ¿O de usar una base de datos que nunca has tocado? En un proyecto tradicional no siempre vas a tener ese margen. Prueba a hacer un “hola mundo” en un lenguaje que no conozcas, después amplíalo, descubre qué puedes hacer con esa plataforma, lee documentación y experimenta. En definitiva: juega.
+
+### Ganas experiencia
+
+Imagina que, después de haber hecho un pequeño proyecto en un lenguaje que hace unos meses ni conocías, aparece una oferta de trabajo —ya sea freelance o por cuenta ajena—. Ya tienes el primer paso dado. Sin apenas darte cuenta has ganado experiencia. Puede que aún no seas experto, pero con el tiempo mejorarás.
+
+### Amplías portafolio
+
+Hoy en día da igual que tengas dos carreras, tres másteres y cuarenta certificados. Incluso me atrevería a decir que, dentro de un tiempo, ni siquiera importará tanto haber trabajado X años en una empresa si no puedes enseñar nada. Cada vez pesa más lo que has hecho o sabes hacer que lo que has estudiado. La gente quiere ver algo real para comprobar si eres la persona que necesita.
+
+Si haces diseño, súbelo a [Dribbble](http://dribbble.com). Si haces código, súbelo a [GitHub](http://github.com). Estos portales son hoy tanto o más importantes que un buen perfil en [LinkedIn](http://linkedin.com).
+
+Esa fue una de las razones por las que me decidí a desarrollar [TotalStats](http://totalstats.herokuapp.com "Totalstats | Totalstats para todo"). No teníamos un modelo de negocio definido ni esperábamos ganar dinero de inmediato. Después de un tiempo trabajando para empresas o clientes privados, acabas teniendo trabajos que no puedes enseñar por contrato u otras razones, y un proyecto propio te permite ampliar tu portafolio.
+
+### Consigues clientes o trabajo
+
+Cuando te inscribes en una oferta o te contacta alguien y te pide un portafolio, ya tienes algo que enseñar y, además, completamente tuyo. Es una forma de demostrar tanto tus conocimientos técnicos como tus habilidades. Has invertido tiempo en desarrollar tu proyecto, sí, pero esa inversión puede terminar amortizándose con una buena oportunidad posterior.
+
+Por eso os animo a invertir parte de vuestro tiempo libre en aprender cosas nuevas y en desarrollar pequeños proyectos propios. Nunca se sabe quién puede estar al otro lado viendo tu trabajo.

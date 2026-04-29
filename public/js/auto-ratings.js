@@ -13,6 +13,10 @@
     return (mixed % 10000) / 10000;
   }
 
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+  }
+
   function parseDateFromDocument() {
     var publishedMeta = document.querySelector('meta[itemprop="datePublished"]');
     if (publishedMeta && /^\d{4}-\d{2}-\d{2}/.test(publishedMeta.content || '')) {
@@ -37,7 +41,7 @@
     return null;
   }
 
-  function getVoteProjection(seed, publishedDate) {
+  function getVoteCount(seed, publishedDate) {
     var now = new Date();
     var daysSincePublication = Math.max(
       0,
@@ -60,28 +64,56 @@
     var votes = Math.floor(phase1Days * phase1Rate) + Math.floor(phase2Days * phase2Rate);
     votes += Math.floor(phase3Days / isolatedInterval);
 
-    if (activeDays > 0 && votes === 0) {
-      votes = 1;
+    return Math.max(0, votes);
+  }
+
+  function getSimulatedVote(seed, index) {
+    // Sesgo general del artículo: la mayoría tenderán a estar bien valorados,
+    // pero no todos tendrán exactamente el mismo patrón.
+    var articleBias = 4.15 + seededUnit(seed, 'article-bias') * 0.75; // 4.15 - 4.90
+    var trend = (seededUnit(seed, 'article-trend') - 0.5) * 0.35; // ligera deriva con el tiempo
+    var localTarget = articleBias + trend * Math.min(1, index / 40);
+
+    // Los primeros votos son más volátiles; luego la media se estabiliza.
+    var volatility = index < 3 ? 2.2 : index < 10 ? 1.5 : 0.9;
+    var noise = (seededUnit(seed, 'vote:' + index) - 0.5) * volatility;
+
+    var raw = clamp(localTarget + noise, 1, 5);
+
+    // Simulamos votos reales por estrellas enteras.
+    return Math.round(raw);
+  }
+
+  function getVoteProjection(seed, publishedDate) {
+    var votes = getVoteCount(seed, publishedDate);
+
+    if (votes === 0) {
+      return {
+        votes: 0,
+        average: 0
+      };
     }
 
-    var targetBase = 4.4 + (seededUnit(seed, 'target-base') * 0.45);
-    var confidenceBoost = Math.min(0.25, Math.log10(votes + 1) * 0.18);
-    var average = Math.min(5, targetBase + confidenceBoost);
-    average = Math.max(4.4, average);
+    var total = 0;
+    for (var i = 0; i < votes; i += 1) {
+      total += getSimulatedVote(seed, i);
+    }
 
     return {
       votes: votes,
-      average: Number(average.toFixed(1))
+      average: Number((total / votes).toFixed(1))
     };
   }
 
   function updateRatingsNode(ratingsNode, projection) {
     var sublineNode = ratingsNode.closest('.ct-subline__time');
+    var averageDisplay = Number(projection.average || 0).toFixed(1);
+
     if (sublineNode) {
       var strongNodes = sublineNode.querySelectorAll('strong');
       if (strongNodes.length >= 2) {
         strongNodes[0].textContent = String(projection.votes);
-        strongNodes[1].textContent = String(projection.average);
+        strongNodes[1].textContent = averageDisplay;
       }
     }
 
@@ -89,7 +121,7 @@
     var ratingCountMeta = ratingsNode.querySelector('[data-rating-count], [itemprop="ratingCount"]');
 
     if (ratingValueMeta) {
-      ratingValueMeta.setAttribute('content', String(projection.average));
+      ratingValueMeta.setAttribute('content', averageDisplay);
     }
 
     if (ratingCountMeta) {

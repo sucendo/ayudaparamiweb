@@ -47,6 +47,27 @@ const CT_CLASS_BY_BG_CLASS = {
   'bg-teal': 'ct-green'
 };
 
+const CT_CLASS_BY_THEME_COLOR = {
+  '#64448f': 'ct-purple',
+  '#e2674a': 'ct-orange',
+  '#ee9e2d': 'ct-orange',
+  '#46a4da': 'ct-blue',
+  '#47a3da': 'ct-blue',
+  '#58b391': 'ct-green',
+  '#2fa06a': 'ct-green',
+  '#537b7b': 'ct-green',
+  '#f06a6a': 'ct-red',
+  '#d25565': 'ct-red',
+  '#d4bf4a': 'ct-yellow',
+  '#f1c40f': 'ct-yellow'
+};
+
+function resolveContentColorClass(metadata) {
+  const themeColor = String(metadata && metadata.themeColor || '').toLowerCase();
+  const heroClass = String(metadata && metadata.heroClass || '').toLowerCase();
+  return CT_CLASS_BY_THEME_COLOR[themeColor] || CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red';
+}
+
 const stripTags = (value) => (value || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 const getSlug = (routePath) => routePath.replace(/^\//, '');
 const getViewFile = (route) => path.join(__dirname, '..', 'views', `${route.view}.ejs`);
@@ -398,8 +419,8 @@ function loadArticles() {
       category,
       type: 'article',
       image,
-      colorClass: CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red',
-      accentColor: ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      colorClass: resolveContentColorClass(metadata),
+      accentColor: metadata.themeColor || ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
       ratingValue: Number(metadata.ratingValue || 0),
       ratingCount: Number(metadata.ratingCount || 0),
       view: route.view

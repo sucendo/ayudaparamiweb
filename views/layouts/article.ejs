@@ -112,28 +112,27 @@
     </article>
 
     <% if ((metadata.tags || []).length) { %>
-      <div class="ct-tags article-v2-tags">
-        <strong>Etiquetas:</strong>
+      <p class="ct-tags">Etiquetado en:
         <% metadata.tags.forEach(function(tag) { %>
           <a href="/tags?tag=<%= encodeURIComponent(tag) %>" rel="tag"><%= tag %></a>
         <% }); %>
-      </div>
+      </p>
     <% } %>
 
     <% if (articleRelated.length) { %>
-      <section class="article-related" data-related-posts="true" aria-labelledby="article-related-title">
-        <h2 id="article-related-title">Artículos relacionados</h2>
-        <div class="article-related-grid">
-          <% articleRelated.forEach(function(item) { %>
-            <article class="article-related-card">
-              <a href="<%= item.path %>">
-                <span class="article-related-title"><%= item.title %></span>
-                <% if (item.excerpt) { %><span class="article-related-excerpt"><%= item.excerpt %></span><% } %>
-              </a>
-            </article>
-          <% }); %>
-        </div>
-      </section>
+      <div class="ct-row" data-related-posts="true">
+        <article class="ct-box <%= articleToneClass %>">
+          <div class="ct-box-inner">
+            <h3>Artículos relacionados</h3>
+            <p class="ct-feat-excerpt">Lecturas recomendadas por temática y categoría:</p>
+            <ul class="ct-related-links">
+              <% articleRelated.forEach(function(item) { %>
+                <li><a href="<%= item.path %>"><%= item.title %></a></li>
+              <% }); %>
+            </ul>
+          </div>
+        </article>
+      </div>
     <% } %>
 
     <% if (previousArticle || nextArticle) { %>

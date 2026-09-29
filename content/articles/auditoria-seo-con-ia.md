@@ -9,9 +9,9 @@ tags: ["SEO", "Estrategia digital", "Auditoría SEO con IA"]
 publishedDate: "2024-10-10"
 ratingCount: "0"
 ratingValue: "0.0"
-featuredImage: "/img/articulo/searching.svg"
-heroClass: "bg-purple"
-themeColor: "#537b7b"
+featuredImage: "/img/articulo/featured/auditoria-seo-con-ia.webp"
+heroClass: "bg-red"
+themeColor: "#d25565"
 robots: "index,follow"
 ---
 <p>Hacer una auditoría SEO con IA no debería consistir en lanzar una herramienta, descargar un informe y asumir que todo lo que aparece ahí merece la misma atención. La inteligencia artificial puede acelerar muchísimo el análisis, detectar patrones con rapidez y sacar a la luz errores que a simple vista pasarían desapercibidos. Pero una auditoría útil sigue necesitando algo que ninguna herramienta puede reemplazar del todo: criterio para interpretar los datos y capacidad para decidir qué cambios tienen prioridad real.</p>

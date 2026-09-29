@@ -8,9 +8,9 @@ tags: ["SEO", "Autoridad de dominio", "Posicionamiento web", "Enlaces", "Marketi
 publishedDate: "2019-01-20"
 ratingCount: "0"
 ratingValue: "0.0"
-featuredImage: "/img/articulo/searching.svg"
-heroClass: "bg-purple"
-themeColor: "#537b7b"
+featuredImage: "/img/articulo/featured/autoridad-de-dominio.webp"
+heroClass: "bg-orange"
+themeColor: "#ee9e2d"
 robots: "index,follow"
 ---
 <p>Cuando una web empieza a trabajar su posicionamiento, no tarda en aparecer una expresión que genera bastante curiosidad: la autoridad de dominio. A veces se habla de ella como si fuera una puntuación definitiva sobre la calidad de una página, cuando en realidad conviene entenderla con más calma y sin simplificar demasiado.</p>

@@ -56,10 +56,10 @@ test('Web creation article does not repeat a stale featured image inside the bod
 
 test('Editorial featured images exist and keep each article ct-color', async () => {
   const cases = [
-    ['seo-que-es', '/img/articulo/featured/seo-que-es.webp', 'ct-blue'],
-    ['guia-seo-pymes-2026', '/img/articulo/featured/guia-seo-pymes-2026.webp', 'ct-purple'],
-    ['autoridad-de-dominio', '/img/articulo/featured/autoridad-de-dominio.svg', 'ct-orange'],
-    ['auditoria-seo-con-ia', '/img/articulo/featured/auditoria-seo-con-ia.webp', 'ct-red']
+    ['seo-que-es', '/img/articulo/seo-que-es-featured.webp', 'ct-blue'],
+    ['guia-seo-pymes-2026', '/img/articulo/guia-seo-pymes-2026-featured.webp', 'ct-purple'],
+    ['autoridad-de-dominio', '/img/articulo/autoridad-de-dominio-featured.svg', 'ct-orange'],
+    ['auditoria-seo-con-ia', '/img/articulo/auditoria-seo-con-ia-featured.webp', 'ct-red']
   ];
 
   const allContent = await contentCatalog.buildCatalog();
@@ -91,16 +91,16 @@ function assertValidWebp(filePath) {
 
 test('Editorial WebP assets are complete, not truncated', () => {
   [
-    'seo-que-es.webp',
-    'guia-seo-pymes-2026.webp',
-    'auditoria-seo-con-ia.webp'
+    'seo-que-es-featured.webp',
+    'guia-seo-pymes-2026-featured.webp',
+    'auditoria-seo-con-ia-featured.webp'
   ].forEach((fileName) => {
-    assertValidWebp(path.join(__dirname, '..', 'public', 'img', 'articulo', 'featured', fileName));
+    assertValidWebp(path.join(__dirname, '..', 'public', 'img', 'articulo', fileName));
   });
 });
 
 test('Domain authority vector featured image is valid SVG', () => {
-  const filePath = path.join(__dirname, '..', 'public', 'img', 'articulo', 'featured', 'autoridad-de-dominio.svg');
+  const filePath = path.join(__dirname, '..', 'public', 'img', 'articulo', 'autoridad-de-dominio-featured.svg');
   const svg = fs.readFileSync(filePath, 'utf8');
 
   assert.match(svg, /^<svg\b/);

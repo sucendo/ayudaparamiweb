@@ -7,31 +7,40 @@ canonical: "/codigo-traductor-google-blog"
 category: "tutoriales"
 tags: ["Desarrollo web", "Google", "Tutorial"]
 publishedDate: "2018-02-21"
-ratingCount: "14"
-ratingValue: "4.1"
 featuredImage: "/img/articulo/codigo-traductor-google-blog.png"
 heroClass: "bg-blue"
 themeColor: "#537b7b"
 robots: "index,follow"
 ---
-<p>Si tu blog recibe visitas de varios países, añadir un traductor visible puede ayudarte a mejorar la experiencia del usuario en segundos.</p>
-								<p>En este artículo te dejo un ejemplo sencillo para colocar un selector de idiomas con banderas que abre Google Translate con la URL actual de tu página.</p>
-								<p>Es una solución rápida y fácil de mantener, ideal para blogs personales o webs pequeñas que todavía no tienen una estrategia de internacionalización completa.</p>
-								
-								<h2>¿Cómo funciona este método?</h2>
-								<p>La idea es crear varios enlaces, uno por idioma. Cada enlace ejecuta <code>window.open()</code> con una URL de Google Translate que incluye:</p>
-								<p><code>u</code>: la dirección de la página que se está visitando.</p>
-								<p><code>langpair</code>: combinación idioma automático a idioma destino (por ejemplo, <code>auto|en</code> para inglés).</p>
-								<p>Así, cuando el usuario pulsa una bandera, se abre la versión traducida sin tocar tu estructura de contenidos original.</p>
+Si tu blog recibe visitas de varios países, añadir un traductor visible puede ayudarte a mejorar la experiencia del usuario en segundos.
 
-								<h2>Cuándo usarlo (y cuándo no)</h2>
-								<p>Este enfoque es útil cuando necesitas una mejora rápida para visitantes internacionales.</p>
-								<p>Si tu proyecto depende mucho del SEO internacional, de la precisión legal o de conversiones por país, te conviene crear contenidos nativos por idioma en lugar de depender solo de traducción automática.</p>
-								<p>Como punto de partida, sin embargo, este widget sigue siendo práctico y fácil de implementar.</p>
+En este artículo te dejo un ejemplo sencillo para colocar un selector de idiomas con banderas que abre Google Translate con la URL actual de tu página.
 
-								<h2>La estructura HTML</h2>
-								<p>A continuación tienes el bloque completo. Incluye estilos básicos para los iconos y los enlaces de idioma listos para copiar y adaptar a tu web.</p>
-								<pre class="line-numbers" data-start="0"><code class="language-html">&lt;style&gt;
+Es una solución rápida y fácil de mantener, ideal para blogs personales o webs pequeñas que todavía no tienen una estrategia de internacionalización completa.
+
+## ¿Cómo funciona este método?
+
+La idea es crear varios enlaces, uno por idioma. Cada enlace ejecuta `window.open()` con una URL de Google Translate que incluye:
+
+`u`: la dirección de la página que se está visitando.
+
+`langpair`: combinación idioma automático a idioma destino (por ejemplo, `auto|en` para inglés).
+
+Así, cuando el usuario pulsa una bandera, se abre la versión traducida sin tocar tu estructura de contenidos original.
+
+## Cuándo usarlo (y cuándo no)
+
+Este enfoque es útil cuando necesitas una mejora rápida para visitantes internacionales.
+
+Si tu proyecto depende mucho del SEO internacional, de la precisión legal o de conversiones por país, te conviene crear contenidos nativos por idioma en lugar de depender solo de traducción automática.
+
+Como punto de partida, sin embargo, este widget sigue siendo práctico y fácil de implementar.
+
+## La estructura HTML
+
+A continuación tienes el bloque completo. Incluye estilos básicos para los iconos y los enlaces de idioma listos para copiar y adaptar a tu web.
+
+<pre class="line-numbers" data-start="0"><code class="language-html">&lt;style&gt;
 .google_translate img {
 filter:alpha(opacity=100);
 -moz-opacity: 1.0;
@@ -70,12 +79,19 @@ border:0;
 &lt;div 0px 0pxâ?? style="â??font-size:10px;margin:8px" 3px&gt;&lt;/div&gt;
 &lt;br/&gt;
 &lt;a href="http://www.ayudaparamiweb.com/"&gt;&lt;font size="1px"&gt;Widget ofrecido por www.ayudaparamiweb.com&lt;/font&gt;&lt;/a&gt;</code></pre>							
-								<h2>Consejos antes de publicarlo</h2>
-								<p>Prueba los enlaces desde móvil y escritorio para comprobar que todos los idiomas abren correctamente.</p>
-								<p>Revisa también que las imágenes de banderas sigan disponibles (en este ejemplo son URLs externas) o, mejor aún, súbelas a tu propio servidor para evitar dependencias.</p>
-								<p>Si quieres mejorar accesibilidad, añade textos alternativos claros y aumenta el tamaño de los iconos cuando se vean en pantallas pequeñas.</p>
 
-								<h2>En conclusión</h2>
-								<p>Este widget de traducción es una forma rápida de hacer tu blog más accesible para lectores de otros idiomas sin una implementación compleja.</p>
-								<p>No sustituye una estrategia multidioma profesional, pero como solución inicial cumple muy bien su objetivo.</p>
-								<p>Si te interesa, en un siguiente tutorial puedo compartir una versión más moderna con diseño responsive y mejores métricas de usabilidad.</p>
+## Consejos antes de publicarlo
+
+Prueba los enlaces desde móvil y escritorio para comprobar que todos los idiomas abren correctamente.
+
+Revisa también que las imágenes de banderas sigan disponibles (en este ejemplo son URLs externas) o, mejor aún, súbelas a tu propio servidor para evitar dependencias.
+
+Si quieres mejorar accesibilidad, añade textos alternativos claros y aumenta el tamaño de los iconos cuando se vean en pantallas pequeñas.
+
+## En conclusión
+
+Este widget de traducción es una forma rápida de hacer tu blog más accesible para lectores de otros idiomas sin una implementación compleja.
+
+No sustituye una estrategia multidioma profesional, pero como solución inicial cumple muy bien su objetivo.
+
+Si te interesa, en un siguiente tutorial puedo compartir una versión más moderna con diseño responsive y mejores métricas de usabilidad.

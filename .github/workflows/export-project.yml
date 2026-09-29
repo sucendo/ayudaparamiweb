@@ -1,0 +1,35 @@
+name: Export full project ZIP
+
+on:
+  push:
+    branches:
+      - project-zip-export
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Prepare clean project folder
+        run: |
+          mkdir -p export/ayudaparamiweb
+          rsync -a ./ export/ayudaparamiweb/ \
+            --exclude '.git' \
+            --exclude 'export' \
+            --exclude 'node_modules' \
+            --exclude 'dist'
+
+      - name: Upload complete source project
+        uses: actions/upload-artifact@v4
+        with:
+          name: ayudaparamiweb-source
+          path: export/ayudaparamiweb
+          if-no-files-found: error

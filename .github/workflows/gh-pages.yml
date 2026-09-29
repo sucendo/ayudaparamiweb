@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -12,7 +15,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages
+  group: github-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -26,7 +29,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 24
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -35,17 +38,24 @@ jobs:
         run: npm install
 
       - name: Generate top articles from GA4
+        if: github.ref == 'refs/heads/main'
         env:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
           TOP_ARTICLES_LIMIT: 10
         run: node scripts/generate-top-articles.js
+
+      - name: Run tests
+        run: npm test
+
+      - name: Validate content
+        run: npm run validate:content
 
       - name: Build static site for Pages
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
           SITE_BASE_PATH: /
           SITE_URL: https://ayudaparamiweb.com
-        run: node scripts/build-pages.js
+        run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
@@ -53,6 +63,7 @@ jobs:
           path: ./dist
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

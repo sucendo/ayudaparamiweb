@@ -3,24 +3,21 @@
   "version": "0.0.1",
   "description": "Todo lo necesarío para crear una web",
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "node --test tests/**/*.test.js",
-    "build:static": "node scripts/build-static.js",
-    "build:pages": "node scripts/build-pages.js",
-    "start:static": "APP_MODE=static node index.js",
+    "build": "node scripts/build-pages.js",
+    "build:pages": "npm run build",
     "start:node": "APP_MODE=node node index.js",
-    "build:static:gh": "BASE_PATH=/${npm_package_name}/ node scripts/build-static.js",
     "validate:content": "node scripts/validate-content.js",
     "generate:top-articles": "node scripts/generate-top-articles.js"
   },
   "dependencies": {
     "ejs": "^2.7.4",
     "express": "4.13.3",
-    "opbeat": "^3.14.0",
     "@google-analytics/data": "^4.12.0"
   },
   "license": "MIT"

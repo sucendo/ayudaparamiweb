@@ -37,8 +37,8 @@
         <div class="ct-subline entry-meta">
           <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
             <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-              <img alt="" src="http://www.ayudaparamiweb.com/img/author/sucender.png" srcset="img/author/sucender.png" class="avatar avatar-36 photo" height="36" width="36">
-              <meta itemprop="url" content="http://www.ayudaparamiweb.com/img/author/sucender.png">
+              <img alt="" src="/img/author/sucender.png" srcset="/img/author/sucender.png" class="avatar avatar-36 photo" height="36" width="36">
+              <meta itemprop="url" content="https://ayudaparamiweb.com/img/author/sucender.png">
               <meta itemprop="width" content="36">
               <meta itemprop="height" content="36">
             </div>
@@ -62,15 +62,6 @@
             <% } %>
             Publicado el
             <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
-            <% if (metadata.ratingCount !== undefined && metadata.ratingValue !== undefined) { %>
-              <strong><%= metadata.ratingCount %></strong> votos. Media: <strong><%= metadata.ratingValue %></strong> de 5
-              <div style="display: none;" class="post-ratings">
-                <meta data-rating-best content="5">
-                <meta data-rating-worst content="1">
-                <meta data-rating-value content="<%= metadata.ratingValue %>">
-                <meta data-rating-count content="<%= metadata.ratingCount %>">
-              </div>
-            <% } %>
           </div>
         </div>
 
@@ -82,7 +73,7 @@
 
         <div class="ct-post-featured-img" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>">
-          <meta itemprop="url" content="https://www.ayudaparamiweb.com<%= metadata.featuredImage %>">
+          <meta itemprop="url" content="https://ayudaparamiweb.com<%= metadata.featuredImage %>">
           <meta itemprop="width" content="800">
           <meta itemprop="height" content="500">
         </div>

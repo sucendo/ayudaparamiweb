@@ -100,6 +100,66 @@ function writeNoJekyll() {
   fs.writeFileSync(path.join(outputDir, '.nojekyll'), '', 'utf8');
 }
 
+function escapeXml(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function absoluteUrl(routePath) {
+  const normalizedPath = routePath === '/' ? '/' : `/${String(routePath || '').replace(/^\/+|\/+$/g, '')}`;
+  return `${siteUrl}${normalizedPath}`;
+}
+
+function writeRobots() {
+  const content = [
+    'User-agent: *',
+    'Allow: /',
+    '',
+    `Sitemap: ${siteUrl}/sitemap.xml`,
+    ''
+  ].join('\n');
+
+  fs.writeFileSync(path.join(outputDir, 'robots.txt'), content, 'utf8');
+}
+
+function writeSitemap() {
+  const entries = routes
+    .filter((route) => route.path && route.path !== '/404' && route.path !== '/buscar')
+    .map((route) => {
+      let lastmod = '';
+
+      if (route.contentType && route.contentSlug) {
+        try {
+          const metadata = contentLoader.loadByType(route.contentType, route.contentSlug);
+          lastmod = metadata.modifiedDate || metadata.publishedDate || '';
+        } catch (error) {
+          lastmod = '';
+        }
+      }
+
+      return [
+        '  <url>',
+        `    <loc>${escapeXml(absoluteUrl(route.path))}</loc>`,
+        lastmod ? `    <lastmod>${escapeXml(lastmod)}</lastmod>` : '',
+        '  </url>'
+      ].filter(Boolean).join('\n');
+    });
+
+  const xml = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...entries,
+    '</urlset>',
+    ''
+  ].join('\n');
+
+  fs.writeFileSync(path.join(outputDir, 'sitemap.xml'), xml, 'utf8');
+}
+
 function toViewFile(view) {
   return path.join(viewsDir, `${view}.ejs`);
 }
@@ -145,7 +205,6 @@ function rewriteLegacyDomain(html) {
 function resolvePageContext(route, allContent) {
   var topArticles = siteData.loadTopArticles();
   var friendLinks = siteData.loadFriendLinks();
-  var topRatedArticles = siteData.loadTopRatedArticles(5);
   if (route.contentType && route.contentSlug) {
     return {
       metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
@@ -154,8 +213,7 @@ function resolvePageContext(route, allContent) {
       query: '',
       results: [],
       topArticles: topArticles,
-      friendLinks: friendLinks,
-      topRatedArticles: topRatedArticles
+      friendLinks: friendLinks
     };
   }
 
@@ -179,8 +237,7 @@ function resolvePageContext(route, allContent) {
     query: '',
     results: [],
     topArticles: topArticles,
-    friendLinks: friendLinks,
-    topRatedArticles: topRatedArticles
+    friendLinks: friendLinks
   };
 }
 
@@ -210,6 +267,8 @@ async function build() {
   const allContent = await contentCatalog.buildCatalog();
   writeContentIndex(allContent);
   routes.forEach((route) => renderRoute(route, allContent));
+  writeRobots();
+  writeSitemap();
   writeNoJekyll();
 
   console.log(`GitHub Pages site generated at ${outputDir}`);

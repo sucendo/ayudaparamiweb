@@ -1,5 +1,3 @@
-var opbeat = require('opbeat').start();
-
 var express = require('express');
 var path = require('path');
 var routeCatalog = require('./routes');
@@ -40,7 +38,6 @@ function searchContent(contentItems, query) {
 function resolvePageContext(route, allContent) {
   var topArticles = siteData.loadTopArticles();
   var friendLinks = siteData.loadFriendLinks();
-  var topRatedArticles = siteData.loadTopRatedArticles(5);
   if (route.contentType && route.contentSlug) {
     return {
       metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
@@ -49,8 +46,7 @@ function resolvePageContext(route, allContent) {
       query: '',
       results: [],
       topArticles: topArticles,
-      friendLinks: friendLinks,
-      topRatedArticles: topRatedArticles
+      friendLinks: friendLinks
     };
   }
 
@@ -74,8 +70,7 @@ function resolvePageContext(route, allContent) {
     query: '',
     results: [],
     topArticles: topArticles,
-    friendLinks: friendLinks,
-    topRatedArticles: topRatedArticles
+    friendLinks: friendLinks
   };
 }
 
@@ -92,7 +87,6 @@ async function bootstrap() {
   }
 
   app.use(express.static(__dirname + '/public'));
-  app.use(opbeat.middleware.express());
 
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
@@ -112,8 +106,7 @@ async function bootstrap() {
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       topArticles: siteData.loadTopArticles(),
-      friendLinks: siteData.loadFriendLinks(),
-      topRatedArticles: siteData.loadTopRatedArticles(5)
+      friendLinks: siteData.loadFriendLinks()
     });
   });
 
@@ -133,8 +126,7 @@ async function bootstrap() {
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       topArticles: siteData.loadTopArticles(),
-      friendLinks: siteData.loadFriendLinks(),
-      topRatedArticles: siteData.loadTopRatedArticles(5)
+      friendLinks: siteData.loadFriendLinks()
     });
   });
 

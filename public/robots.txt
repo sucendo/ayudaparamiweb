@@ -1,16 +1,4 @@
-User-agent: Googlebot
-Disallow:
+User-agent: *
+Allow: /
 
-User-agent: Adsbot-Google
-Disallow:
-
-User-agent: Mediapartners-Google
-Disallow:
-
-User-agent: Googlebot-Image
-Disallow:
-
-User-agent: Bingbot
-Disallow:
-
-Sitemap: http://www.ayudaparamiweb.com/sitemap.xml
+Sitemap: https://ayudaparamiweb.com/sitemap.xml

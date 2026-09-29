@@ -33,7 +33,8 @@ const ACCENT_BY_BG_CLASS = {
   'bg-green': '#2fa06a',
   'bg-red': '#d25565',
   'bg-orange': '#ee9e2d',
-  'bg-yellow': '#f1c40f'
+  'bg-yellow': '#f1c40f',
+  'bg-teal': '#537b7b'
 };
 
 const CT_CLASS_BY_BG_CLASS = {
@@ -42,7 +43,8 @@ const CT_CLASS_BY_BG_CLASS = {
   'bg-green': 'ct-green',
   'bg-red': 'ct-red',
   'bg-orange': 'ct-orange',
-  'bg-yellow': 'ct-yellow'
+  'bg-yellow': 'ct-yellow',
+  'bg-teal': 'ct-green'
 };
 
 const stripTags = (value) => (value || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();

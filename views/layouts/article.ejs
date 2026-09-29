@@ -102,13 +102,13 @@
 
       <div class="ct-post-content article-v2-content">
         <% if ((metadata.toc || []).length) { %>
-          <nav class="article-toc" aria-labelledby="article-toc-title">
+          <nav class="article-toc <%= articleToneClass %>" aria-labelledby="article-toc-title">
             <details open>
               <summary id="article-toc-title">Índice del artículo</summary>
               <ol>
                 <% metadata.toc.forEach(function(item) { %>
                   <li class="toc-level-<%= item.level %>">
-                    <a href="#<%= item.id %>"><%= item.text %></a>
+                    <a href="<%= metadata.canonical || ('/' + metadata.slug) %>#<%= item.id %>"><%= item.text %></a>
                   </li>
                 <% }); %>
               </ol>
@@ -148,18 +148,23 @@
 
     <% if (previousArticle || nextArticle) { %>
       <nav class="article-pagination" aria-label="Navegación entre artículos">
-        <div>
-          <% if (previousArticle) { %>
-            <span>Artículo anterior</span>
+        <% if (previousArticle) { %>
+          <article class="article-pagination-card article-pagination-prev ct-box <%= previousArticle.colorClass || 'ct-purple' %>">
+            <span>← Artículo anterior</span>
             <a href="<%= previousArticle.path %>"><%= previousArticle.title %></a>
-          <% } %>
-        </div>
-        <div>
-          <% if (nextArticle) { %>
-            <span>Artículo siguiente</span>
+          </article>
+        <% } else { %>
+          <div class="article-pagination-empty" aria-hidden="true"></div>
+        <% } %>
+
+        <% if (nextArticle) { %>
+          <article class="article-pagination-card article-pagination-next ct-box <%= nextArticle.colorClass || 'ct-purple' %>">
+            <span>Artículo siguiente →</span>
             <a href="<%= nextArticle.path %>"><%= nextArticle.title %></a>
-          <% } %>
-        </div>
+          </article>
+        <% } else { %>
+          <div class="article-pagination-empty" aria-hidden="true"></div>
+        <% } %>
       </nav>
     <% } %>
 

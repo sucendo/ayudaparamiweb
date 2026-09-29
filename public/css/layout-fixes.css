@@ -432,3 +432,112 @@
 .page-type-article .article-pagination a:focus {
   text-decoration: underline;
 }
+
+
+/* Article v2.2: per-article identity and editorial featured images */
+.page-type-article .ct-main-post .ct-tags {
+  color: #e7eef2;
+}
+
+.page-type-article .ct-main-post .ct-tags-label {
+  color: #e7eef2;
+  font-weight: 700;
+}
+
+.page-type-article .ct-main-post .ct-tags a {
+  background: #fff;
+  border: 1px solid rgba(255,255,255,.28);
+  padding: 5px 12px;
+  color: #334954;
+  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+}
+
+.page-type-article .article-related-classic {
+  margin: 20px 0 24px;
+}
+
+.page-type-article .article-related-heading {
+  margin-bottom: 10px;
+}
+
+.page-type-article .article-related-heading h3 {
+  margin: 0 0 5px;
+  color: #f2f6f8;
+  font-size: 1.25rem;
+}
+
+.page-type-article .article-related-heading p {
+  margin: 0;
+  color: #b9c7cf;
+  line-height: 1.5;
+}
+
+.page-type-article .article-related-color-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.page-type-article .article-related-color-grid .ct-box {
+  margin: 0;
+  padding: 18px 20px;
+  min-width: 0;
+}
+
+.page-type-article .article-related-color-grid .ct-box-inner {
+  height: 100%;
+}
+
+.page-type-article .article-related-color-grid h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.page-type-article .article-related-color-grid a {
+  color: #263943;
+  text-decoration: none;
+}
+
+.page-type-article .article-related-color-grid a:hover,
+.page-type-article .article-related-color-grid a:focus {
+  text-decoration: underline;
+}
+
+.page-type-article .article-pagination {
+  border-top-color: rgba(255,255,255,.16);
+}
+
+.page-type-article .article-pagination span {
+  color: #aebfc8;
+}
+
+.page-type-article .article-pagination a {
+  color: #f2f6f8;
+}
+
+.page-type-article .article-v2-featured {
+  overflow: hidden;
+  border: 1px solid #d8e0e7;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  background: #f7fafb;
+  box-shadow: 0 10px 24px rgba(17,32,43,.12);
+}
+
+.page-type-article .article-v2-featured img {
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+}
+
+@media (max-width: 720px) {
+  .page-type-article .article-related-color-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-type-article .article-v2-featured {
+    border-bottom-width: 6px;
+  }
+}

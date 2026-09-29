@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - v2-site-unification
   pull_request:
     branches:
       - main
@@ -15,7 +16,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages
+  group: github-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -62,7 +63,7 @@ jobs:
           path: ./dist
 
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

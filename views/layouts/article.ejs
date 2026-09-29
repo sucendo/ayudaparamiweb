@@ -8,7 +8,8 @@
       'bg-blue': 'ct-blue',
       'bg-green': 'ct-green',
       'bg-red': 'ct-red',
-      'bg-yellow': 'ct-yellow'
+      'bg-yellow': 'ct-yellow',
+      'bg-teal': 'ct-green'
     };
 
     if (toneByHero[heroClass]) return toneByHero[heroClass];
@@ -25,6 +26,7 @@
     if (themeColor === '#58b391') return 'ct-green';
     if (themeColor === '#f06a6a') return 'ct-red';
     if (themeColor === '#d4bf4a') return 'ct-yellow';
+    if (themeColor === '#537b7b') return 'ct-green';
 
     return 'ct-purple';
   };
@@ -85,7 +87,7 @@
       </header>
 
       <% if (metadata.featuredImage) { %>
-        <figure class="ct-post-featured-img article-v2-featured" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <figure class="ct-post-featured-img article-v2-featured <%= articleToneClass %>" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>" fetchpriority="high">
           <meta itemprop="url" content="https://ayudaparamiweb.com<%= metadata.featuredImage %>">
         </figure>
@@ -112,7 +114,7 @@
     </article>
 
     <% if ((metadata.tags || []).length) { %>
-      <p class="ct-tags">Etiquetado en:
+      <p class="ct-tags"><span class="ct-tags-label">Etiquetado en:</span>
         <% metadata.tags.forEach(function(tag) { %>
           <a href="/tags?tag=<%= encodeURIComponent(tag) %>" rel="tag"><%= tag %></a>
         <% }); %>
@@ -120,19 +122,21 @@
     <% } %>
 
     <% if (articleRelated.length) { %>
-      <div class="ct-row" data-related-posts="true">
-        <article class="ct-box <%= articleToneClass %>">
-          <div class="ct-box-inner">
-            <h3>Artículos relacionados</h3>
-            <p class="ct-feat-excerpt">Lecturas recomendadas por temática y categoría:</p>
-            <ul class="ct-related-links">
-              <% articleRelated.forEach(function(item) { %>
-                <li><a href="<%= item.path %>"><%= item.title %></a></li>
-              <% }); %>
-            </ul>
-          </div>
-        </article>
-      </div>
+      <section class="article-related-classic" data-related-posts="true" aria-labelledby="article-related-title">
+        <div class="article-related-heading">
+          <h3 id="article-related-title">Artículos relacionados</h3>
+          <p>Lecturas recomendadas por temática y categoría:</p>
+        </div>
+        <div class="article-related-color-grid">
+          <% articleRelated.forEach(function(item) { %>
+            <article class="ct-box <%= item.colorClass || 'ct-purple' %>">
+              <div class="ct-box-inner">
+                <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
+              </div>
+            </article>
+          <% }); %>
+        </div>
+      </section>
     <% } %>
 
     <% if (previousArticle || nextArticle) { %>

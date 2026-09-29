@@ -58,7 +58,7 @@ test('Editorial featured images exist and keep each article ct-color', async () 
   const cases = [
     ['seo-que-es', '/img/articulo/featured/seo-que-es.webp', 'ct-blue'],
     ['guia-seo-pymes-2026', '/img/articulo/featured/guia-seo-pymes-2026.webp', 'ct-purple'],
-    ['autoridad-de-dominio', '/img/articulo/featured/autoridad-de-dominio.webp', 'ct-orange'],
+    ['autoridad-de-dominio', '/img/articulo/featured/autoridad-de-dominio.svg', 'ct-orange'],
     ['auditoria-seo-con-ia', '/img/articulo/featured/auditoria-seo-con-ia.webp', 'ct-red']
   ];
 
@@ -79,4 +79,30 @@ test('SEO guide no longer repeats its former featured image inside the body', ()
   const article = contentLoader.loadArticle('guia-seo-pymes-2026');
 
   assert.doesNotMatch(article.bodyHtml, /backlink-que-es-como-construir-red-de-enlaces\.png/i);
+});
+
+
+function assertValidWebp(filePath) {
+  const buffer = fs.readFileSync(filePath);
+  assert.equal(buffer.subarray(0, 4).toString('ascii'), 'RIFF');
+  assert.equal(buffer.subarray(8, 12).toString('ascii'), 'WEBP');
+  assert.equal(buffer.readUInt32LE(4) + 8, buffer.length);
+}
+
+test('Editorial WebP assets are complete, not truncated', () => {
+  [
+    'seo-que-es.webp',
+    'guia-seo-pymes-2026.webp',
+    'auditoria-seo-con-ia.webp'
+  ].forEach((fileName) => {
+    assertValidWebp(path.join(__dirname, '..', 'public', 'img', 'articulo', 'featured', fileName));
+  });
+});
+
+test('Domain authority vector featured image is valid SVG', () => {
+  const filePath = path.join(__dirname, '..', 'public', 'img', 'articulo', 'featured', 'autoridad-de-dominio.svg');
+  const svg = fs.readFileSync(filePath, 'utf8');
+
+  assert.match(svg, /^<svg\b/);
+  assert.match(svg, /viewBox="0 0 1200 630"/);
 });

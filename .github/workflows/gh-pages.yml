@@ -39,6 +39,7 @@ jobs:
         run: npm install
 
       - name: Generate top articles from GA4
+        if: github.ref == 'refs/heads/main'
         env:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
           TOP_ARTICLES_LIMIT: 10

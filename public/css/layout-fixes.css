@@ -601,3 +601,103 @@
     gap: 16px;
   }
 }
+
+
+/* Article v2.4: exact featured media sizing + white ct-colored navigation cards */
+.page-type-article .ct-post-featured-img.article-v2-featured {
+  display: block;
+  box-sizing: border-box;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 0 1.75rem !important;
+  padding: 0 !important;
+  line-height: 0;
+  font-size: 0;
+}
+
+.page-type-article .ct-post-featured-img.article-v2-featured img {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  aspect-ratio: auto;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.page-type-article .article-pagination {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 28px 0 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.page-type-article .article-pagination-card.ct-box {
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding: 18px 20px 20px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(17,32,43,.10);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.page-type-article .article-pagination-card.ct-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(17,32,43,.14);
+}
+
+.page-type-article .article-pagination-card span {
+  display: block;
+  margin: 0 0 7px;
+  color: #6f7f89;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.page-type-article .article-pagination-card a {
+  display: block;
+  color: #263943;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.page-type-article .article-pagination-card a:hover,
+.page-type-article .article-pagination-card a:focus {
+  color: #1d6f97;
+  text-decoration: underline;
+}
+
+.page-type-article .article-pagination-next {
+  text-align: right;
+}
+
+.page-type-article .article-pagination-empty {
+  min-height: 1px;
+}
+
+@media (max-width: 720px) {
+  .page-type-article .article-pagination {
+    grid-template-columns: 1fr;
+  }
+
+  .page-type-article .article-pagination-next {
+    text-align: left;
+  }
+
+  .page-type-article .article-pagination-empty {
+    display: none;
+  }
+}

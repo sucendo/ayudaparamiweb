@@ -52,3 +52,31 @@ test('Web creation article does not repeat a stale featured image inside the bod
   assert.doesNotMatch(article.bodyHtml, /como-crear-una-pagina-web\.jpg/i);
   assert.doesNotMatch(article.bodyHtml, /featured\/como-crear-una-pagina-web/i);
 });
+
+
+test('Editorial featured images exist and keep each article ct-color', async () => {
+  const cases = [
+    ['seo-que-es', '/img/articulo/featured/seo-que-es.webp', 'ct-blue'],
+    ['guia-seo-pymes-2026', '/img/articulo/featured/guia-seo-pymes-2026.webp', 'ct-purple'],
+    ['autoridad-de-dominio', '/img/articulo/featured/autoridad-de-dominio.webp', 'ct-orange'],
+    ['auditoria-seo-con-ia', '/img/articulo/featured/auditoria-seo-con-ia.webp', 'ct-red']
+  ];
+
+  const allContent = await contentCatalog.buildCatalog();
+
+  cases.forEach(([slug, expectedImage, expectedColor]) => {
+    const article = contentLoader.loadArticle(slug);
+    const imagePath = path.join(__dirname, '..', 'public', article.featuredImage.replace(/^\//, ''));
+    const catalogItem = allContent.find((item) => item.slug === slug);
+
+    assert.equal(article.featuredImage, expectedImage);
+    assert.ok(fs.existsSync(imagePath), `Missing featured image for ${slug}`);
+    assert.equal(catalogItem.colorClass, expectedColor);
+  });
+});
+
+test('SEO guide no longer repeats its former featured image inside the body', () => {
+  const article = contentLoader.loadArticle('guia-seo-pymes-2026');
+
+  assert.doesNotMatch(article.bodyHtml, /backlink-que-es-como-construir-red-de-enlaces\.png/i);
+});

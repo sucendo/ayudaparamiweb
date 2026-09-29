@@ -778,3 +778,12 @@
     margin-left: 8px;
   }
 }
+
+
+/* Article v2.5: keep the article ct-color visible under the featured image */
+.page-type-article .article-v2-featured.ct-blue { border-bottom-color: #a5ceff; }
+.page-type-article .article-v2-featured.ct-green { border-bottom-color: #78ddb6; }
+.page-type-article .article-v2-featured.ct-red { border-bottom-color: #ff7a7a; }
+.page-type-article .article-v2-featured.ct-orange { border-bottom-color: #ffdb9b; }
+.page-type-article .article-v2-featured.ct-yellow { border-bottom-color: #ffffac; }
+.page-type-article .article-v2-featured.ct-purple { border-bottom-color: #c9c4e9; }

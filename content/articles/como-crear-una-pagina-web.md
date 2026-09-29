@@ -16,7 +16,6 @@ robots: "index,follow"
 ---
 Ya sea que esté considerando construir un nuevo sitio web o desee volver a hacer su sitio web actual, se enfrenta a algunas decisiones básicas, pero importantes.
 
-![¿Cómo crear una página Web?](/img/articulo/featured/como-crear-una-pagina-web.jpg)
 
 En esta guía, le ayudaremos con estas decisiones mostrando sus elecciones y explicando cómo las opciones específicas se adaptarán a sus necesidades únicas. Cubriremos todo, desde comprender qué tipo de sitio web necesita y elegir un nombre de dominio, hasta los toques finales que le ayudarán a lanzar su sitio web con éxito, sin importar cuáles sean sus objetivos.
 

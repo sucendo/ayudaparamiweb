@@ -44,3 +44,11 @@ test('Article v2 featured image exists and theme color drives the article identi
   assert.equal(catalogItem.colorClass, 'ct-green');
   assert.equal(seoGuide.colorClass, 'ct-purple');
 });
+
+
+test('Web creation article does not repeat a stale featured image inside the body', () => {
+  const article = contentLoader.loadArticle('como-crear-una-pagina-web');
+
+  assert.doesNotMatch(article.bodyHtml, /como-crear-una-pagina-web\.jpg/i);
+  assert.doesNotMatch(article.bodyHtml, /featured\/como-crear-una-pagina-web/i);
+});

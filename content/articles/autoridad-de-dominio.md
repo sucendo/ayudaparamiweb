@@ -8,7 +8,7 @@ tags: ["SEO", "Autoridad de dominio", "Posicionamiento web", "Enlaces", "Marketi
 publishedDate: "2019-01-20"
 ratingCount: "0"
 ratingValue: "0.0"
-featuredImage: "/img/articulo/featured/autoridad-de-dominio.webp"
+featuredImage: "/img/articulo/featured/autoridad-de-dominio.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"
 robots: "index,follow"

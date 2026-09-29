@@ -8,9 +8,9 @@ tags: ["SEO", "Guía", "Marketing digital"]
 publishedDate: "2018-10-01"
 ratingCount: "5"
 ratingValue: "4.4"
-featuredImage: "/img/articulo/seo-que-es.png"
-heroClass: "bg-purple"
-themeColor: "#537b7b"
+featuredImage: "/img/articulo/featured/seo-que-es.webp"
+heroClass: "bg-blue"
+themeColor: "#47a3da"
 robots: "index,follow"
 ---
 <p>En este articulo vamos a conocer los conceptos básicos de SEO, pero antes de profundizar en técnicas y aspectos específicos de cómo aprender SEO en 2019, comencemos por el principio que trata de los términos básicos del SEO.</p>

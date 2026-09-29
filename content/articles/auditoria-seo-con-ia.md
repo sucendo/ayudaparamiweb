@@ -9,7 +9,7 @@ tags: ["SEO", "Estrategia digital", "Auditoría SEO con IA"]
 publishedDate: "2024-10-10"
 ratingCount: "0"
 ratingValue: "0.0"
-featuredImage: "/img/articulo/featured/auditoria-seo-con-ia.webp"
+featuredImage: "/img/articulo/auditoria-seo-con-ia-featured.webp"
 heroClass: "bg-red"
 themeColor: "#d25565"
 robots: "index,follow"

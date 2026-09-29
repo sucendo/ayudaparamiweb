@@ -8,7 +8,7 @@ tags: ["SEO", "Guía", "Marketing digital"]
 publishedDate: "2018-10-01"
 ratingCount: "5"
 ratingValue: "4.4"
-featuredImage: "/img/articulo/featured/seo-que-es.webp"
+featuredImage: "/img/articulo/seo-que-es-featured.webp"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
 robots: "index,follow"

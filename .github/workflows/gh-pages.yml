@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -40,6 +43,12 @@ jobs:
           TOP_ARTICLES_LIMIT: 10
         run: node scripts/generate-top-articles.js
 
+      - name: Run tests
+        run: npm test
+
+      - name: Validate content
+        run: npm run validate:content
+
       - name: Build static site for Pages
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -53,6 +62,7 @@ jobs:
           path: ./dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

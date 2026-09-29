@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 24
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -45,7 +45,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           SITE_BASE_PATH: /
           SITE_URL: https://ayudaparamiweb.com
-        run: node scripts/build-pages.js
+        run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4

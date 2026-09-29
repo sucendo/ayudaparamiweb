@@ -28,71 +28,135 @@
 
     return 'ct-purple';
   };
+
   const articleToneClass = resolveArticleToneClass(metadata || {});
+  const formatDate = function(dateString) {
+    const parts = String(dateString || '').split('-');
+    return parts.length === 3 ? parts[2] + '/' + parts[1] + '/' + parts[0] : dateString;
+  };
+  const categoryMap = {
+    guias: { label: 'Artículos', path: '/articulos' },
+    analisis: { label: 'Artículos', path: '/articulos' },
+    tutoriales: { label: 'Tutoriales', path: '/tutoriales' }
+  };
+  const categoryInfo = categoryMap[metadata.category] || { label: 'Artículos', path: '/articulos' };
+  const articleRelated = typeof relatedArticles !== 'undefined' ? relatedArticles : [];
 %>
-<div class="ct-main ct-main-post" id="ct-main" role="main" data-article-tone="<%= articleToneClass %>">
+
+<div class="ct-main ct-main-post article-v2" id="ct-main" role="main" data-article-tone="<%= articleToneClass %>">
   <div class="ct-post">
-    <article class="post type-post status-publish format-standard has-post-thumbnail hentry" itemscope itemtype="http://schema.org/Article">
-      <header>
-        <div class="ct-subline entry-meta">
-          <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-              <img alt="" src="/img/author/sucender.png" srcset="/img/author/sucender.png" class="avatar avatar-36 photo" height="36" width="36">
-              <meta itemprop="url" content="https://ayudaparamiweb.com/img/author/sucender.png">
-              <meta itemprop="width" content="36">
-              <meta itemprop="height" content="36">
-            </div>
-            <meta itemprop="name" content="<%= metadata.author %>">
-          </div>
+    <article class="post type-post status-publish format-standard has-post-thumbnail hentry" itemscope itemtype="https://schema.org/Article">
 
-          <div class="ct-subline__author">
-            <span class="byline author vcard" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="/sucender" title="Posts by <%= metadata.author %>" rel="author" itemprop="name"><%= metadata.author %></a></span>
-            in
-            <a href="/articulos">Articulos</a>
-          </div>
+      <nav class="article-breadcrumbs" aria-label="Migas de pan">
+        <% (metadata.breadcrumb || []).forEach(function(item, index) { %>
+          <% if (index > 0) { %><span aria-hidden="true">›</span><% } %>
+          <% if (index < metadata.breadcrumb.length - 1) { %>
+            <a href="<%= item.url %>"><%= item.name %></a>
+          <% } else { %>
+            <span aria-current="page"><%= item.name %></span>
+          <% } %>
+        <% }); %>
+      </nav>
 
-          <div class="ct-subline__time">
-            <% const formatDate = function(dateString) {
-              const [year, month, day] = String(dateString || '').split('-');
-              return (day && month && year) ? `${day}/${month}/${year}` : dateString;
-            }; %>
-            <% if (metadata.modifiedDate) { %>
-              Actualizado el
-              <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="dateModified" content="<%= metadata.modifiedDate %>"><%= formatDate(metadata.modifiedDate) %></time>
-            <% } %>
-            Publicado el
-            <time class="ct-subline__pubtime" pubdate="pubdate" itemprop="datePublished" content="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
-          </div>
-        </div>
-
+      <header class="article-v2-header">
+        <a class="article-v2-category" href="<%= categoryInfo.path %>"><%= categoryInfo.label %></a>
         <h1 class="ct-h-shd entry-title" itemprop="headline"><%= metadata.title %></h1>
+        <p class="ct-post-excerpt article-v2-excerpt" itemprop="description"><%= metadata.description %></p>
+
+        <div class="article-v2-meta">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Por <a href="/sucender" rel="author" itemprop="name"><%= metadata.author %></a>
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>
+            Publicado el <time itemprop="datePublished" datetime="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
+          </span>
+          <% if (metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate) { %>
+            <span aria-hidden="true">·</span>
+            <span>
+              Actualizado el <time itemprop="dateModified" datetime="<%= metadata.modifiedDate %>"><%= formatDate(metadata.modifiedDate) %></time>
+            </span>
+          <% } %>
+          <% if (metadata.readingTime) { %>
+            <span aria-hidden="true">·</span>
+            <span><%= metadata.readingTime %> min de lectura</span>
+          <% } %>
+        </div>
       </header>
 
-      <div class="ct-post-content">
-        <div class="ct-post-excerpt" itemprop="description"><%= metadata.description %></div>
-
-        <div class="ct-post-featured-img" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>">
+      <% if (metadata.featuredImage) { %>
+        <figure class="ct-post-featured-img article-v2-featured" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>" fetchpriority="high">
           <meta itemprop="url" content="https://ayudaparamiweb.com<%= metadata.featuredImage %>">
-          <meta itemprop="width" content="800">
-          <meta itemprop="height" content="500">
-        </div>
+        </figure>
+      <% } %>
+
+      <div class="ct-post-content article-v2-content">
+        <% if ((metadata.toc || []).length) { %>
+          <nav class="article-toc" aria-labelledby="article-toc-title">
+            <details open>
+              <summary id="article-toc-title">Índice del artículo</summary>
+              <ol>
+                <% metadata.toc.forEach(function(item) { %>
+                  <li class="toc-level-<%= item.level %>">
+                    <a href="#<%= item.id %>"><%= item.text %></a>
+                  </li>
+                <% }); %>
+              </ol>
+            </details>
+          </nav>
+        <% } %>
 
         <%- metadata.bodyHtml %>
       </div>
     </article>
 
     <% if ((metadata.tags || []).length) { %>
-      <p class="ct-tags">Etiquetado en:
-      <% metadata.tags.forEach(function(tag) { %>
-        <a href="/" rel="tag"><%= tag %></a>
-      <% }); %>
-      </p>
+      <div class="ct-tags article-v2-tags">
+        <strong>Etiquetas:</strong>
+        <% metadata.tags.forEach(function(tag) { %>
+          <a href="/tags?tag=<%= encodeURIComponent(tag) %>" rel="tag"><%= tag %></a>
+        <% }); %>
+      </div>
     <% } %>
-    <div class="clr"></div>
-  </div>
-  <div class="ct-row">
-    <div class="ct-author-info ct-box <%= articleToneClass %>"><%- include('../authors/sucender-short.ejs') %></div>
+
+    <% if (articleRelated.length) { %>
+      <section class="article-related" data-related-posts="true" aria-labelledby="article-related-title">
+        <h2 id="article-related-title">Artículos relacionados</h2>
+        <div class="article-related-grid">
+          <% articleRelated.forEach(function(item) { %>
+            <article class="article-related-card">
+              <a href="<%= item.path %>">
+                <span class="article-related-title"><%= item.title %></span>
+                <% if (item.excerpt) { %><span class="article-related-excerpt"><%= item.excerpt %></span><% } %>
+              </a>
+            </article>
+          <% }); %>
+        </div>
+      </section>
+    <% } %>
+
+    <% if (previousArticle || nextArticle) { %>
+      <nav class="article-pagination" aria-label="Navegación entre artículos">
+        <div>
+          <% if (previousArticle) { %>
+            <span>Artículo anterior</span>
+            <a href="<%= previousArticle.path %>"><%= previousArticle.title %></a>
+          <% } %>
+        </div>
+        <div>
+          <% if (nextArticle) { %>
+            <span>Artículo siguiente</span>
+            <a href="<%= nextArticle.path %>"><%= nextArticle.title %></a>
+          <% } %>
+        </div>
+      </nav>
+    <% } %>
+
+    <div class="ct-row">
+      <div class="ct-author-info ct-box <%= articleToneClass %>"><%- include('../authors/sucender-short.ejs') %></div>
+    </div>
   </div>
 </div>
+
 <aside class="ct-sidebar article-sidebar"><%- include('../partials/aside.ejs') %></aside>

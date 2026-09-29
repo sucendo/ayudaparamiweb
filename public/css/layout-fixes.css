@@ -303,49 +303,6 @@
   margin-top: 1.7rem;
 }
 
-.article-v2-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.article-v2-tags a {
-  margin: 0;
-}
-
-.article-related {
-  margin-top: 2.25rem;
-}
-
-.article-related > h2 {
-  margin-bottom: 1rem;
-}
-
-.article-related-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-}
-
-.article-related-card {
-  margin: 0;
-  border: 1px solid rgba(0,0,0,.12);
-}
-
-.article-related-card > a {
-  display: block;
-  height: 100%;
-  padding: 1rem;
-  text-decoration: none;
-}
-
-.article-related-title,
-.article-related-excerpt {
-  display: block;
-}
-
 .article-related-title {
   font-weight: 700;
   line-height: 1.35;
@@ -415,4 +372,63 @@
   .article-toc .toc-level-3 {
     margin-left: 0.35rem;
   }
+}
+
+/* Article v2.1: classic tags/related presentation + stronger navigation contrast */
+.page-type-article .ct-main-post .ct-tags {
+  margin: 24px 0 18px;
+  color: #33434d;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.page-type-article .ct-main-post .ct-tags a {
+  display: inline-block;
+  margin: 3px 3px 3px 5px;
+  color: #456272;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-type-article .ct-main-post .ct-tags a:hover,
+.page-type-article .ct-main-post .ct-tags a:focus {
+  text-decoration: underline;
+}
+
+.page-type-article .ct-main-post .ct-row[data-related-posts="true"] {
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+
+.page-type-article .ct-main-post .ct-row[data-related-posts="true"] .ct-box h3 {
+  color: inherit;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.page-type-article .ct-main-post .ct-row[data-related-posts="true"] .ct-feat-excerpt {
+  color: inherit;
+  opacity: .9;
+  font-weight: 500;
+}
+
+.page-type-article .ct-main-post .ct-related-links a {
+  color: inherit;
+  opacity: 1;
+}
+
+.page-type-article .article-pagination span {
+  color: #536875;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.page-type-article .article-pagination a {
+  color: #263943;
+  opacity: 1;
+}
+
+.page-type-article .article-pagination a:hover,
+.page-type-article .article-pagination a:focus {
+  text-decoration: underline;
 }

@@ -5,6 +5,7 @@ const routeCatalog = require('../routes');
 const contentCatalog = require('../content');
 const contentLoader = require('../lib/content/loader');
 const siteData = require('../lib/site-data');
+const { buildArticleContext } = require('../lib/article-context');
 const routes = routeCatalog.publishedRoutes || routeCatalog;
 
 const projectRoot = path.resolve(__dirname, '..');
@@ -206,14 +207,19 @@ function resolvePageContext(route, allContent) {
   var topArticles = siteData.loadTopArticles();
   var friendLinks = siteData.loadFriendLinks();
   if (route.contentType && route.contentSlug) {
+    var metadata = contentLoader.loadByType(route.contentType, route.contentSlug);
+    var articleContext = buildArticleContext(metadata, allContent, 4);
     return {
-      metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
+      metadata: metadata,
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       query: '',
       results: [],
       topArticles: topArticles,
-      friendLinks: friendLinks
+      friendLinks: friendLinks,
+      relatedArticles: articleContext.relatedArticles,
+      previousArticle: articleContext.previousArticle,
+      nextArticle: articleContext.nextArticle
     };
   }
 

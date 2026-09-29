@@ -6,6 +6,7 @@ var contentLoader = require('./lib/content/loader');
 var routes = routeCatalog.publishedRoutes || routeCatalog;
 var seoAnalyzeHandler = require('./services/seo/seo-analyze-handler');
 var siteData = require('./lib/site-data');
+var buildArticleContext = require('./lib/article-context').buildArticleContext;
 var app = express();
 
 var appMode = process.env.APP_MODE || 'node';
@@ -39,14 +40,19 @@ function resolvePageContext(route, allContent) {
   var topArticles = siteData.loadTopArticles();
   var friendLinks = siteData.loadFriendLinks();
   if (route.contentType && route.contentSlug) {
+    var metadata = contentLoader.loadByType(route.contentType, route.contentSlug);
+    var articleContext = buildArticleContext(metadata, allContent, 4);
     return {
-      metadata: contentLoader.loadByType(route.contentType, route.contentSlug),
+      metadata: metadata,
       contentItems: [],
       categories: contentCatalog.CATEGORY_DEFINITIONS,
       query: '',
       results: [],
       topArticles: topArticles,
-      friendLinks: friendLinks
+      friendLinks: friendLinks,
+      relatedArticles: articleContext.relatedArticles,
+      previousArticle: articleContext.previousArticle,
+      nextArticle: articleContext.nextArticle
     };
   }
 

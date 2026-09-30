@@ -37,7 +37,7 @@ const staticRoutes = [
   { path: '/buscar', view: 'pages/search' },
   { path: '/tags', view: 'pages/tags' },
   { path: '/sucender', view: 'authors/sucender' },
-  { path: '/historia', view: 'historia/historia' },
+  { path: '/acerca-de', view: 'pages/acerca-de' },
   { path: '/quantum-pacific-group', view: 'experiments/0001-quantum-pacific-group' },
   {
     path: '/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019',

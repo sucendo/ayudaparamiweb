@@ -24,6 +24,7 @@ function getArticleRoutes() {
 const managedContentRoutes = [
   { path: '/analizador-seo-url', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-seo-url' },
   { path: '/generador-schema-org', view: 'content/render', contentType: 'tool', contentSlug: 'generador-schema-org' },
+  { path: '/previsualizador-serp-google', view: 'content/render', contentType: 'tool', contentSlug: 'previsualizador-serp-google' },
 ];
 
 const staticRoutes = [

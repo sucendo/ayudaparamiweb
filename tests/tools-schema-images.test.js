@@ -62,3 +62,22 @@ test('los colores ct coinciden con la paleta dominante de cada herramienta', asy
   assert.equal(bySlug['analizador-seo-url'].colorClass, 'ct-blue');
   assert.equal(bySlug['generador-schema-org'].colorClass, 'ct-orange');
 });
+
+
+test('el previsualizador SERP está publicado y funciona como herramienta local', () => {
+  const route = routes.find((item) => item.path === '/previsualizador-serp-google');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'previsualizador-serp-google.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'serp-preview-tool.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2022-10-20');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-orange');
+  assert.equal(meta.featuredImage, '/img/tools/previsualizador-serp-google.svg');
+  assert.match(script, /data-serp-device/);
+  assert.match(script, /measureText/);
+  assert.match(script, /Copiar metadatos|navigator\.clipboard/);
+});

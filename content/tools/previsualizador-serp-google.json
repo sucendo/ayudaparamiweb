@@ -1,0 +1,42 @@
+{
+  "title": "Previsualizador SERP de Google",
+  "description": "Simula cómo podrían verse el title, la URL y la meta description de una página en un resultado de búsqueda.",
+  "author": "Sucender",
+  "canonical": "/previsualizador-serp-google",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "SERP",
+    "Google",
+    "Title",
+    "Meta description",
+    "Herramientas"
+  ],
+  "publishedDate": "2022-10-20",
+  "featuredImage": "/img/tools/previsualizador-serp-google.svg",
+  "themeColor": "#ef6a00",
+  "toolToneClass": "ct-orange",
+  "robots": "index,follow",
+  "intro": "Escribe la URL, el title y la meta description y comprueba al instante una previsualización orientativa en escritorio y móvil.",
+  "toolMountId": "serp-preview-app",
+  "styles": [
+    "/css/serp-preview-tool.css"
+  ],
+  "scripts": [
+    "/js/serp-preview-tool.js"
+  ],
+  "faq": [
+    {
+      "q": "¿La previsualización es exactamente igual a Google?",
+      "a": "No. Es una simulación orientativa. Google puede reescribir títulos y descripciones y el espacio disponible cambia según el dispositivo, la consulta y otros elementos del resultado."
+    },
+    {
+      "q": "¿Debo fijarme solo en el número de caracteres?",
+      "a": "No. La anchura real depende de cada carácter. La herramienta muestra caracteres y una estimación visual para ayudarte a redactar, pero no existe un límite universal garantizado."
+    },
+    {
+      "q": "¿Los datos que escribo se envían a un servidor?",
+      "a": "No. La previsualización y los cálculos se realizan en tu navegador."
+    }
+  ]
+}

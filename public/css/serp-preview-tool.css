@@ -1,0 +1,278 @@
+.serp-tool {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 18px;
+  margin: 0 0 1.5rem;
+}
+
+.serp-tool__editor,
+.serp-tool__preview-wrap {
+  min-width: 0;
+}
+
+.serp-tool__editor {
+  padding: 18px;
+  border: 1px solid #eadcc6;
+  background: #fffaf2;
+}
+
+.serp-field {
+  margin-bottom: 15px;
+}
+
+.serp-field label,
+.serp-field__head {
+  color: #334954;
+  font-weight: 700;
+}
+
+.serp-field__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.serp-field > label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.serp-optional {
+  color: #77858e;
+  font-size: .82rem;
+  font-weight: 400;
+}
+
+.serp-field input,
+.serp-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 11px;
+  border: 1px solid #c8d0d5;
+  background: #fff;
+  color: #263943;
+  font: inherit;
+}
+
+.serp-field input:focus,
+.serp-field textarea:focus {
+  outline: 2px solid #fff0dc;
+  outline-offset: 1px;
+  border-color: #ef6a00;
+}
+
+.serp-meter {
+  height: 6px;
+  margin-top: 7px;
+  overflow: hidden;
+  background: #e8ecef;
+}
+
+.serp-meter span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: #36c979;
+  transition: width .15s ease;
+}
+
+.serp-meter span[data-state="short"] { background: #6a93db; }
+.serp-meter span[data-state="over"] { background: #d25565; }
+
+.serp-field small {
+  display: block;
+  margin-top: 6px;
+  color: #697780;
+  line-height: 1.4;
+}
+
+.serp-tool__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serp-device {
+  display: inline-flex;
+  border: 1px solid #d9dfe3;
+  background: #fff;
+}
+
+.serp-device button,
+.serp-copy {
+  border: 0;
+  padding: 9px 13px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.serp-device button {
+  background: #fff;
+  color: #52616c;
+}
+
+.serp-device button.is-active {
+  background: #ef6a00;
+  color: #fff;
+}
+
+.serp-copy {
+  background: #263943;
+  color: #fff;
+}
+
+.serp-copy-status {
+  min-height: 1.4em;
+  margin: 8px 0 0;
+  padding: 0;
+  color: #9b5300;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+.serp-tool__preview-wrap {
+  padding: 18px;
+  border: 1px solid #dce4e9;
+  background: #f7f9fb;
+}
+
+.serp-preview {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(17,32,43,.09);
+}
+
+.serp-preview[data-device="mobile"] {
+  max-width: 390px;
+}
+
+.serp-preview__searchbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #eceff1;
+}
+
+.serp-preview__logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+.serp-preview__query {
+  flex: 1;
+  padding: 9px 13px;
+  border: 1px solid #dcdfe3;
+  border-radius: 20px;
+  color: #8a949b;
+  font-size: .9rem;
+}
+
+.serp-preview__result {
+  padding: 22px 24px 28px;
+}
+
+.serp-preview__source {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #202124;
+}
+
+.serp-preview__source span:last-child {
+  display: grid;
+  line-height: 1.2;
+}
+
+.serp-preview__source small {
+  margin-top: 3px;
+  color: #4d5156;
+}
+
+.serp-preview__favicon {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ef6a00;
+  color: #fff;
+  font-weight: 700;
+}
+
+.serp-preview__breadcrumb {
+  margin-bottom: 5px;
+  color: #4d5156;
+  font-size: .82rem;
+  overflow-wrap: anywhere;
+}
+
+.serp-preview__title {
+  display: block;
+  margin-bottom: 7px;
+  color: #1a0dab;
+  font-size: 1.28rem;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.serp-preview__description {
+  margin: 0;
+  padding: 0;
+  color: #4d5156;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.serp-preview__disclaimer {
+  margin: 12px 0 0;
+  padding: 0;
+  color: #71808a;
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
+.serp-preview[data-device="mobile"] .serp-preview__result {
+  padding: 18px 16px 22px;
+}
+
+.serp-preview[data-device="mobile"] .serp-preview__title {
+  font-size: 1.16rem;
+}
+
+@media (max-width: 900px) {
+  .serp-tool {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .serp-tool__editor,
+  .serp-tool__preview-wrap {
+    padding: 14px;
+  }
+
+  .serp-tool__controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .serp-device,
+  .serp-copy {
+    width: 100%;
+  }
+
+  .serp-device button {
+    flex: 1;
+  }
+}

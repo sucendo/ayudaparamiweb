@@ -377,7 +377,9 @@ function normalizeCatalogItem(item) {
     accentColor: item.accentColor || FALLBACK_ACCENT,
     ratingValue: Number(item.ratingValue || 0),
     ratingCount: Number(item.ratingCount || 0),
-    view: item.view || ''
+    view: item.view || '',
+    status: item.status || '',
+    experimentUrl: item.experimentUrl || ''
   };
 }
 
@@ -499,7 +501,9 @@ function loadMigratedNonArticles() {
       accentColor: metadata.themeColor || ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
       ratingValue: Number(metadata.ratingValue || 0),
       ratingCount: Number(metadata.ratingCount || 0),
-      view: route.view
+      view: route.view,
+      status: metadata.status || '',
+      experimentUrl: metadata.experimentUrl || ''
     });
   });
 }

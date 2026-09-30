@@ -48,3 +48,26 @@ test('la publicación Quantum ya no contiene el tutorial legado de Pieces Slider
   assert.doesNotMatch(experiment, /Pieces Slider/i);
   assert.doesNotMatch(experiment, /anime\.js/i);
 });
+
+
+test('las fechas históricas de actualización son coherentes con cada experimento', () => {
+  const quantum = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'quantum-pacific-group.json'), 'utf8'));
+  const ope = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'calculo-posicion-provisional-ope-medico-familia-2019.json'), 'utf8'));
+
+  assert.equal(quantum.publishedDate, '2018-02-21');
+  assert.equal(quantum.modifiedDate, '2018-11-06');
+  assert.equal(ope.publishedDate, '2022-05-05');
+  assert.equal(ope.modifiedDate, '2023-05-29');
+});
+
+test('el archivo de laboratorio tiene croquis visuales y estilos propios', () => {
+  const page = fs.readFileSync(path.join(__dirname, '..', 'views', 'pages', 'laboratorio.ejs'), 'utf8');
+  const css = fs.readFileSync(path.join(__dirname, '..', 'public', 'css', 'lab-pages.css'), 'utf8');
+
+  assert.match(page, /lab-archive-card__visual/);
+  assert.match(page, /lab-archive-card__status/);
+  assert.match(page, /Ver experimento y experiencia/);
+  assert.match(css, /LABORATORIO · ARCHIVO \/ CROQUIS/);
+  assert.match(css, /lab-archive-grid/);
+  assert.match(css, /lab-archive-card__visual/);
+});

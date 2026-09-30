@@ -12,7 +12,7 @@
     "Experimentos"
   ],
   "publishedDate": "2022-05-05",
-  "modifiedDate": "2026-10-01",
+  "modifiedDate": "2023-05-29",
   "featuredImage": "/img/lab/ope-medico-familia-lab.svg",
   "themeColor": "#1678f2",
   "labToneClass": "ct-blue",
@@ -67,8 +67,8 @@
     {
       "title": "La experiencia",
       "paragraphs": [
-        "Esta prueba representa bien lo que quiero que sea el Laboratorio: detectar un problema real, construir algo pequeño que lo resuelva y publicarlo para comprobar si la utilidad genera uso por sí misma.",
-        "La hipótesis original era observar si los candidatos empezaban a utilizar la aplicación. Para mantener el histórico con rigor, en esta nueva ficha no asigno cifras de adopción que no estén respaldadas por analítica conservada; si recuperamos métricas históricas, podremos añadirlas como resultado medido."
+        "Al revisar la prueba algo más de un año después de su publicación, seguía siendo un buen ejemplo de una utilidad nacida de una carencia concreta: tomar información pública difícil de consultar y convertirla en una respuesta sencilla para los candidatos.",
+        "La hipótesis original era comprobar si los propios candidatos empezarían a utilizar la aplicación cuando resolvía una necesidad real. Para mantener el histórico con rigor, no añado cifras de adopción que no estén respaldadas por analítica conservada; si recuperamos métricas históricas, podremos incorporarlas como resultado medido."
       ]
     },
     {
@@ -81,8 +81,8 @@
     {
       "title": "Qué mejoraría si lo repitiera",
       "paragraphs": [
-        "Hoy versionaría cada conjunto de datos, mostraría la fecha y fuente de la última actualización, registraría cambios en la fórmula y añadiría analítica agregada específica del buscador para saber cuántas consultas reales genera.",
-        "También separaría desde el primer día la página editorial del experimento, exactamente como hacemos ahora en el Laboratorio."
+        "En una nueva versión guardaría cada conjunto de datos con su fecha, mostraría claramente la fuente y la última actualización, registraría cualquier cambio en la fórmula y añadiría analítica agregada del buscador para saber cuántas consultas reales genera.",
+        "También separaría desde el principio la explicación del proyecto de la herramienta interactiva: una página para contar el motivo, el método y los resultados, y otra dedicada únicamente a consultar la clasificación provisional."
       ]
     }
   ]

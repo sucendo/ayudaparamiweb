@@ -84,7 +84,7 @@ test('SEO guide no longer repeats its former featured image inside the body', ()
 
 function assertValidSvg(filePath) {
   const svg = fs.readFileSync(filePath, 'utf8');
-  assert.match(svg, /^<svg\\b/);
+  assert.ok(svg.startsWith('<svg'));
   assert.match(svg, /width=\"1200\"/);
   assert.match(svg, /height=\"630\"/);
   assert.match(svg, /viewBox=\"0 0 1200 630\"/);

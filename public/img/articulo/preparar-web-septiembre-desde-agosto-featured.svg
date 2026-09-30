@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">Prepara septiembre desde agosto</title>
+<desc id="d">Ilustración de planificación digital con calendario, lista de tareas, gráficos y elementos estivales.</desc>
+<rect width="1200" height="630" fill="#faf9fc"/>
+<circle cx="1050" cy="95" r="54" fill="#ee9e2d" opacity=".9"/>
+<g stroke="#ee9e2d" stroke-width="8" stroke-linecap="round" opacity=".55">
+<path d="M1050 18v28M1050 144v28M973 95h28M1099 95h28M995 40l20 20M1085 130l20 20M995 150l20-20M1085 60l20-20"/>
+</g>
+<circle cx="112" cy="535" r="180" fill="#64448f" opacity=".06"/>
+<circle cx="1060" cy="520" r="150" fill="#47a3da" opacity=".05"/>
+<rect x="170" y="100" width="860" height="430" rx="32" fill="#fff" stroke="#e7e1ee" stroke-width="3"/>
+<rect x="170" y="100" width="860" height="62" rx="32" fill="#64448f" opacity=".12"/>
+<circle cx="215" cy="131" r="8" fill="#64448f" opacity=".65"/>
+<circle cx="244" cy="131" r="8" fill="#64448f" opacity=".4"/>
+<circle cx="273" cy="131" r="8" fill="#64448f" opacity=".22"/>
+<g transform="translate(235 210)">
+<rect width="300" height="235" rx="24" fill="#f8f4fb" stroke="#ded3e9" stroke-width="3"/>
+<rect width="300" height="55" rx="24" fill="#64448f" opacity=".17"/>
+<path d="M70-10v38M230-10v38" stroke="#64448f" stroke-width="12" stroke-linecap="round"/>
+<g fill="#64448f" opacity=".8">
+<rect x="42" y="90" width="42" height="36" rx="8"/>
+<rect x="100" y="90" width="42" height="36" rx="8"/>
+<rect x="158" y="90" width="42" height="36" rx="8"/>
+<rect x="216" y="90" width="42" height="36" rx="8"/>
+<rect x="42" y="145" width="42" height="36" rx="8" opacity=".45"/>
+<rect x="100" y="145" width="42" height="36" rx="8" opacity=".45"/>
+<rect x="158" y="145" width="42" height="36" rx="8" opacity=".45"/>
+<rect x="216" y="145" width="42" height="36" rx="8" opacity=".45"/>
+</g>
+</g>
+<g transform="translate(600 200)">
+<rect width="330" height="250" rx="24" fill="#fff" stroke="#e4deea" stroke-width="3"/>
+<g fill="none" stroke="#58b391" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+<path d="M36 55l14 14 27-30"/>
+<path d="M36 110l14 14 27-30"/>
+<path d="M36 165l14 14 27-30"/>
+</g>
+<g fill="#8f97a6">
+<rect x="98" y="48" width="170" height="13" rx="6"/>
+<rect x="98" y="103" width="145" height="13" rx="6"/>
+<rect x="98" y="158" width="190" height="13" rx="6"/>
+</g>
+<polyline points="95,220 140,200 185,207 230,175 285,150" fill="none" stroke="#47a3da" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M125 540c32-70 34-134 6-190 48 25 75 61 80 108-3 43-27 70-86 82z" fill="#58b391" opacity=".72"/>
+<path d="M126 540c-12-55 2-105 40-148" fill="none" stroke="#537b7b" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+</svg>

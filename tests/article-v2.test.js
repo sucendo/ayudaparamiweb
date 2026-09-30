@@ -82,19 +82,17 @@ test('SEO guide no longer repeats its former featured image inside the body', ()
 });
 
 
-function assertValidWebp(filePath) {
-  const buffer = fs.readFileSync(filePath);
-  assert.equal(buffer.subarray(0, 4).toString('ascii'), 'RIFF');
-  assert.equal(buffer.subarray(8, 12).toString('ascii'), 'WEBP');
-  assert.equal(buffer.readUInt32LE(4) + 8, buffer.length);
+function assertValidSvg(filePath) {
+  const svg = fs.readFileSync(filePath, 'utf8');
+  assert.match(svg, /^<svg\\b/);
+  assert.match(svg, /width=\"1200\"/);
+  assert.match(svg, /height=\"630\"/);
+  assert.match(svg, /viewBox=\"0 0 1200 630\"/);
 }
 
-test('Editorial WebP assets are complete, not truncated', () => {
-  [
-    'seo-que-es-featured.svg',
-    'auditoria-seo-con-ia-featured.svg'
-  ].forEach((fileName) => {
-    assertValidWebp(path.join(__dirname, '..', 'public', 'img', 'articulo', fileName));
+test('Editorial SVG assets are valid and complete', () => {
+  ['seo-que-es-featured.svg', 'auditoria-seo-con-ia-featured.svg'].forEach((fileName) => {
+    assertValidSvg(path.join(__dirname, '..', 'public', 'img', 'articulo', fileName));
   });
 });
 

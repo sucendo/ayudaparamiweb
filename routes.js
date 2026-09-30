@@ -118,6 +118,7 @@ const migratedContentRoutes = [
   { path: '/wordpress-lento-diagnostico-real-paso-a-paso', view: 'content/render', contentType: 'article', contentSlug: 'wordpress-lento-diagnostico-real-paso-a-paso' },
   { path: '/puesta-a-punto-web-antes-del-verano', view: 'content/render', contentType: 'article', contentSlug: 'puesta-a-punto-web-antes-del-verano' },
   { path: '/como-medir-rendimiento-web-metricas-utiles', view: 'content/render', contentType: 'article', contentSlug: 'como-medir-rendimiento-web-metricas-utiles' },
+  { path: '/mantenimiento-web-verano-seo', view: 'content/render', contentType: 'article', contentSlug: 'mantenimiento-web-verano-seo' },
 ];
 
 const staticRoutes = [

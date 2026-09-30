@@ -120,6 +120,7 @@ const migratedContentRoutes = [
   { path: '/como-medir-rendimiento-web-metricas-utiles', view: 'content/render', contentType: 'article', contentSlug: 'como-medir-rendimiento-web-metricas-utiles' },
   { path: '/seo-estacional-busquedas-de-verano', view: 'content/render', contentType: 'article', contentSlug: 'seo-estacional-busquedas-de-verano' },
   { path: '/auditoria-contenidos-antes-de-septiembre', view: 'content/render', contentType: 'article', contentSlug: 'auditoria-contenidos-antes-de-septiembre' },
+  { path: '/busqueda-multimodal-seo-visual-google-lens', view: 'content/render', contentType: 'article', contentSlug: 'busqueda-multimodal-seo-visual-google-lens' },
 ];
 
 const staticRoutes = [

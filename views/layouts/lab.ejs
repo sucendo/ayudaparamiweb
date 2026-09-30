@@ -6,9 +6,10 @@
   const tone = metadata.labToneClass || metadata.toolToneClass || 'ct-purple';
 %>
 
-<div class="ct-main ct-main-post lab-v2" id="ct-main" role="main">
-  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry lab-v2-card <%= tone %>">
-    <nav class="lab-breadcrumbs" aria-label="Migas de pan">
+<div class="ct-main ct-main-post article-v2 lab-v2" id="ct-main" role="main">
+  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry article-v2-card lab-v2-card <%= tone %>">
+
+    <nav class="article-breadcrumbs lab-breadcrumbs" aria-label="Migas de pan">
       <% (metadata.breadcrumb || []).forEach(function(item, index) { %>
         <% if (index > 0) { %><span aria-hidden="true">›</span><% } %>
         <% if (index < metadata.breadcrumb.length - 1) { %>
@@ -19,22 +20,30 @@
       <% }); %>
     </nav>
 
-    <header class="lab-v2-header">
+    <header class="article-v2-header lab-v2-header">
       <div class="lab-kicker-row">
-        <a class="lab-kicker" href="/laboratorio">Laboratorio</a>
+        <a class="article-v2-category lab-kicker" href="/laboratorio">Laboratorio</a>
         <% if (metadata.status) { %><span class="lab-status"><%= metadata.status %></span><% } %>
       </div>
+
       <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
-      <p class="ct-post-excerpt lab-v2-excerpt"><%= metadata.description %></p>
-      <div class="lab-meta">
+      <p class="ct-post-excerpt article-v2-excerpt lab-v2-excerpt"><%= metadata.description %></p>
+
+      <div class="article-v2-meta lab-meta">
         <span>Por <a href="/sucender"><%= metadata.author || 'Sucender' %></a></span>
-        <% if (metadata.publishedDate) { %><span>· Publicado el <%= formatDate(metadata.publishedDate) %></span><% } %>
-        <% if (metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate) { %><span>· Revisado el <%= formatDate(metadata.modifiedDate) %></span><% } %>
+        <% if (metadata.publishedDate) { %>
+          <span aria-hidden="true">·</span>
+          <span>Publicado el <%= formatDate(metadata.publishedDate) %></span>
+        <% } %>
+        <% if (metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate) { %>
+          <span aria-hidden="true">·</span>
+          <span>Actualizado el <%= formatDate(metadata.modifiedDate) %></span>
+        <% } %>
       </div>
     </header>
 
     <% if (metadata.featuredImage) { %>
-      <figure class="lab-featured <%= tone %>">
+      <figure class="ct-post-featured-img article-v2-featured lab-featured <%= tone %>">
         <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>" fetchpriority="high">
       </figure>
     <% } %>
@@ -46,7 +55,7 @@
       </aside>
     <% } %>
 
-    <div class="ct-post-content lab-content">
+    <div class="ct-post-content article-v2-content lab-content">
       <% (metadata.sections || []).forEach(function(section) { %>
         <section class="lab-section">
           <h2><%= section.title %></h2>
@@ -55,6 +64,7 @@
           <% } else if (section.content) { %>
             <p><%= section.content %></p>
           <% } %>
+
           <% if (Array.isArray(section.steps) && section.steps.length) { %>
             <ol class="lab-steps">
               <% section.steps.forEach(function(step) { %><li><%= step %></li><% }); %>
@@ -85,11 +95,12 @@
     </div>
 
     <% if ((metadata.tags || []).length) { %>
-      <p class="ct-tags lab-tags"><span class="ct-tags-label">Etiquetado en:</span>
+      <p class="ct-tags lab-tags">
+        <span class="ct-tags-label">Etiquetado en:</span>
         <% metadata.tags.forEach(function(tag) { %><span><%= tag %></span><% }); %>
       </p>
     <% } %>
   </article>
 </div>
 
-<aside class="ct-sidebar lab-sidebar"><%- include('../partials/aside.ejs') %></aside>
+<aside class="ct-sidebar article-sidebar lab-sidebar"><%- include('../partials/aside.ejs') %></aside>

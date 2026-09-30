@@ -1,57 +1,8 @@
-<!doctype html>
-<html dir="ltr" lang="es" xml:lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laboratorio | Ayuda para mi Web</title>
-    <meta name="description" content="Experimentos reales documentados: por qué nacieron, cómo se construyeron, qué esperábamos y qué ocurrió después.">
-    <meta name="author" content="Sucender">
-    <%- include('../partials/head.ejs') %>
-    <link rel="stylesheet" href="/css/lab-pages.css">
-  </head>
-  <body id="apmw-body" class="lab-archive-page">
-    <div class="ct-container">
-      <%- include('../partials/header.ejs') %>
-      <div class="ct-content">
-        <div class="ct-inner">
-          <main class="ct-main ct-main-archive lab-archive" role="main">
-            <header class="lab-archive-hero">
-              <span class="lab-archive-kicker">Laboratorio</span>
-              <h1>Experimentos, no solo artículos</h1>
-              <p>Ideas llevadas a la práctica. En cada experimento documento el motivo, cómo lo construí, qué esperaba que ocurriera y cuál fue la experiencia real. Cuando la prueba sigue disponible, puedes abrirla y utilizarla.</p>
-            </header>
-
-            <section class="lab-archive-grid" aria-label="Experimentos del laboratorio">
-              <% (contentItems || []).forEach(function(item) { %>
-                <article class="lab-archive-card <%= item.colorClass || 'ct-purple' %>" style="--lab-card-accent:<%= item.accentColor || '#7a45e8' %>">
-                  <% if (item.image) { %>
-                    <a class="lab-archive-card__visual" href="<%= item.path %>" aria-label="Abrir <%= item.title %>">
-                      <img src="<%= item.image %>" alt="" loading="lazy">
-                    </a>
-                  <% } %>
-                  <div class="lab-archive-card__body">
-                    <div class="lab-archive-card__badges">
-                      <span>Experimento documentado</span>
-                      <% if (item.status) { %><span class="lab-archive-card__status"><%= item.status %></span><% } %>
-                    </div>
-                    <h2><a href="<%= item.path %>"><%= item.title %></a></h2>
-                    <p class="lab-archive-card__meta">
-                      Publicado el <%= item.displayPublishedDate || item.publishedDate %>
-                      <% if (item.hasModifiedDate) { %> · Actualizado el <%= item.displayModifiedDate || item.modifiedDate %><% } %>
-                    </p>
-                    <p class="lab-archive-card__excerpt"><%= item.excerpt %></p>
-                    <a class="lab-archive-card__button" href="<%= item.path %>">Ver experimento y experiencia →</a>
-                  </div>
-                </article>
-              <% }); %>
-            </section>
-          </main>
-          <aside class="ct-sidebar lab-sidebar"><%- include('../partials/aside.ejs') %></aside>
-          <div class="clr"></div>
-        </div>
-      </div>
-      <footer class="ct-footer"><%- include('../partials/footer.ejs') %></footer>
-    </div>
-  </body>
-</html>
+<%- include('../partials/archive-page.ejs', {
+  pageTitle: 'Laboratorio',
+  pageDescription: 'Experimentos reales documentados: por qué nacieron, cómo se construyeron, qué esperábamos y qué ocurrió después.',
+  heading: 'Laboratorio',
+  subtitle: 'Ideas llevadas a la práctica. Documentamos el motivo, el desarrollo, cómo reproducirlas, las expectativas y la experiencia real. Cuando el experimento sigue disponible, puedes probarlo desde su propia página.',
+  items: contentItems,
+  categories: categories
+}) %>

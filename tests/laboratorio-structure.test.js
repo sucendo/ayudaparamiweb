@@ -60,16 +60,25 @@ test('las fechas históricas de actualización son coherentes con cada experimen
   assert.equal(ope.modifiedDate, '2023-05-29');
 });
 
-test('el archivo de laboratorio tiene croquis visuales y estilos propios', () => {
+test('la portada de Laboratorio conserva el mismo archivo visual que el resto de la web', () => {
   const page = fs.readFileSync(path.join(__dirname, '..', 'views', 'pages', 'laboratorio.ejs'), 'utf8');
   const css = fs.readFileSync(path.join(__dirname, '..', 'public', 'css', 'lab-pages.css'), 'utf8');
 
-  assert.match(page, /lab-archive-card__visual/);
-  assert.match(page, /lab-archive-card__status/);
-  assert.match(page, /Ver experimento y experiencia/);
-  assert.match(css, /LABORATORIO · ARCHIVO \/ CROQUIS/);
-  assert.match(css, /lab-archive-grid/);
-  assert.match(css, /lab-archive-card__visual/);
+  assert.match(page, /archive-page\.ejs/);
+  assert.doesNotMatch(page, /lab-archive-grid/);
+  assert.doesNotMatch(css, /lab-archive-grid/);
+});
+
+test('los artículos de Laboratorio reutilizan la jerarquía editorial moderna y su CSS específico', () => {
+  const layout = fs.readFileSync(path.join(__dirname, '..', 'views', 'layouts', 'lab.ejs'), 'utf8');
+  const css = fs.readFileSync(path.join(__dirname, '..', 'public', 'css', 'lab-pages.css'), 'utf8');
+
+  assert.match(layout, /article-v2-card lab-v2-card/);
+  assert.match(layout, /ct-post-featured-img article-v2-featured lab-featured/);
+  assert.match(layout, /article-v2-content lab-content/);
+  assert.match(css, /page-type-laboratory \.lab-v2-card/);
+  assert.match(css, /page-type-laboratory \.ct-main-post/);
+  assert.match(css, /page-type-laboratory \.ct-post-featured-img\.lab-featured/);
 });
 
 

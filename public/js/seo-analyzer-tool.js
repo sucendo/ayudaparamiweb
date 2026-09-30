@@ -150,17 +150,33 @@
       return;
     }
 
-    loadButton.disabled = true;
-    setState('loading', 'Intentando descargar HTML desde la URL...');
+    if (!/^https?:\/\//i.test(url)) {
+      url = 'https://' + url;
+      urlInput.value = url;
+    }
 
-    fetch(url)
-      .then(function(response) { return response.text(); })
+    loadButton.disabled = true;
+    setState('loading', 'Intentando cargar la página...');
+
+    fetch(url, { method: 'GET', mode: 'cors', credentials: 'omit' })
+      .then(function(response) {
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status);
+        }
+        return response.text();
+      })
       .then(function(html) {
+        if (!/<(?:html|head|body|title|meta|h1)\b/i.test(html)) {
+          throw new Error('La respuesta no parece HTML.');
+        }
         htmlInput.value = html;
-        setState('', 'HTML cargado correctamente. Ya puedes analizar.');
+        setState('', 'HTML cargado correctamente. Pulsa “Analizar SEO on-page”.');
       })
       .catch(function() {
-        setState('error', 'No se pudo cargar la URL por CORS o bloqueo del servidor. Pega el HTML manualmente.');
+        setState(
+          'error',
+          'Esa web no permite que GitHub Pages lea su HTML directamente (CORS). Puedes pegar el código HTML en el cuadro inferior y analizarlo aquí sin enviarlo a ningún servidor.'
+        );
       })
       .finally(function() {
         loadButton.disabled = false;
@@ -170,7 +186,7 @@
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var rawHtml = normalize(htmlInput.value);
+    var rawHtml = (htmlInput.value || '').trim();
     if (!rawHtml) {
       setState('error', 'Pega el HTML para ejecutar el análisis on-page.');
       return;

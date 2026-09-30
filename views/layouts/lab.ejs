@@ -1,27 +1,95 @@
-<div class="ct-main ct-main-post" id="ct-main" role="main">
-  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry">
-    <nav aria-label="breadcrumbs" class="ct-breadcrumbs">
-      <% metadata.breadcrumb.forEach(function(item, index) { %>
-        <% if (index > 0) { %> / <% } %>
-        <a href="<%= item.url %>"><%= item.name %></a>
-      <% }) %>
+<%
+  const formatDate = function(dateString) {
+    const parts = String(dateString || '').split('-');
+    return parts.length === 3 ? parts[2] + '/' + parts[1] + '/' + parts[0] : dateString;
+  };
+  const tone = metadata.labToneClass || metadata.toolToneClass || 'ct-purple';
+%>
+
+<div class="ct-main ct-main-post lab-v2" id="ct-main" role="main">
+  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry lab-v2-card <%= tone %>">
+    <nav class="lab-breadcrumbs" aria-label="Migas de pan">
+      <% (metadata.breadcrumb || []).forEach(function(item, index) { %>
+        <% if (index > 0) { %><span aria-hidden="true">›</span><% } %>
+        <% if (index < metadata.breadcrumb.length - 1) { %>
+          <a href="<%= item.url %>"><%= item.name %></a>
+        <% } else { %>
+          <span aria-current="page"><%= item.name %></span>
+        <% } %>
+      <% }); %>
     </nav>
-    <header>
+
+    <header class="lab-v2-header">
+      <div class="lab-kicker-row">
+        <a class="lab-kicker" href="/laboratorio">Laboratorio</a>
+        <% if (metadata.status) { %><span class="lab-status"><%= metadata.status %></span><% } %>
+      </div>
       <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
-      <p class="ct-post-excerpt"><%= metadata.description %></p>
-      <div class="bg-img bg-purple"><img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>"></div>
+      <p class="ct-post-excerpt lab-v2-excerpt"><%= metadata.description %></p>
+      <div class="lab-meta">
+        <span>Por <a href="/sucender"><%= metadata.author || 'Sucender' %></a></span>
+        <% if (metadata.publishedDate) { %><span>· Publicado el <%= formatDate(metadata.publishedDate) %></span><% } %>
+        <% if (metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate) { %><span>· Revisado el <%= formatDate(metadata.modifiedDate) %></span><% } %>
+      </div>
     </header>
-    <div class="ct-post-content">
+
+    <% if (metadata.featuredImage) { %>
+      <figure class="lab-featured <%= tone %>">
+        <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>" fetchpriority="high">
+      </figure>
+    <% } %>
+
+    <% if (metadata.hypothesis) { %>
+      <aside class="lab-hypothesis">
+        <span>Hipótesis del experimento</span>
+        <strong><%= metadata.hypothesis %></strong>
+      </aside>
+    <% } %>
+
+    <div class="ct-post-content lab-content">
       <% (metadata.sections || []).forEach(function(section) { %>
-        <h2><%= section.title %></h2>
-        <p><%= section.content %></p>
-      <% }) %>
+        <section class="lab-section">
+          <h2><%= section.title %></h2>
+          <% if (Array.isArray(section.paragraphs)) { %>
+            <% section.paragraphs.forEach(function(paragraph) { %><p><%= paragraph %></p><% }); %>
+          <% } else if (section.content) { %>
+            <p><%= section.content %></p>
+          <% } %>
+          <% if (Array.isArray(section.steps) && section.steps.length) { %>
+            <ol class="lab-steps">
+              <% section.steps.forEach(function(step) { %><li><%= step %></li><% }); %>
+            </ol>
+          <% } %>
+        </section>
+      <% }); %>
+
+      <% if (metadata.experimentUrl) { %>
+        <section class="lab-experiment-cta" aria-labelledby="lab-experiment-title">
+          <span class="lab-experiment-cta__eyebrow">Experimento</span>
+          <h2 id="lab-experiment-title"><%= metadata.experimentTitle || 'Prueba el experimento' %></h2>
+          <p><%= metadata.experimentDescription || 'La implementación sigue disponible dentro de Ayuda para mi Web.' %></p>
+          <a class="lab-experiment-button" href="<%= metadata.experimentUrl %>"><%= metadata.experimentLabel || 'Abrir experimento' %> →</a>
+        </section>
+      <% } %>
+
+      <% (metadata.resultsSections || []).forEach(function(section) { %>
+        <section class="lab-section lab-section--results">
+          <h2><%= section.title %></h2>
+          <% if (Array.isArray(section.paragraphs)) { %>
+            <% section.paragraphs.forEach(function(paragraph) { %><p><%= paragraph %></p><% }); %>
+          <% } else if (section.content) { %>
+            <p><%= section.content %></p>
+          <% } %>
+        </section>
+      <% }); %>
     </div>
-    <p class="ct-tags">
-      <% (metadata.tags || []).forEach(function(tag) { %>
-        <span><%= tag %></span>
-      <% }) %>
-    </p>
+
+    <% if ((metadata.tags || []).length) { %>
+      <p class="ct-tags lab-tags"><span class="ct-tags-label">Etiquetado en:</span>
+        <% metadata.tags.forEach(function(tag) { %><span><%= tag %></span><% }); %>
+      </p>
+    <% } %>
   </article>
 </div>
-<aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
+
+<aside class="ct-sidebar lab-sidebar"><%- include('../partials/aside.ejs') %></aside>

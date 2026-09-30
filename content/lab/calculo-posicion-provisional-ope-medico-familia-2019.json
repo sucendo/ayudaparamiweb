@@ -1,0 +1,89 @@
+{
+  "title": "Crear una clasificación provisional donde la convocatoria no la ofrecía: experimento OPE Médico de Familia 2019",
+  "description": "Una herramienta nacida de una carencia real: calcular una posible clasificación provisional de la OPE de Médico de Familia y comprobar si los candidatos encontraban útil consultarla.",
+  "author": "Sucender",
+  "canonical": "/laboratorio/calculo-posicion-provisional-ope-medico-familia-2019",
+  "category": "laboratorio",
+  "tags": [
+    "Laboratorio",
+    "Datos",
+    "Herramientas",
+    "OPE",
+    "Experimentos"
+  ],
+  "publishedDate": "2022-05-05",
+  "modifiedDate": "2026-10-01",
+  "featuredImage": "/img/lab/ope-medico-familia-lab.svg",
+  "themeColor": "#1678f2",
+  "labToneClass": "ct-blue",
+  "status": "Finalizado · histórico",
+  "hypothesis": "Si la convocatoria publica puntuaciones pero no ofrece una pre-relación ordenada, ¿una herramienta que calcule una clasificación provisional será suficientemente útil como para que los propios candidatos empiecen a utilizarla?",
+  "sections": [
+    {
+      "title": "El motivo",
+      "paragraphs": [
+        "La prueba nació al detectar una carencia muy concreta en la convocatoria de Médico de Familia de Atención Primaria de 2019 de la Comunidad de Madrid. Había información pública con las puntuaciones, pero no una forma sencilla de obtener una posible relación provisional ordenada.",
+        "Eso obligaba a cada candidato a interpretar documentos y hacer cálculos por su cuenta si quería estimar su posición. La pregunta fue sencilla: ¿podemos convertir esos datos en una consulta realmente útil?"
+      ]
+    },
+    {
+      "title": "La idea",
+      "paragraphs": [
+        "El experimento tenía dos partes. Primero, comprobar que era posible construir una pre-relación coherente sumando y ordenando los datos públicos disponibles. Después, publicar esa utilidad y observar si resolvía una necesidad real hasta el punto de que los candidatos empezaran a usarla.",
+        "No pretendía sustituir ninguna relación oficial. Era una estimación provisional construida a partir de la información publicada."
+      ]
+    },
+    {
+      "title": "Cómo lo desarrollé",
+      "paragraphs": [
+        "La herramienta reúne la puntuación de la prueba y los méritos disponibles, calcula el total y ordena los registros para producir una posición provisional. Para facilitar la consulta se añadió un buscador por número de registro.",
+        "También se evitó publicar nombres. La consulta se apoya en el número de referencia que cada persona podía localizar en la documentación oficial, reduciendo así la exposición innecesaria de datos personales."
+      ]
+    },
+    {
+      "title": "Cómo montarlo",
+      "steps": [
+        "Partir únicamente de documentos y datos publicados oficialmente.",
+        "Normalizar las columnas de puntuación para que todos los registros utilicen el mismo formato.",
+        "Calcular el total con la misma fórmula para todos los candidatos.",
+        "Ordenar de mayor a menor puntuación y asignar una posición provisional.",
+        "Publicar solo el identificador necesario para que cada persona localice su registro.",
+        "Añadir buscador y una explicación visible de que el resultado es orientativo y no sustituye a la relación oficial."
+      ]
+    },
+    {
+      "title": "Qué esperaba que ocurriera",
+      "paragraphs": [
+        "Esperaba que una utilidad muy específica pudiera encontrar usuarios sin necesidad de convertirse en un producto grande. Si resolvía exactamente la pregunta que tenían los candidatos —«¿en qué posición podría estar?»—, la propia utilidad debía ser el motivo para volver, compartirla o recomendarla.",
+        "El segundo objetivo era observar si una herramienta basada en datos podía atraer uso por utilidad práctica, no solo por contenido editorial."
+      ]
+    }
+  ],
+  "experimentUrl": "/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019",
+  "experimentTitle": "Consultar la clasificación provisional",
+  "experimentDescription": "La herramienta histórica sigue disponible con su tabla, buscador y cálculo provisional.",
+  "experimentLabel": "Abrir herramienta experimental",
+  "resultsSections": [
+    {
+      "title": "La experiencia",
+      "paragraphs": [
+        "Esta prueba representa bien lo que quiero que sea el Laboratorio: detectar un problema real, construir algo pequeño que lo resuelva y publicarlo para comprobar si la utilidad genera uso por sí misma.",
+        "La hipótesis original era observar si los candidatos empezaban a utilizar la aplicación. Para mantener el histórico con rigor, en esta nueva ficha no asigno cifras de adopción que no estén respaldadas por analítica conservada; si recuperamos métricas históricas, podremos añadirlas como resultado medido."
+      ]
+    },
+    {
+      "title": "Privacidad y límites",
+      "paragraphs": [
+        "Desde el principio era importante diferenciar una estimación de una lista oficial. Por eso la herramienta se presenta como posición provisional y trabaja con referencias en lugar de exponer nombres.",
+        "Una herramienta de este tipo solo es tan fiable como los datos de origen y la fórmula aplicada. Cualquier actualización de la convocatoria puede cambiar el resultado."
+      ]
+    },
+    {
+      "title": "Qué mejoraría si lo repitiera",
+      "paragraphs": [
+        "Hoy versionaría cada conjunto de datos, mostraría la fecha y fuente de la última actualización, registraría cambios en la fórmula y añadiría analítica agregada específica del buscador para saber cuántas consultas reales genera.",
+        "También separaría desde el primer día la página editorial del experimento, exactamente como hacemos ahora en el Laboratorio."
+      ]
+    }
+  ]
+}

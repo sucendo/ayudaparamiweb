@@ -1,7 +1,7 @@
 <%- include('../layouts/base.ejs', {
   metadata: metadata,
   contentLayout: metadata.type === 'article' ? '../layouts/article.ejs' : (metadata.type === 'tool' ? '../layouts/tool.ejs' : '../layouts/lab.ejs'),
-  extraStyles: metadata.type === 'tool' ? ['/css/tool-pages.css'].concat(metadata.styles || []) : [],
+  extraStyles: metadata.type === 'tool' ? ['/css/tool-pages.css'].concat(metadata.styles || []) : (metadata.type === 'laboratory' ? ['/css/lab-pages.css'].concat(metadata.styles || []) : []),
   globalScripts: [],
   extraScripts: metadata.scripts || [],
   relatedArticles: typeof relatedArticles !== 'undefined' ? relatedArticles : [],

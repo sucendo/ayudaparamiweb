@@ -464,7 +464,7 @@ function getAllArticles() {
 
 function loadLegacyNonArticles() {
   const routes = (routeCatalog.publishedRoutes || routeCatalog)
-    .filter((route) => LEGACY_NON_ARTICLE_VIEW_PATTERN.test(route.view));
+    .filter((route) => LEGACY_NON_ARTICLE_VIEW_PATTERN.test(route.view) && route.catalog !== false);
 
   return routes.map(mapLegacyRouteToCatalogItem);
 }

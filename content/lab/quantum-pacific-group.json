@@ -1,0 +1,81 @@
+{
+  "title": "Publicar una noticia bomba antes que nadie: el experimento Quantum Pacific Group",
+  "description": "Un experimento de inmediatez SEO: publicar una noticia recién conocida para comprobar si llegar antes que otros medios podía abrir una ventana de posicionamiento orgánico.",
+  "author": "Sucender",
+  "canonical": "/laboratorio/quantum-pacific-group",
+  "category": "laboratorio",
+  "tags": [
+    "Laboratorio",
+    "SEO",
+    "Noticias",
+    "Indexación",
+    "Experimentos"
+  ],
+  "publishedDate": "2018-02-21",
+  "modifiedDate": "2026-10-01",
+  "featuredImage": "/img/lab/quantum-pacific-group-lab.svg",
+  "themeColor": "#d25565",
+  "labToneClass": "ct-red",
+  "status": "Finalizado · histórico",
+  "hypothesis": "Si una noticia acaba de saltar y publico una página útil prácticamente de inmediato, ¿puedo ganar visibilidad orgánica por llegar antes que otros sitios?",
+  "sections": [
+    {
+      "title": "El motivo",
+      "paragraphs": [
+        "La idea nació en el momento en que apareció una noticia que podía generar muchas búsquedas en muy poco tiempo: Quantum Pacific Group entraba en la conversación alrededor del Atlético de Madrid. En vez de preparar una pieza larga durante horas, quise probar el factor tiempo.",
+        "El experimento consistía en publicar mientras la noticia todavía estaba empezando a circular y observar si esa ventaja temporal podía ayudar a que una web pequeña apareciera pronto para una búsqueda de actualidad."
+      ]
+    },
+    {
+      "title": "La idea",
+      "paragraphs": [
+        "No buscaba demostrar que publicar rápido fuera suficiente para posicionar de forma estable. La pregunta era más concreta: si durante los primeros minutos u horas hay muy pocas páginas sobre un tema nuevo, ¿existe una ventana en la que la inmediatez compense parcialmente la diferencia de autoridad frente a medios mucho mayores?",
+        "La prioridad era reducir al mínimo el tiempo entre conocer la noticia y tener una URL pública, rastreable y centrada en la consulta que previsiblemente empezaría a crecer."
+      ]
+    },
+    {
+      "title": "Cómo lo desarrollé",
+      "paragraphs": [
+        "Preparé una publicación específica con un titular directamente relacionado con la noticia y una URL propia. En este tipo de prueba el desarrollo técnico es sencillo; lo importante es que la página pueda publicarse inmediatamente y que no haya obstáculos básicos de rastreo o indexación.",
+        "El valor del experimento estaba en el momento de publicación. Cada minuto adicional reducía la ventaja que se pretendía observar."
+      ]
+    },
+    {
+      "title": "Cómo reproducirlo hoy",
+      "steps": [
+        "Define antes de empezar qué consulta o grupo de consultas vas a observar.",
+        "Anota la hora exacta en la que conoces la noticia y la hora exacta de publicación.",
+        "Publica una página útil y suficientemente completa, sin rellenarla con texto solo para ganar longitud.",
+        "Registra cuándo aparece indexada y captura la SERP a intervalos definidos: 30 minutos, 2 horas, 6 horas, 24 horas, 48 horas y 72 horas.",
+        "Guarda impresiones, clics y posición desde Search Console para poder separar sensaciones de resultados medibles."
+      ]
+    },
+    {
+      "title": "Qué esperaba que ocurriera",
+      "paragraphs": [
+        "Esperaba obtener una ventaja inicial: que durante un periodo corto la página tuviera opciones de aparecer para la consulta antes de que el tema quedara cubierto por decenas de medios de mayor autoridad.",
+        "La parte interesante no era solo saber si llegaba a posicionar, sino cuánto duraba esa posible ventaja una vez aumentaba la competencia."
+      ]
+    }
+  ],
+  "experimentUrl": "/quantum-pacific-group",
+  "experimentTitle": "La publicación experimental original",
+  "experimentDescription": "He dejado una versión limpia de la publicación histórica que originó esta prueba para mantener separado el experimento de la explicación.",
+  "experimentLabel": "Abrir experimento",
+  "resultsSections": [
+    {
+      "title": "La experiencia",
+      "paragraphs": [
+        "El experimento queda documentado como una prueba histórica de velocidad editorial. No conservamos una serie completa de capturas de SERP y métricas que permita reconstruir hoy una posición exacta minuto a minuto, así que no sería correcto inventar un resultado numérico.",
+        "La principal lección para repetirlo mejor es precisamente esa: una prueba de inmediatez necesita instrumentación desde el primer minuto. Publicar rápido es solo una parte; también hay que registrar indexación, consultas, posición y evolución temporal."
+      ]
+    },
+    {
+      "title": "Qué haría diferente ahora",
+      "paragraphs": [
+        "Hoy prepararía una plantilla de publicación rápida, un pequeño protocolo de medición y un registro de cada cambio realizado en la página. Así podríamos comparar la ventaja inicial, la llegada de competidores y la duración real de la visibilidad con datos en lugar de memoria.",
+        "Ese planteamiento convierte una noticia puntual en un experimento SEO reproducible."
+      ]
+    }
+  ]
+}

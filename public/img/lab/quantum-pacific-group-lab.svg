@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Experimento SEO de noticia de última hora">
+<rect width="1200" height="630" rx="28" fill="#fff0f2"/>
+<circle cx="1025" cy="120" r="160" fill="#ffd3d9"/>
+<rect x="95" y="92" width="1010" height="446" rx="25" fill="#fff"/>
+<rect x="135" y="135" width="930" height="58" rx="10" fill="#d25565"/>
+<text x="165" y="173" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#fff">ÚLTIMA HORA · PRUEBA DE INMEDIATEZ</text>
+<text x="145" y="255" font-family="Arial,sans-serif" font-size="42" font-weight="800" fill="#2d3c45">Publicar antes que nadie</text>
+<text x="145" y="302" font-family="Arial,sans-serif" font-size="42" font-weight="800" fill="#2d3c45">y medir qué ocurre</text>
+<rect x="145" y="345" width="565" height="15" rx="7" fill="#eadde0"/>
+<rect x="145" y="380" width="480" height="15" rx="7" fill="#eadde0"/>
+<rect x="145" y="415" width="525" height="15" rx="7" fill="#eadde0"/>
+<circle cx="895" cy="357" r="92" fill="#fff0f2" stroke="#d25565" stroke-width="12"/>
+<path d="M895 310v51l35 24" fill="none" stroke="#d25565" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M820 475h150" stroke="#d25565" stroke-width="12" stroke-linecap="round"/>
+<path d="M947 452l31 23-31 23" fill="none" stroke="#d25565" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -74,7 +74,7 @@ test('Python 2024 article no longer contains a 2026 framing', () => {
 
 test('batch 4 remains represented after later review batches', () => {
   const state = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'REVISION_ESTADO_2026-09-30.json'), 'utf8'));
-  assert.equal(state.totalArticles, 112);
+  assert.equal(state.totalArticles, 117);
   assert.ok(state.reviewedArticles >= 83);
   assert.ok(state.pendingArticles <= 29);
   batch4.forEach((slug) => assert.ok(state.reviewed.includes(slug), slug));

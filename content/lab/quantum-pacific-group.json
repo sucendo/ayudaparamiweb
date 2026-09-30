@@ -59,22 +59,22 @@
     }
   ],
   "experimentUrl": "/experimento/quantum-pacific-group/",
-  "experimentTitle": "La publicación experimental original",
-  "experimentDescription": "La publicación experimental vive en una carpeta independiente, con su propio HTML, CSS y JavaScript, separada visual y técnicamente de Ayuda para mi Web.",
-  "experimentLabel": "Abrir experimento",
+  "experimentTitle": "Leer la publicación",
+  "experimentDescription": "La publicación original se abre como una página independiente, con aspecto y contenido propios, tal y como corresponde a una noticia real.",
+  "experimentLabel": "Abrir publicación",
   "resultsSections": [
     {
-      "title": "La experiencia",
+      "title": "El resultado",
       "paragraphs": [
-        "Al revisar el experimento unos meses después de su publicación, la idea seguía teniendo sentido como prueba de velocidad editorial: intentar aprovechar el breve intervalo en el que una noticia nueva todavía tiene poca competencia publicada.",
-        "No quedó guardada una serie completa de capturas de SERP y métricas minuto a minuto, así que no sería riguroso atribuirle ahora una posición concreta. La principal lección fue que una prueba de inmediatez necesita medir desde el primer momento la indexación, las consultas y la evolución de la visibilidad."
+        "El comportamiento fue, en términos generales, el que buscaba la prueba: publicar con rapidez permitió ganar visibilidad inicial mientras el tema todavía tenía poca competencia publicada.",
+        "La ventaja no era permanente. A medida que medios con mucha más autoridad fueron cubriendo la noticia, el contexto de la búsqueda cambió y esa oportunidad inicial perdió fuerza. No se conserva un registro suficientemente detallado como para afirmar hoy una posición exacta o cuánto tiempo se mantuvo."
       ]
     },
     {
-      "title": "Qué cambiaría al repetirlo",
+      "title": "La experiencia",
       "paragraphs": [
-        "En una siguiente prueba prepararía de antemano una plantilla de publicación rápida, un protocolo de medición y un registro de cada cambio realizado en la página. Así sería posible comparar la ventaja inicial, la llegada de competidores y cuánto dura realmente la visibilidad.",
-        "De ese modo, una noticia puntual deja de ser solo una publicación rápida y se convierte en un experimento SEO reproducible."
+        "La conclusión práctica fue que la inmediatez sí puede abrir una oportunidad temporal en búsquedas de actualidad, pero esa oportunidad necesita medirse desde el primer minuto si queremos convertirla en un resultado cuantificable.",
+        "Si repitiera la prueba, registraría hora de publicación, indexación, impresiones, clics y posición a intervalos fijos para poder comparar con precisión la ventaja inicial y su pérdida a medida que entra competencia."
       ]
     }
   ]

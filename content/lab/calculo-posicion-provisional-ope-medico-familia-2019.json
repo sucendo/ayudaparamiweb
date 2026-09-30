@@ -61,28 +61,28 @@
   ],
   "experimentUrl": "/experimento/ope-medico-familia-2019/",
   "experimentTitle": "Consultar la clasificación provisional",
-  "experimentDescription": "La aplicación histórica vive en una carpeta independiente, con su propia interfaz, buscador, CSS y JavaScript.",
-  "experimentLabel": "Abrir herramienta experimental",
+  "experimentDescription": "La clasificación se abre como una herramienta independiente, centrada únicamente en buscar el número de registro y consultar la posible posición provisional.",
+  "experimentLabel": "Abrir clasificación",
   "resultsSections": [
     {
-      "title": "La experiencia",
+      "title": "El resultado",
       "paragraphs": [
-        "Al revisar la prueba algo más de un año después de su publicación, seguía siendo un buen ejemplo de una utilidad nacida de una carencia concreta: tomar información pública difícil de consultar y convertirla en una respuesta sencilla para los candidatos.",
-        "La hipótesis original era comprobar si los propios candidatos empezarían a utilizar la aplicación cuando resolvía una necesidad real. Para mantener el histórico con rigor, no añado cifras de adopción que no estén respaldadas por analítica conservada; si recuperamos métricas históricas, podremos incorporarlas como resultado medido."
+        "La respuesta fue la que esperaba al detectar la carencia: la utilidad empezó a ser utilizada por candidatos que querían hacerse una idea de su posible posición antes de disponer de una relación oficial ordenada.",
+        "Eso confirmó la idea principal del proyecto: una herramienta muy específica puede encontrar usuarios cuando responde de forma directa a una necesidad que el proceso oficial no está resolviendo de manera cómoda. No conservo una cifra fiable de uso que permita dar hoy un número exacto de consultas."
       ]
     },
     {
-      "title": "Privacidad y límites",
+      "title": "La experiencia",
       "paragraphs": [
-        "Desde el principio era importante diferenciar una estimación de una lista oficial. Por eso la herramienta se presenta como posición provisional y trabaja con referencias en lugar de exponer nombres.",
-        "Una herramienta de este tipo solo es tan fiable como los datos de origen y la fórmula aplicada. Cualquier actualización de la convocatoria puede cambiar el resultado."
+        "La parte más útil no fue crear una aplicación compleja, sino transformar datos públicos dispersos en una respuesta sencilla: buscar una referencia y ver una posición provisional.",
+        "La herramienta también dejó claro que había que comunicar muy bien sus límites. La clasificación era orientativa, dependía de los datos publicados y nunca debía confundirse con una relación oficial."
       ]
     },
     {
       "title": "Qué mejoraría si lo repitiera",
       "paragraphs": [
-        "En una nueva versión guardaría cada conjunto de datos con su fecha, mostraría claramente la fuente y la última actualización, registraría cualquier cambio en la fórmula y añadiría analítica agregada del buscador para saber cuántas consultas reales genera.",
-        "También separaría desde el principio la explicación del proyecto de la herramienta interactiva: una página para contar el motivo, el método y los resultados, y otra dedicada únicamente a consultar la clasificación provisional."
+        "En una nueva versión guardaría cada conjunto de datos con su fecha, mostraría la fuente y la última actualización de forma visible, registraría cualquier cambio de fórmula y mediría de forma agregada el uso del buscador.",
+        "Mantendría además la separación actual: una página editorial en el Laboratorio para explicar el proyecto y una aplicación independiente dedicada únicamente a resolver la consulta."
       ]
     }
   ]

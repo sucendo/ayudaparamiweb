@@ -24,7 +24,7 @@ h1{margin:0;font-size:clamp(2.2rem,6vw,4.7rem);line-height:.98;letter-spacing:-.
 .results-table tbody tr:hover{background:#eaf5fd}
 .results-table tbody tr.is-match{background:#fff4cf}
 .empty{margin:16px 0;padding:18px;border-radius:12px;background:#fff;color:#8a5a00;text-align:center;font-weight:800}
-.experiment-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid #cddce7;color:#718391;font-size:.85rem}
-.experiment-footer a{color:#0d5d9d;font-weight:800;text-decoration:none}
-.experiment-footer a:hover,.experiment-footer a:focus{text-decoration:underline}
+.project-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid #cddce7;color:#718391;font-size:.85rem}
+.project-footer a{color:#0d5d9d;font-weight:800;text-decoration:none}
+.project-footer a:hover,.project-footer a:focus{text-decoration:underline}
 @media(max-width:640px){.app-shell{width:min(100% - 18px,1280px);padding-top:12px}.app-hero{border-radius:16px}.finder{grid-template-columns:1fr}.counter{min-width:0}.table-scroll{max-height:68vh}}

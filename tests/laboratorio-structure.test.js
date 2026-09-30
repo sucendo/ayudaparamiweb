@@ -111,3 +111,17 @@ test('las fichas de laboratorio enlazan a las carpetas independientes de los exp
   assert.equal(quantum.experimentUrl, '/experimento/quantum-pacific-group/');
   assert.equal(ope.experimentUrl, '/experimento/ope-medico-familia-2019/');
 });
+
+
+test('las páginas independientes se presentan como contenido real y solo remiten al Laboratorio al final', () => {
+  const quantum = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'quantum-pacific-group', 'index.html'), 'utf8');
+  const ope = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'ope-medico-familia-2019', 'index.html'), 'utf8');
+
+  const quantumBeforeNote = quantum.split('<aside class="lab-note">')[0];
+  const opeBeforeFooter = ope.split('<footer class="project-footer">')[0];
+
+  assert.doesNotMatch(quantumBeforeNote, /experimento/i);
+  assert.match(quantum, /Ver el artículo del Laboratorio/);
+  assert.doesNotMatch(opeBeforeFooter, /experimento/i);
+  assert.match(ope, /Ver cómo se construyó esta herramienta y la experiencia en el Laboratorio/);
+});

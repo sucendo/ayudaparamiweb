@@ -3,15 +3,6 @@
   var table=document.getElementById('resultsTable');
   var count=document.getElementById('visibleCount');
   var empty=document.getElementById('emptyState');
-  var dateBlock=document.querySelector('.dates');
-  var daysTarget=document.getElementById('daysBetween');
-
-  if(dateBlock&&daysTarget){
-    var start=new Date(dateBlock.dataset.published+'T00:00:00Z');
-    var end=new Date(dateBlock.dataset.updated+'T00:00:00Z');
-    daysTarget.textContent='· '+Math.round((end-start)/86400000)+' días después';
-  }
-
   if(!table||!input)return;
   var rows=Array.prototype.slice.call(table.tBodies[0].rows);
 

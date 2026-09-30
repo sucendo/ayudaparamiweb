@@ -12,12 +12,9 @@
 @font-face {
     font-weight: normal;
     font-style: normal;
-    font-family: 'apmw-social','fontawesome';
-    src:url('../fonts/fontawesome/fontawesome.eot?-e43dk9');
-    src:url('../fonts/fontawesome/fontawesome.eot?#iefix-e43dk9') format('embedded-opentype'),
-        url('../fonts/fontawesome/fontawesome.woff?-e43dk9') format('woff'),
-        url('../fonts/fontawesome/fontawesome.ttf?-e43dk9') format('truetype'),
-        url('../fonts/fontawesome/fontawesome.svg?-e43dk9#fontawesome') format('svg');
+    font-family: 'apmw-social';
+    src: url('../fonts/codrops-social.woff') format('woff');
+    font-display: block;
 }
 
 @font-face {
@@ -3027,7 +3024,7 @@ input[type="text"].tt-hint {
 
 .ct-search-page-form:after {
     content: "\e006";
-    font-family: "apmw-social","fontawesome";
+    font-family: "apmw-social";
     font-size: 18px;
     position: absolute;
     right: 14px;

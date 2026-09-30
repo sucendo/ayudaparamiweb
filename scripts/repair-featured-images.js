@@ -9,8 +9,10 @@ const testsDir = path.join(root, 'tests');
 fs.mkdirSync(imagesDir, { recursive: true });
 
 function frontmatterValue(source, key) {
-  const match = source.match(new RegExp('^' + key + ':\\s*["\\']?([^"\\'\\n]+)', 'm'));
-  return match ? match[1].trim() : '';
+  const prefix = key + ':';
+  const line = source.split(/\\r?\\n/).find((entry) => entry.trimStart().startsWith(prefix));
+  if (!line) return '';
+  return line.slice(line.indexOf(':') + 1).trim().replace(/^["']|["']$/g, '');
 }
 
 function escapeXml(value) {

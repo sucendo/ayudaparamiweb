@@ -15,4 +15,6 @@ test('Historia ha sido retirada y Acerca de está publicada', () => {
   assert.doesNotMatch(footer, /\/historia/i);
   assert.match(footer, /\/acerca-de/);
   assert.match(footer, />Acerca de</);
+  assert.match(footer, /\/tutoriales/);
+  assert.match(footer, />Tutoriales</);
 });

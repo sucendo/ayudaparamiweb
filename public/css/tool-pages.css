@@ -23,6 +23,7 @@
 .tool-v2-card.ct-green { border-bottom-color: #78ddb6; }
 .tool-v2-card.ct-blue { border-bottom-color: #a5ceff; }
 .tool-v2-card.ct-purple { border-bottom-color: #c9c4e9; }
+.tool-v2-card.ct-orange { border-bottom-color: #ffdb9b; }
 
 .tool-v2-breadcrumbs {
   display: flex;

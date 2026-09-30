@@ -1,0 +1,41 @@
+{
+  "title": "Generador de Schema.org",
+  "description": "Genera datos estructurados JSON-LD para Article, FAQPage, Product, LocalBusiness y BreadcrumbList.",
+  "author": "Sucender",
+  "canonical": "/generador-schema-org",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "Schema.org",
+    "JSON-LD",
+    "Datos estructurados",
+    "Herramientas"
+  ],
+  "publishedDate": "2022-06-15",
+  "featuredImage": "/img/tools/generador-schema-org.svg",
+  "themeColor": "#ee9e2d",
+  "toolToneClass": "ct-orange",
+  "robots": "index,follow",
+  "intro": "Elige un tipo de schema, completa sus campos y obtén JSON-LD listo para copiar e insertar en tu web.",
+  "toolMountId": "schema-generator-app",
+  "styles": [
+    "/css/schema-generator-tool.css"
+  ],
+  "scripts": [
+    "/js/schema-generator-tool.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Qué formato genera la herramienta?",
+      "a": "Genera JSON-LD, el formato recomendado habitualmente para implementar datos estructurados sin mezclar el marcado con el HTML visible."
+    },
+    {
+      "q": "¿Puedo pegar el código directamente en mi web?",
+      "a": "Sí. Revisa primero que los datos coincidan con el contenido visible de la página y después inserta el bloque JSON-LD dentro de una etiqueta script de tipo application/ld+json."
+    },
+    {
+      "q": "¿La herramienta valida si Google mostrará un resultado enriquecido?",
+      "a": "No. El generador ayuda a crear el marcado, pero la elegibilidad final depende del tipo de contenido, de las directrices del buscador y de la implementación de la página."
+    }
+  ]
+}

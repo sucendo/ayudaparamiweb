@@ -9,10 +9,9 @@
     "Auditoría",
     "Herramientas"
   ],
-  "publishedDate": "2026-04-08",
-  "modifiedDate": "2026-09-30",
+  "publishedDate": "2021-09-15",
   "featuredImage": "/img/tools/seo-analyzer-hero.svg",
-  "themeColor": "#d25565",
+  "themeColor": "#47a3da",
   "robots": "index,follow",
   "intro": "Introduce una URL o pega el HTML de una página para revisar title, description, encabezados, contenido, imágenes y enlaces.",
   "toolMountId": "seo-analyzer-app",
@@ -32,5 +31,9 @@
       "q": "¿Reemplaza una auditoría SEO completa?",
       "a": "No. Es un diagnóstico on-page rápido para detectar problemas y oportunidades iniciales."
     }
+  ],
+  "toolToneClass": "ct-blue",
+  "styles": [
+    "/css/seo-analyzer-tool.css"
   ]
 }

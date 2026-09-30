@@ -1,6 +1,9 @@
+<%
+  const toolToneClass = metadata.toolToneClass || 'ct-red';
+%>
 <div class="ct-main ct-main-post tool-v2" id="ct-main" role="main">
   <div class="ct-post">
-    <article class="tool-v2-card ct-red">
+    <article class="tool-v2-card <%= toolToneClass %>">
       <nav class="tool-v2-breadcrumbs" aria-label="Migas de pan">
         <% metadata.breadcrumb.forEach(function(item, index) { %>
           <% if (index > 0) { %><span aria-hidden="true">›</span><% } %>

@@ -893,25 +893,3 @@
 }
 
 
-/* Imágenes en las tarjetas de Herramientas */
-.ct-tool-card-image {
-  display: block;
-  overflow: hidden;
-  margin: -1px -1px 18px;
-  border-bottom: 1px solid rgba(0,0,0,.08);
-  background: #f7fafb;
-}
-
-.ct-tool-card-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 210px;
-  object-fit: cover;
-}
-
-@media (max-width: 720px) {
-  .ct-tool-card-image img {
-    max-height: none;
-  }
-}

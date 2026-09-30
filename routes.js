@@ -31,6 +31,7 @@ const managedContentRoutes = [
   { path: '/generador-redirecciones-301', view: 'content/render', contentType: 'tool', contentSlug: 'generador-redirecciones-301' },
   { path: '/validador-canonical-hreflang', view: 'content/render', contentType: 'tool', contentSlug: 'validador-canonical-hreflang' },
   { path: '/analizador-encabezados-html', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-encabezados-html' },
+  { path: '/analizador-enlaces-html', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-enlaces-html' },
 ];
 
 const staticRoutes = [

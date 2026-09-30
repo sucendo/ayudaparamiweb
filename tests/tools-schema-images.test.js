@@ -211,3 +211,27 @@ test('el analizador de encabezados H1-H6 está publicado como herramienta de fin
   assert.match(script, /Texto de encabezado repetido/);
   assert.match(script, /DOMParser/);
 });
+
+
+test('el analizador de enlaces internos y externos está publicado como herramienta de inicio de 2026', () => {
+  const route = routes.find((item) => item.path === '/analizador-enlaces-html');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'analizador-enlaces-html.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'link-analyzer.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2026-02-19');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-purple');
+  assert.equal(meta.themeColor, '#7a45e8');
+  assert.equal(meta.featuredImage, '/img/tools/analizador-enlaces-html.svg');
+  assert.match(script, /querySelectorAll\('a'\)/);
+  assert.match(script, /nofollow/);
+  assert.match(script, /sponsored/);
+  assert.match(script, /ugc/);
+  assert.match(script, /anchor poco descriptivo/);
+  assert.match(script, /target=_blank sin noopener\/noreferrer/);
+  assert.match(script, /navigator\.clipboard/);
+});

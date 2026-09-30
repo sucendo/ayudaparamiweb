@@ -1,0 +1,240 @@
+.link-tool {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  gap: 18px;
+  margin: 0 0 1.5rem;
+}
+
+.link-tool__input,
+.link-tool__result {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #dfd8ef;
+}
+
+.link-tool__input { background: #faf7ff; }
+.link-tool__result { background: #fff; }
+
+.link-field { margin-bottom: 14px; }
+
+.link-field label {
+  display: block;
+  margin-bottom: 6px;
+  color: #334954;
+  font-weight: 700;
+}
+
+.link-field small {
+  display: block;
+  margin-top: 6px;
+  color: #71808a;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+
+.link-field input,
+.link-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 11px;
+  border: 1px solid #c9c0dc;
+  background: #fff;
+  color: #263943;
+  font: inherit;
+}
+
+.link-field input:focus,
+.link-field textarea:focus {
+  outline: 2px solid #eee7ff;
+  outline-offset: 1px;
+  border-color: #7a45e8;
+}
+
+.link-actions,
+.link-panel__head,
+.link-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.link-actions button,
+.link-filters button,
+.link-copy {
+  border: 1px solid #7a45e8;
+  border-radius: 5px;
+  padding: 9px 11px;
+  background: #7a45e8;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.link-actions .link-secondary,
+.link-filters button {
+  background: #fff;
+  color: #6a36cf;
+}
+
+.link-filters button.is-active {
+  background: #7a45e8;
+  color: #fff;
+}
+
+.link-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.link-summary div {
+  padding: 12px 8px;
+  border: 1px solid #e4e7ea;
+  background: #fafbfc;
+  text-align: center;
+}
+
+.link-summary strong,
+.link-summary span {
+  display: block;
+}
+
+.link-summary strong {
+  color: #263943;
+  font-size: 1.25rem;
+}
+
+.link-summary span {
+  margin-top: 3px;
+  color: #71808a;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.link-state {
+  margin-bottom: 13px;
+  padding: 10px 12px;
+  border-left: 4px solid #7a45e8;
+  background: #f6efff;
+  color: #52616c;
+}
+
+.link-state[data-state="ok"] {
+  border-left-color: #16b864;
+  background: #effcf3;
+}
+
+.link-state[data-state="warning"] {
+  border-left-color: #ee9e2d;
+  background: #fff7e9;
+}
+
+.link-panel {
+  margin-top: 13px;
+  padding: 14px;
+  border: 1px solid #e2e7ea;
+  background: #fff;
+}
+
+.link-panel__head {
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.link-table-wrap {
+  overflow-x: auto;
+}
+
+.link-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .84rem;
+}
+
+.link-table th,
+.link-table td {
+  padding: 9px;
+  border-bottom: 1px solid #e6eaed;
+  text-align: left;
+  vertical-align: top;
+}
+
+.link-table th {
+  background: #f5f7f9;
+  color: #3d4d57;
+}
+
+.link-table td:nth-child(2) { min-width: 130px; }
+.link-table td:nth-child(3) {
+  min-width: 245px;
+  max-width: 390px;
+  overflow-wrap: anywhere;
+}
+.link-table td:nth-child(4) { min-width: 110px; }
+.link-table td:nth-child(5) { min-width: 180px; }
+
+.link-table td.has-issues {
+  color: #9b6400;
+  font-weight: 700;
+}
+
+.link-badge {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #eef1f3;
+  color: #51616c;
+  font-size: .75rem;
+  font-weight: 800;
+}
+
+.link-badge--internal { background: #e9f8ef; color: #147a45; }
+.link-badge--external { background: #eee8ff; color: #6233bd; }
+.link-badge--anchor { background: #eaf6ff; color: #1466c8; }
+.link-badge--contact { background: #fff4df; color: #9a5e00; }
+.link-badge--javascript,
+.link-badge--invalid { background: #fff0f2; color: #ad3e4d; }
+
+.link-panel h3 {
+  margin: 0 0 8px;
+}
+
+.link-issues {
+  margin: 0;
+  padding-left: 20px;
+  color: #5b6871;
+}
+
+.link-issues li {
+  margin: 6px 0;
+}
+
+.link-copy-status {
+  min-height: 1.4em;
+  margin: 8px 0 0;
+  padding: 0;
+  color: #6a36cf;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .link-tool { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .link-tool__input,
+  .link-tool__result { padding: 14px; }
+
+  .link-summary { grid-template-columns: repeat(2, 1fr); }
+
+  .link-panel__head {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .link-copy { width: 100%; }
+}

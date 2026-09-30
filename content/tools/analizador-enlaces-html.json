@@ -1,0 +1,43 @@
+{
+  "title": "Analizador de enlaces internos y externos",
+  "description": "Analiza los enlaces de un HTML y clasifica internos, externos, nofollow, sponsored y UGC, además de detectar anchors vacíos o poco descriptivos.",
+  "author": "Sucender",
+  "canonical": "/analizador-enlaces-html",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "Enlaces internos",
+    "Enlaces externos",
+    "Anchor text",
+    "nofollow",
+    "HTML",
+    "Herramientas"
+  ],
+  "publishedDate": "2026-02-19",
+  "featuredImage": "/img/tools/analizador-enlaces-html.svg",
+  "themeColor": "#7a45e8",
+  "toolToneClass": "ct-purple",
+  "robots": "index,follow",
+  "intro": "Pega el HTML de una página y obtén un inventario de sus enlaces, su tipo, sus atributos rel y los principales avisos de enlazado.",
+  "toolMountId": "link-analyzer-app",
+  "styles": [
+    "/css/link-analyzer.css"
+  ],
+  "scripts": [
+    "/js/link-analyzer.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Cómo distingue un enlace interno de uno externo?",
+      "a": "La herramienta utiliza la URL base que indiques. Si el enlace apunta al mismo hostname se considera interno; si apunta a otro dominio se clasifica como externo."
+    },
+    {
+      "q": "¿Qué anchors marca como poco descriptivos?",
+      "a": "Detecta textos vacíos y expresiones genéricas frecuentes como aquí, leer más, más información o clic aquí. Son avisos orientativos para revisar el contexto del enlace."
+    },
+    {
+      "q": "¿Comprueba si el destino devuelve un error 404?",
+      "a": "No. El análisis se hace únicamente sobre el HTML pegado y no realiza peticiones a las URLs externas."
+    }
+  ]
+}

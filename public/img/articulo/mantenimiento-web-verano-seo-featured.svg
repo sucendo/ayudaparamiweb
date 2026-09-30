@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">Qué hacer con tu web en verano</title>
+<desc id="d">Ilustración de un panel de mantenimiento web en verano con sol, navegador, escudo y lista de comprobación.</desc>
+<rect width="1200" height="630" fill="#f9fafc"/>
+<circle cx="1050" cy="105" r="58" fill="#f1c40f" opacity=".95"/>
+<g stroke="#f1c40f" stroke-width="9" stroke-linecap="round" opacity=".75">
+<path d="M1050 20v30M1050 160v30M965 105h30M1105 105h30M990 45l22 22M1088 143l22 22M990 165l22-22M1088 67l22-22"/>
+</g>
+<circle cx="110" cy="535" r="175" fill="#ee9e2d" opacity=".08"/>
+<circle cx="1030" cy="515" r="175" fill="#47a3da" opacity=".06"/>
+<path d="M45 530C235 470 350 560 530 505S860 430 1150 485" fill="none" stroke="#ee9e2d" stroke-width="4" opacity=".18"/>
+<rect x="220" y="100" width="760" height="430" rx="34" fill="#fff" stroke="#e6eaf0" stroke-width="3"/>
+<rect x="220" y="100" width="760" height="60" rx="34" fill="#ee9e2d" opacity=".14"/>
+<circle cx="263" cy="130" r="8" fill="#ee9e2d" opacity=".65"/>
+<circle cx="292" cy="130" r="8" fill="#ee9e2d" opacity=".42"/>
+<circle cx="321" cy="130" r="8" fill="#ee9e2d" opacity=".22"/>
+<rect x="275" y="210" width="355" height="240" rx="24" fill="#fffaf3" stroke="#f0e3cf" stroke-width="3"/>
+<g fill="none" stroke="#ee9e2d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+<path d="M320 258l14 14 26-30"/>
+<path d="M320 316l14 14 26-30"/>
+<path d="M320 374l14 14 26-30"/>
+</g>
+<g fill="#8f9aa9">
+<rect x="395" y="248" width="170" height="14" rx="7"/>
+<rect x="395" y="306" width="145" height="14" rx="7"/>
+<rect x="395" y="364" width="185" height="14" rx="7"/>
+</g>
+<g transform="translate(700 215)">
+<path d="M110 0l95 36v74c0 84-54 139-95 160-41-21-95-76-95-160V36z" fill="#47a3da" opacity=".16" stroke="#47a3da" stroke-width="7"/>
+<path d="M67 130l28 28 59-72" fill="none" stroke="#47a3da" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M735 473c35-58 77-90 130-95-25 28-38 59-39 95z" fill="#58b391" opacity=".72"/>
+<path d="M775 476c11-37 38-67 78-89" fill="none" stroke="#537b7b" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<path d="M165 530c31-75 30-145-5-205 51 24 80 62 88 113-1 48-23 80-83 92z" fill="#58b391" opacity=".78"/>
+<path d="M166 530c-19-67-5-123 40-168" fill="none" stroke="#537b7b" stroke-width="9" stroke-linecap="round" opacity=".72"/>
+</svg>

@@ -10,9 +10,21 @@ fs.mkdirSync(imagesDir, { recursive: true });
 
 function frontmatterValue(source, key) {
   const prefix = key + ':';
-  const line = source.split(/\\r?\\n/).find((entry) => entry.trimStart().startsWith(prefix));
+  const line = source.split('\n').find((entry) => entry.trimStart().startsWith(prefix));
   if (!line) return '';
-  return line.slice(line.indexOf(':') + 1).trim().replace(/^["']|["']$/g, '');
+  const value = line.slice(line.indexOf(':') + 1).trim();
+  return value.length >= 2 && ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'")))
+    ? value.slice(1, -1)
+    : value;
+}
+
+function setFrontmatterValue(source, key, value) {
+  const lines = source.split('\n');
+  const prefix = key + ':';
+  const index = lines.findIndex((entry) => entry.trimStart().startsWith(prefix));
+  if (index < 0) return source;
+  lines[index] = key + ': "' + value + '"';
+  return lines.join('\n');
 }
 
 function escapeXml(value) {

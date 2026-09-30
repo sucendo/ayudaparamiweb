@@ -1,0 +1,42 @@
+{
+  "title": "Validador de canonical y hreflang",
+  "description": "Analiza las etiquetas canonical y hreflang de una página a partir de su HTML y detecta duplicados, URLs inválidas y configuraciones incompletas.",
+  "author": "Sucender",
+  "canonical": "/validador-canonical-hreflang",
+  "category": "herramientas",
+  "tags": [
+    "SEO técnico",
+    "Canonical",
+    "Hreflang",
+    "Internacionalización",
+    "HTML",
+    "Herramientas"
+  ],
+  "publishedDate": "2025-05-22",
+  "featuredImage": "/img/tools/validador-canonical-hreflang.svg",
+  "themeColor": "#1678f2",
+  "toolToneClass": "ct-blue",
+  "robots": "index,follow",
+  "intro": "Pega el HTML de una página y comprueba si sus etiquetas canonical y hreflang están bien formadas, duplicadas o incompletas.",
+  "toolMountId": "canonical-hreflang-validator-app",
+  "styles": [
+    "/css/canonical-hreflang-validator.css"
+  ],
+  "scripts": [
+    "/js/canonical-hreflang-validator.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Qué comprueba la herramienta?",
+      "a": "Revisa la presencia de canonical, detecta más de una canonical, valida URLs, lista hreflang, busca códigos duplicados y comprueba si existe x-default."
+    },
+    {
+      "q": "¿Puedo analizar una página pegando solo su URL?",
+      "a": "No de forma fiable desde una página estática, porque muchos sitios bloquean la lectura directa mediante CORS. Por eso esta herramienta analiza el HTML que pegues."
+    },
+    {
+      "q": "¿x-default es obligatorio?",
+      "a": "No siempre, pero suele ser útil en implementaciones internacionales para indicar una URL de fallback cuando ninguna variante de idioma o región encaja."
+    }
+  ]
+}

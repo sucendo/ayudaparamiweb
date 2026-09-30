@@ -168,3 +168,24 @@ test('el generador de redirecciones 301 está publicado como herramienta de fina
   assert.match(script, /301/);
   assert.match(script, /navigator\.clipboard/);
 });
+
+
+test('el validador de canonical y hreflang está publicado como herramienta de 2025', () => {
+  const route = routes.find((item) => item.path === '/validador-canonical-hreflang');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'validador-canonical-hreflang.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'canonical-hreflang-validator.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2025-05-22');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-blue');
+  assert.equal(meta.themeColor, '#1678f2');
+  assert.equal(meta.featuredImage, '/img/tools/validador-canonical-hreflang.svg');
+  assert.match(script, /link\[rel~="canonical"\]/);
+  assert.match(script, /hreflang/);
+  assert.match(script, /x-default/);
+  assert.match(script, /DOMParser/);
+});

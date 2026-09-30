@@ -29,6 +29,7 @@ const managedContentRoutes = [
   { path: '/generador-robots-txt', view: 'content/render', contentType: 'tool', contentSlug: 'generador-robots-txt' },
   { path: '/generador-sitemap-xml', view: 'content/render', contentType: 'tool', contentSlug: 'generador-sitemap-xml' },
   { path: '/generador-redirecciones-301', view: 'content/render', contentType: 'tool', contentSlug: 'generador-redirecciones-301' },
+  { path: '/validador-canonical-hreflang', view: 'content/render', contentType: 'tool', contentSlug: 'validador-canonical-hreflang' },
 ];
 
 const staticRoutes = [

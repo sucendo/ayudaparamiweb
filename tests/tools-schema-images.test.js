@@ -123,3 +123,25 @@ test('el generador robots.txt está publicado como herramienta de finales de 202
   assert.match(script, /robots\.txt/);
   assert.match(script, /navigator\.clipboard/);
 });
+
+
+test('el generador sitemap.xml está publicado como herramienta de 2024', () => {
+  const route = routes.find((item) => item.path === '/generador-sitemap-xml');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'generador-sitemap-xml.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'sitemap-generator.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2024-05-16');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-green');
+  assert.equal(meta.themeColor, '#16b864');
+  assert.equal(meta.featuredImage, '/img/tools/generador-sitemap-xml.svg');
+  assert.match(script, /<urlset xmlns=/);
+  assert.match(script, /changefreq/);
+  assert.match(script, /priority/);
+  assert.match(script, /sitemap\.xml/);
+  assert.match(script, /navigator\.clipboard/);
+});

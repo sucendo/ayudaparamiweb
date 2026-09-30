@@ -1,0 +1,42 @@
+{
+  "title": "Generador de sitemap.xml",
+  "description": "Crea un sitemap XML con URLs, fecha de modificación, frecuencia de cambio y prioridad, listo para copiar o descargar.",
+  "author": "Sucender",
+  "canonical": "/generador-sitemap-xml",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "Sitemap",
+    "XML",
+    "Indexación",
+    "Rastreo",
+    "Herramientas"
+  ],
+  "publishedDate": "2024-05-16",
+  "featuredImage": "/img/tools/generador-sitemap-xml.svg",
+  "themeColor": "#16b864",
+  "toolToneClass": "ct-green",
+  "robots": "index,follow",
+  "intro": "Añade las URLs de tu web, ajusta sus datos opcionales y genera un sitemap.xml válido para publicarlo en tu dominio.",
+  "toolMountId": "sitemap-generator-app",
+  "styles": [
+    "/css/sitemap-generator.css"
+  ],
+  "scripts": [
+    "/js/sitemap-generator.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Qué URLs debería incluir en un sitemap?",
+      "a": "Incluye URLs canónicas e indexables que quieras que los buscadores descubran. Evita duplicados, redirecciones, páginas con noindex y URLs que no deban indexarse."
+    },
+    {
+      "q": "¿Son obligatorios lastmod, changefreq y priority?",
+      "a": "No. La única información imprescindible de cada entrada es la URL. Los demás campos son opcionales y los buscadores pueden interpretarlos de forma distinta."
+    },
+    {
+      "q": "¿Dónde se publica sitemap.xml?",
+      "a": "Habitualmente se publica en la raíz del sitio, por ejemplo https://www.ejemplo.com/sitemap.xml, y puede declararse también dentro de robots.txt."
+    }
+  ]
+}

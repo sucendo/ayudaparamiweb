@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">Puesta a punto de tu web antes del verano</title>
+<desc id="d">Ilustración de una revisión web antes del verano con navegador, lista de comprobación, seguridad, rendimiento y un sol.</desc>
+<rect width="1200" height="630" fill="#f7f9fb"/>
+<circle cx="110" cy="88" r="165" fill="#47a3da" opacity=".075"/>
+<circle cx="1015" cy="470" r="205" fill="#47a3da" opacity=".055"/>
+<circle cx="1018" cy="105" r="54" fill="#f1c40f" opacity=".9"/>
+<g stroke="#f1c40f" stroke-width="9" stroke-linecap="round" opacity=".75">
+  <path d="M1018 25v28M1018 157v28M938 105h28M1070 105h28M961 48l20 20M1055 142l20 20M961 162l20-20M1055 68l20-20"/>
+</g>
+<path d="M55 520C250 454 342 568 530 505S860 420 1145 487" fill="none" stroke="#47a3da" stroke-width="3" opacity=".16"/>
+<rect x="250" y="94" width="700" height="438" rx="34" fill="#fff" stroke="#e7ebf0" stroke-width="3"/>
+<rect x="250" y="94" width="700" height="58" rx="34" fill="#47a3da" opacity=".12"/>
+<circle cx="292" cy="123" r="8" fill="#47a3da" opacity=".60"/>
+<circle cx="320" cy="123" r="8" fill="#47a3da" opacity=".38"/>
+<circle cx="348" cy="123" r="8" fill="#47a3da" opacity=".22"/>
+<rect x="294" y="190" width="300" height="275" rx="22" fill="#f8fbfd" stroke="#dfe7ec" stroke-width="3"/>
+<g fill="none" stroke="#47a3da" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M335 238l14 14 25-28"/>
+  <path d="M335 295l14 14 25-28"/>
+  <path d="M335 352l14 14 25-28"/>
+  <path d="M335 409l14 14 25-28"/>
+</g>
+<g fill="#8aa0ad">
+  <rect x="400" y="230" width="145" height="13" rx="6"/>
+  <rect x="400" y="287" width="122" height="13" rx="6"/>
+  <rect x="400" y="344" width="156" height="13" rx="6"/>
+  <rect x="400" y="401" width="132" height="13" rx="6"/>
+</g>
+<rect x="635" y="194" width="267" height="120" rx="22" fill="#fff" stroke="#47a3da" stroke-width="5" opacity=".98"/>
+<path d="M676 270a52 52 0 1 1 105 0" fill="none" stroke="#47a3da" stroke-width="13" stroke-linecap="round"/>
+<path d="M728 270l35-39" stroke="#47a3da" stroke-width="10" stroke-linecap="round"/>
+<circle cx="728" cy="270" r="11" fill="#47a3da"/>
+<rect x="635" y="343" width="267" height="122" rx="22" fill="#fff" stroke="#47a3da" stroke-width="5"/>
+<path d="M708 393v-18c0-31 26-55 58-55s58 24 58 55v18" fill="none" stroke="#47a3da" stroke-width="10"/>
+<rect x="685" y="385" width="166" height="54" rx="14" fill="#47a3da" opacity=".16"/>
+<path d="M735 410l21 19 38-43" fill="none" stroke="#47a3da" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M203 510c36-74 39-143 13-211 48 29 74 69 78 118-2 47-24 79-91 93z" fill="#58b391" opacity=".8"/>
+<path d="M203 510c-22-71-10-128 35-171" fill="none" stroke="#537b7b" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+<path d="M980 500c25-54 67-86 128-95-27 30-40 63-39 99" fill="#58b391" opacity=".72"/>
+<path d="M1004 503c12-42 42-72 91-90" fill="none" stroke="#537b7b" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+</svg>

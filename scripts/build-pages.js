@@ -129,7 +129,7 @@ function writeRobots() {
 
 function writeSitemap() {
   const entries = routes
-    .filter((route) => route.path && route.path !== '/404' && route.path !== '/buscar')
+    .filter((route) => route.path && route.path !== '/404' && route.path !== '/buscar' && route.sitemap !== false)
     .map((route) => {
       let lastmod = '';
 
@@ -272,7 +272,7 @@ async function build() {
   copyGeneratedContent();
   const allContent = await contentCatalog.buildCatalog();
   writeContentIndex(allContent);
-  routes.forEach((route) => renderRoute(route, allContent));
+  routes.filter((route) => route.staticOnly !== true).forEach((route) => renderRoute(route, allContent));
   writeRobots();
   writeSitemap();
   writeNoJekyll();

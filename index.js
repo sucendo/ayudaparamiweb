@@ -116,7 +116,7 @@ async function bootstrap() {
     });
   });
 
-  routes.forEach(function(route) {
+  routes.filter(function(route) { return route.staticOnly !== true; }).forEach(function(route) {
     app.get(route.path, function(request, response) {
       if (route.path === '/' && typeof request.query.s === 'string' && request.query.s.trim()) {
         response.redirect('/buscar?s=' + encodeURIComponent(request.query.s.trim()));

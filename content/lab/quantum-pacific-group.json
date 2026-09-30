@@ -58,9 +58,9 @@
       ]
     }
   ],
-  "experimentUrl": "/quantum-pacific-group",
+  "experimentUrl": "/experimento/quantum-pacific-group/",
   "experimentTitle": "La publicación experimental original",
-  "experimentDescription": "Conservo una versión limpia de la publicación histórica que originó esta prueba para mantener separado el experimento de la explicación.",
+  "experimentDescription": "La publicación experimental vive en una carpeta independiente, con su propio HTML, CSS y JavaScript, separada visual y técnicamente de Ayuda para mi Web.",
   "experimentLabel": "Abrir experimento",
   "resultsSections": [
     {

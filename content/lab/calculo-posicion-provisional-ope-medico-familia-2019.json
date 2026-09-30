@@ -59,9 +59,9 @@
       ]
     }
   ],
-  "experimentUrl": "/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019",
+  "experimentUrl": "/experimento/ope-medico-familia-2019/",
   "experimentTitle": "Consultar la clasificación provisional",
-  "experimentDescription": "La herramienta histórica sigue disponible con su tabla, buscador y cálculo provisional.",
+  "experimentDescription": "La aplicación histórica vive en una carpeta independiente, con su propia interfaz, buscador, CSS y JavaScript.",
   "experimentLabel": "Abrir herramienta experimental",
   "resultsSections": [
     {

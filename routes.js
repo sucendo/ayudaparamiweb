@@ -51,12 +51,16 @@ const staticRoutes = [
   { path: '/sucender', view: 'authors/sucender' },
   { path: '/acerca-de', view: 'pages/acerca-de' },
   { path: '/privacidad', view: 'pages/privacidad' },
-  { path: '/quantum-pacific-group', view: 'experiments/0001-quantum-pacific-group', catalog: false },
+  { path: '/quantum-pacific-group', view: 'experiments/0001-quantum-pacific-group', catalog: false, staticOnly: true, sitemap: false },
   {
     path: '/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019',
     view: 'experiments/0004-comunidad-de-madrid-pruebas-selectivas-medico-familia-atencion-primaria-2019-2022',
-    catalog: false
+    catalog: false,
+    staticOnly: true,
+    sitemap: false
   },
+  { path: '/experimento/quantum-pacific-group', view: 'standalone', catalog: false, staticOnly: true },
+  { path: '/experimento/ope-medico-familia-2019', view: 'standalone', catalog: false, staticOnly: true },
   { path: '/contador-caracteres-seo', view: 'tools/0002-contador-caracteres-seo' },
   { path: '/conversor-binario', view: 'tools/0001-conversor-binario' },
 ];

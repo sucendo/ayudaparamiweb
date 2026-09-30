@@ -6,21 +6,67 @@
         <a href="<%= item.url %>"><%= item.name %></a>
       <% }) %>
     </nav>
+
     <header>
       <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
       <p class="ct-post-excerpt"><%= metadata.intro || metadata.description %></p>
-      <div class="bg-img bg-red"><img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>"></div>
+      <% if (metadata.featuredImage) { %>
+        <div class="bg-img bg-red">
+          <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>">
+        </div>
+      <% } %>
     </header>
+
     <section class="ct-post-content seo-tool">
-      <div id="<%= metadata.toolMountId %>"></div>
+      <% if (metadata.toolMountId === 'seo-analyzer-app') { %>
+        <div id="<%= metadata.toolMountId %>">
+          <form id="seo-analyzer-form" class="seo-tool__form">
+            <label for="seo-url" class="seo-tool__label">URL de la página</label>
+            <div class="seo-tool__row">
+              <input
+                id="seo-url"
+                name="url"
+                type="url"
+                inputmode="url"
+                placeholder="https://www.ejemplo.com"
+                autocomplete="url"
+              >
+              <button id="seo-load-url" type="button" class="seo-tool__secondary">Cargar URL</button>
+            </div>
+            <p class="seo-tool__hint">
+              Si el servidor de la web permite lectura desde el navegador, podremos cargarla automáticamente.
+              En GitHub Pages algunas webs bloquean esta petición por CORS; en ese caso puedes pegar el HTML.
+            </p>
+
+            <label for="seo-html-source" class="seo-tool__label">HTML de la página</label>
+            <textarea
+              id="seo-html-source"
+              name="htmlSource"
+              rows="12"
+              placeholder="Pega aquí el HTML completo de la página..."
+            ></textarea>
+
+            <div class="seo-tool__row seo-tool__actions">
+              <button type="submit">Analizar SEO on-page</button>
+            </div>
+          </form>
+
+          <div id="seo-state" class="seo-tool__state" aria-live="polite"></div>
+          <div id="seo-report" class="seo-report" hidden></div>
+        </div>
+      <% } else { %>
+        <div id="<%= metadata.toolMountId %>"></div>
+      <% } %>
+
       <% if ((metadata.faq || []).length) { %>
-      <h2>Preguntas frecuentes</h2>
-      <% metadata.faq.forEach(function(item) { %>
-        <h3><%= item.q %></h3>
-        <p><%= item.a %></p>
-      <% }); %>
+        <h2>Preguntas frecuentes</h2>
+        <% metadata.faq.forEach(function(item) { %>
+          <h3><%= item.q %></h3>
+          <p><%= item.a %></p>
+        <% }); %>
       <% } %>
     </section>
   </article>
 </div>
+
 <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>

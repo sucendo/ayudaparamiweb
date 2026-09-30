@@ -1,72 +1,65 @@
-<div class="ct-main ct-main-post" id="ct-main" role="main">
-  <article class="ct-post post type-post status-publish format-standard has-post-thumbnail hentry">
-    <nav aria-label="breadcrumbs" class="ct-breadcrumbs">
-      <% metadata.breadcrumb.forEach(function(item, index) { %>
-        <% if (index > 0) { %> / <% } %>
-        <a href="<%= item.url %>"><%= item.name %></a>
-      <% }) %>
-    </nav>
-
-    <header>
-      <h1 class="ct-h-shd entry-title"><%= metadata.title %></h1>
-      <p class="ct-post-excerpt"><%= metadata.intro || metadata.description %></p>
-      <% if (metadata.featuredImage) { %>
-        <div class="bg-img bg-red">
-          <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>">
-        </div>
-      <% } %>
-    </header>
-
-    <section class="ct-post-content seo-tool">
-      <% if (metadata.toolMountId === 'seo-analyzer-app') { %>
-        <div id="<%= metadata.toolMountId %>">
-          <form id="seo-analyzer-form" class="seo-tool__form">
-            <label for="seo-url" class="seo-tool__label">URL de la página</label>
-            <div class="seo-tool__row">
-              <input
-                id="seo-url"
-                name="url"
-                type="url"
-                inputmode="url"
-                placeholder="https://www.ejemplo.com"
-                autocomplete="url"
-              >
-              <button id="seo-load-url" type="button" class="seo-tool__secondary">Cargar URL</button>
-            </div>
-            <p class="seo-tool__hint">
-              Si el servidor de la web permite lectura desde el navegador, podremos cargarla automáticamente.
-              En GitHub Pages algunas webs bloquean esta petición por CORS; en ese caso puedes pegar el HTML.
-            </p>
-
-            <label for="seo-html-source" class="seo-tool__label">HTML de la página</label>
-            <textarea
-              id="seo-html-source"
-              name="htmlSource"
-              rows="12"
-              placeholder="Pega aquí el HTML completo de la página..."
-            ></textarea>
-
-            <div class="seo-tool__row seo-tool__actions">
-              <button type="submit">Analizar SEO on-page</button>
-            </div>
-          </form>
-
-          <div id="seo-state" class="seo-tool__state" aria-live="polite"></div>
-          <div id="seo-report" class="seo-report" hidden></div>
-        </div>
-      <% } else { %>
-        <div id="<%= metadata.toolMountId %>"></div>
-      <% } %>
-
-      <% if ((metadata.faq || []).length) { %>
-        <h2>Preguntas frecuentes</h2>
-        <% metadata.faq.forEach(function(item) { %>
-          <h3><%= item.q %></h3>
-          <p><%= item.a %></p>
+<div class="ct-main ct-main-post tool-v2" id="ct-main" role="main">
+  <div class="ct-post">
+    <article class="tool-v2-card ct-red">
+      <nav class="tool-v2-breadcrumbs" aria-label="Migas de pan">
+        <% metadata.breadcrumb.forEach(function(item, index) { %>
+          <% if (index > 0) { %><span aria-hidden="true">›</span><% } %>
+          <% if (index < metadata.breadcrumb.length - 1) { %>
+            <a href="<%= item.url %>"><%= item.name %></a>
+          <% } else { %>
+            <span aria-current="page"><%= item.name %></span>
+          <% } %>
         <% }); %>
+      </nav>
+
+      <header class="tool-v2-header">
+        <a class="tool-v2-category" href="/herramientas">Herramientas</a>
+        <h1 class="tool-v2-title"><%= metadata.title %></h1>
+        <p class="tool-v2-intro"><%= metadata.intro || metadata.description %></p>
+      </header>
+
+      <% if (metadata.featuredImage) { %>
+        <figure class="tool-v2-featured">
+          <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>">
+        </figure>
       <% } %>
-    </section>
-  </article>
+
+      <section class="tool-v2-content seo-tool">
+        <% if (metadata.toolMountId === 'seo-analyzer-app') { %>
+          <div id="<%= metadata.toolMountId %>">
+            <form id="seo-analyzer-form" class="seo-tool__form">
+              <label for="seo-url" class="seo-tool__label">URL de la página</label>
+              <div class="seo-tool__row">
+                <input id="seo-url" name="url" type="url" inputmode="url" placeholder="https://www.ejemplo.com" autocomplete="url">
+                <button id="seo-load-url" type="button" class="seo-tool__secondary">Cargar URL</button>
+              </div>
+              <p class="seo-tool__hint">Si la web bloquea la carga automática por CORS, puedes pegar el HTML directamente en el cuadro inferior.</p>
+
+              <label for="seo-html-source" class="seo-tool__label">HTML de la página</label>
+              <textarea id="seo-html-source" name="htmlSource" rows="12" placeholder="Pega aquí el HTML completo de la página..."></textarea>
+
+              <div class="seo-tool__row seo-tool__actions">
+                <button type="submit">Analizar SEO on-page</button>
+              </div>
+            </form>
+
+            <div id="seo-state" class="seo-tool__state" aria-live="polite"></div>
+            <div id="seo-report" class="seo-report" hidden></div>
+          </div>
+        <% } else { %>
+          <div id="<%= metadata.toolMountId %>"></div>
+        <% } %>
+
+        <% if ((metadata.faq || []).length) { %>
+          <h2>Preguntas frecuentes</h2>
+          <% metadata.faq.forEach(function(item) { %>
+            <h3><%= item.q %></h3>
+            <p><%= item.a %></p>
+          <% }); %>
+        <% } %>
+      </section>
+    </article>
+  </div>
 </div>
 
 <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>

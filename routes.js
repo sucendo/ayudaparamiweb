@@ -117,6 +117,7 @@ const migratedContentRoutes = [
   { path: '/mi-web-no-carga-que-hacer-10-minutos', view: 'content/render', contentType: 'article', contentSlug: 'mi-web-no-carga-que-hacer-10-minutos' },
   { path: '/wordpress-lento-diagnostico-real-paso-a-paso', view: 'content/render', contentType: 'article', contentSlug: 'wordpress-lento-diagnostico-real-paso-a-paso' },
   { path: '/puesta-a-punto-web-antes-del-verano', view: 'content/render', contentType: 'article', contentSlug: 'puesta-a-punto-web-antes-del-verano' },
+  { path: '/como-medir-rendimiento-web-metricas-utiles', view: 'content/render', contentType: 'article', contentSlug: 'como-medir-rendimiento-web-metricas-utiles' },
 ];
 
 const staticRoutes = [

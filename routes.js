@@ -118,8 +118,8 @@ const migratedContentRoutes = [
   { path: '/wordpress-lento-diagnostico-real-paso-a-paso', view: 'content/render', contentType: 'article', contentSlug: 'wordpress-lento-diagnostico-real-paso-a-paso' },
   { path: '/puesta-a-punto-web-antes-del-verano', view: 'content/render', contentType: 'article', contentSlug: 'puesta-a-punto-web-antes-del-verano' },
   { path: '/como-medir-rendimiento-web-metricas-utiles', view: 'content/render', contentType: 'article', contentSlug: 'como-medir-rendimiento-web-metricas-utiles' },
-  { path: '/mantenimiento-web-verano-seo', view: 'content/render', contentType: 'article', contentSlug: 'mantenimiento-web-verano-seo' },
-  { path: '/preparar-web-septiembre-desde-agosto', view: 'content/render', contentType: 'article', contentSlug: 'preparar-web-septiembre-desde-agosto' },
+  { path: '/seo-estacional-busquedas-de-verano', view: 'content/render', contentType: 'article', contentSlug: 'seo-estacional-busquedas-de-verano' },
+  { path: '/auditoria-contenidos-antes-de-septiembre', view: 'content/render', contentType: 'article', contentSlug: 'auditoria-contenidos-antes-de-septiembre' },
 ];
 
 const staticRoutes = [

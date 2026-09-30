@@ -310,3 +310,57 @@
     font-size: .68rem;
   }
 }
+
+
+.lab-experiment-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.lab-table-wrap {
+  margin: 18px 0 8px;
+  overflow-x: auto;
+  border: 1px solid #dde5e9;
+  background: #fff;
+}
+
+.lab-results-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: .88rem;
+}
+
+.lab-results-table th,
+.lab-results-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid #e5ebee;
+  text-align: left;
+  vertical-align: top;
+}
+
+.lab-results-table th {
+  background: var(--lab-soft);
+  color: #2d3d47;
+  font-weight: 800;
+}
+
+.lab-results-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.lab-results-table tbody tr:hover {
+  background: #fafcfd;
+}
+
+@media (max-width: 700px) {
+  .lab-experiment-links {
+    display: grid;
+  }
+
+  .lab-experiment-links .lab-experiment-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

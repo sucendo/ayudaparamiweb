@@ -125,3 +125,37 @@ test('las páginas independientes se presentan como contenido real y solo remite
   assert.doesNotMatch(opeBeforeFooter, /experimento/i);
   assert.match(ope, /Ver cómo se construyó esta herramienta y la experiencia en el Laboratorio/);
 });
+
+
+test('el experimento histórico de indexación de 2019 está publicado con cuatro páginas reales', () => {
+  const route = routes.find((item) => item.path === '/laboratorio/como-descubre-google-pagina-nueva-2019');
+  assert.ok(route);
+  assert.equal(route.contentType, 'laboratory');
+
+  const lab = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'como-descubre-google-pagina-nueva-2019.json'), 'utf8'));
+  assert.equal(lab.publishedDate, '2019-09-12');
+  assert.equal(lab.modifiedDate, '2019-10-18');
+  assert.match(lab.status, /reconstrucción histórica/i);
+  assert.equal(lab.experimentLinks.length, 4);
+  assert.ok(lab.sections.some((section) => section.table && section.table.rows.length === 4));
+
+  lab.experimentLinks.forEach((item) => {
+    const relative = item.url.replace(/^\/experimento\/indexacion-google-2019\//, '').replace(/\/$/, '');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'indexacion-google-2019', relative, 'index.html'), 'utf8');
+    const beforeNote = html.split('<aside class="archive-note">')[0];
+    assert.doesNotMatch(beforeNote, /experimento/i);
+    assert.match(html, /Ver el artículo del Laboratorio/);
+    assert.match(html, /\.\/style\.css/);
+    assert.match(html, /\.\/app\.js/);
+  });
+});
+
+test('el layout de Laboratorio soporta varios enlaces y tabla de resultados', () => {
+  const layout = fs.readFileSync(path.join(__dirname, '..', 'views', 'layouts', 'lab.ejs'), 'utf8');
+  const css = fs.readFileSync(path.join(__dirname, '..', 'public', 'css', 'lab-pages.css'), 'utf8');
+
+  assert.match(layout, /experimentLinks/);
+  assert.match(layout, /lab-results-table/);
+  assert.match(css, /lab-experiment-links/);
+  assert.match(css, /lab-results-table/);
+});

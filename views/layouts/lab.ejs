@@ -70,15 +70,38 @@
               <% section.steps.forEach(function(step) { %><li><%= step %></li><% }); %>
             </ol>
           <% } %>
+
+          <% if (section.table && Array.isArray(section.table.headers) && Array.isArray(section.table.rows)) { %>
+            <div class="lab-table-wrap">
+              <table class="lab-results-table">
+                <thead>
+                  <tr><% section.table.headers.forEach(function(header) { %><th><%= header %></th><% }); %></tr>
+                </thead>
+                <tbody>
+                  <% section.table.rows.forEach(function(row) { %>
+                    <tr><% row.forEach(function(cell) { %><td><%= cell %></td><% }); %></tr>
+                  <% }); %>
+                </tbody>
+              </table>
+            </div>
+          <% } %>
         </section>
       <% }); %>
 
-      <% if (metadata.experimentUrl) { %>
+      <% if (metadata.experimentUrl || (Array.isArray(metadata.experimentLinks) && metadata.experimentLinks.length)) { %>
         <section class="lab-experiment-cta" aria-labelledby="lab-experiment-title">
           <span class="lab-experiment-cta__eyebrow">Experimento</span>
           <h2 id="lab-experiment-title"><%= metadata.experimentTitle || 'Prueba el experimento' %></h2>
           <p><%= metadata.experimentDescription || 'La implementación sigue disponible dentro de Ayuda para mi Web.' %></p>
-          <a class="lab-experiment-button" href="<%= metadata.experimentUrl %>"><%= metadata.experimentLabel || 'Abrir experimento' %> →</a>
+          <% if (Array.isArray(metadata.experimentLinks) && metadata.experimentLinks.length) { %>
+            <div class="lab-experiment-links">
+              <% metadata.experimentLinks.forEach(function(item) { %>
+                <a class="lab-experiment-button" href="<%= item.url %>"><%= item.label %> →</a>
+              <% }); %>
+            </div>
+          <% } else { %>
+            <a class="lab-experiment-button" href="<%= metadata.experimentUrl %>"><%= metadata.experimentLabel || 'Abrir experimento' %> →</a>
+          <% } %>
         </section>
       <% } %>
 

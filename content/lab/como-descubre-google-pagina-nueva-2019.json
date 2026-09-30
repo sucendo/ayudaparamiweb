@@ -1,0 +1,141 @@
+{
+  "title": "¿Cómo descubre Google una página nueva? Cuatro formas de publicarla",
+  "description": "Una reconstrucción de un experimento de 2019 para comparar cuánto podía tardar Google en descubrir e indexar cuatro páginas nuevas según cómo se daban a conocer.",
+  "author": "Sucender",
+  "canonical": "/laboratorio/como-descubre-google-pagina-nueva-2019",
+  "category": "laboratorio",
+  "tags": [
+    "Laboratorio",
+    "SEO",
+    "Google",
+    "Indexación",
+    "Sitemap",
+    "Enlazado interno",
+    "Experimentos"
+  ],
+  "publishedDate": "2019-09-12",
+  "modifiedDate": "2019-10-18",
+  "featuredImage": "/img/lab/indexacion-google-2019-lab.svg",
+  "themeColor": "#7a45e8",
+  "labToneClass": "ct-purple",
+  "status": "Finalizado · reconstrucción histórica",
+  "hypothesis": "Si publico cuatro páginas nuevas, ¿Google las descubrirá antes por aparecer en el sitemap.xml, por recibir un enlace interno o por combinar ambas señales?",
+  "sections": [
+    {
+      "title": "El motivo",
+      "paragraphs": [
+        "En 2019 quería entender algo muy básico pero importante: qué ocurría entre publicar una URL y verla aparecer realmente en Google. Una página podía estar perfectamente disponible para cualquier visitante y, aun así, pasar horas o días antes de que el buscador la descubriera.",
+        "La idea fue separar cuatro formas de publicación y observar la diferencia en el tiempo de descubrimiento. No quería medir cuál posicionaba mejor, sino cuál llegaba antes al radar del buscador."
+      ]
+    },
+    {
+      "title": "Cómo planteé la prueba",
+      "paragraphs": [
+        "Preparé cuatro páginas pequeñas y útiles, con una extensión y una complejidad similares. Cada una trataba un tema diferente para evitar duplicar contenido, pero ninguna dependía de JavaScript para mostrar su texto principal.",
+        "Durante la fase inicial controlé únicamente la forma en la que Google podía encontrarlas. No utilicé una solicitud manual de indexación, porque habría eliminado precisamente la variable que quería observar."
+      ],
+      "steps": [
+        "Página A: publicada sin enlace interno y sin incluirla inicialmente en el sitemap.",
+        "Página B: publicada e incluida en el sitemap.xml, pero sin enlaces internos durante la primera fase.",
+        "Página C: enlazada desde una página ya conocida por Google, pero sin aparecer inicialmente en el sitemap.",
+        "Página D: incluida en el sitemap.xml y, además, enlazada internamente desde una página ya rastreada."
+      ]
+    },
+    {
+      "title": "Qué esperaba que ocurriera",
+      "paragraphs": [
+        "Mi expectativa era que el sitemap resolviera casi todo el problema y que añadir un enlace interno apenas cambiara los tiempos. Por eso esperaba resultados bastante parecidos entre la página B y la D.",
+        "También esperaba que la página completamente huérfana fuese la más lenta, aunque no tenía claro cuánto podía separarse del resto."
+      ]
+    },
+    {
+      "title": "Resultados reconstruidos",
+      "paragraphs": [
+        "No conservo los registros originales de rastreo de 2019, así que los tiempos de esta tabla son una reconstrucción plausible del seguimiento, basada en el comportamiento que se quería observar y en cómo funcionaban estas vías de descubrimiento. No deben interpretarse como logs históricos recuperados.",
+        "La reconstrucción mantiene el resultado cualitativo de la prueba: la página huérfana fue claramente la más lenta; el sitemap ayudó; el enlace interno resultó más eficaz de lo esperado; y combinar sitemap más enlace interno produjo el descubrimiento más rápido."
+      ],
+      "table": {
+        "headers": [
+          "Página",
+          "Cómo se daba a conocer",
+          "Primer rastreo",
+          "Indexación",
+          "Primera impresión"
+        ],
+        "rows": [
+          [
+            "A",
+            "Sin enlaces · sin sitemap",
+            "9 días",
+            "12 días",
+            "14 días"
+          ],
+          [
+            "B",
+            "Solo sitemap.xml",
+            "3 días 8 h",
+            "4 días",
+            "5 días"
+          ],
+          [
+            "C",
+            "Solo enlace interno",
+            "18 h",
+            "29 h",
+            "2 días"
+          ],
+          [
+            "D",
+            "Sitemap + enlace interno",
+            "8 h",
+            "16 h",
+            "22 h"
+          ]
+        ]
+      }
+    }
+  ],
+  "experimentTitle": "Las cuatro páginas publicadas",
+  "experimentDescription": "Las cuatro páginas se conservan como páginas reales e independientes. La prueba ya está cerrada, por lo que hoy todas pueden enlazarse y aparecer en el sitemap sin alterar el resultado histórico reconstruido.",
+  "experimentLinks": [
+    {
+      "label": "Página A · Imágenes web",
+      "url": "/experimento/indexacion-google-2019/optimizar-imagenes-web/"
+    },
+    {
+      "label": "Página B · Meta description",
+      "url": "/experimento/indexacion-google-2019/meta-description-seo/"
+    },
+    {
+      "label": "Página C · Enlaces internos",
+      "url": "/experimento/indexacion-google-2019/enlaces-internos-seo/"
+    },
+    {
+      "label": "Página D · Página rápida",
+      "url": "/experimento/indexacion-google-2019/pagina-web-rapida/"
+    }
+  ],
+  "resultsSections": [
+    {
+      "title": "El resultado",
+      "paragraphs": [
+        "La hipótesis se cumplió solo en parte. El sitemap ayudó claramente frente a una URL huérfana, pero el enlace interno desde una página ya rastreada aceleró el descubrimiento mucho más de lo que esperaba.",
+        "La combinación de ambas vías fue la que mejor funcionó en la reconstrucción: Google tenía una referencia en el sitemap y, al mismo tiempo, encontraba la URL siguiendo la estructura normal de enlaces del sitio."
+      ]
+    },
+    {
+      "title": "La experiencia",
+      "paragraphs": [
+        "La conclusión práctica fue sencilla: publicar una página no termina al subir el archivo al servidor. Si quiero que una URL nueva sea descubierta con rapidez, tiene sentido integrarla desde el principio en la arquitectura de la web y mantener el sitemap actualizado.",
+        "También aprendí que una prueba de indexación necesita registrar desde el primer minuto la hora de publicación, el primer rastreo observable, la primera indexación y las primeras impresiones. Sin ese registro, años después solo puede reconstruirse el comportamiento general, no demostrar tiempos exactos."
+      ]
+    },
+    {
+      "title": "Qué haría diferente ahora",
+      "paragraphs": [
+        "Repetiría la misma estructura con varias rondas y rotaría las condiciones entre páginas para reducir el efecto del tema concreto de cada URL. También guardaría capturas y exportaciones de Search Console en cada intervalo de medición.",
+        "El diseño de 2019 era útil para aprender. Una repetición actual debería estar preparada desde el principio para producir datos comparables y conservarlos."
+      ]
+    }
+  ]
+}

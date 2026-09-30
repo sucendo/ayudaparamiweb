@@ -1,93 +1,70 @@
 ---
-title: "Accesibilidad Y SEO: guía práctica y decisiones clave"
-description: "Guía práctica sobre accesibilidad y seo: qué es, cuándo aplicarlo, errores comunes y plan de ejecución paso a paso."
-excerpt: "Guía práctica sobre accesibilidad y seo: decisiones claras, ejecución ordenada y métricas útiles para avanzar sin ruido."
+title: "Accesibilidad y SEO: cómo mejorar la web para personas y buscadores"
+description: "Guía práctica para trabajar accesibilidad y SEO juntos: estructura semántica, textos alternativos, formularios, teclado y revisión técnica."
+excerpt: "Una web accesible suele ser también más clara, estructurada y fácil de rastrear. Estos son los puntos que conviene revisar."
 author: "Sucender"
 canonical: "/accesibilidad-y-seo"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "Accesibilidad Y SEO"]
+tags: ["SEO", "Accesibilidad", "Desarrollo web"]
 publishedDate: "2025-08-14"
-ratingCount: "0"
-ratingValue: "0.0"
-featuredImage: "/img/articulo/searching.svg"
-heroClass: "bg-purple"
-themeColor: "#537b7b"
+featuredImage: "/img/articulo/accesibilidad-y-seo-featured.svg"
+heroClass: "bg-blue"
+themeColor: "#47a3da"
 robots: "index,follow"
 ---
-<p>En esta guía encontrarás criterios prácticos para tomar decisiones con contexto y ejecutar mejoras de forma sostenida. La idea es que puedas aplicar el contenido sin inflar tareas ni depender de recetas genéricas.</p>
-										<h2>Panorama práctico de accesibilidad y seo</h2>
-										<p>Trabajar bien accesibilidad y seo exige criterio editorial y técnico a la vez: no basta con hacer más tareas, hay que hacer las correctas.</p>
-										<p>Una revisión breve, pero rigurosa, evita invertir tiempo en acciones de bajo retorno y ayuda a construir una hoja de ruta realista.</p>
-										<ul>
-											<li>Empieza por páginas o procesos críticos.</li>
-											<li>Evita cambios masivos sin hipótesis.</li>
-											<li>Repite lo que demuestra resultados.</li>
-										</ul>
-										<h2>Cómo priorizar accesibilidad y seo en un equipo pequeño</h2>
-										<p>Un enfoque útil para accesibilidad y seo es separar tareas de base, optimización y escalado. Así evitas mezclar urgencias con trabajo estratégico.</p>
-										<p>Con un backlog visible y responsables definidos, la ejecución gana ritmo y la calidad deja de depender de esfuerzos puntuales.</p>
-										<ul>
-											<li>Alinea contenido, técnica y negocio.</li>
-											<li>Documenta decisiones clave del sprint.</li>
-											<li>Corrige rápido lo que no funciona.</li>
-										</ul>
-										<h2>Implementación paso a paso de accesibilidad y seo</h2>
-										<p>Empieza con una prueba controlada en una parte del sitio o del proceso. En accesibilidad y seo, los pilotos reducen riesgo y aceleran aprendizaje.</p>
-										<p>Después amplía solo lo que haya mostrado resultados consistentes durante varias semanas. Escalar sin señal suele disparar costes y ruido.</p>
-										<ul>
-											<li>Define una meta medible para 30 días.</li>
-											<li>Prioriza tareas por impacto y esfuerzo.</li>
-											<li>Cierra cada cambio con validación real.</li>
-										</ul>
-										<h2>Errores frecuentes al trabajar accesibilidad y seo</h2>
-										<p>El error más común en accesibilidad y seo es confundir volumen de actividad con impacto real. Más tareas no implica mejores resultados.</p>
-										<p>También falla mucho la falta de trazabilidad: si no registras cambios y contexto, es difícil replicar aciertos o corregir decisiones.</p>
-										<ul>
-											<li>Define una meta medible para 30 días.</li>
-											<li>Prioriza tareas por impacto y esfuerzo.</li>
-											<li>Cierra cada cambio con validación real.</li>
-										</ul>
-										<h2>Qué medir para saber si accesibilidad y seo mejora</h2>
-										<p>Prioriza indicadores que conecten con negocio: conversiones, calidad de lead, retención y avance por etapas del embudo.</p>
-										<p>Un panel corto, revisado con constancia, vale más que dashboards enormes que nadie utiliza para decidir.</p>
-										<ul>
-											<li>Alinea contenido, técnica y negocio.</li>
-											<li>Documenta decisiones clave del sprint.</li>
-											<li>Corrige rápido lo que no funciona.</li>
-										</ul>
-										<h2>Plan de trabajo de 90 días para accesibilidad y seo</h2>
-										<p>Mes 1: ordena la base y elimina bloqueos críticos. Mes 2: optimiza rutas clave. Mes 3: escala lo que mejor funciona.</p>
-										<p>Cierra cada ciclo con una revisión de aprendizajes y ajustes de prioridad. La mejora sostenida nace de la repetición disciplinada.</p>
-										<ul>
-											<li>Define una meta medible para 30 días.</li>
-											<li>Prioriza tareas por impacto y esfuerzo.</li>
-											<li>Cierra cada cambio con validación real.</li>
-										</ul>
-										<h2>Plan de 30 días para pasar de idea a ejecución</h2>
-										<p>Divide el mes en diagnóstico, implementación, revisión y consolidación. Ese ritmo evita la sensación de avance sin resultados reales.</p>
-										<p>Si el equipo trabaja con tiempos limitados, proteger dos bloques semanales de trabajo profundo suele marcar la diferencia en calidad.</p>
-										<ul>
-											<li>Empieza por páginas o procesos críticos.</li>
-											<li>Evita cambios masivos sin hipótesis.</li>
-											<li>Repite lo que demuestra resultados.</li>
-										</ul>
-										<h2>Preguntas que conviene resolver antes de escalar</h2>
-										<p>¿El proceso es entendible para todo el equipo o depende de una sola persona? ¿Hay un criterio claro de calidad? ¿Los datos soportan la decisión?</p>
-										<p>Responder estas preguntas antes de invertir más reduce fricción y mejora la probabilidad de crecimiento estable.</p>
-										<ul>
-											<li>Define una meta medible para 30 días.</li>
-											<li>Prioriza tareas por impacto y esfuerzo.</li>
-											<li>Cierra cada cambio con validación real.</li>
-										</ul>
+Una web accesible intenta que el mayor número posible de personas pueda entenderla y utilizarla, independientemente del dispositivo o de ciertas limitaciones visuales, auditivas o motoras. El SEO persigue otro objetivo, pero ambos campos comparten algo importante: necesitan páginas bien estructuradas, comprensibles y técnicamente cuidadas.
 
-										<h2>Profundización: decisiones avanzadas en accesibilidad y seo</h2>
-										<p>Cuando un equipo ya domina la base, el siguiente salto en accesibilidad y seo suele venir de la coordinación entre áreas. Marketing, producto y tecnología deben trabajar con un lenguaje común para no interpretar de forma distinta qué significa una mejora válida. Si cada área optimiza por separado, el resultado puede parecer correcto en su bloque, pero fallar en el recorrido completo del usuario.</p>
-										<p>También conviene revisar dependencias ocultas: procesos manuales, automatizaciones parciales y decisiones heredadas que nadie cuestiona. En muchos proyectos, esos elementos no aparecen en la documentación, pero condicionan plazos y calidad. Hacer visible esa capa operativa permite planificar mejor y reducir incidencias repetitivas.</p>
-										<p>Otro factor clave es la consistencia editorial. Incluso en temas técnicos como accesibilidad y seo, el contenido tiene que ser legible, útil y orientado a decisión. Un texto lleno de jerga o de recomendaciones ambiguas genera dudas y frena ejecución. Por eso merece la pena editar con criterio: simplificar, ordenar y conectar cada bloque con una acción concreta.</p>
-										<p>En paralelo, la disciplina de revisión marca diferencias. Programar una revisión semanal de avance y una revisión mensual de resultados evita que el proyecto se estanque. No se trata de reuniones largas, sino de conversaciones breves con datos claros: qué mejoró, qué se bloqueó y qué ajuste se aplica en el siguiente ciclo.</p>
-										<p>Si el objetivo es escalar, estandariza primero. Define una checklist de calidad para accesibilidad y seo, una plantilla de ejecución y un formato de reporte mínimo. Esa estandarización no resta creatividad; libera tiempo mental para resolver problemas complejos y reduce errores operativos cuando aumenta el volumen de trabajo.</p>
-										<p>Por último, protege el enfoque de negocio. Las mejores decisiones en accesibilidad y seo son las que conectan con impacto real: mejores conversiones, menor fricción de usuario o mayor eficiencia del equipo. Mantener esa conexión evita caer en cambios cosméticos que consumen tiempo y no generan valor.</p>
+Eso no significa que cada mejora de accesibilidad sea un factor directo de posicionamiento. Significa que muchas buenas prácticas hacen el contenido más claro para usuarios, navegadores y sistemas que procesan la página.
 
-										<p>Un criterio útil para mantener calidad en el tiempo es revisar una decisión por semana en profundidad: qué objetivo perseguía, qué resultado obtuvo y qué ajuste conviene aplicar. Ese hábito convierte la experiencia del equipo en un activo acumulativo y evita repetir errores de ejecución.</p>
-										<h2>Conclusión</h2>
-										<p>Trabajar accesibilidad y seo con método permite convertir esfuerzo en resultados acumulativos. Prioriza, ejecuta, mide y ajusta en ciclos cortos: ese patrón es el que sostiene el crecimiento en proyectos reales.</p>
+## Empieza por una estructura semántica clara
+
+Los encabezados deben describir la jerarquía real del contenido. Un `h1` identifica el tema principal y los `h2` y `h3` organizan las secciones sin saltos arbitrarios. También conviene utilizar elementos HTML por su función: navegación para los menús, botones para acciones y etiquetas asociadas a campos de formulario.
+
+Una estructura semántica coherente facilita la navegación con tecnologías de apoyo y, al mismo tiempo, ayuda a interpretar mejor la organización de la página.
+
+## Imágenes y contenido no textual
+
+Una imagen informativa necesita un texto alternativo que explique su función o contenido. Si una imagen es puramente decorativa, no conviene convertir el atributo alternativo en una lista de palabras clave.
+
+El criterio es sencillo: si la imagen no estuviera disponible, ¿qué información necesitaría una persona para entender la página? Esa es la función del texto alternativo.
+
+En vídeos y audios importantes también hay que pensar en alternativas textuales cuando sea necesario.
+
+## Enlaces, botones y formularios
+
+Textos como “haz clic aquí” pierden sentido cuando se leen fuera de contexto. Es mejor que un enlace explique su destino. Los botones, por su parte, deben dejar claro qué acción ejecutan.
+
+En formularios, cada campo necesita una etiqueta comprensible. Los mensajes de error deben indicar qué ha fallado y cómo corregirlo. El color puede ayudar, pero no debería ser el único recurso para transmitir un estado.
+
+## Navegación con teclado y foco visible
+
+Una revisión rápida consiste en recorrer la página utilizando solo el teclado. Debe ser posible alcanzar enlaces, botones y controles en un orden lógico. Además, el foco necesita ser visible para saber qué elemento está activo.
+
+También conviene evitar componentes que atrapan el foco o menús que solo funcionan al pasar el ratón por encima.
+
+## Contraste y legibilidad
+
+Un texto demasiado claro sobre un fondo similar puede resultar difícil de leer. Lo mismo ocurre con tamaños excesivamente pequeños, bloques demasiado anchos o interfaces que no permiten ampliar correctamente el contenido.
+
+La legibilidad no depende únicamente del contraste: también influyen el espaciado, la longitud de línea, la jerarquía visual y la claridad de los mensajes.
+
+## Qué relación tiene todo esto con SEO
+
+Los buscadores no necesitan exactamente las mismas ayudas que una persona, pero sí se benefician de documentos bien organizados y enlaces descriptivos. Una web accesible suele reducir ambigüedades en títulos, navegación, imágenes y formularios.
+
+La recomendación es no vender accesibilidad como un “truco SEO”. Es una mejora de calidad de la web que, bien implementada, también contribuye a una estructura más sólida.
+
+## Una revisión práctica
+
+Puedes empezar con una muestra de páginas importantes y comprobar:
+
+- jerarquía de encabezados;
+- textos alternativos en imágenes relevantes;
+- etiquetas de formularios;
+- enlaces y botones descriptivos;
+- navegación mediante teclado;
+- foco visible;
+- contraste y legibilidad;
+- comportamiento al ampliar la página.
+
+Las herramientas automáticas ayudan a encontrar incidencias, pero no sustituyen una prueba manual. La mejor revisión combina ambas cosas y prioriza los problemas que impiden completar tareas reales.

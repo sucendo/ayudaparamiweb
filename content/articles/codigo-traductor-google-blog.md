@@ -1,15 +1,15 @@
 ---
 title: "Código traductor google en tu blog"
-description: "Todo lo necesarío para crear una web"
+description: "Código sencillo para añadir accesos de traducción con Google Translate a un blog o web pequeña."
 excerpt: "¿Deseas tener un traductor en tu blog?"
 author: "Sucender"
 canonical: "/codigo-traductor-google-blog"
 category: "tutoriales"
 tags: ["Desarrollo web", "Google", "Tutorial"]
 publishedDate: "2018-02-21"
-featuredImage: "/img/articulo/codigo-traductor-google-blog.png"
+featuredImage: "/img/articulo/codigo-traductor-google-blog-featured.webp"
 heroClass: "bg-blue"
-themeColor: "#537b7b"
+themeColor: "#47a3da"
 robots: "index,follow"
 ---
 Si tu blog recibe visitas de varios países, añadir un traductor visible puede ayudarte a mejorar la experiencia del usuario en segundos.

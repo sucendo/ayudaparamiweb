@@ -7,9 +7,9 @@ canonical: "/checklist-lanzamiento-web-2026"
 category: "tutoriales"
 tags: ["Lanzamiento web", "SEO técnico", "QA"]
 publishedDate: "2026-03-12"
-featuredImage: "/img/articulo/analysis.svg"
-heroClass: "bg-purple"
-themeColor: "#537b7b"
+featuredImage: "/img/articulo/checklist-lanzamiento-web-2026-featured.webp"
+heroClass: "bg-yellow"
+themeColor: "#f1c40f"
 robots: "index,follow"
 ---
 Este artículo está pensado para equipos que necesitan decisiones prácticas, no teoría abstracta. La idea es ayudarte a ordenar prioridades, ejecutar con criterio y convertir ese trabajo en resultados medibles. A lo largo de la guía encontrarás recomendaciones aplicables, errores habituales y un marco de acción realista para avanzar sin sobrecargar al equipo.

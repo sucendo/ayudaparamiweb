@@ -4,23 +4,33 @@
   "author": "Sucender",
   "canonical": "/analizador-seo-url",
   "category": "herramientas",
-  "tags": ["SEO", "Auditoría", "Herramientas"],
+  "tags": [
+    "SEO",
+    "Auditoría",
+    "Herramientas"
+  ],
   "publishedDate": "2026-04-08",
-  "modifiedDate": "2026-04-23",
+  "modifiedDate": "2026-09-30",
   "featuredImage": "/img/tools/seo-analyzer-hero.svg",
   "themeColor": "#d25565",
   "robots": "index,follow",
-  "intro": "Introduce una URL y obtén un informe SEO básico sobre metadatos, encabezados, imágenes y enlaces.",
+  "intro": "Introduce una URL o pega el HTML de una página para revisar title, description, encabezados, contenido, imágenes y enlaces.",
   "toolMountId": "seo-analyzer-app",
-  "scripts": ["/js/seo-analyzer-tool.js"],
+  "scripts": [
+    "/js/seo-analyzer-tool.js"
+  ],
   "faq": [
     {
-      "q": "¿Necesita login?",
-      "a": "No. La herramienta está disponible públicamente."
+      "q": "¿Por qué algunas URLs no se pueden cargar automáticamente?",
+      "a": "La versión publicada en GitHub Pages funciona en el navegador. Algunas webs impiden que otras páginas descarguen su HTML mediante CORS. Si ocurre, puedes pegar el HTML y realizar el análisis localmente."
     },
     {
-      "q": "¿Reemplaza una auditoría completa?",
-      "a": "No. Es un diagnóstico rápido para detectar oportunidades iniciales."
+      "q": "¿El HTML que pego se envía a algún servidor?",
+      "a": "No en el modo local de GitHub Pages. El análisis se realiza en tu navegador."
+    },
+    {
+      "q": "¿Reemplaza una auditoría SEO completa?",
+      "a": "No. Es un diagnóstico on-page rápido para detectar problemas y oportunidades iniciales."
     }
   ]
 }

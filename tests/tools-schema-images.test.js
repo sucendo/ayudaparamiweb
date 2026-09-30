@@ -145,3 +145,26 @@ test('el generador sitemap.xml está publicado como herramienta de 2024', () => 
   assert.match(script, /sitemap\.xml/);
   assert.match(script, /navigator\.clipboard/);
 });
+
+
+test('el generador de redirecciones 301 está publicado como herramienta de finales de 2024', () => {
+  const route = routes.find((item) => item.path === '/generador-redirecciones-301');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'generador-redirecciones-301.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'redirect-generator.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2024-11-21');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-red');
+  assert.equal(meta.themeColor, '#d25565');
+  assert.equal(meta.featuredImage, '/img/tools/generador-redirecciones-301.svg');
+  assert.match(script, /Apache/);
+  assert.match(script, /Nginx/);
+  assert.match(script, /Netlify/);
+  assert.match(script, /Cloudflare/);
+  assert.match(script, /301/);
+  assert.match(script, /navigator\.clipboard/);
+});

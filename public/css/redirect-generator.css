@@ -1,0 +1,222 @@
+.redirect-tool {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: 18px;
+  margin: 0 0 1.5rem;
+}
+
+.redirect-tool__editor,
+.redirect-tool__output {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #efdadd;
+}
+
+.redirect-tool__editor { background: #fff6f7; }
+.redirect-tool__output { background: #2a2022; color: #f8edef; }
+
+.redirect-toolbar {
+  display: grid;
+  grid-template-columns: 1.35fr .85fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.redirect-toolbar label,
+.redirect-field label,
+.redirect-import label,
+.redirect-row label {
+  color: #334954;
+  font-weight: 700;
+}
+
+.redirect-toolbar select,
+.redirect-field input,
+.redirect-import textarea,
+.redirect-row input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 6px;
+  padding: 9px 10px;
+  border: 1px solid #d8c0c4;
+  background: #fff;
+  color: #263943;
+  font: inherit;
+}
+
+.redirect-toolbar select:focus,
+.redirect-field input:focus,
+.redirect-import textarea:focus,
+.redirect-row input:focus {
+  outline: 2px solid #ffe5e9;
+  outline-offset: 1px;
+  border-color: #d25565;
+}
+
+.redirect-field { margin-bottom: 14px; }
+
+.redirect-field label span,
+.redirect-field small {
+  color: #78848c;
+  font-size: .82rem;
+  font-weight: 400;
+}
+
+.redirect-field small {
+  display: block;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.redirect-import textarea {
+  display: block;
+  min-height: 105px;
+  resize: vertical;
+}
+
+.redirect-import button,
+.redirect-list-head button {
+  margin-top: 8px;
+  border: 1px solid #d25565;
+  border-radius: 5px;
+  padding: 8px 11px;
+  background: #fff;
+  color: #b33f50;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.redirect-list-head,
+.redirect-output-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 10px;
+}
+
+.redirect-list-head { color: #334954; }
+
+.redirect-rows {
+  display: grid;
+  gap: 8px;
+}
+
+.redirect-row {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 30px minmax(0,1fr) 34px;
+  align-items: end;
+  gap: 7px;
+  padding: 11px;
+  border: 1px solid #ead8db;
+  background: #fff;
+}
+
+.redirect-row label {
+  display: block;
+  font-size: .82rem;
+}
+
+.redirect-arrow {
+  align-self: center;
+  margin-top: 24px;
+  text-align: center;
+  color: #d25565;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.redirect-remove {
+  width: 34px;
+  height: 39px;
+  border: 0;
+  border-radius: 4px;
+  background: #f9e7ea;
+  color: #b43d4e;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.redirect-output-head { margin-top: 0; }
+
+.redirect-output-head span {
+  color: #a9dfbd;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.redirect-output-head span.has-warnings { color: #ffd18a; }
+
+.redirect-tool__output pre {
+  box-sizing: border-box;
+  min-height: 420px;
+  max-height: 650px;
+  margin: 0;
+  padding: 16px;
+  overflow: auto;
+  border: 1px solid #49383c;
+  background: #191214;
+  color: #f8edef;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: .86rem;
+  line-height: 1.55;
+}
+
+.redirect-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.redirect-actions button {
+  border: 1px solid #d25565;
+  border-radius: 5px;
+  padding: 9px 12px;
+  background: #d25565;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.redirect-actions .redirect-secondary {
+  border-color: #7d686d;
+  background: transparent;
+  color: #f8edef;
+}
+
+.redirect-warnings {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: #ffd18a;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+
+.redirect-warnings:empty { display: none; }
+
+.redirect-status-text {
+  min-height: 1.4em;
+  margin: 8px 0 0;
+  padding: 0;
+  color: #efafb8;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .redirect-tool { grid-template-columns: 1fr; }
+  .redirect-tool__output pre { min-height: 300px; }
+}
+
+@media (max-width: 650px) {
+  .redirect-toolbar { grid-template-columns: 1fr; }
+  .redirect-row { grid-template-columns: 1fr 34px; }
+  .redirect-row label { grid-column: 1 / -1; }
+  .redirect-arrow { display: none; }
+  .redirect-remove { grid-column: 2; }
+}

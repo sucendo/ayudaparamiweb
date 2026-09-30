@@ -1,0 +1,43 @@
+{
+  "title": "Generador de redirecciones 301",
+  "description": "Genera reglas de redirección 301 y 302 para Apache, Nginx, Netlify y Cloudflare a partir de tus URLs antiguas y nuevas.",
+  "author": "Sucender",
+  "canonical": "/generador-redirecciones-301",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "Redirecciones 301",
+    "Apache",
+    "Nginx",
+    "Netlify",
+    "Cloudflare",
+    "Herramientas"
+  ],
+  "publishedDate": "2024-11-21",
+  "featuredImage": "/img/tools/generador-redirecciones-301.svg",
+  "themeColor": "#d25565",
+  "toolToneClass": "ct-red",
+  "robots": "index,follow",
+  "intro": "Añade las URLs antiguas y sus destinos y genera el formato de redirección que necesites para tu servidor o plataforma.",
+  "toolMountId": "redirect-generator-app",
+  "styles": [
+    "/css/redirect-generator.css"
+  ],
+  "scripts": [
+    "/js/redirect-generator.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Cuándo debería utilizar una redirección 301?",
+      "a": "Cuando una URL se ha movido de forma permanente a otra dirección. Una 302 es temporal y se utiliza cuando el cambio no debe considerarse definitivo."
+    },
+    {
+      "q": "¿Puedo introducir rutas o URLs completas?",
+      "a": "Sí. Para Apache, Nginx y Netlify es habitual trabajar con rutas. Cloudflare puede utilizar URLs completas, y la herramienta intenta normalizar cada formato."
+    },
+    {
+      "q": "¿La herramienta aplica las redirecciones?",
+      "a": "No. Genera las reglas para que puedas revisarlas y después añadirlas a la configuración correspondiente de tu servidor o plataforma."
+    }
+  ]
+}

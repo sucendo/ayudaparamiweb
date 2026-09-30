@@ -77,7 +77,7 @@ npm run build
 - `content/articles/`: artículos Markdown.
 - `content/index.js`: catálogo y metadatos de contenido.
 - `lib/content/`: carga, Markdown y validación.
-- `views/`: plantillas EJS.
+- `views/`: plantillas EJS activas. Las antiguas copias EJS de artículos migrados ya no se conservan.
 - `public/`: CSS, JavaScript, imágenes, fuentes y robots.txt.
 - `scripts/`: build, validación auxiliar y generación de datos.
 - `tests/`: pruebas automáticas.
@@ -100,3 +100,7 @@ El estado estructurado se mantiene en:
 - Email: <mailto:sucender@gmail.com>
 - X/Twitter: <https://twitter.com/ayudaparamiweb>
 - GitHub: <https://github.com/ayudaparamiweb>
+
+## Limpieza de código legacy
+
+La migración editorial a Markdown permitió retirar las antiguas plantillas duplicadas de `views/news/` y recursos de WordPress que ya no participaban en la web actual. Los recursos gráficos históricos se conservan: esta limpieza no elimina ficheros de `public/img/`, incluidas imágenes y SVG.

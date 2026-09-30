@@ -2,7 +2,7 @@
   metadata: metadata,
   contentLayout: metadata.type === 'article' ? '../layouts/article.ejs' : (metadata.type === 'tool' ? '../layouts/tool.ejs' : '../layouts/lab.ejs'),
   extraStyles: metadata.type === 'tool' ? ['/css/seo-analyzer-tool.css'] : [],
-  globalScripts: ['/js/typeahead.min.js', '/js/hogan.min.js', '/js/wp-typeahead.js', '/js/wp-embed.min.js'],
+  globalScripts: [],
   extraScripts: metadata.scripts || [],
   relatedArticles: typeof relatedArticles !== 'undefined' ? relatedArticles : [],
   previousArticle: typeof previousArticle !== 'undefined' ? previousArticle : null,

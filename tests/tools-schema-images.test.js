@@ -189,3 +189,25 @@ test('el validador de canonical y hreflang está publicado como herramienta de 2
   assert.match(script, /x-default/);
   assert.match(script, /DOMParser/);
 });
+
+
+test('el analizador de encabezados H1-H6 está publicado como herramienta de finales de 2025', () => {
+  const route = routes.find((item) => item.path === '/analizador-encabezados-html');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'analizador-encabezados-html.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'heading-analyzer.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2025-11-20');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-orange');
+  assert.equal(meta.themeColor, '#ee9e2d');
+  assert.equal(meta.featuredImage, '/img/tools/analizador-encabezados-html.svg');
+  assert.match(script, /h1,h2,h3,h4,h5,h6/);
+  assert.match(script, /Salto de jerarquía/);
+  assert.match(script, /encabezado.*vacío/i);
+  assert.match(script, /Texto de encabezado repetido/);
+  assert.match(script, /DOMParser/);
+});

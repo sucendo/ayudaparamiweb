@@ -1,0 +1,42 @@
+{
+  "title": "Analizador de encabezados H1-H6",
+  "description": "Analiza la jerarquía H1-H6 de un HTML y detecta H1 duplicados, saltos de nivel, encabezados vacíos y textos repetidos.",
+  "author": "Sucender",
+  "canonical": "/analizador-encabezados-html",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "Encabezados",
+    "H1",
+    "HTML",
+    "Accesibilidad",
+    "Herramientas"
+  ],
+  "publishedDate": "2025-11-20",
+  "featuredImage": "/img/tools/analizador-encabezados-html.svg",
+  "themeColor": "#ee9e2d",
+  "toolToneClass": "ct-orange",
+  "robots": "index,follow",
+  "intro": "Pega el HTML de una página y revisa su estructura H1-H6 mediante un árbol visual, recuentos y avisos de jerarquía.",
+  "toolMountId": "heading-analyzer-app",
+  "styles": [
+    "/css/heading-analyzer.css"
+  ],
+  "scripts": [
+    "/js/heading-analyzer.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Cuántos H1 debería tener una página?",
+      "a": "Una estructura con un H1 principal suele ser la opción más clara. HTML permite distintos enfoques, pero para SEO y accesibilidad conviene que la jerarquía sea comprensible y coherente."
+    },
+    {
+      "q": "¿Es un error pasar de H2 a H4?",
+      "a": "La página seguirá funcionando, pero un salto de nivel puede hacer más difícil interpretar la estructura del contenido. La herramienta lo marca para que puedas revisarlo."
+    },
+    {
+      "q": "¿La herramienta modifica mi HTML?",
+      "a": "No. El análisis se realiza localmente en tu navegador y solo muestra un informe."
+    }
+  ]
+}

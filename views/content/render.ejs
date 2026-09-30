@@ -1,7 +1,7 @@
 <%- include('../layouts/base.ejs', {
   metadata: metadata,
   contentLayout: metadata.type === 'article' ? '../layouts/article.ejs' : (metadata.type === 'tool' ? '../layouts/tool.ejs' : '../layouts/lab.ejs'),
-  extraStyles: metadata.type === 'tool' ? ['/css/seo-analyzer-tool.css'] : [],
+  extraStyles: metadata.type === 'tool' ? ['/css/tool-pages.css', '/css/seo-analyzer-tool.css'] : [],
   globalScripts: [],
   extraScripts: metadata.scripts || [],
   relatedArticles: typeof relatedArticles !== 'undefined' ? relatedArticles : [],

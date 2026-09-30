@@ -94,7 +94,7 @@ test('los experimentos se publican como carpetas independientes y sin layout de 
   assert.match(quantumIndex, /\.\/app\.js/);
   assert.doesNotMatch(quantumIndex, /partials\/header|ct-footer/);
   assert.match(quantumCss, /\.masthead/);
-  assert.match(quantumJs, /daysBetween/);
+  assert.match(quantumJs, /readingTime/);
 
   assert.match(opeIndex, /id="resultsTable"/);
   assert.match(opeIndex, /\.\/style\.css/);

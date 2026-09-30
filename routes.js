@@ -116,6 +116,7 @@ const migratedContentRoutes = [
   { path: '/editores-con-ia-y-agentes-de-desarrollo', view: 'content/render', contentType: 'article', contentSlug: 'editores-con-ia-y-agentes-de-desarrollo' },
   { path: '/mi-web-no-carga-que-hacer-10-minutos', view: 'content/render', contentType: 'article', contentSlug: 'mi-web-no-carga-que-hacer-10-minutos' },
   { path: '/wordpress-lento-diagnostico-real-paso-a-paso', view: 'content/render', contentType: 'article', contentSlug: 'wordpress-lento-diagnostico-real-paso-a-paso' },
+  { path: '/puesta-a-punto-web-antes-del-verano', view: 'content/render', contentType: 'article', contentSlug: 'puesta-a-punto-web-antes-del-verano' },
 ];
 
 const staticRoutes = [

@@ -207,6 +207,11 @@ function extractBgClass(source) {
   return bgMatch ? bgMatch[1].toLowerCase() : null;
 }
 
+function extractToolCtClass(source) {
+  const toolMatch = source.match(/class="[^"]*tool-v2-card[^"]*\s(ct-(?:blue|purple|green|orange|red|yellow))[^"]*"/i);
+  return toolMatch ? toolMatch[1].toLowerCase() : null;
+}
+
 function formatDateEs(isoDate) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return isoDate;
   const [year, month, day] = isoDate.split('-');

@@ -1,0 +1,70 @@
+<!doctype html>
+<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultados de búsqueda | Ayuda para mi Web</title>
+    <meta name="description" content="Resultados de búsqueda en Ayuda para mi Web" />
+    <meta name="author" content="Sucender" />
+    <%- include('../partials/head.ejs') %>
+  </head>
+
+  <body id="apmw-body">
+    <div class="ct-container">
+      <%- include('../partials/header.ejs', { searchQuery: query || '' }) %>
+
+      <div class="ct-content">
+        <div class="ct-inner">
+          <div class="ct-main ct-main-archive" role="main">
+            <div class="ct-archive">
+              <h1>Resultados de búsqueda</h1>
+              <div class="ct-cat-desc">
+                <p>Busca por título, extracto, etiquetas y URL. Los resultados se actualizan automáticamente.</p>
+              </div>
+              <form method="get" action="/buscar" class="ct-search-page-form">
+                <input
+                  id="search-page-input"
+                  class="ct-search-page-input"
+                  type="search"
+                  name="q"
+                  value="<%= query || '' %>"
+                  placeholder="Ejemplo: bluetooth, seo local, wordpress..."
+                  autocomplete="off"
+                />
+              </form>
+              <div class="ct-cat-desc">
+                <p id="search-status-text">
+                  <% if (!query) { %>
+                    Escribe un término para buscar contenido en la web.
+                  <% } else if (!results || !results.length) { %>
+                    No se han encontrado resultados para <strong>"<%= query %>"</strong>.
+                  <% } else { %>
+                    Mostrando <strong><%= results.length %></strong> resultado(s) para <strong>"<%= query %>"</strong>.
+                  <% } %>
+                </p>
+              </div>
+              <div id="search-results-container" class="ct-archive-container">
+                <%- include('../partials/content-grid.ejs', { items: results || [], categories: categories || {} }) %>
+              </div>
+            </div>
+          </div>
+          <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
+          <div class="clr"></div>
+        </div>
+      </div>
+
+      <%- include('../partials/footer.ejs') %>
+    </div>
+
+    <%- include('../partials/shared.ejs') %>
+    <script>
+      window.__SEARCH_BOOTSTRAP__ = {
+        query: <%- JSON.stringify(query || '') %>,
+        results: <%- JSON.stringify(results || []) %>,
+        categories: <%- JSON.stringify(categories || {}) %>
+      };
+    </script>
+    <script src="/js/search-page.js"></script>
+  </body>
+</html>

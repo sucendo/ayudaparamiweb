@@ -1,0 +1,177 @@
+<%
+  const resolveArticleToneClass = function(articleMetadata) {
+    const heroClass = String(articleMetadata && articleMetadata.heroClass ? articleMetadata.heroClass : '').toLowerCase();
+    const themeColor = String(articleMetadata && articleMetadata.themeColor ? articleMetadata.themeColor : '').toLowerCase();
+    const toneByHero = {
+      'bg-purple': 'ct-purple',
+      'bg-orange': 'ct-orange',
+      'bg-blue': 'ct-blue',
+      'bg-green': 'ct-green',
+      'bg-red': 'ct-red',
+      'bg-yellow': 'ct-yellow',
+      'bg-teal': 'ct-green'
+    };
+    const toneByTheme = {
+      '#64448f': 'ct-purple',
+      '#e2674a': 'ct-orange',
+      '#ee9e2d': 'ct-orange',
+      '#46a4da': 'ct-blue',
+      '#47a3da': 'ct-blue',
+      '#58b391': 'ct-green',
+      '#2fa06a': 'ct-green',
+      '#537b7b': 'ct-green',
+      '#f06a6a': 'ct-red',
+      '#d25565': 'ct-red',
+      '#d4bf4a': 'ct-yellow',
+      '#f1c40f': 'ct-yellow'
+    };
+
+    if (toneByTheme[themeColor]) return toneByTheme[themeColor];
+    if (toneByHero[heroClass]) return toneByHero[heroClass];
+    if (heroClass.indexOf('purple') !== -1) return 'ct-purple';
+    if (heroClass.indexOf('orange') !== -1) return 'ct-orange';
+    if (heroClass.indexOf('blue') !== -1) return 'ct-blue';
+    if (heroClass.indexOf('green') !== -1) return 'ct-green';
+    if (heroClass.indexOf('red') !== -1) return 'ct-red';
+    if (heroClass.indexOf('yellow') !== -1) return 'ct-yellow';
+
+    return 'ct-purple';
+  };
+
+  const articleToneClass = resolveArticleToneClass(metadata || {});
+  const formatDate = function(dateString) {
+    const parts = String(dateString || '').split('-');
+    return parts.length === 3 ? parts[2] + '/' + parts[1] + '/' + parts[0] : dateString;
+  };
+  const categoryMap = {
+    guias: { label: 'Artículos', path: '/articulos' },
+    analisis: { label: 'Artículos', path: '/articulos' },
+    tutoriales: { label: 'Tutoriales', path: '/tutoriales' }
+  };
+  const categoryInfo = categoryMap[metadata.category] || { label: 'Artículos', path: '/articulos' };
+  const articleRelated = typeof relatedArticles !== 'undefined' ? relatedArticles : [];
+%>
+
+<div class="ct-main ct-main-post article-v2" id="ct-main" role="main" data-article-tone="<%= articleToneClass %>">
+  <div class="ct-post">
+    <article class="post type-post status-publish format-standard has-post-thumbnail hentry article-v2-card <%= articleToneClass %>" itemscope itemtype="https://schema.org/Article">
+
+      <nav class="article-breadcrumbs" aria-label="Migas de pan">
+        <% (metadata.breadcrumb || []).forEach(function(item, index) { %>
+          <% if (index > 0) { %><span aria-hidden="true">›</span><% } %>
+          <% if (index < metadata.breadcrumb.length - 1) { %>
+            <a href="<%= item.url %>"><%= item.name %></a>
+          <% } else { %>
+            <span aria-current="page"><%= item.name %></span>
+          <% } %>
+        <% }); %>
+      </nav>
+
+      <header class="article-v2-header">
+        <a class="article-v2-category" href="<%= categoryInfo.path %>"><%= categoryInfo.label %></a>
+        <h1 class="ct-h-shd entry-title" itemprop="headline"><%= metadata.title %></h1>
+        <p class="ct-post-excerpt article-v2-excerpt" itemprop="description"><%= metadata.description %></p>
+
+        <div class="article-v2-meta">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Por <a href="/sucender" rel="author" itemprop="name"><%= metadata.author %></a>
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>
+            Publicado el <time itemprop="datePublished" datetime="<%= metadata.publishedDate %>"><%= formatDate(metadata.publishedDate) %></time>
+          </span>
+          <% if (metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate) { %>
+            <span aria-hidden="true">·</span>
+            <span>
+              Actualizado el <time itemprop="dateModified" datetime="<%= metadata.modifiedDate %>"><%= formatDate(metadata.modifiedDate) %></time>
+            </span>
+          <% } %>
+          <% if (metadata.readingTime) { %>
+            <span aria-hidden="true">·</span>
+            <span><%= metadata.readingTime %> min de lectura</span>
+          <% } %>
+        </div>
+      </header>
+
+      <% if (metadata.featuredImage) { %>
+        <figure class="ct-post-featured-img article-v2-featured <%= articleToneClass %>" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <img src="<%= metadata.featuredImage %>" alt="<%= metadata.title %>" fetchpriority="high">
+          <meta itemprop="url" content="https://ayudaparamiweb.com<%= metadata.featuredImage %>">
+        </figure>
+      <% } %>
+
+      <div class="ct-post-content article-v2-content">
+        <% if ((metadata.toc || []).length) { %>
+          <nav class="article-toc <%= articleToneClass %>" aria-labelledby="article-toc-title">
+            <details open>
+              <summary id="article-toc-title">Índice del artículo</summary>
+              <ol>
+                <% metadata.toc.forEach(function(item) { %>
+                  <li class="toc-level-<%= item.level %>">
+                    <a href="<%= metadata.canonical || ('/' + metadata.slug) %>#<%= item.id %>"><%= item.text %></a>
+                  </li>
+                <% }); %>
+              </ol>
+            </details>
+          </nav>
+        <% } %>
+
+        <%- metadata.bodyHtml %>
+      </div>
+    </article>
+
+    <% if ((metadata.tags || []).length) { %>
+      <p class="ct-tags"><span class="ct-tags-label">Etiquetado en:</span>
+        <% metadata.tags.forEach(function(tag) { %>
+          <a href="/tags?tag=<%= encodeURIComponent(tag) %>" rel="tag"><%= tag %></a>
+        <% }); %>
+      </p>
+    <% } %>
+
+    <% if (articleRelated.length) { %>
+      <section class="article-related-classic" data-related-posts="true" aria-labelledby="article-related-title">
+        <div class="article-related-heading">
+          <h3 id="article-related-title">Artículos relacionados</h3>
+          <p>Lecturas recomendadas por temática y categoría:</p>
+        </div>
+        <div class="article-related-color-grid">
+          <% articleRelated.forEach(function(item) { %>
+            <article class="ct-box <%= item.colorClass || 'ct-purple' %>">
+              <div class="ct-box-inner">
+                <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
+              </div>
+            </article>
+          <% }); %>
+        </div>
+      </section>
+    <% } %>
+
+    <% if (previousArticle || nextArticle) { %>
+      <nav class="article-pagination" aria-label="Navegación entre artículos">
+        <% if (previousArticle) { %>
+          <article class="article-pagination-card article-pagination-prev ct-box <%= previousArticle.colorClass || 'ct-purple' %>">
+            <span>← Artículo anterior</span>
+            <a href="<%= previousArticle.path %>"><%= previousArticle.title %></a>
+          </article>
+        <% } else { %>
+          <div class="article-pagination-empty" aria-hidden="true"></div>
+        <% } %>
+
+        <% if (nextArticle) { %>
+          <article class="article-pagination-card article-pagination-next ct-box <%= nextArticle.colorClass || 'ct-purple' %>">
+            <span>Artículo siguiente →</span>
+            <a href="<%= nextArticle.path %>"><%= nextArticle.title %></a>
+          </article>
+        <% } else { %>
+          <div class="article-pagination-empty" aria-hidden="true"></div>
+        <% } %>
+      </nav>
+    <% } %>
+
+    <div class="ct-row">
+      <div class="ct-author-info ct-box <%= articleToneClass %>"><%- include('../authors/sucender-short.ejs') %></div>
+    </div>
+  </div>
+</div>
+
+<aside class="ct-sidebar article-sidebar"><%- include('../partials/aside.ejs') %></aside>

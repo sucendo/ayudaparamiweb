@@ -26,6 +26,7 @@ const managedContentRoutes = [
   { path: '/generador-schema-org', view: 'content/render', contentType: 'tool', contentSlug: 'generador-schema-org' },
   { path: '/previsualizador-serp-google', view: 'content/render', contentType: 'tool', contentSlug: 'previsualizador-serp-google' },
   { path: '/generador-metaetiquetas-seo', view: 'content/render', contentType: 'tool', contentSlug: 'generador-metaetiquetas-seo' },
+  { path: '/generador-robots-txt', view: 'content/render', contentType: 'tool', contentSlug: 'generador-robots-txt' },
 ];
 
 const staticRoutes = [

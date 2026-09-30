@@ -1,0 +1,42 @@
+{
+  "title": "Generador de robots.txt",
+  "description": "Crea un archivo robots.txt con reglas Allow y Disallow, user-agents, sitemap y comprobaciones básicas antes de publicarlo.",
+  "author": "Sucender",
+  "canonical": "/generador-robots-txt",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "robots.txt",
+    "Rastreo",
+    "Googlebot",
+    "Sitemap",
+    "Herramientas"
+  ],
+  "publishedDate": "2023-11-23",
+  "featuredImage": "/img/tools/generador-robots-txt.svg",
+  "themeColor": "#7a45e8",
+  "toolToneClass": "ct-purple",
+  "robots": "index,follow",
+  "intro": "Configura las reglas de rastreo de tu web y genera un robots.txt listo para copiar o descargar.",
+  "toolMountId": "robots-generator-app",
+  "styles": [
+    "/css/robots-generator.css"
+  ],
+  "scripts": [
+    "/js/robots-generator.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Para qué sirve robots.txt?",
+      "a": "Permite indicar a los rastreadores qué rutas pueden o no solicitar. No es un mecanismo de seguridad y una URL bloqueada puede seguir apareciendo en resultados si otros sitios enlazan a ella."
+    },
+    {
+      "q": "¿Debo bloquear CSS o JavaScript?",
+      "a": "En general no conviene bloquear recursos necesarios para que un buscador pueda interpretar correctamente la página. Utiliza las reglas solo para rutas cuyo rastreo no necesites."
+    },
+    {
+      "q": "¿Dónde se publica el archivo?",
+      "a": "Normalmente en la raíz del dominio, por ejemplo https://www.ejemplo.com/robots.txt."
+    }
+  ]
+}

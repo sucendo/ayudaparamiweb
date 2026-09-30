@@ -101,3 +101,25 @@ test('el generador de metaetiquetas SEO está publicado como herramienta de 2023
   assert.match(script, /canonical/);
   assert.match(script, /navigator\.clipboard/);
 });
+
+
+test('el generador robots.txt está publicado como herramienta de finales de 2023', () => {
+  const route = routes.find((item) => item.path === '/generador-robots-txt');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'generador-robots-txt.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'robots-generator.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2023-11-23');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-purple');
+  assert.equal(meta.themeColor, '#7a45e8');
+  assert.equal(meta.featuredImage, '/img/tools/generador-robots-txt.svg');
+  assert.match(script, /User-agent/);
+  assert.match(script, /Disallow/);
+  assert.match(script, /Sitemap/);
+  assert.match(script, /robots\.txt/);
+  assert.match(script, /navigator\.clipboard/);
+});

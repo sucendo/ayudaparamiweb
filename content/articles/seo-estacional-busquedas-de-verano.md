@@ -222,7 +222,7 @@ Pero mantener la dirección permite acumular historial, enlaces y señales.
 
 Una URL como /campamentos-verano puede actualizarse cada año.
 
-Crear /campamentos-verano-2026, después /campamentos-verano-2027 y así sucesivamente solo merece la pena cuando el contenido necesita conservarse como archivo o cada edición tiene valor independiente.
+Crear una URL distinta con el año y repetir el proceso cada temporada solo merece la pena cuando el contenido necesita conservarse como archivo o cada edición tiene valor independiente.
 
 Para páginas puramente comerciales, reutilizar suele ser más sencillo.
 

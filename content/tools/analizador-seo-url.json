@@ -11,7 +11,7 @@
   ],
   "publishedDate": "2021-09-15",
   "featuredImage": "/img/tools/seo-analyzer-hero.svg",
-  "themeColor": "#47a3da",
+  "themeColor": "#1678f2",
   "robots": "index,follow",
   "intro": "Introduce una URL o pega el HTML de una página para revisar title, description, encabezados, contenido, imágenes y enlaces.",
   "toolMountId": "seo-analyzer-app",

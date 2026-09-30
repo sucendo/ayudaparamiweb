@@ -47,14 +47,27 @@ const CT_CLASS_BY_BG_CLASS = {
   'bg-teal': 'ct-green'
 };
 
+const ACCENT_BY_CT_CLASS = {
+  'ct-blue': '#1678f2',
+  'ct-purple': '#7a45e8',
+  'ct-green': '#16b864',
+  'ct-orange': '#ee9e2d',
+  'ct-red': '#d25565',
+  'ct-yellow': '#f1c40f'
+};
+
 const CT_CLASS_BY_THEME_COLOR = {
   '#64448f': 'ct-purple',
+  '#7a45e8': 'ct-purple',
   '#e2674a': 'ct-orange',
   '#ee9e2d': 'ct-orange',
+  '#ef6a00': 'ct-orange',
   '#46a4da': 'ct-blue',
   '#47a3da': 'ct-blue',
+  '#1678f2': 'ct-blue',
   '#58b391': 'ct-green',
   '#2fa06a': 'ct-green',
+  '#16b864': 'ct-green',
   '#537b7b': 'ct-green',
   '#f06a6a': 'ct-red',
   '#d25565': 'ct-red',
@@ -384,8 +397,8 @@ function mapLegacyRouteToCatalogItem(route) {
     category: CATEGORY_BY_SLUG[slug] || (LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'guias' : 'laboratorio'),
     type: LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'article' : 'content',
     image,
-    colorClass: CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
-    accentColor: computeAccentColor(image, source),
+    colorClass: extractToolCtClass(source) || CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
+    accentColor: ACCENT_BY_CT_CLASS[extractToolCtClass(source)] || computeAccentColor(image, source),
     ratingValue,
     ratingCount,
     view: route.view
@@ -477,8 +490,8 @@ function loadMigratedNonArticles() {
       category,
       type: route.contentType,
       image,
-      colorClass: CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red',
-      accentColor: ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      colorClass: resolveContentColorClass(metadata),
+      accentColor: metadata.themeColor || ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
       ratingValue: Number(metadata.ratingValue || 0),
       ratingCount: Number(metadata.ratingCount || 0),
       view: route.view

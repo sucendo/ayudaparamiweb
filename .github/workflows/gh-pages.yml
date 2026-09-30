@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -36,6 +36,22 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Repair featured images and article colors
+        run: node scripts/repair-featured-images.js
+
+      - name: Persist generated featured images
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/articles public/img/articulo tests
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "Generate article featured images and normalize ct colors"
+            git push
+          fi
 
       - name: Generate top articles from GA4
         if: github.ref == 'refs/heads/main'

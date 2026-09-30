@@ -1,7 +1,7 @@
 {
   "name": "ayudaparamiweb",
-  "version": "0.0.1",
-  "description": "Todo lo necesarío para crear una web",
+  "version": "0.1.0",
+  "description": "Contenidos, tutoriales y herramientas sobre desarrollo web y SEO",
   "engines": {
     "node": ">=24"
   },
@@ -16,8 +16,8 @@
     "generate:top-articles": "node scripts/generate-top-articles.js"
   },
   "dependencies": {
-    "ejs": "^2.7.4",
-    "express": "4.13.3",
+    "ejs": "^3.1.10",
+    "express": "^4.22.3",
     "@google-analytics/data": "^4.12.0"
   },
   "license": "MIT"

@@ -7,9 +7,9 @@ canonical: "/ia-generativa-estrategia-contenidos-seo"
 category: "tutoriales"
 tags: ["IA", "SEO"]
 publishedDate: "2024-02-14"
-featuredImage: "/img/articulo/investigacion-palabras-clave.png"
+featuredImage: "/img/articulo/ia-generativa-estrategia-contenidos-seo-featured.webp"
 heroClass: "bg-purple"
-themeColor: "#537b7b"
+themeColor: "#64448f"
 robots: "index,follow"
 ---
 Publicar más no siempre significa posicionar mejor. La clave está en combinar IA con investigación de intención de búsqueda, arquitectura temática y revisión experta.

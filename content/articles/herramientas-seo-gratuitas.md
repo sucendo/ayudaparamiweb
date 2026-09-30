@@ -7,9 +7,9 @@ canonical: "/herramientas-seo-gratuitas"
 category: "tutoriales"
 tags: ["SEO", "Herramientas", "Marketing digital"]
 publishedDate: "2022-05-08"
-featuredImage: "/img/articulo/el-mundo-del-programador-web.png"
-heroClass: "bg-purple"
-themeColor: "#537b7b"
+featuredImage: "/img/articulo/herramientas-seo-gratuitas-featured.webp"
+heroClass: "bg-green"
+themeColor: "#58b391"
 robots: "index,follow"
 ---
 ## Contexto y momento histórico

@@ -214,7 +214,7 @@ test('revision state retains batch 3 articles after later review batches', () =>
   const statePath = path.join(__dirname, '..', 'REVISION_ESTADO_2026-09-30.json');
   assert.ok(fs.existsSync(statePath));
   const state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
-  assert.equal(state.totalArticles, 112);
+  assert.equal(state.totalArticles, 117);
   assert.ok(state.reviewedArticles >= 58);
   assert.ok(state.pendingArticles <= 54);
   normalizedBatch3Articles.forEach((slug) => assert.ok(state.reviewed.includes(slug), slug));

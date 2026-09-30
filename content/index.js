@@ -1,0 +1,495 @@
+const fs = require('fs');
+const path = require('path');
+const zlib = require('zlib');
+const routeCatalog = require('../routes');
+const contentLoader = require('../lib/content/loader');
+
+const CONTENT_VIEW_PATTERN = /^(news|tools|experiments)\//;
+const LEGACY_ARTICLE_VIEW_PATTERN = /^news\//;
+const LEGACY_NON_ARTICLE_VIEW_PATTERN = /^(tools|experiments)\//;
+const FALLBACK_IMAGE = '/img/logo-color.svg';
+const FALLBACK_ACCENT = '#537b7b';
+
+const CATEGORY_DEFINITIONS = {
+  guias: { slug: 'articulos', name: 'Artículos', description: 'Guías y análisis de referencia para desarrollo web y SEO.' },
+  tutoriales: { slug: 'tutoriales', name: 'Tutoriales', description: 'Contenido paso a paso para aprender haciendo.' },
+  herramientas: { slug: 'herramientas', name: 'Herramientas', description: 'Utilidades prácticas e interactivas.' },
+  laboratorio: { slug: 'laboratorio', name: 'Laboratorio', description: 'Pruebas, demos y experimentos editoriales.' }
+};
+
+const CATEGORY_BY_SLUG = {
+  'guia-seo-pymes-2026': 'guias','seo-tecnico-core-web-vitals-2026': 'guias','checklist-lanzamiento-web-2026': 'guias','investigacion-palabras-clave': 'guias','contenido-y-seo': 'guias','seo-on-page-aspectos-tecnicos': 'guias','motores-de-busqueda': 'guias','seo-que-es': 'guias','como-crear-una-pagina-web': 'guias','conceptos-basicos-programacion': 'guias','node-js-que-es': 'guias','express-js-para-que-sirve': 'guias','vue-js-que-es': 'guias',
+  'primeros-pasos-python': 'tutoriales','codigo-traductor-google-blog': 'tutoriales','entornos-colaborativos': 'tutoriales',
+  'contador-caracteres-seo': 'herramientas','conversor-binario': 'herramientas','analizador-seo-url': 'herramientas',
+  'quantum-pacific-group': 'laboratorio','calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019': 'laboratorio',
+  'google-shopping-actions': 'guias','problemas-canon-digital-ecommerce': 'guias','que-es-bluetooth': 'guias','el-mundo-del-programador-web': 'guias','backlink-que-es-como-construir-red-de-enlaces': 'guias','experiencia-de-usuario-ux-y-seo': 'guias','herramientas-seo': 'guias','autoridad-de-dominio': 'guias','herramientas-seo-gratuitas': 'guias','ia-generativa-estrategia-contenidos-seo': 'guias'
+};
+
+const COLOR_CACHE = Object.create(null);
+
+const ACCENT_BY_BG_CLASS = {
+  'bg-purple': '#64448f',
+  'bg-blue': '#47a3da',
+  'bg-green': '#2fa06a',
+  'bg-red': '#d25565',
+  'bg-orange': '#ee9e2d',
+  'bg-yellow': '#f1c40f',
+  'bg-teal': '#537b7b'
+};
+
+const CT_CLASS_BY_BG_CLASS = {
+  'bg-purple': 'ct-purple',
+  'bg-blue': 'ct-blue',
+  'bg-green': 'ct-green',
+  'bg-red': 'ct-red',
+  'bg-orange': 'ct-orange',
+  'bg-yellow': 'ct-yellow',
+  'bg-teal': 'ct-green'
+};
+
+const CT_CLASS_BY_THEME_COLOR = {
+  '#64448f': 'ct-purple',
+  '#e2674a': 'ct-orange',
+  '#ee9e2d': 'ct-orange',
+  '#46a4da': 'ct-blue',
+  '#47a3da': 'ct-blue',
+  '#58b391': 'ct-green',
+  '#2fa06a': 'ct-green',
+  '#537b7b': 'ct-green',
+  '#f06a6a': 'ct-red',
+  '#d25565': 'ct-red',
+  '#d4bf4a': 'ct-yellow',
+  '#f1c40f': 'ct-yellow'
+};
+
+function resolveContentColorClass(metadata) {
+  const themeColor = String(metadata && metadata.themeColor || '').toLowerCase();
+  const heroClass = String(metadata && metadata.heroClass || '').toLowerCase();
+  return CT_CLASS_BY_THEME_COLOR[themeColor] || CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red';
+}
+
+const stripTags = (value) => (value || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+const getSlug = (routePath) => routePath.replace(/^\//, '');
+const getViewFile = (route) => path.join(__dirname, '..', 'views', `${route.view}.ejs`);
+const readSource = (route) => fs.readFileSync(getViewFile(route), 'utf8');
+const toAbsoluteImage = (imagePath) => path.join(__dirname, '..', 'public', imagePath.replace(/^\//, ''));
+const toHexColor = (r, g, b) => `#${[r, g, b].map((v) => Math.max(0, Math.min(255, v)).toString(16).padStart(2, '0')).join('')}`;
+
+function extractTitle(source, slug) {
+  const h1Match = source.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+  if (h1Match) return stripTags(h1Match[1]);
+  const titleMatch = source.match(/<title>([\s\S]*?)<\/title>/i);
+  if (titleMatch) return stripTags(titleMatch[1].split('|')[0]);
+  return slug.split('-').map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
+}
+
+function extractExcerpt(source) {
+  const excerptMatch = source.match(/<div[^>]*class="[^"]*ct-post-excerpt[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
+  if (excerptMatch) return stripTags(excerptMatch[1]);
+  const paragraphMatch = source.match(/<p>([\s\S]*?)<\/p>/i);
+  if (paragraphMatch) return stripTags(paragraphMatch[1]);
+  return 'Contenido publicado en Ayuda para mi Web.';
+}
+
+function extractAuthor(source) {
+  const metaAuthorMatch = source.match(/<meta[^>]*name=["']author["'][^>]*content=["']([^"']+)["']/i);
+  if (metaAuthorMatch) return stripTags(metaAuthorMatch[1]);
+
+  const itemPropAuthorMatch = source.match(/itemprop=["']author["'][\s\S]*?itemprop=["']name["'][^>]*>([\s\S]*?)<\/a>/i);
+  if (itemPropAuthorMatch) return stripTags(itemPropAuthorMatch[1]);
+
+  const bylineAuthorMatch = source.match(/class=["'][^"']*author[^"']*["'][^>]*>\s*<a[^>]*>([\s\S]*?)<\/a>/i);
+  if (bylineAuthorMatch) return stripTags(bylineAuthorMatch[1]);
+
+  return 'Sucender';
+}
+
+function extractTags(source) {
+  const tagsBlockMatch = source.match(/<p[^>]*class=["'][^"']*ct-tags[^"']*["'][^>]*>([\s\S]*?)<\/p>/i);
+  if (!tagsBlockMatch) return [];
+
+  const tags = [];
+  const anchorPattern = /<a[^>]*rel=["']tag["'][^>]*>([\s\S]*?)<\/a>/gi;
+  let anchorMatch = anchorPattern.exec(tagsBlockMatch[1]);
+
+  while (anchorMatch) {
+    const normalized = stripTags(anchorMatch[1]);
+    if (normalized && !tags.includes(normalized)) tags.push(normalized);
+    anchorMatch = anchorPattern.exec(tagsBlockMatch[1]);
+  }
+
+  return tags;
+}
+
+function extractDate(source) {
+  const modifiedMatch = source.match(/itemprop="dateModified"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+  if (modifiedMatch) return modifiedMatch[1];
+
+  const publishedMatch = source.match(/itemprop="datePublished"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+  if (publishedMatch) return publishedMatch[1];
+
+  const contentDateMatch = source.match(/content="(\d{4}-\d{2}-\d{2})/i);
+  if (contentDateMatch) return contentDateMatch[1];
+
+  const visibleDateMatch = source.match(/<time[^>]*>(\d{2})\/(\d{2})\/(\d{4})<\/time>/i);
+  if (visibleDateMatch) return `${visibleDateMatch[3]}-${visibleDateMatch[2]}-${visibleDateMatch[1]}`;
+
+  const monthMap = {
+    enero: '01', febrero: '02', marzo: '03', abril: '04', mayo: '05', junio: '06',
+    julio: '07', agosto: '08', septiembre: '09', setiembre: '09', octubre: '10', noviembre: '11', diciembre: '12'
+  };
+
+  const textDateMatch = source.match(/(\d{1,2})\s+de\s+([a-záéíóúñ]+)\s+de\s+(\d{4})/i);
+  if (textDateMatch) {
+    const day = textDateMatch[1].padStart(2, '0');
+    const month = monthMap[textDateMatch[2].toLowerCase()] || '01';
+    return `${textDateMatch[3]}-${month}-${day}`;
+  }
+
+  return '1970-01-01';
+}
+
+
+function extractRatings(source) {
+  const ratingValueMatch = source.match(/itemprop=["']ratingValue["'][^>]*content=["']([0-9.]+)["']/i);
+  const ratingCountMatch = source.match(/itemprop=["']ratingCount["'][^>]*content=["']([0-9]+)["']/i);
+
+  return {
+    ratingValue: ratingValueMatch ? Number(ratingValueMatch[1]) : 0,
+    ratingCount: ratingCountMatch ? Number(ratingCountMatch[1]) : 0
+  };
+}
+
+function extractDates(source) {
+  const modifiedMatch = source.match(/itemprop="dateModified"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+  const publishedMatch = source.match(/itemprop="datePublished"[^>]*content="(\d{4}-\d{2}-\d{2})"/i);
+
+  const fallbackDate = extractDate(source);
+  const publishedDate = publishedMatch ? publishedMatch[1] : fallbackDate;
+  const modifiedDate = modifiedMatch ? modifiedMatch[1] : publishedDate;
+  const hasModifiedDate = Boolean(modifiedMatch);
+
+  return { publishedDate, modifiedDate, hasModifiedDate };
+}
+
+function extractImage(source) {
+  const postContentMatch = source.match(/<div[^>]*class="[^"]*ct-post-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/article>/i);
+  const scope = postContentMatch ? postContentMatch[1] : source;
+  const imageMatch = scope.match(/<img[^>]*src="([^"]+)"[^>]*>/i);
+  if (!imageMatch) return FALLBACK_IMAGE;
+  const raw = imageMatch[1].trim();
+  if (raw.startsWith('http://') || raw.startsWith('https://') || raw.startsWith('//')) return FALLBACK_IMAGE;
+  return raw.startsWith('/') ? raw : `/${raw.replace(/^\.\//, '')}`;
+}
+
+
+function extractBgClass(source) {
+  const bgMatch = source.match(/class="[^"]*bg-img\s+(bg-[a-z]+)[^"]*"/i);
+  return bgMatch ? bgMatch[1].toLowerCase() : null;
+}
+
+function formatDateEs(isoDate) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return isoDate;
+  const [year, month, day] = isoDate.split('-');
+  const monthNames = {
+    '01': 'enero','02': 'febrero','03': 'marzo','04': 'abril','05': 'mayo','06': 'junio',
+    '07': 'julio','08': 'agosto','09': 'septiembre','10': 'octubre','11': 'noviembre','12': 'diciembre'
+  };
+  return `${parseInt(day, 10)} de ${monthNames[month] || month} de ${year}`;
+}
+
+function extractAccentFromBgClass(source) {
+  const bgClass = extractBgClass(source);
+  if (!bgClass) return null;
+  return ACCENT_BY_BG_CLASS[bgClass] || null;
+}
+
+function paethPredictor(a, b, c) {
+  const p = a + b - c;
+  const pa = Math.abs(p - a);
+  const pb = Math.abs(p - b);
+  const pc = Math.abs(p - c);
+  if (pa <= pb && pa <= pc) return a;
+  if (pb <= pc) return b;
+  return c;
+}
+
+function extractColorFromPng(buffer) {
+  const signature = '89504e470d0a1a0a';
+  if (buffer.subarray(0, 8).toString('hex') !== signature) return null;
+
+  let offset = 8;
+  let width = 0;
+  let height = 0;
+  let bitDepth = 0;
+  let colorType = 0;
+  const idat = [];
+
+  while (offset < buffer.length) {
+    const length = buffer.readUInt32BE(offset); offset += 4;
+    const type = buffer.subarray(offset, offset + 4).toString('ascii'); offset += 4;
+    const data = buffer.subarray(offset, offset + length); offset += length;
+    offset += 4;
+
+    if (type === 'IHDR') {
+      width = data.readUInt32BE(0);
+      height = data.readUInt32BE(4);
+      bitDepth = data[8];
+      colorType = data[9];
+    } else if (type === 'IDAT') {
+      idat.push(data);
+    } else if (type === 'IEND') {
+      break;
+    }
+  }
+
+  if (!width || !height || bitDepth !== 8 || (colorType !== 2 && colorType !== 6)) return null;
+
+  const bytesPerPixel = colorType === 6 ? 4 : 3;
+  const rowSize = width * bytesPerPixel;
+  const inflated = zlib.inflateSync(Buffer.concat(idat));
+  const raw = Buffer.alloc(rowSize * height);
+
+  let inOffset = 0;
+  let outOffset = 0;
+
+  for (let y = 0; y < height; y += 1) {
+    const filterType = inflated[inOffset];
+    inOffset += 1;
+
+    for (let x = 0; x < rowSize; x += 1) {
+      const current = inflated[inOffset + x];
+      const left = x >= bytesPerPixel ? raw[outOffset + x - bytesPerPixel] : 0;
+      const up = y > 0 ? raw[outOffset + x - rowSize] : 0;
+      const upLeft = (y > 0 && x >= bytesPerPixel) ? raw[outOffset + x - rowSize - bytesPerPixel] : 0;
+
+      if (filterType === 0) raw[outOffset + x] = current;
+      else if (filterType === 1) raw[outOffset + x] = (current + left) & 0xff;
+      else if (filterType === 2) raw[outOffset + x] = (current + up) & 0xff;
+      else if (filterType === 3) raw[outOffset + x] = (current + Math.floor((left + up) / 2)) & 0xff;
+      else if (filterType === 4) raw[outOffset + x] = (current + paethPredictor(left, up, upLeft)) & 0xff;
+    }
+
+    inOffset += rowSize;
+    outOffset += rowSize;
+  }
+
+  let red = 0; let green = 0; let blue = 0; let count = 0;
+  for (let i = 0; i < raw.length; i += bytesPerPixel) {
+    const alpha = bytesPerPixel === 4 ? raw[i + 3] : 255;
+    if (alpha < 32) continue;
+    red += raw[i];
+    green += raw[i + 1];
+    blue += raw[i + 2];
+    count += 1;
+  }
+
+  if (!count) return null;
+  return toHexColor(Math.round(red / count), Math.round(green / count), Math.round(blue / count));
+}
+
+function extractColorFromSvg(content) {
+  const matches = content.match(/#[0-9a-fA-F]{6}/g);
+  if (!matches || !matches.length) return null;
+  const frequency = matches.reduce((acc, color) => {
+    const key = color.toLowerCase();
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
+  return Object.keys(frequency).sort((a, b) => frequency[b] - frequency[a])[0];
+}
+
+function computeAccentColor(imagePath, source) {
+  const accentFromClass = extractAccentFromBgClass(source);
+  if (accentFromClass) return accentFromClass;
+
+  if (!imagePath || imagePath === FALLBACK_IMAGE) return FALLBACK_ACCENT;
+  if (COLOR_CACHE[imagePath]) return COLOR_CACHE[imagePath];
+
+  try {
+    const absolutePath = toAbsoluteImage(imagePath);
+    if (!fs.existsSync(absolutePath)) return FALLBACK_ACCENT;
+
+    const ext = path.extname(absolutePath).toLowerCase();
+    const file = fs.readFileSync(absolutePath);
+
+    let color = null;
+    if (ext === '.png') color = extractColorFromPng(file);
+    if (!color && ext === '.svg') color = extractColorFromSvg(file.toString('utf8'));
+
+    COLOR_CACHE[imagePath] = color || FALLBACK_ACCENT;
+    return COLOR_CACHE[imagePath];
+  } catch (error) {
+    COLOR_CACHE[imagePath] = FALLBACK_ACCENT;
+    return FALLBACK_ACCENT;
+  }
+}
+
+function normalizeCatalogItem(item) {
+  const date = item.date || item.modifiedDate || item.publishedDate || '1970-01-01';
+  const publishedDate = item.publishedDate || date;
+  const modifiedDate = item.modifiedDate || date;
+  const tags = Array.isArray(item.tags) ? item.tags : [];
+  const category = item.category || 'guias';
+
+  return {
+    title: item.title || '',
+    slug: item.slug || '',
+    path: item.path || `/${item.slug || ''}`,
+    date,
+    displayDate: formatDateEs(date),
+    publishedDate,
+    modifiedDate,
+    displayPublishedDate: formatDateEs(publishedDate),
+    displayModifiedDate: formatDateEs(modifiedDate),
+    hasModifiedDate: Boolean(item.hasModifiedDate || (publishedDate && modifiedDate && publishedDate !== modifiedDate)),
+    excerpt: item.excerpt || 'Contenido publicado en Ayuda para mi Web.',
+    author: item.author || 'Sucender',
+    tags,
+    category,
+    type: item.type || 'article',
+    image: item.image || FALLBACK_IMAGE,
+    colorClass: item.colorClass || 'ct-red',
+    accentColor: item.accentColor || FALLBACK_ACCENT,
+    ratingValue: Number(item.ratingValue || 0),
+    ratingCount: Number(item.ratingCount || 0),
+    view: item.view || ''
+  };
+}
+
+function mapLegacyRouteToCatalogItem(route) {
+  const source = readSource(route);
+  const slug = getSlug(route.path);
+  const image = extractImage(source);
+  const { publishedDate, modifiedDate, hasModifiedDate } = extractDates(source);
+  const { ratingValue, ratingCount } = extractRatings(source);
+
+  return normalizeCatalogItem({
+    title: extractTitle(source, slug),
+    slug,
+    path: route.path,
+    date: modifiedDate,
+    publishedDate,
+    modifiedDate,
+    hasModifiedDate,
+    excerpt: extractExcerpt(source),
+    author: extractAuthor(source),
+    tags: extractTags(source),
+    category: CATEGORY_BY_SLUG[slug] || (LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'guias' : 'laboratorio'),
+    type: LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'article' : 'content',
+    image,
+    colorClass: CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
+    accentColor: computeAccentColor(image, source),
+    ratingValue,
+    ratingCount,
+    view: route.view
+  });
+}
+
+function loadLegacyNews() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => LEGACY_ARTICLE_VIEW_PATTERN.test(route.view));
+
+  return routes.map(mapLegacyRouteToCatalogItem);
+}
+
+function loadArticles() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => route.view === 'content/render' && route.contentType === 'article' && route.contentSlug);
+
+  return routes.map((route) => {
+    const metadata = contentLoader.loadArticle(route.contentSlug);
+    const slug = metadata.slug || route.contentSlug;
+    const category = CATEGORY_BY_SLUG[slug] || metadata.category || 'guias';
+    const date = metadata.modifiedDate || metadata.publishedDate || '1970-01-01';
+    const image = metadata.featuredImage || FALLBACK_IMAGE;
+    const heroClass = metadata.heroClass || 'bg-purple';
+
+    return normalizeCatalogItem({
+      title: metadata.title,
+      slug,
+      path: metadata.canonical || route.path || `/${slug}`,
+      date,
+      publishedDate: metadata.publishedDate || date,
+      modifiedDate: metadata.modifiedDate || metadata.publishedDate || date,
+      hasModifiedDate: Boolean(metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate),
+      excerpt: metadata.description || 'Contenido publicado en Ayuda para mi Web.',
+      author: metadata.author || 'Sucender',
+      tags: metadata.tags || [],
+      category,
+      type: 'article',
+      image,
+      colorClass: resolveContentColorClass(metadata),
+      accentColor: metadata.themeColor || ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      ratingValue: Number(metadata.ratingValue || 0),
+      ratingCount: Number(metadata.ratingCount || 0),
+      view: route.view
+    });
+  });
+}
+
+function getAllArticles() {
+  const bySlug = new Map();
+
+  loadLegacyNews().forEach((item) => bySlug.set(item.slug, item));
+  loadArticles().forEach((item) => bySlug.set(item.slug, item));
+
+  return Array.from(bySlug.values())
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+function loadLegacyNonArticles() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => LEGACY_NON_ARTICLE_VIEW_PATTERN.test(route.view));
+
+  return routes.map(mapLegacyRouteToCatalogItem);
+}
+
+function loadMigratedNonArticles() {
+  const routes = (routeCatalog.publishedRoutes || routeCatalog)
+    .filter((route) => route.view === 'content/render' && (route.contentType === 'tool' || route.contentType === 'laboratory') && route.contentSlug);
+
+  return routes.map((route) => {
+    const metadata = contentLoader.loadByType(route.contentType, route.contentSlug);
+    const slug = metadata.slug || route.contentSlug;
+    const date = metadata.modifiedDate || metadata.publishedDate || '1970-01-01';
+    const image = metadata.featuredImage || FALLBACK_IMAGE;
+    const heroClass = metadata.heroClass || 'bg-purple';
+    const category = route.contentType === 'tool' ? 'herramientas' : 'laboratorio';
+
+    return normalizeCatalogItem({
+      title: metadata.title,
+      slug,
+      path: metadata.canonical || route.path || `/${slug}`,
+      date,
+      publishedDate: metadata.publishedDate || date,
+      modifiedDate: metadata.modifiedDate || metadata.publishedDate || date,
+      hasModifiedDate: Boolean(metadata.modifiedDate && metadata.modifiedDate !== metadata.publishedDate),
+      excerpt: metadata.description || 'Contenido publicado en Ayuda para mi Web.',
+      author: metadata.author || 'Sucender',
+      tags: metadata.tags || [],
+      category,
+      type: route.contentType,
+      image,
+      colorClass: CT_CLASS_BY_BG_CLASS[heroClass] || 'ct-red',
+      accentColor: ACCENT_BY_BG_CLASS[heroClass] || computeAccentColor(image, `<div class="bg-img ${heroClass}"></div>`),
+      ratingValue: Number(metadata.ratingValue || 0),
+      ratingCount: Number(metadata.ratingCount || 0),
+      view: route.view
+    });
+  });
+}
+
+async function buildCatalog() {
+  const items = getAllArticles()
+    .concat(loadLegacyNonArticles())
+    .concat(loadMigratedNonArticles());
+
+  return items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+function filterByCategory(items, categorySlug) {
+  return items.filter((item) => item.category === categorySlug);
+}
+
+module.exports = { CATEGORY_DEFINITIONS, loadLegacyNews, loadArticles, getAllArticles, buildCatalog, filterByCategory };

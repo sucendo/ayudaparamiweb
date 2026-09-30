@@ -1,7 +1,7 @@
 {
   "date": "2026-09-30",
-  "totalArticles": 112,
-  "reviewedArticles": 112,
+  "totalArticles": 117,
+  "reviewedArticles": 117,
   "pendingArticles": 0,
   "reviewed": [
     "seo-que-es",
@@ -115,7 +115,12 @@
     "velocidad-web-y-experiencia-de-pagina",
     "ventajas-de-tener-una-web",
     "vue-js-que-es",
-    "wordpress-lento-diagnostico-real-paso-a-paso"
+    "wordpress-lento-diagnostico-real-paso-a-paso",
+    "puesta-a-punto-web-antes-del-verano",
+    "como-medir-rendimiento-web-metricas-utiles",
+    "seo-estacional-busquedas-de-verano",
+    "auditoria-contenidos-antes-de-septiembre",
+    "busqueda-multimodal-seo-visual-google-lens"
   ],
   "reviewedThisBatch": [
     "checklist-ia-y-seo-para-2025",
@@ -154,6 +159,15 @@
     "visible article titles and bodies contain no post-cutoff year references",
     "slugs and canonicals preserved",
     "retired ratings removed from reviewed articles",
-    "one local 1200x630 SVG featured image per article in this batch"
+    "one local 1200x630 SVG featured image per article in this batch",
+    "all Markdown articles are published through automatic routes generated from content/articles",
+    "new articles keep unique canonical paths and local featured images"
+  ],
+  "postAuditAdditions": [
+    "puesta-a-punto-web-antes-del-verano",
+    "como-medir-rendimiento-web-metricas-utiles",
+    "seo-estacional-busquedas-de-verano",
+    "auditoria-contenidos-antes-de-septiembre",
+    "busqueda-multimodal-seo-visual-google-lens"
   ]
 }

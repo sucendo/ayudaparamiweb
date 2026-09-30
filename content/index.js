@@ -173,10 +173,16 @@ function extractDates(source) {
 }
 
 function extractImage(source) {
+  const preferredToolImage =
+    source.match(/<figure[^>]*class="[^"]*tool-v2-featured[^"]*"[^>]*>[\s\S]*?<img[^>]*src="([^"]+)"[^>]*>/i) ||
+    source.match(/<div[^>]*class="[^"]*bg-img[^"]*"[^>]*>[\s\S]*?<img[^>]*src="([^"]+)"[^>]*>/i);
+
   const postContentMatch = source.match(/<div[^>]*class="[^"]*ct-post-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<\/article>/i);
   const scope = postContentMatch ? postContentMatch[1] : source;
-  const imageMatch = scope.match(/<img[^>]*src="([^"]+)"[^>]*>/i);
+  const imageMatch = preferredToolImage || scope.match(/<img[^>]*src="([^"]+)"[^>]*>/i);
+
   if (!imageMatch) return FALLBACK_IMAGE;
+
   const raw = imageMatch[1].trim();
   if (raw.startsWith('http://') || raw.startsWith('https://') || raw.startsWith('//')) return FALLBACK_IMAGE;
   return raw.startsWith('/') ? raw : `/${raw.replace(/^\.\//, '')}`;

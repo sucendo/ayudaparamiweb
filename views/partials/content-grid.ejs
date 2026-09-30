@@ -12,6 +12,11 @@
   <% if (index % 2 === 0) { %><div class="ct-row"><% } %>
     <article class="ct-box <%= item.colorClass %> ct-card-auto">
       <div class="ct-box-inner">
+        <% if (item.category === 'herramientas' && item.image) { %>
+          <a class="ct-tool-card-image" href="<%= item.path %>" aria-label="<%= item.title %>">
+            <img src="<%= item.image %>" alt="<%= item.title %>">
+          </a>
+        <% } %>
         <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
         <p class="ct-subline">
           Por <a href="/sucender">Sucender</a>

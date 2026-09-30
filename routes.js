@@ -119,6 +119,7 @@ const migratedContentRoutes = [
   { path: '/puesta-a-punto-web-antes-del-verano', view: 'content/render', contentType: 'article', contentSlug: 'puesta-a-punto-web-antes-del-verano' },
   { path: '/como-medir-rendimiento-web-metricas-utiles', view: 'content/render', contentType: 'article', contentSlug: 'como-medir-rendimiento-web-metricas-utiles' },
   { path: '/mantenimiento-web-verano-seo', view: 'content/render', contentType: 'article', contentSlug: 'mantenimiento-web-verano-seo' },
+  { path: '/preparar-web-septiembre-desde-agosto', view: 'content/render', contentType: 'article', contentSlug: 'preparar-web-septiembre-desde-agosto' },
 ];
 
 const staticRoutes = [

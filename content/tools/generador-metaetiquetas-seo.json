@@ -1,0 +1,42 @@
+{
+  "title": "Generador de Metaetiquetas SEO",
+  "description": "Genera title, meta description, canonical, robots, Open Graph y Twitter Card listos para copiar al head de tu web.",
+  "author": "Sucender",
+  "canonical": "/generador-metaetiquetas-seo",
+  "category": "herramientas",
+  "tags": [
+    "SEO",
+    "Metaetiquetas",
+    "Open Graph",
+    "Twitter Card",
+    "Canonical",
+    "Herramientas"
+  ],
+  "publishedDate": "2023-04-18",
+  "featuredImage": "/img/tools/generador-metaetiquetas-seo.svg",
+  "themeColor": "#1678f2",
+  "toolToneClass": "ct-blue",
+  "robots": "index,follow",
+  "intro": "Completa los datos básicos de una página y genera automáticamente las principales metaetiquetas SEO y sociales.",
+  "toolMountId": "meta-tags-generator-app",
+  "styles": [
+    "/css/meta-tags-generator.css"
+  ],
+  "scripts": [
+    "/js/meta-tags-generator.js"
+  ],
+  "faq": [
+    {
+      "q": "¿Qué etiquetas genera la herramienta?",
+      "a": "Genera title, meta description, canonical, robots, Open Graph y Twitter Card. Puedes copiar todas juntas o solo el bloque que necesites."
+    },
+    {
+      "q": "¿Necesito utilizar todas las etiquetas?",
+      "a": "No. Title y meta description son básicas para la presentación SEO, canonical y robots dependen de cada página, y Open Graph y Twitter Card son útiles para compartir contenido en redes y mensajería."
+    },
+    {
+      "q": "¿Los datos se envían a algún servidor?",
+      "a": "No. La generación del código se realiza directamente en tu navegador."
+    }
+  ]
+}

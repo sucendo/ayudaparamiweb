@@ -25,6 +25,7 @@ const managedContentRoutes = [
   { path: '/analizador-seo-url', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-seo-url' },
   { path: '/generador-schema-org', view: 'content/render', contentType: 'tool', contentSlug: 'generador-schema-org' },
   { path: '/previsualizador-serp-google', view: 'content/render', contentType: 'tool', contentSlug: 'previsualizador-serp-google' },
+  { path: '/generador-metaetiquetas-seo', view: 'content/render', contentType: 'tool', contentSlug: 'generador-metaetiquetas-seo' },
 ];
 
 const staticRoutes = [

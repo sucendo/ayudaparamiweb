@@ -81,3 +81,23 @@ test('el previsualizador SERP está publicado y funciona como herramienta local'
   assert.match(script, /measureText/);
   assert.match(script, /Copiar metadatos|navigator\.clipboard/);
 });
+
+
+test('el generador de metaetiquetas SEO está publicado como herramienta de 2023', () => {
+  const route = routes.find((item) => item.path === '/generador-metaetiquetas-seo');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'generador-metaetiquetas-seo.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'meta-tags-generator.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2023-04-18');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-blue');
+  assert.equal(meta.featuredImage, '/img/tools/generador-metaetiquetas-seo.svg');
+  assert.match(script, /Open Graph|og:title|og:description/);
+  assert.match(script, /twitter:card/);
+  assert.match(script, /canonical/);
+  assert.match(script, /navigator\.clipboard/);
+});

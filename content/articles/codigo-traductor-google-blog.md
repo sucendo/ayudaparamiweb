@@ -7,7 +7,7 @@ canonical: "/codigo-traductor-google-blog"
 category: "tutoriales"
 tags: ["Desarrollo web", "Google", "Tutorial"]
 publishedDate: "2018-02-21"
-featuredImage: "/img/articulo/codigo-traductor-google-blog-featured.webp"
+featuredImage: "/img/articulo/codigo-traductor-google-blog-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
 robots: "index,follow"

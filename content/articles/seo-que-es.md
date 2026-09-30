@@ -6,7 +6,7 @@ canonical: "/seo-que-es"
 category: "tutoriales"
 tags: ["SEO", "Guía", "Marketing digital"]
 publishedDate: "2018-10-01"
-featuredImage: "/img/articulo/seo-que-es-featured.webp"
+featuredImage: "/img/articulo/seo-que-es-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
 robots: "index,follow"

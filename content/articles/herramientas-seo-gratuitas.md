@@ -7,7 +7,7 @@ canonical: "/herramientas-seo-gratuitas"
 category: "tutoriales"
 tags: ["SEO", "Herramientas", "Marketing digital"]
 publishedDate: "2022-05-08"
-featuredImage: "/img/articulo/herramientas-seo-gratuitas-featured.webp"
+featuredImage: "/img/articulo/herramientas-seo-gratuitas-featured.svg"
 heroClass: "bg-green"
 themeColor: "#58b391"
 robots: "index,follow"

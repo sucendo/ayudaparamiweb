@@ -6,7 +6,7 @@ canonical: "/seo-local-que-es-y-como-empezar"
 category: "tutoriales"
 tags: ["SEO", "SEO local", "Negocios locales"]
 publishedDate: "2019-06-07"
-featuredImage: "/img/articulo/seo-local-que-es-featured.webp"
+featuredImage: "/img/articulo/seo-local-que-es-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"
 excerpt: "Los fundamentos para mejorar la visibilidad local de un negocio sin complicar la estrategia."

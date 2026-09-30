@@ -6,7 +6,7 @@ canonical: "/seo-on-page-aspectos-tecnicos"
 category: "tutoriales"
 tags: ["SEO"]
 publishedDate: "2019-03-25"
-featuredImage: "/img/articulo/seo-on-page-aspectos-tecnicos-featured.webp"
+featuredImage: "/img/articulo/seo-on-page-aspectos-tecnicos-featured.svg"
 heroClass: "bg-green"
 themeColor: "#58b391"
 robots: "index,follow"

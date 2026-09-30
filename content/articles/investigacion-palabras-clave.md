@@ -6,7 +6,7 @@ canonical: "/investigacion-palabras-clave"
 category: "tutoriales"
 tags: ["SEO", "Palabras clave", "Contenido"]
 publishedDate: "2019-04-26"
-featuredImage: "/img/articulo/investigacion-palabras-clave-featured.webp"
+featuredImage: "/img/articulo/investigacion-palabras-clave-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
 robots: "index,follow"

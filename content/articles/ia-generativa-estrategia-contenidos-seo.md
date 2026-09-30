@@ -7,7 +7,7 @@ canonical: "/ia-generativa-estrategia-contenidos-seo"
 category: "tutoriales"
 tags: ["IA", "SEO"]
 publishedDate: "2024-02-14"
-featuredImage: "/img/articulo/ia-generativa-estrategia-contenidos-seo-featured.webp"
+featuredImage: "/img/articulo/ia-generativa-estrategia-contenidos-seo-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"
 robots: "index,follow"

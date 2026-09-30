@@ -6,7 +6,7 @@ canonical: "/backlink-que-es-como-construir-red-de-enlaces"
 category: "tutoriales"
 tags: ["SEO", "Backlinks"]
 publishedDate: "2019-05-01"
-featuredImage: "/img/articulo/backlink-red-de-enlaces-featured.webp"
+featuredImage: "/img/articulo/backlink-red-de-enlaces-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"
 robots: "index,follow"

@@ -6,7 +6,7 @@ canonical: "/herramientas-seo"
 category: "tutoriales"
 tags: ["SEO", "Herramientas", "Marketing digital"]
 publishedDate: "2018-12-15"
-featuredImage: "/img/articulo/herramientas-seo-featured.webp"
+featuredImage: "/img/articulo/herramientas-seo-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
 excerpt: "Una selección práctica de herramientas SEO y un método sencillo para utilizarlas con criterio."

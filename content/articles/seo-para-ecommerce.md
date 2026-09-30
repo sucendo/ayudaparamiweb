@@ -6,7 +6,7 @@ canonical: "/seo-para-ecommerce"
 category: "tutoriales"
 tags: ["SEO", "Ecommerce", "Tiendas online"]
 publishedDate: "2019-09-12"
-featuredImage: "/img/articulo/seo-ecommerce-featured.webp"
+featuredImage: "/img/articulo/seo-ecommerce-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"
 excerpt: "Cómo organizar una tienda para que las páginas correctas sean rastreables, útiles y relevantes."

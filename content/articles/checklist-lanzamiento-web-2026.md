@@ -7,7 +7,7 @@ canonical: "/checklist-lanzamiento-web-2026"
 category: "tutoriales"
 tags: ["Lanzamiento web", "SEO técnico", "QA"]
 publishedDate: "2026-03-12"
-featuredImage: "/img/articulo/checklist-lanzamiento-web-2026-featured.webp"
+featuredImage: "/img/articulo/checklist-lanzamiento-web-2026-featured.svg"
 heroClass: "bg-yellow"
 themeColor: "#f1c40f"
 robots: "index,follow"

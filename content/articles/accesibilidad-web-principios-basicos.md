@@ -6,7 +6,7 @@ canonical: "/accesibilidad-web-principios-basicos"
 category: "tutoriales"
 tags: ["Accesibilidad", "Desarrollo web", "UX"]
 publishedDate: "2021-07-08"
-featuredImage: "/img/articulo/accesibilidad-web-principios-basicos-featured.webp"
+featuredImage: "/img/articulo/accesibilidad-web-principios-basicos-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
 excerpt: "Una guía práctica para hacer una web más utilizable por más personas."

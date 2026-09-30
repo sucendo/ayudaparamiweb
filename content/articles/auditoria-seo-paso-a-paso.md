@@ -7,7 +7,7 @@ canonical: "/auditoria-seo-paso-a-paso"
 category: "tutoriales"
 tags: ["SEO", "Auditoría SEO", "SEO técnico"]
 publishedDate: "2019-11-14"
-featuredImage: "/img/articulo/auditoria-seo-paso-a-paso-featured.webp"
+featuredImage: "/img/articulo/auditoria-seo-paso-a-paso-featured.svg"
 heroClass: "bg-red"
 themeColor: "#d25565"
 robots: "index,follow"

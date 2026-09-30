@@ -56,10 +56,10 @@ test('Web creation article does not repeat a stale featured image inside the bod
 
 test('Editorial featured images exist and keep each article ct-color', async () => {
   const cases = [
-    ['seo-que-es', '/img/articulo/seo-que-es-featured.webp', 'ct-blue'],
+    ['seo-que-es', '/img/articulo/seo-que-es-featured.svg', 'ct-blue'],
     ['guia-seo-pymes-2026', '/img/articulo/guia-seo-pymes-2026-featured.svg', 'ct-purple'],
     ['autoridad-de-dominio', '/img/articulo/autoridad-de-dominio-featured.svg', 'ct-orange'],
-    ['auditoria-seo-con-ia', '/img/articulo/auditoria-seo-con-ia-featured.webp', 'ct-red']
+    ['auditoria-seo-con-ia', '/img/articulo/auditoria-seo-con-ia-featured.svg', 'ct-red']
   ];
 
   const allContent = await contentCatalog.buildCatalog();
@@ -91,8 +91,8 @@ function assertValidWebp(filePath) {
 
 test('Editorial WebP assets are complete, not truncated', () => {
   [
-    'seo-que-es-featured.webp',
-    'auditoria-seo-con-ia-featured.webp'
+    'seo-que-es-featured.svg',
+    'auditoria-seo-con-ia-featured.svg'
   ].forEach((fileName) => {
     assertValidWebp(path.join(__dirname, '..', 'public', 'img', 'articulo', fileName));
   });

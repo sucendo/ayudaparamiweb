@@ -6,7 +6,7 @@ canonical: "/html-css-y-javascript-por-donde-empezar"
 category: "tutoriales"
 tags: ["Desarrollo web", "HTML", "CSS", "JavaScript"]
 publishedDate: "2021-02-11"
-featuredImage: "/img/articulo/html-css-javascript-featured.webp"
+featuredImage: "/img/articulo/html-css-javascript-featured.svg"
 heroClass: "bg-green"
 themeColor: "#58b391"
 excerpt: "Un camino sencillo para empezar en desarrollo web sin intentar aprenderlo todo a la vez."

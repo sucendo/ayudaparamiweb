@@ -73,34 +73,33 @@ test('2022 SEO tools article no longer contains the later 2026 context', () => {
 
 
 const featuredImages = {
-  'checklist-lanzamiento-web-2026': '/img/articulo/checklist-lanzamiento-web-2026-featured.webp',
-  'codigo-traductor-google-blog': '/img/articulo/codigo-traductor-google-blog-featured.webp',
-  'herramientas-seo-gratuitas': '/img/articulo/herramientas-seo-gratuitas-featured.webp',
-  'ia-generativa-estrategia-contenidos-seo': '/img/articulo/ia-generativa-estrategia-contenidos-seo-featured.webp',
-  'accesibilidad-web-principios-basicos': '/img/articulo/accesibilidad-web-principios-basicos-featured.webp',
-  'backlink-que-es-como-construir-red-de-enlaces': '/img/articulo/backlink-red-de-enlaces-featured.webp',
-  'seo-local-que-es-y-como-empezar': '/img/articulo/seo-local-que-es-featured.webp',
-  'investigacion-palabras-clave': '/img/articulo/investigacion-palabras-clave-featured.webp',
-  'html-css-y-javascript-por-donde-empezar': '/img/articulo/html-css-javascript-featured.webp',
-  'ia-y-seo-primeros-usos-practicos': '/img/articulo/ia-seo-primeros-usos-featured.webp',
-  'seo-para-ecommerce': '/img/articulo/seo-ecommerce-featured.webp',
-  'herramientas-seo': '/img/articulo/herramientas-seo-featured.webp',
-  'auditoria-seo-paso-a-paso': '/img/articulo/auditoria-seo-paso-a-paso-featured.webp',
-  'seo-on-page-aspectos-tecnicos': '/img/articulo/seo-on-page-aspectos-tecnicos-featured.webp'
+  'checklist-lanzamiento-web-2026': '/img/articulo/checklist-lanzamiento-web-2026-featured.svg',
+  'codigo-traductor-google-blog': '/img/articulo/codigo-traductor-google-blog-featured.svg',
+  'herramientas-seo-gratuitas': '/img/articulo/herramientas-seo-gratuitas-featured.svg',
+  'ia-generativa-estrategia-contenidos-seo': '/img/articulo/ia-generativa-estrategia-contenidos-seo-featured.svg',
+  'accesibilidad-web-principios-basicos': '/img/articulo/accesibilidad-web-principios-basicos-featured.svg',
+  'backlink-que-es-como-construir-red-de-enlaces': '/img/articulo/backlink-red-de-enlaces-featured.svg',
+  'seo-local-que-es-y-como-empezar': '/img/articulo/seo-local-que-es-featured.svg',
+  'investigacion-palabras-clave': '/img/articulo/investigacion-palabras-clave-featured.svg',
+  'html-css-y-javascript-por-donde-empezar': '/img/articulo/html-css-javascript-featured.svg',
+  'ia-y-seo-primeros-usos-practicos': '/img/articulo/ia-seo-primeros-usos-featured.svg',
+  'seo-para-ecommerce': '/img/articulo/seo-ecommerce-featured.svg',
+  'herramientas-seo': '/img/articulo/herramientas-seo-featured.svg',
+  'auditoria-seo-paso-a-paso': '/img/articulo/auditoria-seo-paso-a-paso-featured.svg',
+  'seo-on-page-aspectos-tecnicos': '/img/articulo/seo-on-page-aspectos-tecnicos-featured.svg'
 };
 
-test('new normalized articles use complete local WebP featured images', () => {
+test('new normalized articles use complete local SVG featured images', () => {
   Object.entries(featuredImages).forEach(([slug, expectedImage]) => {
     const article = contentLoader.loadArticle(slug);
     assert.equal(article.featuredImage, expectedImage, slug);
-
     const filePath = path.join(__dirname, '..', 'public', expectedImage.replace(/^\//, ''));
-    assert.ok(fs.existsSync(filePath), `Missing featured image for ${slug}`);
-
-    const buffer = fs.readFileSync(filePath);
-    assert.equal(buffer.subarray(0, 4).toString('ascii'), 'RIFF', slug);
-    assert.equal(buffer.subarray(8, 12).toString('ascii'), 'WEBP', slug);
-    assert.equal(buffer.readUInt32LE(4) + 8, buffer.length, `${slug} WebP is truncated`);
+    assert.ok(fs.existsSync(filePath), 'Missing featured image for ' + slug);
+    const svg = fs.readFileSync(filePath, 'utf8');
+    assert.match(svg, /<svg\b/i, slug);
+    assert.match(svg, /width="1200"/, slug);
+    assert.match(svg, /height="630"/, slug);
+    assert.match(svg, /viewBox="0 0 1200 630"/, slug);
   });
 });
 

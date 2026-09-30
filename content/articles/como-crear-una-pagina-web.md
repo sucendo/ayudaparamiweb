@@ -8,8 +8,8 @@ tags: ["Desarrollo web", "Guía", "SEO"]
 publishedDate: "2018-04-07"
 modifiedDate: "2022-03-31"
 featuredImage: "/img/articulo/como-crear-una-pagina-web-featured.svg"
-heroClass: "bg-teal"
-themeColor: "#537b7b"
+heroClass: "bg-green"
+themeColor: "#58b391"
 robots: "index,follow"
 ---
 Ya sea que esté considerando construir un nuevo sitio web o desee volver a hacer su sitio web actual, se enfrenta a algunas decisiones básicas, pero importantes.

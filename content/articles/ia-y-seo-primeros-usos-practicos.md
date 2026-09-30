@@ -7,7 +7,7 @@ canonical: "/ia-y-seo-primeros-usos-practicos"
 category: "tutoriales"
 tags: ["IA", "SEO", "Contenido"]
 publishedDate: "2023-02-09"
-featuredImage: "/img/articulo/ia-seo-primeros-usos-featured.webp"
+featuredImage: "/img/articulo/ia-seo-primeros-usos-featured.svg"
 heroClass: "bg-red"
 themeColor: "#d25565"
 robots: "index,follow"

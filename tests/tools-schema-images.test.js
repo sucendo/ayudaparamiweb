@@ -235,3 +235,30 @@ test('el analizador de enlaces internos y externos está publicado como herramie
   assert.match(script, /target=_blank sin noopener\/noreferrer/);
   assert.match(script, /navigator\.clipboard/);
 });
+
+
+test('el auditor SEO técnico está publicado como herramienta de mediados de 2026', () => {
+  const route = routes.find((item) => item.path === '/auditor-seo-tecnico');
+  assert.ok(route);
+  assert.equal(route.view, 'content/render');
+  assert.equal(route.contentType, 'tool');
+
+  const meta = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'tools', 'auditor-seo-tecnico.json'), 'utf8'));
+  const script = fs.readFileSync(path.join(__dirname, '..', 'public', 'js', 'technical-seo-auditor.js'), 'utf8');
+
+  assert.equal(meta.publishedDate, '2026-06-18');
+  assert.equal(Object.prototype.hasOwnProperty.call(meta, 'modifiedDate'), false);
+  assert.equal(meta.toolToneClass, 'ct-green');
+  assert.equal(meta.themeColor, '#16b864');
+  assert.equal(meta.featuredImage, '/img/tools/auditor-seo-tecnico.svg');
+  assert.match(script, /meta\[name="description" i\]/);
+  assert.match(script, /link\[rel~="canonical"\]/);
+  assert.match(script, /meta\[name="robots" i\]/);
+  assert.match(script, /h1,h2,h3,h4,h5,h6/);
+  assert.match(script, /querySelectorAll\('a'\)/);
+  assert.match(script, /querySelectorAll\('img'\)/);
+  assert.match(script, /hreflang/);
+  assert.match(script, /application\/ld\+json/);
+  assert.match(script, /og:title/);
+  assert.match(script, /Puntuación orientativa/);
+});

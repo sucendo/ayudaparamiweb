@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Auditor SEO técnico en navegador">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#effcf3"/><stop offset="1" stop-color="#d9f7e4"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".12"/></filter></defs>
+<rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+<circle cx="1020" cy="110" r="150" fill="#b6edc9" opacity=".48"/>
+<circle cx="145" cy="515" r="170" fill="#c9f3d7" opacity=".42"/>
+<rect x="85" y="92" width="1030" height="448" rx="26" fill="#fff" filter="url(#s)"/>
+<rect x="125" y="138" width="420" height="355" rx="16" fill="#f5fcf7" stroke="#d5e8dc"/>
+<g font-family="Arial,sans-serif" fill="#334954">
+<text x="155" y="180" font-size="19" font-weight="700">HTML de la página</text>
+<rect x="155" y="200" width="360" height="220" rx="10" fill="#fff" stroke="#c4d9cb"/>
+<text x="177" y="240" font-size="16" fill="#16b864">&lt;title&gt;</text><text x="250" y="240" font-size="16">Guía SEO técnico</text>
+<text x="177" y="280" font-size="16" fill="#16b864">&lt;link rel="canonical"&gt;</text>
+<text x="177" y="320" font-size="16" fill="#16b864">&lt;h1&gt;</text><text x="230" y="320" font-size="16">Auditoría SEO</text>
+<text x="177" y="360" font-size="16" fill="#16b864">&lt;img alt="..."&gt;</text>
+<rect x="155" y="443" width="180" height="45" rx="9" fill="#16b864"/>
+<text x="192" y="472" font-size="16" font-weight="700" fill="#fff">Auditar página</text>
+</g>
+<rect x="585" y="138" width="480" height="355" rx="16" fill="#fff" stroke="#dfe7e2"/>
+<g font-family="Arial,sans-serif">
+<circle cx="680" cy="238" r="62" fill="none" stroke="#e7eee9" stroke-width="15"/>
+<path d="M680 176a62 62 0 1 1-54 92" fill="none" stroke="#16b864" stroke-width="15" stroke-linecap="round"/>
+<text x="651" y="246" font-size="30" font-weight="800" fill="#263943">88</text>
+<text x="670" y="270" font-size="12" fill="#71808a">/100</text>
+<text x="775" y="205" font-size="19" font-weight="700" fill="#334954">Auditoría técnica</text>
+<rect x="775" y="228" width="220" height="12" rx="6" fill="#e8eeea"/><rect x="775" y="228" width="190" height="12" rx="6" fill="#16b864"/>
+<rect x="775" y="260" width="220" height="12" rx="6" fill="#e8eeea"/><rect x="775" y="260" width="165" height="12" rx="6" fill="#16b864"/>
+<rect x="620" y="340" width="115" height="75" rx="10" fill="#effcf3"/><text x="648" y="372" font-size="22" font-weight="800" fill="#16b864">12</text><text x="640" y="397" font-size="13" fill="#52616c">Correctos</text>
+<rect x="755" y="340" width="115" height="75" rx="10" fill="#fff7e9"/><text x="792" y="372" font-size="22" font-weight="800" fill="#ee9e2d">3</text><text x="786" y="397" font-size="13" fill="#52616c">Avisos</text>
+<rect x="890" y="340" width="115" height="75" rx="10" fill="#fff0f2"/><text x="927" y="372" font-size="22" font-weight="800" fill="#d25565">0</text><text x="920" y="397" font-size="13" fill="#52616c">Errores</text>
+</g>
+<rect x="756" y="505" width="205" height="48" rx="10" fill="#16b864"/>
+<text x="791" y="536" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#fff">Informe completo</text>
+<g transform="translate(1008 63) rotate(7 56 56)">
+<rect width="112" height="112" rx="24" fill="#fff" filter="url(#s)"/>
+<path d="M27 75V38h58v37" fill="none" stroke="#16b864" stroke-width="7" stroke-linecap="round"/>
+<path d="M38 53l11 11 24-28" fill="none" stroke="#16b864" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 88h36" stroke="#16b864" stroke-width="7" stroke-linecap="round"/>
+</g>
+</svg>

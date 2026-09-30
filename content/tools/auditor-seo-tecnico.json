@@ -1,0 +1,44 @@
+{
+  "title": "Auditor SEO técnico en navegador",
+  "description": "Audita title, meta description, canonical, robots, encabezados, enlaces, imágenes, hreflang, Open Graph y datos estructurados a partir del HTML de una página.",
+  "author": "Sucender",
+  "canonical": "/auditor-seo-tecnico",
+  "category": "herramientas",
+  "tags": [
+    "SEO técnico",
+    "Auditoría SEO",
+    "HTML",
+    "Canonical",
+    "Robots",
+    "Schema.org",
+    "Open Graph",
+    "Herramientas"
+  ],
+  "publishedDate": "2026-06-18",
+  "featuredImage": "/img/tools/auditor-seo-tecnico.svg",
+  "themeColor": "#16b864",
+  "toolToneClass": "ct-green",
+  "robots": "index,follow",
+  "intro": "Pega el HTML de una página y obtén una auditoría técnica por bloques con puntuación orientativa, incidencias y recomendaciones.",
+  "toolMountId": "technical-seo-auditor-app",
+  "styles": [
+    "/css/technical-seo-auditor.css"
+  ],
+  "scripts": [
+    "/js/technical-seo-auditor.js"
+  ],
+  "faq": [
+    {
+      "q": "¿La puntuación equivale a la de Google?",
+      "a": "No. Es una puntuación orientativa propia basada en comprobaciones técnicas del HTML. Sirve para priorizar revisiones, no para predecir posiciones en buscadores."
+    },
+    {
+      "q": "¿La herramienta rastrea toda la web?",
+      "a": "No. Analiza únicamente el HTML que pegues. No sigue enlaces, no consulta el servidor y no comprueba códigos HTTP ni Core Web Vitals."
+    },
+    {
+      "q": "¿Los datos se envían a algún servidor?",
+      "a": "No. Todo el análisis se ejecuta localmente en tu navegador."
+    }
+  ]
+}

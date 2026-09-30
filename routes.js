@@ -32,6 +32,7 @@ const managedContentRoutes = [
   { path: '/validador-canonical-hreflang', view: 'content/render', contentType: 'tool', contentSlug: 'validador-canonical-hreflang' },
   { path: '/analizador-encabezados-html', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-encabezados-html' },
   { path: '/analizador-enlaces-html', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-enlaces-html' },
+  { path: '/auditor-seo-tecnico', view: 'content/render', contentType: 'tool', contentSlug: 'auditor-seo-tecnico' },
 ];
 
 const staticRoutes = [

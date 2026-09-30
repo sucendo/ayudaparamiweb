@@ -139,10 +139,10 @@ test('final batch ct-colors match the assigned article identity', async () => {
 
 test('revision state is complete: 117 reviewed and 0 pending', () => {
   const state = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'REVISION_ESTADO_2026-09-30.json'), 'utf8'));
-  assert.equal(state.totalArticles, 112);
-  assert.equal(state.reviewedArticles, 112);
+  assert.equal(state.totalArticles, 117);
+  assert.equal(state.reviewedArticles, 117);
   assert.equal(state.pendingArticles, 0);
-  assert.equal(state.reviewed.length, 112);
+  assert.equal(state.reviewed.length, 117);
   assert.equal(state.reviewedThisBatch.length, 29);
   assert.deepEqual(state.pending, []);
   finalBatch.forEach((slug) => assert.ok(state.reviewed.includes(slug), slug));

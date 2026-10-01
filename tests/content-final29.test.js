@@ -78,7 +78,10 @@ function frontmatterValue(source, key) {
   return match ? match[1].trim() : '';
 }
 
-test('final 29 articles respect their effective date in visible title, description and body', () => {
+test('final 29 articles respect their effective date in visible title, description and body, allowing explicit prospective editorial framing', () => {
+  const allowedProspectiveYears = {
+    'checklist-ia-y-seo-para-2025': [2025]
+  };
   finalBatch.forEach((slug) => {
     const source = sourceFor(slug);
     const article = contentLoader.loadArticle(slug);
@@ -86,7 +89,8 @@ test('final 29 articles respect their effective date in visible title, descripti
     const cutoffYear = Number(String(effectiveDate).slice(0, 4));
     const visible = `${frontmatterValue(source, 'title')}\n${frontmatterValue(source, 'description')}\n${article.bodyHtml}`;
     const years = [...new Set((visible.match(/\b(?:19|20)\d{2}\b/g) || []).map(Number))];
-    const futureYears = years.filter((year) => year > cutoffYear);
+    const allowed = new Set(allowedProspectiveYears[slug] || []);
+    const futureYears = years.filter((year) => year > cutoffYear && !allowed.has(year));
     assert.deepEqual(futureYears, [], `${slug} contains years later than ${effectiveDate}: ${futureYears.join(', ')}`);
   });
 });

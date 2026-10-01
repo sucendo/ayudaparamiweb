@@ -46,7 +46,10 @@ test('auditoría global: 117 artículos, canonicals e imágenes únicas', () => 
   assert.equal(images.size, 117);
 });
 
-test('auditoría global: ningún artículo contiene años visibles posteriores a su fecha efectiva', () => {
+test('auditoría global: ningún artículo contiene años visibles posteriores a su fecha efectiva salvo referencias prospectivas explícitas', () => {
+  const allowedProspectiveYears = {
+    'checklist-ia-y-seo-para-2025': [2025]
+  };
   const slugs = fs.readdirSync(ARTICLES_DIR)
     .filter((filename) => filename.endsWith('.md'))
     .map((filename) => filename.replace(/\.md$/, ''));
@@ -57,7 +60,8 @@ test('auditoría global: ningún artículo contiene años visibles posteriores a
     const cutoffYear = Number(String(effectiveDate).slice(0, 4));
     const visible = [article.title, article.description, article.bodyHtml].join('\n');
     const years = [...new Set((visible.match(/\b(?:19|20)\d{2}\b/g) || []).map(Number))];
-    const futureYears = years.filter((year) => year > cutoffYear);
+    const allowed = new Set(allowedProspectiveYears[slug] || []);
+    const futureYears = years.filter((year) => year > cutoffYear && !allowed.has(year));
 
     assert.deepEqual(
       futureYears,

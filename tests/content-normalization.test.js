@@ -103,9 +103,10 @@ test('new normalized articles use complete local SVG featured images', () => {
   });
 });
 
-test('2018 SEO tools article contains no post-publication 2019 framing', () => {
-  assert.doesNotMatch(sourceFor('herramientas-seo'), /2019/);
-  assert.match(sourceFor('herramientas-seo'), /contexto de finales de 2018/i);
+test('2018 SEO tools article contains no post-publication or retrospective framing', () => {
+  const source = sourceFor('herramientas-seo');
+  assert.doesNotMatch(source, /2019/);
+  assert.doesNotMatch(source, /contexto de finales de 2018/i);
 });
 
 

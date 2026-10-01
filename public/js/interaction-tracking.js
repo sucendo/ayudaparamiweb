@@ -4,6 +4,16 @@
   var DATA_LAYER_EVENT = 'apmw_interaction';
   var ARTICLE_ENGAGED_SECONDS = 30;
   var ARTICLE_ENGAGED_DEPTH = 75;
+  var OPTIONAL_EVENT_PARAMETERS = [
+    'tool_name',
+    'result_type',
+    'scroll_percent',
+    'engaged_seconds',
+    'interaction_source',
+    'control_id',
+    'code_language',
+    'content_block'
+  ];
 
   var state = {
     toolOpenSent: false,
@@ -47,6 +57,10 @@
       content_type: pageType(),
       content_slug: pageSlug()
     };
+
+    OPTIONAL_EVENT_PARAMETERS.forEach(function (key) {
+      payload[key] = '';
+    });
 
     Object.keys(parameters || {}).forEach(function (key) {
       var value = parameters[key];

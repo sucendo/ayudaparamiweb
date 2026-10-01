@@ -25,8 +25,9 @@ Una auditoría de contenidos sirve precisamente para tomar estas decisiones con 
 
 Agosto puede ser un buen momento para realizarla porque normalmente permite trabajar sin la presión de nuevas campañas. El objetivo no es limpiar por limpiar, sino **llegar a septiembre con menos contenido redundante y más páginas útiles**.
 
-## Una auditoría no empieza preguntando qué borrar
+## Preparar la auditoría
 
+### Una auditoría no empieza preguntando qué borrar
 La primera pregunta debería ser:
 
 **¿qué función cumple esta URL?**
@@ -47,7 +48,7 @@ Por eso el tráfico no puede ser el único criterio.
 
 La auditoría debe combinar datos y utilidad.
 
-## Empieza creando un inventario de URLs
+### Empieza creando un inventario de URLs
 
 Antes de decidir nada, necesitas saber qué contenido existe.
 
@@ -82,7 +83,7 @@ Si puedes añadir enlaces externos o consultas principales, mejor.
 
 El inventario convierte una sensación difusa —“tenemos mucho contenido viejo”— en algo que podemos evaluar.
 
-## Clasifica por tipo antes de comparar
+### Clasifica por tipo antes de comparar
 
 No compares una página de servicio con un artículo informativo.
 
@@ -107,8 +108,9 @@ Una guía evergreen puede seguir aportando valor durante años.
 
 El contexto importa.
 
-## La primera categoría: mantener
+## Decidir qué hacer con cada contenido
 
+### La primera categoría: mantener
 Hay páginas que no necesitan tocarse.
 
 Si una URL:
@@ -128,7 +130,7 @@ Actualizar por actualizar puede introducir errores.
 
 La auditoría también sirve para descubrir qué **no debemos tocar**.
 
-## La segunda categoría: actualizar
+### La segunda categoría: actualizar
 
 Actualiza cuando el tema sigue siendo útil pero la página ha perdido precisión o profundidad.
 
@@ -161,7 +163,7 @@ Mantén lo que sigue siendo útil.
 
 No reescribas por completo una página solo para que parezca nueva.
 
-## La tercera categoría: fusionar
+### La tercera categoría: fusionar
 
 Esta es una de las decisiones más interesantes.
 
@@ -179,8 +181,9 @@ En ese caso, tener tres URLs no siempre aporta valor.
 
 Puede ser mejor crear una pieza más completa.
 
-## Cómo detectar contenidos que se solapan
+## Fusión, redirección y eliminación
 
+### Cómo detectar contenidos que se solapan
 Busca páginas que:
 
 - tratan el mismo problema;
@@ -201,7 +204,7 @@ Dos páginas pueden compartir algunas palabras y responder a intenciones diferen
 
 La pregunta es si el usuario necesita ambas.
 
-## Qué hacer cuando decides fusionar
+### Qué hacer cuando decides fusionar
 
 Elige la URL que tenga más sentido conservar.
 
@@ -223,7 +226,7 @@ Finalmente, redirige la URL retirada hacia la que se mantiene cuando exista una 
 
 Y actualiza los enlaces internos para que apunten directamente a la URL final.
 
-## La cuarta categoría: redirigir
+### La cuarta categoría: redirigir
 
 Una redirección es apropiada cuando una página desaparece pero existe otra que satisface una intención muy similar.
 
@@ -242,7 +245,7 @@ Si la relación no es clara, esa redirección aporta poco.
 
 Cada URL retirada necesita una decisión individual.
 
-## La quinta categoría: eliminar
+### La quinta categoría: eliminar
 
 Sí, hay páginas que pueden eliminarse.
 
@@ -264,8 +267,9 @@ También revisa si recibe impresiones aunque no tenga clics.
 
 Una página aparentemente invisible puede estar cerca de conseguir visibilidad.
 
-## Poco tráfico no significa poco valor
+## Evaluar valor y rendimiento
 
+### Poco tráfico no significa poco valor
 Este punto merece insistencia.
 
 Una página puede recibir diez visitas al mes y generar dos solicitudes comerciales.
@@ -284,7 +288,7 @@ Considera:
 
 Para algunos negocios, una página muy específica puede ser más importante que un artículo popular.
 
-## Detecta contenido huérfano
+### Detecta contenido huérfano
 
 Una URL puede ser buena y tener malos resultados simplemente porque está aislada.
 
@@ -301,7 +305,7 @@ Antes de descartar una página, comprueba si el problema es de descubrimiento.
 
 Mejorar el enlazado interno puede ser suficiente.
 
-## Revisa contenidos con muchas impresiones y pocos clics
+### Revisa contenidos con muchas impresiones y pocos clics
 
 Este grupo merece atención especial.
 
@@ -323,7 +327,7 @@ No asumas que el CTR bajo se arregla siempre cambiando el título.
 
 Primero entiende por qué aparecen esas impresiones.
 
-## Identifica páginas que antes funcionaban y ahora no
+### Identifica páginas que antes funcionaban y ahora no
 
 Compara periodos amplios.
 
@@ -341,8 +345,9 @@ También comprueba si la caída coincide con una tendencia general.
 
 En julio vimos cómo analizar [SEO estacional y búsquedas de verano](/seo-estacional-busquedas-de-verano). Esa lógica también sirve aquí: no confundas una caída estacional con un deterioro permanente.
 
-## No tengas miedo de unir artículos cortos
+## Consolidación y canibalización
 
+### No tengas miedo de unir artículos cortos
 Muchos blogs acumulan piezas pequeñas publicadas porque “tocaba publicar”.
 
 Años después existen cinco artículos de 500 palabras que podrían convertirse en una guía mucho más útil.
@@ -360,7 +365,7 @@ Longitud no es sinónimo de calidad.
 
 La ventaja está en reducir fragmentación.
 
-## Revisa canibalización con cuidado
+### Revisa canibalización con cuidado
 
 La canibalización no significa simplemente que dos páginas contienen la misma palabra clave.
 
@@ -382,7 +387,7 @@ Después decide si necesitas:
 
 No hay una solución automática.
 
-## ¿Actualizar fecha o conservarla?
+### ¿Actualizar fecha o conservarla?
 
 Cambiar una fecha debe reflejar una actualización real.
 
@@ -394,7 +399,7 @@ Eso no mejora una guía desactualizada.
 
 El usuario necesita contenido correcto, no una etiqueta nueva.
 
-## Revisa los títulos como conjunto
+### Revisa los títulos como conjunto
 
 Una auditoría permite detectar algo difícil de ver artículo a artículo: títulos repetitivos.
 
@@ -412,8 +417,9 @@ Mira el catálogo como un conjunto.
 
 Cada título debería ayudar a distinguir la función de esa página.
 
-## No elimines URLs con enlaces sin analizarlas
+## Proteger señales y trabajar por bloques
 
+### No elimines URLs con enlaces sin analizarlas
 Si una página recibe enlaces externos, merece una revisión especial.
 
 Ese enlace puede aportar:
@@ -428,7 +434,7 @@ Si el contenido sigue siendo útil, quizá sea mejor actualizarlo.
 
 Borrar sin comprobar enlaces puede desperdiciar valor acumulado.
 
-## Actualiza también los enlaces después de fusionar
+### Actualiza también los enlaces después de fusionar
 
 Una redirección funciona, pero no debería convertirse en la solución permanente para todos los enlaces internos.
 
@@ -442,7 +448,7 @@ Así:
 
 La redirección queda como red de seguridad para enlaces externos y URLs antiguas.
 
-## Trabaja por bloques, no toda la web de una vez
+### Trabaja por bloques, no toda la web de una vez
 
 Una auditoría completa puede ser enorme.
 
@@ -462,7 +468,7 @@ Aplica el proceso, mide y continúa.
 
 Esto reduce errores.
 
-## Una tabla sencilla de decisiones
+### Una tabla sencilla de decisiones
 
 Puedes añadir una columna llamada “Acción” y limitarla a cinco valores:
 
@@ -486,8 +492,9 @@ Ejemplos:
 
 La justificación evita decisiones impulsivas.
 
-## Qué comprobar después de hacer cambios
+## Comprobar los cambios
 
+### Qué comprobar después de hacer cambios
 La auditoría no termina al publicar.
 
 Durante las semanas siguientes revisa:
@@ -508,7 +515,6 @@ No esperes resultados inmediatos.
 Los buscadores necesitan volver a rastrear y procesar los cambios.
 
 ## Una auditoría piloto en 90 minutos
-
 Puedes empezar sin revisar toda la web.
 
 ### Primeros 15 minutos
@@ -540,7 +546,6 @@ Después observa.
 Una auditoría pequeña bien hecha puede enseñarte más que una revisión masiva sin criterio.
 
 ## Conclusión
-
 La calidad de una web no depende de cuántas URLs tenga.
 
 Depende de que cada página cumpla una función útil.

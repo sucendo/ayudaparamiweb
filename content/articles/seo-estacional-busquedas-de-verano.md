@@ -23,7 +23,9 @@ La clave está en distinguir **una tendencia estacional de un problema real** y 
 
 En junio vimos [qué métricas merece la pena revisar](/como-medir-rendimiento-web-metricas-utiles). Ahora podemos utilizar esos datos para responder una pregunta distinta: **¿qué cambia en verano y cómo podemos anticiparnos?**
 
-## Qué significa realmente que una búsqueda sea estacional
+## Entender la estacionalidad
+
+### Qué significa realmente que una búsqueda sea estacional
 
 Una búsqueda es estacional cuando su interés cambia de forma relativamente previsible a lo largo del año.
 
@@ -52,7 +54,7 @@ Lo importante es entender que la demanda no siempre es estable.
 
 Si tratamos todos los meses como si fueran iguales, podemos interpretar mal los datos.
 
-## No compares julio únicamente con junio
+### No compares julio únicamente con junio
 
 Uno de los errores más frecuentes consiste en comparar un mes con el inmediatamente anterior y sacar conclusiones demasiado rápidas.
 
@@ -113,7 +115,9 @@ Puede existir una caída estacional de la demanda.
 
 Antes de modificar media web, comprueba si el patrón también apareció el año anterior.
 
-## Google Trends sirve para entender la forma de la demanda
+## Validar la demanda
+
+### Google Trends sirve para entender la forma de la demanda
 
 Google Trends no muestra el volumen exacto de búsquedas.
 
@@ -135,7 +139,7 @@ La oportunidad está en preparar el contenido antes del crecimiento.
 
 El SEO estacional necesita calendario.
 
-## Busca patrones, no picos aislados
+### Busca patrones, no picos aislados
 
 Un pico de búsquedas no siempre significa que debas crear una página.
 
@@ -153,7 +157,7 @@ Pregunta:
 
 Una oportunidad estacional interesante suele combinar recurrencia, relevancia y margen de preparación.
 
-## Empieza por tus propios datos
+### Empieza por tus propios datos
 
 Las herramientas externas ayudan, pero tu web ya contiene mucha información.
 
@@ -182,7 +186,9 @@ Un determinado servicio puede crecer en julio simplemente porque la necesidad ap
 
 Por eso conviene observar el comportamiento de consultas y páginas, no solo buscar la palabra “verano”.
 
-## Decide si necesitas una página nueva
+## Decidir y preparar contenido
+
+### Decide si necesitas una página nueva
 
 Detectar una oportunidad no significa que debamos crear una URL nueva.
 
@@ -205,7 +211,7 @@ La pregunta correcta no es “¿podemos crear una página?”.
 
 Es “¿el usuario necesita una página diferente?”.
 
-## Evita crear una URL nueva cada año
+### Evita crear una URL nueva cada año
 
 Si tienes una página que funciona cada temporada, normalmente interesa conservar la misma URL.
 
@@ -226,7 +232,7 @@ Crear una URL distinta con el año y repetir el proceso cada temporada solo mere
 
 Para páginas puramente comerciales, reutilizar suele ser más sencillo.
 
-## Publica antes de que llegue el pico
+### Publica antes de que llegue el pico
 
 El contenido SEO necesita tiempo.
 
@@ -248,7 +254,9 @@ Primero identifica cuándo se produce el pico.
 
 Después retrocede varias semanas y fija la fecha de preparación.
 
-## Actualiza también los enlaces internos
+## Optimizar la página existente
+
+### Actualiza también los enlaces internos
 
 Una página estacional puede existir y seguir pasando desapercibida si nadie llega a ella desde otras partes de la web.
 
@@ -267,7 +275,7 @@ Después de la temporada, no es obligatorio eliminar todos esos enlaces.
 
 Pero sí puedes reducir la prominencia si ya no resultan útiles para el usuario.
 
-## El título debe reflejar la intención, no la palabra “verano” a la fuerza
+### El título debe reflejar la intención, no la palabra “verano” a la fuerza
 
 Añadir “verano” a todos los títulos no convierte una página en estacional.
 
@@ -292,7 +300,7 @@ El título debe responder a esa intención.
 
 La estacionalidad está en la demanda, no necesariamente en la redacción.
 
-## El contenido estacional también debe ser útil fuera del pico
+### El contenido estacional también debe ser útil fuera del pico
 
 Cuando sea posible, evita publicar textos que queden completamente inútiles al terminar agosto.
 
@@ -317,7 +325,7 @@ Después puedes modificar cada temporada:
 
 Esto reduce el trabajo del año siguiente.
 
-## Revisa resultados enriquecidos y datos visibles
+### Revisa resultados enriquecidos y datos visibles
 
 Si una página incluye información temporal, asegúrate de que los elementos visibles coinciden con la realidad.
 
@@ -334,7 +342,9 @@ No tiene sentido mantener en el código una fecha distinta a la que aparece en p
 
 La coherencia ayuda tanto al usuario como al mantenimiento.
 
-## Ecommerce: la estacionalidad empieza en categorías y stock
+## Ecommerce y diagnóstico
+
+### Ecommerce: la estacionalidad empieza en categorías y stock
 
 En una tienda online, el SEO estacional no se limita a escribir artículos.
 
@@ -355,7 +365,7 @@ También conviene evitar eliminar categorías estacionales cuando termine la tem
 
 Si volverán a ser útiles el año siguiente, puede ser mejor conservarlas con contenido adaptado.
 
-## No confundas estacionalidad con un cambio de posicionamiento
+### No confundas estacionalidad con un cambio de posicionamiento
 
 Imagina que una página recibe menos clics.
 
@@ -375,7 +385,9 @@ Si todo el grupo de consultas pierde visibilidad mientras la demanda externa se 
 
 No tomes decisiones sin identificar primero cuál de estos casos se parece más al tuyo.
 
-## Construye un calendario estacional propio
+## Planificar el calendario
+
+### Construye un calendario estacional propio
 
 Cada negocio tiene un calendario diferente.
 

@@ -20,7 +20,9 @@ robots: "index,follow"
 <p>Cuando una web no carga, lo importante no es reaccionar rápido, sino reaccionar con método.</p>
 </blockquote>
 
-<h2>1. Comprueba si la web está caída para todos</h2>
+<h2>Primer diagnóstico</h2>
+
+<h3>1. Comprueba si la web está caída para todos</h3>
 
 <p>Antes de hacer nada, lo primero es confirmar si el problema es global o solo afecta a tu conexión.</p>
 
@@ -34,7 +36,7 @@ robots: "index,follow"
 
 <p>Si solo falla en tu equipo, puede ser un problema local.</p>
 
-<h2>2. Revisa el tipo de error</h2>
+<h3>2. Revisa el tipo de error</h3>
 
 <p>No es lo mismo un error 500 que un error de conexión o una página en blanco. Cada uno apunta a un problema distinto.</p>
 
@@ -47,7 +49,9 @@ robots: "index,follow"
 
 <p>Identificar el tipo de error te ahorra mucho tiempo.</p>
 
-<h2>3. Comprueba el hosting</h2>
+<h2>Hosting y cambios recientes</h2>
+
+<h3>3. Comprueba el hosting</h3>
 
 <p>Muchos problemas vienen directamente del servidor. Puede estar caído, saturado o con incidencias.</p>
 
@@ -61,7 +65,7 @@ robots: "index,follow"
 
 <p>Si el problema está ahí, no tiene sentido tocar la web todavía.</p>
 
-<h2>4. Revisa cambios recientes</h2>
+<h3>4. Revisa cambios recientes</h3>
 
 <p>En la mayoría de casos, algo ha cambiado antes de que la web deje de funcionar.</p>
 
@@ -74,7 +78,9 @@ robots: "index,follow"
 
 <p>Identificar ese cambio puede darte la solución directamente.</p>
 
-<h2>5. Desactiva plugins o módulos</h2>
+<h2>Plugins, debug y logs</h2>
+
+<h3>5. Desactiva plugins o módulos</h3>
 
 <p>Si usas WordPress o PrestaShop, uno de los fallos más comunes está en plugins o módulos.</p>
 
@@ -87,7 +93,7 @@ robots: "index,follow"
 - Analizar error
 - Revisar logs</code></pre>
 
-<h2>6. Activa modo debug o revisa logs</h2>
+<h3>6. Activa modo debug o revisa logs</h3>
 
 <p>Cuando el error no es evidente, los logs son la mejor herramienta.</p>
 
@@ -101,7 +107,9 @@ robots: "index,follow"
 
 <p>Esto te da información real sobre el problema.</p>
 
-<h2>7. Comprueba la base de datos</h2>
+<h2>Base de datos y configuración</h2>
+
+<h3>7. Comprueba la base de datos</h3>
 
 <p>Si la base de datos falla, la web no podrá cargar correctamente.</p>
 
@@ -113,13 +121,15 @@ robots: "index,follow"
 <li>El servidor responde</li>
 </ul>
 
-<h2>8. Revisa el archivo .htaccess</h2>
+<h3>8. Revisa el archivo .htaccess</h3>
 
 <p>Un error en este archivo puede bloquear toda la web.</p>
 
 <p>Renómbralo temporalmente y prueba de nuevo.</p>
 
-<h2>9. Comprueba el dominio y DNS</h2>
+<h2>Dominio, DNS y método de trabajo</h2>
+
+<h3>9. Comprueba el dominio y DNS</h3>
 
 <p>A veces el problema no es la web, sino el dominio.</p>
 
@@ -131,7 +141,7 @@ robots: "index,follow"
 
 <p>Esto puede hacer que la web no cargue aunque el servidor funcione.</p>
 
-<h2>10. Actúa con orden y sin tocar todo a la vez</h2>
+<h3>10. Actúa con orden y sin tocar todo a la vez</h3>
 
 <p>Uno de los errores más comunes es hacer múltiples cambios sin control. Esto complica el diagnóstico.</p>
 
@@ -141,7 +151,9 @@ robots: "index,follow"
 <p>Resolver rápido no significa hacer muchas cosas, sino hacer las correctas en orden.</p>
 </blockquote>
 
-<h2>En resumen</h2>
+<h2>Resumen y copia previa</h2>
+
+<h3>En resumen</h3>
 
 <p>Cuando una web no carga, la situación puede parecer crítica, pero en muchos casos se puede resolver en poco tiempo si se sigue un proceso claro.</p>
 
@@ -150,55 +162,61 @@ robots: "index,follow"
 <p>Si no quieres perder tiempo o necesitas una solución rápida, puedes <a href="/contacto">contactar conmigo</a> y reviso tu web para solucionarlo cuanto antes.</p>
 
 <p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más guías prácticas para resolver errores reales.</p>
-<h2>Antes de tocar archivos, guarda una copia</h2>
+<h3>Antes de tocar archivos, guarda una copia</h3>
 
 <p>Si todavía puedes acceder al hosting, descarga los archivos que vayas a modificar y evita sobrescribir configuraciones sin posibilidad de volver atrás.</p>
 
 <p>Una reparación urgente no debería crear un segundo problema por no conservar el estado anterior.</p>
 
-<h2>Comprueba si afecta a una página o a toda la web</h2>
+<h2>Alcance y cronología</h2>
+
+<h3>Comprueba si afecta a una página o a toda la web</h3>
 
 <p>Prueba la portada, una URL interna y, si existe, el panel de administración. Esta diferencia ayuda a reducir el diagnóstico.</p>
 
 <p>Si solo falla una página, puede tratarse de una plantilla, contenido o regla concreta. Si todo falla, hosting, configuración o aplicación ganan importancia.</p>
 
-<h2>Mira la hora exacta en que empezó</h2>
+<h3>Mira la hora exacta en que empezó</h3>
 
 <p>Relaciona el inicio con actualizaciones, cambios de DNS, despliegues o tareas realizadas poco antes.</p>
 
 <p>Revisar primero lo que cambió suele ser más efectivo que probar soluciones genéricas.</p>
 
-<h2>No muestres errores detallados a visitantes</h2>
+<h2>Errores, límites y DNS</h2>
+
+<h3>No muestres errores detallados a visitantes</h3>
 
 <p>La depuración puede aportar información útil, pero los mensajes técnicos no deberían permanecer visibles públicamente.</p>
 
 <p>Activa el modo de diagnóstico solo durante la investigación y vuelve a la configuración normal al terminar.</p>
 
-<h2>Comprueba espacio y límites del alojamiento</h2>
+<h3>Comprueba espacio y límites del alojamiento</h3>
 
 <p>Un servidor sin espacio puede dejar de escribir sesiones, caché o registros. Revisa también límites de recursos si el panel los muestra.</p>
 
 <p>Si existe una incidencia general del proveedor, espera su resolución antes de modificar la aplicación.</p>
 
-<h2>DNS requiere paciencia y comprobación</h2>
+<h3>DNS requiere paciencia y comprobación</h3>
 
 <p>Si has cambiado recientemente registros o servidores de nombres, verifica que los valores sean correctos y que no exista una configuración antigua mezclada.</p>
 
 <p>No hagas cambios sucesivos cada pocos minutos: puedes dificultar saber qué configuración es la correcta.</p>
 
-<h2>Documenta lo que pruebas</h2>
+<h2>Recuperación y seguimiento</h2>
+
+<h3>Documenta lo que pruebas</h3>
 
 <p>Anota cada cambio y resultado. Si renombrar un plugin no cambia nada, vuelve al estado anterior antes de probar el siguiente paso.</p>
 
 <p>Este método permite avanzar sin acumular modificaciones y facilita pedir ayuda aportando información concreta.</p>
 
-<h2>Cuándo restaurar una copia</h2>
+<h3>Cuándo restaurar una copia</h3>
 
 <p>Si identificas que un cambio reciente ha dañado archivos o base de datos y dispones de una copia fiable, restaurar puede ser más seguro que reparar manualmente muchas piezas.</p>
 
 <p>Comprueba la fecha de la copia para no perder pedidos, formularios o contenido reciente sin saberlo.</p>
 
-<h2>Después de recuperar la web</h2>
+<h3>Después de recuperar la web</h3>
 
 <p>No cierres la incidencia en cuanto vuelva a cargar. Revisa logs, identifica la causa y comprueba las funciones principales.</p>
 

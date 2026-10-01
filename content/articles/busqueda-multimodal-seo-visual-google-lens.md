@@ -31,8 +31,9 @@ La pregunta práctica es evidente:
 
 **¿está nuestra web preparada para que sus imágenes sean descubiertas, entendidas y utilizadas en este tipo de búsquedas?**
 
-## Qué es una búsqueda multimodal
+## Concepto y medición
 
+### Qué es una búsqueda multimodal
 Una búsqueda tradicional parte normalmente de texto.
 
 Una búsqueda multimodal puede combinar distintos tipos de información.
@@ -65,8 +66,7 @@ Pero no se limita a tiendas.
 
 Un diagrama, una captura de un programa, una pieza mecánica, un edificio o una infografía también pueden convertirse en el punto de partida de una búsqueda.
 
-## La gran novedad de septiembre de 2026: ya podemos medirlo mejor
-
+### La gran novedad de septiembre de 2026: ya podemos medirlo mejor
 Hasta ahora, una de las dificultades del SEO visual era separar determinados comportamientos dentro de los datos generales.
 
 Google ha empezado a desplegar un nuevo filtro de búsqueda multimodal en los informes de rendimiento de Search Console.
@@ -86,8 +86,9 @@ Esto no convierte el SEO visual en una disciplina completamente nueva.
 
 En realidad, refuerza algo que Google lleva tiempo recomendando: **hacer que las imágenes sean descubribles, comprensibles y estén dentro de páginas relevantes**.
 
-## No existe una optimización mágica para Lens
+## Fundamentos de imagen HTML
 
+### No existe una optimización mágica para Lens
 La búsqueda visual puede parecer muy sofisticada, pero las bases técnicas siguen siendo bastante conocidas.
 
 Google continúa recomendando elementos HTML estándar, páginas accesibles, imágenes de calidad, texto alternativo útil, nombres de archivo descriptivos y contexto alrededor de la imagen.
@@ -98,8 +99,7 @@ No necesitas inventar una nueva etiqueta llamada “Lens”.
 
 Necesitas que la página esté bien construida.
 
-## Primer paso: utiliza una imagen HTML real
-
+### Primer paso: utiliza una imagen HTML real
 Una de las [recomendaciones de Google para SEO de imágenes](https://developers.google.com/search/docs/appearance/google-images?hl=es) es insertar las imágenes importantes mediante elementos HTML de imagen.
 
 Una imagen utilizada únicamente como fondo CSS puede servir para diseño, pero no debería ser la única forma de publicar una imagen que quieres que el buscador descubra.
@@ -137,8 +137,7 @@ La diferencia está en la función de la imagen.
 
 Si queremos que represente información, conviene tratarla como contenido.
 
-## El nombre del archivo también aporta contexto
-
+### El nombre del archivo también aporta contexto
 Un archivo llamado <code>IMG_8472.jpg</code> dice muy poco.
 
 Uno llamado <code>mochila-impermeable-urbana-negra.jpg</code> ofrece bastante más información.
@@ -156,8 +155,7 @@ Evita nombres como:
 
 Un buen nombre ayuda también a mantener ordenada la biblioteca de medios.
 
-## El atributo alt no es una lista de palabras clave
-
+### El atributo alt no es una lista de palabras clave
 El texto alternativo debe describir la imagen cuando esa descripción aporta información.
 
 Google explica que utiliza el texto alternativo, el contenido de la página y sistemas de visión artificial para comprender las imágenes.
@@ -186,8 +184,7 @@ Si esa misma fotografía aparece en una ficha de producto, el nombre exacto del 
 
 Si aparece en un artículo que compara tipos de suela, quizá interese destacar precisamente ese detalle visual.
 
-## Las imágenes decorativas no necesitan competir por atención
-
+### Las imágenes decorativas no necesitan competir por atención
 No toda imagen necesita una descripción SEO.
 
 Iconos decorativos, separadores o elementos puramente estéticos pueden utilizar un atributo alt vacío cuando corresponda.
@@ -202,8 +199,9 @@ El objetivo no es llenar cada etiqueta con texto.
 
 Es describir aquello que realmente transmite información.
 
-## Coloca la imagen cerca del contenido que la explica
+## Contexto semántico
 
+### Coloca la imagen cerca del contenido que la explica
 Una imagen aislada resulta más difícil de interpretar que una imagen acompañada por contexto.
 
 Supongamos que publicamos una fotografía de una pieza electrónica.
@@ -237,8 +235,9 @@ La etiqueta <code>figcaption</code> no es obligatoria para SEO.
 
 Pero cuando aporta información útil, ayuda al lector y mantiene una relación clara entre imagen y explicación.
 
-## Utiliza formatos modernos sin olvidar la compatibilidad
+## Formatos, tamaños y carga
 
+### Utiliza formatos modernos sin olvidar la compatibilidad
 Google admite actualmente varios formatos de imagen, entre ellos JPEG, PNG, WebP, SVG y AVIF.
 
 WebP y AVIF pueden ayudar a reducir peso dependiendo del tipo de imagen y de cómo se hayan generado.
@@ -271,8 +270,7 @@ No conviertas la optimización de formato en una obsesión.
 
 Una imagen bien comprimida, suficientemente grande y visualmente clara suele ser más útil que una imagen extremadamente comprimida llena de artefactos.
 
-## Adapta el tamaño a distintas pantallas
-
+### Adapta el tamaño a distintas pantallas
 Servir una fotografía de 4000 píxeles a un teléfono que la muestra a 360 píxeles de ancho desperdicia transferencia.
 
 Puedes utilizar <code>srcset</code> y <code>sizes</code> para permitir que el navegador seleccione una versión adecuada.
@@ -298,8 +296,7 @@ También mejora la experiencia de carga.
 
 Y ese equilibrio importa: queremos imágenes suficientemente buenas para ser útiles sin convertir la página en varios megabytes innecesarios.
 
-## No cargues todas las imágenes de la misma forma
-
+### No cargues todas las imágenes de la misma forma
 Para imágenes que aparecen bastante abajo en una página, la carga diferida puede reducir trabajo inicial.
 
 Por ejemplo:
@@ -317,8 +314,9 @@ Sin embargo, no conviene aplicar <code>loading="lazy"</code> indiscriminadamente
 
 La optimización debe considerar dónde está la imagen y cuándo necesita verla el usuario.
 
-## Una imagen de producto necesita más que una fotografía bonita
+## Imágenes de producto
 
+### Una imagen de producto necesita más que una fotografía bonita
 En ecommerce, el buscador puede relacionar una imagen con información comercial de la página.
 
 Google indica que los datos estructurados de producto pueden enriquecer cómo aparece la información en Search, Google Imágenes y Google Lens.
@@ -366,8 +364,7 @@ Los datos estructurados deben coincidir con la información visible y real de la
 
 Si el precio cambia, la información estructurada también debe cambiar.
 
-## Muestra varias vistas cuando ayuden a reconocer el producto
-
+### Muestra varias vistas cuando ayuden a reconocer el producto
 En una tienda, una única fotografía frontal puede no ser suficiente.
 
 Cuando tenga sentido, ofrece:
@@ -387,8 +384,9 @@ Una persona puede buscar un producto a partir de una forma, un color, un acabado
 
 Cuanto más clara sea la representación, más útil será también para el usuario.
 
-## Un sitemap de imágenes puede ayudar al descubrimiento
+## Descubrimiento y renderizado
 
+### Un sitemap de imágenes puede ayudar al descubrimiento
 Google permite incluir imágenes en un sitemap específico.
 
 Esto puede resultar útil especialmente cuando algunas imágenes son difíciles de descubrir durante el rastreo normal.
@@ -418,8 +416,7 @@ Google también permite incluir imágenes alojadas en un CDN.
 
 Si utilizas un dominio separado para las imágenes, conviene tener controlado su acceso y su configuración en Search Console.
 
-## Las imágenes generadas por JavaScript necesitan una comprobación real
-
+### Las imágenes generadas por JavaScript necesitan una comprobación real
 Una web moderna puede cargar galerías mediante JavaScript, carruseles o componentes dinámicos.
 
 Eso no significa automáticamente que exista un problema.
@@ -430,8 +427,7 @@ Utiliza las herramientas del navegador y la inspección de URL de Search Console
 
 No des por hecho que algo es rastreable simplemente porque tú lo ves en pantalla.
 
-## La calidad importa más en una búsqueda que empieza por una imagen
-
+### La calidad importa más en una búsqueda que empieza por una imagen
 Cuando una persona busca visualmente, la imagen deja de ser un complemento decorativo.
 
 Es parte de la consulta.
@@ -449,8 +445,9 @@ En fichas de producto, intenta mostrar el objeto claramente.
 
 En artículos, utiliza diagramas y capturas cuando realmente ayuden a comprender.
 
-## Las capturas de pantalla también son contenido visual
+## Capturas, texto y metadatos
 
+### Las capturas de pantalla también son contenido visual
 Una web tecnológica puede no vender ningún objeto físico y aun así beneficiarse del SEO visual.
 
 Piensa en:
@@ -470,8 +467,7 @@ En lugar de subir <code>captura23.png</code>, podemos utilizar <code>search-cons
 
 Eso ayuda al lector y facilita la organización.
 
-## No incrustes texto importante únicamente dentro de la imagen
-
+### No incrustes texto importante únicamente dentro de la imagen
 Una imagen puede incluir texto, pero la información esencial debería existir también en HTML cuando sea posible.
 
 Si publicas una infografía con cinco pasos, incluye esos pasos en el artículo.
@@ -490,8 +486,7 @@ La imagen puede resumir.
 
 El HTML debe conservar el significado.
 
-## Añade metadatos cuando la autoría o la licencia sean importantes
-
+### Añade metadatos cuando la autoría o la licencia sean importantes
 Google Imágenes puede utilizar metadatos para mostrar información sobre autor, crédito o licencia.
 
 Esto resulta especialmente interesante para:
@@ -508,8 +503,9 @@ No todas las webs necesitan implementarlo.
 
 Pero si el uso y la atribución de las imágenes forman parte del negocio, merece la pena revisarlo.
 
-## Cómo medir el tráfico de imágenes
+## Medición de imágenes y búsquedas multimodales
 
+### Cómo medir el tráfico de imágenes
 Search Console ya permitía filtrar el informe de rendimiento por búsqueda de imágenes.
 
 Para verlo:
@@ -523,8 +519,7 @@ Ten en cuenta un detalle: Search Console muestra la página de destino asociada 
 
 Esto permite descubrir qué contenidos reciben tráfico desde Google Imágenes.
 
-## Cómo medir ahora la búsqueda multimodal
-
+### Cómo medir ahora la búsqueda multimodal
 La novedad de septiembre de 2026 añade otra capa.
 
 En sitios que ya reciban este tipo de tráfico, el nuevo filtro multimodal permite analizar búsquedas que utilizan una imagen como parte del proceso.
@@ -545,8 +540,7 @@ Por ejemplo, puedes descubrir que determinadas fichas de producto, tutoriales o 
 
 Eso puede orientar futuras mejoras.
 
-## No optimices solo para el buscador: crea imágenes reconocibles
-
+### No optimices solo para el buscador: crea imágenes reconocibles
 Una buena imagen para búsqueda visual suele ser también una buena imagen para una persona.
 
 Pregunta:
@@ -562,8 +556,9 @@ El objetivo no es fabricar imágenes para un algoritmo.
 
 Es reducir la ambigüedad.
 
-## Una lista técnica para revisar tus imágenes
+## Checklist, ejemplo y conclusiones
 
+### Una lista técnica para revisar tus imágenes
 Puedes hacer una auditoría rápida seleccionando diez páginas importantes.
 
 Para cada una, comprueba:
@@ -583,8 +578,7 @@ Después mira Search Console.
 
 La parte técnica y la medición deben trabajar juntas.
 
-## Ejemplo completo de una imagen preparada
-
+### Ejemplo completo de una imagen preparada
 Podemos reunir varias de estas ideas en una sola pieza de HTML.
 
 Código de ejemplo 6:
@@ -623,8 +617,7 @@ No significa que todas las imágenes necesiten una estructura así.
 
 Pero el ejemplo muestra una idea importante: **la optimización visual se construye con HTML normal y bien utilizado**.
 
-## Qué evitar
-
+### Qué evitar
 Hay algunos errores recurrentes que conviene eliminar.
 
 No conviertas todas las imágenes en fondos CSS si contienen información.
@@ -643,8 +636,7 @@ Y no pienses que una nueva función de Google obliga a rehacer toda la web.
 
 Empieza por las páginas que ya tienen valor.
 
-## Qué cambia realmente con la búsqueda multimodal
-
+### Qué cambia realmente con la búsqueda multimodal
 La principal diferencia no es técnica.
 
 Es conceptual.
@@ -663,8 +655,7 @@ Para una web con buen contenido visual, esto abre una nueva forma de analizar la
 
 Y gracias al nuevo informe de Search Console, ya podemos empezar a medirla con algo más de precisión.
 
-## Conclusión
-
+### Conclusión
 El SEO visual no consiste en poner palabras clave en nombres de fotografías.
 
 Consiste en ayudar a los buscadores y a las personas a entender qué representa cada imagen y cómo se relaciona con la página.

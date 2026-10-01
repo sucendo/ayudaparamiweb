@@ -17,7 +17,9 @@ robots: "index,follow"
 							
 								<p>Si todavía no tienes claro qué hace exactamente Express.js o por qué se recomienda tanto, en esta guía vas a encontrar una explicación sencilla, algunos ejemplos y una idea más clara de cuándo puede merecer la pena usarlo.</p>
 							
-								<h2>Qué es Express.js exactamente</h2>
+								<h2>Qué es Express.js</h2>
+
+<h3>Qué es Express.js exactamente</h3>
 								<p>Express.js es un framework para Node.js pensado para desarrollar aplicaciones web y servicios backend. Su objetivo principal es facilitar tareas que, usando solo Node nativo, resultarían más repetitivas o más pesadas de organizar.</p>
 							
 								<p>Por ejemplo, con Express resulta mucho más cómodo definir rutas, recibir peticiones, devolver respuestas, trabajar con parámetros, procesar formularios o incorporar middleware para distintas tareas comunes.</p>
@@ -28,14 +30,16 @@ robots: "index,follow"
 									<p>Express.js no sustituye a Node.js. Lo que hace es apoyarse en él para ofrecer una forma más cómoda de crear aplicaciones web y APIs.</p>
 								</blockquote>
 							
-								<h2>Por qué se utiliza tanto junto a Node.js</h2>
+								<h3>Por qué se utiliza tanto junto a Node.js</h3>
 								<p>Node.js permite crear servidores y manejar peticiones HTTP, pero si se quiere desarrollar una aplicación un poco más organizada, enseguida hace falta una estructura mejor. Ahí es donde Express resulta útil.</p>
 							
 								<p>Con pocas líneas se puede levantar un servidor, definir rutas y devolver respuestas de forma bastante clara. Eso hace que la curva de entrada sea cómoda para quien está empezando, y al mismo tiempo permite sentar una base razonable para proyectos más serios.</p>
 							
 								<p>Además, al trabajar con JavaScript en el servidor, muchos equipos encuentran una cierta continuidad entre frontend y backend, algo que ha contribuido bastante a la popularidad de este stack.</p>
 							
-								<h2>Qué se puede hacer con Express.js</h2>
+								<h2>Qué puedes construir</h2>
+
+<h3>Qué se puede hacer con Express.js</h3>
 								<p>Express puede usarse en proyectos bastante distintos. Se puede emplear para crear una API REST, una pequeña aplicación web, un backend para una tienda o un panel de administración. También puede servir como base para proyectos que más adelante crecerán bastante.</p>
 							
 								<p>No obliga a una única forma de trabajar, y eso explica parte de su éxito. Se puede empezar con algo muy sencillo y, a medida que el proyecto crece, ir añadiendo una estructura más clara.</p>
@@ -48,7 +52,7 @@ robots: "index,follow"
 									<li>Servir de base para proyectos Node.js más completos.</li>
 								</ul>
 							
-								<h2>Primer ejemplo: un servidor muy simple con Express</h2>
+								<h3>Primer ejemplo: un servidor muy simple con Express</h3>
 								<p>Una de las razones por las que tanta gente empieza con Express es que permite levantar un servidor funcional con muy poco código. Este sería un ejemplo básico:</p>
 							
 								<pre class="line-numbers" data-start="0"><code class="language-javascript">const express = require('express');
@@ -65,7 +69,9 @@ app.listen(PORT, () =&gt; {
 							
 								<p>Con esto ya tienes una pequeña aplicación respondiendo en el navegador. Esa sencillez inicial es una de sus mayores ventajas.</p>
 							
-								<h2>Las rutas son una de sus partes más cómodas</h2>
+								<h2>Rutas y middleware</h2>
+
+<h3>Las rutas son una de sus partes más cómodas</h3>
 								<p>En cualquier aplicación web, una parte importante del trabajo consiste en recibir peticiones en distintas rutas y devolver una respuesta adecuada. Express hace esto bastante fácil y legible.</p>
 							
 								<p>Por ejemplo, se pueden definir rutas distintas según el método HTTP usado:</p>
@@ -88,7 +94,7 @@ app.delete('/usuarios/:id', (req, res) =&gt; {
 							
 								<p>Esto ayuda mucho a entender qué hace cada parte de la aplicación y a mantener una estructura más clara cuando el proyecto empieza a crecer.</p>
 							
-								<h2>El middleware es una de las ideas más importantes en Express</h2>
+								<h3>El middleware es una de las ideas más importantes en Express</h3>
 								<p>Si hay un concepto que merece la pena entender bien cuando se aprende Express, es el de <strong>middleware</strong>. Un middleware es una función que se ejecuta durante el recorrido de una petición y que puede hacer algo antes de que la respuesta final llegue al usuario.</p>
 							
 								<p>Por ejemplo, se puede usar para registrar información, validar datos, comprobar permisos o transformar la petición.</p>
@@ -113,7 +119,9 @@ app.get('/privado', comprobarClave, (req, res) =&gt; {
 							
 								<p>Gracias a este sistema, es más fácil mantener el código ordenado y evitar que toda la lógica quede mezclada en un solo lugar.</p>
 							
-								<h2>Separar rutas ayuda mucho cuando el proyecto crece</h2>
+								<h2>Estructura y gestión de errores</h2>
+
+<h3>Separar rutas ayuda mucho cuando el proyecto crece</h3>
 								<p>Al principio, es normal tener todo en un mismo archivo mientras se aprende o se prueba algo pequeño. Pero en cuanto aparecen varias áreas dentro de la aplicación, conviene separar rutas, controladores y otras partes del proyecto.</p>
 							
 								<p>Express ofrece una forma bastante cómoda de hacerlo usando <code>Router</code>. Por ejemplo:</p>
@@ -138,7 +146,7 @@ app.use('/productos', productosRouter);</code></pre>
 							
 								<p>Esta forma de organizar el proyecto puede evitar bastante desorden más adelante.</p>
 							
-								<h2>También conviene controlar bien los errores</h2>
+								<h3>También conviene controlar bien los errores</h3>
 								<p>Cuando se empieza con Express, uno de los fallos más habituales es tratar los errores de forma distinta en cada ruta o directamente no tratarlos bien. Lo mejor suele ser centralizar la gestión en un middleware final.</p>
 							
 								<pre class="line-numbers" data-start="0"><code class="language-javascript">app.use((err, req, res, next) =&gt; {
@@ -151,7 +159,9 @@ app.use('/productos', productosRouter);</code></pre>
 							
 								<p>Esto ayuda a que las respuestas sean más homogéneas y a que el frontend o quien consuma la API reciba un comportamiento más predecible.</p>
 							
-								<h2>Cuándo puede ser una buena opción usar Express.js</h2>
+								<h2>Cuándo usar Express.js</h2>
+
+<h3>Cuándo puede ser una buena opción usar Express.js</h3>
 								<p>Express resulta especialmente útil cuando se quiere construir un backend web de forma rápida, clara y sin una estructura demasiado pesada desde el principio. Por eso encaja bien en proyectos pequeños y medianos, en APIs REST, en paneles administrativos o en aplicaciones que necesitan crecer poco a poco.</p>
 							
 								<p>También tiene bastante sentido cuando el equipo ya se mueve bien en JavaScript y quiere seguir utilizando el mismo lenguaje en el lado del servidor.</p>
@@ -163,14 +173,16 @@ app.use('/productos', productosRouter);</code></pre>
 									<li>Cuando interesa empezar con una base ligera y luego ampliar.</li>
 								</ul>
 							
-								<h2>Cuándo quizá no sea la mejor elección</h2>
+								<h3>Cuándo quizá no sea la mejor elección</h3>
 								<p>Express no impone demasiada arquitectura, y eso tiene una parte buena y una parte menos buena. Da mucha libertad, pero esa libertad también puede acabar en desorden si no se trabaja con cierta disciplina.</p>
 							
 								<p>Si el proyecto necesita desde el primer día una estructura muy rígida, convenciones cerradas o una forma muy definida de organizar cada capa, quizá convenga estudiar otras opciones o al menos preparar una base muy clara sobre Express.</p>
 							
 								<p>En otras palabras, Express es muy cómodo, pero no resuelve por sí solo los problemas de diseño de una aplicación.</p>
 							
-								<h2>Buenas prácticas para empezar con mejor base</h2>
+								<h2>Buenas prácticas y ejemplo práctico</h2>
+
+<h3>Buenas prácticas para empezar con mejor base</h3>
 								<p>Si se quiere trabajar con Express de forma razonable, merece la pena tener presentes algunas ideas sencillas desde el principio. No hace falta complicarlo todo, pero sí conviene evitar ciertos errores típicos.</p>
 							
 								<ul>
@@ -191,7 +203,7 @@ src/
   config/
 tests/</code></pre>
 							
-								<h2>Ejemplo práctico: una pequeña API de tareas</h2>
+								<h3>Ejemplo práctico: una pequeña API de tareas</h3>
 								<p>Para aterrizar mejor la idea, podemos imaginar una aplicación de tareas muy sencilla. Express permite montar algo funcional con pocas líneas:</p>
 							
 								<pre class="line-numbers" data-start="0"><code class="language-javascript">const express = require('express');
@@ -234,7 +246,9 @@ app.patch('/api/tareas/:id/done', (req, res) =&gt; {
 							
 								<p>Este ejemplo no pretende ser una aplicación terminada, pero sí muestra bien por qué Express se ha vuelto tan útil para tantos desarrolladores: permite construir una base funcional con rapidez y sin demasiada ceremonia.</p>
 							
-								<h2>Una de sus ventajas es que permite empezar pequeño</h2>
+								<h2>Crecimiento y conclusión</h2>
+
+<h3>Una de sus ventajas es que permite empezar pequeño</h3>
 								<p>No todos los proyectos necesitan una arquitectura compleja desde el primer día. En muchos casos lo que hace falta es resolver bien una necesidad concreta, probar una idea o montar un backend útil sin retrasarse demasiado en la parte estructural.</p>
 							
 								<p>Ahí Express encaja bastante bien. Se puede arrancar con algo simple, y a medida que el proyecto lo pida, ir mejorando organización, seguridad, persistencia y pruebas.</p>
@@ -243,7 +257,7 @@ app.patch('/api/tareas/:id/done', (req, res) =&gt; {
 									<p>Una de las grandes virtudes de Express.js es que permite avanzar rápido al principio sin cerrar la puerta a una organización más seria después.</p>
 								</blockquote>
 							
-								<h2>Conclusión</h2>
+								<h3>Conclusión</h3>
 								<p>Express.js es una herramienta muy útil para desarrollar aplicaciones web y APIs con Node.js de una forma más cómoda y más clara. Su éxito viene, en buena parte, de ese equilibrio entre sencillez y flexibilidad: permite empezar rápido, entender bien lo que ocurre y construir una base sobre la que crecer.</p>
 							
 								<p>No es una solución mágica ni una respuesta universal para cualquier proyecto, pero sí una opción muy interesante cuando se quiere trabajar con JavaScript en el servidor y crear una capa web ordenada sin demasiada complejidad inicial.</p>

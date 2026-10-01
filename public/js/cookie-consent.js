@@ -42,6 +42,27 @@
     return payload;
   }
 
+  function loadGoogleTagManager() {
+    var config = window.APMW_ANALYTICS || {};
+    var gtmId = config.gtmId;
+
+    if (!gtmId || window.__apmwGtmLoaded) return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(gtmId);
+    script.setAttribute('data-apmw-gtm', gtmId);
+    document.head.appendChild(script);
+
+    window.__apmwGtmLoaded = true;
+  }
+
   function applyConsentMode(consent) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function gtag() {
@@ -64,6 +85,10 @@
       'data-analytics-consent',
       analyticsGranted ? 'granted' : 'denied'
     );
+
+    if (analyticsGranted) {
+      loadGoogleTagManager();
+    }
   }
 
   function createBanner() {

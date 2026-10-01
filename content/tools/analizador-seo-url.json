@@ -21,11 +21,11 @@
   "faq": [
     {
       "q": "¿Por qué algunas URLs no se pueden cargar automáticamente?",
-      "a": "La versión publicada en GitHub Pages funciona en el navegador. Algunas webs impiden que otras páginas descarguen su HTML mediante CORS. Si ocurre, puedes pegar el HTML y realizar el análisis localmente."
+      "a": "El analizador funciona en el navegador. Algunas webs impiden que otras páginas descarguen su HTML mediante CORS. Si ocurre, puedes pegar el HTML y realizar el análisis localmente."
     },
     {
       "q": "¿El HTML que pego se envía a algún servidor?",
-      "a": "No en el modo local de GitHub Pages. El análisis se realiza en tu navegador."
+      "a": "No. El análisis del HTML que pegas se realiza localmente en tu navegador."
     },
     {
       "q": "¿Reemplaza una auditoría SEO completa?",

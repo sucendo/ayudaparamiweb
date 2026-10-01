@@ -1,7 +1,7 @@
 ---
 title: "PrestaShop va lento: cómo optimizarlo y detectar el problema real"
-description: "Descubre por qué tu tienda PrestaShop va lenta y cómo optimizarla paso a paso. Mejora rendimiento, carga y experiencia de usuario fácilmente."
-excerpt: "Una tienda PrestaShop lenta puede afectar directamente a las ventas. Cuando una página tarda en cargar, los usuarios abandonan antes de comprar. Entender qué está fallando es clave para mejorar el rendimiento."
+description: "Cómo diagnosticar por qué PrestaShop va lento revisando servidor, módulos, base de datos, imágenes, caché, tema, tareas programadas y páginas concretas."
+excerpt: "Antes de instalar más módulos de optimización, conviene localizar si la lentitud viene del servidor, la base de datos, el tema o una extensión."
 author: "Sucender"
 canonical: "/prestashop-va-lento-como-optimizarlo"
 category: "tutoriales"
@@ -63,3 +63,60 @@ robots: "index,follow"
 								<p>Si tu tienda va lenta y no sabes por dónde empezar, puedes <a href="/contacto">contactar conmigo</a> y reviso tu caso para ayudarte a optimizarla correctamente.</p>
 
 								<p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más contenidos sobre rendimiento web, SEO y optimización de tiendas online.</p>
+## Mide antes de cambiar nada
+
+Comprueba si la lentitud afecta a toda la tienda o solo a determinadas páginas. Una categoría con muchos filtros puede comportarse de forma distinta a una ficha de producto o al proceso de compra.
+
+Prueba también el backoffice. Si tanto la parte pública como la administración van lentas, servidor, base de datos o módulos globales ganan importancia como posibles causas.
+
+## Distingue tiempo de servidor y tiempo de navegador
+
+Si la página tarda mucho en empezar a responder, revisa PHP, base de datos, caché y hosting. Si el HTML llega rápido pero la pantalla tarda en terminar de mostrarse, busca imágenes, JavaScript, CSS y recursos externos.
+
+Separar estas dos fases evita optimizar imágenes cuando el verdadero problema está en una consulta lenta, o cambiar de servidor cuando el peso se encuentra en el navegador.
+
+## Prueba los módulos de forma controlada
+
+Haz una lista de módulos instalados y señala cuáles se cargan en el front office. En un entorno de pruebas, desactiva temporalmente los que no sean esenciales y compara tiempos.
+
+No borres extensiones a ciegas en producción. Algunos módulos participan en pedidos, pagos, transporte o sincronizaciones aunque su efecto no sea visible en cada página.
+
+## Revisa el tema
+
+Un tema puede incluir carruseles, fuentes, librerías y scripts que se ejecutan en toda la tienda. Comprueba el número de recursos cargados y si existe funcionalidad que no utilizas.
+
+Cuando el problema empezó después de cambiar de plantilla o añadir un constructor visual, compara una página antes y después si dispones de un entorno seguro.
+
+## Base de datos: busca crecimiento y consultas lentas
+
+Tablas de estadísticas, registros, carritos antiguos o datos generados por módulos pueden crecer con el tiempo. Antes de limpiar, realiza una copia y comprueba qué tablas ocupan más.
+
+No elimines información solo porque una tabla sea grande. Primero identifica qué componente la utiliza y si existe un procedimiento seguro de mantenimiento.
+
+## Tareas programadas e integraciones
+
+Importaciones de catálogo, sincronización de stock, feeds o copias pueden consumir recursos cuando se ejecutan. Anota horarios y comprueba si la lentitud coincide con alguno de esos procesos.
+
+Si una tarea pesada puede ejecutarse en horas de menor actividad, reducirás el impacto sobre clientes y administración.
+
+## Imágenes de producto
+
+Genera los tamaños que realmente necesita el tema y evita servir originales enormes en listados. Revisa miniaturas después de cambiar dimensiones para que cada plantilla utilice el fichero adecuado.
+
+La compresión debe buscar equilibrio: una ficha rápida con imágenes demasiado deterioradas tampoco ofrece una buena experiencia.
+
+## Caché y entorno de producción
+
+Comprueba la configuración de rendimiento disponible en PrestaShop y asegúrate de no mantener opciones de depuración activas sin necesidad.
+
+Después de cambiar caché, prueba navegación, carrito y precios. Una configuración agresiva que muestra información desactualizada es peor que una mejora pequeña de velocidad.
+
+## Crea una línea base
+
+Anota tiempos aproximados de portada, categoría, producto y carrito antes de optimizar. Repite las mismas pruebas después de cada cambio.
+
+Esta comparación permite saber qué acción produjo una mejora real y evita acumular modificaciones cuyo efecto no puedes distinguir.
+
+Puedes complementar el diagnóstico con [PrestaShop: qué es y cuándo usarlo](/prestashop-que-es-y-cuando-usarlo) y, si el problema afecta a toda la web, con [cómo mejorar la velocidad de tu web](/como-mejorar-la-velocidad-de-tu-web).
+
+Una tienda rápida no depende de un único interruptor. El mejor resultado suele aparecer al corregir primero el cuello de botella principal y después simplificar el resto del sistema.

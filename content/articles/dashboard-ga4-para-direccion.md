@@ -1,7 +1,7 @@
 ---
 title: "Dashboard de GA4 para dirección: qué métricas mostrar"
-description: "Cómo diseñar un dashboard de GA4 para dirección con pocas métricas, contexto de negocio y comparaciones que ayuden a decidir."
-excerpt: "La dirección necesita señales claras sobre adquisición, resultados y evolución, no una copia de todos los informes de analítica."
+description: "Cómo diseñar un dashboard de GA4 para dirección con objetivos, adquisición, conversiones, ingresos, áreas de negocio, comparaciones y anotaciones."
+excerpt: "Un panel ejecutivo debe mostrar pocas señales fiables y dejar el diagnóstico detallado para una segunda capa."
 author: "Sucender"
 canonical: "/dashboard-ga4-para-direccion"
 category: "tutoriales"
@@ -65,3 +65,64 @@ Cambios de web, campañas, problemas de medición o lanzamientos pueden explicar
 Un indicador que dejó de utilizarse puede eliminarse. Si aparece una nueva prioridad de negocio, quizá sea necesario incorporar otra métrica.
 
 El mejor dashboard no es el más completo, sino el que mantiene una relación clara entre dato, contexto y decisión.
+## Empieza por tres o cuatro objetivos
+
+Antes de diseñar gráficos, pide a dirección que identifique qué resultados importan. Captación, ventas, reservas o uso de un servicio son ejemplos.
+
+Cada objetivo debería aparecer asociado a una métrica y a una persona capaz de actuar si cambia.
+
+## Incluye calidad, no solo volumen
+
+Dos canales pueden generar el mismo número de sesiones y resultados muy distintos.
+
+Cuando sea posible, muestra conversiones, valor o calidad de oportunidades junto al volumen de tráfico. Esto evita invertir más en un canal simplemente porque trae visitas.
+
+## Utiliza ratios con una base clara
+
+Una tasa de conversión necesita explicar qué entra en el denominador: usuarios, sesiones u otra unidad.
+
+Documenta la definición para que no cambie entre informes. Una pequeña diferencia metodológica puede alterar mucho la interpretación.
+
+## Separa marca y captación cuando aporte valor
+
+En proyectos donde las búsquedas de marca tienen mucho peso, puede ser útil distinguir crecimiento de marca de adquisición no vinculada al nombre de la empresa.
+
+No fuerces esta separación si no ayuda a decidir. El dashboard debe ser más sencillo, no más sofisticado.
+
+## Añade una vista por área de negocio
+
+Si la empresa tiene varios servicios o familias de producto, agrupa resultados con la misma lógica que utiliza dirección.
+
+Las URLs o eventos técnicos pueden mapearse internamente, pero la presentación final debería hablar el lenguaje del negocio.
+
+## Muestra tendencias, no una colección de instantáneas
+
+Una serie temporal permite detectar si un resultado crece, cae o simplemente tuvo un pico puntual.
+
+Evita rangos demasiado cortos para decisiones estratégicas. Añade comparaciones equivalentes cuando exista estacionalidad.
+
+## Señala problemas de medición
+
+Si un formulario dejó de registrar eventos durante una semana, no presentes ese periodo como una caída real sin anotación.
+
+El panel debe diferenciar cambios de negocio y cambios de instrumentación siempre que sea posible.
+
+## No conviertas posición media o engagement en objetivos de dirección
+
+Métricas diagnósticas pueden ser útiles al equipo, pero rara vez son el resultado final.
+
+Llévalas a una segunda capa que se consulte cuando haya que explicar una variación.
+
+## Automatiza la actualización con controles
+
+Si el dashboard se actualiza solo, muestra fecha de última carga y comprueba que las fuentes siguen entregando datos.
+
+Un panel aparentemente actualizado con una fuente rota puede inducir decisiones peores que un informe manual.
+
+## Cierra con una sección de decisiones
+
+Puedes añadir un espacio breve con “qué cambió”, “por qué creemos que ocurrió” y “qué haremos”.
+
+Para profundizar en automatización, consulta [cómo automatizar informes SEO sin perder contexto](/automatizar-informes-seo), cuyos controles son aplicables también a cuadros de analítica.
+
+El dashboard ejecutivo debe ahorrar tiempo. Si cada reunión empieza discutiendo qué significa una métrica, el diseño necesita simplificarse o documentarse mejor.

@@ -1,7 +1,7 @@
 ---
 title: "Cómo hacer un balance anual de web y SEO"
-description: "Qué revisar al cerrar un periodo de trabajo web y SEO: tráfico, contenidos, conversiones, técnica, enlaces y prioridades."
-excerpt: "El balance anual sirve para distinguir mejoras reales de actividad sin impacto y preparar el siguiente ciclo de trabajo."
+description: "Cómo cerrar el año revisando tráfico, conversiones, SEO técnico, contenidos, enlaces, medición y prioridades para el siguiente ciclo."
+excerpt: "Un balance anual útil separa resultados de actividad y termina con pocas prioridades respaldadas por datos."
 author: "Sucender"
 canonical: "/balance-web-y-seo-del-ano"
 category: "tutoriales"
@@ -55,3 +55,66 @@ Cambios en medición, consentimiento, campañas o configuración pueden alterar 
 Termina con una lista pequeña: mantener, mejorar, corregir y dejar de hacer. Para cada prioridad define una evidencia y una forma de medirla.
 
 El balance anual es útil cuando reduce incertidumbre para el siguiente ciclo. Si solo produce un documento largo que nadie vuelve a consultar, no ha cumplido su función.
+## Compara periodos equivalentes
+
+Si el negocio tiene estacionalidad, comparar diciembre con noviembre puede llevar a conclusiones equivocadas. Utiliza referencias que tengan sentido: mismo periodo del año anterior, trimestre equivalente o campaña comparable.
+
+Anota también promociones, cambios de presupuesto y otros factores que puedan explicar una variación.
+
+## Revisa visibilidad y negocio por separado
+
+Un aumento de impresiones o clics orgánicos es positivo, pero no siempre se traduce en oportunidades. Observa también formularios, ventas, llamadas o acciones relevantes.
+
+Cuando tráfico y negocio se mueven en direcciones distintas, investiga qué páginas y consultas están creciendo.
+
+## Agrupa por tipo de página
+
+Portada, servicios, categorías, productos y artículos tienen funciones diferentes. Analizarlos juntos puede ocultar problemas.
+
+Una caída concentrada en fichas de producto puede apuntar a catálogo o plantilla, mientras que una pérdida en artículos puede tener otra causa.
+
+## Detecta trabajo que no produjo impacto
+
+Revisa tareas realizadas durante el año y compáralas con resultados. Puede haber acciones que consumieron muchas horas sin cambiar visibilidad ni conversiones.
+
+No se trata de buscar culpables, sino de aprender qué tipo de trabajo merece menos prioridad en el siguiente ciclo.
+
+## Comprueba medición y consentimiento
+
+Si cambió la implementación de analítica o el banner de consentimiento, las cifras pueden no ser directamente comparables.
+
+Documenta fechas de cambios importantes. Sin ese contexto es fácil interpretar como caída de negocio lo que en realidad es una modificación en la recogida de datos.
+
+## Audita las páginas que más aportan
+
+Haz una lista de las URLs con más tráfico, conversiones o ingresos y revisa si siguen actualizadas.
+
+Comprueba enlaces, formularios, llamadas a la acción y contenidos principales. Las páginas que ya funcionan suelen merecer más atención que otras sin señales de demanda.
+
+## Busca oportunidades cercanas
+
+Además de grandes caídas, identifica páginas que aparecen para muchas consultas pero todavía reciben pocos clics o están cerca de mejores posiciones.
+
+A veces una mejora de título, contenido o enlaces internos puede aprovechar una demanda ya existente sin crear una nueva URL.
+
+## Evalúa el coste de mantenimiento
+
+Una funcionalidad o sección puede generar poco valor y exigir actualizaciones frecuentes. Incluye ese coste en el balance.
+
+El año siguiente puede mejorar simplemente retirando tareas, herramientas o contenidos que ya no justifican el esfuerzo.
+
+## Revisa la salud técnica
+
+Confirma que no hayan crecido errores 404, cadenas de redirección, problemas de indexación o páginas huérfanas.
+
+No necesitas una auditoría completa de cada URL. Prioriza cambios que afecten a plantillas o grupos amplios.
+
+## Convierte conclusiones en acciones
+
+Para cada prioridad, escribe qué problema resuelve, quién es responsable y cómo se medirá.
+
+Puedes ordenar las tareas por impacto y esfuerzo. Una lista breve y ejecutable es más útil que un informe de cien páginas.
+
+La guía [checklist SEO de fin de año](/checklist-seo-de-fin-de-ano) complementa este análisis con controles concretos.
+
+Un buen balance anual explica qué cambió, qué aprendiste y dónde conviene invertir el siguiente esfuerzo. Su valor está en mejorar decisiones, no en acumular gráficas.

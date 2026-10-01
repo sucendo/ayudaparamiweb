@@ -1,7 +1,7 @@
 ---
 title: "Checklist SEO de fin de año"
-description: "Checklist SEO de fin de año para revisar indexación, enlaces internos, rendimiento y contenidos antes de planificar el siguiente periodo."
-excerpt: "Una revisión anual práctica para detectar problemas y priorizar el siguiente ciclo."
+description: "Checklist SEO de fin de año para revisar indexación, Search Console, URLs, enlaces internos, rendimiento, contenido, conversiones y prioridades."
+excerpt: "Una revisión anual ordenada ayuda a cerrar problemas pendientes y elegir pocas prioridades claras para el siguiente ciclo."
 author: "Sucender"
 canonical: "/checklist-seo-de-fin-de-ano"
 category: "tutoriales"
@@ -54,3 +54,66 @@ Separa los contenidos en cuatro grupos: los que crecen, los que se mantienen, lo
 ## Deja una lista corta para el siguiente año
 
 Termina con una lista priorizada y asumible. Cinco tareas bien definidas suelen ser más útiles que una auditoría con cien observaciones sin orden. Anota responsable, impacto esperado y una forma sencilla de comprobar el resultado.
+## Revisa Search Console por grupos
+
+Observa consultas y páginas, pero evita quedarte solo con el total. Separa servicios, categorías y contenidos para detectar dónde se concentra una mejora o una caída.
+
+Compara periodos equivalentes cuando exista estacionalidad y anota cambios relevantes de la web.
+
+## Comprueba el sitemap
+
+El sitemap debería contener URLs que realmente quieres indexar y que responden correctamente.
+
+Busca páginas redirigidas, errores, URLs bloqueadas o contenidos antiguos que ya no deberían aparecer. Corregir el sitemap ayuda a mantener una señal más limpia.
+
+## Revisa redirecciones acumuladas
+
+Durante el año pueden haberse cambiado páginas varias veces. Detecta cadenas y actualiza enlaces internos para apuntar directamente al destino final.
+
+Una redirección necesaria está bien; varias seguidas suelen indicar mantenimiento pendiente.
+
+## Mira las páginas con más impresiones y pocos clics
+
+Estas URLs pueden ofrecer una oportunidad cercana. Revisa si título y descripción explican bien lo que ofrece la página.
+
+No cambies metadatos únicamente para llamar la atención. Deben seguir representando el contenido y la intención real.
+
+## Detecta contenido que compite entre sí
+
+Busca varias páginas recibiendo impresiones para consultas muy parecidas. Comprueba si responden a intenciones distintas o si se están solapando.
+
+Cuando el contenido es prácticamente equivalente, fusionar puede simplificar la arquitectura.
+
+## Comprueba páginas que convierten
+
+El SEO no termina en el clic. Revisa si formularios, teléfonos, botones y procesos de compra siguen funcionando.
+
+Una página puede mantener tráfico y perder valor si una conversión se rompe sin que nadie lo detecte.
+
+## Revisa recursos pesados
+
+Busca imágenes nuevas sin optimizar, scripts añadidos durante el año y widgets que ya no se utilizan.
+
+El rendimiento suele degradarse poco a poco. Una revisión anual permite retirar acumulaciones antes de que se conviertan en un problema grande.
+
+## Comprueba la versión móvil
+
+Prueba navegación, formularios y páginas principales desde un teléfono real. No te limites a reducir la ventana del navegador.
+
+Busca elementos que se solapan, textos pequeños y controles difíciles de pulsar.
+
+## Actualiza enlaces internos
+
+Los artículos antiguos pueden enlazar a páginas eliminadas o no aprovechar contenidos creados durante el año.
+
+Añade relaciones útiles y retira enlaces rotos. Para profundizar, consulta [enlazado interno para SEO](/enlazado-interno-para-seo).
+
+## Cierra con responsables y fechas
+
+Una checklist solo aporta valor si los problemas detectados se convierten en tareas.
+
+Ordena por impacto, asigna responsable y decide cuándo volverás a comprobar cada corrección.
+
+Puedes complementar esta revisión con [cómo hacer un balance anual de web y SEO](/balance-web-y-seo-del-ano), que añade la parte de resultados y planificación.
+
+El objetivo del cierre anual no es dejar la web perfecta. Es empezar el siguiente periodo sabiendo qué problemas importan y qué cambios han demostrado aportar valor.

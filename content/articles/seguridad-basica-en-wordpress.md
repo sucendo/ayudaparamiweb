@@ -1,7 +1,7 @@
 ---
 title: "Seguridad básica en WordPress: medidas que conviene aplicar"
-description: "Medidas básicas para reducir riesgos en WordPress: actualizaciones, usuarios, copias, HTTPS, permisos y control de cambios."
-excerpt: "La seguridad de WordPress mejora mucho cuando actualizaciones, accesos, copias y permisos se gestionan de forma constante."
+description: "Seguridad básica en WordPress: actualizaciones, plugins, usuarios, contraseñas, copias, HTTPS, permisos, hosting, registros y respuesta ante incidentes."
+excerpt: "La mayor parte de la seguridad cotidiana depende de mantener software, accesos y copias bajo control."
 author: "Sucender"
 canonical: "/seguridad-basica-en-wordpress"
 category: "tutoriales"
@@ -63,3 +63,66 @@ La seguridad de WordPress depende del entorno. La cuenta del hosting, el dominio
 Si la web se ve comprometida, evita limitarte a borrar el síntoma visible. Cambia credenciales, identifica el origen, revisa archivos y usuarios, corrige la vulnerabilidad y restaura desde una copia limpia cuando sea necesario.
 
 La seguridad básica funciona como mantenimiento continuo: pequeñas medidas constantes reducen mucho el riesgo de un problema grave.
+## Cambia los accesos por defecto cuando sea necesario
+
+No necesitas ocultar WordPress para que sea seguro, pero sí evitar credenciales previsibles y cuentas compartidas.
+
+Si existe un usuario administrador antiguo que ya no debe utilizarse, crea primero una cuenta individual correcta, transfiere contenido si hace falta y elimina el acceso anterior.
+
+## Revisa usuarios periódicamente
+
+Con el tiempo se acumulan cuentas de proveedores, empleados y colaboradores. Comprueba cuáles siguen necesitando acceso.
+
+Asigna roles con el mínimo permiso necesario. Una persona que solo publica entradas no necesita controlar plugins o configuración.
+
+## Protege el correo de recuperación
+
+El correo asociado a la administración puede utilizarse para restablecer contraseñas. Si esa cuenta se ve comprometida, proteger WordPress por separado servirá de poco.
+
+Utiliza una contraseña distinta y autenticación adicional cuando el proveedor lo permita.
+
+## Copias fuera del mismo servidor
+
+Si todas las copias están en el mismo alojamiento y el servidor falla o resulta comprometido, puedes perder original y respaldo a la vez.
+
+Mantén al menos una copia en una ubicación diferente y comprueba que el proceso se completa correctamente.
+
+## No dejes copias públicas
+
+Archivos ZIP, exportaciones de base de datos y copias temporales no deberían quedar accesibles desde la web.
+
+Después de una migración o reparación, elimina ficheros que ya no sean necesarios y revisa que no puedan descargarse conociendo su nombre.
+
+## Registros y cambios inesperados
+
+Los logs del servidor y determinadas herramientas pueden ayudar a detectar accesos o modificaciones fuera de lo habitual.
+
+No hace falta vigilar cada petición manualmente. Lo importante es disponer de información suficiente para investigar cuando aparece un problema.
+
+## XML-RPC y funciones que no utilizas
+
+WordPress incluye funciones que pueden ser necesarias para determinados servicios. Antes de desactivar algo por una recomendación genérica, comprueba si tu web lo utiliza.
+
+La seguridad mejora más con decisiones informadas que aplicando listas de cambios sin entender su efecto.
+
+## Entorno de pruebas
+
+Si haces cambios importantes, un staging permite probar actualizaciones sin afectar a clientes.
+
+Protege también ese entorno. Una copia de la web con contraseñas débiles o acceso público puede convertirse en otro punto de entrada.
+
+## Proveedor de hosting
+
+Pregunta cómo gestiona actualizaciones del servidor, copias, aislamiento de cuentas y soporte ante incidentes.
+
+Una buena configuración de WordPress no puede compensar completamente un entorno de servidor mal mantenido.
+
+## Plan de recuperación
+
+Anota dónde están las copias, quién puede acceder al dominio y hosting y qué pasos permitirían restaurar una versión limpia.
+
+No esperes a una incidencia para descubrir que la única persona con las credenciales está de vacaciones.
+
+Si ya existe un problema, [mi web WordPress ha sido hackeada](/mi-web-wordpress-ha-sido-hackeada) desarrolla un procedimiento de recuperación.
+
+La seguridad efectiva suele ser poco espectacular: actualizar, limitar accesos, guardar copias y revisar cambios. Esa disciplina reduce muchos de los incidentes más comunes.

@@ -1,7 +1,7 @@
 ---
 title: "Cómo mejorar la velocidad de tu web"
-description: "Cómo detectar qué ralentiza una web y mejorar imágenes, servidor, CSS, JavaScript, caché y carga de recursos."
-excerpt: "Un método práctico para acelerar una web empezando por los cuellos de botella que más afectan al usuario."
+description: "Cómo mejorar la velocidad de una web en 2020 revisando servidor, imágenes, CSS, JavaScript, caché, fuentes, terceros y páginas representativas."
+excerpt: "Mide primero, identifica el cuello de botella y optimiza servidor y recursos sin sacrificar funciones necesarias."
 author: "Sucender"
 canonical: "/como-mejorar-la-velocidad-de-tu-web"
 category: "tutoriales"
@@ -55,3 +55,64 @@ Analítica, chat, publicidad, fuentes y otros servicios pueden añadir peticione
 Haz un cambio, mide de nuevo y registra el resultado. Así sabrás qué optimizaciones tienen impacto real y podrás evitar combinaciones difíciles de mantener.
 
 La velocidad mejora más con una web sencilla y disciplinada que acumulando plugins de optimización sobre una base demasiado pesada.
+## Comprueba la primera visita y las siguientes
+
+La caché puede hacer que una segunda carga parezca mucho más rápida. Prueba también una visita sin recursos guardados para conocer la experiencia de alguien que llega por primera vez.
+
+Después compara con una visita repetida. Si la diferencia es mínima, quizá los recursos estáticos no estén aprovechando bien la caché del navegador.
+
+## Ajusta el tamaño real de las imágenes
+
+No basta con comprimir. Una fotografía de 2000 píxeles sigue siendo excesiva si se muestra a 400. Genera tamaños acordes con las plantillas y evita descargar el original para reducirlo únicamente con CSS.
+
+En imágenes fotográficas puedes utilizar una compresión mayor que en capturas con texto. Comprueba siempre el resultado visual antes de sustituir los archivos.
+
+## Carga diferida para contenido fuera de pantalla
+
+Imágenes y recursos situados muy por debajo del primer bloque no necesitan competir con el contenido inicial. Puedes retrasar su carga hasta que el usuario se acerque a ellos.
+
+Prueba el comportamiento en navegadores y dispositivos que utilice tu público. Una optimización no debe dejar espacios vacíos o impedir que se cargue una imagen al desplazarse.
+
+## Revisa las fuentes web
+
+Cada familia y cada peso puede implicar otra descarga. Si utilizas regular, semibold, bold, italic y varias familias, el coste puede crecer rápidamente.
+
+Limita las variantes a las que realmente aparecen en el diseño y define fuentes de respaldo para que el texto siga siendo legible mientras se descarga la tipografía principal.
+
+## Evita cargar bibliotecas completas para una función pequeña
+
+Un carrusel, un efecto o un selector pueden introducir una biblioteca grande en todas las páginas. Revisa si esa dependencia sigue siendo necesaria.
+
+No cambies una librería solo por ahorrar unos kilobytes sin probar compatibilidad. Prioriza recursos que realmente tengan peso o tiempo de ejecución significativo.
+
+## Cuida el orden de CSS y JavaScript
+
+El navegador necesita determinados estilos para dibujar la parte inicial. Scripts que no intervienen en ese momento pueden cargarse de forma que no bloqueen el renderizado.
+
+Haz los cambios gradualmente: alterar el orden de scripts puede romper funcionalidades que dependen unas de otras.
+
+## Hosting compartido y recursos disponibles
+
+En un alojamiento compartido, otros procesos del servidor pueden influir en los tiempos. Si el rendimiento varía mucho entre mediciones sin cambios en la web, revisa recursos y límites del plan.
+
+Antes de migrar, comprueba que la aplicación está razonablemente optimizada. Un servidor más potente puede ocultar temporalmente un problema de código o base de datos.
+
+## Mide páginas reales
+
+No optimices solo una página de prueba. Revisa una entrada larga, una categoría, una ficha de producto o un formulario si forman parte del sitio.
+
+Cada plantilla puede cargar recursos distintos. Una portada rápida no garantiza que el proceso de compra tenga el mismo rendimiento.
+
+## Registra cada cambio
+
+Anota fecha, página probada y resultado aproximado. Si después aparece un problema, podrás relacionarlo con una modificación concreta.
+
+Este hábito es especialmente útil cuando intervienen plugins, caché o servicios externos, porque varias optimizaciones simultáneas pueden ser difíciles de deshacer.
+
+## No sacrifiques claridad por unos milisegundos
+
+El rendimiento sirve para que la web sea más fácil de usar. No elimines imágenes informativas, confirmaciones o funciones necesarias solo para reducir una puntuación.
+
+Puedes relacionar estas mejoras con [responsive design: buenas prácticas](/responsive-design-buenas-practicas), ya que tamaño de pantalla y forma de cargar recursos deben trabajar juntos.
+
+La optimización más mantenible consiste en medir, simplificar y volver a medir. Una página con pocos recursos bien elegidos suele necesitar menos trucos para seguir siendo rápida.

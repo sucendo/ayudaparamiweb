@@ -1,6 +1,6 @@
 ---
 title: "Email marketing para pymes: una base sencilla y sostenible"
-description: "Cómo organizar una estrategia de email marketing para pymes con permisos, segmentación, contenidos y medición básica."
+description: "Cómo organizar email marketing para pymes con consentimiento, segmentación sencilla, contenido útil, automatizaciones, frecuencia, entregabilidad y medición."
 author: "Sucender"
 canonical: "/email-marketing-para-pymes"
 category: "tutoriales"
@@ -9,7 +9,7 @@ publishedDate: "2020-09-10"
 featuredImage: "/img/articulo/email-marketing-para-pymes-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
-excerpt: "Una lista propia, mensajes útiles y una frecuencia que el equipo pueda mantener."
+excerpt: "Una lista propia y bien cuidada vale más que miles de direcciones sin relación con el negocio."
 robots: "index,follow"
 ---
 El email marketing puede ser un canal muy útil para una pyme porque permite mantener relación con personas que han mostrado interés. Funciona mejor cuando la lista es propia, existe permiso para comunicar y cada envío tiene un motivo claro.
@@ -57,3 +57,66 @@ También observa bajas y quejas: pueden indicar problemas de frecuencia o releva
 Es mejor enviar con una periodicidad que puedas mantener que publicar mucho durante unas semanas y desaparecer después. Prepara un pequeño calendario y reutiliza contenidos propios cuando tenga sentido.
 
 El email marketing de una pyme funciona cuando crea una relación útil y predecible, no cuando intenta aprovechar cada envío para presionar una venta.
+## Cuida la calidad de la lista
+
+Una lista grande no siempre es mejor. Direcciones antiguas, cuentas que rebotan y personas que nunca interactúan empeoran la calidad de los envíos.
+
+Elimina rebotes permanentes y revisa periódicamente contactos inactivos. Mantener una base limpia facilita interpretar resultados y reduce envíos innecesarios.
+
+## Doble confirmación cuando encaje
+
+Un proceso de doble opt-in puede pedir al suscriptor que confirme su dirección desde un correo. Esto ayuda a evitar altas accidentales y direcciones mal escritas.
+
+La elección depende del proceso y de los requisitos de tu negocio, pero siempre conviene poder demostrar cómo se obtuvo el consentimiento.
+
+## Prepara una bienvenida
+
+El primer mensaje puede recordar qué recibirá la persona, cada cuánto aproximadamente y dónde puede gestionar su suscripción.
+
+Si ofreciste un recurso o contenido al registrarse, entrégalo de forma clara. La primera interacción establece expectativas para los siguientes correos.
+
+## Segmentación sencilla y útil
+
+Empieza con diferencias que cambien realmente el mensaje. Un cliente que ya ha comprado puede necesitar información distinta de una persona que solo descargó una guía.
+
+No recojas datos adicionales si no vas a utilizarlos. Cada campo complica formularios y mantenimiento de la base.
+
+## Diseño que funcione sin imágenes
+
+Muchos clientes de correo pueden bloquear imágenes inicialmente. El mensaje principal y la llamada a la acción deben seguir entendiéndose.
+
+Añade textos alternativos cuando la imagen aporte información y evita enviar un correo compuesto únicamente por una gran imagen.
+
+## Comprueba móvil y enlaces
+
+Abre una prueba desde teléfono y escritorio. Revisa tamaño de texto, botones, enlaces, asunto, remitente y pie con información de baja.
+
+Haz clic en la llamada a la acción. Una campaña perfectamente diseñada pierde valor si conduce a una página que no funciona bien desde móvil.
+
+## Entregabilidad básica
+
+Utiliza un dominio y remitente reconocibles, evita listas compradas y vigila rebotes y quejas. Los proveedores de envío también permiten configurar mecanismos de autenticación del dominio que ayudan a identificar mensajes legítimos.
+
+No intentes engañar filtros utilizando trucos con palabras o caracteres. La mejor base sigue siendo enviar a personas que esperan recibir el mensaje.
+
+## Automatiza con límites
+
+Una secuencia de bienvenida o recordatorio puede ahorrar trabajo, pero revisa cuándo deja de tener sentido. Un cliente no debería seguir recibiendo mensajes preparados para alguien que aún no ha comprado.
+
+Define condiciones de entrada y salida en cada automatización y prueba el recorrido completo con una dirección interna.
+
+## Decide una frecuencia realista
+
+No existe una periodicidad válida para todos. Una tienda con novedades semanales puede tener un ritmo distinto de una consultora que publica una guía al mes.
+
+Lo importante es que el envío tenga contenido suficiente y que el equipo pueda mantener la calidad.
+
+## Mide la acción final
+
+Aperturas y clics ayudan a diagnosticar, pero relaciona cada campaña con su objetivo: ventas, reservas, solicitudes o lectura de un contenido.
+
+Etiqueta enlaces de forma consistente cuando utilices analítica para distinguir campañas. Así podrás comparar mensajes sin depender solo de las estadísticas del proveedor de correo.
+
+Puedes complementar este canal con [contenido que ayuda a captar clientes](/contenido-que-ayuda-a-captar-clientes), especialmente para decidir qué piezas merece la pena distribuir a la lista.
+
+El email marketing funciona mejor como relación continuada que como una sucesión de promociones. Si el suscriptor entiende por qué recibe el correo y encuentra utilidad, será más fácil mantener una lista sana.

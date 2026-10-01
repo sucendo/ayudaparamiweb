@@ -1,7 +1,7 @@
 ---
 title: "Auditoría técnica rápida de una web"
-description: "Una revisión técnica rápida para detectar problemas de rastreo, indexación, estado HTTP, canonicals, rendimiento y marcado."
-excerpt: "Un diagnóstico corto puede encontrar los bloqueos que realmente impiden rastrear, indexar o usar bien una web."
+description: "Auditoría técnica rápida para revisar estados HTTP, robots, sitemap, indexabilidad, canonicals, plantillas, rendimiento, enlaces internos y datos estructurados."
+excerpt: "Una revisión corta debe encontrar primero bloqueos de rastreo, indexación o funcionamiento antes de entrar en detalles menores."
 author: "Sucender"
 canonical: "/auditoria-tecnica-rapida-de-una-web"
 category: "tutoriales"
@@ -61,3 +61,70 @@ No es una auditoría de seguridad, pero ciertos fallos técnicos aparecen durant
 Clasifica los hallazgos por impacto y alcance. Un bloqueo de indexación en una sección completa va antes que una mejora cosmética en una sola página.
 
 La salida útil de una auditoría rápida debería ser una lista corta con problema, evidencia, páginas afectadas, responsable y forma de comprobar la corrección.
+## Define una muestra representativa
+
+Elige URLs de cada plantilla importante: portada, servicio, categoría, producto, artículo y cualquier proceso especial.
+
+No necesitas empezar con todo el sitio. Una muestra bien elegida permite detectar patrones que después pueden comprobarse a escala.
+
+## Comprueba HTTP y redirecciones
+
+Registra código final y número de saltos. Un 200 esperado, una redirección intencionada o un 404 real tienen significados distintos.
+
+Busca especialmente cadenas, bucles y páginas importantes que terminan en un destino genérico.
+
+## Robots.txt no es lo mismo que noindex
+
+Un bloqueo en `robots.txt` impide rastrear una URL, mientras que una directiva de indexación actúa de otra manera.
+
+Revisa que la configuración corresponda al objetivo real y evita reglas amplias que afecten accidentalmente a secciones completas.
+
+## Sitemap como inventario de URLs deseadas
+
+Comprueba que incluya páginas canónicas e indexables y que no esté lleno de redirecciones o errores.
+
+Si una URL no debería aparecer en buscadores, pregunta por qué está presente en el sitemap.
+
+## Canonical
+
+Revisa una muestra de cada plantilla y confirma que el canonical apunta a la versión prevista.
+
+Presta atención a filtros, parámetros y páginas duplicadas. Una regla de plantilla incorrecta puede enviar cientos de URLs al destino equivocado.
+
+## Renderizado y contenido
+
+Comprueba que título, texto principal y enlaces importantes están disponibles de una forma que pueda ser rastreada.
+
+Si la web depende mucho de JavaScript, compara el HTML inicial y el resultado renderizado para detectar contenido que tarda o falla en aparecer.
+
+## Enlazado y profundidad
+
+Cuenta aproximadamente cuántos clics separan la portada de las páginas estratégicas.
+
+Busca páginas huérfanas y secciones que solo aparecen en el sitemap. Una URL indexable debería formar parte de una arquitectura comprensible.
+
+## Rendimiento por plantilla
+
+Mide más de una página de cada tipo y observa LCP, estabilidad, recursos pesados y JavaScript.
+
+No intentes resolver cada detalle durante la auditoría. Identifica primero qué componente común explica el problema.
+
+## Datos estructurados
+
+Valida productos, artículos, organización o breadcrumbs cuando existan.
+
+El marcado debe coincidir con la información visible. Un JSON válido puede seguir siendo incorrecto si declara datos que la página no muestra.
+
+## Seguridad visible y errores de configuración
+
+Comprueba HTTPS, contenido mixto y páginas que revelan mensajes técnicos.
+
+No sustituye una auditoría de seguridad, pero sirve para detectar problemas evidentes que afectan a confianza o funcionamiento.
+
+## Termina con evidencia y prioridad
+
+Cada hallazgo debería incluir URL de ejemplo, impacto, alcance y cómo comprobar la corrección.
+
+Puedes continuar con [auditoría SEO paso a paso](/auditoria-seo-paso-a-paso) cuando necesites una revisión más amplia.
+
+Una auditoría rápida funciona cuando reduce el problema a unas pocas acciones de alto impacto. Si termina con una lista enorme sin prioridad, deja de ser rápida y también deja de ser útil.

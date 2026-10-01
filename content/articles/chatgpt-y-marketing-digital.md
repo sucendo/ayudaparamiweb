@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT y marketing digital: primeros usos prácticos"
-description: "Primeros usos de ChatGPT en marketing digital para idear, resumir y preparar borradores sin sustituir la revisión humana."
-excerpt: "Ideas, borradores y organización: usos prácticos de ChatGPT con revisión y criterio editorial."
+description: "Primeros usos de ChatGPT en marketing digital en 2023: ideas, esquemas, variantes, resúmenes y borradores con verificación y revisión humana."
+excerpt: "ChatGPT puede acelerar la preparación de contenidos, pero la estrategia, los datos y la publicación siguen necesitando criterio humano."
 author: "Sucender"
 canonical: "/chatgpt-y-marketing-digital"
 category: "tutoriales"
@@ -58,3 +58,62 @@ Si todos los textos parten de instrucciones genéricas, terminan pareciéndose e
 6. revisa el texto antes de publicarlo.
 
 La herramienta es más útil como asistente de preparación que como sustituto de la estrategia. Una buena campaña sigue necesitando conocimiento del cliente, medición y decisiones humanas.
+## Empieza con una tarea concreta
+
+Los resultados suelen mejorar cuando la petición tiene un objetivo definido. “Dame ideas de marketing” deja demasiadas decisiones abiertas; “propón preguntas que podría hacerse una pyme antes de elegir hosting” acota mejor el trabajo.
+
+Incluye público, formato y finalidad. Después revisa si las propuestas realmente encajan con tu producto y con las dudas que recibes.
+
+## Utiliza contexto propio
+
+Puedes proporcionar una descripción del servicio, notas de una reunión o un texto ya publicado para que el modelo trabaje sobre material conocido.
+
+Esto reduce respuestas genéricas, aunque no elimina la necesidad de revisar. No incluyas información confidencial o datos personales que no deban compartirse con un servicio externo.
+
+## Genera alternativas, no una única respuesta
+
+Para un asunto de correo, un titular o una llamada a la acción, pide varias opciones con enfoques diferentes.
+
+Compararlas obliga a pensar qué criterio importa: claridad, tono, público o grado de compromiso. La herramienta sirve mejor como punto de partida que como juez de cuál es la mejor versión.
+
+## Convierte notas en un primer borrador
+
+Después de una entrevista o reunión puedes ordenar tus notas y pedir una estructura. Aporta primero los hechos que quieres conservar.
+
+Revisa después que no se hayan añadido afirmaciones que nunca aparecieron en el material original. El modelo puede completar huecos de forma convincente aunque la información no sea cierta.
+
+## Crea preguntas para investigación
+
+ChatGPT puede sugerir qué aspectos conviene investigar sobre un tema. Utiliza esas preguntas para buscar fuentes, hablar con expertos o revisar datos propios.
+
+No utilices la respuesta como sustituto de las fuentes. Su utilidad aquí está en ampliar el mapa de investigación.
+
+## Adaptar una pieza a varios formatos
+
+Un artículo propio puede servir como base para una publicación breve, una introducción de newsletter o un resumen.
+
+Indica que trabaje únicamente con la información proporcionada y revisa que cada formato conserve el significado. Adaptar no debería convertirse en inventar nuevos datos.
+
+## Evita promesas comerciales automáticas
+
+Los modelos pueden producir frases grandilocuentes como “revolucionario”, “garantizado” o “la mejor solución”. Elimina afirmaciones que no puedas demostrar.
+
+La voz de marca también necesita consistencia. Un texto correcto pero exagerado puede resultar peor que un borrador más sencillo.
+
+## Comprueba nombres, cifras y referencias
+
+Dedica una revisión específica a datos verificables. Nombres de empresas, estadísticas, fechas y citas merecen comprobación independiente.
+
+Si el contenido depende de actualidad, utiliza fuentes recientes antes de publicar. La respuesta del modelo no indica necesariamente de cuándo procede cada dato.
+
+## Conserva una fase de edición
+
+Después de verificar, edita ritmo, repeticiones y ejemplos. Añade experiencia propia, decisiones reales y detalles que el modelo no puede conocer.
+
+Un texto que podría pertenecer a cualquier empresa necesita más trabajo aunque esté bien redactado.
+
+## Mide si realmente ahorra tiempo
+
+Compara cuánto tardas en investigar, preparar y revisar con y sin la herramienta. Si la corrección de errores consume más que escribir desde cero, cambia la tarea que delegas.
+
+El uso más razonable suele estar en ideación, organización y primeras versiones. La estrategia, las fuentes y la responsabilidad sobre lo publicado siguen perteneciendo al equipo.

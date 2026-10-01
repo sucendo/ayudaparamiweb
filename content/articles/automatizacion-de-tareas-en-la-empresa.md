@@ -1,7 +1,7 @@
 ---
 title: "Automatización de tareas en la empresa"
-description: "Cómo detectar tareas repetitivas, automatizarlas con criterio y evitar procesos frágiles en una pequeña empresa."
-excerpt: "Automatizar no es añadir herramientas: es reducir trabajo repetitivo sin perder control ni trazabilidad."
+description: "Cómo detectar tareas repetitivas, automatizarlas paso a paso y mantener controles, registros, responsables y alternativas cuando un proceso falla."
+excerpt: "Automatizar bien significa reducir trabajo repetitivo sin perder visibilidad sobre qué ocurre ni quién responde si falla."
 author: "Sucender"
 canonical: "/automatizacion-de-tareas-en-la-empresa"
 category: "tutoriales"
@@ -55,3 +55,64 @@ Antes de depender de una automatización para una tarea crítica, prueba qué su
 Compara tiempo invertido antes y después, número de errores y velocidad de respuesta. Si mantener la automatización consume más tiempo que la tarea original, hay que simplificarla.
 
 La automatización aporta valor cuando convierte un proceso repetitivo en un sistema predecible, visible y fácil de corregir.
+## Prioriza procesos con reglas claras
+
+Una tarea es buena candidata cuando se repite con frecuencia y su resultado puede describirse mediante reglas. Copiar datos de un formulario, crear una tarea o enviar una confirmación son ejemplos sencillos.
+
+Si cada caso requiere interpretar contexto, negociar o tomar una decisión distinta, quizá convenga automatizar solo la preparación y mantener la decisión final en manos de una persona.
+
+## Calcula el coste actual
+
+Antes de construir nada, estima cuánto tiempo consume el proceso y cuántas veces se repite. Una tarea de cinco minutos realizada una vez al mes quizá no justifique una automatización compleja.
+
+También cuenta los errores: una tarea manual breve puede tener un coste alto si provoca datos duplicados, olvidos o retrasos.
+
+## Define entradas y salidas
+
+Especifica qué dato inicia el flujo, qué información necesita y qué resultado debe producir. Un formulario puede iniciar un proceso, pero conviene decidir qué campos son obligatorios y qué ocurre si alguno llega vacío.
+
+Cuanto más ambiguas sean las entradas, más excepciones tendrás que gestionar después.
+
+## Introduce validaciones
+
+Antes de crear una factura, enviar un correo o actualizar un registro, comprueba que los datos tienen el formato esperado.
+
+Una dirección de correo vacía, una fecha incorrecta o un importe sin validar pueden propagarse por varias aplicaciones si el proceso no incorpora controles.
+
+## Evita duplicados
+
+Los sistemas automáticos pueden ejecutar una misma acción dos veces por reintentos, errores de red o envíos repetidos. Decide cómo reconocer si una operación ya se realizó.
+
+Un identificador único o una comprobación previa puede evitar tareas duplicadas, correos repetidos o registros inconsistentes.
+
+## Diseña el tratamiento de errores
+
+No basta con pensar en el recorrido correcto. Define qué ocurre si una aplicación no responde, una API devuelve error o un archivo no está disponible.
+
+El flujo puede reintentar una vez, dejar la tarea pendiente y avisar a una persona. Lo importante es que el fallo sea visible y no desaparezca silenciosamente.
+
+## Documenta credenciales y permisos
+
+Una automatización puede depender de cuentas de correo, hojas compartidas o servicios externos. Evita utilizar una cuenta personal cuando el proceso pertenece a toda la empresa.
+
+Registra qué permisos necesita y quién puede renovar o sustituir las credenciales si dejan de funcionar.
+
+## Mantén una salida manual
+
+Para procesos importantes, conserva una forma conocida de completar la tarea sin la automatización. Esto permite seguir trabajando durante una incidencia.
+
+El procedimiento manual también sirve para entender qué pasos está sustituyendo el sistema y comprobar si la lógica sigue siendo correcta.
+
+## Revisa el flujo cuando cambie el negocio
+
+Un proceso que funcionaba puede quedar obsoleto si cambia un formulario, un responsable o una herramienta. Programa revisiones sencillas y comprueba que las automatizaciones activas siguen teniendo sentido.
+
+No dejes funcionando procesos que nadie recuerda. Una automatización olvidada puede seguir enviando mensajes o modificando datos durante meses.
+
+## Empieza por una mejora pequeña
+
+Puedes comenzar con un aviso automático o una copia de datos y medir el resultado. Cuando el flujo sea estable, añade nuevas acciones.
+
+La guía [productividad digital en equipos pequeños](/productividad-digital-en-equipos-pequenos) puede ayudarte a detectar fricciones antes de automatizarlas.
+
+La automatización más útil suele ser la que reduce pasos repetidos sin ocultar el proceso. Si el equipo entiende qué hace, cuándo se ejecuta y cómo detenerla, será mucho más fácil mantenerla.

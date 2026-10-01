@@ -1,7 +1,7 @@
 ---
-title: "Código traductor google en tu blog"
-description: "Código sencillo para añadir accesos de traducción con Google Translate a un blog o web pequeña."
-excerpt: "¿Deseas tener un traductor en tu blog?"
+title: "Código para añadir Google Translate a tu blog"
+description: "Cómo añadir accesos de traducción con Google Translate a un blog mediante enlaces por idioma, banderas, URL actual y unas comprobaciones básicas."
+excerpt: "Un ejemplo sencillo para ofrecer traducción automática desde tu blog sin crear una versión independiente para cada idioma."
 author: "Sucender"
 canonical: "/codigo-traductor-google-blog"
 category: "tutoriales"
@@ -93,5 +93,58 @@ Si quieres mejorar accesibilidad, añade textos alternativos claros y aumenta el
 Este widget de traducción es una forma rápida de hacer tu blog más accesible para lectores de otros idiomas sin una implementación compleja.
 
 No sustituye una estrategia multidioma profesional, pero como solución inicial cumple muy bien su objetivo.
+## Adapta los idiomas a tus visitas reales
 
-Si te interesa, en un siguiente tutorial puedo compartir una versión más moderna con diseño responsive y mejores métricas de usabilidad.
+No es necesario mostrar una bandera para todos los idiomas disponibles. Empieza por revisar de qué países llegan tus lectores y qué idiomas tienen más sentido para el contenido.
+
+Un bloque con demasiadas opciones ocupa espacio y hace más difícil localizar la que interesa. Para un blog en español puede ser suficiente empezar con inglés, francés, alemán o portugués si esos idiomas corresponden con las visitas reales.
+
+## Ten cuidado con el significado de las banderas
+
+Una bandera representa un país, no un idioma. El inglés se utiliza en muchos países y el español también, por lo que conviene acompañar cada icono con un atributo `title` y un texto alternativo comprensible.
+
+Si dispones de espacio, mostrar el nombre del idioma junto a la bandera evita ambigüedades y mejora la accesibilidad.
+
+## Guarda las imágenes en tu propio alojamiento
+
+El ejemplo utiliza imágenes externas. Esto simplifica copiar el código, pero crea una dependencia: si la imagen cambia de ubicación o el servidor externo deja de responder, el icono desaparecerá.
+
+Descargar las banderas que vayas a utilizar y servirlas desde tu propio blog te da más control. Comprueba además que tienes permiso para utilizar las imágenes elegidas.
+
+## Comprueba la URL que se envía
+
+La parte `encodeURIComponent(location.href)` convierte la dirección actual en un formato adecuado para incluirla dentro de otra URL. Es importante porque una dirección puede contener parámetros, símbolos u otros caracteres especiales.
+
+Prueba el widget tanto en la portada como en una entrada concreta. El objetivo es que la traducción se abra sobre la página que el visitante está leyendo, no siempre sobre la página principal.
+
+## Evita que el enlace interfiera con la navegación
+
+El ejemplo devuelve `false` después de abrir la nueva ventana para impedir que el enlace `#` cambie la posición de la página.
+
+Algunos navegadores o configuraciones pueden bloquear ventanas abiertas mediante JavaScript. Por eso conviene comprobar el comportamiento real y no depender del traductor para acceder a información imprescindible.
+
+## Traducción automática no es contenido localizado
+
+Este sistema ofrece una ayuda rápida al lector, pero la traducción automática puede cometer errores con nombres propios, expresiones técnicas o frases ambiguas.
+
+Si una página contiene condiciones legales, instrucciones delicadas o información comercial muy importante, conviene revisar manualmente la traducción antes de presentarla como versión oficial.
+
+## SEO internacional: no confundir el widget con una versión por idioma
+
+Abrir una página a través de Google Translate no crea por sí mismo una arquitectura internacional de tu sitio. Si quieres posicionar contenidos propios en varios idiomas, necesitarás páginas independientes, URLs estables y una estrategia de contenidos específica.
+
+El widget es útil como comodidad para el visitante, especialmente en un blog pequeño, pero no sustituye una web multidioma bien planteada.
+
+## Revisa el aspecto en móvil
+
+Doce iconos de 24 píxeles pueden caber en escritorio y quedar apretados en una pantalla pequeña. Permite que el bloque salte de línea y deja separación suficiente entre enlaces para que puedan pulsarse con el dedo.
+
+También conviene comprobar que el efecto de opacidad no dificulta identificar el idioma cuando se utiliza una pantalla táctil.
+
+## Mantén el código sencillo
+
+El principal atractivo de este método es que no requiere una instalación compleja. Si necesitas añadir dos o tres idiomas, elimina del ejemplo los enlaces que no vayas a utilizar.
+
+Cuanto menos código innecesario mantengas, más fácil será revisar enlaces, imágenes y estilos cuando cambies el diseño de tu blog.
+
+Una pequeña mejora como esta puede facilitar la lectura a visitantes internacionales sin modificar el contenido original. La clave es tratarla como una ayuda adicional, probarla en las páginas reales y no atribuir a una traducción automática la misma precisión que a un contenido redactado expresamente en otro idioma.

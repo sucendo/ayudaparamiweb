@@ -1,6 +1,7 @@
 ---
-title: "Rendimiento Web Que Medir"
-description: "Guía práctica sobre rendimiento web que medir, con pasos aplicables, errores frecuentes y recomendaciones para mejorar resultados."
+title: "Rendimiento web: qué medir y cómo interpretar los datos"
+excerpt: "Las métricas de rendimiento sirven para localizar el origen de una mala experiencia, no para perseguir una puntuación aislada."
+description: "Qué medir en rendimiento web en 2021: TTFB, LCP, FID, CLS, peso, peticiones, JavaScript, caché y diferencias entre laboratorio y usuarios reales."
 author: "Sucender"
 canonical: "/rendimiento-web-que-medir"
 category: "tutoriales"
@@ -54,3 +55,64 @@ Agrupa por plantilla: home, categorías, fichas, artículos o checkout. Comparar
 Si mejoras una página, observa también rebote, conversión, finalización de formularios o ventas cuando corresponda. La velocidad es un medio para ofrecer una experiencia mejor, no un objetivo aislado.
 
 Un cuadro de rendimiento útil contiene pocas métricas, mediciones repetibles y contexto suficiente para saber qué cambiar cuando aparece una regresión.
+## Define una muestra de páginas
+
+No necesitas medir cada URL para empezar. Elige ejemplos de las plantillas principales: portada, artículo, categoría, producto y formulario.
+
+Si una plantilla presenta resultados muy distintos, amplía la muestra dentro de ese grupo.
+
+## TTFB: separa backend y red
+
+Un tiempo alto antes del primer byte puede venir del servidor, la aplicación, la base de datos o la distancia de red.
+
+Haz varias pruebas y compara páginas estáticas y dinámicas. Si solo determinadas páginas tardan, busca consultas o procesos específicos.
+
+## LCP: identifica el elemento concreto
+
+La métrica mejora más cuando sabes qué elemento la provoca. Puede ser una imagen principal, un bloque de texto o un banner.
+
+Si es una imagen, revisa dimensiones y prioridad. Si es texto, observa fuentes y CSS que puedan retrasar su pintura.
+
+## FID: busca tareas largas
+
+El retraso de interacción suele relacionarse con JavaScript que mantiene ocupado el hilo principal.
+
+Revisa scripts de terceros, librerías y componentes que ejecutan mucho trabajo al inicio. Dividir tareas o retrasar funciones secundarias puede liberar el navegador.
+
+## CLS: reserva espacio
+
+Define dimensiones para imágenes, anuncios y elementos que llegan de forma asíncrona.
+
+Comprueba también banners y mensajes que aparecen por encima del contenido. Si empujan la página cuando el usuario ya está leyendo, aumentan la inestabilidad.
+
+## Peso total y número de peticiones
+
+Estas cifras no describen por sí solas la experiencia, pero ayudan a explicar problemas.
+
+Una web puede tener muchas peticiones pequeñas y funcionar bien, mientras otra carga pocos archivos enormes. Utiliza el dato como diagnóstico, no como objetivo independiente.
+
+## JavaScript ejecutado
+
+No basta con medir kilobytes descargados. Un script comprimido puede consumir bastante tiempo de CPU.
+
+Prueba en dispositivos menos potentes, especialmente si tu público navega desde móvil. Un ordenador rápido puede ocultar el coste real.
+
+## Caché
+
+Compara primera visita y visita repetida. Recursos estáticos deberían poder reutilizarse cuando no han cambiado.
+
+Si todo se descarga de nuevo, revisa cabeceras y estrategia de versionado.
+
+## Datos de laboratorio
+
+Son útiles para reproducir una condición y comparar antes y después. Mantén el mismo dispositivo y configuración cuando quieras evaluar una optimización.
+
+Una sola ejecución puede variar, así que repite y busca patrones.
+
+## Datos de usuarios reales
+
+Reflejan diversidad de redes, dispositivos y ubicaciones. Su ventaja es representar experiencia real; su limitación es que necesitan volumen y tiempo para mostrar cambios.
+
+Combina ambos enfoques con [SEO y Core Web Vitals](/seo-y-core-web-vitals) para profundizar en LCP, FID y CLS.
+
+Medir rendimiento sirve para responder “qué está frenando esta página” y “ha mejorado después del cambio”. Si una métrica no ayuda a tomar una decisión, probablemente no necesita ocupar el centro del informe.

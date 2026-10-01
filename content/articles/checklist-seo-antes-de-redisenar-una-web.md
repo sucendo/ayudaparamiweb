@@ -1,7 +1,7 @@
 ---
 title: "Checklist SEO antes de rediseñar una web"
-description: "Checklist SEO para rediseñar una web sin perder URLs, contenido valioso, enlaces ni visibilidad orgánica."
-excerpt: "Qué conservar y qué comprobar antes de cambiar diseño, arquitectura o tecnología."
+description: "Checklist SEO antes de rediseñar una web: inventario, tráfico, URLs, contenido, redirecciones, enlazado, metadatos, staging, medición y validación."
+excerpt: "El SEO del rediseño empieza antes de tocar plantillas: primero hay que saber qué URLs y señales merece la pena conservar."
 author: "Sucender"
 canonical: "/checklist-seo-antes-de-redisenar-una-web"
 category: "tutoriales"
@@ -57,3 +57,64 @@ Repite el rastreo, revisa las redirecciones y verifica que sitemap, robots y can
 Durante las semanas siguientes, observa tráfico orgánico y errores de rastreo. Las incidencias detectadas pronto suelen ser mucho más fáciles de corregir.
 
 Un rediseño SEO seguro no consiste en congelar la web antigua, sino en conservar de forma consciente las señales que ya funcionaban mientras mejoras la experiencia.
+## Guarda datos de referencia
+
+Antes de lanzar, exporta tráfico orgánico, páginas de entrada y consultas principales de un periodo representativo. Estos datos permitirán distinguir después una variación normal de una pérdida concentrada en determinadas URLs.
+
+Marca especialmente páginas que generan contactos o ventas aunque no estén entre las que más visitas reciben.
+
+## No cambies URLs sin motivo
+
+Un diseño nuevo no obliga a modificar la estructura de direcciones. Si una URL sigue siendo descriptiva y corresponde al mismo contenido, conservarla reduce riesgos y trabajo de redirección.
+
+Cuando el cambio sea necesario, documenta la URL antigua y su nuevo destino antes de publicar.
+
+## Revisa contenidos que la nueva plantilla recorta
+
+Un rediseño puede eliminar textos, preguntas, tablas o enlaces porque no encajan visualmente. Compara el contenido real de las páginas prioritarias, no solo títulos y metadatos.
+
+Si una sección aporta tráfico o responde dudas importantes, decide conscientemente si se mantiene, se mejora o se traslada.
+
+## Comprueba imágenes y archivos enlazados
+
+PDF, imágenes y otros recursos pueden recibir visitas o enlaces externos. Inclúyelos en el inventario cuando tengan valor.
+
+Si cambian de ubicación, prepara una solución equivalente en lugar de asumir que solo importan las páginas HTML.
+
+## Protege el entorno de pruebas
+
+El staging debería quedar fuera de la indexación y, cuando sea posible, protegido mediante acceso. No confíes únicamente en que nadie conozca su dirección.
+
+Antes de publicar, verifica que las restricciones del entorno de pruebas no se copian por accidente a la web definitiva.
+
+## Mantén la medición
+
+Comprueba que las etiquetas de analítica y los eventos necesarios siguen presentes en la nueva plantilla. Un rediseño puede parecer exitoso mientras la medición deja de registrar formularios.
+
+Realiza conversiones de prueba y confirma que aparecen una sola vez.
+
+## Revisa la navegación móvil
+
+Los menús cambian con frecuencia en un rediseño. Asegúrate de que categorías, servicios y páginas prioritarias siguen siendo accesibles desde móvil.
+
+Una página puede conservar su URL y perder relevancia interna si deja de recibir enlaces desde navegación y contenidos relacionados.
+
+## Evita cadenas de redirección
+
+Si una URL antigua ya redirigía y el nuevo rediseño vuelve a cambiar el destino, actualiza la regla cuando puedas para apuntar directamente a la URL final.
+
+Esto simplifica el rastreo, reduce saltos y hace más fácil mantener el mapa de redirecciones.
+
+## Prepara una comparación posterior
+
+Durante los primeros días revisa errores 404, estados HTTP, sitemap, robots y formularios. Después compara tráfico y consultas de las páginas prioritarias durante varias semanas.
+
+No hagas nuevas modificaciones masivas al primer movimiento de datos. Necesitas suficiente contexto para identificar si existe un problema real.
+
+## Documenta decisiones
+
+Anota qué URLs se conservaron, cuáles se fusionaron y por qué. Este registro será útil si meses después alguien pregunta por una página antigua o vuelve a plantearse otra migración.
+
+La guía [cómo planificar una migración web](/como-planificar-una-migracion-web) amplía la parte de redirecciones, pruebas y reversión.
+
+Un buen rediseño mejora la experiencia sin perder el trabajo acumulado. El inventario previo y una validación ordenada son la forma más eficaz de conseguirlo.

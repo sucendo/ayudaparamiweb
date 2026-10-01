@@ -1,7 +1,7 @@
 ---
-title: "Pipelines De Contenido Con IA: guía práctica y decisiones clave"
-description: "Guía práctica sobre pipelines de contenido con ia: qué es, cuándo aplicarlo, errores comunes y plan de ejecución paso a paso."
-excerpt: "Guía práctica sobre pipelines de contenido con ia: decisiones claras, ejecución ordenada y métricas útiles para avanzar sin ruido."
+title: "Pipelines de contenido con IA: cómo diseñar un flujo controlado"
+description: "Cómo diseñar un pipeline de contenido con IA en 2024: briefing, fuentes, borradores, estados, revisión, control de calidad, versiones y métricas."
+excerpt: "La IA puede acelerar partes del proceso editorial si cada fase tiene entradas, responsables y controles claros."
 author: "Sucender"
 canonical: "/pipelines-de-contenido-con-ia"
 category: "tutoriales"
@@ -57,3 +57,64 @@ Conserva el prompt o plantilla utilizada, la versión del borrador y los cambios
 Además de tráfico o conversiones, mide tiempo de producción, número de revisiones, porcentaje de borradores descartados y errores detectados antes de publicar. Si el sistema genera mucho pero obliga a rehacer casi todo, no está ahorrando trabajo.
 
 Un pipeline con IA funciona mejor cuando reduce fricción entre etapas y hace más visible el control de calidad. La automatización debería liberar tiempo para investigar, revisar y decidir mejor, no eliminar esos pasos.
+## Define qué información puede entrar en el sistema
+
+No todas las fuentes tienen el mismo nivel de confianza. Separa documentación oficial, datos internos aprobados, entrevistas y material de referencia.
+
+Para cada fase indica qué fuentes puede utilizar y evita que un borrador complete huecos con datos no verificados.
+
+## Crea plantillas de briefing
+
+Una plantilla reduce variaciones innecesarias entre piezas. Puede incluir público, objetivo, intención, preguntas obligatorias, fuentes, tono y enlaces internos esperados.
+
+No hagas una plantilla tan rígida que todos los textos terminen con la misma estructura. Debe ordenar requisitos, no eliminar criterio editorial.
+
+## Versiona prompts y reglas
+
+Si cambias una instrucción que se utiliza en muchas piezas, registra la versión. Así podrás saber por qué dos lotes produjeron resultados distintos.
+
+No hace falta un sistema complejo: fecha, nombre de plantilla y cambios principales pueden ser suficientes.
+
+## Incluye una revisión factual separada
+
+La corrección de estilo y la comprobación de hechos son tareas distintas.
+
+Haz una pasada específica para cifras, nombres, fechas y afirmaciones técnicas. Cuando exista una fuente, conserva la referencia junto al borrador hasta que termine la revisión.
+
+## Comprueba duplicidad interna
+
+Un pipeline que genera contenido rápidamente puede producir varias piezas que responden a la misma intención.
+
+Antes de aprobar una nueva URL, busca contenidos existentes y decide si conviene ampliar, fusionar o crear algo realmente distinto.
+
+## Evita publicar directamente desde generación
+
+Mantén siempre un estado intermedio. El sistema puede crear un borrador y preparar metadatos, pero la publicación debería depender de una aprobación explícita cuando el contenido represente a la empresa.
+
+Esto reduce el riesgo de errores que llegan a producción por un fallo en una instrucción.
+
+## Automatiza validaciones mecánicas
+
+Longitud de title, enlaces rotos, campos vacíos, estructura básica o presencia de determinados elementos pueden comprobarse de forma automática.
+
+Reserva la revisión humana para precisión, utilidad, tono y experiencia, que requieren más contexto.
+
+## Controla costes y volumen
+
+Cada fase automatizada consume recursos. Registra cuántas piezas se generan, cuántas se descartan y cuánto cuesta llegar a una versión publicable.
+
+Si produces diez borradores para publicar uno, el sistema puede estar creando más ruido que ahorro.
+
+## Aprende de las correcciones
+
+Clasifica errores recurrentes: hechos inventados, tono, estructura repetitiva, fuentes insuficientes o intención incorrecta.
+
+Actualiza briefing y controles basándote en esas causas. Mejorar el pipeline significa reducir errores repetidos, no solo generar más deprisa.
+
+## Mide calidad después de publicar
+
+Observa rendimiento, conversiones y necesidad de correcciones posteriores. Un contenido que requiere reparaciones constantes no es eficiente aunque saliera rápido.
+
+La guía [IA generativa y contenidos SEO](/ia-generativa-estrategia-contenidos-seo) complementa esta parte con criterios editoriales.
+
+Un pipeline saludable aumenta control además de velocidad. Cuanto más fácil sea saber qué fuente, regla y persona intervino en cada pieza, más sencillo será corregir y mejorar el sistema.

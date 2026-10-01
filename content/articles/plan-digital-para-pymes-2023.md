@@ -1,7 +1,7 @@
 ---
 title: "Plan digital para pymes: hoja de ruta práctica"
-description: "Una hoja de ruta digital para pymes que ayuda a priorizar web, medición, captación y procesos sin complicar el proyecto."
-excerpt: "Guía útil, accionable y orientada a resultados."
+description: "Cómo preparar un plan digital para una pyme con inventario, objetivos, web, captación, analítica, procesos, seguridad, presupuesto y ciclos de mejora."
+excerpt: "Una hoja de ruta digital debe priorizar pocos cambios que mejoren ventas, servicio o productividad y que la pyme pueda mantener."
 author: "Sucender"
 canonical: "/plan-digital-para-pymes-2023"
 category: "tutoriales"
@@ -51,3 +51,64 @@ Usa contraseñas únicas, doble factor cuando esté disponible, copias de seguri
 Una pyme suele avanzar mejor con ciclos de unas pocas semanas: elegir una mejora, implementarla, medir y decidir el siguiente paso. Esto evita proyectos enormes que tardan meses en producir valor.
 
 Un plan digital es bueno cuando ayuda a decidir qué no hacer. La prioridad debe estar en los cambios que mejoran ventas, servicio o productividad y que el equipo puede mantener con los recursos disponibles.
+## Define una base mínima de propiedad y acceso
+
+Comprueba quién controla dominio, hosting, correo, perfiles y herramientas. Las cuentas críticas deberían pertenecer a la empresa y tener datos de recuperación actualizados.
+
+Evita que todo dependa de una cuenta personal de un proveedor o empleado. Esta revisión es sencilla y reduce problemas cuando cambia el equipo.
+
+## Ordena las iniciativas por impacto
+
+Haz una lista de posibles mejoras y clasifícalas según impacto, coste y dependencia.
+
+Corregir un formulario roto suele ir antes que abrir un nuevo canal social. Una tarea pequeña puede tener más valor que un proyecto vistoso si elimina un bloqueo real.
+
+## Mejora la web antes de comprar más tráfico
+
+Si una página no explica la oferta o el contacto falla, una campaña solo enviará más personas hacia el mismo problema.
+
+Revisa navegación, servicios, velocidad, móvil y formularios antes de aumentar inversión en captación.
+
+## Elige canales por comportamiento del cliente
+
+No abras perfiles porque “hay que estar”. Pregunta dónde busca información tu cliente, cómo compara y qué tipo de contacto prefiere.
+
+Un negocio local puede necesitar una buena presencia en buscadores y mapas; otro puede depender de correo, contenido especializado o captación comercial directa.
+
+## Crea un calendario asumible
+
+Para contenidos, newsletters o redes, define una frecuencia que el equipo pueda mantener.
+
+Es mejor una guía útil al mes que varias publicaciones improvisadas que se abandonan. Incluye tiempo de revisión y actualización, no solo creación.
+
+## Mide pocas conversiones
+
+Elige acciones ligadas al negocio: contacto, compra, reserva, llamada o registro. Asegúrate de que la analítica las recoge correctamente.
+
+Evita convertir cada clic en un objetivo principal. Demasiadas métricas dificultan distinguir qué está funcionando.
+
+## Simplifica antes de automatizar
+
+Si un proceso tiene diez pasos manuales, revisa primero si todos son necesarios.
+
+Automatizar un flujo innecesariamente complejo puede hacerlo más rápido, pero seguirá siendo difícil de mantener. Elimina duplicidades antes de conectar herramientas.
+
+## Presupuesta mantenimiento
+
+Una web, un CRM o una automatización no terminan el día del lanzamiento. Reserva recursos para actualizaciones, soporte, seguridad y formación.
+
+Comparar herramientas solo por precio inicial suele ocultar el coste real de operación.
+
+## Establece responsables
+
+Cada activo necesita una persona que sepa cuándo revisarlo: dominio, web, perfiles, campañas, copias o analítica.
+
+No significa que una sola persona haga todo, sino que exista alguien responsable de detectar cuando algo queda sin mantener.
+
+## Revisa el plan cada trimestre
+
+Comprueba avances, problemas y métricas. Retira proyectos que ya no tienen sentido y añade nuevas prioridades solo cuando exista capacidad.
+
+La guía [automatización de tareas en la empresa](/automatizacion-de-tareas-en-la-empresa) puede ayudarte a trabajar procesos internos, mientras que [auditoría web básica para pymes](/auditoria-web-basica-para-pymes) sirve para revisar la base digital.
+
+Un plan útil no intenta transformar toda la empresa a la vez. Crea una secuencia de mejoras que puedan medirse, mantenerse y corregirse antes de pasar a la siguiente.

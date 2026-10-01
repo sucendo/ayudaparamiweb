@@ -1,7 +1,7 @@
 ---
 title: "Automatizaciones con Python para SEO"
-description: "Ideas prácticas para automatizar comprobaciones SEO con Python: URLs, estados HTTP, metadatos, sitemaps y ficheros CSV."
-excerpt: "Python permite convertir muchas revisiones SEO repetitivas en procesos reproducibles y fáciles de documentar."
+description: "Automatizaciones SEO con Python para revisar URLs, metadatos, sitemaps, CSV y APIs con control de errores, pausas, logs y validación antes de actuar."
+excerpt: "Python es especialmente útil cuando una comprobación SEO debe repetirse sobre muchas URLs de forma reproducible."
 author: "Sucender"
 canonical: "/automatizaciones-con-python-para-seo"
 category: "tutoriales"
@@ -72,3 +72,66 @@ Leer datos es menos arriesgado que modificar una web. Cuando un script vaya a ca
 Documenta requisitos, formato de entrada y salida. Si la automatización se ejecuta periódicamente, fija una estructura de carpetas y nombres de archivo estable.
 
 La ventaja real de Python aparece cuando una tarea deja de depender de una secuencia manual y pasa a ser reproducible, verificable y fácil de volver a ejecutar.
+## Limita la velocidad de las peticiones
+
+Un script puede lanzar solicitudes mucho más rápido que una persona. Añade pausas o limita concurrencia para no generar una carga innecesaria en el servidor.
+
+Si estás trabajando sobre una web que no administras, revisa condiciones y evita rastreos agresivos. La automatización no debe comportarse como un ataque.
+
+## Utiliza una sesión HTTP cuando corresponda
+
+Las bibliotecas de peticiones permiten reutilizar conexiones y cabeceras. Para procesos con muchas URLs, una sesión puede resultar más eficiente.
+
+Define también un `User-Agent` reconocible cuando sea apropiado y conserva tiempos de espera para no dejar el script bloqueado indefinidamente.
+
+## Guarda resultados parciales
+
+Si revisas miles de URLs y el proceso falla cerca del final, no deberías empezar desde cero.
+
+Escribe resultados por bloques o guarda el progreso. Así podrás reanudar y analizar incluso una ejecución incompleta.
+
+## Normaliza URLs antes de comparar
+
+Diferencias de barra final, mayúsculas, parámetros o protocolo pueden provocar falsos duplicados.
+
+Define una regla de normalización adecuada al proyecto antes de cruzar datos. No elimines parámetros automáticamente si pueden identificar páginas distintas.
+
+## Extrae enlaces internos
+
+Además de títulos y descripciones, puedes recoger enlaces y construir una tabla origen-destino.
+
+Esto permite detectar páginas huérfanas, enlaces hacia errores o URLs que reciben muy pocos enlaces internos.
+
+## Comprueba canonicals
+
+Un script puede comparar la URL solicitada con el canonical declarado y marcar casos extraños: canonical vacío, destino externo o grupos completos apuntando a la misma página.
+
+No conviertas cada diferencia en error automático. Algunas configuraciones pueden ser intencionadas y requieren revisión.
+
+## Crea informes reproducibles
+
+Guarda fecha de ejecución, versión del script y ficheros de entrada. Si el resultado cambia semanas después, podrás saber si cambió la web o cambió la lógica del análisis.
+
+Un pequeño README con instrucciones evita que el script dependa únicamente de quien lo escribió.
+
+## Separa configuración del código
+
+Dominio, rutas de archivos, tiempos de espera y credenciales pueden vivir en variables o archivos de configuración.
+
+Esto permite reutilizar el mismo script en varios proyectos sin editar la lógica principal.
+
+## Añade pruebas sobre una muestra
+
+Antes de ejecutar contra miles de URLs, prueba con diez casos conocidos: una página correcta, una redirección, un 404 y algún ejemplo con metadatos incompletos.
+
+La muestra ayuda a descubrir errores en el script antes de producir un CSV enorme con resultados incorrectos.
+
+## Automatización no significa decisión automática
+
+Python puede detectar que 300 páginas tienen títulos duplicados, pero no puede decidir por sí solo qué título representa mejor cada intención.
+
+Utiliza el script para localizar y organizar problemas. Mantén el análisis editorial o estratégico donde sea necesario.
+
+Si estás empezando con el lenguaje, [primeros pasos en Python](/primeros-pasos-python) proporciona una base más general.
+
+La mejor automatización SEO es pequeña, verificable y fácil de volver a ejecutar. Cuanto más claro sea el formato de entrada y salida, más valor tendrá después de la primera ejecución.

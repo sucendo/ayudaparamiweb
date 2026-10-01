@@ -1,7 +1,7 @@
 ---
 title: "Error 500: solución rápida en 5 pasos"
-description: "Soluciona el error 500 rápidamente con esta guía paso a paso. Aprende a detectar el problema real en WordPress, PrestaShop o cualquier web."
-excerpt: "El error 500 es uno de los fallos más frustrantes en cualquier web. Aparece sin aviso, no explica el motivo y puede dejar tu sitio completamente inaccesible. En esta guía vas a ver cómo solucionarlo paso a paso."
+description: "Cómo diagnosticar un error 500 revisando cambios recientes, plugins, tema, .htaccess, memoria, logs, permisos, PHP, base de datos y hosting."
+excerpt: "El error 500 es una respuesta genérica: la forma más rápida de resolverlo es localizar en los logs qué componente está fallando."
 author: "Sucender"
 canonical: "/error-500-solucion-rapida-5-pasos"
 category: "tutoriales"
@@ -117,3 +117,52 @@ RewriteRule . /index.php [L]
 <p>Si el problema es más complejo o no quieres perder tiempo probando soluciones, puedes <a href="/contacto">contactar conmigo</a> y reviso tu web para solucionarlo lo antes posible.</p>
 
 <p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más guías prácticas para resolver errores y mejorar el rendimiento de tu sitio.</p>
+<h2>Empieza por el cambio más reciente</h2>
+
+<p>Antes de desactivar componentes al azar, pregunta qué ocurrió justo antes del error: actualización, instalación, cambio de PHP, modificación de archivos o migración.</p>
+
+<p>Revertir un cambio conocido suele ser más rápido y seguro que probar diez soluciones distintas.</p>
+
+<h2>Haz una copia antes de reparar</h2>
+
+<p>Si vas a editar <code>.htaccess</code>, <code>wp-config.php</code> o archivos del tema, conserva una copia del estado actual.</p>
+
+<p>Incluso una web averiada puede contener pedidos, formularios o contenido reciente que no quieres perder.</p>
+
+<h2>No aumentes memoria sin investigar</h2>
+
+<p>Subir el límite puede resolver un proceso que necesita más recursos, pero también puede ocultar un plugin que consume memoria de forma anormal.</p>
+
+<p>Si el error desaparece, revisa los logs y el consumo para entender por qué se alcanzó el límite.</p>
+
+<h2>Comprueba la versión de PHP y extensiones</h2>
+
+<p>Un cambio de versión de PHP puede dejar código antiguo incompatible. Revisa si el fallo comenzó después de una modificación en el alojamiento.</p>
+
+<p>No bajes o subas versiones sin comprobar primero qué soportan WordPress, el tema y las extensiones instaladas.</p>
+
+<h2>Permisos de archivos y carpetas</h2>
+
+<p>Permisos incorrectos pueden impedir que el servidor lea o ejecute determinados recursos.</p>
+
+<p>Evita la solución rápida de dar permisos excesivos a todo. Corrige propietario y permisos según la configuración recomendada por el alojamiento.</p>
+
+<h2>Base de datos</h2>
+
+<p>Si los logs muestran errores de conexión o consultas, comprueba credenciales, estado del servidor de base de datos y tablas afectadas.</p>
+
+<p>No ejecutes reparaciones destructivas sin una copia reciente.</p>
+
+<h2>Distingue un error de aplicación de una incidencia del hosting</h2>
+
+<p>Si varias webs del mismo servidor fallan o el panel muestra problemas generales, contacta con el proveedor antes de modificar tu instalación.</p>
+
+<p>Un fallo de infraestructura no se arregla desactivando plugins.</p>
+
+<h2>Comprueba después de recuperar</h2>
+
+<p>Prueba portada, administración, formularios y funciones críticas. Revisa que el log deje de registrar el error.</p>
+
+<p>Si tu problema es una caída más general y no sabes todavía qué respuesta devuelve el servidor, puedes empezar por <a href="/mi-web-no-carga-que-hacer-10-minutos">Mi web no carga: qué revisar en los primeros 10 minutos</a>.</p>
+
+<p>La solución rápida no consiste en aplicar cinco trucos, sino en reducir posibilidades en el orden correcto. El log, los cambios recientes y una prueba controlada suelen llevar al origen con menos riesgo.</p>

@@ -1,6 +1,6 @@
 ---
 title: "Herramientas SEO imprescindibles (edición práctica)"
-description: "Herramientas SEO imprescindibles desde el contexto de 2018: Search Console, Analytics, investigación, rastreo y rendimiento."
+description: "Herramientas SEO prácticas en 2018: Search Console, Google Analytics, Keyword Planner, Trends, PageSpeed Insights, Screaming Frog y hojas de cálculo."
 author: "Sucender"
 canonical: "/herramientas-seo"
 category: "tutoriales"
@@ -9,12 +9,12 @@ publishedDate: "2018-12-15"
 featuredImage: "/img/articulo/herramientas-seo-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
-excerpt: "Una selección práctica de herramientas SEO y un método sencillo para utilizarlas con criterio."
+excerpt: "Una selección de herramientas SEO para investigar demanda, rastrear la web, medir tráfico y detectar problemas técnicos."
 robots: "index,follow"
 ---
 Una herramienta SEO es útil cuando responde una pregunta concreta. Tener diez paneles abiertos no mejora el posicionamiento por sí solo; lo importante es saber qué dato necesitas y qué decisión vas a tomar con él.
 
-Esta selección se plantea desde el contexto de finales de 2018 y reúne herramientas y métodos que ya permitían cubrir la mayor parte del trabajo cotidiano.
+Con una combinación pequeña de herramientas gratuitas y de escritorio puedes cubrir gran parte del trabajo cotidiano: búsqueda, analítica, rastreo y rendimiento.
 
 ## Google Search Console: cómo ve Google tu sitio
 
@@ -70,3 +70,58 @@ La pregunta debería ser siempre qué problema representa esa métrica y qué me
 ## Menos herramientas, mejor utilizadas
 
 Una combinación pequeña y bien entendida suele ser más eficaz que cambiar de plataforma cada semana. Aprende qué información proporciona cada herramienta, conserva un historial de decisiones y añade una nueva solo cuando resuelva una necesidad que las actuales no cubren.
+## Search Console: revisa consultas y páginas
+
+No mires únicamente el total de clics. Filtra por consulta y página para descubrir qué contenido aparece en búsqueda y dónde existe margen de mejora.
+
+Anota cambios importantes para poder relacionarlos con variaciones posteriores.
+
+## Analytics: configura objetivos
+
+Una visita no tiene el mismo valor que una solicitud o una compra. Configura objetivos para acciones que representen resultados reales.
+
+Así podrás comparar páginas y canales por su contribución al negocio, no solo por volumen de sesiones.
+
+## Trends para estacionalidad
+
+Google Trends es especialmente útil cuando una búsqueda cambia según el mes o la zona.
+
+Compara términos relacionados y periodos largos antes de interpretar una subida puntual como una tendencia permanente.
+
+## Un crawler para revisar cambios
+
+Después de una migración o rediseño, rastrea la web y compara códigos de estado, titles, encabezados y canonicals.
+
+Guardar una exportación anterior permite detectar qué ha cambiado sin revisar manualmente cada página.
+
+## PageSpeed como diagnóstico
+
+Una puntuación sirve como referencia, pero revisa las recomendaciones concretas y los recursos que aparecen.
+
+Imágenes demasiado grandes, JavaScript y respuesta del servidor necesitan soluciones distintas. No instales optimizaciones sin identificar primero la causa.
+
+## Hojas para combinar información
+
+Puedes cruzar una exportación de Search Console con un rastreo y añadir una columna de prioridad.
+
+Este tipo de tabla ayuda a detectar páginas con impresiones que además tienen problemas de title, enlaces o contenido.
+
+## Registra decisiones
+
+Una herramienta muestra datos; no recuerda por qué cambiaste una página. Guarda fecha, acción y resultado esperado.
+
+Cuando vuelvas a revisar semanas después, podrás distinguir una mejora planificada de una variación casual.
+
+## Evita perseguir puntuaciones propietarias
+
+Algunas plataformas resumen muchos factores en una cifra. Puede servir para comparar dentro de la misma herramienta, pero no es una métrica oficial de Google.
+
+Utiliza estas puntuaciones para encontrar posibles problemas, no como objetivo de negocio.
+
+## Crea un conjunto estable
+
+Empieza con las herramientas que cubren tus necesidades y aprende a utilizarlas bien antes de añadir nuevas suscripciones.
+
+Para investigación de búsquedas puedes ampliar con [investigación de palabras clave](/investigacion-palabras-clave).
+
+El mejor conjunto de herramientas es el que permite pasar de una pregunta a una acción comprobable. Cuantas más plataformas utilices sin un método común, más fácil será acumular datos que nadie convierte en mejoras.

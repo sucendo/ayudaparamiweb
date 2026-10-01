@@ -1,7 +1,7 @@
 ---
-title: "Mi web no carga: qué hacer en 10 minutos"
-description: "Tu web no carga? Aprende qué hacer en 10 minutos para detectar y solucionar el problema paso a paso de forma rápida y efectiva."
-excerpt: "Cuando una web deja de cargar, el impacto puede ser inmediato: pérdida de visitas, clientes y confianza. En esta guía rápida vas a ver qué hacer en 10 minutos para detectar el problema."
+title: "Mi web no carga: qué revisar en los primeros 10 minutos"
+description: "Qué hacer cuando una web deja de cargar: comprobar alcance, error, hosting, cambios recientes, plugins, logs, base de datos, .htaccess, dominio y DNS."
+excerpt: "Un diagnóstico rápido debe empezar por confirmar si el fallo es global y localizar qué cambió antes de tocar varios componentes a la vez."
 author: "Sucender"
 canonical: "/mi-web-no-carga-que-hacer-10-minutos"
 category: "tutoriales"
@@ -150,3 +150,60 @@ robots: "index,follow"
 <p>Si no quieres perder tiempo o necesitas una solución rápida, puedes <a href="/contacto">contactar conmigo</a> y reviso tu web para solucionarlo cuanto antes.</p>
 
 <p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más guías prácticas para resolver errores reales.</p>
+<h2>Antes de tocar archivos, guarda una copia</h2>
+
+<p>Si todavía puedes acceder al hosting, descarga los archivos que vayas a modificar y evita sobrescribir configuraciones sin posibilidad de volver atrás.</p>
+
+<p>Una reparación urgente no debería crear un segundo problema por no conservar el estado anterior.</p>
+
+<h2>Comprueba si afecta a una página o a toda la web</h2>
+
+<p>Prueba la portada, una URL interna y, si existe, el panel de administración. Esta diferencia ayuda a reducir el diagnóstico.</p>
+
+<p>Si solo falla una página, puede tratarse de una plantilla, contenido o regla concreta. Si todo falla, hosting, configuración o aplicación ganan importancia.</p>
+
+<h2>Mira la hora exacta en que empezó</h2>
+
+<p>Relaciona el inicio con actualizaciones, cambios de DNS, despliegues o tareas realizadas poco antes.</p>
+
+<p>Revisar primero lo que cambió suele ser más efectivo que probar soluciones genéricas.</p>
+
+<h2>No muestres errores detallados a visitantes</h2>
+
+<p>La depuración puede aportar información útil, pero los mensajes técnicos no deberían permanecer visibles públicamente.</p>
+
+<p>Activa el modo de diagnóstico solo durante la investigación y vuelve a la configuración normal al terminar.</p>
+
+<h2>Comprueba espacio y límites del alojamiento</h2>
+
+<p>Un servidor sin espacio puede dejar de escribir sesiones, caché o registros. Revisa también límites de recursos si el panel los muestra.</p>
+
+<p>Si existe una incidencia general del proveedor, espera su resolución antes de modificar la aplicación.</p>
+
+<h2>DNS requiere paciencia y comprobación</h2>
+
+<p>Si has cambiado recientemente registros o servidores de nombres, verifica que los valores sean correctos y que no exista una configuración antigua mezclada.</p>
+
+<p>No hagas cambios sucesivos cada pocos minutos: puedes dificultar saber qué configuración es la correcta.</p>
+
+<h2>Documenta lo que pruebas</h2>
+
+<p>Anota cada cambio y resultado. Si renombrar un plugin no cambia nada, vuelve al estado anterior antes de probar el siguiente paso.</p>
+
+<p>Este método permite avanzar sin acumular modificaciones y facilita pedir ayuda aportando información concreta.</p>
+
+<h2>Cuándo restaurar una copia</h2>
+
+<p>Si identificas que un cambio reciente ha dañado archivos o base de datos y dispones de una copia fiable, restaurar puede ser más seguro que reparar manualmente muchas piezas.</p>
+
+<p>Comprueba la fecha de la copia para no perder pedidos, formularios o contenido reciente sin saberlo.</p>
+
+<h2>Después de recuperar la web</h2>
+
+<p>No cierres la incidencia en cuanto vuelva a cargar. Revisa logs, identifica la causa y comprueba las funciones principales.</p>
+
+<p>Una web que vuelve a responder pero mantiene el origen del fallo puede caer de nuevo.</p>
+
+<p>Si el servidor devuelve específicamente un fallo interno, consulta también <a href="/error-500-solucion-rapida-5-pasos">Error 500: solución rápida en 5 pasos</a>.</p>
+
+<p>Los primeros diez minutos sirven para reducir posibilidades, no para probar todo. Confirmar alcance, revisar cambios recientes y leer el error correcto suele llevar mucho más rápido al origen.</p>

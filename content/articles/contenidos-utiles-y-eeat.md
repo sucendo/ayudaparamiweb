@@ -1,7 +1,7 @@
 ---
 title: "Contenidos útiles y E-E-A-T: cómo aplicar criterio editorial"
-description: "Cómo crear contenidos útiles reforzando experiencia, conocimiento, autoridad y confianza sin convertir E-E-A-T en una puntuación artificial."
-excerpt: "La utilidad del contenido mejora cuando responde bien, demuestra experiencia y deja claras sus fuentes y responsabilidad editorial."
+description: "Cómo trabajar contenidos útiles y E-E-A-T con intención clara, experiencia real, fuentes, autoría, revisión experta, mantenimiento y transparencia editorial."
+excerpt: "La calidad editorial se construye con utilidad, experiencia verificable y responsabilidad, no con una supuesta puntuación de E-E-A-T."
 author: "Sucender"
 canonical: "/contenidos-utiles-y-eeat"
 category: "tutoriales"
@@ -63,3 +63,62 @@ Una buena respuesta difícil de leer sigue siendo una mala experiencia.
 Antes de publicar pregunta: ¿responde a la intención?, ¿aporta algo propio?, ¿puede verificarse?, ¿es evidente quién se responsabiliza?, ¿hay partes añadidas solo para ocupar espacio?
 
 Trabajar E-E-A-T con sentido consiste en mejorar esas respuestas, no en perseguir una métrica inexistente.
+## Diferencia experiencia y conocimiento experto
+
+La experiencia puede venir de haber utilizado un producto, realizado una tarea o gestionado un caso real. El conocimiento experto implica dominar el área con suficiente profundidad para explicar y evaluar correctamente.
+
+Según el tema, puede importar más una de las dos dimensiones. Una reseña necesita experiencia de uso; una guía sanitaria puede requerir además revisión profesional cualificada.
+
+## Explica cómo se obtuvo la información
+
+Cuando presentas una prueba, comparativa o recomendación, indica el método. Qué se probó, bajo qué condiciones y qué limitaciones existen.
+
+Esta transparencia permite que el lector valore la conclusión y diferencia una experiencia real de una afirmación genérica.
+
+## Utiliza fuentes primarias cuando sea posible
+
+Documentación oficial, estudios originales y datos del propio proyecto suelen ser mejores puntos de partida que artículos que resumen a otros artículos.
+
+Las fuentes secundarias pueden aportar contexto, pero conviene llegar al origen cuando una afirmación importante depende de él.
+
+## No fuerces biografías de autor
+
+Una firma ayuda cuando explica quién se responsabiliza del contenido y por qué tiene relación con el tema. Una biografía llena de adjetivos sin experiencia verificable aporta poco.
+
+Incluye información profesional relevante, otros trabajos o una forma razonable de conocer el perfil del autor.
+
+## Revisión especializada cuando el riesgo lo exige
+
+No todos los textos necesitan un experto externo. Pero cuanto mayor sea el posible impacto de una información incorrecta, más importante es una revisión adecuada.
+
+Documenta quién revisó y qué alcance tuvo la revisión cuando esa información resulte útil para el lector.
+
+## Aporta ejemplos que no podrían salir de una plantilla
+
+Errores encontrados, capturas propias, decisiones de proyecto, comparaciones reales y límites descubiertos durante el trabajo añaden profundidad.
+
+No necesitas inventar un caso para cada sección. Un ejemplo concreto y bien explicado vale más que varias anécdotas artificiales.
+
+## Separa hechos y opinión
+
+Una recomendación puede ser válida aunque no sea un hecho universal. Indica cuándo estás ofreciendo un criterio basado en experiencia y cuándo citas información verificable.
+
+Esta distinción mejora la confianza y evita presentar preferencias como reglas absolutas.
+
+## Mantén coherencia entre contenido y empresa
+
+Una web que habla de confianza pero no muestra contacto, políticas o información de empresa genera una contradicción.
+
+E-E-A-T no se trabaja solo dentro del artículo. La transparencia del sitio, la seguridad y la atención al usuario también influyen en la percepción de fiabilidad.
+
+## Revisa páginas que ya reciben tráfico
+
+No limites el esfuerzo editorial a nuevas publicaciones. Un contenido antiguo con visibilidad puede mejorar mucho si añades fuentes, corriges afirmaciones o incorporas experiencia real.
+
+Para organizar este mantenimiento, [auditoría de contenidos antes de septiembre](/auditoria-contenidos-antes-de-septiembre) ofrece un método para decidir qué actualizar o fusionar.
+
+## Cierra con una prueba de utilidad
+
+Antes de publicar, pregunta si una persona podría tomar una mejor decisión después de leer la página.
+
+Si la respuesta depende solo de que el texto sea largo, falta trabajo. La calidad aparece cuando el contenido resuelve una necesidad, puede verificarse y deja claro quién asume la responsabilidad de lo publicado.

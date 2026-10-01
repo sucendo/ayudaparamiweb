@@ -1,7 +1,7 @@
 ---
 title: "Accesibilidad y SEO: cómo mejorar la web para personas y buscadores"
-description: "Guía práctica para trabajar accesibilidad y SEO juntos: estructura semántica, textos alternativos, formularios, teclado y revisión técnica."
-excerpt: "Una web accesible suele ser también más clara, estructurada y fácil de rastrear. Estos son los puntos que conviene revisar."
+description: "Cómo trabajar accesibilidad y SEO juntos mediante HTML semántico, encabezados, imágenes, enlaces, formularios, teclado, contraste, JavaScript y pruebas manuales."
+excerpt: "Accesibilidad y SEO comparten una base: contenido comprensible, estructura semántica y navegación que funciona sin depender de trucos visuales."
 author: "Sucender"
 canonical: "/accesibilidad-y-seo"
 category: "tutoriales"
@@ -68,3 +68,60 @@ Puedes empezar con una muestra de páginas importantes y comprobar:
 - comportamiento al ampliar la página.
 
 Las herramientas automáticas ayudan a encontrar incidencias, pero no sustituyen una prueba manual. La mejor revisión combina ambas cosas y prioriza los problemas que impiden completar tareas reales.
+## HTML semántico antes que ARIA
+
+Siempre que exista un elemento nativo para una función, suele ser mejor utilizarlo. Un botón real ya incorpora comportamiento de teclado que un `div` personalizado tendría que reproducir.
+
+ARIA puede completar componentes complejos, pero no debería sustituir una base HTML correcta.
+
+## Titles y encabezados no son lo mismo
+
+El `title` ayuda a identificar la página en buscadores y pestañas; el `h1` forma parte del contenido visible.
+
+Ambos pueden estar relacionados, pero no necesitan ser idénticos. Lo importante es que describan con claridad la finalidad de la URL.
+
+## Enlaces que funcionan fuera de contexto
+
+Un lector de pantalla puede recorrer una lista de enlaces. Si todos dicen “ver más”, resulta difícil saber cuál elegir.
+
+Utiliza textos que describan el destino y evita añadir palabras clave que hagan el enlace artificial.
+
+## JavaScript y contenido dinámico
+
+Cuando una interacción actualiza la página sin recargar, comprueba que el cambio también sea comprensible para tecnologías de apoyo.
+
+Menús, modales, pestañas y mensajes de error necesitan foco y estados correctamente gestionados.
+
+## Formularios y conversión
+
+Una etiqueta clara y un error específico ayudan a cualquier usuario. También reducen abandonos, especialmente en formularios largos.
+
+Comprueba que el mensaje no dependa solo del color y que el foco pueda llegar al campo problemático.
+
+## No ocultes contenido esencial en móvil
+
+Un diseño responsive puede simplificar la interfaz, pero el contenido y las acciones importantes deberían seguir siendo accesibles.
+
+Revisa menús, acordeones y elementos que se muestran de forma diferente según el ancho de pantalla.
+
+## Herramientas automáticas: útiles pero incompletas
+
+Los analizadores pueden detectar contraste, atributos ausentes o ciertos errores de estructura.
+
+No pueden decidir por sí solos si un texto alternativo es útil o si el orden de navegación tiene sentido. Combina automatización y prueba manual.
+
+## Prioriza por impacto en tareas
+
+Un problema que impide enviar un formulario merece más atención que una mejora menor en una página secundaria.
+
+Organiza incidencias por severidad, frecuencia y número de usuarios afectados.
+
+## Incluye accesibilidad en plantillas
+
+Si corriges un componente común, puedes mejorar cientos de páginas a la vez.
+
+Trabaja navegación, botones, formularios y tarjetas como componentes reutilizables con comportamiento accesible desde el inicio.
+
+Puedes profundizar en [accesibilidad web: principios básicos](/accesibilidad-web-principios-basicos), centrada en fundamentos de desarrollo y pruebas.
+
+La relación con SEO no convierte la accesibilidad en una táctica de posicionamiento. Su principal valor es que más personas pueden utilizar la web; la estructura más clara es un beneficio adicional.

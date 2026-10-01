@@ -1,6 +1,6 @@
 ---
 title: "SEO para ecommerce: fundamentos para una tienda online"
-description: "Fundamentos de SEO para ecommerce: arquitectura, categorías, fichas, filtros, duplicados, productos agotados y rendimiento."
+description: "SEO para ecommerce en 2019: arquitectura, categorías, fichas, filtros, parámetros, duplicados, productos agotados, datos estructurados, móvil y medición."
 author: "Sucender"
 canonical: "/seo-para-ecommerce"
 category: "tutoriales"
@@ -9,7 +9,7 @@ publishedDate: "2019-09-12"
 featuredImage: "/img/articulo/seo-ecommerce-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"
-excerpt: "Cómo organizar una tienda para que las páginas correctas sean rastreables, útiles y relevantes."
+excerpt: "Una tienda online necesita controlar qué URLs existen y cuáles merece la pena posicionar antes de multiplicar contenido."
 robots: "index,follow"
 ---
 El SEO de un ecommerce tiene una dificultad particular: una tienda puede generar cientos o miles de URLs entre categorías, productos, filtros, ordenaciones y variantes. Para posicionar bien no basta con escribir descripciones; hay que controlar la arquitectura y decidir qué páginas merece la pena indexar.
@@ -65,3 +65,64 @@ Relaciona categorías, productos complementarios y guías de ayuda con enlaces �
 Revisa tráfico orgánico por categorías y productos, consultas que generan impresiones, ingresos procedentes de búsqueda y páginas con muchas visitas pero poca conversión.
 
 El objetivo del SEO para ecommerce no es acumular URLs indexadas, sino conseguir que las páginas correctas aparezcan para búsquedas con intención real de compra.
+## Investiga cómo se busca cada familia de producto
+
+No todas las categorías necesitan la misma estructura. Analiza cómo nombra el público los productos, qué atributos utiliza para diferenciarlos y qué términos indican intención de compra.
+
+Utiliza esa información para decidir categorías y filtros, no solo para añadir palabras al texto.
+
+## Evita categorías demasiado vacías
+
+Una categoría con uno o dos productos aporta poca capacidad de elección y puede quedar vacía con facilidad.
+
+Antes de crearla, comprueba que representa un grupo estable y que el catálogo puede mantenerla a medio plazo.
+
+## Cuida titles y descripciones a escala
+
+En una tienda grande, estos elementos suelen generarse con plantillas. Diseña una plantilla que funcione con nombres cortos, largos, marcas y variantes.
+
+Revisa excepciones importantes manualmente, pero evita depender de editar miles de fichas una a una.
+
+## Canonicals y parámetros
+
+Ordenaciones, filtros y parámetros de seguimiento pueden crear varias URLs con contenido muy parecido.
+
+Define cuál es la versión principal y asegúrate de que enlaces internos, sitemap y canonical no se contradicen.
+
+## Paginación y descubrimiento
+
+Los productos más profundos deben seguir siendo accesibles mediante enlaces. Si un listado carga más elementos con JavaScript, comprueba que existe una ruta rastreable hacia las fichas.
+
+No dependas únicamente de un buscador interno para descubrir productos.
+
+## Mantén información comercial clara
+
+Precio, disponibilidad, gastos y condiciones importantes ayudan tanto a comprar como a interpretar la ficha.
+
+Evita esconder información clave hasta el último paso. Una buena experiencia comercial también reduce abandonos.
+
+## Enlaces entre productos y categorías
+
+Los módulos de productos relacionados pueden ayudar, pero no deberían generar relaciones aleatorias.
+
+Prioriza complementos, alternativas y categorías que tengan sentido para la compra. Así el enlazado interno coincide con la navegación real.
+
+## Controla productos casi idénticos
+
+Tallas o colores pueden gestionarse como variantes cuando comparten la misma intención principal.
+
+Crear una URL independiente para cada pequeña variación puede multiplicar páginas con poco contenido diferencial.
+
+## Revisa stock y SEO juntos
+
+Una categoría con muchos productos agotados puede seguir posicionando pero ofrecer una experiencia pobre.
+
+Observa disponibilidad antes de interpretar una caída de conversión como un problema de SEO.
+
+## Mide por tipo de página
+
+Separa categorías, fichas y contenidos informativos. Cada grupo cumple una función distinta y necesita métricas diferentes.
+
+Puedes ampliar las fichas con [optimización de fichas de producto](/optimizacion-de-fichas-de-producto) y las categorías con [SEO para categorías de ecommerce](/seo-para-categorias-de-ecommerce).
+
+Una tienda bien optimizada no intenta indexar cada combinación que el sistema puede generar. Define un conjunto de páginas estables, útiles y enlazadas que representen cómo busca y compra el cliente.

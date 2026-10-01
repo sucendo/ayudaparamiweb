@@ -1,7 +1,7 @@
 ---
 title: "Arquitectura web para catálogos grandes"
-description: "Cómo organizar categorías, filtros, URLs y enlazado interno en catálogos grandes sin crear miles de páginas innecesarias."
-excerpt: "En un catálogo grande, la arquitectura decide qué páginas son fáciles de encontrar, rastrear y mantener."
+description: "Cómo organizar catálogos grandes con jerarquía, categorías, filtros, facetas, paginación, enlazado, productos retirados, sitemap y reglas de indexación."
+excerpt: "La arquitectura de un catálogo grande debe limitar combinaciones innecesarias y dar prioridad a las páginas que usuarios y buscadores necesitan descubrir."
 author: "Sucender"
 canonical: "/arquitectura-web-para-catalogos-grandes"
 category: "tutoriales"
@@ -63,3 +63,64 @@ También conviene revisar etiquetas canonical, directivas de robots y respuestas
 Una revisión periódica puede incluir profundidad de clic, número de enlaces internos, categorías sin productos, URLs con parámetros, errores y patrones de rastreo.
 
 En un catálogo grande, una buena arquitectura reduce trabajo técnico futuro porque convierte el crecimiento en un proceso predecible en lugar de una acumulación de excepciones.
+## Separa navegación e indexación
+
+Un filtro puede ser muy útil para el usuario y no necesitar una página indexable propia.
+
+Diseña primero la experiencia de navegación y después decide qué combinaciones representan una intención de búsqueda estable.
+
+## Crea reglas para facetas
+
+Marca qué atributos pueden generar páginas indexables y bajo qué condiciones.
+
+Por ejemplo, una combinación puede necesitar un mínimo de productos, demanda conocida y contenido suficientemente estable. Esto evita decidir URL por URL cuando el catálogo crece.
+
+## Evita rutas duplicadas
+
+El mismo grupo de productos no debería estar accesible mediante múltiples jerarquías equivalentes sin una estrategia clara.
+
+Si el sistema permite varias rutas, define enlaces y canonical de forma consistente para evitar señales contradictorias.
+
+## Mantén categorías con suficiente oferta
+
+Una categoría útil necesita una selección razonable. Si se queda vacía durante largos periodos, revisa si debería existir.
+
+El catálogo debe poder cambiar sin dejar cientos de páginas inútiles después de cada temporada.
+
+## Diseña una estrategia para productos sustituidos
+
+Cuando un modelo deja de venderse y existe un sustituto directo, una redirección puede tener sentido.
+
+Si no hay equivalente, quizá convenga mantener la ficha informativa durante un tiempo o devolver un estado adecuado. No redirijas automáticamente todo a la categoría superior.
+
+## Enlazado contextual
+
+Además de menús y migas, utiliza bloques de categorías relacionadas, marcas o guías cuando ayuden a explorar.
+
+Evita módulos automáticos que crean cientos de enlaces sin relevancia. La cantidad no sustituye una relación útil.
+
+## Controla la búsqueda interna
+
+Los resultados de búsqueda del propio sitio pueden generar muchas URLs. Decide si deben ser rastreables e indexables.
+
+En la mayoría de catálogos, estas páginas sirven al usuario pero necesitan una política específica para no convertirse en otra fuente de combinaciones infinitas.
+
+## Rastrea el catálogo periódicamente
+
+Compara número de URLs encontradas, profundidad, estados HTTP y canonicals a lo largo del tiempo.
+
+Un aumento repentino de miles de URLs suele indicar un cambio de filtros, parámetros o plantilla que merece investigación.
+
+## Usa los logs cuando el catálogo sea muy grande
+
+Los registros del servidor permiten comprobar dónde dedican solicitudes los bots y si están gastando recursos en combinaciones poco valiosas.
+
+La guía [análisis de logs para SEO](/analisis-de-logs-para-seo) desarrolla este método.
+
+## Documenta las reglas de arquitectura
+
+Deja por escrito qué puede indexarse, cómo se tratan filtros y qué ocurre con productos retirados.
+
+Esto evita que un cambio de plataforma o equipo reconstruya decisiones antiguas desde cero.
+
+La arquitectura de un catálogo grande es un sistema de reglas, no una colección de excepciones. Cuanto antes se definan esas reglas, más fácil será crecer sin multiplicar problemas técnicos.

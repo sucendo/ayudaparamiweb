@@ -1,7 +1,7 @@
 ---
 title: "WordPress lento: diagnóstico real paso a paso"
-description: "Descubre cómo diagnosticar por qué tu WordPress va lento paso a paso. Análisis real, causas comunes y soluciones prácticas."
-excerpt: "Cuando WordPress va lento, el problema no suele ser uno solo. En este artículo te explico cómo hacer un diagnóstico real paso a paso para encontrar el origen y solucionarlo correctamente."
+description: "Cómo diagnosticar un WordPress lento en 2018 revisando servidor, plugins, tema, imágenes, caché, base de datos, scripts externos y cambios recientes."
+excerpt: "Antes de instalar más optimizadores, mide servidor y páginas reales para localizar qué parte de WordPress está consumiendo tiempo."
 author: "Sucender"
 canonical: "/wordpress-lento-diagnostico-real-paso-a-paso"
 category: "tutoriales"
@@ -154,3 +154,64 @@ Cuando entiendes el origen del problema, la optimización es mucho más sencilla
 Si tu WordPress va lento y quieres saber exactamente qué está fallando, puedes [contactar conmigo](/contacto) y analizo tu caso para ayudarte a optimizarlo correctamente.
 
 En [Ayuda para mi Web](/) encontrarás más guías prácticas para mejorar el rendimiento de tu web.
+## Compara portada, entrada y administración
+
+No te limites a una única URL. Prueba una página sencilla, una entrada larga y el panel de administración.
+
+Si el backoffice también es lento, base de datos, plugins o servidor pueden tener más peso que las imágenes del tema.
+
+## Primera visita y visitas repetidas
+
+La caché puede ocultar diferencias importantes. Prueba una carga limpia y después una segunda visita.
+
+Si ambas tardan prácticamente lo mismo, revisa si los recursos estáticos se están reutilizando y si la caché de página está funcionando.
+
+## Desactiva de forma controlada
+
+La prueba de plugins debe realizarse con copia reciente y, si es posible, fuera de las horas de mayor tráfico.
+
+Desactiva por grupos o uno a uno y anota el resultado. Después devuelve cada elemento al estado anterior antes de continuar.
+
+## Comprueba procesos que se ejecutan en todas las páginas
+
+Algunos plugins realizan consultas, llamadas externas o cálculos aunque su función solo sea visible en una sección.
+
+Un plugin pequeño puede tener más impacto que otro mucho mayor si se ejecuta en cada petición.
+
+## Revisa errores PHP y logs
+
+Los avisos repetidos pueden llenar registros y revelar funciones que están fallando.
+
+No muestres depuración detallada a los visitantes. Utiliza los logs del servidor y desactiva la visualización pública cuando termines.
+
+## Imágenes: tamaño antes que compresión
+
+No cargues una imagen de varios miles de píxeles para mostrarla a unos cientos.
+
+Genera tamaños adecuados para la plantilla y comprueba miniaturas. Reducir dimensiones suele aportar más que aplicar compresión extrema a un archivo innecesariamente grande.
+
+## Base de datos con prudencia
+
+Revisiones, transitorios y datos de plugins pueden acumularse, pero no borres tablas o registros sin conocer su función.
+
+Haz una copia y utiliza procedimientos compatibles con tu versión de WordPress y los plugins instalados.
+
+## Scripts externos
+
+Analítica, publicidad, chats, fuentes y widgets añaden peticiones que no controla completamente tu servidor.
+
+Prueba temporalmente sin elementos secundarios para saber cuánto aportan al tiempo total.
+
+## No persigas solo una puntuación
+
+Las herramientas de velocidad ayudan a detectar problemas, pero la experiencia real importa más que alcanzar un número perfecto.
+
+Comprueba cuánto tarda la página en mostrar contenido útil y cuándo puede utilizarse con normalidad.
+
+## Guarda una línea base
+
+Anota servidor, página, peso y tiempos antes de empezar. Repite la misma prueba tras cada cambio.
+
+Para una guía general, consulta [cómo mejorar la velocidad de tu web](/como-mejorar-la-velocidad-de-tu-web).
+
+Un diagnóstico correcto permite resolver el origen en lugar de apilar plugins de caché y minificación. Cuanto más claro sea qué parte consume tiempo, más segura será la optimización.

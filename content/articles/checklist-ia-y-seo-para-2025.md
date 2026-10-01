@@ -1,7 +1,7 @@
 ---
-title: "Checklist de IA y SEO: guía práctica y decisiones clave"
-description: "Checklist práctico para integrar IA y SEO con revisión humana, control de calidad y objetivos medibles."
-excerpt: "Guía práctica sobre checklist ia y seo para 2025: decisiones claras, ejecución ordenada y métricas útiles para avanzar sin ruido."
+title: "Checklist de IA y SEO para 2025"
+description: "Checklist preparado a finales de 2024 para trabajar IA y SEO en 2025 con objetivos, fuentes, privacidad, revisión humana, intención, SEO on-page y medición."
+excerpt: "Antes de acelerar producción con IA, conviene definir qué se automatiza, quién revisa y cómo se comprobará que el resultado aporta valor."
 author: "Sucender"
 canonical: "/checklist-ia-y-seo-para-2025"
 category: "tutoriales"
@@ -74,3 +74,64 @@ Una reducción del tiempo de producción es positiva solo si la calidad se manti
 - Métricas ligadas a negocio y utilidad.
 
 La mejor combinación de IA y SEO no es la que produce más rápido, sino la que permite dedicar menos tiempo a tareas mecánicas y más a decisiones que requieren conocimiento del negocio y del usuario.
+## Define una política de uso interna
+
+Antes de ampliar el uso de IA, deja por escrito qué tareas están permitidas, qué datos no deben introducirse y quién aprueba el resultado.
+
+Una política corta puede evitar que cada persona aplique criterios distintos con información sensible o contenidos de cliente.
+
+## Separa investigación y redacción
+
+No mezcles automáticamente una lista de ideas con hechos verificados.
+
+Primero reúne fuentes y datos; después utiliza la herramienta para organizar o redactar. Esta separación facilita detectar cuándo una afirmación no tiene respaldo.
+
+## Guarda las fuentes junto al borrador
+
+Si un contenido se genera a partir de documentación, conserva enlaces o referencias para que la persona que revisa pueda comprobarlas.
+
+No obligues al editor a reconstruir de dónde salió cada cifra.
+
+## Comprueba canibalización antes de crear una URL
+
+La IA facilita generar nuevos temas, pero también puede multiplicar páginas muy parecidas.
+
+Busca en tu propio sitio y decide si la necesidad requiere una pieza nueva o una ampliación de contenido existente.
+
+## Añade experiencia propia
+
+Casos reales, capturas, datos del negocio y errores encontrados aportan una capa que no debe sustituirse con texto genérico.
+
+No inventes experiencia. Si no existe, apóyate en fuentes y explica los límites.
+
+## Revisa el tono de forma separada
+
+Un borrador puede ser correcto y no sonar como la empresa.
+
+Haz una pasada específica para eliminar exageraciones, repeticiones, frases vacías y estructuras demasiado previsibles.
+
+## Comprueba enlaces y referencias
+
+Los modelos pueden proponer URLs o nombres incorrectos. Abre cada enlace relevante antes de publicar.
+
+Lo mismo se aplica a nombres de herramientas, productos o funciones mencionadas en el texto.
+
+## Controla el coste de revisión
+
+Mide cuánto tiempo necesita una pieza generada hasta quedar publicable.
+
+Si la revisión es demasiado larga, quizá convenga utilizar IA solo para ideación, esquemas o transformación de notas.
+
+## Versiona plantillas y prompts
+
+Cuando un prompt se usa de forma recurrente, guarda una versión y registra cambios importantes.
+
+Así podrás relacionar mejoras o errores repetidos con una instrucción concreta.
+
+## Define un punto de parada
+
+No necesitas automatizar todas las fases. Puede ser suficiente generar un esquema y continuar manualmente.
+
+La guía [pipelines de contenido con IA](/pipelines-de-contenido-con-ia) profundiza en cómo separar estados y controles.
+
+El checklist funciona si reduce errores repetidos y deja claro quién asume la decisión final. La velocidad solo es una ventaja cuando la publicación sigue siendo fiable.

@@ -1,6 +1,6 @@
 ---
 title: "SEO local: qué es y cómo empezar"
-description: "Guía para empezar con SEO local: Google My Business, datos del negocio, reseñas, contenido local y medición."
+description: "SEO local en 2019: cómo trabajar Google My Business, datos consistentes, páginas de ubicación, reseñas, enlaces locales, móvil y medición."
 author: "Sucender"
 canonical: "/seo-local-que-es-y-como-empezar"
 category: "tutoriales"
@@ -9,7 +9,7 @@ publishedDate: "2019-06-07"
 featuredImage: "/img/articulo/seo-local-que-es-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"
-excerpt: "Los fundamentos para mejorar la visibilidad local de un negocio sin complicar la estrategia."
+excerpt: "La visibilidad local mejora cuando ficha, web y referencias externas describen el mismo negocio con información clara y actual."
 robots: "index,follow"
 ---
 El SEO local reúne las acciones que ayudan a que un negocio aparezca cuando una persona realiza una búsqueda relacionada con una zona concreta. Para una tienda, un restaurante, un taller o un profesional que trabaja en un área determinada, la ubicación y la confianza local pueden ser tan importantes como el contenido general de la web.
@@ -67,3 +67,64 @@ Search Console y Analytics pueden ayudarte a relacionar visibilidad con comporta
 - medir qué búsquedas y páginas generan contactos.
 
 El SEO local suele mejorar cuando la información es clara, consistente y útil para una persona que necesita encontrar un negocio cerca de ella.
+## Elige la categoría principal con cuidado
+
+La categoría de Google My Business ayuda a describir la actividad. Selecciona la que mejor represente el negocio real y utiliza categorías adicionales solo cuando correspondan.
+
+No compenses una categoría imprecisa llenando otros campos de palabras clave.
+
+## Añade fotografías útiles
+
+Fachada, interior, equipo y productos pueden ayudar a reconocer el establecimiento y generar confianza.
+
+Utiliza imágenes propias y actualizadas. Si el local cambia, revisa las fotos para no mostrar información que ya no existe.
+
+## Horarios y días especiales
+
+Mantén el horario actualizado y revisa cambios puntuales cuando se acerquen festivos o vacaciones.
+
+Una ficha que envía a una persona a un local cerrado genera una mala experiencia que ninguna optimización de texto puede compensar.
+
+## Varias ubicaciones
+
+Si el negocio tiene varias sedes reales, cada una necesita datos correctos y una página útil cuando haya información suficiente.
+
+No crees ubicaciones ficticias para aparecer en más ciudades. La estrategia debe representar dónde opera realmente la empresa.
+
+## Páginas de servicio y ubicación
+
+Una página local no debería ser una copia de otra cambiando solo el nombre de la ciudad.
+
+Incluye información específica: servicios disponibles, cómo llegar, horario, contacto y particularidades de esa sede o zona.
+
+## Revisa directorios relevantes
+
+No necesitas aparecer en cientos. Prioriza directorios sectoriales, asociaciones y referencias que una persona real podría consultar.
+
+Corrige primero perfiles con dirección o teléfono antiguos.
+
+## Facilita el contacto desde móvil
+
+Un usuario local puede querer llamar o llegar al establecimiento inmediatamente.
+
+Comprueba que teléfono, dirección e indicaciones sean fáciles de encontrar y pulsar desde una pantalla pequeña.
+
+## Responde a reseñas
+
+Una respuesta profesional demuestra atención tanto a quien escribió como a futuros clientes.
+
+Evita discusiones públicas y no compartas datos personales. Si una incidencia necesita detalles, ofrece un canal privado.
+
+## Mide por acciones
+
+Visibilidad e impresiones aportan contexto, pero observa también llamadas, visitas a la web y solicitudes.
+
+Relaciona los cambios de la ficha con resultados para distinguir mejoras reales de fluctuaciones normales.
+
+## Mantén una revisión periódica
+
+Comprueba cada pocos meses datos, fotografías, horarios y enlaces.
+
+La guía [Google My Business para negocios locales](/google-my-business-para-negocios-locales) profundiza en la gestión de la ficha.
+
+El SEO local se construye con consistencia. Cuando toda la información coincide y la web responde bien a una búsqueda cercana, resulta más fácil que el usuario pase de encontrarte a contactar.

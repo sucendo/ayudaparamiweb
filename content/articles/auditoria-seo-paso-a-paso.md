@@ -1,7 +1,7 @@
 ---
 title: "Auditoría SEO paso a paso"
-description: "Cómo realizar una auditoría SEO paso a paso: rastreo, indexación, estados, canonicals, contenido, rendimiento y priorización."
-excerpt: "Un método práctico para encontrar problemas SEO y convertirlos en una lista de acciones priorizada."
+description: "Cómo hacer una auditoría SEO en 2019 revisando rastreo, indexación, estados HTTP, canonicals, contenido, móvil, HTTPS, enlaces y datos de Search Console."
+excerpt: "Una auditoría SEO útil conecta cada problema con una URL, una evidencia y una prioridad antes de empezar a aplicar cambios."
 author: "Sucender"
 canonical: "/auditoria-seo-paso-a-paso"
 category: "tutoriales"
@@ -78,3 +78,64 @@ Una lista práctica puede dividirse en:
 Una auditoría no termina al entregar un documento. Vuelve a rastrear la web después de implementar cambios y comprueba que no aparecieron nuevos errores.
 
 El resultado útil es una web más fácil de rastrear, entender y utilizar, no un informe con más páginas.
+## 9. Revisa el sitemap con criterio
+
+El sitemap debería contener URLs que realmente quieres facilitar a los buscadores.
+
+Busca redirecciones, errores, páginas bloqueadas o URLs duplicadas. Un sitemap no debe convertirse en un inventario de todo lo que puede generar el servidor.
+
+## 10. Comprueba robots.txt con cuidado
+
+Una regla demasiado amplia puede impedir el rastreo de secciones importantes.
+
+Antes de modificarlo, identifica qué rutas afecta y recuerda que bloquear rastreo no es lo mismo que eliminar una página del índice.
+
+## 11. Revisa parámetros y filtros
+
+En tiendas y catálogos, ordenaciones, filtros y parámetros pueden crear muchas URLs parecidas.
+
+Comprueba cuáles están enlazadas, cuáles reciben rastreo y si existe una versión principal clara. No bloquees todas las variantes sin entender primero para qué sirven.
+
+## 12. Analiza páginas con poco contenido útil
+
+No midas calidad únicamente por número de palabras. Busca URLs que apenas aportan información, páginas duplicadas o listados vacíos.
+
+Decide si deben mejorarse, combinarse o dejar de ser indexables según su función real.
+
+## 13. Revisa las páginas que ya reciben impresiones
+
+Search Console puede mostrar URLs que aparecen en resultados aunque todavía reciban pocos clics.
+
+Estas páginas son buenas candidatas para revisar título, contenido y enlazado antes de crear nuevas URLs sobre el mismo tema.
+
+## 14. Comprueba la arquitectura
+
+Dibuja cómo se relacionan portada, categorías, servicios y contenidos.
+
+Las páginas importantes deberían poder alcanzarse mediante enlaces normales y no depender únicamente del sitemap o del buscador interno.
+
+## 15. Busca enlaces internos hacia errores
+
+Un 404 puede existir por muchas razones, pero si tu propia web sigue enlazándolo estás enviando usuarios y rastreadores a un callejón sin salida.
+
+Corrige el enlace o redirígelo cuando exista un destino equivalente.
+
+## 16. Revisa imágenes
+
+Comprueba tamaño, peso y texto alternativo cuando la imagen transmite información.
+
+No utilices el atributo alt como una lista de palabras clave. Debe describir la función o el contenido de la imagen.
+
+## 17. Documenta cada cambio
+
+Anota URL, problema, acción y fecha. Si modificas varias cosas a la vez sin registro, será difícil saber qué produjo el resultado.
+
+Conserva una exportación del rastreo inicial para comparar después.
+
+## 18. Haz una segunda pasada
+
+Cuando se implementen correcciones, repite las pruebas principales y comprueba que no se crearon nuevos errores.
+
+Puedes ampliar la parte de enlaces con [enlazado interno para SEO](/enlazado-interno-para-seo).
+
+Una auditoría SEO no termina cuando se detecta un problema. Termina cuando la corrección se verifica y el equipo puede explicar por qué se realizó.

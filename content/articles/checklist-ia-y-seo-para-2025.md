@@ -1,11 +1,11 @@
 ---
-title: "Checklist de IA y SEO: guía práctica"
-description: "Checklist práctico para trabajar IA y SEO con objetivos, fuentes, privacidad, revisión humana, intención, SEO on-page y medición."
-excerpt: "Antes de acelerar producción con IA, conviene definir qué se automatiza, quién revisa y cómo se comprobará que el resultado aporta valor."
+title: "Checklist de IA y SEO para 2025"
+description: "Checklist de IA y SEO para preparar 2025: objetivos, fuentes, privacidad, revisión humana, intención de búsqueda, SEO on-page y medición."
+excerpt: "Qué conviene revisar antes de 2025 para integrar IA en el trabajo SEO sin perder control editorial, calidad ni medición."
 author: "Sucender"
 canonical: "/checklist-ia-y-seo-para-2025"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "IA y SEO"]
+tags: ["SEO", "Estrategia digital", "IA y SEO", "2025"]
 publishedDate: "2024-12-12"
 featuredImage: "/img/articulo/checklist-ia-y-seo-para-2025-featured.svg"
 heroClass: "bg-purple"

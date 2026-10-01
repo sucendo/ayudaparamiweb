@@ -15,7 +15,9 @@ robots: "index,follow"
 <p>Si estás leyendo esto es porque probablemente quieres empezar a programar con Python o consolidar una base que te permita avanzar en backend, automatización, análisis de datos o scripting general. La buena noticia es que Python sigue siendo uno de los mejores puntos de entrada al desarrollo. La mala noticia es que hay demasiados tutoriales superficiales que enseñan sintaxis suelta sin ayudarte a pensar como programador. Esta guía busca precisamente lo contrario: entender los fundamentos y aplicarlos en pequeños problemas reales desde el día uno.</p>
 									<p>Python ofrece una combinación especialmente útil para empezar: legibilidad, ecosistema enorme y versatilidad. Puedes usarlo para crear APIs, automatizar tareas administrativas, analizar ficheros, escribir pruebas o entrenar modelos de machine learning. Sin embargo, para aprovecharlo de verdad necesitas más que memorizar comandos. Necesitas construir criterio: cómo dividir problemas, cómo nombrar variables, cómo validar entrada, cómo depurar y cómo organizar archivos. Ese es el foco de este artículo.</p>
 
-									<h2>1) Entorno de trabajo: empezar ordenado te ahorra semanas</h2>
+									<h2>Entorno y fundamentos</h2>
+
+<h3>1) Entorno de trabajo: empezar ordenado te ahorra semanas</h3>
 									<p>Antes de escribir código, define un entorno limpio. Instala una versión reciente de Python 3 y acostúmbrate a usar entornos virtuales. Evita instalar librerías globales “porque sí”; tarde o temprano tendrás conflictos entre proyectos. También conviene usar un editor con linting y formateo automático.</p>
 									<pre class="line-numbers"><code class="language-bash">python -m venv .venv
 source .venv/bin/activate  # en Windows: .venv\\Scripts\\activate
@@ -23,7 +25,7 @@ python -m pip install --upgrade pip
 pip install ruff black</code></pre>
 									<p>Con solo esto ya tienes una base profesional: entorno aislado, dependencias controladas y herramientas de calidad de código.</p>
 
-									<h2>2) Variables y tipos: claridad antes que trucos</h2>
+									<h3>2) Variables y tipos: claridad antes que trucos</h3>
 									<p>Python es dinámico, pero eso no significa escribir a lo loco. Nombres claros, tipos predecibles y funciones pequeñas hacen una diferencia enorme. Al empezar, evita optimizaciones prematuras: primero código correcto y legible.</p>
 									<pre class="line-numbers"><code class="language-python">nombre = "Lucía"
 edad = 27
@@ -33,7 +35,9 @@ es_activo = True
 print(f"Cliente: {nombre}, edad: {edad}, saldo: {saldo}")</code></pre>
 									<p>Cuando programes para otros (o para tu yo futuro), ese nivel de claridad vale más que cualquier línea “ingeniosa”.</p>
 
-									<h2>3) Condicionales: toma decisiones sin duplicar lógica</h2>
+									<h2>Control de flujo</h2>
+
+<h3>3) Condicionales: toma decisiones sin duplicar lógica</h3>
 									<p>Los condicionales sirven para expresar reglas de negocio. El objetivo no es tener muchos <code>if</code>, sino tener reglas entendibles. Una buena práctica es encapsular validaciones repetidas en funciones.</p>
 									<pre class="line-numbers"><code class="language-python">def puede_comprar(edad, saldo, precio):
     if edad < 18:
@@ -45,7 +49,7 @@ print(f"Cliente: {nombre}, edad: {edad}, saldo: {saldo}")</code></pre>
 ok, msg = puede_comprar(21, 50, 30)
 print(ok, msg)</code></pre>
 
-									<h2>4) Bucles y colecciones: trabajar con datos del mundo real</h2>
+									<h3>4) Bucles y colecciones: trabajar con datos del mundo real</h3>
 									<p>En proyectos reales casi siempre recorrerás listas, diccionarios y tuplas. Aprende a dominar estas estructuras pronto. Lo importante no es solo iterar, sino filtrar, transformar y resumir información.</p>
 									<pre class="line-numbers"><code class="language-python">ventas = [120, 95, 300, 210, 80]
 ventas_altas = [v for v in ventas if v >= 200]
@@ -55,7 +59,9 @@ print("Ventas altas:", ventas_altas)
 print("Promedio:", round(promedio, 2))</code></pre>
 									<p>Este patrón aparece constantemente en automatizaciones y análisis básicos.</p>
 
-									<h2>5) Funciones: la herramienta más rentable para escribir mejor</h2>
+									<h2>Funciones y organización</h2>
+
+<h3>5) Funciones: la herramienta más rentable para escribir mejor</h3>
 									<p>Si una lógica se repite, conviértela en función. Si una función hace demasiadas cosas, divídela. Parece obvio, pero es una de las claves para que tu código no se convierta en una cadena de parches.</p>
 									<pre class="line-numbers"><code class="language-python">def calcular_descuento(precio, porcentaje=10):
     return precio * (1 - porcentaje / 100)
@@ -67,7 +73,7 @@ base = total_carrito([29.99, 19.99, 5.00])
 final = calcular_descuento(base, 15)
 print(base, final)</code></pre>
 
-									<h2>6) Módulos y paquetes: pensar en organización desde temprano</h2>
+									<h3>6) Módulos y paquetes: pensar en organización desde temprano</h3>
 									<p>Cuando todo tu código vive en un solo archivo, al principio parece cómodo. Después se vuelve inestable. Incluso en proyectos pequeños conviene separar por responsabilidad: entrada/salida, reglas de negocio, utilidades, configuración.</p>
 									<pre class="line-numbers"><code class="language-text">mi_proyecto/
   app.py
@@ -79,7 +85,9 @@ print(base, final)</code></pre>
     test_facturacion.py</code></pre>
 									<p>Esta estructura simple ya te prepara para crecer sin sufrir una reescritura completa.</p>
 
-									<h2>7) Manejo de errores: fallar de forma controlada</h2>
+									<h2>Errores y archivos</h2>
+
+<h3>7) Manejo de errores: fallar de forma controlada</h3>
 									<p>Todo programa falla en algún momento. Lo profesional es gestionar esos fallos con mensajes claros y comportamiento predecible. Usa <code>try/except</code> con criterio: captura errores específicos, no todo indiscriminadamente.</p>
 									<pre class="line-numbers"><code class="language-python">def leer_numero(texto):
     try:
@@ -92,7 +100,7 @@ try:
 except ValueError as e:
     print("Error:", e)</code></pre>
 
-									<h2>8) Entrada y salida de archivos</h2>
+									<h3>8) Entrada y salida de archivos</h3>
 									<p>Automatizar ficheros CSV, logs o TXT es una de las tareas más comunes al empezar a trabajar con Python en empresa. Familiarízate con lectura segura y escritura explícita de codificación.</p>
 									<pre class="line-numbers"><code class="language-python">with open("clientes.txt", "w", encoding="utf-8") as f:
     f.write("Ana,ana@email.com\n")
@@ -103,7 +111,9 @@ with open("clientes.txt", "r", encoding="utf-8") as f:
         nombre, email = linea.strip().split(",")
         print(nombre, email)</code></pre>
 
-									<h2>9) Introducción a programación orientada a objetos sin complicaciones</h2>
+									<h2>POO y tipado</h2>
+
+<h3>9) Introducción a programación orientada a objetos sin complicaciones</h3>
 									<p>No necesitas empezar con POO para aprender Python, pero sí debes conocerla cuando modelas entidades del dominio. La clave es usar clases cuando aportan claridad, no por moda.</p>
 									<pre class="line-numbers"><code class="language-python">class Cuenta:
     def __init__(self, titular, saldo=0):
@@ -123,7 +133,7 @@ cuenta.ingresar(50)
 cuenta.retirar(80)
 print(cuenta.saldo)</code></pre>
 
-									<h2>10) Tipado gradual: ayuda a evitar errores tontos</h2>
+									<h3>10) Tipado gradual: ayuda a evitar errores tontos</h3>
 									<p>Python permite tipado opcional, y aprovecharlo es buena inversión, sobre todo en equipos. No hace falta tipar todo al milímetro desde el inicio, pero añadir tipos en funciones críticas mejora autocompletado y reduce errores.</p>
 									<pre class="line-numbers"><code class="language-python">from typing import List
 
@@ -132,7 +142,9 @@ def promedio(notas: List[float]) -> float:
         raise ValueError("La lista no puede estar vacía")
     return sum(notas) / len(notas)</code></pre>
 
-									<h2>11) Testing básico: escribir pruebas desde el principio</h2>
+									<h2>Pruebas y proyecto guiado</h2>
+
+<h3>11) Testing básico: escribir pruebas desde el principio</h3>
 									<p>Una de las mejores decisiones que puedes tomar al aprender Python es incorporar tests pronto. Aunque sean simples, te obligan a diseñar funciones más limpias y te permiten refactorizar con seguridad.</p>
 									<pre class="line-numbers"><code class="language-python">def es_par(n):
     return n % 2 == 0
@@ -141,7 +153,7 @@ def test_es_par():
     assert es_par(2) is True
     assert es_par(3) is False</code></pre>
 
-									<h2>12) Mini proyecto guiado: gestor de tareas en consola</h2>
+									<h3>12) Mini proyecto guiado: gestor de tareas en consola</h3>
 									<p>Vamos a unir conceptos en un mini proyecto funcional. Objetivo: añadir tareas, listar pendientes y marcar completadas. Este ejercicio te enseña estructura, funciones y persistencia básica en JSON.</p>
 									<pre class="line-numbers"><code class="language-python">import json
 from pathlib import Path
@@ -169,15 +181,19 @@ def completar_tarea(task_id):
     guardar_tareas(tareas)</code></pre>
 									<p>Este proyecto, aunque sencillo, ya se parece a problemas reales: leer datos, modificarlos, persistir y volver a consultar.</p>
 
-									<h2>13) Automatización práctica: enviar reportes simples</h2>
+									<h2>Automatización y depuración</h2>
+
+<h3>13) Automatización práctica: enviar reportes simples</h3>
 									<p>Muchos perfiles no empiezan en “desarrollo web”, sino automatizando procesos internos. Python brilla ahí. Desde renombrar archivos hasta generar reportes diarios, ahorrar 20 minutos al día para un equipo entero tiene un impacto enorme.</p>
 									<p>Imagina un script que lea un CSV de ventas y genere un resumen en texto para dirección. Lo importante no es la complejidad técnica, sino la utilidad. Python te permite entregar valor de negocio muy pronto, incluso con conocimientos básicos.</p>
 
-									<h2>14) Depuración: cómo pensar cuando algo no funciona</h2>
+									<h3>14) Depuración: cómo pensar cuando algo no funciona</h3>
 									<p>Aprender a depurar vale más que memorizar sintaxis. Cuando un programa falla, no adivines: reproduce el error, reduce el caso, imprime estados intermedios y valida hipótesis. Usa logs y divide el problema en partes pequeñas. Ese método te hará avanzar más rápido que cualquier curso.</p>
 									<p>Otra recomendación útil: escribe funciones puras cuando puedas. Cuanto menos estado oculto tenga tu código, más fácil será encontrar fallos.</p>
 
-									<h2>15) Buenas prácticas para seguir creciendo después de esta guía</h2>
+									<h2>Buenas prácticas y estructuras avanzadas</h2>
+
+<h3>15) Buenas prácticas para seguir creciendo después de esta guía</h3>
 									<ul>
 										<li>Lee código de otros proyectos, no solo tutoriales.</li>
 										<li>Publica mini scripts en GitHub para consolidar aprendizaje.</li>
@@ -186,7 +202,7 @@ def completar_tarea(task_id):
 										<li>Combina teoría + proyecto real: solo teoría no fija habilidades.</li>
 									</ul>
 
-									<h2>16) Diccionarios y estructuras anidadas: el pan de cada día</h2>
+									<h3>16) Diccionarios y estructuras anidadas: el pan de cada día</h3>
 									<p>En desarrollo real, la mayor parte del tiempo no vas a trabajar con números sueltos, sino con datos estructurados: usuarios, pedidos, productos, permisos, eventos, logs. En Python, el diccionario es una estructura central para representar este tipo de información. Aprender a recorrerlo, transformarlo y validarlo con seguridad es fundamental para construir programas robustos.</p>
 									<p>Un enfoque recomendado es usar funciones pequeñas para cada transformación. Por ejemplo: normalizar nombres, calcular impuestos, filtrar registros inválidos. Si metes todo en un único bucle enorme, el código se vuelve frágil y difícil de probar. En cambio, si descompones tareas en piezas pequeñas, puedes testear cada parte de forma aislada y detectar errores antes.</p>
 									<pre class="line-numbers"><code class="language-python">pedido = {
@@ -204,7 +220,7 @@ def total_pedido(data):
 print(total_pedido(pedido))</code></pre>
 									<p>Este patrón aparece en APIs, ETLs y automatizaciones internas. Si dominas estructuras anidadas, avanzarás mucho más rápido en casi cualquier especialidad.</p>
 
-									<h2>17) Listas de comprensión y funciones de orden superior</h2>
+									<h3>17) Listas de comprensión y funciones de orden superior</h3>
 									<p>Las list comprehensions son una herramienta potentísima en Python, pero también una fuente de código ilegible cuando se abusa. Regla simple: si una expresión tiene demasiadas condiciones o transformaciones, mejor dividirla en varias líneas o usar una función auxiliar. Elegancia y claridad no siempre son lo mismo.</p>
 									<p>Además de comprehensions, es útil conocer <code>map</code>, <code>filter</code> y <code>sorted</code> con funciones <code>lambda</code>. No necesitas usarlas en todos los casos, pero sí entenderlas para leer código de otros proyectos y tomar decisiones informadas.</p>
 									<pre class="line-numbers"><code class="language-python">productos = [
@@ -222,7 +238,9 @@ print(nombres)
 print(ordenados)</code></pre>
 									<p>Este tipo de transformaciones son básicas en reportes, catálogos y pipelines de datos. Lo importante es no convertir una línea “inteligente” en un rompecabezas para el resto del equipo.</p>
 
-									<h2>18) Introducción a APIs con FastAPI (visión de arranque)</h2>
+									<h2>APIs, práctica y cierre</h2>
+
+<h3>18) Introducción a APIs con FastAPI (visión de arranque)</h3>
 									<p>Aunque este artículo está enfocado en fundamentos, merece la pena ver cómo Python se convierte rápidamente en servicio web. FastAPI es una opción moderna y muy productiva para exponer endpoints con validación automática. Incluso si más adelante eliges otro framework, entender este flujo te ayuda a conectar lo aprendido con proyectos backend reales.</p>
 									<pre class="line-numbers"><code class="language-python">from fastapi import FastAPI
 from pydantic import BaseModel
@@ -245,7 +263,7 @@ def crear_nota(nota: Nota):
     return {"ok": True, "nota": nota}</code></pre>
 									<p>Aquí ya aparece algo importante: modelar datos de entrada. Cuanto antes adquieras ese hábito, menos bugs de validación tendrás. Además, trabajar con APIs te enseña a pensar en contratos y no solo en scripts aislados.</p>
 
-									<h2>19) Proyecto de práctica de 7 días (itinerario recomendado)</h2>
+									<h3>19) Proyecto de práctica de 7 días (itinerario recomendado)</h3>
 									<p>Para convertir teoría en habilidad real, necesitas un plan breve y ejecutable. Te propongo este itinerario de una semana, pensado para una hora diaria:</p>
 									<ul>
 										<li><strong>Día 1:</strong> variables, condicionales y funciones con un ejercicio de calculadora de presupuesto.</li>
@@ -258,11 +276,11 @@ def crear_nota(nota: Nota):
 									</ul>
 									<p>Este plan funciona porque está orientado a resultado, no a consumo infinito de teoría. Si repites este ciclo con proyectos diferentes durante un mes, notarás un salto enorme en seguridad técnica.</p>
 
-									<h2>20) Errores típicos de principiantes y cómo evitarlos</h2>
+									<h3>20) Errores típicos de principiantes y cómo evitarlos</h3>
 									<p>El primero es copiar código sin entenderlo. Copiar puede ser útil para arrancar, pero siempre debes explicar con tus palabras qué hace cada bloque. El segundo error es querer aprender diez librerías antes de dominar fundamentos. Es mejor saber bien listas, funciones, errores y archivos que tocar superficialmente cinco frameworks distintos.</p>
 									<p>El tercer error es no pedir feedback. Publica tu código, abre pull requests, pregunta por naming, estructura y legibilidad. Aprender programación en solitario es posible, pero aprender con revisión acelera muchísimo. El cuarto error es abandonar cuando algo falla. Ahí está precisamente el aprendizaje: en entender por qué no funciona, no en que funcione a la primera.</p>
 									<p>Y, por último, evita comparar tu día 20 con el año 10 de otra persona. La progresión en programación es acumulativa. Cada función bien escrita, cada bug resuelto, cada script automatizado suma. No lo notas en 48 horas, pero en 6 meses cambia por completo tu forma de pensar problemas.</p>
 
-									<h2>21) Conclusión</h2>
+									<h3>21) Conclusión</h3>
 									<p>Empezar con Python no va de aprender “todo”, sino de construir una base sólida y funcional. Si dominas variables, funciones, estructuras de datos, manejo de errores y organización de proyecto, ya tienes el 80% del valor para crear herramientas útiles. El resto llega con práctica deliberada y proyectos cada vez más reales.</p>
 									<p>Tu objetivo en esta etapa no debería ser parecer senior en dos semanas. Tu objetivo debería ser escribir código claro, resolver problemas concretos y mejorar un poco cada día. Con esa mentalidad, Python se convierte en una inversión extraordinaria para cualquier perfil técnico o híbrido. Y lo mejor: puedes empezar hoy mismo con un script simple que ahorre tiempo real a alguien de tu equipo.</p>

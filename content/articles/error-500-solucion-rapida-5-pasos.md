@@ -22,13 +22,17 @@ robots: "index,follow"
 <p>El error 500 no suele ser complicado de resolver, pero sí requiere seguir un método y no actuar al azar.</p>
 </blockquote>
 
-<h2>Qué significa realmente el error 500</h2>
+<h2>Entender el error 500</h2>
+
+<h3>Qué significa realmente el error 500</h3>
 
 <p>El error 500 aparece cuando el servidor no puede completar una solicitud por un fallo interno. Puede deberse a problemas en el código, configuraciones incorrectas o conflictos entre distintos componentes de la web.</p>
 
 <p>Lo importante es entender que el error no es la causa, sino el síntoma. Por eso, la solución pasa por encontrar qué está provocando ese fallo.</p>
 
-<h2>Paso 1: desactivar plugins</h2>
+<h2>Primeros pasos de diagnóstico</h2>
+
+<h3>Paso 1: desactivar plugins</h3>
 
 <p>Si trabajas con WordPress, uno de los motivos más comunes es un plugin defectuoso o incompatible. Esto suele ocurrir después de instalar uno nuevo o actualizar alguno existente.</p>
 
@@ -36,13 +40,15 @@ robots: "index,follow"
 
 <p>Después, activa los plugins uno a uno hasta encontrar el que genera el error.</p>
 
-<h2>Paso 2: comprobar el theme</h2>
+<h3>Paso 2: comprobar el theme</h3>
 
 <p>El tema activo también puede ser el origen del problema. Un error en funciones personalizadas, en plantillas o en el código puede provocar un fallo completo.</p>
 
 <p>Prueba a cambiar temporalmente a un theme por defecto. Si la web vuelve a funcionar, ya sabes dónde está el problema.</p>
 
-<h2>Paso 3: revisar el archivo .htaccess</h2>
+<h2>Configuración y recursos</h2>
+
+<h3>Paso 3: revisar el archivo .htaccess</h3>
 
 <p>El archivo <code>.htaccess</code> controla muchas configuraciones del servidor. Si está mal configurado o corrupto, puede generar errores 500.</p>
 
@@ -58,7 +64,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 # END WordPress</code></pre>
 
-<h2>Paso 4: aumentar memoria PHP</h2>
+<h3>Paso 4: aumentar memoria PHP</h3>
 
 <p>Algunas webs fallan porque superan el límite de memoria disponible. Esto es habitual en sitios con muchos plugins o procesos pesados.</p>
 
@@ -68,7 +74,9 @@ RewriteRule . /index.php [L]
 
 <p>Si el problema era este, la web volverá a funcionar correctamente.</p>
 
-<h2>Paso 5: revisar logs del servidor</h2>
+<h2>Logs y causas adicionales</h2>
+
+<h3>Paso 5: revisar logs del servidor</h3>
 
 <p>Este es uno de los pasos más importantes y, a menudo, el más olvidado. Los logs del servidor suelen indicar el error exacto que está ocurriendo.</p>
 
@@ -87,7 +95,7 @@ RewriteRule . /index.php [L]
 <p>Si el error no es evidente, el log del servidor suele tener la respuesta.</p>
 </blockquote>
 
-<h2>Otros posibles motivos del error 500</h2>
+<h3>Otros posibles motivos del error 500</h3>
 
 <p>Aunque los pasos anteriores resuelven la mayoría de casos, también pueden influir otros factores:</p>
 
@@ -100,7 +108,7 @@ RewriteRule . /index.php [L]
 
 <p>Por eso, si el problema persiste, conviene revisar el entorno completo.</p>
 
-<h2>Actuar con orden es clave</h2>
+<h3>Actuar con orden es clave</h3>
 
 <p>Uno de los errores más comunes es tocar varias cosas a la vez sin saber qué ha provocado el fallo. Esto puede complicar mucho el diagnóstico.</p>
 
@@ -108,7 +116,7 @@ RewriteRule . /index.php [L]
 
 <p>Pulsa <kbd>Ctrl</kbd> + <kbd>F</kbd> en los logs o archivos para localizar rápidamente errores repetidos o funciones problemáticas.</p>
 
-<h2>En resumen</h2>
+<h3>En resumen</h3>
 
 <p>El error 500 puede parecer grave, pero en muchos casos tiene solución rápida. Lo importante es entender que es un síntoma y no una causa.</p>
 
@@ -117,49 +125,55 @@ RewriteRule . /index.php [L]
 <p>Si el problema es más complejo o no quieres perder tiempo probando soluciones, puedes <a href="/contacto">contactar conmigo</a> y reviso tu web para solucionarlo lo antes posible.</p>
 
 <p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más guías prácticas para resolver errores y mejorar el rendimiento de tu sitio.</p>
-<h2>Empieza por el cambio más reciente</h2>
+<h2>Orden de reparación</h2>
+
+<h3>Empieza por el cambio más reciente</h3>
 
 <p>Antes de desactivar componentes al azar, pregunta qué ocurrió justo antes del error: actualización, instalación, cambio de PHP, modificación de archivos o migración.</p>
 
 <p>Revertir un cambio conocido suele ser más rápido y seguro que probar diez soluciones distintas.</p>
 
-<h2>Haz una copia antes de reparar</h2>
+<h3>Haz una copia antes de reparar</h3>
 
 <p>Si vas a editar <code>.htaccess</code>, <code>wp-config.php</code> o archivos del tema, conserva una copia del estado actual.</p>
 
 <p>Incluso una web averiada puede contener pedidos, formularios o contenido reciente que no quieres perder.</p>
 
-<h2>No aumentes memoria sin investigar</h2>
+<h2>PHP, permisos y base de datos</h2>
+
+<h3>No aumentes memoria sin investigar</h3>
 
 <p>Subir el límite puede resolver un proceso que necesita más recursos, pero también puede ocultar un plugin que consume memoria de forma anormal.</p>
 
 <p>Si el error desaparece, revisa los logs y el consumo para entender por qué se alcanzó el límite.</p>
 
-<h2>Comprueba la versión de PHP y extensiones</h2>
+<h3>Comprueba la versión de PHP y extensiones</h3>
 
 <p>Un cambio de versión de PHP puede dejar código antiguo incompatible. Revisa si el fallo comenzó después de una modificación en el alojamiento.</p>
 
 <p>No bajes o subas versiones sin comprobar primero qué soportan WordPress, el tema y las extensiones instaladas.</p>
 
-<h2>Permisos de archivos y carpetas</h2>
+<h3>Permisos de archivos y carpetas</h3>
 
 <p>Permisos incorrectos pueden impedir que el servidor lea o ejecute determinados recursos.</p>
 
 <p>Evita la solución rápida de dar permisos excesivos a todo. Corrige propietario y permisos según la configuración recomendada por el alojamiento.</p>
 
-<h2>Base de datos</h2>
+<h3>Base de datos</h3>
 
 <p>Si los logs muestran errores de conexión o consultas, comprueba credenciales, estado del servidor de base de datos y tablas afectadas.</p>
 
 <p>No ejecutes reparaciones destructivas sin una copia reciente.</p>
 
-<h2>Distingue un error de aplicación de una incidencia del hosting</h2>
+<h2>Aplicación, hosting y comprobación final</h2>
+
+<h3>Distingue un error de aplicación de una incidencia del hosting</h3>
 
 <p>Si varias webs del mismo servidor fallan o el panel muestra problemas generales, contacta con el proveedor antes de modificar tu instalación.</p>
 
 <p>Un fallo de infraestructura no se arregla desactivando plugins.</p>
 
-<h2>Comprueba después de recuperar</h2>
+<h3>Comprueba después de recuperar</h3>
 
 <p>Prueba portada, administración, formularios y funciones críticas. Revisa que el log deje de registrar el error.</p>
 

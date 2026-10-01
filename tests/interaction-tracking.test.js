@@ -42,3 +42,13 @@ test('la privacidad explica las nuevas interacciones medidas', () => {
   assert.match(privacy, /30 segundos/);
   assert.match(privacy, /No se envía a Analytics el texto/);
 });
+
+
+test('cada interacción limpia los parámetros opcionales para evitar valores heredados', () => {
+  const tracking = fs.readFileSync(trackingPath, 'utf8');
+  assert.match(tracking, /OPTIONAL_EVENT_PARAMETERS/);
+  assert.match(tracking, /payload\[key\] = ''/);
+  ['tool_name', 'result_type', 'scroll_percent', 'engaged_seconds', 'interaction_source', 'control_id', 'code_language', 'content_block'].forEach((parameter) => {
+    assert.match(tracking, new RegExp("'" + parameter + "'"));
+  });
+});

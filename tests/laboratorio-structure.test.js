@@ -159,3 +159,34 @@ test('el layout de Laboratorio soporta varios enlaces y tabla de resultados', ()
   assert.match(css, /lab-experiment-links/);
   assert.match(css, /lab-results-table/);
 });
+
+
+test('el mapamundi COVID-19 de 2020 usa datos históricos reales y controles temporales', () => {
+  const route = routes.find((item) => item.path === '/laboratorio/covid-19-mapa-mundial-2020');
+  assert.ok(route);
+  assert.equal(route.contentType, 'laboratory');
+
+  const lab = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'covid-19-mapa-mundial-2020.json'), 'utf8'));
+  assert.equal(lab.publishedDate, '2020-12-28');
+  assert.equal(lab.modifiedDate, '2021-01-08');
+  assert.equal(lab.experimentUrl, '/experimento/covid-19-mapa-mundial-2020/');
+  assert.match(lab.hypothesis, /mapamundi/i);
+
+  const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'covid-19-mapa-mundial-2020', 'index.html'), 'utf8');
+  const js = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'covid-19-mapa-mundial-2020', 'app.js'), 'utf8');
+  const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'covid-19-mapa-mundial-2020', 'data', 'covid-2020.json'), 'utf8'));
+
+  const beforeArchiveNote = html.split('<footer class="lab-return">')[0];
+  assert.doesNotMatch(beforeArchiveNote, /experimento/i);
+  assert.match(html, /id="playButton"/);
+  assert.match(html, /id="pauseButton"/);
+  assert.match(html, /id="dateRange"/);
+  assert.match(js, /data-speed/);
+  assert.match(js, /new7/);
+  assert.equal(data.period.start, '2020-01-22');
+  assert.equal(data.period.end, '2020-12-31');
+  assert.equal(data.dates.length, 345);
+  assert.ok(data.countries.length >= 190);
+  assert.equal(data.globalCases[data.globalCases.length - 1], 83778622);
+  assert.equal(data.globalDeaths[data.globalDeaths.length - 1], 1901777);
+});

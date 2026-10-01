@@ -36,6 +36,7 @@ const managedContentRoutes = [
   { path: '/laboratorio/quantum-pacific-group', view: 'content/render', contentType: 'laboratory', contentSlug: 'quantum-pacific-group' },
   { path: '/laboratorio/calculo-posicion-provisional-ope-medico-familia-2019', view: 'content/render', contentType: 'laboratory', contentSlug: 'calculo-posicion-provisional-ope-medico-familia-2019' },
   { path: '/laboratorio/como-descubre-google-pagina-nueva-2019', view: 'content/render', contentType: 'laboratory', contentSlug: 'como-descubre-google-pagina-nueva-2019' },
+  { path: '/laboratorio/covid-19-mapa-mundial-2020', view: 'content/render', contentType: 'laboratory', contentSlug: 'covid-19-mapa-mundial-2020' },
 ];
 
 const staticRoutes = [
@@ -66,6 +67,7 @@ const staticRoutes = [
   { path: '/experimento/indexacion-google-2019/meta-description-seo', view: 'standalone', catalog: false, staticOnly: true },
   { path: '/experimento/indexacion-google-2019/enlaces-internos-seo', view: 'standalone', catalog: false, staticOnly: true },
   { path: '/experimento/indexacion-google-2019/pagina-web-rapida', view: 'standalone', catalog: false, staticOnly: true },
+  { path: '/experimento/covid-19-mapa-mundial-2020', view: 'standalone', catalog: false, staticOnly: true },
   { path: '/contador-caracteres-seo', view: 'tools/0002-contador-caracteres-seo' },
   { path: '/conversor-binario', view: 'tools/0001-conversor-binario' },
 ];

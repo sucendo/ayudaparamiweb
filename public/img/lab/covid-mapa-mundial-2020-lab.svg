@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Mapamundi de la expansión de la COVID-19 en 2020">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#eaf6ff"/><stop offset="1" stop-color="#dcecff"/></linearGradient></defs>
+<rect width="1200" height="630" rx="28" fill="url(#g)"/>
+<rect x="70" y="75" width="1060" height="470" rx="26" fill="#0c1824"/>
+<g fill="#21384a" stroke="#44647c" stroke-width="3" opacity=".95">
+<path d="M135 220l70-52 94-10 62 39-30 52-62 20-22 54-78-4-39-42z"/>
+<path d="M316 353l56 28 24 58-35 88-42-17-15-88z"/>
+<path d="M470 180l92-24 74 21 37 41-48 27-44-11-47 44-67-25-28-39z"/>
+<path d="M565 290l67 7 57 52-12 113-67 45-42-67-25-96z"/>
+<path d="M675 176l142-18 121 33 84 66-46 49-86-5-62 36-79-13-42-58-63-35z"/>
+<path d="M924 398l70 8 37 45-28 39-72 2-35-43z"/>
+</g>
+<g fill="#1678f2" opacity=".62">
+<circle cx="315" cy="245" r="42"/><circle cx="565" cy="232" r="26"/><circle cx="665" cy="260" r="48"/><circle cx="814" cy="301" r="34"/><circle cx="395" cy="415" r="28"/><circle cx="918" cy="432" r="15"/>
+</g>
+<g fill="#ff4e6a" opacity=".76">
+<circle cx="282" cy="230" r="12"/><circle cx="579" cy="217" r="15"/><circle cx="696" cy="250" r="18"/><circle cx="835" cy="289" r="13"/>
+</g>
+<rect x="125" y="495" width="950" height="9" rx="5" fill="#2c4355"/>
+<rect x="125" y="495" width="716" height="9" rx="5" fill="#1678f2"/>
+<circle cx="841" cy="500" r="17" fill="#fff" stroke="#1678f2" stroke-width="6"/>
+<rect x="132" y="118" width="160" height="42" rx="9" fill="#1678f2"/>
+<text x="163" y="146" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#fff">▶ PLAY 2020</text>
+<text x="890" y="148" font-family="Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">31 DIC 2020</text>
+<text x="125" y="574" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#334954">COVID-19 · evolución mundial</text>
+</svg>

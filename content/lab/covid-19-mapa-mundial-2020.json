@@ -1,0 +1,134 @@
+{
+  "title": "Un año de pandemia en movimiento: mapamundi de la expansión de la COVID-19",
+  "description": "Una visualización temporal con datos reales para comprobar si ver la pandemia avanzar día a día permitía entender mejor el desplazamiento de las olas que una colección de cifras estáticas.",
+  "author": "Sucender",
+  "canonical": "/laboratorio/covid-19-mapa-mundial-2020",
+  "category": "laboratorio",
+  "tags": [
+    "Laboratorio",
+    "COVID-19",
+    "Visualización de datos",
+    "Mapas",
+    "JavaScript",
+    "Datos",
+    "Experimentos"
+  ],
+  "publishedDate": "2020-12-28",
+  "modifiedDate": "2021-01-08",
+  "featuredImage": "/img/lab/covid-mapa-mundial-2020-lab.svg",
+  "themeColor": "#1678f2",
+  "labToneClass": "ct-blue",
+  "status": "Finalizado · datos históricos",
+  "hypothesis": "Si convertimos las cifras diarias en una animación sobre un mapamundi, ¿será más fácil percibir cómo cambia el centro de la pandemia y distinguir las distintas olas a lo largo de 2020?",
+  "sections": [
+    {
+      "title": "El motivo",
+      "paragraphs": [
+        "Durante 2020 las cifras de casos y fallecidos aparecían cada día en titulares, tablas y contadores. El problema era que esos números explicaban muy bien cuánto estaba ocurriendo, pero bastante peor dónde se estaba desplazando el problema con el paso de las semanas.",
+        "Quise probar si una visualización sencilla —un mapa, una fecha y una línea temporal— podía convertir cientos de actualizaciones diarias en una secuencia comprensible."
+      ]
+    },
+    {
+      "title": "La idea",
+      "paragraphs": [
+        "La propuesta era recorrer 2020 día a día. Cada país aparece sobre el mapa con un círculo cuyo tamaño cambia según la métrica seleccionada. La barra temporal permite avanzar manualmente o reproducir el año con Play y Pausa.",
+        "Además de los casos acumulados y los fallecidos, añadí una vista de nuevos casos basada en la media de los últimos siete días. Esa vista evita que el mapa quede dominado para siempre por los países que acumularon muchos casos al principio y permite observar mejor cómo se desplaza la actividad."
+      ]
+    },
+    {
+      "title": "Cómo lo desarrollé",
+      "paragraphs": [
+        "Partí de las series temporales globales del repositorio COVID-19 de Johns Hopkins University CSSE. Para esta versión he congelado únicamente el periodo comprendido entre el 22 de enero y el 31 de diciembre de 2020 y he agregado las filas provinciales cuando un país aparecía dividido en varias entradas.",
+        "El mapa utiliza geometrías simplificadas de Natural Earth. Todo queda guardado dentro de la propia carpeta de la visualización: HTML, CSS, JavaScript, mapa y datos. No depende de una API externa para seguir funcionando."
+      ],
+      "steps": [
+        "Cargar los acumulados diarios de casos confirmados y fallecidos.",
+        "Agrupar las filas por país y conservar una coordenada representativa para cada uno.",
+        "Calcular en el navegador la media diaria de nuevos casos de los siete días anteriores.",
+        "Dibujar el mapamundi sobre canvas y superponer círculos proporcionales a la métrica elegida.",
+        "Sincronizar mapa, fecha, totales mundiales y ranking de países con la posición de la barra temporal.",
+        "Añadir reproducción automática, pausa y velocidades 1×, 2× y 4×."
+      ]
+    },
+    {
+      "title": "Qué esperaba que ocurriera",
+      "paragraphs": [
+        "Esperaba que la vista acumulada mostrara bien el crecimiento total, pero que al cabo de unos meses perdiera capacidad para explicar dónde estaba creciendo más deprisa la pandemia.",
+        "La hipótesis era que la vista de nuevos casos suavizados a siete días sería la más útil para percibir el cambio geográfico: primero Asia, después Europa, más tarde América y, en la segunda mitad del año, varias olas superpuestas."
+      ]
+    },
+    {
+      "title": "Qué muestran los datos",
+      "paragraphs": [
+        "La secuencia confirmó bastante bien esa expectativa. El 15 de marzo de 2020 Italia era el país con mayor media diaria de nuevos casos entre los siete días anteriores; un mes después, el 15 de abril, Estados Unidos dominaba claramente esa métrica. A mediados de julio Estados Unidos, Brasil e India concentraban gran parte del crecimiento diario.",
+        "El 15 de octubre India y Estados Unidos encabezaban la media de nuevos casos, mientras Europa volvía a crecer con fuerza. Al cerrar el año, Estados Unidos volvía a destacar con diferencia en el ritmo de nuevos casos."
+      ],
+      "table": {
+        "headers": [
+          "Fecha",
+          "Casos acumulados mundiales",
+          "Fallecidos acumulados",
+          "País con mayor media de nuevos casos (7 días)"
+        ],
+        "rows": [
+          [
+            "15/03/2020",
+            "168.598",
+            "6.557",
+            "Italia"
+          ],
+          [
+            "15/04/2020",
+            "2.082.482",
+            "153.088",
+            "Estados Unidos"
+          ],
+          [
+            "15/07/2020",
+            "13.575.706",
+            "630.511",
+            "Estados Unidos"
+          ],
+          [
+            "15/10/2020",
+            "38.978.760",
+            "1.166.100",
+            "India"
+          ],
+          [
+            "31/12/2020",
+            "83.778.622",
+            "1.901.777",
+            "Estados Unidos"
+          ]
+        ]
+      }
+    }
+  ],
+  "experimentUrl": "/experimento/covid-19-mapa-mundial-2020/",
+  "experimentTitle": "COVID-19 · Evolución mundial 2020",
+  "experimentDescription": "Abre el mapamundi, mueve la barra temporal o pulsa Play para recorrer los datos diarios desde enero hasta diciembre de 2020.",
+  "experimentLabel": "Abrir mapamundi",
+  "resultsSections": [
+    {
+      "title": "El resultado",
+      "paragraphs": [
+        "El mapa confirmó que una cifra acumulada y una animación temporal responden a preguntas distintas. Los acumulados son útiles para entender el tamaño total, pero visualmente conservan durante todo el año el peso de lo ocurrido meses atrás.",
+        "La media de nuevos casos de siete días resultó mucho más expresiva para seguir el movimiento de las olas. Al reproducir el año se perciben cambios de protagonismo que en una tabla de totales quedan mucho más escondidos."
+      ]
+    },
+    {
+      "title": "La experiencia",
+      "paragraphs": [
+        "La parte más delicada no fue animar el mapa, sino decidir qué representar. Un círculo enorme puede llamar mucho la atención y, sin contexto, dar una impresión equivocada. Por eso mantuve disponibles varias métricas, los valores exactos al pasar por cada país y un ranking para la fecha seleccionada.",
+        "También quedó claro que los casos confirmados no son una medida idéntica entre países: cambian las estrategias de pruebas, las definiciones y los retrasos de notificación. La visualización sirve para explorar los datos reportados, no para convertirlos en una medida perfecta de todas las infecciones reales."
+      ]
+    },
+    {
+      "title": "Actualización al cerrar 2020",
+      "paragraphs": [
+        "El 8 de enero de 2021 actualicé la visualización para dejar completo el periodo hasta el 31 de diciembre. El cierre anual reforzó la idea inicial: la utilidad del mapa estaba menos en contemplar el total final que en poder retroceder y ver cómo ese total se había ido construyendo en lugares distintos y en momentos distintos."
+      ]
+    }
+  ]
+}

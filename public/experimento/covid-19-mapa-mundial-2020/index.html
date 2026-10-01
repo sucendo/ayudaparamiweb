@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#08131e">
+  <title>COVID-19 · Evolución mundial 2020</title>
+  <meta name="description" content="Mapamundi interactivo de la evolución de casos confirmados y fallecidos por COVID-19 durante 2020, con reproducción temporal día a día.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="covid-app">
+    <header class="topbar">
+      <div>
+        <span class="kicker">DATOS MUNDIALES · 2020</span>
+        <h1>COVID-19 · Evolución mundial</h1>
+      </div>
+      <div class="date-box">
+        <span id="dateLabel">22 ENE 2020</span>
+        <small>Día <b id="dayNumber">1</b> de <b id="dayTotal">345</b></small>
+      </div>
+    </header>
+
+    <section class="dashboard" aria-label="Visualización mundial COVID-19">
+      <div class="map-card">
+        <canvas id="worldCanvas" aria-label="Mapamundi de casos COVID-19"></canvas>
+        <div id="tooltip" class="tooltip" hidden></div>
+        <div class="legend">
+          <span><i class="legend-dot"></i>Tamaño relativo para la fecha seleccionada</span>
+          <span id="legendMetric">Casos acumulados</span>
+        </div>
+      </div>
+
+      <aside class="side-panel">
+        <div class="global-stats">
+          <div><span>Casos acumulados</span><strong id="globalCases">0</strong></div>
+          <div><span>Fallecidos acumulados</span><strong id="globalDeaths">0</strong></div>
+          <div><span>Nuevos casos · media 7 días</span><strong id="globalNew">0</strong></div>
+        </div>
+
+        <div class="metric-group" role="group" aria-label="Métrica del mapa">
+          <button type="button" class="is-active" data-metric="cases">Casos</button>
+          <button type="button" data-metric="new7">Nuevos · 7d</button>
+          <button type="button" data-metric="deaths">Fallecidos</button>
+        </div>
+
+        <section class="ranking">
+          <div class="ranking-head">
+            <h2>Países destacados</h2>
+            <span id="rankingMetric">Casos acumulados</span>
+          </div>
+          <ol id="rankingList"></ol>
+        </section>
+      </aside>
+    </section>
+
+    <section class="timeline" aria-label="Línea temporal">
+      <div class="timeline-controls">
+        <button id="playButton" type="button" class="play">▶ <span>Play</span></button>
+        <button id="pauseButton" type="button">❚❚ <span>Pausa</span></button>
+        <div class="speed" role="group" aria-label="Velocidad">
+          <button type="button" class="is-active" data-speed="1">1×</button>
+          <button type="button" data-speed="2">2×</button>
+          <button type="button" data-speed="4">4×</button>
+        </div>
+      </div>
+      <input id="dateRange" type="range" min="0" max="344" value="0" step="1" aria-label="Fecha">
+      <div class="timeline-labels"><span>22 ENE</span><span>MAR</span><span>MAY</span><span>JUL</span><span>SEP</span><span>NOV</span><span>31 DIC</span></div>
+    </section>
+
+    <section class="data-note">
+      <h2>Sobre los datos</h2>
+      <p>La visualización utiliza las series temporales históricas de casos confirmados y fallecidos del <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University CSSE COVID-19 Data Repository</a>, procesadas únicamente para el periodo 22/01/2020–31/12/2020. Las fronteras del mapa proceden de <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a>.</p>
+      <p>Los datos representan casos y fallecidos reportados. Las estrategias de pruebas, definiciones y tiempos de notificación no fueron iguales en todos los países.</p>
+    </section>
+
+    <footer class="lab-return">
+      <p><strong>Nota de archivo.</strong> Esta visualización se conserva junto con la explicación de cómo se construyó y qué aprendimos al utilizarla.</p>
+      <a href="../../laboratorio/covid-19-mapa-mundial-2020/">Ver el artículo del Laboratorio →</a>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

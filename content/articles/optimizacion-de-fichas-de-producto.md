@@ -7,6 +7,7 @@ canonical: "/optimizacion-de-fichas-de-producto"
 category: "tutoriales"
 tags: ["Ecommerce", "SEO", "Fichas de producto"]
 publishedDate: "2022-11-10"
+modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/optimizacion-de-fichas-de-producto-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"
@@ -45,3 +46,52 @@ Cuando existen muchas variantes muy parecidas, decide si necesitan URLs independ
 ## Mide más que visitas
 
 Observa añadir al carrito, compras, búsquedas internas, abandono y consultas al soporte. Esos datos ayudan a detectar qué información falta en la ficha.
+## Responde las dudas que frenan la compra
+
+Una buena ficha anticipa preguntas. Dependiendo del producto, puede ser importante explicar compatibilidad, mantenimiento, contenido de la caja, garantía comercial, instalación, tallaje o condiciones de devolución.
+
+Para descubrir qué falta, revisa preguntas recibidas por correo, chat o teléfono. Si muchas personas preguntan lo mismo antes de comprar, la ficha probablemente debería responderlo de forma visible.
+
+## Facilita la comparación
+
+En catálogos amplios, el usuario no quiere leer textos largos para descubrir una diferencia básica. Presenta los atributos comparables con nombres consistentes y unidades homogéneas.
+
+Si un modelo mide la pantalla en pulgadas y otro solo muestra centímetros, o si unas fichas indican peso y otras no, comparar se vuelve más difícil. La calidad del dato de catálogo es una parte importante de la experiencia.
+
+## Trabaja variantes sin multiplicar problemas
+
+Tallas, colores o capacidades pueden gestionarse como variantes de una misma ficha cuando comparten la intención principal. Comprueba que cambiar una variante actualiza correctamente precio, imagen, referencia y disponibilidad.
+
+Si determinadas variantes tienen demanda propia y una URL independiente aporta valor, la decisión puede ser distinta. Lo importante es no generar cientos de páginas casi idénticas de forma accidental.
+
+## Cuida la información comercial crítica
+
+Precio, impuestos cuando correspondan, disponibilidad, entrega y costes adicionales no deberían aparecer como sorpresas al final del proceso. Una ficha puede atraer mucho tráfico y aun así convertir mal si la información decisiva está oculta o llega demasiado tarde.
+
+Revisa la ficha desde un móvil y simula una compra real. Es una forma sencilla de detectar botones fuera de pantalla, selectores incómodos o información que solo resulta clara en escritorio.
+
+## Añade contenido propio con criterio
+
+El contenido único no significa redactar un ensayo para cada producto. Una explicación breve basada en experiencia real puede ser más útil que varios párrafos genéricos. Puedes añadir recomendaciones de uso, diferencias frente a modelos próximos o respuestas a dudas habituales.
+
+Para productos técnicos, una tabla bien estructurada y una explicación de compatibilidad suelen aportar más que repetir palabras clave.
+
+## Gestiona productos sin stock y retirados
+
+Distingue entre una falta temporal y una retirada definitiva. Si el producto volverá, mantener la ficha puede permitir conservar información, enlaces y demanda mientras ofreces una alternativa.
+
+Si no volverá y existe un sustituto claramente equivalente, una redirección puede tener sentido. Cuando no existe sustituto, eliminar o mantener la página informativa dependerá de si sigue siendo útil para usuarios y buscadores.
+
+## Refuerza la confianza sin sobrecargar
+
+Reseñas verificables, información de empresa, condiciones claras y vías de contacto ayudan a reducir incertidumbre. Evita añadir sellos o mensajes genéricos que ocupan espacio sin explicar nada.
+
+La confianza también se construye con detalles pequeños: imágenes que corresponden al producto real, características consistentes y ausencia de errores entre ficha, carrito y proceso de pago.
+
+## Revisa las fichas como un conjunto
+
+No optimices únicamente los productos que más venden. Agrupa las fichas por plantilla, categoría o tipo de problema y busca patrones. Si muchas tienen imágenes pesadas, datos incompletos o títulos idénticos, probablemente convenga corregir la fuente o la plantilla.
+
+Puedes complementar este trabajo con [SEO para tiendas online](/seo-para-tiendas-online) y [SEO para categorías de ecommerce](/seo-para-categorias-de-ecommerce), que cubren la arquitectura alrededor de las fichas.
+
+Una ficha optimizada no intenta convencer con más texto del necesario. Su objetivo es que el producto sea fácil de encontrar, entender, comparar y comprar sin dudas evitables.

@@ -6,6 +6,7 @@ canonical: "/wordpress-o-desarrollo-a-medida"
 category: "tutoriales"
 tags: ["WordPress", "Desarrollo web", "CMS"]
 publishedDate: "2020-01-16"
+modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/wordpress-o-desarrollo-a-medida-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"
@@ -41,3 +42,46 @@ Si el proyecto requiere sustituir gran parte del funcionamiento normal del CMS, 
 ## Decide a partir de requisitos
 
 Haz una lista de funciones imprescindibles, integraciones, usuarios, necesidades de contenido, rendimiento y crecimiento esperado. Después compara qué opción resuelve esos requisitos con menos complejidad a medio plazo.
+## Compara requisitos antes de comparar tecnologías
+
+Empieza por describir qué debe hacer la web durante los próximos años. Número de tipos de contenido, usuarios internos, idiomas, formularios, integraciones, búsquedas, áreas privadas y procesos de publicación son datos más útiles que una preferencia inicial por una plataforma.
+
+Separa además lo imprescindible de lo deseable. Si una función poco importante obliga a construir una arquitectura mucho más compleja, quizá convenga aplazarla o resolverla de otra manera.
+
+## WordPress ofrece velocidad cuando el problema ya está resuelto
+
+En proyectos de contenidos, webs corporativas y muchas tiendas, WordPress permite aprovechar un ecosistema maduro de temas y extensiones. Eso reduce el tiempo necesario para crear funciones comunes como formularios, SEO básico, copias o edición de páginas.
+
+La ventaja desaparece cuando se instalan extensiones sin criterio. Dos plugins pueden intentar resolver lo mismo, cargar recursos innecesarios o dejar de ser compatibles después de una actualización. Mantener una lista corta y justificada suele ser mejor que instalar una extensión para cada detalle.
+
+## Un desarrollo a medida exige definir más cosas
+
+Cuando no existe un CMS que encaje, el desarrollo propio ofrece libertad, pero también obliga a decidir autenticación, permisos, edición, despliegue, copias, seguridad y mantenimiento.
+
+Esa libertad tiene valor si el proyecto necesita procesos singulares. Si solo se quiere publicar páginas, noticias y formularios, construir desde cero funciones que un CMS ya resuelve puede aumentar coste sin aportar una ventaja proporcional.
+
+## Piensa en las integraciones desde el principio
+
+Conectar CRM, ERP, sistemas de reservas, catálogos o servicios externos puede cambiar la decisión. En WordPress, una integración sencilla puede resolverse con una extensión o una pequeña personalización. Una integración profunda puede requerir código propio de todos modos.
+
+Antes de elegir, comprueba qué datos entran y salen, con qué frecuencia y qué ocurre si el servicio externo falla. La tecnología principal debe convivir con esos procesos sin convertirse en un conjunto de parches.
+
+## Rendimiento y seguridad dependen de la implementación
+
+Ni WordPress es necesariamente lento ni un desarrollo a medida es automáticamente rápido. Plantillas, consultas, imágenes, caché, alojamiento y código influyen mucho más que la etiqueta de la plataforma.
+
+Lo mismo ocurre con la seguridad. WordPress requiere mantener núcleo, temas y plugins actualizados. Un desarrollo propio exige que el equipo detecte y corrija vulnerabilidades de su propio código y dependencias. En ambos casos hacen falta copias, control de accesos y procedimientos de actualización.
+
+## Valora la salida futura
+
+Pregunta qué pasaría si dentro de tres años necesitas cambiar de proveedor o plataforma. ¿Puedes exportar contenidos? ¿Está documentado el código? ¿Las licencias permiten seguir usando componentes? ¿Hay más profesionales capaces de mantener la solución?
+
+El coste de salida rara vez aparece en el presupuesto inicial, pero importa cuando el proyecto crece o cambia de equipo.
+
+## Una matriz sencilla ayuda a decidir
+
+Puntúa cada opción según edición de contenidos, funciones específicas, integraciones, plazo, presupuesto, mantenimiento y disponibilidad de perfiles técnicos. No necesitas una fórmula perfecta: el objetivo es hacer visibles los compromisos.
+
+Si tu prioridad es publicar y gestionar contenidos con rapidez, WordPress suele partir con ventaja. Si el valor del proyecto está en una lógica de negocio muy específica, un desarrollo a medida puede justificar su mayor esfuerzo inicial.
+
+Antes de decidir, también puedes revisar [cómo crear una página web](/como-crear-una-pagina-web) y [seguridad básica en WordPress](/seguridad-basica-en-wordpress). La mejor elección es la que resuelve los requisitos con una complejidad que el equipo pueda mantener.

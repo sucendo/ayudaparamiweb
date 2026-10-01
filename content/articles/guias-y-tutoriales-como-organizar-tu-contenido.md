@@ -7,6 +7,7 @@ canonical: "/guias-y-tutoriales-como-organizar-tu-contenido"
 category: "tutoriales"
 tags: ["Contenidos", "SEO", "Arquitectura web"]
 publishedDate: "2023-06-08"
+modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/guias-y-tutoriales-como-organizar-tu-contenido-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"
@@ -41,3 +42,52 @@ Antes de crear un artículo nuevo, revisa si debería ampliar uno existente. Con
 ## Mantén un inventario editorial
 
 Una hoja con URL, tema, formato, fecha de revisión y estado permite detectar contenidos obsoletos, huecos y duplicidades. No necesita ser compleja para resultar útil.
+## Diseña recorridos para distintos niveles
+
+No todos los lectores llegan con el mismo conocimiento. Una persona puede necesitar una introducción antes de ejecutar un tutorial, mientras que otra solo busca un paso concreto. La arquitectura debe permitir ambas cosas.
+
+Una guía general puede explicar conceptos y enlazar a tutoriales específicos. Los tutoriales, a su vez, pueden volver a la guía para ofrecer contexto. Esta relación es más útil que una navegación formada únicamente por etiquetas.
+
+## Evita que una categoría se convierta en un cajón
+
+Cuando casi todo termina en la misma categoría, la clasificación deja de ayudar. Revisa periódicamente si existen grupos claros de contenidos que merecen una entrada propia o si, por el contrario, hay categorías con dos artículos que deberían integrarse en otra.
+
+El nombre de la categoría debe resultar comprensible sin conocer la organización interna de la web. Un usuario debería poder anticipar qué encontrará dentro.
+
+## Diferencia intención informativa y tarea práctica
+
+Dos artículos pueden compartir palabras pero resolver necesidades distintas. “Qué es una API” responde a una intención informativa; “cómo consumir una API desde JavaScript” sería un tutorial práctico.
+
+Mantener esa diferencia ayuda a evitar canibalizaciones y a enlazar mejor. La pieza introductoria puede llevar al tutorial y el tutorial puede remitir al concepto cuando necesite explicar una base.
+
+## Crea series solo cuando aporten continuidad
+
+Dividir una guía en muchas partes puede aumentar páginas, pero también obliga al lector a saltar continuamente. Utiliza una serie cuando cada entrega tenga una función propia y pueda consultarse de manera independiente.
+
+Si varias piezas son muy breves y necesitan leerse seguidas, probablemente una única guía bien estructurada sea más cómoda y más sencilla de mantener.
+
+## Mantén fechas y revisiones visibles internamente
+
+Un inventario editorial debería incluir publicación y última revisión. Eso permite priorizar tecnologías cambiantes, tutoriales dependientes de interfaces y contenidos con datos que caducan.
+
+No todos los artículos necesitan actualizarse con la misma frecuencia. Un concepto básico de HTML puede durar años; una guía sobre una herramienta concreta puede necesitar revisión en pocos meses.
+
+## Añade enlaces internos por utilidad
+
+Evita insertar enlaces solo porque comparten una palabra. Pregunta qué necesitaría hacer el lector después. Desde una guía para crear una web tiene sentido enlazar a hosting, HTML o errores frecuentes; desde un tutorial técnico puede ser más útil enlazar a una referencia o diagnóstico.
+
+Un pequeño bloque de “siguiente paso” puede funcionar mejor que una lista larga de contenidos relacionados automáticamente.
+
+## Revisa títulos y descripciones como conjunto
+
+Cuando varias piezas tienen títulos casi iguales, el problema no siempre está en el SEO: también resulta difícil distinguirlas en una lista interna. Haz que cada título explique el alcance concreto.
+
+Las descripciones deben completar esa diferencia. En lugar de repetir el título, pueden indicar qué aprenderá el lector, qué nivel se presupone o qué decisión podrá tomar.
+
+## Un proceso editorial sencillo
+
+Una rutina trimestral puede incluir cuatro preguntas: qué contenidos reciben visitas, cuáles resuelven una intención clara, cuáles se solapan y cuáles están desactualizados. Después decide si mantener, ampliar, fusionar, redirigir o retirar.
+
+Para profundizar en esta revisión, consulta [auditoría de contenidos antes de septiembre](/auditoria-contenidos-antes-de-septiembre) y [clusters de contenido y SEO](/clusters-de-contenido-y-seo).
+
+La organización no se termina al publicar. Una biblioteca útil se construye revisando relaciones, eliminando duplicidades y dejando claro qué pieza sirve para aprender, cuál para ejecutar y cuál para consultar.

@@ -20,8 +20,9 @@ Por eso, en lugar de aplicar soluciones genéricas, lo más efectivo es hacer un
 
 > Optimizar WordPress sin diagnosticar primero es como arreglar un coche sin saber qué está roto.
 
-## Por qué WordPress se vuelve lento con el tiempo
+## Entender el problema
 
+### Por qué WordPress se vuelve lento con el tiempo
 En muchos casos, una web empieza funcionando bien y se va degradando poco a poco. Esto ocurre porque se van acumulando elementos:
 
 - Plugins instalados sin control
@@ -32,8 +33,9 @@ En muchos casos, una web empieza funcionando bien y se va degradando poco a poco
 
 No es un único fallo, sino una suma de pequeñas ineficiencias.
 
-## Fase 1: medir antes de tocar nada
+## Diagnóstico inicial
 
+### Fase 1: medir antes de tocar nada
 Antes de empezar a cambiar cosas, es fundamental medir.
 
 Analiza la web y fíjate en:
@@ -45,8 +47,7 @@ Analiza la web y fíjate en:
 
 Esto te dará una visión general del problema.
 
-## Fase 2: detectar si el problema es del servidor
-
+### Fase 2: detectar si el problema es del servidor
 Una de las primeras preguntas es: ¿la lentitud viene del hosting?
 
 Si el servidor tarda en responder, todo lo demás da igual. Puedes tener la web optimizada, pero si el hosting no responde rápido, la experiencia será mala.
@@ -57,8 +58,9 @@ Indicadores claros:
 - Caídas puntuales
 - Lentitud general en todas las páginas
 
-## Fase 3: analizar plugins
+## Plugins y tema
 
+### Fase 3: analizar plugins
 Los plugins son uno de los mayores focos de problemas.
 
 No se trata solo de cuántos tienes, sino de qué hacen y cómo lo hacen.
@@ -71,8 +73,7 @@ En proyectos reales, es habitual encontrar:
 
 Una prueba muy efectiva es desactivar todos los plugins y activarlos uno a uno.
 
-## Fase 4: revisar el theme
-
+### Fase 4: revisar el theme
 El theme tiene un impacto enorme en el rendimiento.
 
 Muchos temas modernos incluyen:
@@ -89,8 +90,9 @@ Un theme mal optimizado puede ralentizar la web incluso sin plugins.
 - Renderizado lento
 </code></pre>
 
-## Fase 5: imágenes y recursos
+## Recursos y caché
 
+### Fase 5: imágenes y recursos
 Las imágenes suelen ser responsables de gran parte del peso de una web.
 
 Errores comunes:
@@ -101,8 +103,7 @@ Errores comunes:
 
 Optimizar imágenes puede reducir drásticamente los tiempos de carga.
 
-## Fase 6: caché y optimización
-
+### Fase 6: caché y optimización
 La caché es clave para mejorar rendimiento.
 
 Pero no basta con instalar un plugin. Hay que configurarlo correctamente.
@@ -113,8 +114,9 @@ Aspectos importantes:
 - Minificación de archivos
 - Carga diferida (lazy load)
 
-## Fase 7: base de datos
+## Base de datos y terceros
 
+### Fase 7: base de datos
 Con el tiempo, la base de datos se llena de información innecesaria.
 
 - Revisiones antiguas
@@ -123,8 +125,7 @@ Con el tiempo, la base de datos se llena de información innecesaria.
 
 Limpiarla mejora el rendimiento.
 
-## Fase 8: scripts externos
-
+### Fase 8: scripts externos
 Muchos sitios cargan recursos externos:
 
 - Google Analytics
@@ -135,8 +136,9 @@ Cada uno añade tiempo de carga.
 
 > Cuantos más servicios externos, más dependes de terceros para cargar tu web.
 
-## Fase 9: diagnóstico final
+## Cierre del diagnóstico
 
+### Fase 9: diagnóstico final
 Después de revisar todo, debes tener claro:
 
 - Qué está ralentizando la web
@@ -145,8 +147,7 @@ Después de revisar todo, debes tener claro:
 
 No todas las mejoras tienen el mismo impacto.
 
-## En resumen
-
+### En resumen
 WordPress lento no es un problema aislado, sino el resultado de múltiples factores. La clave no está en aplicar soluciones genéricas, sino en hacer un diagnóstico real.
 
 Cuando entiendes el origen del problema, la optimización es mucho más sencilla y efectiva.
@@ -154,62 +155,58 @@ Cuando entiendes el origen del problema, la optimización es mucho más sencilla
 Si tu WordPress va lento y quieres saber exactamente qué está fallando, puedes [contactar conmigo](/contacto) y analizo tu caso para ayudarte a optimizarlo correctamente.
 
 En [Ayuda para mi Web](/) encontrarás más guías prácticas para mejorar el rendimiento de tu web.
-## Compara portada, entrada y administración
+## Comparaciones útiles
 
+### Compara portada, entrada y administración
 No te limites a una única URL. Prueba una página sencilla, una entrada larga y el panel de administración.
 
 Si el backoffice también es lento, base de datos, plugins o servidor pueden tener más peso que las imágenes del tema.
 
-## Primera visita y visitas repetidas
-
+### Primera visita y visitas repetidas
 La caché puede ocultar diferencias importantes. Prueba una carga limpia y después una segunda visita.
 
 Si ambas tardan prácticamente lo mismo, revisa si los recursos estáticos se están reutilizando y si la caché de página está funcionando.
 
-## Desactiva de forma controlada
+## Aislamiento y logs
 
+### Desactiva de forma controlada
 La prueba de plugins debe realizarse con copia reciente y, si es posible, fuera de las horas de mayor tráfico.
 
 Desactiva por grupos o uno a uno y anota el resultado. Después devuelve cada elemento al estado anterior antes de continuar.
 
-## Comprueba procesos que se ejecutan en todas las páginas
-
+### Comprueba procesos que se ejecutan en todas las páginas
 Algunos plugins realizan consultas, llamadas externas o cálculos aunque su función solo sea visible en una sección.
 
 Un plugin pequeño puede tener más impacto que otro mucho mayor si se ejecuta en cada petición.
 
-## Revisa errores PHP y logs
-
+### Revisa errores PHP y logs
 Los avisos repetidos pueden llenar registros y revelar funciones que están fallando.
 
 No muestres depuración detallada a los visitantes. Utiliza los logs del servidor y desactiva la visualización pública cuando termines.
 
-## Imágenes: tamaño antes que compresión
+## Optimización y línea base
 
+### Imágenes: tamaño antes que compresión
 No cargues una imagen de varios miles de píxeles para mostrarla a unos cientos.
 
 Genera tamaños adecuados para la plantilla y comprueba miniaturas. Reducir dimensiones suele aportar más que aplicar compresión extrema a un archivo innecesariamente grande.
 
-## Base de datos con prudencia
-
+### Base de datos con prudencia
 Revisiones, transitorios y datos de plugins pueden acumularse, pero no borres tablas o registros sin conocer su función.
 
 Haz una copia y utiliza procedimientos compatibles con tu versión de WordPress y los plugins instalados.
 
-## Scripts externos
-
+### Scripts externos
 Analítica, publicidad, chats, fuentes y widgets añaden peticiones que no controla completamente tu servidor.
 
 Prueba temporalmente sin elementos secundarios para saber cuánto aportan al tiempo total.
 
-## No persigas solo una puntuación
-
+### No persigas solo una puntuación
 Las herramientas de velocidad ayudan a detectar problemas, pero la experiencia real importa más que alcanzar un número perfecto.
 
 Comprueba cuánto tarda la página en mostrar contenido útil y cuándo puede utilizarse con normalidad.
 
-## Guarda una línea base
-
+### Guarda una línea base
 Anota servidor, página, peso y tiempos antes de empezar. Repite la misma prueba tras cada cambio.
 
 Para una guía general, consulta [cómo mejorar la velocidad de tu web](/como-mejorar-la-velocidad-de-tu-web).

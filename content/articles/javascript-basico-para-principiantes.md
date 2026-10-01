@@ -7,7 +7,6 @@ canonical: "/javascript-basico-para-principiantes"
 category: "tutoriales"
 tags: ["JavaScript", "Programación", "Desarrollo web"]
 publishedDate: "2021-01-14"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/javascript-basico-para-principiantes-featured.svg"
 heroClass: "bg-yellow"
 themeColor: "#f1c40f"

@@ -7,7 +7,6 @@ canonical: "/optimizacion-de-fichas-de-producto"
 category: "tutoriales"
 tags: ["Ecommerce", "SEO", "Fichas de producto"]
 publishedDate: "2022-11-10"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/optimizacion-de-fichas-de-producto-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"

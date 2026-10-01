@@ -1,7 +1,7 @@
 ---
 title: "Cómo planificar una migración web"
-description: "Cómo planificar una migración web con inventario de URLs, redirecciones, pruebas, SEO y plan de reversión."
-excerpt: "Una migración segura se prepara antes del cambio y se verifica de nuevo justo después de publicar."
+description: "Cómo planificar una migración web con inventario de URLs, redirecciones, entorno de pruebas, copias, SEO, lanzamiento, validación y seguimiento."
+excerpt: "Una migración segura documenta lo que cambia, prepara equivalencias y comprueba la nueva versión antes y después de publicarla."
 author: "Sucender"
 canonical: "/como-planificar-una-migracion-web"
 category: "tutoriales"
@@ -61,3 +61,66 @@ También conviene comprobar manualmente las páginas que más negocio o tráfico
 Durante las siguientes semanas observa errores de rastreo, tráfico orgánico y comportamiento de páginas clave. No todos los problemas aparecen el primer día.
 
 Una buena migración no es la que nunca cambia nada, sino la que conoce cada cambio, conserva equivalencias y puede demostrar que la nueva versión mantiene lo que ya funcionaba.
+## Clasifica las URLs por importancia
+
+No todas las páginas requieren el mismo nivel de atención. Identifica cuáles reciben tráfico, enlaces, conversiones o tienen una función comercial importante.
+
+Marca también PDFs, imágenes o recursos que reciben enlaces externos. Una migración puede perder activos valiosos aunque las páginas principales parezcan funcionar.
+
+## Conserva una copia del rastreo anterior
+
+Guarda códigos de respuesta, títulos, H1, canonical, indexabilidad y enlaces internos antes del cambio. Esa información permite comparar de forma objetiva con la nueva versión.
+
+Si algo cae después, podrás comprobar si cambió una redirección, una etiqueta o la profundidad de enlazado.
+
+## Construye el mapa de redirecciones con destino equivalente
+
+Cada URL antigua debe apuntar al contenido que mejor cumple la misma intención. Si una página se ha fusionado, redirige al recurso que la sustituye.
+
+Evita cadenas del tipo antigua → intermedia → nueva. Redirige directamente al destino final siempre que sea posible.
+
+## Comprueba recursos, no solo páginas HTML
+
+CSS, JavaScript, imágenes y fuentes pueden romperse por cambios de rutas o permisos. Revisa consola del navegador y pestaña de red en el entorno de pruebas.
+
+Un error en un recurso común puede afectar a todas las plantillas aunque las URLs respondan con código 200.
+
+## Mantén controlada la indexación del entorno de pruebas
+
+El staging no debería competir con la web pública. Utiliza restricciones de acceso y las medidas adecuadas para evitar que sea indexado.
+
+Antes del lanzamiento, comprueba que esas restricciones no pasan accidentalmente a producción. Es un error sencillo y con consecuencias importantes.
+
+## Prepara una checklist de lanzamiento
+
+Incluye DNS si cambia el dominio, certificados, redirecciones, robots, sitemap, canonicals, analítica, formularios, búsqueda interna y funciones de negocio.
+
+Asigna responsable a cada punto. Una lista sin propietario puede dar una falsa sensación de control.
+
+## Valida muestras de cada tipo de página
+
+No pruebes solo la portada. Revisa categorías, artículos, productos, filtros, formularios y páginas especiales.
+
+Selecciona ejemplos de URLs antiguas y confirma que llegan al destino previsto en un solo salto. Comprueba también páginas que no cambian para detectar regresiones.
+
+## Actualiza enlaces internos al destino final
+
+Aunque una redirección funcione, no conviene mantener enlaces internos apuntando a URLs antiguas. Corrige menús, contenidos y plantillas para enlazar directamente.
+
+Esto reduce saltos, facilita mantenimiento y evita depender indefinidamente de una capa de redirecciones.
+
+## Informa a los equipos implicados
+
+Marketing, atención al cliente y ventas pueden detectar problemas que el equipo técnico no ve. Comunica fecha, alcance y forma de reportar incidencias.
+
+Si cambia una URL utilizada en campañas, firmas o documentos, prepara también esas modificaciones.
+
+## Observa señales durante varias semanas
+
+Rastreo, errores, indexación y tráfico necesitan seguimiento después del día de lanzamiento. Compara por tipos de página y no reacciones a una única variación diaria.
+
+Si aparece un problema, utiliza el inventario anterior para localizar diferencias antes de hacer más cambios simultáneos.
+
+La guía [auditoría SEO paso a paso](/auditoria-seo-paso-a-paso) puede ayudarte a preparar parte de las comprobaciones, y [enlazado interno para SEO](/enlazado-interno-para-seo) resulta útil al revisar rutas internas.
+
+Una migración controlada reduce incertidumbre porque cada URL importante tiene una decisión, cada cambio puede comprobarse y existe una forma clara de volver atrás si algo crítico falla.

@@ -1,19 +1,18 @@
 ---
 title: "Velocidad web y experiencia de página: qué optimizar"
 excerpt: "Una web rápida prioriza contenido útil y controla servidor, peso y scripts antes de perseguir una puntuación aislada."
-description: "Cómo mejorar la velocidad web desde servidor, imágenes, CSS, JavaScript, caché y terceros, con criterios prácticos adecuados al contexto de 2019."
+description: "Cómo mejorar la velocidad web desde servidor, imágenes, CSS, JavaScript, caché, fuentes y recursos de terceros."
 author: "Sucender"
 canonical: "/velocidad-web-y-experiencia-de-pagina"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2019-10-10"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/velocidad-web-y-experiencia-de-pagina-featured.svg"
 heroClass: "bg-red"
 themeColor: "#d25565"
 robots: "index,follow"
 ---
-Una página lenta no solo tarda más: cambia la percepción de calidad y hace más difícil completar una acción. En 2019, mejorar la experiencia de carga pasa por entender qué ocurre desde que el usuario solicita una URL hasta que puede leer e interactuar con ella.
+Una página lenta no solo tarda más: cambia la percepción de calidad y hace más difícil completar una acción. Mejorar la experiencia de carga pasa por entender qué ocurre desde que el usuario solicita una URL hasta que puede leer e interactuar con ella.
 
 ## Empieza por el servidor
 
@@ -74,7 +73,7 @@ Una caché bien configurada puede evitar generar la misma página en cada visita
 
 Comprimir ayuda, pero servir una imagen de 3000 píxeles para un espacio de 600 sigue siendo ineficiente. Ajusta dimensiones y exporta con una calidad razonable.
 
-En 2019 formatos como WebP ya podían ser una opción en determinados navegadores y flujos, pero necesitaban comprobar compatibilidad y alternativas. No dependas de un formato sin revisar cómo se sirve a usuarios que no lo admiten.
+Formatos como WebP pueden ser una opción en determinados navegadores y flujos, pero conviene comprobar compatibilidad y ofrecer alternativas. No dependas de un formato sin revisar cómo se sirve a usuarios que no lo admiten.
 
 ## CSS y JavaScript deben justificar su posición
 
@@ -110,6 +109,6 @@ Guarda una forma de volver atrás. Una mejora de puntuación no compensa perder 
 
 Puedes fijar límites internos para peso de imágenes, número de scripts o tamaño total de una plantilla. El objetivo no es alcanzar una cifra universal, sino evitar que cada nueva función añada peso sin revisión.
 
-Este artículo conserva el contexto de 2019. Conceptos y métricas web han evolucionado después, así que para una visión más reciente conviene consultar [rendimiento web: qué medir](/rendimiento-web-que-medir) y [SEO y Core Web Vitals](/seo-y-core-web-vitals).
+Para seguir profundizando en diagnóstico de rendimiento, puedes revisar [cómo mejorar la velocidad de tu web](/como-mejorar-la-velocidad-de-tu-web) y [responsive design: buenas prácticas](/responsive-design-buenas-practicas).
 
 La mejora más sostenible consiste en medir, localizar el problema principal, corregirlo y volver a probar. Optimizar por intuición suele generar mucho trabajo con poco efecto visible.

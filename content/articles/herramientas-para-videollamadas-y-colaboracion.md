@@ -7,7 +7,6 @@ canonical: "/herramientas-para-videollamadas-y-colaboracion"
 category: "tutoriales"
 tags: ["Colaboración", "Videollamadas", "Productividad"]
 publishedDate: "2020-04-09"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/herramientas-para-videollamadas-y-colaboracion-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"

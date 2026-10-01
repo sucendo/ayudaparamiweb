@@ -7,7 +7,6 @@ canonical: "/estrategias-de-captacion-b2b"
 category: "tutoriales"
 tags: ["B2B", "Marketing digital", "Captación"]
 publishedDate: "2025-07-10"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/estrategias-de-captacion-b2b-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"

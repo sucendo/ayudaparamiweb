@@ -7,7 +7,6 @@ canonical: "/teletrabajo-y-productividad-digital"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2020-03-12"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/teletrabajo-y-productividad-digital-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"

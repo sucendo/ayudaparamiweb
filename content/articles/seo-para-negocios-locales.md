@@ -7,7 +7,6 @@ canonical: "/seo-para-negocios-locales"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2022-07-14"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/seo-para-negocios-locales-featured.svg"
 heroClass: "bg-red"
 themeColor: "#d25565"

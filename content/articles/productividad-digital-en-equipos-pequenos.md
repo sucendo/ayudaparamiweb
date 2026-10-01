@@ -7,7 +7,6 @@ canonical: "/productividad-digital-en-equipos-pequenos"
 category: "tutoriales"
 tags: ["Productividad", "Equipos", "Herramientas digitales"]
 publishedDate: "2022-06-09"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/productividad-digital-en-equipos-pequenos-featured.svg"
 heroClass: "bg-green"
 themeColor: "#58b391"

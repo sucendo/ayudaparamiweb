@@ -1,7 +1,7 @@
 ---
 title: "Qué es una API y para qué sirve"
-description: "Explicación sencilla de qué es una API, cómo se comunican dos sistemas y conceptos básicos como petición, respuesta y autenticación."
-excerpt: "Una API define una forma controlada para que distintas aplicaciones intercambien datos y acciones."
+description: "Qué es una API, cómo se comunican dos sistemas y qué conceptos básicos intervienen: endpoints, métodos HTTP, JSON, autenticación, errores y límites."
+excerpt: "Una API define un contrato para que dos aplicaciones intercambien datos o ejecuten acciones sin acceder directamente a su lógica interna."
 author: "Sucender"
 canonical: "/que-es-una-api-y-para-que-sirve"
 category: "tutoriales"
@@ -62,3 +62,64 @@ También facilitan separar una aplicación en componentes que pueden evolucionar
 Antes de programar, busca ejemplos de autenticación, endpoints, límites y errores. Prueba primero una petición pequeña y comprueba la respuesta antes de construir el flujo completo.
 
 Entender una API consiste en conocer el contrato entre sistemas: qué puedes pedir, cómo debes pedirlo y qué recibirás a cambio.
+## API no significa necesariamente servicio público
+
+Una empresa puede utilizar APIs únicamente entre sus propios sistemas. También puede ofrecer una API a clientes, proveedores o desarrolladores externos.
+
+Lo importante es que exista un contrato claro: qué operaciones están disponibles, qué datos necesita cada petición y qué respuesta puede devolver el sistema.
+
+## Endpoints y recursos
+
+Un endpoint es una dirección concreta de la API. En una aplicación de pedidos puede existir un endpoint para consultar un pedido, otro para crear uno y otro para listar productos.
+
+Una buena API intenta organizar las rutas alrededor de recursos reconocibles. Esto facilita leer la documentación y comprender qué parte del sistema estás utilizando.
+
+## Códigos de estado HTTP
+
+Además de los datos, una respuesta HTTP incluye un código que ayuda a interpretar el resultado. Un código de éxito indica que la petición se ha procesado; otros pueden señalar que falta autenticación, que no existe el recurso o que ha ocurrido un error del servidor.
+
+No ignores estos códigos. Un programa robusto diferencia una respuesta correcta de una situación que debe reintentarse, mostrarse al usuario o registrarse.
+
+## JSON como formato de intercambio
+
+Muchas APIs web utilizan JSON porque permite representar objetos, listas, números y textos de forma sencilla.
+
+Antes de utilizar un campo, comprueba que existe y que tiene el tipo esperado. Una API puede añadir información nueva sin romper compatibilidad, por lo que el cliente no debería depender de un orden rígido de propiedades.
+
+## Claves y tokens
+
+Una clave de API puede identificar la aplicación que realiza la petición. Otros sistemas utilizan tokens que representan un usuario o una sesión.
+
+Nunca publiques secretos en un repositorio abierto ni los incluyas directamente en JavaScript del navegador cuando conceden acceso privado. En esos casos, la llamada debería realizarse desde un entorno seguro controlado por el servidor.
+
+## Límites de uso
+
+Los proveedores pueden limitar cuántas peticiones se realizan por minuto, hora o día. Consulta la documentación y prepara el código para respetar esos límites.
+
+Guardar resultados temporalmente puede reducir peticiones repetidas y acelerar la aplicación. No tiene sentido solicitar el mismo dato en cada carga si apenas cambia.
+
+## Paginación
+
+Cuando una consulta puede devolver miles de elementos, la API suele dividir la respuesta en páginas. El cliente debe recorrerlas de forma controlada.
+
+Lee cómo indica la documentación que existen más resultados. Algunas APIs utilizan número de página, otras cursores o enlaces a la siguiente respuesta.
+
+## Versionado y cambios
+
+Una integración puede durar años. Documenta qué versión utilizas y revisa avisos del proveedor antes de actualizar.
+
+Evita depender de campos no documentados aunque aparezcan en una respuesta. Pueden cambiar sin las mismas garantías que la interfaz pública.
+
+## Diseña pensando en fallos
+
+Una API externa puede estar temporalmente caída. Define qué hará tu aplicación: mostrar un mensaje, utilizar datos recientes guardados o permitir reintentar.
+
+Los tiempos de espera también importan. Una petición que nunca termina puede bloquear una página aunque el resto de la aplicación funcione.
+
+## Prueba una integración paso a paso
+
+Empieza con una petición manual utilizando la documentación. Comprueba autenticación y respuesta antes de escribir toda la lógica.
+
+Después añade validación de errores, límites y registros. Si estás aprendiendo programación, [JavaScript básico para principiantes](/javascript-basico-para-principiantes) y [conceptos básicos de programación](/conceptos-basicos-programacion) pueden ayudarte a entender las piezas que intervienen.
+
+Una API es, sobre todo, un acuerdo entre sistemas. Cuanto mejor conozcas ese acuerdo, más fácil será integrar sin depender de su funcionamiento interno.

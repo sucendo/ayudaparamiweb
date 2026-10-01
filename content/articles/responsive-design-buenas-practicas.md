@@ -6,7 +6,6 @@ canonical: "/responsive-design-buenas-practicas"
 category: "tutoriales"
 tags: ["Responsive design", "CSS", "Diseño web"]
 publishedDate: "2021-06-10"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/responsive-design-buenas-practicas-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"

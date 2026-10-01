@@ -7,7 +7,6 @@ canonical: "/guias-y-tutoriales-como-organizar-tu-contenido"
 category: "tutoriales"
 tags: ["Contenidos", "SEO", "Arquitectura web"]
 publishedDate: "2023-06-08"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/guias-y-tutoriales-como-organizar-tu-contenido-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"

@@ -7,7 +7,6 @@ canonical: "/seo-para-tiendas-online"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2020-07-09"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/seo-para-tiendas-online-featured.svg"
 heroClass: "bg-green"
 themeColor: "#58b391"

@@ -7,7 +7,6 @@ canonical: "/landings-que-convierten"
 category: "tutoriales"
 tags: ["Landing pages", "Conversión", "Marketing digital"]
 publishedDate: "2023-09-14"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/landings-que-convierten-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"

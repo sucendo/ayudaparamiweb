@@ -1,19 +1,18 @@
 ---
-title: "Google Shopping Actions: contexto y aprendizajes"
-description: "Qué planteaba Google Shopping Actions y qué debía valorar una tienda al estudiar este canal: catálogo, feed, operativa, margen y medición."
-excerpt: "Una lectura histórica del programa y de los criterios útiles al evaluar nuevos canales de venta."
+title: "Google Shopping Actions: qué es y cómo puede encajar en un ecommerce"
+description: "Qué es Google Shopping Actions y qué debe valorar una tienda antes de utilizar este canal: catálogo, feed, operativa, margen y medición."
+excerpt: "Qué ofrece Shopping Actions y cómo valorar catálogo, operativa y rentabilidad antes de incorporar el canal."
 author: "Sucender"
 canonical: "/google-shopping-actions"
 category: "tutoriales"
 tags: ["Ecommerce", "Google Shopping", "Marketing digital"]
 publishedDate: "2019-08-21"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/google-shopping-actions-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"
 robots: "index,follow"
 ---
-Google Shopping Actions fue una propuesta orientada a facilitar compras desde distintas superficies de Google y a acercar a los comercios a un modelo de compra más directo. Para entenderla correctamente conviene situarse en el contexto en el que se estaba evaluando, sin mezclarla con productos y decisiones posteriores.
+Google Shopping Actions es una propuesta orientada a facilitar compras desde distintas superficies de Google y a acercar a los comercios a un modelo de compra más directo. Para una tienda online, la clave está en valorar si el canal encaja con su catálogo, márgenes y capacidad operativa.
 
 ## Qué proponía Shopping Actions
 
@@ -38,9 +37,9 @@ Cada canal debe evaluarse según ventas incrementales y margen, no solo por volu
 ## Qué aprendizaje sigue siendo útil
 
 El principal aprendizaje es metodológico: cuando aparece un nuevo canal de venta, primero hay que comprobar encaje, calidad de datos, operativa y medición. Adoptar una novedad solo porque recibe mucha atención puede aumentar complejidad sin mejorar resultados.
-## Cómo era la experiencia en el contexto de 2019
+## Cómo funciona la experiencia de compra
 
-En 2019 Shopping Actions estaba ligado a una experiencia de compra dentro de las superficies de Google. El programa buscaba que el usuario pudiera pasar de descubrir un producto a comprarlo con menos pasos, utilizando un carrito compartido entre determinadas experiencias de Google.
+Shopping Actions está ligado a una experiencia de compra dentro de las superficies de Google. El programa busca que el usuario pueda pasar de descubrir un producto a comprarlo con menos pasos, utilizando un carrito compartido entre determinadas experiencias de Google.
 
 Para el comercio, esto implicaba pensar no solo en visibilidad, sino también en pedido, inventario, envío, devoluciones y atención posterior. El cliente podía percibir la compra como una experiencia integrada, pero el cumplimiento de la promesa comercial seguía dependiendo en gran medida de que el vendedor mantuviera correctamente sus datos y su operativa.
 
@@ -68,10 +67,8 @@ Antes de empezar, establece qué comprobarás durante el periodo de prueba: pedi
 
 Evita atribuir todo crecimiento al programa si al mismo tiempo se han cambiado campañas, precios o promociones. Cuantas más variables cambian a la vez, más difícil es saber qué ha funcionado.
 
-## No extrapoles el programa a productos posteriores
+## Evalúa responsabilidades y costes
 
-Este artículo conserva el contexto de 2019. Google ha modificado después su propuesta de comercio y sus nombres de producto, por lo que no conviene leer Shopping Actions como si fuera idéntico a experiencias posteriores.
-
-La parte útil para cualquier tienda es el método de evaluación: entender exactamente quién cobra, quién atiende, quién controla el dato de producto, qué costes existen y qué indicadores demostrarán que el nuevo canal aporta negocio incremental.
+Antes de participar, conviene entender exactamente quién cobra, quién atiende al cliente, quién controla el dato de producto, qué costes existen y qué indicadores demostrarán que el canal aporta negocio incremental.
 
 Si quieres trabajar la base antes de abrir nuevos canales, revisa [optimización de fichas de producto](/optimizacion-de-fichas-de-producto) y [SEO para tiendas online](/seo-para-tiendas-online). Una distribución más amplia funciona mejor cuando catálogo, páginas de producto y operaciones ya son fiables.

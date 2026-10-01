@@ -6,7 +6,6 @@ canonical: "/ga4-eventos-y-conversiones"
 category: "tutoriales"
 tags: ["GA4", "Analítica web", "Conversiones"]
 publishedDate: "2023-08-10"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/ga4-eventos-y-conversiones-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"

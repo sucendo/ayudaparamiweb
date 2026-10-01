@@ -7,7 +7,6 @@ canonical: "/schema-org-basico-para-pymes"
 category: "tutoriales"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2023-11-09"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/schema-org-basico-para-pymes-featured.svg"
 heroClass: "bg-green"
 themeColor: "#58b391"

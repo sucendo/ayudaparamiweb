@@ -7,7 +7,6 @@ canonical: "/seo-local-y-visibilidad-para-pymes-2026"
 category: "tutoriales"
 tags: ["SEO", "Estrategia digital", "SEO Local Y Visibilidad Para"]
 publishedDate: "2026-02-14"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/seo-local-y-visibilidad-para-pymes-2026-featured.svg"
 heroClass: "bg-green"
 themeColor: "#58b391"

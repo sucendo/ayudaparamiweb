@@ -6,7 +6,6 @@ canonical: "/wordpress-o-desarrollo-a-medida"
 category: "tutoriales"
 tags: ["WordPress", "Desarrollo web", "CMS"]
 publishedDate: "2020-01-16"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/wordpress-o-desarrollo-a-medida-featured.svg"
 heroClass: "bg-purple"
 themeColor: "#64448f"

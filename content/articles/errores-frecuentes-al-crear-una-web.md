@@ -1,6 +1,6 @@
 ---
 title: "Errores frecuentes al crear una web"
-description: "Errores habituales al crear una web y cómo evitarlos: objetivos, hosting, responsive, contenidos, copias de seguridad y revisión antes de publicar."
+description: "Errores frecuentes al crear una web: objetivos, dominio y hosting, responsive, estructura, imágenes, SEO básico, copias, formularios y mantenimiento."
 author: "Sucender"
 canonical: "/errores-frecuentes-al-crear-una-web"
 category: "tutoriales"
@@ -10,7 +10,7 @@ featuredImage: "/img/articulo/errores-frecuentes-al-crear-una-web-featured.svg"
 heroClass: "bg-yellow"
 themeColor: "#f1c40f"
 robots: "index,follow"
-excerpt: "Los fallos más comunes al lanzar una web y cómo prevenirlos desde el inicio."
+excerpt: "Muchos problemas de una web nacen antes de publicar: decisiones poco claras, recursos pesados y funciones añadidas sin necesidad."
 ---
 Crear una web implica muchas decisiones pequeñas y es fácil concentrarse en el diseño mientras se dejan para el final aspectos que después cuestan más corregir. Estos son algunos de los errores que conviene evitar desde el principio.
 
@@ -49,3 +49,70 @@ Antes de lanzar, prueba formularios, correos de confirmación, teléfonos, enlac
 ## Añadir funciones antes de necesitarlas
 
 Cada plugin, script o integración aumenta el mantenimiento. Empieza con lo necesario para cumplir el objetivo y amplía después. Una web sencilla y bien mantenida suele ser más fiable que otra llena de funciones que nadie utiliza.
+## No definir quién mantendrá la web
+
+Una web puede lanzarse correctamente y degradarse después si nadie sabe quién actualiza contenidos, plugins o datos de contacto.
+
+Define responsables antes de publicar. Incluso en un proyecto pequeño conviene saber quién revisa copias, formularios y cambios importantes.
+
+## Mezclar demasiadas funciones en el lanzamiento
+
+Foros, chats, áreas privadas, animaciones y múltiples integraciones pueden parecer atractivos, pero cada elemento añade pruebas y mantenimiento.
+
+Lanza primero lo que el objetivo necesita. Las funciones secundarias pueden incorporarse cuando exista una razón y recursos para mantenerlas.
+
+## No preparar una página 404 útil
+
+Los enlaces cambian y los usuarios pueden escribir mal una dirección. Una página de error debería explicar qué ha ocurrido y ofrecer navegación básica.
+
+No es una solución para enlaces rotos internos, pero evita que una URL incorrecta se convierta en un callejón sin salida.
+
+## Utilizar demasiados plugins
+
+En gestores como WordPress, instalar una extensión para cada pequeño detalle puede aumentar incompatibilidades y superficie de mantenimiento.
+
+Antes de añadir una, comprueba si el tema o el propio CMS ya ofrece la función. Revisa además quién mantiene el plugin y cuándo se actualizó.
+
+## Elegir diseño sin pensar en contenido real
+
+Una plantilla puede resultar atractiva con fotografías perfectas y títulos cortos, pero fallar cuando introduces nombres largos, tablas o textos reales.
+
+Prueba el diseño con el contenido definitivo cuanto antes. Esto evita adaptar textos a la fuerza solo para que quepan en una maqueta.
+
+## No configurar HTTPS correctamente
+
+Si la web utiliza certificado, todas las versiones deberían dirigir de forma coherente a la URL segura. Mezclar recursos HTTP y HTTPS puede provocar avisos o elementos bloqueados.
+
+Comprueba también enlaces internos y canonical después del cambio.
+
+## Olvidar analítica y objetivos
+
+Instalar una herramienta de analítica sin definir qué quieres medir aporta poco. Decide qué acciones representan valor: formularios, compras, registros o llamadas.
+
+Prueba la medición antes del lanzamiento. Es frustrante descubrir semanas después que un formulario nunca registró conversiones.
+
+## Publicar con textos de prueba
+
+Lorem ipsum, títulos provisionales, páginas vacías o imágenes de demostración transmiten falta de revisión.
+
+Haz una búsqueda final de términos como “prueba”, “demo” o contenidos de la plantilla. Revisa también favicon, título del sitio y metadatos básicos.
+
+## No comprobar correos salientes
+
+Un formulario puede mostrar “enviado” y que el mensaje nunca llegue. Realiza pruebas reales y revisa spam, remitente y respuesta.
+
+Si el correo es crítico para el negocio, considera registrar las solicitudes dentro del sistema además de depender de un único mensaje.
+
+## Cambiar URLs sin redirecciones
+
+Durante el desarrollo es frecuente renombrar páginas. Si una URL ya ha sido compartida o indexada, prepara una redirección cuando exista un destino equivalente.
+
+No redirijas todos los errores a la portada. Conserva la intención siempre que sea posible.
+
+## Revisa con una checklist final
+
+Haz una pasada por móvil y escritorio, prueba navegación, enlaces, formularios, imágenes, certificados y páginas de error.
+
+La guía [checklist SEO antes de rediseñar una web](/checklist-seo-antes-de-redisenar-una-web) puede ayudarte a ampliar la revisión, y [cómo elegir un buen hosting](/como-elegir-un-buen-hosting) cubre una de las primeras decisiones del proyecto.
+
+Una web sólida no necesita empezar con todas las funciones imaginables. Necesita cumplir bien su objetivo, ser fácil de mantener y disponer de una base sobre la que crecer.

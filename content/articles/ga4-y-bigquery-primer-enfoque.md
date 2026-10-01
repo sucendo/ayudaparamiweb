@@ -7,7 +7,6 @@ canonical: "/ga4-y-bigquery-primer-enfoque"
 category: "tutoriales"
 tags: ["GA4", "BigQuery", "Analítica web"]
 publishedDate: "2024-07-11"
-modifiedDate: "2026-10-01"
 featuredImage: "/img/articulo/ga4-y-bigquery-primer-enfoque-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"

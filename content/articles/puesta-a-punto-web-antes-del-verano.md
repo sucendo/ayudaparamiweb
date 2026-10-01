@@ -18,8 +18,9 @@ No hace falta realizar una auditoría técnica completa ni rediseñar el sitio. 
 
 Una buena puesta a punto debería responder a tres preguntas: ¿hay algo que pueda dejar la web fuera de servicio?, ¿hay algún problema que pueda hacer perder contactos o ventas? y ¿existe alguna tarea sencilla que podamos resolver ahora antes de que se convierta en un problema mayor?
 
-## Empieza por comprobar que todo sigue funcionando
+## Funcionamiento y copias
 
+### Empieza por comprobar que todo sigue funcionando
 La primera revisión debe ser sencilla y parecida a la que realizaría un visitante.
 
 Entra en la web desde un ordenador y desde un móvil. Navega por las páginas principales, abre varias secciones y comprueba que no aparecen errores evidentes.
@@ -40,7 +41,7 @@ Comprueba especialmente:
 
 También es recomendable realizar una prueba real de los formularios. Enviar un mensaje de prueba tarda apenas unos minutos y permite descubrir un problema bastante habitual: formularios que parecen funcionar correctamente pero cuyos mensajes nunca llegan al destinatario.
 
-## Revisa las copias de seguridad
+### Revisa las copias de seguridad
 
 Muchas webs realizan copias automáticas, pero eso no significa necesariamente que exista un sistema de recuperación fiable.
 
@@ -60,8 +61,9 @@ Como mínimo, antes del verano deberías saber:
 
 No es imprescindible ejecutar una restauración completa cada mes, pero sí conviene haber probado el procedimiento alguna vez.
 
-## Actualiza, pero no hagas cambios innecesarios
+## Actualizaciones y rendimiento
 
+### Actualiza, pero no hagas cambios innecesarios
 CMS, plugins, temas, librerías y otras dependencias deben mantenerse actualizados, especialmente cuando las actualizaciones corrigen problemas de seguridad.
 
 Sin embargo, justo antes de un periodo con menor disponibilidad del equipo tampoco es el mejor momento para realizar cambios importantes sin necesidad.
@@ -74,7 +76,7 @@ En cambio, una migración completa, un cambio de plantilla, la sustitución del 
 
 La idea es llegar al verano con una web estable, no aprovechar mayo para empezar cinco proyectos nuevos.
 
-## Comprueba velocidad y experiencia móvil
+### Comprueba velocidad y experiencia móvil
 
 Durante esta revisión no necesitas perseguir una puntuación perfecta en ninguna herramienta.
 
@@ -96,8 +98,9 @@ Algunas mejoras sencillas pueden ser:
 
 Una pequeña mejora en una página importante suele ser más útil que pasar horas intentando mejorar unas décimas una puntuación técnica.
 
-## Revisa formularios y puntos de conversión
+## Conversión y contenidos
 
+### Revisa formularios y puntos de conversión
 Para muchas empresas, el problema más grave no es que una página tarde medio segundo más en cargar. Es que un cliente intente contactar y no pueda hacerlo.
 
 Por eso merece la pena revisar todo lo relacionado con la conversión.
@@ -120,7 +123,7 @@ Antes de vacaciones, revisa especialmente la información relacionada con atenci
 
 Si durante julio o agosto habrá cambios, es mejor dejar preparado el contenido con antelación.
 
-## Busca contenidos que hayan quedado desactualizados
+### Busca contenidos que hayan quedado desactualizados
 
 No hace falta revisar todos los artículos de la web.
 
@@ -143,8 +146,9 @@ Quizá desde que se publicó un contenido hayan aparecido nuevas guías o servic
 
 La actualización de contenidos no consiste en cambiar la fecha de publicación sin modificar nada. Si un artículo sigue siendo válido, no necesita una reescritura artificial.
 
-## Comprueba lo básico de SEO
+## SEO y seguridad
 
+### Comprueba lo básico de SEO
 La revisión SEO previa al verano puede ser bastante corta.
 
 Empieza buscando problemas graves, no pequeñas optimizaciones.
@@ -165,7 +169,7 @@ También puedes revisar algunas búsquedas importantes para comprobar si las pá
 
 Una variación de posiciones no implica necesariamente un problema. Lo importante es detectar cambios importantes que coincidan con errores técnicos, modificaciones recientes o desaparición de páginas.
 
-## Haz una pequeña revisión de seguridad
+### Haz una pequeña revisión de seguridad
 
 Antes de periodos de menor actividad conviene reducir accesos innecesarios.
 
@@ -186,8 +190,9 @@ También conviene comprobar:
 
 No es una auditoría de seguridad completa. Se trata simplemente de eliminar riesgos evidentes.
 
-## Decide qué puede esperar hasta septiembre
+## Prioridades antes del verano
 
+### Decide qué puede esperar hasta septiembre
 Una parte importante de esta revisión consiste en no hacer cosas.
 
 Si la web funciona correctamente, mayo no tiene por qué convertirse en un proyecto de reconstrucción.
@@ -207,41 +212,34 @@ Este tipo de proyectos necesitan planificación, pruebas y disponibilidad del eq
 Si no existe una razón urgente para ejecutarlos antes del verano, normalmente es mejor documentarlos y retomarlos cuando haya tiempo suficiente para trabajar correctamente.
 
 ## Una puesta a punto en 60 minutos
-
 Si tienes poco tiempo, puedes realizar una revisión bastante útil en una hora.
 
-### Primeros 10 minutos: navegación
-
+#### Primeros 10 minutos: navegación
 Abre las principales páginas desde ordenador y móvil.
 
 Comprueba menús, botones, enlaces y errores visibles.
 
-### Minutos 10 a 20: contactos y conversiones
-
+#### Minutos 10 a 20: contactos y conversiones
 Envía un formulario, prueba los botones de contacto y verifica teléfonos y correos.
 
 Si existe tienda online, revisa al menos las primeras fases del proceso de compra.
 
-### Minutos 20 a 30: copias y actualizaciones
-
+#### Minutos 20 a 30: copias y actualizaciones
 Comprueba la última copia de seguridad y revisa si existen actualizaciones importantes pendientes.
 
 No instales cambios grandes si no puedes probarlos después.
 
-### Minutos 30 a 40: Search Console y analítica
-
+#### Minutos 30 a 40: Search Console y analítica
 Busca errores recientes, caídas importantes o páginas estratégicas que hayan perdido visibilidad.
 
 No intentes analizar todos los informes.
 
-### Minutos 40 a 50: seguridad
-
+#### Minutos 40 a 50: seguridad
 Revisa usuarios, accesos y extensiones innecesarias.
 
 Comprueba también HTTPS y servicios críticos.
 
-### Minutos 50 a 60: lista de tareas
-
+#### Minutos 50 a 60: lista de tareas
 Clasifica lo encontrado en tres grupos:
 
 **Resolver ahora:** problemas que pueden provocar caída, pérdida de contactos, ventas o problemas de seguridad.
@@ -252,8 +250,9 @@ Clasifica lo encontrado en tres grupos:
 
 Esta clasificación es probablemente la parte más importante de toda la revisión.
 
-## Documenta a quién llamar si algo falla
+## Responsables y cierre
 
+### Documenta a quién llamar si algo falla
 Antes de terminar, deja anotados los contactos necesarios para responder a una incidencia.
 
 Puede parecer una tarea menor, pero en vacaciones es frecuente descubrir que únicamente una persona conoce las credenciales, sabe renovar un dominio o tiene acceso al proveedor de alojamiento.
@@ -269,7 +268,7 @@ Anota al menos:
 
 No guardes contraseñas en un documento compartido sin protección. Lo importante es documentar quién tiene acceso y dónde se gestionan los servicios.
 
-## Conclusión
+### Conclusión
 
 Preparar una web antes del verano no significa rehacerla ni realizar una auditoría exhaustiva.
 

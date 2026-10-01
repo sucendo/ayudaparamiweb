@@ -20,7 +20,9 @@ robots: "index,follow"
 <p>Una web hackeada se puede recuperar, pero borrar únicamente el síntoma visible no garantiza que el acceso utilizado por el atacante haya quedado cerrado.</p>
 </blockquote>
 
-<h2>Cómo saber si tu web ha sido hackeada</h2>
+<h2>Detectar y contener el incidente</h2>
+
+<h3>Cómo saber si tu web ha sido hackeada</h3>
 
 <p>Antes de actuar, conviene confirmar el alcance. Algunos síntomas habituales son:</p>
 
@@ -35,7 +37,7 @@ robots: "index,follow"
 
 <p>Un único error no demuestra por sí solo que exista malware. Revisa también los registros del servidor y los cambios recientes para diferenciar una intrusión de un fallo normal de la aplicación.</p>
 
-<h2>1. Aísla el problema sin destruir pruebas</h2>
+<h3>1. Aísla el problema sin destruir pruebas</h3>
 
 <p>Si la web está sirviendo contenido malicioso, puedes activar temporalmente mantenimiento o limitar el acceso mientras investigas. El objetivo es reducir el impacto sobre visitantes sin empezar a borrar archivos a ciegas.</p>
 
@@ -43,7 +45,9 @@ robots: "index,follow"
 
 <p>Si la web gestiona pedidos, formularios o cuentas, anota también la hora aproximada en la que detectaste el problema para saber qué datos recientes podrían necesitar una revisión especial.</p>
 
-<h2>2. Cambia credenciales y cierra sesiones</h2>
+<h2>Asegurar accesos y localizar la entrada</h2>
+
+<h3>2. Cambia credenciales y cierra sesiones</h3>
 
 <p>No cambies únicamente la contraseña de WordPress. Si un atacante obtuvo acceso a otra capa, podría volver a entrar aunque el panel quede protegido.</p>
 
@@ -58,13 +62,15 @@ robots: "index,follow"
 
 <p>Revisa además los usuarios administradores y elimina o bloquea cualquier cuenta que no reconozcas. En WordPress también puedes renovar las claves y salts de autenticación de <code>wp-config.php</code> para invalidar sesiones existentes.</p>
 
-<h2>3. Localiza la posible vía de entrada</h2>
+<h3>3. Localiza la posible vía de entrada</h3>
 
 <p>Una limpieza fiable necesita responder a una pregunta: ¿cómo pudo modificarse la web? Entre los orígenes frecuentes están plugins o temas vulnerables, software desactualizado, contraseñas comprometidas, cuentas antiguas o permisos incorrectos.</p>
 
 <p>Revisa qué se instaló o actualizó recientemente, las fechas de modificación de archivos y los logs disponibles. Si identificas un plugin abandonado o una extensión que ya no necesitas, no la reinstales después de limpiar.</p>
 
-<h2>4. Sustituye archivos del núcleo por copias limpias</h2>
+<h2>Limpiar la instalación</h2>
+
+<h3>4. Sustituye archivos del núcleo por copias limpias</h3>
 
 <p>En lugar de intentar reconocer manualmente cada fichero del núcleo de WordPress, suele ser más seguro sustituirlo por una copia limpia de la misma versión o actualizar a una versión compatible una vez controlado el incidente.</p>
 
@@ -80,31 +86,35 @@ robots: "index,follow"
 
 <p>Siempre que sea posible, reinstala plugins y temas desde su fuente legítima en lugar de conservar archivos dudosos.</p>
 
-<h2>5. Revisa también la base de datos</h2>
+<h3>5. Revisa también la base de datos</h3>
 
 <p>El malware no tiene por qué vivir únicamente en archivos. Puede haber usuarios creados, JavaScript insertado en entradas, opciones modificadas o redirecciones almacenadas en la base de datos.</p>
 
 <p>Revisa usuarios, contenido reciente y opciones relacionadas con la URL del sitio, widgets o código añadido por plugins. No ejecutes reemplazos masivos sin una copia: una consulta incorrecta puede dañar contenido legítimo.</p>
 
-<h2>6. Busca mecanismos de persistencia</h2>
+<h3>6. Busca mecanismos de persistencia</h3>
 
 <p>Uno de los motivos por los que una infección vuelve es que se elimina el archivo visible pero queda otra puerta preparada para regenerarlo. Comprueba usuarios, tareas programadas, archivos cargados automáticamente y extensiones que no reconozcas.</p>
 
 <p>Si un archivo malicioso reaparece a los pocos minutos, deja de borrarlo repetidamente y busca qué proceso lo está creando.</p>
 
-<h2>7. Actualiza y reduce superficie de ataque</h2>
+<h2>Cerrar la entrada y revisar el impacto SEO</h2>
+
+<h3>7. Actualiza y reduce superficie de ataque</h3>
 
 <p>Cuando tengas una instalación limpia, actualiza WordPress, plugins y tema a versiones compatibles y mantenidas. Elimina extensiones desactivadas que no vayas a utilizar y temas antiguos innecesarios.</p>
 
 <p>Utiliza contraseñas únicas, activa autenticación en dos pasos cuando tu solución de acceso lo permita y limita los permisos de cada usuario a lo que realmente necesita.</p>
 
-<h2>8. Comprueba Search Console y el impacto SEO</h2>
+<h3>8. Comprueba Search Console y el impacto SEO</h3>
 
 <p>Si Google ha detectado contenido engañoso, páginas inyectadas o descargas peligrosas, revisa los avisos de seguridad de Search Console después de limpiar. Comprueba también si se han creado URLs extrañas que todavía aparecen indexadas.</p>
 
 <p>No solicites una revisión hasta estar razonablemente seguro de que la causa está solucionada. Si las páginas maliciosas ya no existen, devuelve el estado HTTP adecuado y corrige enlaces o redirecciones que el ataque pudiera haber añadido.</p>
 
-<h2>9. Verifica la recuperación antes de cerrar el incidente</h2>
+<h2>Verificar la recuperación</h2>
+
+<h3>9. Verifica la recuperación antes de cerrar el incidente</h3>
 
 <p>No des por terminada la limpieza porque la portada vuelva a cargar. Durante los días siguientes revisa:</p>
 
@@ -119,19 +129,23 @@ robots: "index,follow"
 
 <p>Haz una nueva copia cuando el sitio ya esté validado. Esa sí podrá servir como punto de recuperación conocido para futuras incidencias.</p>
 
-<h2>Cuándo restaurar una copia de seguridad</h2>
+<h3>Cuándo restaurar una copia de seguridad</h3>
 
 <p>Restaurar puede ser la opción más segura si conoces una copia anterior al compromiso. Antes de hacerlo, valora cuánto contenido o cuántos pedidos se perderían y conserva aparte los datos recientes que necesites recuperar.</p>
 
 <p>Una restauración por sí sola tampoco cierra la vulnerabilidad. Después tendrás que actualizar, cambiar credenciales y corregir la causa que permitió el acceso.</p>
 
-<h2>Cuándo merece la pena pedir ayuda</h2>
+<h2>Cuándo pedir ayuda</h2>
+
+<h3>Cuándo merece la pena pedir ayuda</h3>
 
 <p>Si la web gestiona ventas, datos de clientes o procesos importantes y no puedes determinar cómo entró el atacante, es mejor evitar experimentos sobre la única copia disponible. Un profesional puede ayudar a conservar datos, revisar logs y confirmar que la limpieza no se limita al síntoma visible.</p>
 
 <p>Para prevenir problemas similares una vez recuperado el sitio, puedes continuar con <a href="/seguridad-basica-en-wordpress">Seguridad básica en WordPress</a> y <a href="/mantenimiento-web-proactivo">Mantenimiento web proactivo</a>.</p>
 
-<h2>En resumen: recuperar, cerrar la entrada y comprobar</h2>
+<h2>Resumen</h2>
+
+<h3>En resumen: recuperar, cerrar la entrada y comprobar</h3>
 
 <p>Una recuperación completa tiene tres partes: devolver la web a un estado limpio, cerrar la vía que permitió el acceso y observar después que la infección no reaparece. Saltarse cualquiera de ellas aumenta el riesgo de volver al mismo punto pocos días después.</p>
 

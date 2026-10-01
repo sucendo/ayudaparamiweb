@@ -18,8 +18,9 @@ Esto ocurre sobre todo porque se suelen mencionar juntos, como si fueran lo mism
 
 > Git controla los cambios de tu proyecto. GitHub te permite compartirlo y trabajar con otros.
 
-## Qué es Git y para qué sirve realmente
+## Fundamentos de Git y GitHub
 
+### Qué es Git y para qué sirve realmente
 Git es un sistema de control de versiones. Su función principal es registrar los cambios que haces en un proyecto a lo largo del tiempo. Esto significa que puedes guardar versiones, comparar cambios, volver atrás si algo falla y trabajar con mayor seguridad.
 
 Antes de usar Git, muchas personas gestionan sus proyectos creando copias manuales: “version-final”, “version-final-buena”, “version-final-definitiva”. Esto no solo es poco eficiente, sino que genera confusión rápidamente.
@@ -28,7 +29,7 @@ Git soluciona ese problema permitiendo mantener un historial claro, estructurado
 
 Además, no solo guarda archivos, sino que entiende cambios. Es capaz de detectar qué se ha modificado, qué se ha eliminado y qué se ha añadido en cada paso.
 
-## Qué es GitHub y en qué se diferencia de Git
+### Qué es GitHub y en qué se diferencia de Git
 
 GitHub es una plataforma que utiliza Git como base, pero añade una capa colaborativa. Permite subir tus repositorios a la nube, compartirlos con otras personas y trabajar en equipo.
 
@@ -41,7 +42,7 @@ Esto tiene varias ventajas importantes:
 
 Es importante entender que Git funciona perfectamente sin GitHub. Puedes usarlo en local sin ningún problema. Pero GitHub amplía mucho sus posibilidades.
 
-## Por qué deberías aprender Git desde el principio
+### Por qué deberías aprender Git desde el principio
 
 Muchas personas retrasan el aprendizaje de Git porque lo ven como algo complejo o innecesario al principio. Sin embargo, esto suele ser un error.
 
@@ -54,8 +55,9 @@ Aprender Git desde el inicio te aporta ventajas claras:
 
 Además, cuanto antes lo integres en tu forma de trabajar, más natural te resultará.
 
-## Cómo instalar Git y configurarlo
+## Configuración y repositorios
 
+### Cómo instalar Git y configurarlo
 El primer paso es instalar Git en tu equipo. El proceso es bastante sencillo y, una vez hecho, podrás utilizarlo desde la terminal o con herramientas visuales.
 
 Después de instalarlo, es recomendable configurar tu usuario:
@@ -67,7 +69,7 @@ git config --global user.email "tu@email.com"
 
 Esto permite identificar quién realiza cada cambio dentro del proyecto.
 
-## Qué es un repositorio y cómo funciona
+### Qué es un repositorio y cómo funciona
 
 Un repositorio es el espacio donde Git guarda toda la información del proyecto: archivos, historial de cambios y configuraciones.
 
@@ -81,8 +83,9 @@ Con ese comando, Git empieza a controlar todo lo que ocurre dentro de esa carpet
 
 A partir de ese momento, puedes empezar a registrar cambios y construir un historial del proyecto.
 
-## Primeros comandos básicos que necesitas
+## Comandos y commits
 
+### Primeros comandos básicos que necesitas
 Git tiene muchos comandos, pero no necesitas aprenderlos todos al principio. Con unos pocos puedes trabajar perfectamente:
 
 - `git status` → muestra el estado del proyecto
@@ -91,7 +94,7 @@ Git tiene muchos comandos, pero no necesitas aprenderlos todos al principio. Con
 
 Estos comandos forman la base del flujo de trabajo.
 
-## Qué es un commit y por qué es tan importante
+### Qué es un commit y por qué es tan importante
 
 Un commit es una especie de “foto” del proyecto en un momento concreto. Guarda el estado de los archivos y permite volver a ese punto cuando lo necesites.
 
@@ -106,8 +109,9 @@ El mensaje del commit es importante. Debe explicar qué has hecho de forma clara
 
 > Un buen historial de commits es una de las mejores formas de entender un proyecto con el tiempo.
 
-## Cómo subir tu proyecto a GitHub
+## Publicar y trabajar con GitHub
 
+### Cómo subir tu proyecto a GitHub
 Una vez tienes tu repositorio local, puedes subirlo a GitHub para guardarlo en la nube y compartirlo.
 
 El proceso básico es:
@@ -119,7 +123,7 @@ git push -u origin main
 
 Esto conecta tu proyecto local con GitHub y permite sincronizar cambios.
 
-## Flujo de trabajo básico en Git
+### Flujo de trabajo básico en Git
 
 El flujo más habitual cuando trabajas con Git es bastante sencillo:
 
@@ -130,15 +134,16 @@ El flujo más habitual cuando trabajas con Git es bastante sencillo:
 
 Este ciclo se repite constantemente en cualquier proyecto.
 
-## Qué son las ramas y por qué deberías usarlas
+## Ramas y errores comunes
 
+### Qué son las ramas y por qué deberías usarlas
 Las ramas permiten trabajar en diferentes versiones del proyecto sin afectar a la principal. Esto es muy útil para probar cambios, desarrollar nuevas funcionalidades o corregir errores.
 
 Por ejemplo, puedes crear una rama para experimentar y, si todo funciona bien, integrar esos cambios después.
 
 Aunque al principio parezcan complejas, las ramas son una de las herramientas más potentes de Git.
 
-## Errores comunes al empezar con Git
+### Errores comunes al empezar con Git
 
 Es normal cometer errores al principio. Algunos de los más habituales son:
 
@@ -149,8 +154,9 @@ Es normal cometer errores al principio. Algunos de los más habituales son:
 
 La clave está en practicar y no intentar aprender todo de golpe.
 
-## Cómo seguir aprendiendo después de esta base
+## Siguiente paso y resumen
 
+### Cómo seguir aprendiendo después de esta base
 Una vez entiendes lo básico, puedes profundizar en:
 
 - Ramas y merges
@@ -160,7 +166,7 @@ Una vez entiendes lo básico, puedes profundizar en:
 
 Pero lo importante es tener clara la base antes de avanzar.
 
-## En resumen: Git y GitHub son más fáciles de lo que parecen
+### En resumen: Git y GitHub son más fáciles de lo que parecen
 
 Git y GitHub pueden parecer herramientas complejas al principio, pero en realidad tienen una lógica bastante clara. Entender cómo funcionan te permite trabajar de forma mucho más ordenada y profesional.
 

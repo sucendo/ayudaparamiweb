@@ -11,11 +11,12 @@ heroClass: "bg-purple"
 themeColor: "#64448f"
 robots: "index,follow"
 ---
-## ¿Qué es un backlink?
+## Fundamentos de los backlinks
 
+### ¿Qué es un backlink?
 Un backlink es un hipervínculo que lleva de un sitio web a otro. En otras palabras, si un sitio web se enlaza con otro sitio web, ese sitio web tiene un vínculo de retroceso. Los vínculos de retroceso son uno de los factores de clasificación más fuertes utilizados por los motores de búsqueda para determinar la autoridad del sitio web y su posición orgánica en los resultados de búsqueda.
 
-## Historia de los backlinks
+### Historia de los backlinks
 
 Antiguamente, el SEO estaba basado totalmente en los backlinks. Cuantos más backlinks tenías, más altas eran tus posiciones en Google.
 
@@ -25,7 +26,7 @@ En 2012, Google lanzó la actualización del algoritmo Penguin para evitar estas
 
 El punto era "recompensar" los sitios web con backlinks naturales, autoritarios y relevantes con posiciones más altas en el SERP.
 
-## ¿Por qué es importante tener backlinks?
+### ¿Por qué es importante tener backlinks?
 
 Los vínculos de retroceso siguen siendo uno de los factores de clasificación más importantes, ya que indican la popularidad y la calidad (confiabilidad) del sitio web. Crear un perfil de enlace de retroceso fuerte es una de las partes más importantes en el SEO.
 
@@ -33,8 +34,9 @@ En términos generales, los términos "vínculos de retroceso" y "construcción 
 
 Los motores de búsqueda utilizan vínculos de retroceso como una navegación entre sitios web. Exploran nuevos sitios web y estiman su autoridad en función de la autoridad que se pasa de los enlaces.
 
-## Texto de anclaje
+## Texto de anclaje y link building
 
+### Texto de anclaje
 El texto de anclaje es una parte muy importante del enlace de retroceso. Es un indicador para los motores de búsqueda de qué se trata el sitio web. Por lo tanto, influye en las clasificaciones de la palabra clave utilizada como texto de anclaje.
 
 Hay muchos tipos de textos de anclaje:
@@ -48,7 +50,7 @@ Hay muchos tipos de textos de anclaje:
 
 > No optimices demasiado los textos de anclaje. Demasiados anclajes optimizados no influirán positivamente en tus clasificaciones. Lo que es más, se ven poco naturales, por lo que puede causar una penalización por parte de Google.
 
-## ¿Por qué es tan importante la construcción de enlaces?
+### ¿Por qué es tan importante la construcción de enlaces?
 
 La construcción de enlaces es un proceso de recopilación de enlaces de otros sitios web. Desde el punto de vista técnico, los enlaces de retroceso son enlaces de hipertexto que sirven como navegación entre sitios web. Los enlaces son rastreados por los motores de búsqueda.
 
@@ -58,8 +60,9 @@ Esto significa que el perfil de enlace de un sitio web sigue siendo uno de los f
 
 Podemos distinguir entre la construcción de enlaces externos y la construcción de enlaces internos. La construcción de enlaces internos significa usar un enlace que apunta de una página a otra página en el mismo dominio. Esta guía SEO explica la adquisición de enlaces de dominios externos.
 
-## Tipos de backlinks
+## Tipos y calidad de backlinks
 
+### Tipos de backlinks
 En términos generales, hay dos tipos de backlinks:
 
 - Sigue (autoridad que pasa)
@@ -77,7 +80,7 @@ Cuando Google introdujo el PageRank en 1990, el número de backlinks se usó com
 
 Los especialistas en SEO empezaron a abusar de PageRank para aumentar la clasificación. Muchas actualizaciones del algoritmo de Google llevaron al hecho de que muchas técnicas antiguas de construcción de enlaces ahora están penalizadas o ya no son relevantes.
 
-## Texto de anclaje
+### Texto de anclaje
 
 El texto de anclaje es el indicador más fuerte usado por los motores de búsqueda cuando se trata de backlinks. Es un pequeño fragmento de texto con hipervínculo a un sitio web, por lo que indica claramente de qué se trata el sitio web.
 
@@ -92,7 +95,7 @@ Debe haber un equilibrio entre los siguientes tipos de anclajes:
 - URLs desnudas *(“ayudaparamiweb.com)*
 - CTAs *(“haga clic aquí,“ leer más ”)*
 
-## Aspectos de calidad de los backlinks.
+### Aspectos de calidad de los backlinks.
 
 Google considera múltiples aspectos de calidad de los sitios web de referencia:
 
@@ -113,12 +116,10 @@ Cuando echemos un vistazo a “Flujo de confianza y“ Flujo de citas ”de Maje
 
 El primero mencionado dice que los sitios estrechamente vinculados a un sitio semilla confiable pueden ver puntuaciones más altas, mientras que los sitios que pueden tener algunos enlaces cuestionables verían una puntuación mucho más baja. El flujo de citas predice la influencia de una URL en función del número de sitios vinculados a ella.
 
-### Pertinencia
-
+#### Pertinencia
 Los enlaces que hacen referencia a un sitio web deben ser relevantes para su contenido. No compre un vínculo de retroceso en una tienda virtual de ropa si escribe un blog sobre pizza.
 
-### Colocación de enlaces
-
+#### Colocación de enlaces
 Los enlaces colocados en los artículos o secciones principales son mejores que los enlaces en pies de página y barras laterales. Los enlaces individuales tienden a ser más valiosos que los enlaces de todo el sitio.
 
 Los enlaces de todo el sitio aparecen en todas las páginas de un sitio web. Generalmente están en el pie de página, encabezado, barra lateral o blogrolls. Los enlaces de todo el sitio son excelentes tanto para la creación de enlaces internos como externos.
@@ -127,8 +128,9 @@ Pueden generar mucho tráfico. No te asustes por ellos, pero asegúrate de usar 
 
 Además de los aspectos mencionados anteriormente, debemos considerar la frescura del enlace, la calidad del ancla, la popularidad y las señales sociales.
 
-## Técnicas de construcción de enlaces
+## Técnicas y riesgos
 
+### Técnicas de construcción de enlaces
 No es fácil adquirir un backlink de alta calidad. Las técnicas que eran las más simples (enlaces recíprocos o presentaciones de directorio) ya no funcionan, por lo que los SEO pasan mucho tiempo probando diferentes enfoques.
 
 Estas son las ideas de construcción de enlaces más populares:
@@ -145,7 +147,7 @@ Estas son las ideas de construcción de enlaces más populares:
 
 En definitiva, los mejores enlaces son enlaces naturales. Por otro lado, adquirirlos puede no ser nada fácil.
 
-## Sombrero gris, técnicas de sombrero negro y penalizaciones.
+### Sombrero gris, técnicas de sombrero negro y penalizaciones.
 
 Los backlinks pagados y PBN (red privada de blogs) son otra forma de crear backlinks, pero hay que tener mucho cuidado. Asegúrate de que se vean lo más natural posible.
 
@@ -153,14 +155,14 @@ Las redes privadas de blogs son sitios web para implementar enlaces a otros siti
 
 Además, es arriesgado porque Google puede prohibirlos si no eres lo suficientemente cuidadoso. A veces los costos de una PBN pueden ser más altos que el beneficio.
 
-### Penalizaciones
-
+#### Penalizaciones
 La actualización del algoritmo de Google Penguin a partir de abril de 2012 trajo una penalización por enlaces malos, de spam o de baja calidad.
 
 Sin embargo, si tiene spam o backlinks de baja calidad, ¡no se asuste! Google no debería considerarlos un factor de clasificación negativo. Pero, por si acaso, aún puede rechazar dichos backlinks en la Consola de búsqueda.
 
 ## Mejores prácticas
 
+### Mejores prácticas
 - Hacer link building regularmente, no es un esfuerzo de una sola vez
 - Adquiera algunos enlaces de alta calidad en lugar de muchos enlaces de baja calidad o spam
 - Realice la distribución natural del texto de anclaje según los consejos que enumeramos en la sección "Texto de anclaje"

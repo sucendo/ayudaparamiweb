@@ -27,8 +27,9 @@ La analítica debería servir para responder preguntas.
 
 Con unas pocas métricas bien elegidas podemos responder a casi todas estas preguntas.
 
-## Antes de mirar cifras, define qué debería conseguir la web
+## Objetivos y evolución
 
+### Antes de mirar cifras, define qué debería conseguir la web
 No todas las webs tienen el mismo objetivo.
 
 Una tienda online quiere vender. Una empresa de servicios probablemente busca contactos. Un medio de contenidos necesita lectores recurrentes. Una web corporativa puede tener como objetivo principal generar solicitudes de presupuesto, llamadas o visitas a determinadas páginas.
@@ -51,7 +52,7 @@ Si no tenemos claro el objetivo, cualquier cifra puede parecer importante.
 
 Una web puede aumentar un 30 % sus visitas y, sin embargo, generar menos contactos que antes. En ese caso, celebrar únicamente el crecimiento del tráfico nos estaría dando una visión incompleta.
 
-## Empieza por la evolución, no por el número absoluto
+### Empieza por la evolución, no por el número absoluto
 
 Una cifra aislada dice bastante poco.
 
@@ -77,8 +78,9 @@ No hace falta reaccionar ante cualquier pequeña variación. El tráfico de una 
 
 Lo interesante son los cambios que se mantienen en el tiempo o que coinciden con alguna modificación relevante.
 
-## Mira de dónde llegan las visitas
+## Adquisición y acciones
 
+### Mira de dónde llegan las visitas
 No todo el tráfico tiene el mismo origen.
 
 Una persona puede llegar desde Google, escribir directamente la dirección de la web, pulsar un enlace desde otra página, acceder desde una red social o entrar después de recibir una campaña de correo.
@@ -99,7 +101,7 @@ También conviene preguntarse qué hacen esos usuarios después de llegar.
 
 Un canal pequeño puede resultar mucho más valioso que otro que genere miles de visitas.
 
-## No midas únicamente visitas: mide acciones
+### No midas únicamente visitas: mide acciones
 
 Una de las métricas más importantes es saber si las personas realizan las acciones que esperamos.
 
@@ -126,8 +128,9 @@ Otra recibe 2.000 visitas y genera treinta.
 
 Mirando únicamente el tráfico podríamos pensar que la primera funciona mucho mejor. Si el objetivo consiste en conseguir clientes potenciales, la conclusión probablemente sería distinta.
 
-## Identifica las páginas que realmente atraen tráfico
+## Páginas y pérdidas de rendimiento
 
+### Identifica las páginas que realmente atraen tráfico
 No todas las páginas tienen la misma importancia.
 
 En muchos sitios una pequeña parte del contenido concentra una gran cantidad de visitas.
@@ -154,7 +157,7 @@ Un artículo informativo que recibe muchas visitas puede enlazar hacia una guía
 
 No se trata de convertir cada artículo en un anuncio, sino de facilitar el siguiente paso.
 
-## Busca páginas que hayan perdido tráfico
+### Busca páginas que hayan perdido tráfico
 
 Tan importante como descubrir qué funciona es detectar qué ha dejado de funcionar.
 
@@ -174,8 +177,9 @@ No todas las caídas requieren una intervención.
 
 Pero si una página importante pierde una parte considerable de su tráfico, merece la pena revisarla antes de asumir que simplemente «Google la ha bajado».
 
-## Search Console explica lo que ocurre antes del clic
+## Search Console y posición
 
+### Search Console explica lo que ocurre antes del clic
 Analytics permite observar principalmente qué sucede cuando una persona ya está dentro de la web.
 
 Search Console aporta otra parte de la historia: qué ocurre en los resultados de búsqueda.
@@ -198,7 +202,7 @@ También puede ocurrir que el título o la descripción no resulten suficienteme
 
 No existe una única explicación, pero la relación entre impresiones y clics ofrece pistas muy útiles.
 
-## La posición media necesita contexto
+### La posición media necesita contexto
 
 La posición media puede ser interesante, pero no conviene obsesionarse con ella.
 
@@ -219,8 +223,9 @@ También conviene recordar que los resultados pueden variar en función de ubica
 
 La posición es una señal más, no una nota final sobre la calidad de una página.
 
-## Separa móvil y ordenador cuando exista una diferencia importante
+## Segmentación y métricas engañosas
 
+### Separa móvil y ordenador cuando exista una diferencia importante
 En muchas webs la mayoría de usuarios navegan desde un teléfono.
 
 Por eso resulta útil comparar el comportamiento por dispositivo.
@@ -238,7 +243,7 @@ Puede existir:
 
 La analítica no siempre explica por qué ocurre un problema, pero puede ayudarnos a decidir dónde investigar.
 
-## Cuidado con las métricas que parecen buenas por sí solas
+### Cuidado con las métricas que parecen buenas por sí solas
 
 Existen cifras que resultan atractivas porque permiten afirmar que algo «ha mejorado».
 
@@ -270,8 +275,9 @@ Podemos preguntar:
 
 Ese pequeño cambio transforma completamente la utilidad de los datos.
 
-## Crea un informe mensual muy sencillo
+## Informes y decisiones
 
+### Crea un informe mensual muy sencillo
 Para una pequeña empresa no es necesario preparar un documento de treinta páginas cada mes.
 
 Un informe útil puede caber perfectamente en una sola página.
@@ -294,7 +300,7 @@ Un informe que termina únicamente con gráficos sirve para conocer lo ocurrido.
 
 Un informe que termina con acciones sirve para mejorar la web.
 
-## Convierte cada dato importante en una pregunta
+### Convierte cada dato importante en una pregunta
 
 Esta es probablemente la forma más sencilla de utilizar correctamente la analítica.
 
@@ -322,7 +328,7 @@ Si detectamos una cifra llamativa, deberíamos transformarla en una pregunta.
 
 Este proceso evita tomar decisiones basadas únicamente en intuiciones.
 
-## No hagas cambios cada semana por cualquier variación
+### No hagas cambios cada semana por cualquier variación
 
 La analítica también puede llevarnos a tocar demasiadas cosas.
 
@@ -343,7 +349,6 @@ La web no necesita reaccionar a cada movimiento de una gráfica.
 Necesita decisiones basadas en tendencias y problemas reales.
 
 ## Una revisión mensual en 30 minutos
-
 Si no quieres dedicar demasiado tiempo a la analítica, una rutina sencilla puede ser suficiente.
 
 ### Primeros 5 minutos: resultados
@@ -383,7 +388,6 @@ Por ejemplo:
 Con esas tres tareas la analítica ya habrá cumplido su función.
 
 ## Conclusión
-
 Medir una web no consiste en acumular gráficos.
 
 Tampoco necesitamos conocer todas las métricas disponibles en Analytics o Search Console.

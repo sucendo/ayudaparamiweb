@@ -53,14 +53,6 @@ jobs:
             git push
           fi
 
-      - name: Generate top articles from GA4
-        if: github.ref == 'refs/heads/main'
-        continue-on-error: true
-        env:
-          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
-          TOP_ARTICLES_LIMIT: 10
-        run: node scripts/generate-top-articles.js
-
       - name: Run tests
         run: npm test
 

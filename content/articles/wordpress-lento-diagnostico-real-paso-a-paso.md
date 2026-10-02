@@ -152,7 +152,7 @@ WordPress lento no es un problema aislado, sino el resultado de múltiples facto
 
 Cuando entiendes el origen del problema, la optimización es mucho más sencilla y efectiva.
 
-Si tu WordPress va lento y quieres saber exactamente qué está fallando, puedes [contactar conmigo](/contacto) y analizo tu caso para ayudarte a optimizarlo correctamente.
+Si tu WordPress va lento y quieres saber exactamente qué está fallando, puedes [contactar conmigo](/sucender) y analizo tu caso para ayudarte a optimizarlo correctamente.
 
 En [Ayuda para mi Web](/) encontrarás más guías prácticas para mejorar el rendimiento de tu web.
 ## Comparaciones útiles

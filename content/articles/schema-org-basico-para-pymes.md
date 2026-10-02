@@ -109,3 +109,5 @@ Esta documentación facilita detectar duplicados cuando se instala un plugin o s
 Para ampliar la parte local, consulta [SEO para negocios locales](/seo-para-negocios-locales). Si trabajas con ecommerce, [optimización de fichas de producto](/optimizacion-de-fichas-de-producto) ayuda a mantener coherentes los datos que después se marcan.
 
 Schema.org no sustituye contenido, arquitectura ni una ficha bien mantenida. Su función es describir de forma estructurada información que ya existe y que la web puede sostener en el tiempo.
+
+**Para seguir profundizando:** después de entender la base de Schema.org, revisa cómo funcionan los [rich snippets y datos estructurados](/rich-snippets-y-datos-estructurados) y cómo encajan dentro de una revisión más amplia de [SEO on-page técnico](/seo-on-page-aspectos-tecnicos).

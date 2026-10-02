@@ -127,7 +127,7 @@
                     }
                 %>
                   <li class="toc-level-<%= item.level %>">
-                    <a href="#<%= item.id %>">
+                    <a href="<%= metadata.canonical || ('/' + metadata.slug) %>#<%= item.id %>">
                       <span class="article-toc-number"><%= tocNumber %></span>
                       <span class="article-toc-text"><%= item.text %></span>
                     </a>

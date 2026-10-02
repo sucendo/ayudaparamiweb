@@ -124,3 +124,5 @@ Una hoja con tarea, frecuencia, responsable y fecha de última revisión puede s
 La guía [seguridad básica en WordPress](/seguridad-basica-en-wordpress) puede ayudarte a concretar controles en ese CMS, y [auditoría web básica para pymes](/auditoria-web-basica-para-pymes) sirve para revisar el conjunto.
 
 El mantenimiento proactivo no pretende eliminar todos los fallos. Pretende que los problemas sean menos frecuentes, se detecten antes y exista un procedimiento conocido para resolverlos.
+
+**Para seguir profundizando:** cuando aparecen incidencias concretas, puede ser útil revisar cómo resolver un [error 500 en WordPress](/error-500-wordpress-solucion-paso-a-paso), qué hacer cuando [una web no carga](/mi-web-no-carga-que-hacer-10-minutos) y cómo reforzar la [seguridad básica en WordPress](/seguridad-basica-en-wordpress).

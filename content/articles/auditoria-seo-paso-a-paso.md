@@ -135,3 +135,5 @@ Cuando se implementen correcciones, repite las pruebas principales y comprueba q
 Puedes ampliar la parte de enlaces con [enlazado interno para SEO](/enlazado-interno-para-seo).
 
 Una auditoría SEO no termina cuando se detecta un problema. Termina cuando la corrección se verifica y el equipo puede explicar por qué se realizó.
+
+**Para seguir profundizando:** puedes complementar esta revisión con una [auditoría técnica rápida de una web](/auditoria-tecnica-rapida-de-una-web), explorar una [auditoría SEO con IA](/auditoria-seo-con-ia), revisar el estado de [SEO técnico y Core Web Vitals](/seo-tecnico-core-web-vitals-2026) y utilizar el [checklist de lanzamiento web](/checklist-lanzamiento-web-2026) antes de publicar cambios importantes.

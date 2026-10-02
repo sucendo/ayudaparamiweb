@@ -40,12 +40,15 @@ jobs:
       - name: Repair featured images and article colors
         run: node scripts/repair-featured-images.js
 
+      - name: Audit internal links and tags
+        run: node scripts/audit-internal-links.js
+
       - name: Persist generated featured images
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/articles public/img/articulo tests
+          git add content/articles public/img/articulo tests content/generated/internal-link-audit.json
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else

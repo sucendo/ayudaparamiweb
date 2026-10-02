@@ -868,7 +868,7 @@ a.ct-commenttime,
 
 .ct-main {
     margin-right: 330px;
-    min-height: 1700px;
+    min-height: 0;
     width: auto;
 }
 
@@ -882,7 +882,7 @@ a.ct-commenttime,
 }
 
 .ct-main-post {
-    min-height: 2300px;
+    min-height: 0;
 }
 
 /* Main featured article and featured styles */

@@ -126,3 +126,5 @@ Comprueba cada pocos meses datos, fotografías, horarios y enlaces.
 La guía [Google My Business para negocios locales](/google-my-business-para-negocios-locales) profundiza en la gestión de la ficha.
 
 El SEO local se construye con consistencia. Cuando toda la información coincide y la web responde bien a una búsqueda cercana, resulta más fácil que el usuario pase de encontrarte a contactar.
+
+**Para seguir profundizando:** puedes llevar esta base a un plan más completo con la [guía SEO para pymes](/guia-seo-pymes-2026), continuar con [SEO local y visibilidad para pymes](/seo-local-y-visibilidad-para-pymes-2026) y revisar la [optimización de Google Business Profile](/optimizacion-de-google-business-profile).

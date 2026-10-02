@@ -1349,44 +1349,39 @@ html {
 
 /* Useful sidebar navigation widgets */
 .ct-sidebar .ct-quick-tools {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.ct-sidebar .ct-quick-tools li {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #eef2f4;
-}
-
-.ct-sidebar .ct-quick-tools li:first-child {
-  border-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .ct-sidebar .ct-quick-tools a {
   display: block;
-  padding: 12px 0;
+  min-width: 0;
+  padding: 14px 12px;
+  border: 1px solid #e0e6ea;
+  background: #f8fafb;
   color: #263943;
   text-decoration: none;
 }
 
-.ct-sidebar .ct-quick-tools li:first-child a {
-  padding-top: 0;
-}
-
 .ct-sidebar .ct-quick-tools strong {
   display: block;
-  margin-bottom: 3px;
-  font-size: .94rem;
-  line-height: 1.35;
+  margin: 0 0 4px;
+  font-size: .88rem;
+  line-height: 1.25;
 }
 
 .ct-sidebar .ct-quick-tools span {
   display: block;
-  color: #74838d;
-  font-size: .8rem;
-  line-height: 1.45;
+  color: #7b8891;
+  font-size: .74rem;
+  line-height: 1.3;
+}
+
+.ct-sidebar .ct-quick-tools a:hover,
+.ct-sidebar .ct-quick-tools a:focus {
+  border-color: #b8c8d1;
+  background: #fff;
 }
 
 .ct-sidebar .ct-quick-tools a:hover strong,
@@ -1396,13 +1391,18 @@ html {
 
 .ct-sidebar .ct-widget-more {
   display: block;
-  margin-top: 12px;
+  margin-top: 14px;
   padding-top: 12px;
   border-top: 1px solid #e8edf0;
   color: #456272;
-  font-size: .82rem;
+  font-size: .8rem;
   font-weight: 700;
+  text-align: right;
   text-decoration: none;
+}
+
+.ct-sidebar .ct-widget-more::after {
+  content: " →";
 }
 
 .ct-sidebar .ct-widget-more:hover,
@@ -1414,24 +1414,44 @@ html {
 .ct-sidebar .ct-topic-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 8px;
 }
 
 .ct-sidebar .ct-topic-links a {
-  display: inline-block;
-  padding: 6px 9px;
-  border: 1px solid #dbe3e8;
-  background: #f8fafb;
-  color: #435967;
-  font-size: .78rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 6px 10px;
+  border: 1px solid #dce4e8;
+  background: #f7f9fa;
+  color: #415663;
+  font-size: .76rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   text-decoration: none;
 }
 
 .ct-sidebar .ct-topic-links a:hover,
 .ct-sidebar .ct-topic-links a:focus {
-  border-color: #9eb4c1;
+  border-color: #aebfc8;
   background: #fff;
   color: #1d6f97;
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 961px) {
+  .ct-sidebar .ct-quick-tools {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .ct-sidebar .ct-quick-tools {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .ct-sidebar .ct-quick-tools {
+    grid-template-columns: 1fr;
+  }
 }

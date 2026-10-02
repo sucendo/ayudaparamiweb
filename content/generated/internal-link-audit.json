@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-02T13:51:32.597Z",
+  "generatedAt": "2026-10-02T13:57:09.373Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 45,
     "singletonTags": 0,
     "variantTags": 0,
-    "pagesWithNoContextualIncomingLinks": 1,
-    "pagesWithOneOrFewerContextualIncomingLinks": 74,
+    "pagesWithNoContextualIncomingLinks": 2,
+    "pagesWithOneOrFewerContextualIncomingLinks": 72,
     "brokenInternalLinks": 0,
-    "totalContextualArticleLinks": 201
+    "totalContextualArticleLinks": 205
   },
   "tagVariants": [],
   "singletonTags": [],
@@ -740,6 +740,20 @@
   ],
   "pages": [
     {
+      "path": "/guia-seo-pymes-2026",
+      "title": "Guía SEO para pymes en 2026: plan realista para crecer con foco",
+      "category": "guias",
+      "tags": [
+        "SEO",
+        "Pymes",
+        "SEO técnico",
+        "SEO local",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 0,
+      "outgoingInternalLinks": 7
+    },
+    {
       "path": "/que-es-bluetooth",
       "title": "Qué es Bluetooth?",
       "category": "tutoriales",
@@ -785,19 +799,7 @@
         "IA"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/auditoria-tecnica-rapida-de-una-web",
-      "title": "Auditoría técnica rápida de una web",
-      "category": "tutoriales",
-      "tags": [
-        "SEO técnico",
-        "Auditoría SEO",
-        "Web"
-      ],
-      "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 1
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/automatizacion-de-respuestas-y-procesos",
@@ -1002,7 +1004,7 @@
         "Contenidos"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 5
+      "outgoingInternalLinks": 4
     },
     {
       "path": "/contenidos-utiles-y-eeat",
@@ -1195,36 +1197,12 @@
       "outgoingInternalLinks": 2
     },
     {
-      "path": "/google-my-business-para-negocios-locales",
-      "title": "Google My Business para negocios locales",
-      "category": "tutoriales",
-      "tags": [
-        "SEO local"
-      ],
-      "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 1
-    },
-    {
       "path": "/google-shopping-actions",
       "title": "Google Shopping Actions: qué es y cómo puede encajar en un ecommerce",
       "category": "tutoriales",
       "tags": [
         "Ecommerce",
         "Marketing digital"
-      ],
-      "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/guia-seo-pymes-2026",
-      "title": "Guía SEO para pymes en 2026: plan realista para crecer con foco",
-      "category": "guias",
-      "tags": [
-        "SEO",
-        "Pymes",
-        "SEO técnico",
-        "SEO local",
-        "Estrategia digital"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -1272,18 +1250,6 @@
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 7
-    },
-    {
-      "path": "/ia-y-seo-primeros-usos-practicos",
-      "title": "IA y SEO: primeros usos prácticos",
-      "category": "tutoriales",
-      "tags": [
-        "IA",
-        "SEO",
-        "Contenidos"
-      ],
-      "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 1
     },
     {
       "path": "/mantenimiento-web-proactivo",
@@ -1355,6 +1321,18 @@
         "SEO",
         "Web",
         "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/plan-seo-y-contenidos-para-2026",
+      "title": "Plan SEO y contenidos: hoja de ruta práctica",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Estrategia digital",
+        "Contenidos"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -1631,6 +1609,18 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/auditoria-tecnica-rapida-de-una-web",
+      "title": "Auditoría técnica rápida de una web",
+      "category": "tutoriales",
+      "tags": [
+        "SEO técnico",
+        "Auditoría SEO",
+        "Web"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 1
+    },
+    {
       "path": "/automatizaciones-con-python-para-seo",
       "title": "Automatizaciones con Python para SEO",
       "category": "tutoriales",
@@ -1712,6 +1702,16 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/google-my-business-para-negocios-locales",
+      "title": "Google My Business para negocios locales",
+      "category": "tutoriales",
+      "tags": [
+        "SEO local"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 1
+    },
+    {
       "path": "/guias-y-tutoriales-como-organizar-tu-contenido",
       "title": "Guías y tutoriales: cómo organizar tu contenido",
       "category": "tutoriales",
@@ -1722,6 +1722,18 @@
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/ia-y-seo-primeros-usos-practicos",
+      "title": "IA y SEO: primeros usos prácticos",
+      "category": "tutoriales",
+      "tags": [
+        "IA",
+        "SEO",
+        "Contenidos"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 1
     },
     {
       "path": "/javascript-basico-para-principiantes",
@@ -1758,18 +1770,6 @@
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/plan-seo-y-contenidos-para-2026",
-      "title": "Plan SEO y contenidos: hoja de ruta práctica",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Estrategia digital",
-        "Contenidos"
-      ],
-      "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 2
     },
     {
       "path": "/prestashop-que-es-y-cuando-usarlo",
@@ -1826,7 +1826,7 @@
         "SEO local"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 4
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/seo-on-page-aspectos-tecnicos",
@@ -1913,17 +1913,6 @@
       "outgoingInternalLinks": 2
     },
     {
-      "path": "/investigacion-palabras-clave",
-      "title": "Investigación de palabras clave: cómo encontrar oportunidades",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Contenidos"
-      ],
-      "incomingContextualLinks": 3,
-      "outgoingInternalLinks": 0
-    },
-    {
       "path": "/prestashop-va-lento-como-optimizarlo",
       "title": "PrestaShop va lento: cómo optimizarlo y detectar el problema real",
       "category": "tutoriales",
@@ -1959,18 +1948,6 @@
       "outgoingInternalLinks": 4
     },
     {
-      "path": "/enlazado-interno-para-seo",
-      "title": "Enlazado interno para SEO: cómo conectar mejor tus páginas",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Enlazado interno",
-        "Arquitectura web"
-      ],
-      "incomingContextualLinks": 4,
-      "outgoingInternalLinks": 2
-    },
-    {
       "path": "/ga4-eventos-y-conversiones",
       "title": "GA4: eventos y conversiones",
       "category": "tutoriales",
@@ -1981,6 +1958,17 @@
       ],
       "incomingContextualLinks": 4,
       "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/investigacion-palabras-clave",
+      "title": "Investigación de palabras clave: cómo encontrar oportunidades",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Contenidos"
+      ],
+      "incomingContextualLinks": 4,
+      "outgoingInternalLinks": 0
     },
     {
       "path": "/optimizacion-de-google-business-profile",
@@ -2031,18 +2019,6 @@
       "outgoingInternalLinks": 2
     },
     {
-      "path": "/seo-para-negocios-locales",
-      "title": "SEO para negocios locales: guía práctica",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 4,
-      "outgoingInternalLinks": 3
-    },
-    {
       "path": "/seo-para-tiendas-online",
       "title": "SEO para tiendas online: arquitectura, categorías y fichas",
       "category": "tutoriales",
@@ -2064,7 +2040,7 @@
         "SEO técnico"
       ],
       "incomingContextualLinks": 5,
-      "outgoingInternalLinks": 5
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/clusters-de-contenido-y-seo",
@@ -2075,6 +2051,18 @@
         "Contenidos",
         "Arquitectura web",
         "Enlazado interno"
+      ],
+      "incomingContextualLinks": 5,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/enlazado-interno-para-seo",
+      "title": "Enlazado interno para SEO: cómo conectar mejor tus páginas",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Enlazado interno",
+        "Arquitectura web"
       ],
       "incomingContextualLinks": 5,
       "outgoingInternalLinks": 2
@@ -2110,6 +2098,18 @@
       ],
       "incomingContextualLinks": 5,
       "outgoingInternalLinks": 7
+    },
+    {
+      "path": "/seo-para-negocios-locales",
+      "title": "SEO para negocios locales: guía práctica",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Web",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 5,
+      "outgoingInternalLinks": 3
     }
   ],
   "brokenInternalLinks": []

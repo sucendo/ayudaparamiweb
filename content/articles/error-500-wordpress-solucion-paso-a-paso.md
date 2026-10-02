@@ -111,6 +111,6 @@ El error 500 en WordPress puede parecer un bloqueo total, pero en la mayoría de
 
 Plugins, themes, `.htaccess`, memoria PHP o cambios en el servidor suelen estar entre las causas más habituales. Cuando se revisan bien, es mucho más fácil recuperar la web con seguridad.
 
-Si tu web muestra un error 500 y no quieres perder tiempo probando soluciones a ciegas, puedes [contactar conmigo](/contacto "Contactar para solucionar error 500 en WordPress") y reviso tu caso para ayudarte a recuperar la web cuanto antes.
+Si tu web muestra un error 500 y no quieres perder tiempo probando soluciones a ciegas, puedes [contactar conmigo](/sucender "Contactar para solucionar error 500 en WordPress") y reviso tu caso para ayudarte a recuperar la web cuanto antes.
 
 En [Ayuda para mi Web](/) puedes seguir encontrando contenidos relacionados con WordPress, errores web, mantenimiento técnico y soluciones prácticas para resolver incidencias reales.

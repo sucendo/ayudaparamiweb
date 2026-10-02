@@ -119,3 +119,5 @@ Categorías, productos, combinaciones y filtros generan muchas URLs potenciales.
 Puedes complementar esta parte con [SEO para tiendas online](/seo-para-tiendas-online) y [SEO para categorías de ecommerce](/seo-para-categorias-de-ecommerce).
 
 PrestaShop es una herramienta potente cuando catálogo, servidor y mantenimiento se gestionan como un sistema completo. La instalación es solo el comienzo del proyecto.
+
+**Para seguir profundizando:** si ya trabajas con esta plataforma, revisa cómo diagnosticar el [error country_module_list.xml en PrestaShop](/error-country-module-list-xml-prestashop), cómo actuar cuando [PrestaShop va lento](/prestashop-va-lento-como-optimizarlo) y algunos [problemas del canon digital en tiendas online](/problemas-canon-digital-ecommerce).

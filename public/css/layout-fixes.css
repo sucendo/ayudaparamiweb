@@ -1266,21 +1266,6 @@ html {
   line-height: 1.5;
 }
 
-.author-page-v2 .author-publications-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.author-page-v2 .author-publications-grid .ct-row {
-  display: contents;
-}
-
-.author-page-v2 .author-publications-grid .ct-box {
-  float: none;
-  width: auto;
-  margin: 0;
-}
 
 @media (max-width: 720px) {
   .author-page-v2 .author-profile-intro {
@@ -1293,10 +1278,6 @@ html {
     width: 76px;
     height: 76px;
     flex-basis: 76px;
-  }
-
-  .author-page-v2 .author-publications-grid {
-    grid-template-columns: 1fr;
   }
 }
 

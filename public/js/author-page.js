@@ -7,11 +7,20 @@
 
   function createCard(post, index) {
     var article = document.createElement('article');
-    article.className = 'ct-box ' + COLORS[index % COLORS.length] + ' ct-card-auto';
+    article.className = 'ct-box ' + (post.colorClass || COLORS[index % COLORS.length]) + ' ct-card-auto';
+
+    var sectionLabel = (post.categoryLabel || post.category || '').toString().toUpperCase();
+
     article.innerHTML = '<div class="ct-box-inner">'
       + '<h3><a href="' + post.path + '">' + post.title + '</a></h3>'
-      + '<p class="ct-subline">Por <a href="/' + normalizeSlug(post.author || 'Sucender') + '">' + (post.author || 'Sucender') + '</a> · Publicado el <time>' + (post.displayPublishedDate || post.publishedDate || post.displayDate || post.date || '') + '</time></p>'
+      + '<p class="ct-subline">Por <a href="/' + normalizeSlug(post.author || 'Sucender') + '">' + (post.author || 'Sucender') + '</a>'
+      + ' · Publicado el <time>' + (post.displayPublishedDate || post.publishedDate || post.displayDate || post.date || '') + '</time>'
+      + ((post.hasModifiedDate && (post.displayModifiedDate || post.modifiedDate))
+        ? ' · Actualizado el <time>' + (post.displayModifiedDate || post.modifiedDate) + '</time>'
+        : '')
+      + '</p>'
       + '<p class="ct-feat-excerpt">' + (post.excerpt || '') + '</p>'
+      + (sectionLabel ? '<p class="ct-card-auto__section">' + sectionLabel + '</p>' : '')
       + '<div class="clr"></div>'
       + '</div>';
     return article;

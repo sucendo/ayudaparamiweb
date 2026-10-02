@@ -25,6 +25,8 @@ const aliases = new Map(Object.entries({
   'mantenimiento web proactivo': ['Mantenimiento web'],
   'marketing online': ['Marketing digital'],
   'migracion': ['Migración web'],
+  'gestion de proyectos': ['Estrategia digital'],
+  'optimizacion': ['Rendimiento web'],
   'posicionamiento web': ['SEO'],
   'rendimiento': ['Rendimiento web'],
   'velocidad web': ['Rendimiento web'],
@@ -40,6 +42,8 @@ const aliases = new Map(Object.entries({
   'backoffice': ['PrestaShop'],
   'bigquery': ['GA4', 'Analítica web'],
   'blogs': ['Web', 'Contenidos'],
+  'bluetooth': ['Tecnología'],
+  'conectividad': ['Tecnología'],
   'briefing': ['Web'],
   'busqueda multimodal': ['SEO'],
   'canibalizacion': ['SEO'],
@@ -58,6 +62,7 @@ const aliases = new Map(Object.entries({
   'express.js': ['Node.js'],
   'fichas de producto': ['Ecommerce'],
   'frontend': ['Desarrollo web'],
+  'google': [],
   'google lens': ['SEO'],
   'google my business': ['SEO local'],
   'google shopping': ['Ecommerce'],
@@ -124,7 +129,9 @@ const additions = {
   'seo-on-page-aspectos-tecnicos': ['SEO técnico'],
   'que-es-bluetooth': ['Tecnología'],
   'que-es-una-api-y-para-que-sirve': ['Tecnología'],
-  'microsoft-365-para-pymes': ['Tecnología']
+  'microsoft-365-para-pymes': ['Tecnología'],
+  'clusters-de-contenido-y-seo': ['Enlazado interno'],
+  'arquitectura-web-para-catalogos-grandes': ['Enlazado interno']
 };
 
 function parseTags(raw) {

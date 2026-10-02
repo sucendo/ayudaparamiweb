@@ -98,3 +98,5 @@ White hat SEO es una estrategia a largo plazo orientada a la experiencia del cli
 También hay un término llamado Grey hat SEO, una práctica en la que puedes arriesgar menos en comparación con las técnicas de Black hat. Google no define claramente las técnicas de sombrero gris, por lo que puede ganar miles de usuarios de sitios web sin que se le penalice o pierda todas sus clasificaciones un día después.
 
 En general, no quieres convertir a Google en tu enemigo.
+
+**Para seguir profundizando:** conviene entender primero cómo funcionan los [motores de búsqueda](/motores-de-busqueda) y después entrar en el [SEO on-page técnico](/seo-on-page-aspectos-tecnicos). Para la parte de autoridad puedes revisar [qué significa la autoridad de dominio](/autoridad-de-dominio) y cómo funcionan los [backlinks](/backlink-que-es-como-construir-red-de-enlaces). También tienes una selección de [herramientas SEO](/herramientas-seo) y [herramientas SEO gratuitas](/herramientas-seo-gratuitas).

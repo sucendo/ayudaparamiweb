@@ -68,7 +68,7 @@ robots: "index,follow"
 								<h3>En resumen</h3>
 								<p>Cuando PrestaShop va lento, lo importante es detectar el problema real. No se trata de aplicar soluciones al azar, sino de analizar qué está fallando y actuar sobre ello.</p>
 
-								<p>Si tu tienda va lenta y no sabes por dónde empezar, puedes <a href="/contacto">contactar conmigo</a> y reviso tu caso para ayudarte a optimizarla correctamente.</p>
+								<p>Si tu tienda va lenta y no sabes por dónde empezar, puedes <a href="/sucender">contactar conmigo</a> y reviso tu caso para ayudarte a optimizarla correctamente.</p>
 
 								<p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más contenidos sobre rendimiento web, SEO y optimización de tiendas online.</p>
 ## Medición y diagnóstico

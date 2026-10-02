@@ -900,6 +900,10 @@
   margin: 0 0 18px;
 }
 
+.ct-sidebar {
+  padding-top: 18px;
+}
+
 .ct-sidebar .ct-widget {
   position: relative;
   overflow: hidden;
@@ -910,25 +914,6 @@
   border-radius: 0;
   background: #fff;
   box-shadow: 0 8px 22px rgba(17, 32, 43, 0.10);
-}
-
-.ct-sidebar .ct-widget::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: #a5ceff;
-}
-
-.ct-sidebar .ct-widget-popular::before {
-  background: #c9c4e9;
-}
-
-.ct-sidebar .ct-widget-friends::before {
-  background: #78ddb6;
 }
 
 .ct-sidebar .ct-widget h5 {
@@ -1107,6 +1092,10 @@
 }
 
 @media only screen and (max-width: 960px) {
+  .ct-sidebar {
+    padding-top: 0;
+  }
+
   .ct-sidebar .ct-widget-wrapper {
     margin: 14px 0;
   }

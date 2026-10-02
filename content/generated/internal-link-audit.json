@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-02T13:57:09.373Z",
+  "generatedAt": "2026-10-02T13:58:49.223Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 45,
     "singletonTags": 0,
     "variantTags": 0,
-    "pagesWithNoContextualIncomingLinks": 2,
+    "pagesWithNoContextualIncomingLinks": 1,
     "pagesWithOneOrFewerContextualIncomingLinks": 72,
     "brokenInternalLinks": 0,
-    "totalContextualArticleLinks": 205
+    "totalContextualArticleLinks": 206
   },
   "tagVariants": [],
   "singletonTags": [],
@@ -740,20 +740,6 @@
   ],
   "pages": [
     {
-      "path": "/guia-seo-pymes-2026",
-      "title": "Guía SEO para pymes en 2026: plan realista para crecer con foco",
-      "category": "guias",
-      "tags": [
-        "SEO",
-        "Pymes",
-        "SEO técnico",
-        "SEO local",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 7
-    },
-    {
       "path": "/que-es-bluetooth",
       "title": "Qué es Bluetooth?",
       "category": "tutoriales",
@@ -1208,6 +1194,20 @@
       "outgoingInternalLinks": 2
     },
     {
+      "path": "/guia-seo-pymes-2026",
+      "title": "Guía SEO para pymes en 2026: plan realista para crecer con foco",
+      "category": "guias",
+      "tags": [
+        "SEO",
+        "Pymes",
+        "SEO técnico",
+        "SEO local",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 7
+    },
+    {
       "path": "/herramientas-para-videollamadas-y-colaboracion",
       "title": "Herramientas para videollamadas y colaboración",
       "category": "tutoriales",
@@ -1383,7 +1383,7 @@
         "Rendimiento web"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 0
+      "outgoingInternalLinks": 1
     },
     {
       "path": "/que-es-una-api-y-para-que-sirve",

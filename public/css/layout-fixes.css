@@ -1299,3 +1299,45 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Keep editorial pages aligned with article spacing below the header */
+.page-type-page .ct-content {
+  padding: 26px 0 38px;
+}
+
+@media only screen and (max-width: 960px) {
+  .page-type-page .ct-content {
+    padding: 16px 0 28px;
+  }
+}
+
+
+/* Related article cards use the same ct-box language as archive cards */
+.page-type-article .article-related-color-grid .ct-box {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 28px;
+  min-width: 0;
+  background: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  box-shadow: none;
+  transition: none;
+}
+
+.page-type-article .article-related-color-grid .ct-box:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.page-type-article .article-related-color-grid .ct-box h3 {
+  margin: 0;
+  padding: 0 0 .5em;
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+.page-type-article .article-related-color-grid .ct-box p {
+  line-height: 1.5;
+}

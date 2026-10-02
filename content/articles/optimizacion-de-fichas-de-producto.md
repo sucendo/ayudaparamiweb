@@ -94,3 +94,5 @@ No optimices únicamente los productos que más venden. Agrupa las fichas por pl
 Puedes complementar este trabajo con [SEO para tiendas online](/seo-para-tiendas-online) y [SEO para categorías de ecommerce](/seo-para-categorias-de-ecommerce), que cubren la arquitectura alrededor de las fichas.
 
 Una ficha optimizada no intenta convencer con más texto del necesario. Su objetivo es que el producto sea fácil de encontrar, entender, comparar y comprar sin dudas evitables.
+
+**Para seguir profundizando:** completa la estrategia con los [fundamentos de SEO para ecommerce](/seo-para-ecommerce), una [arquitectura web para catálogos grandes](/arquitectura-web-para-catalogos-grandes), el papel de [Google Shopping Actions](/google-shopping-actions) y algunos [problemas habituales del canon digital en ecommerce](/problemas-canon-digital-ecommerce). Para tiendas con catálogo visual también puede ser útil revisar la [búsqueda multimodal y el SEO visual](/busqueda-multimodal-seo-visual-google-lens).

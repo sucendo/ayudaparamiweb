@@ -1455,3 +1455,55 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Tags page v2 */
+.tags-page-v2 .tags-archive {
+  min-width: 0;
+}
+
+.tags-page-v2 .tags-breadcrumbs {
+  margin-bottom: 18px;
+}
+
+.tags-page-v2 .tags-archive-header {
+  margin: 0 0 22px;
+}
+
+.tags-page-v2 .tags-archive-header h1 {
+  margin: 0 0 8px;
+  padding: 0;
+  color: #f2f6f8;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+.tags-page-v2 .tags-archive-header p {
+  margin: 0;
+  color: #b9c7cf;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.tags-page-v2 .ct-archive-container {
+  padding-bottom: 2em;
+}
+
+.tags-page-v2 .ct-archive-container .ct-box {
+  box-sizing: border-box;
+  padding: 28px;
+}
+
+.tags-page-v2 .tags-empty-card {
+  grid-column: 1 / -1;
+}
+
+.tags-page-v2 .tags-empty-card h3 {
+  margin-bottom: .45em;
+}
+
+@media only screen and (max-width: 720px) {
+  .tags-page-v2 .tags-archive-header h1 {
+    font-size: 1.65rem;
+  }
+}

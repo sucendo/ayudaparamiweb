@@ -105,6 +105,6 @@ Una web WordPress lenta puede tener solución en muchos casos, pero conviene rev
 
 Cuando se detecta el cuello de botella real y se corrige bien, la mejora suele notarse no solo en la carga, sino también en la experiencia del usuario y en la capacidad de la web para captar resultados.
 
-Si tu web WordPress va lenta y quieres saber qué está frenándola de verdad, puedes [contactar conmigo](/contacto "Contactar para mejorar la velocidad de WordPress") y reviso tu caso para ayudarte a optimizarla con criterio.
+Si tu web WordPress va lenta y quieres saber qué está frenándola de verdad, puedes [contactar conmigo](/sucender "Contactar para mejorar la velocidad de WordPress") y reviso tu caso para ayudarte a optimizarla con criterio.
 
 En [Ayuda para mi Web](/) puedes seguir encontrando contenidos relacionados con WordPress, rendimiento web, SEO técnico y mejoras prácticas para que tu sitio funcione mejor.

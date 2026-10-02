@@ -172,6 +172,6 @@ Git y GitHub pueden parecer herramientas complejas al principio, pero en realida
 
 No se trata de memorizar comandos, sino de entender el flujo de trabajo. Una vez lo haces, todo empieza a tener sentido.
 
-Si estás empezando en desarrollo y quieres aprender a organizar mejor tus proyectos, puedes [contactar conmigo](/contacto) y te ayudo a avanzar con una base sólida.
+Si estás empezando en desarrollo y quieres aprender a organizar mejor tus proyectos, puedes [contactar conmigo](/sucender) y te ayudo a avanzar con una base sólida.
 
 En [Ayuda para mi Web](/) puedes seguir encontrando guías prácticas sobre programación, desarrollo web y herramientas profesionales.

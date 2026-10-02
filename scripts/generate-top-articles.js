@@ -22,9 +22,26 @@ function normalizePath(rawPath) {
 async function createAnalyticsClient() {
   try {
     const analyticsModule = require('@google-analytics/data');
+    const rawCredentials = process.env.GA4_CREDENTIALS_JSON;
+
+    if (rawCredentials) {
+      let credentials;
+      try {
+        credentials = JSON.parse(rawCredentials);
+      } catch (error) {
+        throw new Error('GA4_CREDENTIALS_JSON no contiene un JSON válido.');
+      }
+
+      return new analyticsModule.BetaAnalyticsDataClient({
+        credentials,
+        projectId: credentials.project_id
+      });
+    }
+
     return new analyticsModule.BetaAnalyticsDataClient();
   } catch (error) {
-    throw new Error('Falta dependencia @google-analytics/data. Ejecuta: npm install');
+    if (/GA4_CREDENTIALS_JSON/.test(error.message)) throw error;
+    throw new Error('No se pudo iniciar Google Analytics Data API: ' + error.message);
   }
 }
 
@@ -46,7 +63,7 @@ async function fetchTopPaths(client) {
 
 async function buildTopArticlesJson() {
   if (!PROPERTY_ID) {
-    throw new Error('Falta GA4_PROPERTY_ID en variables de entorno.');
+    throw new Error('Falta GA4_PROPERTY_ID en variables de entorno o GitHub Secrets.');
   }
 
   const allArticles = contentCatalog.getAllArticles();

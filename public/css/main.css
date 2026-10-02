@@ -2959,13 +2959,13 @@ input[type="submit"].ct-search-submit {
 
 .ct-icon-search {
     z-index: 90;
-    background: #c1c1c1; /* Sucender (14/06/2022): #537b7b */
+    background: transparent;
     color: #ffffff;
 }
 
 .ct-search.ct-search-open .ct-icon-search {
     z-index: 1;
-    background: #333d46; /* Sucender (14/06/2022): #237dac */ 
+    background: transparent;
     color: #fff;
     pointer-events: none;
 }
@@ -5247,7 +5247,7 @@ body .bsa-cart-zone {
 
     .ct-search .ct-icon-search {
         z-index: 1;
-        background: #237dac;
+        background: transparent;
         color: #fff;
         pointer-events: none;
     }

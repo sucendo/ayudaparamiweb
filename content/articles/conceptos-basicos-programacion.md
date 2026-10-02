@@ -238,3 +238,5 @@ La programación recompensa la constancia más que la intensidad puntual. Una ho
 Aprender programación sigue el mismo principio de siempre: entender fundamentos y practicar con constancia. Si dominas lógica, variables, condicionales, bucles y funciones, ya tienes una base real para avanzar a temas más complejos. No necesitas saberlo todo hoy; necesitas aprender a resolver problemas de forma ordenada.
 
 Empieza pequeño, escribe mucho, depura con método y revisa tu código con mirada crítica. Esa combinación, mantenida durante meses, transforma completamente tu nivel. La programación no se domina por inspiración, se domina por práctica deliberada.
+
+**Para seguir profundizando:** puedes ampliar la visión general con [el mundo del programador web](/el-mundo-del-programador-web), entender [qué es una API](/que-es-una-api-y-para-que-sirve) y continuar con [Node.js](/node-js-que-es) si quieres acercarte al desarrollo del lado del servidor.

@@ -270,3 +270,47 @@
     font-size: 1.72rem;
   }
 }
+
+
+/* Legacy tool finishing pass: align old tools with current tool-v2 pages */
+.tool-page .tool-v2-featured {
+  border-bottom-style: solid;
+  border-bottom-width: 7px;
+}
+
+.tool-page .tool-v2-card.ct-purple .tool-v2-featured {
+  border-bottom-color: #c9c4e9;
+}
+
+.tool-page .tool-v2-card.ct-green .tool-v2-featured {
+  border-bottom-color: #78ddb6;
+}
+
+.tool-page .tool-v2-content > p:first-child {
+  margin-top: .15rem;
+}
+
+.tool-page .tool-panel {
+  padding: 20px;
+  border-color: #dfe7eb;
+  background: #f8fafb;
+}
+
+.tool-page .tool-panel > h2:first-child,
+.tool-page .tool-panel > h3:first-child {
+  margin-top: 0;
+}
+
+.tool-page .tool-counter {
+  padding-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .tool-page .tool-panel {
+    padding: 16px;
+  }
+
+  .tool-page .tool-v2-featured {
+    border-bottom-width: 6px;
+  }
+}

@@ -19,6 +19,12 @@ function normalizePath(value) {
   if (!value) return null;
   let raw = String(value).trim();
 
+  if (raw.startsWith('<') && raw.includes('>')) {
+    raw = raw.slice(1, raw.indexOf('>'));
+  } else {
+    raw = raw.replace(/\s+["'][\s\S]*$/, '');
+  }
+
   if (/^https?:\/\//i.test(raw)) {
     try {
       const url = new URL(raw);

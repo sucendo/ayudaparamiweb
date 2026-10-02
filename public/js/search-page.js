@@ -26,7 +26,11 @@
       '<article class="ct-box ' + escapeHtml(item.colorClass || 'ct-red') + ' ct-card-auto">' +
         '<div class="ct-box-inner">' +
           '<h3><a href="' + escapeHtml(item.path || '#') + '">' + escapeHtml(item.title || 'Sin título') + '</a></h3>' +
-          '<p class="ct-subline">Por <a href="/sucender">Sucender</a> · Publicado el <time pubdate="pubdate">' + escapeHtml(item.displayPublishedDate || item.displayDate || '') + '</time></p>' +
+          '<p class="ct-subline">Por <a href="/sucender">Sucender</a> · Publicado el <time>' + escapeHtml(item.displayPublishedDate || item.publishedDate || item.displayDate || item.date || '') + '</time>' +
+          ((item.hasModifiedDate && (item.displayModifiedDate || item.modifiedDate))
+            ? ' · Actualizado el <time>' + escapeHtml(item.displayModifiedDate || item.modifiedDate) + '</time>'
+            : '') +
+          '</p>' +
           '<p class="ct-feat-excerpt">' + escapeHtml(item.excerpt || '') + '</p>' +
           '<p class="ct-card-auto__section">' + escapeHtml(categoryLabel) + '</p>' +
           '<div class="clr"></div>' +
@@ -41,13 +45,13 @@
 
     if (!query) {
       status.innerHTML = 'Escribe un término para buscar contenido en la web.';
-      container.innerHTML = '<div class="ct-row"><article class="ct-box ct-red"><div class="ct-box-inner"><h3>Empieza escribiendo para buscar.</h3></div></article></div>';
+      container.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue ct-card-auto search-empty-card"><div class="ct-box-inner"><h3>¿Qué quieres encontrar?</h3><p class="ct-feat-excerpt">Escribe arriba una palabra o una frase y buscaremos entre artículos, tutoriales, herramientas y otros contenidos.</p></div></article></div>';
       return;
     }
 
     if (!items.length) {
       status.innerHTML = 'No se han encontrado resultados para <strong>"' + escapeHtml(query) + '"</strong>.';
-      container.innerHTML = '<div class="ct-row"><article class="ct-box ct-red"><div class="ct-box-inner"><h3>Sin resultados</h3><p>Prueba con otro término relacionado.</p></div></article></div>';
+      container.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue ct-card-auto search-empty-card"><div class="ct-box-inner"><h3>Sin resultados</h3><p class="ct-feat-excerpt">Prueba con una palabra más general, una tecnología o un tema relacionado.</p></div></article></div>';
       return;
     }
 

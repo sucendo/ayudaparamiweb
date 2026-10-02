@@ -6,13 +6,26 @@
     return (params.get('tag') || '').trim();
   }
 
+  function normalizeSlug(value) {
+    return (value || '').toLowerCase().trim().replace(/\s+/g, '-');
+  }
+
   function buildCard(post, index) {
     var article = document.createElement('article');
-    article.className = 'ct-box ' + COLORS[index % COLORS.length];
+    article.className = 'ct-box ' + (post.colorClass || COLORS[index % COLORS.length]) + ' ct-card-auto';
+
+    var sectionLabel = (post.categoryLabel || post.category || '').toString().toUpperCase();
+
     article.innerHTML = '<div class="ct-box-inner">'
       + '<h3><a href="' + post.path + '">' + post.title + '</a></h3>'
-      + '<p class="ct-subline">Por <a href="/' + encodeURIComponent((post.author || 'sucender').toLowerCase()) + '">' + (post.author || 'Sucender') + '</a> el <time pubdate="pubdate">' + (post.displayDate || '') + '</time></p>'
+      + '<p class="ct-subline">Por <a href="/' + normalizeSlug(post.author || 'Sucender') + '">' + (post.author || 'Sucender') + '</a>'
+      + ' · Publicado el <time>' + (post.displayPublishedDate || post.publishedDate || post.displayDate || post.date || '') + '</time>'
+      + ((post.hasModifiedDate && (post.displayModifiedDate || post.modifiedDate))
+        ? ' · Actualizado el <time>' + (post.displayModifiedDate || post.modifiedDate) + '</time>'
+        : '')
+      + '</p>'
       + '<p class="ct-feat-excerpt">' + (post.excerpt || '') + '</p>'
+      + (sectionLabel ? '<p class="ct-card-auto__section">' + sectionLabel + '</p>' : '')
       + '<div class="clr"></div>'
       + '</div>';
     return article;
@@ -32,7 +45,7 @@
   }
 
   function loadContentIndex() {
-    return fetch('data/content-index.json')
+    return fetch('/data/content-index.json')
       .then(function (response) {
         if (!response.ok) throw new Error('No se pudo cargar data/content-index.json');
         return response.json();
@@ -51,13 +64,15 @@
   function render(posts) {
     var currentTag = getTag();
     var title = document.querySelector('[data-tag-title]');
+    var description = document.querySelector('[data-tag-description]');
     var list = document.querySelector('[data-tag-list]');
     if (!title || !list) return;
 
-    title.textContent = currentTag ? 'Tag: ' + currentTag : 'Tag no indicado';
+    title.textContent = currentTag ? currentTag : 'Explorar por tag';
 
     if (!currentTag) {
-      list.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue"><div class="ct-box-inner"><p>Selecciona un tag desde un artículo para ver contenido relacionado.</p></div></article></div>';
+      if (description) description.textContent = 'Selecciona una etiqueta desde cualquier artículo para consultar contenidos relacionados.';
+      list.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue ct-card-auto tags-empty-card"><div class="ct-box-inner"><h3>Elige un tema</h3><p class="ct-feat-excerpt">Abre cualquier artículo y utiliza una de sus etiquetas para ver aquí otros contenidos sobre el mismo tema.</p></div></article></div>';
       return;
     }
 
@@ -70,8 +85,15 @@
     });
 
     if (!matches.length) {
-      list.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue"><div class="ct-box-inner"><p>No hay publicaciones asociadas a este tag todavía.</p></div></article></div>';
+      if (description) description.textContent = 'No hemos encontrado publicaciones asociadas a esta etiqueta.';
+      list.innerHTML = '<div class="ct-row"><article class="ct-box ct-blue ct-card-auto tags-empty-card"><div class="ct-box-inner"><h3>Sin resultados</h3><p class="ct-feat-excerpt">Todavía no hay contenidos publicados con esta etiqueta.</p></div></article></div>';
       return;
+    }
+
+    if (description) {
+      description.textContent = matches.length === 1
+        ? '1 contenido relacionado con esta etiqueta.'
+        : matches.length + ' contenidos relacionados con esta etiqueta.';
     }
 
     renderGrid(matches, list);

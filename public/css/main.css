@@ -2965,7 +2965,7 @@ input[type="submit"].ct-search-submit {
 
 .ct-search.ct-search-open .ct-icon-search {
     z-index: 1;
-    background: transparent;
+    background: #333d46;
     color: #fff;
     pointer-events: none;
 }
@@ -5250,6 +5250,10 @@ body .bsa-cart-zone {
         background: transparent;
         color: #fff;
         pointer-events: none;
+    }
+
+    .ct-search.ct-search-open .ct-icon-search {
+        background: #333d46;
     }
 
     .ct-search input[type="text"].ct-search-input {

@@ -10,47 +10,49 @@
   <link rel="canonical" href="https://www.ayudaparamiweb.com/privacidad">
   <%- include('../partials/head.ejs') %>
 </head>
-<body id="apmw-body">
+<body id="apmw-body" class="page-type-page">
   <div class="ct-container">
-    <%- include('../partials/header.ejs') %>
+    <%- include('../partials/header.ejs', { metadata: { type: 'article', themeColor: '#2fa06a' } }) %>
 
     <div class="ct-content">
       <div class="ct-inner">
-        <main class="ct-main ct-main-archive" role="main">
-          <div class="ct-archive">
-            <h1>Privacidad y cookies</h1>
-            <div class="ct-cat-desc">
-              <p>Información clara sobre las preferencias que guarda la web y cómo puedes modificarlas.</p>
-            </div>
+        <main class="ct-main ct-main-post article-v2" id="ct-main" role="main">
+          <div class="ct-post">
+            <article class="post type-page status-publish hentry article-v2-card ct-green">
+              <nav class="article-breadcrumbs" aria-label="Migas de pan">
+                <a href="/">Inicio</a>
+                <span aria-hidden="true">›</span>
+                <span aria-current="page">Privacidad y cookies</span>
+              </nav>
 
-            <div class="ct-archive-container">
-              <div class="ct-row">
-                <article class="ct-box ct-green">
-                  <div class="ct-box-inner ct-page-content">
-                    <p>Ayuda para mi Web intenta limitar el almacenamiento y la medición a lo necesario para el funcionamiento del sitio y a aquello que hayas aceptado expresamente.</p>
+              <header class="article-v2-header">
+                <span class="article-v2-category">Información legal</span>
+                <h1 class="ct-h-shd entry-title">Privacidad y cookies</h1>
+                <p class="ct-post-excerpt article-v2-excerpt">Información clara sobre las preferencias que guarda la web y cómo puedes modificarlas.</p>
+              </header>
 
-                    <h2>Almacenamiento necesario</h2>
-                    <p>La web guarda en tu navegador la elección de privacidad para no preguntártela en cada visita. Esta preferencia es necesaria para recordar tu decisión y no se utiliza para publicidad.</p>
+              <div class="ct-post-content article-v2-content">
+                <p>Ayuda para mi Web intenta limitar el almacenamiento y la medición a lo necesario para el funcionamiento del sitio y a aquello que hayas aceptado expresamente.</p>
 
-                    <h2>Analítica opcional</h2>
-                    <p>La medición analítica permanece desactivada hasta que la aceptes. Cuando das tu consentimiento, la web carga <strong>Google Tag Manager</strong> y, a través de él, <strong>Google Analytics 4</strong> para conocer de forma agregada qué contenidos se consultan y mejorar la web. También podemos medir interacciones como el uso de una herramienta, la generación de un resultado, la apertura de un ejemplo, la acción de copiar un resultado o un bloque de código y si una lectura alcanza el final del artículo o mantiene una interacción suficiente durante al menos 30 segundos. No se envía a Analytics el texto que escribes o pegas en las herramientas ni el contenido concreto que copias. Si no aceptas analítica, el contenedor de Google Tag Manager no se carga y estos eventos no se envían.</p>
+                <h2>Almacenamiento necesario</h2>
+                <p>La web guarda en tu navegador la elección de privacidad para no preguntártela en cada visita. Esta preferencia es necesaria para recordar tu decisión y no se utiliza para publicidad.</p>
 
-                    <h2>Publicidad y personalización</h2>
-                    <p>Las preferencias de esta web no conceden permisos de almacenamiento publicitario, personalización de anuncios ni uso de datos para publicidad. Los permisos <code>ad_storage</code>, <code>ad_user_data</code> y <code>ad_personalization</code> permanecen denegados.</p>
+                <h2>Analítica opcional</h2>
+                <p>La medición analítica permanece desactivada hasta que la aceptes. Cuando das tu consentimiento, la web carga <strong>Google Tag Manager</strong> y, a través de él, <strong>Google Analytics 4</strong> para conocer de forma agregada qué contenidos se consultan y mejorar la web. También podemos medir interacciones como el uso de una herramienta, la generación de un resultado, la apertura de un ejemplo, la acción de copiar un resultado o un bloque de código y si una lectura alcanza el final del artículo o mantiene una interacción suficiente durante al menos 30 segundos. No se envía a Analytics el texto que escribes o pegas en las herramientas ni el contenido concreto que copias. Si no aceptas analítica, el contenedor de Google Tag Manager no se carga y estos eventos no se envían.</p>
 
-                    <h2>Cambiar de opinión</h2>
-                    <p>Puedes modificar tu elección en cualquier momento desde el botón <strong>Preferencias de cookies</strong> del pie de página.</p>
+                <h2>Publicidad y personalización</h2>
+                <p>Las preferencias de esta web no conceden permisos de almacenamiento publicitario, personalización de anuncios ni uso de datos para publicidad. Los permisos <code>ad_storage</code>, <code>ad_user_data</code> y <code>ad_personalization</code> permanecen denegados.</p>
 
-                    <p><button type="button" class="ct-cookie-settings-link ct-cookie-settings-link--panel" data-cookie-settings>Abrir preferencias de cookies</button></p>
-                  </div>
-                </article>
+                <h2>Cambiar de opinión</h2>
+                <p>Puedes modificar tu elección en cualquier momento desde el botón <strong>Preferencias de cookies</strong> del pie de página.</p>
+
+                <p><button type="button" class="ct-cookie-settings-link ct-cookie-settings-link--panel" data-cookie-settings>Abrir preferencias de cookies</button></p>
               </div>
-            </div>
-            <div class="clr"></div>
+            </article>
           </div>
         </main>
 
-        <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
+        <aside class="ct-sidebar article-sidebar"><%- include('../partials/aside.ejs') %></aside>
         <div class="clr"></div>
       </div>
     </div>

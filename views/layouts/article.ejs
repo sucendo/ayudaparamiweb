@@ -103,12 +103,28 @@
       <div class="ct-post-content article-v2-content">
         <% if ((metadata.toc || []).length) { %>
           <nav class="article-toc <%= articleToneClass %>" aria-labelledby="article-toc-title">
-            <details open>
+            <details>
               <summary id="article-toc-title">Índice del artículo</summary>
-              <ol>
-                <% metadata.toc.forEach(function(item) { %>
+              <ol class="article-toc-list">
+                <%
+                  let tocH2 = 0;
+                  let tocH3 = 0;
+                  metadata.toc.forEach(function(item) {
+                    let tocNumber = '';
+                    if (item.level === 2) {
+                      tocH2 += 1;
+                      tocH3 = 0;
+                      tocNumber = tocH2 + '.';
+                    } else if (item.level === 3) {
+                      tocH3 += 1;
+                      tocNumber = tocH2 + '.' + tocH3;
+                    }
+                %>
                   <li class="toc-level-<%= item.level %>">
-                    <a href="<%= metadata.canonical || ('/' + metadata.slug) %>#<%= item.id %>"><%= item.text %></a>
+                    <a href="<%= metadata.canonical || ('/' + metadata.slug) %>#<%= item.id %>">
+                      <span class="article-toc-number"><%= tocNumber %></span>
+                      <span class="article-toc-text"><%= item.text %></span>
+                    </a>
                   </li>
                 <% }); %>
               </ol>

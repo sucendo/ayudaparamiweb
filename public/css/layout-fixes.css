@@ -1178,3 +1178,124 @@ html {
     scroll-behavior: auto;
   }
 }
+
+
+/* Author page v2: aligned with the current editorial system */
+.author-page-v2 .author-profile-card {
+  margin-bottom: 24px;
+}
+
+.author-page-v2 .author-profile-intro {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.author-page-v2 .author-profile-avatar {
+  flex: 0 0 100px;
+}
+
+.author-page-v2 .author-profile-avatar img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eef3f6;
+  box-shadow: 0 4px 14px rgba(17,32,43,.12);
+}
+
+.author-page-v2 .author-profile-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.author-page-v2 .author-profile-copy .entry-title {
+  margin-bottom: .55rem;
+}
+
+.author-page-v2 .author-profile-copy .article-v2-excerpt {
+  margin-bottom: 0;
+}
+
+.author-page-v2 .author-profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.author-page-v2 .author-profile-links a {
+  display: inline-block;
+  padding: 7px 11px;
+  border: 1px solid #d7e1e7;
+  background: #fff;
+  color: #334954;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.author-page-v2 .author-profile-links a:hover,
+.author-page-v2 .author-profile-links a:focus {
+  border-color: #9ab7c7;
+  color: #1d6f97;
+  text-decoration: none;
+}
+
+.author-page-v2 .author-publications {
+  margin: 0 0 28px;
+}
+
+.author-page-v2 .author-publications-heading {
+  margin: 0 0 14px;
+}
+
+.author-page-v2 .author-publications-heading h2 {
+  margin: 0 0 5px;
+  color: #f2f6f8;
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.author-page-v2 .author-publications-heading p {
+  margin: 0;
+  color: #b9c7cf;
+  line-height: 1.5;
+}
+
+.author-page-v2 .author-publications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.author-page-v2 .author-publications-grid .ct-row {
+  display: contents;
+}
+
+.author-page-v2 .author-publications-grid .ct-box {
+  float: none;
+  width: auto;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .author-page-v2 .author-profile-intro {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .author-page-v2 .author-profile-avatar,
+  .author-page-v2 .author-profile-avatar img {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+  }
+
+  .author-page-v2 .author-publications-grid {
+    grid-template-columns: 1fr;
+  }
+}

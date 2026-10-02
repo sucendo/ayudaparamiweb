@@ -21,7 +21,7 @@
 }
 
 /* Migrated article visual polish: recover legacy editorial hierarchy */
-.page-type-article .ct-content {
+.ct-content {
   padding: 26px 0 38px;
 }
 
@@ -153,10 +153,6 @@
   line-height: 1.45;
 }
 
-.page-type-article .article-sidebar {
-  top: 26px;
-}
-
 @media only screen and (max-width: 1120px) {
   .page-type-article .article-shell {
     margin-right: 330px;
@@ -168,7 +164,7 @@
 }
 
 @media only screen and (max-width: 960px) {
-  .page-type-article .ct-content {
+  .ct-content {
     padding: 16px 0 28px;
   }
 
@@ -181,9 +177,7 @@
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
   }
 
-  .page-type-article .article-sidebar {
-    top: auto;
-  }
+  
 }
 
 
@@ -1278,18 +1272,6 @@ html {
 }
 
 
-/* Keep editorial pages aligned with article spacing below the header */
-.page-type-page .ct-content {
-  padding: 26px 0 38px;
-}
-
-@media only screen and (max-width: 960px) {
-  .page-type-page .ct-content {
-    padding: 16px 0 28px;
-  }
-}
-
-
 /* Related article cards use the same ct-box language as archive cards */
 .page-type-article .article-related-color-grid .ct-box {
   box-sizing: border-box;
@@ -1350,5 +1332,16 @@ html {
 
   .author-page-v2 .author-publications .ct-archive-container .ct-box {
     margin: 0;
+  }
+}
+
+
+/* Unified vertical alignment for main content and sidebar */
+@media only screen and (min-width: 961px) {
+  .ct-sidebar,
+  .page-type-article .article-sidebar,
+  .page-type-page .article-sidebar,
+  .page-type-laboratory .article-sidebar {
+    top: 0;
   }
 }

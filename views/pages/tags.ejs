@@ -1,37 +1,51 @@
 <!doctype html>
 <html dir="ltr" lang="es" xml:lang="es" class="js">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tags | Ayuda para mi Web</title>
-	<%- include('../partials/head.ejs') %>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tags | Ayuda para mi Web</title>
+  <meta name="description" content="Explora los contenidos de Ayuda para mi Web organizados por etiquetas y temas.">
+  <link rel="canonical" href="https://www.ayudaparamiweb.com/tags">
+  <%- include('../partials/head.ejs') %>
 </head>
-<body id="apmw-body">
-	<div class="ct-container">
-		<%- include('../partials/header.ejs') %>
-		<div class="ct-content">
-			<div class="ct-inner">
-				<div class="ct-main ct-main-archive" role="main">
-					<div class="ct-archive">
-						<h1 data-tag-title>Tag</h1>
-						<div class="ct-cat-desc">
-							<p>Publicaciones relacionadas con este tag.</p>
-						</div>
-						<div class="ct-archive-container" data-tag-list></div>
-						<div class="clr"></div>
-					</div>
-				</div>
-				<aside class="ct-sidebar">
-					<%- include('../partials/aside.ejs') %>
-				</aside>
-				<div class="clr"></div>
-			</div>
-		</div>
-		<footer class="ct-footer">
-			<%- include('../partials/footer.ejs') %>
-		</footer>
-		<script type="text/javascript" src="js/tags-page.js"></script>
-	</div>
+<body id="apmw-body" class="page-type-archive tags-page-v2">
+  <div class="ct-container">
+    <%- include('../partials/header.ejs', { metadata: { type: 'article', themeColor: '#47a3da' } }) %>
+
+    <div class="ct-content">
+      <div class="ct-inner">
+        <main class="ct-main ct-main-archive" id="ct-main" role="main">
+          <section class="ct-archive tags-archive" aria-labelledby="tags-title">
+            <nav class="article-breadcrumbs tags-breadcrumbs" aria-label="Migas de pan">
+              <a href="/">Inicio</a>
+              <span aria-hidden="true">›</span>
+              <span aria-current="page">Tags</span>
+            </nav>
+
+            <header class="tags-archive-header">
+              <span class="article-v2-category">Temas</span>
+              <h1 id="tags-title" data-tag-title>Explorar por tag</h1>
+              <p data-tag-description>Selecciona una etiqueta desde cualquier artículo para consultar contenidos relacionados.</p>
+            </header>
+
+            <div class="ct-archive-container" data-tag-list></div>
+            <div class="clr"></div>
+          </section>
+        </main>
+
+        <aside class="ct-sidebar article-sidebar">
+          <%- include('../partials/aside.ejs') %>
+        </aside>
+        <div class="clr"></div>
+      </div>
+    </div>
+
+    <footer class="ct-footer">
+      <%- include('../partials/footer.ejs') %>
+    </footer>
+  </div>
+
+  <script src="/js/tags-page.js"></script>
 </body>
 </html>

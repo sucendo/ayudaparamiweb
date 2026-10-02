@@ -751,12 +751,12 @@
 .page-type-article .article-toc-list a {
   display: flex;
   align-items: flex-start;
-  gap: 0.45rem;
+  gap: 0.22rem;
 }
 
 .page-type-article .article-toc-number {
   flex: 0 0 auto;
-  min-width: 2.5rem;
+  min-width: 0;
   color: #536875;
   font-weight: 700;
 }

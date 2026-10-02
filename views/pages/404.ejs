@@ -5,32 +5,85 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Error 404 | Ayuda para mi Web</title>
-  <meta name="description" content="La página que buscas no existe o ha sido movida." />
-  <meta name="author" content="Sucender" />
+  <meta name="description" content="La página que buscas no existe o ha sido movida. Encuentra otros contenidos de Ayuda para mi Web.">
+  <meta name="author" content="Sucender">
+  <meta name="robots" content="noindex,follow">
   <%- include('../partials/head.ejs') %>
 </head>
-<body id="apmw-body">
+<body id="apmw-body" class="page-type-archive error-page-v2">
   <div class="ct-container">
-    <%- include('../partials/header.ejs') %>
+    <%- include('../partials/header.ejs', { metadata: { type: 'article', themeColor: '#f06a6a' } }) %>
 
     <div class="ct-content">
       <div class="ct-inner">
-        <div class="ct-main ct-main-archive" role="main">
-          <div class="ct-archive">
-            <div class="ct-row">
-              <article class="ct-box ct-red">
-                <div class="ct-box-inner">
-                  <h1>Error 404</h1>
-                  <p class="ct-feat-excerpt">La URL solicitada no existe o ya no está disponible.</p>
-                  <p><a href="/">Volver al inicio</a> o usar el buscador para encontrar contenido.</p>
-                </div>
-              </article>
-            </div>
-            <div class="clr"></div>
-          </div>
-        </div>
+        <main class="ct-main ct-main-archive" id="ct-main" role="main">
+          <section class="ct-archive error-archive" aria-labelledby="error-page-title">
+            <div class="error-intro-card ct-red">
+              <nav class="article-breadcrumbs error-breadcrumbs" aria-label="Migas de pan">
+                <a href="/">Inicio</a>
+                <span aria-hidden="true">›</span>
+                <span aria-current="page">Error 404</span>
+              </nav>
 
-        <aside class="ct-sidebar">
+              <header class="error-archive-header">
+                <span class="article-v2-category">Error 404</span>
+                <h1 id="error-page-title">Esta página no está aquí</h1>
+                <p>Puede que la dirección haya cambiado, que el contenido se haya movido o que el enlace ya no sea válido.</p>
+              </header>
+
+              <form class="error-search-form" action="/buscar" method="get" role="search">
+                <label for="error-search-input">Prueba a buscar lo que necesitas</label>
+                <div class="error-search-control">
+                  <input
+                    id="error-search-input"
+                    type="search"
+                    name="q"
+                    placeholder="Ejemplo: SEO, WordPress, herramientas..."
+                    autocomplete="off"
+                  >
+                  <button type="submit">Buscar</button>
+                </div>
+              </form>
+
+              <div class="error-primary-actions">
+                <a class="error-home-link" href="/">Volver al inicio</a>
+              </div>
+            </div>
+
+            <div class="error-options-heading">
+              <h2>También puedes continuar por aquí</h2>
+              <p>Accesos directos a las principales secciones de la web.</p>
+            </div>
+
+            <div class="error-options-grid">
+              <a class="ct-box ct-blue" href="/articulos">
+                <span class="error-option-kicker">Artículos</span>
+                <strong>Guías y análisis</strong>
+                <small>SEO, desarrollo web, rendimiento y estrategia.</small>
+              </a>
+
+              <a class="ct-box ct-green" href="/tutoriales">
+                <span class="error-option-kicker">Tutoriales</span>
+                <strong>Aprende paso a paso</strong>
+                <small>Contenidos prácticos para resolver tareas concretas.</small>
+              </a>
+
+              <a class="ct-box ct-orange" href="/herramientas">
+                <span class="error-option-kicker">Herramientas</span>
+                <strong>Utilidades online</strong>
+                <small>Analizadores, generadores y comprobaciones rápidas.</small>
+              </a>
+
+              <a class="ct-box ct-purple" href="/laboratorio">
+                <span class="error-option-kicker">Laboratorio</span>
+                <strong>Pruebas y experimentos</strong>
+                <small>Proyectos, demos y contenidos experimentales.</small>
+              </a>
+            </div>
+          </section>
+        </main>
+
+        <aside class="ct-sidebar article-sidebar">
           <%- include('../partials/aside.ejs') %>
         </aside>
         <div class="clr"></div>

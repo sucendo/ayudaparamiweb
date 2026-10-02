@@ -159,7 +159,7 @@ robots: "index,follow"
 
 <p>Revisar hosting, errores, cambios recientes y logs suele ser suficiente para detectar el problema.</p>
 
-<p>Si no quieres perder tiempo o necesitas una solución rápida, puedes <a href="/contacto">contactar conmigo</a> y reviso tu web para solucionarlo cuanto antes.</p>
+<p>Si no quieres perder tiempo o necesitas una solución rápida, puedes <a href="/sucender">contactar conmigo</a> y reviso tu web para solucionarlo cuanto antes.</p>
 
 <p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más guías prácticas para resolver errores reales.</p>
 <h3>Antes de tocar archivos, guarda una copia</h3>

@@ -7,10 +7,10 @@
 
   function createCard(post, index) {
     var article = document.createElement('article');
-    article.className = 'ct-box ' + COLORS[index % COLORS.length];
+    article.className = 'ct-box ' + COLORS[index % COLORS.length] + ' ct-card-auto';
     article.innerHTML = '<div class="ct-box-inner">'
       + '<h3><a href="' + post.path + '">' + post.title + '</a></h3>'
-      + '<p class="ct-subline">Por <a href="/' + normalizeSlug(post.author || 'Sucender') + '">' + (post.author || 'Sucender') + '</a> el <time pubdate="pubdate">' + (post.displayDate || '') + '</time></p>'
+      + '<p class="ct-subline">Por <a href="/' + normalizeSlug(post.author || 'Sucender') + '">' + (post.author || 'Sucender') + '</a> · Publicado el <time>' + (post.displayPublishedDate || post.publishedDate || post.displayDate || post.date || '') + '</time></p>'
       + '<p class="ct-feat-excerpt">' + (post.excerpt || '') + '</p>'
       + '<div class="clr"></div>'
       + '</div>';
@@ -24,7 +24,7 @@
   }
 
   function loadContentIndex() {
-    return fetch('data/content-index.json')
+    return fetch('/data/content-index.json')
       .then(function (response) {
         if (!response.ok) throw new Error('No se pudo cargar data/content-index.json');
         return response.json();

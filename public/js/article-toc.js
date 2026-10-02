@@ -5,19 +5,19 @@
     var link = event.target.closest('.article-toc a[href*="#"]');
     if (!link) return;
 
-    var url;
+    var rawHref = link.getAttribute('href') || '';
+    var hashIndex = rawHref.indexOf('#');
+    if (hashIndex === -1) return;
+
+    var hash = rawHref.slice(hashIndex + 1);
+    if (!hash) return;
+
+    var id;
     try {
-      url = new URL(link.href, window.location.href);
+      id = decodeURIComponent(hash);
     } catch (error) {
-      return;
+      id = hash;
     }
-
-    if (url.origin !== window.location.origin || url.pathname !== window.location.pathname) {
-      return;
-    }
-
-    var id = decodeURIComponent(url.hash.slice(1));
-    if (!id) return;
 
     var target = document.getElementById(id);
     if (!target) return;

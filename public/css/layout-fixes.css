@@ -1160,3 +1160,21 @@
     box-shadow: 0 6px 16px rgba(17, 32, 43, 0.08);
   }
 }
+
+
+/* Smooth in-page navigation for article TOC */
+html {
+  scroll-behavior: smooth;
+}
+
+.article-v2-content h2,
+.article-v2-content h3,
+.article-v2-content h4 {
+  scroll-margin-top: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

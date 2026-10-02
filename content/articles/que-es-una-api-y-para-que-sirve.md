@@ -123,3 +123,5 @@ Empieza con una petición manual utilizando la documentación. Comprueba autenti
 Después añade validación de errores, límites y registros. Si estás aprendiendo programación, [JavaScript básico para principiantes](/javascript-basico-para-principiantes) y [conceptos básicos de programación](/conceptos-basicos-programacion) pueden ayudarte a entender las piezas que intervienen.
 
 Una API es, sobre todo, un acuerdo entre sistemas. Cuanto mejor conozcas ese acuerdo, más fácil será integrar sin depender de su funcionamiento interno.
+
+Si estás repasando conceptos tecnológicos básicos, también puedes consultar [qué es Bluetooth](/que-es-bluetooth) para entender cómo funciona otra tecnología habitual de conexión entre dispositivos.

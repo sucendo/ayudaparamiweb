@@ -5,7 +5,7 @@ description: "Cómo mejorar el SEO de un negocio local con Google Business Profi
 author: "Sucender"
 canonical: "/seo-para-negocios-locales"
 category: "tutoriales"
-tags: ["SEO", "Web", "Estrategia digital"]
+tags: ["SEO","SEO local","Pymes"]
 publishedDate: "2022-07-14"
 featuredImage: "/img/articulo/seo-para-negocios-locales-featured.svg"
 heroClass: "bg-red"

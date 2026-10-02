@@ -5,7 +5,7 @@ description: "Cómo mejorar la velocidad web desde servidor, imágenes, CSS, Jav
 author: "Sucender"
 canonical: "/velocidad-web-y-experiencia-de-pagina"
 category: "tutoriales"
-tags: ["SEO", "Web", "Estrategia digital"]
+tags: ["Rendimiento web","UX","SEO técnico"]
 publishedDate: "2019-10-10"
 featuredImage: "/img/articulo/velocidad-web-y-experiencia-de-pagina-featured.svg"
 heroClass: "bg-red"

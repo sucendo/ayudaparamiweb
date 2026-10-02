@@ -5,7 +5,7 @@ excerpt: "LCP, FID y CLS permiten convertir problemas de carga, respuesta y esta
 author: "Sucender"
 canonical: "/seo-y-core-web-vitals"
 category: "tutoriales"
-tags: ["SEO", "Web", "Estrategia digital"]
+tags: ["SEO","Rendimiento web","SEO técnico"]
 publishedDate: "2021-09-09"
 featuredImage: "/img/articulo/seo-y-core-web-vitals-featured.svg"
 heroClass: "bg-blue"

@@ -5,7 +5,7 @@ description: "Guía básica de Schema.org para pymes: Organization y LocalBusine
 author: "Sucender"
 canonical: "/schema-org-basico-para-pymes"
 category: "tutoriales"
-tags: ["SEO", "Web", "Estrategia digital"]
+tags: ["SEO","SEO técnico","Datos estructurados","Pymes"]
 publishedDate: "2023-11-09"
 featuredImage: "/img/articulo/schema-org-basico-para-pymes-featured.svg"
 heroClass: "bg-green"

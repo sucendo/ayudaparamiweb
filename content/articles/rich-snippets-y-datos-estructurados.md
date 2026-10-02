@@ -5,7 +5,7 @@ description: "Cómo utilizar datos estructurados y Schema.org con JSON-LD para d
 author: "Sucender"
 canonical: "/rich-snippets-y-datos-estructurados"
 category: "tutoriales"
-tags: ["SEO", "Web", "Estrategia digital"]
+tags: ["SEO","SEO técnico","Datos estructurados"]
 publishedDate: "2019-07-04"
 featuredImage: "/img/articulo/rich-snippets-y-datos-estructurados-featured.svg"
 heroClass: "bg-orange"

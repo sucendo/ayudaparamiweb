@@ -246,3 +246,5 @@ Aquí, en Ayuda para mi Web, encontrarás miles de páginas de información úti
 - Si vas a publicar tu proyecto, revisa [cómo elegir un buen hosting](/como-elegir-un-buen-hosting) para evitar problemas de rendimiento y soporte.
 - Antes de comprar dominio y alojamiento, te recomiendo esta lista de [errores frecuentes](/errores-al-elegir-dominio-y-hosting) para tomar mejores decisiones.
 - Y si quieres seguir aprendiendo, visita la sección de [tutoriales](/tutoriales) y la página principal de [Ayuda para mi Web](/).
+
+**Para seguir profundizando:** antes de empezar puede ayudarte revisar las [ventajas de tener una web](/ventajas-de-tener-una-web) y preparar [briefings web más claros](/como-crear-briefings-web-mas-claros). Durante el proyecto conviene evitar los [errores comunes en webs corporativas](/errores-comunes-en-webs-corporativas) y los [errores frecuentes al crear una web](/errores-frecuentes-al-crear-una-web), además de decidir entre [WordPress o desarrollo a medida](/wordpress-o-desarrollo-a-medida).

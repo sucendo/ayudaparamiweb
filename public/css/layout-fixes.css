@@ -1954,3 +1954,10 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* 404 uses the full content width: recovery links replace the sidebar */
+.error-page-v2 .error-main {
+  margin-right: 0;
+  width: auto;
+}

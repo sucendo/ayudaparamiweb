@@ -1322,3 +1322,37 @@ html {
 .page-type-article .article-related-color-grid .ct-box p {
   line-height: 1.5;
 }
+
+
+/* Author publications: exactly mirror the standard archive grid */
+.author-page-v2 .author-publications .ct-archive-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.author-page-v2 .author-publications .ct-archive-container .ct-row {
+  display: contents;
+  margin: 0;
+}
+
+.author-page-v2 .author-publications .ct-archive-container .ct-box {
+  float: none;
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  margin: 0;
+  padding: 28px;
+}
+
+@media only screen and (max-width: 900px) {
+  .author-page-v2 .author-publications .ct-archive-container {
+    grid-template-columns: 1fr;
+  }
+
+  .author-page-v2 .author-publications .ct-archive-container .ct-box {
+    margin: 0;
+  }
+}

@@ -115,3 +115,5 @@ No esperes a descubrir un problema al preparar un informe importante. Una compro
 Si quieres profundizar en el diseño de medición, consulta [GA4: eventos y conversiones](/ga4-eventos-y-conversiones).
 
 La primera configuración de GA4 debe ser comprensible. Empieza con pocos eventos y objetivos bien definidos, valida cada uno y amplía la medición cuando exista una pregunta que lo justifique.
+
+**Para seguir profundizando:** después de configurar la base puedes definir [eventos y conversiones en GA4](/ga4-eventos-y-conversiones), preparar un [dashboard de GA4 para dirección](/dashboard-ga4-para-direccion) y valorar un primer enfoque de [GA4 con BigQuery](/ga4-y-bigquery-primer-enfoque).

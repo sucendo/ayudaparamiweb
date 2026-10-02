@@ -893,3 +893,226 @@
 }
 
 
+
+
+/* Sidebar widgets v2 */
+.ct-sidebar .ct-widget-wrapper {
+  margin: 0 0 18px;
+}
+
+.ct-sidebar .ct-widget {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 22px;
+  border: 1px solid rgba(33, 52, 63, 0.10);
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(17, 32, 43, 0.10);
+}
+
+.ct-sidebar .ct-widget::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #a5ceff;
+}
+
+.ct-sidebar .ct-widget-popular::before {
+  background: #c9c4e9;
+}
+
+.ct-sidebar .ct-widget-friends::before {
+  background: #78ddb6;
+}
+
+.ct-sidebar .ct-widget h5 {
+  margin: 0 0 18px;
+  padding: 2px 0 12px;
+  border-bottom: 1px solid #e8edf0;
+  color: #263943;
+  font-size: 0.83rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.ct-sidebar .ct-widget-resources article {
+  position: relative;
+  margin: 0;
+  padding: 14px 0 14px 15px;
+  border: 0;
+  border-top: 1px solid #eef2f4;
+}
+
+.ct-sidebar .ct-widget-resources article:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.ct-sidebar .ct-widget-resources article::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: #7d9dad;
+}
+
+.ct-sidebar .ct-widget-resources article:first-of-type::before {
+  top: 3px;
+}
+
+.ct-sidebar .ct-widget-resources h3 {
+  display: block;
+  height: auto;
+  margin: 0 0 5px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.ct-sidebar .ct-widget-resources h3 a {
+  color: #263943;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.ct-sidebar .ct-widget-resources h3 a:hover,
+.ct-sidebar .ct-widget-resources h3 a:focus {
+  color: #1d6f97;
+  text-decoration: underline;
+}
+
+.ct-sidebar .ct-widget-resources .ct-feat-excerpt {
+  margin: 0;
+  color: #697984;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.ct-sidebar .ct-popular-list {
+  counter-reset: sidebar-popular;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ct-sidebar .ct-popular-list li {
+  counter-increment: sidebar-popular;
+  position: relative;
+  margin: 0;
+  padding: 13px 0 13px 42px;
+  border-top: 1px solid #eef2f4;
+}
+
+.ct-sidebar .ct-popular-list li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.ct-sidebar .ct-popular-list li::before {
+  content: counter(sidebar-popular);
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d8dfe5;
+  background: #f7f9fa;
+  color: #536875;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: center;
+}
+
+.ct-sidebar .ct-popular-list li:first-child::before {
+  top: -1px;
+}
+
+.ct-sidebar .ct-popular-list a {
+  display: block;
+  color: #263943;
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.ct-sidebar .ct-popular-list a:hover,
+.ct-sidebar .ct-popular-list a:focus {
+  color: #1d6f97;
+  text-decoration: underline;
+}
+
+.ct-sidebar .ct-popular-list span {
+  display: block;
+  margin-top: 4px;
+  color: #84919a;
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.ct-sidebar .ct-friends-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ct-sidebar .ct-friends-list li {
+  margin: 0;
+  padding: 13px 0;
+  border-top: 1px solid #eef2f4;
+}
+
+.ct-sidebar .ct-friends-list li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.ct-sidebar .ct-friends-list a {
+  display: inline-block;
+  color: #263943;
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.ct-sidebar .ct-friends-list a::after {
+  content: " ↗";
+  color: #8a9aa4;
+  font-size: 0.82em;
+}
+
+.ct-sidebar .ct-friends-list a:hover,
+.ct-sidebar .ct-friends-list a:focus {
+  color: #1d6f97;
+  text-decoration: underline;
+}
+
+.ct-sidebar .ct-friends-list small {
+  display: block;
+  margin-top: 5px;
+  color: #74838d;
+  font-size: 0.77rem;
+  line-height: 1.45;
+}
+
+@media only screen and (max-width: 960px) {
+  .ct-sidebar .ct-widget-wrapper {
+    margin: 14px 0;
+  }
+
+  .ct-sidebar .ct-widget {
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(17, 32, 43, 0.08);
+  }
+}

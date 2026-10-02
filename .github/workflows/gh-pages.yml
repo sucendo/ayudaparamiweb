@@ -53,6 +53,18 @@ jobs:
             git push
           fi
 
+      - name: Generate most-read articles from GA4
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
+          TOP_ARTICLES_LIMIT: 10
+        run: |
+          if [ -n "$GA4_PROPERTY_ID" ] && [ -n "$GA4_CREDENTIALS_JSON" ]; then
+            npm run generate:top-articles
+          else
+            echo "GA4 secrets not configured; keeping top-articles.json unchanged."
+          fi
+
       - name: Run tests
         run: npm test
 

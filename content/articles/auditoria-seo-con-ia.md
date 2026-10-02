@@ -72,4 +72,4 @@ Usar IA en una auditoría SEO tiene sentido cuando te ayuda a pensar mejor, no c
 
 Cuando utilizas la IA como apoyo para ganar claridad, foco y velocidad, la auditoría deja de ser una acumulación de avisos y se convierte en una herramienta real de crecimiento. Y ahí es donde empieza a ser verdaderamente útil para el negocio.
 
-**Para seguir profundizando:** puedes convertir los hallazgos de la auditoría en una revisión periódica con este [checklist de IA y SEO](/checklist-ia-y-seo-para-2025) y contrastarlos con una [auditoría SEO paso a paso](/auditoria-seo-paso-a-paso).
+**Para seguir profundizando:** puedes contrastar los hallazgos con una [auditoría SEO paso a paso](/auditoria-seo-paso-a-paso), revisar [IA y SEO: primeros usos prácticos](/ia-y-seo-primeros-usos-practicos) y complementar el diagnóstico con una [auditoría técnica rápida](/auditoria-tecnica-rapida-de-una-web).

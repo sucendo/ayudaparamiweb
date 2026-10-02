@@ -664,6 +664,13 @@ a.ct-commenttime,
     background: #c1c1c1; /* Sucender (14/06/2022): #537b7b */
 }
 
+.ct-header.ct-blue { background: #a5ceff; }
+.ct-header.ct-green { background: #78ddb6; }
+.ct-header.ct-red { background: #ff7a7a; }
+.ct-header.ct-orange { background: #ffdb9b; }
+.ct-header.ct-yellow { background: #ffffac; }
+.ct-header.ct-purple { background: #c9c4e9; }
+
 .ct-branding {
     float: left;
     width: 62px;

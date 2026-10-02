@@ -40,6 +40,9 @@ jobs:
       - name: Repair featured images and article colors
         run: node scripts/repair-featured-images.js
 
+      - name: Normalize article tags
+        run: node scripts/normalize-article-tags.js
+
       - name: Audit internal links and tags
         run: node scripts/audit-internal-links.js
 

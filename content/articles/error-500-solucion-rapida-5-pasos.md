@@ -122,7 +122,7 @@ RewriteRule . /index.php [L]
 
 <p>Siguiendo estos 5 pasos —plugins, theme, .htaccess, memoria y logs— puedes resolver la mayoría de situaciones sin complicarte.</p>
 
-<p>Si el problema es más complejo o no quieres perder tiempo probando soluciones, puedes <a href="/contacto">contactar conmigo</a> y reviso tu web para solucionarlo lo antes posible.</p>
+<p>Si el problema es más complejo o no quieres perder tiempo probando soluciones, puedes <a href="/sucender">contactar conmigo</a> y reviso tu web para solucionarlo lo antes posible.</p>
 
 <p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más guías prácticas para resolver errores y mejorar el rendimiento de tu sitio.</p>
 <h2>Orden de reparación</h2>

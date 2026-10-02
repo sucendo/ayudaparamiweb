@@ -5,7 +5,7 @@ excerpt: "Una revisión corta debe encontrar primero bloqueos de rastreo, indexa
 author: "Sucender"
 canonical: "/auditoria-tecnica-rapida-de-una-web"
 category: "tutoriales"
-tags: ["SEO técnico", "Auditoría", "Web"]
+tags: ["SEO técnico", "Auditoría SEO", "Web"]
 publishedDate: "2025-09-11"
 featuredImage: "/img/articulo/auditoria-tecnica-rapida-de-una-web-featured.svg"
 heroClass: "bg-red"

@@ -5,7 +5,7 @@ excerpt: "El error 500 es una respuesta genérica: la forma más rápida de reso
 author: "Sucender"
 canonical: "/error-500-solucion-rapida-5-pasos"
 category: "tutoriales"
-tags: ["Error 500", "Servidor", "Errores web", "Soporte web"]
+tags: ["Error 500", "Servidor", "Errores web"]
 publishedDate: "2025-03-27"
 featuredImage: "/img/articulo/error-500-solucion-rapida-5-pasos-featured.svg"
 heroClass: "bg-red"

@@ -5,7 +5,7 @@ excerpt: "Vue 3 permite construir interfaces por componentes y adoptar el framew
 author: "Sucender"
 canonical: "/vue-js-que-es"
 category: "tutoriales"
-tags: ["Vue.js", "JavaScript", "Frontend"]
+tags: ["JavaScript", "Desarrollo web"]
 publishedDate: "2021-04-07"
 featuredImage: "/img/articulo/vue-js-que-es-featured.svg"
 heroClass: "bg-blue"

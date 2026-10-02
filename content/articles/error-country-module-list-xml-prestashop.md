@@ -5,7 +5,7 @@ excerpt: "Si PrestaShop espera XML y recibe HTML, caracteres inválidos o una re
 author: "Sucender"
 canonical: "/error-country-module-list-xml-prestashop"
 category: "tutoriales"
-tags: ["PrestaShop", "Error XML", "Módulos", "Backoffice"]
+tags: ["PrestaShop"]
 publishedDate: "2024-10-24"
 featuredImage: "/img/articulo/error-country-module-list-xml-prestashop-featured.svg"
 heroClass: "bg-red"

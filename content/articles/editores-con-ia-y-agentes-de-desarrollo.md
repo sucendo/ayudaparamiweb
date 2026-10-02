@@ -5,7 +5,7 @@ excerpt: "No todo lo que escribe código con IA es un editor: aquí separamos ed
 author: "Sucender"
 canonical: "/editores-con-ia-y-agentes-de-desarrollo"
 category: "tutoriales"
-tags: ["IA", "Programación", "Productividad", "Herramientas de desarrollo"]
+tags: ["IA", "Programación", "Productividad"]
 publishedDate: "2026-04-28"
 featuredImage: "/img/articulo/editores-con-ia-y-agentes-de-desarrollo-featured.svg"
 heroClass: "bg-green"

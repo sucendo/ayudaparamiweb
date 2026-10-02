@@ -5,7 +5,7 @@ excerpt: "Los logs permiten comprobar qué solicita realmente un bot y qué resp
 author: "Sucender"
 canonical: "/analisis-de-logs-para-seo"
 category: "tutoriales"
-tags: ["SEO técnico", "Logs", "Rastreo"]
+tags: ["SEO técnico"]
 publishedDate: "2025-06-12"
 featuredImage: "/img/articulo/analisis-de-logs-para-seo-featured.svg"
 heroClass: "bg-green"

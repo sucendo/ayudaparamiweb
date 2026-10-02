@@ -5,7 +5,7 @@ excerpt: "Un buen mantenimiento detecta degradaciones antes de que se conviertan
 author: "Sucender"
 canonical: "/mantenimiento-web-proactivo"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "Mantenimiento Web Proactivo"]
+tags: ["SEO", "Estrategia digital", "Mantenimiento web"]
 publishedDate: "2025-11-13"
 featuredImage: "/img/articulo/mantenimiento-web-proactivo-featured.svg"
 heroClass: "bg-green"

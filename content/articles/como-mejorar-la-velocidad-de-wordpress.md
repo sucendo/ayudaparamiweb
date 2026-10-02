@@ -5,7 +5,7 @@ excerpt: "Una web WordPress lenta no solo resulta molesta para quien la visita. 
 author: "Sucender"
 canonical: "/como-mejorar-la-velocidad-de-wordpress"
 category: "tutoriales"
-tags: ["WordPress", "Velocidad web", "Rendimiento web", "WPO", "Optimización web"]
+tags: ["WordPress", "Rendimiento web"]
 publishedDate: "2024-07-24"
 featuredImage: "/img/articulo/como-mejorar-la-velocidad-de-wordpress-featured.svg"
 heroClass: "bg-yellow"

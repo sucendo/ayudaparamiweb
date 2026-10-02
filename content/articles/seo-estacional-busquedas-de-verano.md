@@ -5,7 +5,7 @@ excerpt: "El tráfico cambia con las estaciones. Aprende a detectar qué búsque
 author: "Sucender"
 canonical: "/seo-estacional-busquedas-de-verano"
 category: "tutoriales"
-tags: ["SEO estacional", "Google Trends", "Search Console", "Contenidos"]
+tags: ["SEO", "Contenidos", "Search Console"]
 publishedDate: "2026-07-16"
 featuredImage: "/img/articulo/seo-estacional-busquedas-de-verano-featured.svg"
 heroClass: "bg-yellow"

@@ -4,7 +4,7 @@ description: "Cómo crear una página web es lo primero que se pregunta todo nue
 author: "Sucender"
 canonical: "/como-crear-una-pagina-web"
 category: "tutoriales"
-tags: ["Desarrollo web", "Guía", "SEO"]
+tags: ["Desarrollo web", "SEO"]
 publishedDate: "2018-04-07"
 modifiedDate: "2022-03-31"
 featuredImage: "/img/articulo/como-crear-una-pagina-web-featured.svg"

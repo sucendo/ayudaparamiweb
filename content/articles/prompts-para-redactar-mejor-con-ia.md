@@ -5,7 +5,7 @@ excerpt: "La inteligencia artificial puede ayudar mucho a redactar, pero no escr
 author: "Sucender"
 canonical: "/prompts-para-redactar-mejor-con-ia"
 category: "tutoriales"
-tags: ["IA", "Prompts", "Redacción", "Contenidos", "Productividad"]
+tags: ["IA", "Contenidos", "Productividad"]
 publishedDate: "2024-06-13"
 featuredImage: "/img/articulo/prompts-para-redactar-mejor-con-ia-featured.svg"
 heroClass: "bg-yellow"

@@ -4,7 +4,7 @@ description: "Errores de usabilidad que reducen conversiones: llamadas a la acci
 author: "Sucender"
 canonical: "/errores-de-usabilidad-que-bajan-conversiones"
 category: "tutoriales"
-tags: ["Usabilidad", "Conversión", "UX"]
+tags: ["UX", "Conversión"]
 publishedDate: "2020-10-08"
 featuredImage: "/img/articulo/errores-de-usabilidad-que-bajan-conversiones-featured.svg"
 heroClass: "bg-orange"

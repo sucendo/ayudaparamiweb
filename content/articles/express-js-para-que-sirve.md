@@ -4,7 +4,7 @@ description: "Descubre para qué sirve Express.js, cómo funciona con Node.js y 
 author: "Sucender"
 canonical: "/express-js-para-que-sirve"
 category: "tutoriales"
-tags: ["Express.js", "Node.js", "JavaScript", "Backend", "Desarrollo web"]
+tags: ["Node.js", "JavaScript", "Backend", "Desarrollo web"]
 publishedDate: "2019-03-07"
 featuredImage: "/img/articulo/express-js-para-que-sirve-featured.svg"
 heroClass: "bg-blue"

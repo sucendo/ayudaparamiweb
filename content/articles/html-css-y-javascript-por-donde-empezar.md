@@ -4,7 +4,7 @@ description: "Ruta para aprender desarrollo web en 2021: HTML semántico, CSS, r
 author: "Sucender"
 canonical: "/html-css-y-javascript-por-donde-empezar"
 category: "tutoriales"
-tags: ["Desarrollo web", "HTML", "CSS", "JavaScript"]
+tags: ["Desarrollo web", "CSS", "JavaScript"]
 publishedDate: "2021-02-11"
 featuredImage: "/img/articulo/html-css-javascript-featured.svg"
 heroClass: "bg-green"

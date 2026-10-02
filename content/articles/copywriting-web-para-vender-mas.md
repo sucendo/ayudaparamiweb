@@ -4,7 +4,7 @@ description: "Cómo escribir copy web claro: propuesta de valor, beneficios, obj
 author: "Sucender"
 canonical: "/copywriting-web-para-vender-mas"
 category: "tutoriales"
-tags: ["Copywriting", "Conversión", "Web"]
+tags: ["Contenidos", "Conversión", "Web"]
 publishedDate: "2020-11-12"
 featuredImage: "/img/articulo/copywriting-web-para-vender-mas-featured.svg"
 heroClass: "bg-red"

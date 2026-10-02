@@ -5,7 +5,7 @@ excerpt: "Menos herramientas y mejores reglas pueden reducir coordinación y ret
 author: "Sucender"
 canonical: "/productividad-digital-en-equipos-pequenos"
 category: "tutoriales"
-tags: ["Productividad", "Equipos", "Herramientas digitales"]
+tags: ["Productividad"]
 publishedDate: "2022-06-09"
 featuredImage: "/img/articulo/productividad-digital-en-equipos-pequenos-featured.svg"
 heroClass: "bg-green"

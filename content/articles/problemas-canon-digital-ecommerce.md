@@ -5,7 +5,7 @@ excerpt: "Adaptar una tienda online al canon digital puede convertirse en un pro
 author: "Sucender"
 canonical: "/problemas-canon-digital-ecommerce"
 category: "tutoriales"
-tags: ["E-commerce", "Canon digital", "WooCommerce", "PrestaShop", "Tiendas online"]
+tags: ["Ecommerce", "WordPress", "PrestaShop"]
 publishedDate: "2018-06-16"
 featuredImage: "/img/articulo/problemas-canon-digital-ecommerce-featured.svg"
 heroClass: "bg-yellow"

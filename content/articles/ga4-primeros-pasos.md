@@ -4,7 +4,7 @@ description: "Primeros pasos con Google Analytics 4: propiedad, flujo web, etiqu
 author: "Sucender"
 canonical: "/ga4-primeros-pasos"
 category: "tutoriales"
-tags: ["Google Analytics", "Analítica web", "GA4"]
+tags: ["Analítica web", "GA4"]
 publishedDate: "2021-10-14"
 featuredImage: "/img/articulo/ga4-primeros-pasos-featured.svg"
 heroClass: "bg-green"

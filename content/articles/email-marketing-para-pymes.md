@@ -4,7 +4,7 @@ description: "Cómo organizar email marketing para pymes con consentimiento, seg
 author: "Sucender"
 canonical: "/email-marketing-para-pymes"
 category: "tutoriales"
-tags: ["Email marketing", "Pymes", "Marketing digital"]
+tags: ["Marketing digital", "Pymes"]
 publishedDate: "2020-09-10"
 featuredImage: "/img/articulo/email-marketing-para-pymes-featured.svg"
 heroClass: "bg-blue"

@@ -4,7 +4,7 @@ description: "Guía práctica de 24/06/2018 con fundamentos de programación, l�
 author: "Sucender"
 canonical: "/conceptos-basicos-programacion"
 category: "tutoriales"
-tags: ["Programación", "Fundamentos", "Desarrollo web"]
+tags: ["Programación", "Desarrollo web"]
 publishedDate: "2018-03-24"
 featuredImage: "/img/articulo/conceptos-basicos-programacion-featured.svg"
 heroClass: "bg-orange"

@@ -5,7 +5,7 @@ excerpt: "Un panel ejecutivo debe mostrar pocas señales fiables y dejar el diag
 author: "Sucender"
 canonical: "/dashboard-ga4-para-direccion"
 category: "tutoriales"
-tags: ["GA4", "Analítica", "Dashboard"]
+tags: ["GA4", "Analítica web"]
 publishedDate: "2025-10-09"
 featuredImage: "/img/articulo/dashboard-ga4-para-direccion-featured.svg"
 heroClass: "bg-green"

@@ -5,7 +5,7 @@ excerpt: "Cómo empezar con GA4 y BigQuery sin construir una arquitectura innece
 author: "Sucender"
 canonical: "/ga4-y-bigquery-primer-enfoque"
 category: "tutoriales"
-tags: ["GA4", "BigQuery", "Analítica web"]
+tags: ["GA4", "Analítica web"]
 publishedDate: "2024-07-11"
 featuredImage: "/img/articulo/ga4-y-bigquery-primer-enfoque-featured.svg"
 heroClass: "bg-blue"

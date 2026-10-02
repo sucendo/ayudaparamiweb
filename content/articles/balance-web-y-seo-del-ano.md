@@ -5,7 +5,7 @@ excerpt: "Un balance anual útil separa resultados de actividad y termina con po
 author: "Sucender"
 canonical: "/balance-web-y-seo-del-ano"
 category: "tutoriales"
-tags: ["SEO", "Analítica", "Planificación"]
+tags: ["SEO", "Analítica web", "Estrategia digital"]
 publishedDate: "2023-12-14"
 featuredImage: "/img/articulo/balance-web-y-seo-del-ano-featured.svg"
 heroClass: "bg-orange"

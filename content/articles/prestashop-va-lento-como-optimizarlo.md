@@ -5,7 +5,7 @@ excerpt: "Antes de instalar más módulos de optimización, conviene localizar s
 author: "Sucender"
 canonical: "/prestashop-va-lento-como-optimizarlo"
 category: "tutoriales"
-tags: ["PrestaShop", "Velocidad web", "Ecommerce", "Rendimiento web"]
+tags: ["PrestaShop", "Rendimiento web", "Ecommerce"]
 publishedDate: "2024-08-22"
 featuredImage: "/img/articulo/prestashop-va-lento-como-optimizarlo-featured.svg"
 heroClass: "bg-yellow"

@@ -5,7 +5,7 @@ excerpt: "El SEO técnico sigue siendo una de las bases más importantes para qu
 author: "Sucender"
 canonical: "/seo-tecnico-core-web-vitals-2026"
 category: "tutoriales"
-tags: ["SEO técnico", "Core Web Vitals", "Rendimiento web", "PageSpeed", "Search Console"]
+tags: ["SEO técnico", "Rendimiento web", "Search Console"]
 publishedDate: "2026-01-18"
 featuredImage: "/img/articulo/seo-tecnico-core-web-vitals-2026-featured.svg"
 heroClass: "bg-red"

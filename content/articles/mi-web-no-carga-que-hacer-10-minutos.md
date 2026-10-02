@@ -5,7 +5,7 @@ excerpt: "Un diagnóstico rápido debe empezar por confirmar si el fallo es glob
 author: "Sucender"
 canonical: "/mi-web-no-carga-que-hacer-10-minutos"
 category: "tutoriales"
-tags: []
+tags: ["Errores web", "Mantenimiento web", "Servidor"]
 publishedDate: "2018-01-01"
 featuredImage: "/img/articulo/mi-web-no-carga-que-hacer-10-minutos-featured.svg"
 heroClass: "bg-red"

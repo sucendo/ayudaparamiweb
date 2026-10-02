@@ -5,7 +5,7 @@ excerpt: "Antes del verano conviene revisar los puntos críticos de una web para
 author: "Sucender"
 canonical: "/puesta-a-punto-web-antes-del-verano"
 category: "tutoriales"
-tags: ["Mantenimiento web", "SEO técnico", "Seguridad web", "Rendimiento"]
+tags: ["Mantenimiento web", "SEO técnico", "Seguridad web", "Rendimiento web"]
 publishedDate: "2026-05-21"
 featuredImage: "/img/articulo/puesta-a-punto-web-antes-del-verano-featured.svg"
 heroClass: "bg-blue"

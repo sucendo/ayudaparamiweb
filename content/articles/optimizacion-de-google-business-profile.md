@@ -5,7 +5,7 @@ excerpt: "La optimización local empieza por representar con precisión el negoc
 author: "Sucender"
 canonical: "/optimizacion-de-google-business-profile"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "Optimizacion De Google Busin"]
+tags: ["SEO", "Estrategia digital", "SEO local"]
 publishedDate: "2025-02-13"
 featuredImage: "/img/articulo/optimizacion-de-google-business-profile-featured.svg"
 heroClass: "bg-orange"

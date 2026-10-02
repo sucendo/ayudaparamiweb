@@ -5,7 +5,7 @@ excerpt: "Una revisión anual ordenada ayuda a cerrar problemas pendientes y ele
 author: "Sucender"
 canonical: "/checklist-seo-de-fin-de-ano"
 category: "tutoriales"
-tags: ["SEO", "Auditoría SEO", "Checklist"]
+tags: ["SEO", "Auditoría SEO"]
 publishedDate: "2020-12-10"
 featuredImage: "/img/articulo/checklist-seo-de-fin-de-ano-featured.svg"
 heroClass: "bg-yellow"

@@ -5,7 +5,7 @@ excerpt: "Antes de instalar más optimizadores, mide servidor y páginas reales 
 author: "Sucender"
 canonical: "/wordpress-lento-diagnostico-real-paso-a-paso"
 category: "tutoriales"
-tags: ["wordpress"]
+tags: ["WordPress", "Rendimiento web", "Mantenimiento web"]
 publishedDate: "2018-01-01"
 featuredImage: "/img/articulo/wordpress-lento-diagnostico-real-paso-a-paso-featured.svg"
 heroClass: "bg-red"

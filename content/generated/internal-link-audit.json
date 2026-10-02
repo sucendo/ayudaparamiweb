@@ -1,135 +1,17 @@
 {
-  "generatedAt": "2026-10-02T13:35:49.937Z",
+  "generatedAt": "2026-10-02T13:42:48.020Z",
   "summary": {
     "articles": 117,
-    "normalizedTags": 145,
-    "singletonTags": 94,
-    "variantTags": 1,
+    "normalizedTags": 50,
+    "singletonTags": 6,
+    "variantTags": 0,
     "pagesWithNoContextualIncomingLinks": 52,
     "pagesWithOneOrFewerContextualIncomingLinks": 81,
-    "brokenInternalLinks": 8,
+    "brokenInternalLinks": 0,
     "totalContextualArticleLinks": 137
   },
-  "tagVariants": [
-    {
-      "normalized": "wordpress",
-      "count": 7,
-      "forms": [
-        "WordPress",
-        "wordpress"
-      ],
-      "articles": [
-        "/como-elegir-un-buen-hosting",
-        "/como-mejorar-la-velocidad-de-wordpress",
-        "/error-500-wordpress-solucion-paso-a-paso",
-        "/mi-web-wordpress-ha-sido-hackeada",
-        "/seguridad-basica-en-wordpress",
-        "/wordpress-lento-diagnostico-real-paso-a-paso",
-        "/wordpress-o-desarrollo-a-medida"
-      ]
-    }
-  ],
+  "tagVariants": [],
   "singletonTags": [
-    {
-      "normalized": "2025",
-      "count": 1,
-      "forms": [
-        "2025"
-      ],
-      "articles": [
-        "/checklist-ia-y-seo-para-2025"
-      ]
-    },
-    {
-      "normalized": "api",
-      "count": 1,
-      "forms": [
-        "API"
-      ],
-      "articles": [
-        "/que-es-una-api-y-para-que-sirve"
-      ]
-    },
-    {
-      "normalized": "auditoria",
-      "count": 1,
-      "forms": [
-        "Auditoría"
-      ],
-      "articles": [
-        "/auditoria-tecnica-rapida-de-una-web"
-      ]
-    },
-    {
-      "normalized": "auditoria de contenidos",
-      "count": 1,
-      "forms": [
-        "Auditoría de contenidos"
-      ],
-      "articles": [
-        "/auditoria-contenidos-antes-de-septiembre"
-      ]
-    },
-    {
-      "normalized": "auditoria seo con ia",
-      "count": 1,
-      "forms": [
-        "Auditoría SEO con IA"
-      ],
-      "articles": [
-        "/auditoria-seo-con-ia"
-      ]
-    },
-    {
-      "normalized": "autoridad de dominio",
-      "count": 1,
-      "forms": [
-        "Autoridad de dominio"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
-      "normalized": "b2b",
-      "count": 1,
-      "forms": [
-        "B2B"
-      ],
-      "articles": [
-        "/estrategias-de-captacion-b2b"
-      ]
-    },
-    {
-      "normalized": "backoffice",
-      "count": 1,
-      "forms": [
-        "Backoffice"
-      ],
-      "articles": [
-        "/error-country-module-list-xml-prestashop"
-      ]
-    },
-    {
-      "normalized": "bigquery",
-      "count": 1,
-      "forms": [
-        "BigQuery"
-      ],
-      "articles": [
-        "/ga4-y-bigquery-primer-enfoque"
-      ]
-    },
-    {
-      "normalized": "blogs",
-      "count": 1,
-      "forms": [
-        "Blogs"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
     {
       "normalized": "bluetooth",
       "count": 1,
@@ -138,76 +20,6 @@
       ],
       "articles": [
         "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "briefing",
-      "count": 1,
-      "forms": [
-        "Briefing"
-      ],
-      "articles": [
-        "/como-crear-briefings-web-mas-claros"
-      ]
-    },
-    {
-      "normalized": "busqueda multimodal",
-      "count": 1,
-      "forms": [
-        "Búsqueda multimodal"
-      ],
-      "articles": [
-        "/busqueda-multimodal-seo-visual-google-lens"
-      ]
-    },
-    {
-      "normalized": "canibalizacion",
-      "count": 1,
-      "forms": [
-        "Canibalización"
-      ],
-      "articles": [
-        "/auditoria-contenidos-antes-de-septiembre"
-      ]
-    },
-    {
-      "normalized": "canon digital",
-      "count": 1,
-      "forms": [
-        "Canon digital"
-      ],
-      "articles": [
-        "/problemas-canon-digital-ecommerce"
-      ]
-    },
-    {
-      "normalized": "chatgpt",
-      "count": 1,
-      "forms": [
-        "ChatGPT"
-      ],
-      "articles": [
-        "/chatgpt-y-marketing-digital"
-      ]
-    },
-    {
-      "normalized": "checklist",
-      "count": 1,
-      "forms": [
-        "Checklist"
-      ],
-      "articles": [
-        "/checklist-seo-de-fin-de-ano"
-      ]
-    },
-    {
-      "normalized": "cms",
-      "count": 1,
-      "forms": [
-        "CMS"
-      ],
-      "articles": [
-        "/wordpress-o-desarrollo-a-medida"
       ]
     },
     {
@@ -221,86 +33,6 @@
       ]
     },
     {
-      "normalized": "conversiones",
-      "count": 1,
-      "forms": [
-        "Conversiones"
-      ],
-      "articles": [
-        "/ga4-eventos-y-conversiones"
-      ]
-    },
-    {
-      "normalized": "copywriting",
-      "count": 1,
-      "forms": [
-        "Copywriting"
-      ],
-      "articles": [
-        "/copywriting-web-para-vender-mas"
-      ]
-    },
-    {
-      "normalized": "core web vitals",
-      "count": 1,
-      "forms": [
-        "Core Web Vitals"
-      ],
-      "articles": [
-        "/seo-tecnico-core-web-vitals-2026"
-      ]
-    },
-    {
-      "normalized": "dashboard",
-      "count": 1,
-      "forms": [
-        "Dashboard"
-      ],
-      "articles": [
-        "/dashboard-ga4-para-direccion"
-      ]
-    },
-    {
-      "normalized": "e-commerce",
-      "count": 1,
-      "forms": [
-        "E-commerce"
-      ],
-      "articles": [
-        "/problemas-canon-digital-ecommerce"
-      ]
-    },
-    {
-      "normalized": "e-e-a-t",
-      "count": 1,
-      "forms": [
-        "E-E-A-T"
-      ],
-      "articles": [
-        "/contenidos-utiles-y-eeat"
-      ]
-    },
-    {
-      "normalized": "email marketing",
-      "count": 1,
-      "forms": [
-        "Email marketing"
-      ],
-      "articles": [
-        "/email-marketing-para-pymes"
-      ]
-    },
-    {
-      "normalized": "enlaces",
-      "count": 1,
-      "forms": [
-        "Enlaces"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
       "normalized": "enlazado interno",
       "count": 1,
       "forms": [
@@ -308,76 +40,6 @@
       ],
       "articles": [
         "/enlazado-interno-para-seo"
-      ]
-    },
-    {
-      "normalized": "equipos",
-      "count": 1,
-      "forms": [
-        "Equipos"
-      ],
-      "articles": [
-        "/productividad-digital-en-equipos-pequenos"
-      ]
-    },
-    {
-      "normalized": "error xml",
-      "count": 1,
-      "forms": [
-        "Error XML"
-      ],
-      "articles": [
-        "/error-country-module-list-xml-prestashop"
-      ]
-    },
-    {
-      "normalized": "errores frecuentes",
-      "count": 1,
-      "forms": [
-        "Errores frecuentes"
-      ],
-      "articles": [
-        "/errores-al-elegir-dominio-y-hosting"
-      ]
-    },
-    {
-      "normalized": "express.js",
-      "count": 1,
-      "forms": [
-        "Express.js"
-      ],
-      "articles": [
-        "/express-js-para-que-sirve"
-      ]
-    },
-    {
-      "normalized": "fichas de producto",
-      "count": 1,
-      "forms": [
-        "Fichas de producto"
-      ],
-      "articles": [
-        "/optimizacion-de-fichas-de-producto"
-      ]
-    },
-    {
-      "normalized": "frontend",
-      "count": 1,
-      "forms": [
-        "Frontend"
-      ],
-      "articles": [
-        "/vue-js-que-es"
-      ]
-    },
-    {
-      "normalized": "fundamentos",
-      "count": 1,
-      "forms": [
-        "Fundamentos"
-      ],
-      "articles": [
-        "/conceptos-basicos-programacion"
       ]
     },
     {
@@ -401,226 +63,6 @@
       ]
     },
     {
-      "normalized": "google lens",
-      "count": 1,
-      "forms": [
-        "Google Lens"
-      ],
-      "articles": [
-        "/busqueda-multimodal-seo-visual-google-lens"
-      ]
-    },
-    {
-      "normalized": "google my business",
-      "count": 1,
-      "forms": [
-        "Google My Business"
-      ],
-      "articles": [
-        "/google-my-business-para-negocios-locales"
-      ]
-    },
-    {
-      "normalized": "google shopping",
-      "count": 1,
-      "forms": [
-        "Google Shopping"
-      ],
-      "articles": [
-        "/google-shopping-actions"
-      ]
-    },
-    {
-      "normalized": "google trends",
-      "count": 1,
-      "forms": [
-        "Google Trends"
-      ],
-      "articles": [
-        "/seo-estacional-busquedas-de-verano"
-      ]
-    },
-    {
-      "normalized": "herramientas de desarrollo",
-      "count": 1,
-      "forms": [
-        "Herramientas de desarrollo"
-      ],
-      "articles": [
-        "/editores-con-ia-y-agentes-de-desarrollo"
-      ]
-    },
-    {
-      "normalized": "herramientas digitales",
-      "count": 1,
-      "forms": [
-        "Herramientas digitales"
-      ],
-      "articles": [
-        "/productividad-digital-en-equipos-pequenos"
-      ]
-    },
-    {
-      "normalized": "html",
-      "count": 1,
-      "forms": [
-        "HTML"
-      ],
-      "articles": [
-        "/html-css-y-javascript-por-donde-empezar"
-      ]
-    },
-    {
-      "normalized": "ia y seo",
-      "count": 1,
-      "forms": [
-        "IA y SEO"
-      ],
-      "articles": [
-        "/checklist-ia-y-seo-para-2025"
-      ]
-    },
-    {
-      "normalized": "informes",
-      "count": 1,
-      "forms": [
-        "Informes"
-      ],
-      "articles": [
-        "/automatizar-informes-seo"
-      ]
-    },
-    {
-      "normalized": "internet",
-      "count": 1,
-      "forms": [
-        "Internet"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
-      "normalized": "landing pages",
-      "count": 1,
-      "forms": [
-        "Landing pages"
-      ],
-      "articles": [
-        "/landings-que-convierten"
-      ]
-    },
-    {
-      "normalized": "lanzamiento web",
-      "count": 1,
-      "forms": [
-        "Lanzamiento web"
-      ],
-      "articles": [
-        "/checklist-lanzamiento-web-2026"
-      ]
-    },
-    {
-      "normalized": "logs",
-      "count": 1,
-      "forms": [
-        "Logs"
-      ],
-      "articles": [
-        "/analisis-de-logs-para-seo"
-      ]
-    },
-    {
-      "normalized": "malware",
-      "count": 1,
-      "forms": [
-        "Malware"
-      ],
-      "articles": [
-        "/mi-web-wordpress-ha-sido-hackeada"
-      ]
-    },
-    {
-      "normalized": "mantenimiento",
-      "count": 1,
-      "forms": [
-        "Mantenimiento"
-      ],
-      "articles": [
-        "/seguridad-basica-en-wordpress"
-      ]
-    },
-    {
-      "normalized": "mantenimiento web proactivo",
-      "count": 1,
-      "forms": [
-        "Mantenimiento Web Proactivo"
-      ],
-      "articles": [
-        "/mantenimiento-web-proactivo"
-      ]
-    },
-    {
-      "normalized": "marketing online",
-      "count": 1,
-      "forms": [
-        "Marketing online"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
-      "normalized": "microsoft 365",
-      "count": 1,
-      "forms": [
-        "Microsoft 365"
-      ],
-      "articles": [
-        "/microsoft-365-para-pymes"
-      ]
-    },
-    {
-      "normalized": "migracion",
-      "count": 1,
-      "forms": [
-        "Migración"
-      ],
-      "articles": [
-        "/checklist-seo-antes-de-redisenar-una-web"
-      ]
-    },
-    {
-      "normalized": "migracion web",
-      "count": 1,
-      "forms": [
-        "Migración web"
-      ],
-      "articles": [
-        "/como-planificar-una-migracion-web"
-      ]
-    },
-    {
-      "normalized": "modulos",
-      "count": 1,
-      "forms": [
-        "Módulos"
-      ],
-      "articles": [
-        "/error-country-module-list-xml-prestashop"
-      ]
-    },
-    {
-      "normalized": "negocios",
-      "count": 1,
-      "forms": [
-        "Negocios"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
       "normalized": "optimizacion",
       "count": 1,
       "forms": [
@@ -629,352 +71,12 @@
       "articles": [
         "/como-mejorar-la-velocidad-de-tu-web"
       ]
-    },
-    {
-      "normalized": "optimizacion de google busin",
-      "count": 1,
-      "forms": [
-        "Optimizacion De Google Busin"
-      ],
-      "articles": [
-        "/optimizacion-de-google-business-profile"
-      ]
-    },
-    {
-      "normalized": "optimizacion web",
-      "count": 1,
-      "forms": [
-        "Optimización web"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-wordpress"
-      ]
-    },
-    {
-      "normalized": "pagespeed",
-      "count": 1,
-      "forms": [
-        "PageSpeed"
-      ],
-      "articles": [
-        "/seo-tecnico-core-web-vitals-2026"
-      ]
-    },
-    {
-      "normalized": "palabras clave",
-      "count": 1,
-      "forms": [
-        "Palabras clave"
-      ],
-      "articles": [
-        "/investigacion-palabras-clave"
-      ]
-    },
-    {
-      "normalized": "pipelines de contenido con i",
-      "count": 1,
-      "forms": [
-        "Pipelines De Contenido Con I"
-      ],
-      "articles": [
-        "/pipelines-de-contenido-con-ia"
-      ]
-    },
-    {
-      "normalized": "plan seo y contenidos para 2",
-      "count": 1,
-      "forms": [
-        "Plan SEO Y Contenidos Para 2"
-      ],
-      "articles": [
-        "/plan-seo-y-contenidos-para-2026"
-      ]
-    },
-    {
-      "normalized": "planificacion",
-      "count": 1,
-      "forms": [
-        "Planificación"
-      ],
-      "articles": [
-        "/balance-web-y-seo-del-ano"
-      ]
-    },
-    {
-      "normalized": "posicionamiento web",
-      "count": 1,
-      "forms": [
-        "Posicionamiento web"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
-      "normalized": "procesos",
-      "count": 1,
-      "forms": [
-        "Procesos"
-      ],
-      "articles": [
-        "/automatizacion-de-respuestas-y-procesos"
-      ]
-    },
-    {
-      "normalized": "prompts",
-      "count": 1,
-      "forms": [
-        "Prompts"
-      ],
-      "articles": [
-        "/prompts-para-redactar-mejor-con-ia"
-      ]
-    },
-    {
-      "normalized": "proyectos",
-      "count": 1,
-      "forms": [
-        "Proyectos"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
-      "normalized": "qa",
-      "count": 1,
-      "forms": [
-        "QA"
-      ],
-      "articles": [
-        "/checklist-lanzamiento-web-2026"
-      ]
-    },
-    {
-      "normalized": "rastreo",
-      "count": 1,
-      "forms": [
-        "Rastreo"
-      ],
-      "articles": [
-        "/analisis-de-logs-para-seo"
-      ]
-    },
-    {
-      "normalized": "redaccion",
-      "count": 1,
-      "forms": [
-        "Redacción"
-      ],
-      "articles": [
-        "/prompts-para-redactar-mejor-con-ia"
-      ]
-    },
-    {
-      "normalized": "redirecciones",
-      "count": 1,
-      "forms": [
-        "Redirecciones"
-      ],
-      "articles": [
-        "/auditoria-contenidos-antes-de-septiembre"
-      ]
-    },
-    {
-      "normalized": "rediseno web",
-      "count": 1,
-      "forms": [
-        "Rediseño web"
-      ],
-      "articles": [
-        "/checklist-seo-antes-de-redisenar-una-web"
-      ]
-    },
-    {
-      "normalized": "rendimiento",
-      "count": 1,
-      "forms": [
-        "Rendimiento"
-      ],
-      "articles": [
-        "/puesta-a-punto-web-antes-del-verano"
-      ]
-    },
-    {
-      "normalized": "responsive design",
-      "count": 1,
-      "forms": [
-        "Responsive design"
-      ],
-      "articles": [
-        "/responsive-design-buenas-practicas"
-      ]
-    },
-    {
-      "normalized": "seguridad",
-      "count": 1,
-      "forms": [
-        "Seguridad"
-      ],
-      "articles": [
-        "/seguridad-basica-en-wordpress"
-      ]
-    },
-    {
-      "normalized": "seo estacional",
-      "count": 1,
-      "forms": [
-        "SEO estacional"
-      ],
-      "articles": [
-        "/seo-estacional-busquedas-de-verano"
-      ]
-    },
-    {
-      "normalized": "seo local avanzado para pyme",
-      "count": 1,
-      "forms": [
-        "SEO Local Avanzado Para pyme"
-      ],
-      "articles": [
-        "/seo-local-avanzado-para-pymes"
-      ]
-    },
-    {
-      "normalized": "seo local y visibilidad para",
-      "count": 1,
-      "forms": [
-        "SEO Local Y Visibilidad Para"
-      ],
-      "articles": [
-        "/seo-local-y-visibilidad-para-pymes-2026"
-      ]
-    },
-    {
-      "normalized": "seo visual",
-      "count": 1,
-      "forms": [
-        "SEO visual"
-      ],
-      "articles": [
-        "/busqueda-multimodal-seo-visual-google-lens"
-      ]
-    },
-    {
-      "normalized": "soporte web",
-      "count": 1,
-      "forms": [
-        "Soporte web"
-      ],
-      "articles": [
-        "/error-500-solucion-rapida-5-pasos"
-      ]
-    },
-    {
-      "normalized": "tecnologia",
-      "count": 1,
-      "forms": [
-        "Tecnología"
-      ],
-      "articles": [
-        "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "transformacion digital",
-      "count": 1,
-      "forms": [
-        "Transformación digital"
-      ],
-      "articles": [
-        "/copilots-y-agentes-para-pymes"
-      ]
-    },
-    {
-      "normalized": "tutorial",
-      "count": 1,
-      "forms": [
-        "Tutorial"
-      ],
-      "articles": [
-        "/codigo-traductor-google-blog"
-      ]
-    },
-    {
-      "normalized": "usabilidad",
-      "count": 1,
-      "forms": [
-        "Usabilidad"
-      ],
-      "articles": [
-        "/errores-de-usabilidad-que-bajan-conversiones"
-      ]
-    },
-    {
-      "normalized": "videollamadas",
-      "count": 1,
-      "forms": [
-        "Videollamadas"
-      ],
-      "articles": [
-        "/herramientas-para-videollamadas-y-colaboracion"
-      ]
-    },
-    {
-      "normalized": "vue.js",
-      "count": 1,
-      "forms": [
-        "Vue.js"
-      ],
-      "articles": [
-        "/vue-js-que-es"
-      ]
-    },
-    {
-      "normalized": "web corporativa",
-      "count": 1,
-      "forms": [
-        "Web corporativa"
-      ],
-      "articles": [
-        "/errores-comunes-en-webs-corporativas"
-      ]
-    },
-    {
-      "normalized": "web hackeada",
-      "count": 1,
-      "forms": [
-        "Web hackeada"
-      ],
-      "articles": [
-        "/mi-web-wordpress-ha-sido-hackeada"
-      ]
-    },
-    {
-      "normalized": "woocommerce",
-      "count": 1,
-      "forms": [
-        "WooCommerce"
-      ],
-      "articles": [
-        "/problemas-canon-digital-ecommerce"
-      ]
-    },
-    {
-      "normalized": "wpo",
-      "count": 1,
-      "forms": [
-        "WPO"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-wordpress"
-      ]
     }
   ],
   "tags": [
     {
       "normalized": "seo",
-      "count": 50,
+      "count": 52,
       "forms": [
         "SEO"
       ],
@@ -988,6 +90,7 @@
         "/autoridad-de-dominio",
         "/backlink-que-es-como-construir-red-de-enlaces",
         "/balance-web-y-seo-del-ano",
+        "/busqueda-multimodal-seo-visual-google-lens",
         "/checklist-ia-y-seo-para-2025",
         "/checklist-seo-antes-de-redisenar-una-web",
         "/checklist-seo-de-fin-de-ano",
@@ -1016,6 +119,7 @@
         "/rich-snippets-y-datos-estructurados",
         "/schema-org-basico-para-pymes",
         "/scraping-web-etico-y-util",
+        "/seo-estacional-busquedas-de-verano",
         "/seo-local-avanzado-para-pymes",
         "/seo-local-que-es-y-como-empezar",
         "/seo-local-y-visibilidad-para-pymes-2026",
@@ -1032,14 +136,49 @@
       ]
     },
     {
+      "normalized": "web",
+      "count": 24,
+      "forms": [
+        "Web"
+      ],
+      "articles": [
+        "/auditoria-tecnica-rapida-de-una-web",
+        "/auditoria-web-basica-para-pymes",
+        "/checklist-lanzamiento-web-2026",
+        "/checklist-seo-antes-de-redisenar-una-web",
+        "/como-crear-briefings-web-mas-claros",
+        "/como-elegir-un-buen-hosting",
+        "/copywriting-web-para-vender-mas",
+        "/errores-al-elegir-dominio-y-hosting",
+        "/errores-comunes-en-webs-corporativas",
+        "/errores-frecuentes-al-crear-una-web",
+        "/plan-digital-para-pymes-2023",
+        "/rendimiento-web-que-medir",
+        "/rich-snippets-y-datos-estructurados",
+        "/schema-org-basico-para-pymes",
+        "/scraping-web-etico-y-util",
+        "/seo-para-categorias-de-ecommerce",
+        "/seo-para-negocios-locales",
+        "/seo-para-tiendas-online",
+        "/seo-y-core-web-vitals",
+        "/teletrabajo-y-productividad-digital",
+        "/tendencias-seo-y-contenidos-2024",
+        "/velocidad-web-y-experiencia-de-pagina",
+        "/ventajas-de-tener-una-web",
+        "/wordpress-o-desarrollo-a-medida"
+      ]
+    },
+    {
       "normalized": "estrategia digital",
-      "count": 21,
+      "count": 23,
       "forms": [
         "Estrategia digital"
       ],
       "articles": [
         "/auditoria-seo-con-ia",
+        "/balance-web-y-seo-del-ano",
         "/checklist-ia-y-seo-para-2025",
+        "/copilots-y-agentes-para-pymes",
         "/guia-seo-pymes-2026",
         "/mantenimiento-web-proactivo",
         "/optimizacion-de-google-business-profile",
@@ -1062,37 +201,8 @@
       ]
     },
     {
-      "normalized": "web",
-      "count": 20,
-      "forms": [
-        "Web"
-      ],
-      "articles": [
-        "/auditoria-tecnica-rapida-de-una-web",
-        "/auditoria-web-basica-para-pymes",
-        "/como-crear-briefings-web-mas-claros",
-        "/como-elegir-un-buen-hosting",
-        "/copywriting-web-para-vender-mas",
-        "/errores-al-elegir-dominio-y-hosting",
-        "/errores-frecuentes-al-crear-una-web",
-        "/plan-digital-para-pymes-2023",
-        "/rendimiento-web-que-medir",
-        "/rich-snippets-y-datos-estructurados",
-        "/schema-org-basico-para-pymes",
-        "/scraping-web-etico-y-util",
-        "/seo-para-categorias-de-ecommerce",
-        "/seo-para-negocios-locales",
-        "/seo-para-tiendas-online",
-        "/seo-y-core-web-vitals",
-        "/teletrabajo-y-productividad-digital",
-        "/tendencias-seo-y-contenidos-2024",
-        "/velocidad-web-y-experiencia-de-pagina",
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
       "normalized": "desarrollo web",
-      "count": 16,
+      "count": 18,
       "forms": [
         "Desarrollo web"
       ],
@@ -1107,12 +217,97 @@
         "/el-mundo-del-programador-web",
         "/errores-frecuentes-al-crear-una-web",
         "/express-js-para-que-sirve",
+        "/git-y-github-para-principiantes",
         "/html-css-y-javascript-por-donde-empezar",
         "/javascript-basico-para-principiantes",
         "/node-js-que-es",
         "/prestashop-que-es-y-cuando-usarlo",
         "/que-es-una-api-y-para-que-sirve",
+        "/vue-js-que-es",
         "/wordpress-o-desarrollo-a-medida"
+      ]
+    },
+    {
+      "normalized": "contenidos",
+      "count": 15,
+      "forms": [
+        "Contenidos"
+      ],
+      "articles": [
+        "/auditoria-contenidos-antes-de-septiembre",
+        "/chatgpt-y-marketing-digital",
+        "/clusters-de-contenido-y-seo",
+        "/contenido-que-ayuda-a-captar-clientes",
+        "/contenido-y-seo",
+        "/contenidos-utiles-y-eeat",
+        "/copywriting-web-para-vender-mas",
+        "/guias-y-tutoriales-como-organizar-tu-contenido",
+        "/ia-y-seo-primeros-usos-practicos",
+        "/investigacion-palabras-clave",
+        "/pipelines-de-contenido-con-ia",
+        "/plan-seo-y-contenidos-para-2026",
+        "/prompts-para-redactar-mejor-con-ia",
+        "/seo-estacional-busquedas-de-verano",
+        "/ventajas-de-tener-una-web"
+      ]
+    },
+    {
+      "normalized": "seo tecnico",
+      "count": 12,
+      "forms": [
+        "SEO técnico"
+      ],
+      "articles": [
+        "/analisis-de-logs-para-seo",
+        "/arquitectura-web-para-catalogos-grandes",
+        "/auditoria-contenidos-antes-de-septiembre",
+        "/auditoria-seo-paso-a-paso",
+        "/auditoria-tecnica-rapida-de-una-web",
+        "/automatizaciones-con-python-para-seo",
+        "/checklist-lanzamiento-web-2026",
+        "/como-planificar-una-migracion-web",
+        "/guia-seo-pymes-2026",
+        "/puesta-a-punto-web-antes-del-verano",
+        "/seo-on-page-aspectos-tecnicos",
+        "/seo-tecnico-core-web-vitals-2026"
+      ]
+    },
+    {
+      "normalized": "ia",
+      "count": 10,
+      "forms": [
+        "IA"
+      ],
+      "articles": [
+        "/auditoria-seo-con-ia",
+        "/chatgpt-y-marketing-digital",
+        "/checklist-ia-y-seo-para-2025",
+        "/copilots-y-agentes-para-pymes",
+        "/editores-con-ia-y-agentes-de-desarrollo",
+        "/ia-generativa-estrategia-contenidos-seo",
+        "/ia-y-seo-primeros-usos-practicos",
+        "/pipelines-de-contenido-con-ia",
+        "/programacion-asistida-por-ia",
+        "/prompts-para-redactar-mejor-con-ia"
+      ]
+    },
+    {
+      "normalized": "marketing digital",
+      "count": 10,
+      "forms": [
+        "Marketing digital"
+      ],
+      "articles": [
+        "/autoridad-de-dominio",
+        "/chatgpt-y-marketing-digital",
+        "/contenido-que-ayuda-a-captar-clientes",
+        "/email-marketing-para-pymes",
+        "/estrategias-de-captacion-b2b",
+        "/google-shopping-actions",
+        "/herramientas-seo",
+        "/herramientas-seo-gratuitas",
+        "/landings-que-convierten",
+        "/seo-que-es"
       ]
     },
     {
@@ -1135,45 +330,8 @@
       ]
     },
     {
-      "normalized": "seo tecnico",
-      "count": 10,
-      "forms": [
-        "SEO técnico"
-      ],
-      "articles": [
-        "/analisis-de-logs-para-seo",
-        "/arquitectura-web-para-catalogos-grandes",
-        "/auditoria-seo-paso-a-paso",
-        "/auditoria-tecnica-rapida-de-una-web",
-        "/automatizaciones-con-python-para-seo",
-        "/checklist-lanzamiento-web-2026",
-        "/como-planificar-una-migracion-web",
-        "/guia-seo-pymes-2026",
-        "/puesta-a-punto-web-antes-del-verano",
-        "/seo-tecnico-core-web-vitals-2026"
-      ]
-    },
-    {
-      "normalized": "marketing digital",
-      "count": 9,
-      "forms": [
-        "Marketing digital"
-      ],
-      "articles": [
-        "/chatgpt-y-marketing-digital",
-        "/contenido-que-ayuda-a-captar-clientes",
-        "/email-marketing-para-pymes",
-        "/estrategias-de-captacion-b2b",
-        "/google-shopping-actions",
-        "/herramientas-seo",
-        "/herramientas-seo-gratuitas",
-        "/landings-que-convierten",
-        "/seo-que-es"
-      ]
-    },
-    {
       "normalized": "programacion",
-      "count": 8,
+      "count": 9,
       "forms": [
         "Programación"
       ],
@@ -1181,6 +339,7 @@
         "/conceptos-basicos-programacion",
         "/editores-con-ia-y-agentes-de-desarrollo",
         "/el-mundo-del-programador-web",
+        "/git-y-github-para-principiantes",
         "/javascript-basico-para-principiantes",
         "/node-js-que-es",
         "/primeros-pasos-python",
@@ -1189,41 +348,41 @@
       ]
     },
     {
-      "normalized": "contenidos",
-      "count": 7,
-      "forms": [
-        "Contenidos"
-      ],
-      "articles": [
-        "/chatgpt-y-marketing-digital",
-        "/clusters-de-contenido-y-seo",
-        "/contenido-que-ayuda-a-captar-clientes",
-        "/contenidos-utiles-y-eeat",
-        "/guias-y-tutoriales-como-organizar-tu-contenido",
-        "/prompts-para-redactar-mejor-con-ia",
-        "/seo-estacional-busquedas-de-verano"
-      ]
-    },
-    {
       "normalized": "wordpress",
-      "count": 7,
+      "count": 8,
       "forms": [
-        "WordPress",
-        "wordpress"
+        "WordPress"
       ],
       "articles": [
         "/como-elegir-un-buen-hosting",
         "/como-mejorar-la-velocidad-de-wordpress",
         "/error-500-wordpress-solucion-paso-a-paso",
         "/mi-web-wordpress-ha-sido-hackeada",
+        "/problemas-canon-digital-ecommerce",
         "/seguridad-basica-en-wordpress",
         "/wordpress-lento-diagnostico-real-paso-a-paso",
         "/wordpress-o-desarrollo-a-medida"
       ]
     },
     {
+      "normalized": "analitica web",
+      "count": 7,
+      "forms": [
+        "Analítica web"
+      ],
+      "articles": [
+        "/automatizar-informes-seo",
+        "/balance-web-y-seo-del-ano",
+        "/como-medir-rendimiento-web-metricas-utiles",
+        "/dashboard-ga4-para-direccion",
+        "/ga4-eventos-y-conversiones",
+        "/ga4-primeros-pasos",
+        "/ga4-y-bigquery-primer-enfoque"
+      ]
+    },
+    {
       "normalized": "ecommerce",
-      "count": 6,
+      "count": 7,
       "forms": [
         "Ecommerce"
       ],
@@ -1233,27 +392,13 @@
         "/optimizacion-de-fichas-de-producto",
         "/prestashop-que-es-y-cuando-usarlo",
         "/prestashop-va-lento-como-optimizarlo",
+        "/problemas-canon-digital-ecommerce",
         "/seo-para-ecommerce"
       ]
     },
     {
-      "normalized": "ia",
-      "count": 6,
-      "forms": [
-        "IA"
-      ],
-      "articles": [
-        "/copilots-y-agentes-para-pymes",
-        "/editores-con-ia-y-agentes-de-desarrollo",
-        "/ia-generativa-estrategia-contenidos-seo",
-        "/ia-y-seo-primeros-usos-practicos",
-        "/programacion-asistida-por-ia",
-        "/prompts-para-redactar-mejor-con-ia"
-      ]
-    },
-    {
       "normalized": "automatizacion",
-      "count": 5,
+      "count": 6,
       "forms": [
         "Automatización"
       ],
@@ -1262,7 +407,95 @@
         "/automatizacion-de-tareas-en-la-empresa",
         "/automatizaciones-con-python-para-seo",
         "/automatizar-informes-seo",
-        "/copilots-y-agentes-para-pymes"
+        "/copilots-y-agentes-para-pymes",
+        "/pipelines-de-contenido-con-ia"
+      ]
+    },
+    {
+      "normalized": "mantenimiento web",
+      "count": 6,
+      "forms": [
+        "Mantenimiento web"
+      ],
+      "articles": [
+        "/error-500-wordpress-solucion-paso-a-paso",
+        "/mantenimiento-web-proactivo",
+        "/mi-web-no-carga-que-hacer-10-minutos",
+        "/puesta-a-punto-web-antes-del-verano",
+        "/seguridad-basica-en-wordpress",
+        "/wordpress-lento-diagnostico-real-paso-a-paso"
+      ]
+    },
+    {
+      "normalized": "rendimiento web",
+      "count": 6,
+      "forms": [
+        "Rendimiento web"
+      ],
+      "articles": [
+        "/como-mejorar-la-velocidad-de-tu-web",
+        "/como-mejorar-la-velocidad-de-wordpress",
+        "/prestashop-va-lento-como-optimizarlo",
+        "/puesta-a-punto-web-antes-del-verano",
+        "/seo-tecnico-core-web-vitals-2026",
+        "/wordpress-lento-diagnostico-real-paso-a-paso"
+      ]
+    },
+    {
+      "normalized": "seo local",
+      "count": 6,
+      "forms": [
+        "SEO local"
+      ],
+      "articles": [
+        "/google-my-business-para-negocios-locales",
+        "/guia-seo-pymes-2026",
+        "/optimizacion-de-google-business-profile",
+        "/seo-local-avanzado-para-pymes",
+        "/seo-local-que-es-y-como-empezar",
+        "/seo-local-y-visibilidad-para-pymes-2026"
+      ]
+    },
+    {
+      "normalized": "auditoria seo",
+      "count": 5,
+      "forms": [
+        "Auditoría SEO"
+      ],
+      "articles": [
+        "/auditoria-contenidos-antes-de-septiembre",
+        "/auditoria-seo-con-ia",
+        "/auditoria-seo-paso-a-paso",
+        "/auditoria-tecnica-rapida-de-una-web",
+        "/checklist-seo-de-fin-de-ano"
+      ]
+    },
+    {
+      "normalized": "conversion",
+      "count": 5,
+      "forms": [
+        "Conversión"
+      ],
+      "articles": [
+        "/copywriting-web-para-vender-mas",
+        "/errores-comunes-en-webs-corporativas",
+        "/errores-de-usabilidad-que-bajan-conversiones",
+        "/ga4-eventos-y-conversiones",
+        "/landings-que-convierten"
+      ]
+    },
+    {
+      "normalized": "errores web",
+      "count": 5,
+      "forms": [
+        "Errores web"
+      ],
+      "articles": [
+        "/error-500-solucion-rapida-5-pasos",
+        "/error-500-wordpress-solucion-paso-a-paso",
+        "/errores-al-elegir-dominio-y-hosting",
+        "/mi-web-no-carga-que-hacer-10-minutos",
+        "/mi-web-wordpress-ha-sido-hackeada"
       ]
     },
     {
@@ -1294,16 +527,17 @@
       ]
     },
     {
-      "normalized": "analitica web",
-      "count": 4,
+      "normalized": "ux",
+      "count": 5,
       "forms": [
-        "Analítica web"
+        "UX"
       ],
       "articles": [
-        "/como-medir-rendimiento-web-metricas-utiles",
-        "/ga4-eventos-y-conversiones",
-        "/ga4-primeros-pasos",
-        "/ga4-y-bigquery-primer-enfoque"
+        "/accesibilidad-web-principios-basicos",
+        "/errores-comunes-en-webs-corporativas",
+        "/errores-de-usabilidad-que-bajan-conversiones",
+        "/experiencia-de-usuario-ux-y-seo",
+        "/responsive-design-buenas-practicas"
       ]
     },
     {
@@ -1317,19 +551,6 @@
         "/clusters-de-contenido-y-seo",
         "/enlazado-interno-para-seo",
         "/guias-y-tutoriales-como-organizar-tu-contenido"
-      ]
-    },
-    {
-      "normalized": "conversion",
-      "count": 4,
-      "forms": [
-        "Conversión"
-      ],
-      "articles": [
-        "/copywriting-web-para-vender-mas",
-        "/errores-comunes-en-webs-corporativas",
-        "/errores-de-usabilidad-que-bajan-conversiones",
-        "/landings-que-convierten"
       ]
     },
     {
@@ -1359,19 +580,6 @@
       ]
     },
     {
-      "normalized": "rendimiento web",
-      "count": 4,
-      "forms": [
-        "Rendimiento web"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-tu-web",
-        "/como-mejorar-la-velocidad-de-wordpress",
-        "/prestashop-va-lento-como-optimizarlo",
-        "/seo-tecnico-core-web-vitals-2026"
-      ]
-    },
-    {
       "normalized": "search console",
       "count": 4,
       "forms": [
@@ -1397,6 +605,18 @@
       ]
     },
     {
+      "normalized": "backlinks",
+      "count": 3,
+      "forms": [
+        "Backlinks"
+      ],
+      "articles": [
+        "/autoridad-de-dominio",
+        "/backlink-que-es-como-construir-red-de-enlaces",
+        "/experiencia-de-usuario-ux-y-seo"
+      ]
+    },
+    {
       "normalized": "colaboracion",
       "count": 3,
       "forms": [
@@ -1409,51 +629,39 @@
       ]
     },
     {
-      "normalized": "contenido",
+      "normalized": "seguridad web",
       "count": 3,
       "forms": [
-        "Contenido"
+        "Seguridad web"
       ],
       "articles": [
-        "/contenido-y-seo",
-        "/ia-y-seo-primeros-usos-practicos",
-        "/investigacion-palabras-clave"
+        "/mi-web-wordpress-ha-sido-hackeada",
+        "/puesta-a-punto-web-antes-del-verano",
+        "/seguridad-basica-en-wordpress"
       ]
     },
     {
-      "normalized": "errores web",
+      "normalized": "servidor",
       "count": 3,
       "forms": [
-        "Errores web"
+        "Servidor"
       ],
       "articles": [
         "/error-500-solucion-rapida-5-pasos",
         "/error-500-wordpress-solucion-paso-a-paso",
-        "/mi-web-wordpress-ha-sido-hackeada"
+        "/mi-web-no-carga-que-hacer-10-minutos"
       ]
     },
     {
-      "normalized": "seo local",
+      "normalized": "tecnologia",
       "count": 3,
       "forms": [
-        "SEO local"
+        "Tecnología"
       ],
       "articles": [
-        "/google-my-business-para-negocios-locales",
-        "/guia-seo-pymes-2026",
-        "/seo-local-que-es-y-como-empezar"
-      ]
-    },
-    {
-      "normalized": "ux",
-      "count": 3,
-      "forms": [
-        "UX"
-      ],
-      "articles": [
-        "/accesibilidad-web-principios-basicos",
-        "/errores-comunes-en-webs-corporativas",
-        "/errores-de-usabilidad-que-bajan-conversiones"
+        "/microsoft-365-para-pymes",
+        "/que-es-bluetooth",
+        "/que-es-una-api-y-para-que-sirve"
       ]
     },
     {
@@ -1476,39 +684,6 @@
       "articles": [
         "/como-elegir-un-buen-hosting",
         "/errores-al-elegir-dominio-y-hosting"
-      ]
-    },
-    {
-      "normalized": "analitica",
-      "count": 2,
-      "forms": [
-        "Analítica"
-      ],
-      "articles": [
-        "/balance-web-y-seo-del-ano",
-        "/dashboard-ga4-para-direccion"
-      ]
-    },
-    {
-      "normalized": "auditoria seo",
-      "count": 2,
-      "forms": [
-        "Auditoría SEO"
-      ],
-      "articles": [
-        "/auditoria-seo-paso-a-paso",
-        "/checklist-seo-de-fin-de-ano"
-      ]
-    },
-    {
-      "normalized": "backlinks",
-      "count": 2,
-      "forms": [
-        "Backlinks"
-      ],
-      "articles": [
-        "/backlink-que-es-como-construir-red-de-enlaces",
-        "/experiencia-de-usuario-ux-y-seo"
       ]
     },
     {
@@ -1578,69 +753,14 @@
       ]
     },
     {
-      "normalized": "google analytics",
+      "normalized": "migracion web",
       "count": 2,
       "forms": [
-        "Google Analytics"
+        "Migración web"
       ],
       "articles": [
-        "/como-medir-rendimiento-web-metricas-utiles",
-        "/ga4-primeros-pasos"
-      ]
-    },
-    {
-      "normalized": "guia",
-      "count": 2,
-      "forms": [
-        "Guía"
-      ],
-      "articles": [
-        "/como-crear-una-pagina-web",
-        "/seo-que-es"
-      ]
-    },
-    {
-      "normalized": "herramientas",
-      "count": 2,
-      "forms": [
-        "Herramientas"
-      ],
-      "articles": [
-        "/herramientas-seo",
-        "/herramientas-seo-gratuitas"
-      ]
-    },
-    {
-      "normalized": "hosting",
-      "count": 2,
-      "forms": [
-        "Hosting"
-      ],
-      "articles": [
-        "/como-elegir-un-buen-hosting",
-        "/errores-al-elegir-dominio-y-hosting"
-      ]
-    },
-    {
-      "normalized": "mantenimiento web",
-      "count": 2,
-      "forms": [
-        "Mantenimiento web"
-      ],
-      "articles": [
-        "/error-500-wordpress-solucion-paso-a-paso",
-        "/puesta-a-punto-web-antes-del-verano"
-      ]
-    },
-    {
-      "normalized": "negocios locales",
-      "count": 2,
-      "forms": [
-        "Negocios locales"
-      ],
-      "articles": [
-        "/google-my-business-para-negocios-locales",
-        "/seo-local-que-es-y-como-empezar"
+        "/checklist-seo-antes-de-redisenar-una-web",
+        "/como-planificar-una-migracion-web"
       ]
     },
     {
@@ -1666,150 +786,6 @@
       ]
     },
     {
-      "normalized": "seguridad web",
-      "count": 2,
-      "forms": [
-        "Seguridad web"
-      ],
-      "articles": [
-        "/mi-web-wordpress-ha-sido-hackeada",
-        "/puesta-a-punto-web-antes-del-verano"
-      ]
-    },
-    {
-      "normalized": "servidor",
-      "count": 2,
-      "forms": [
-        "Servidor"
-      ],
-      "articles": [
-        "/error-500-solucion-rapida-5-pasos",
-        "/error-500-wordpress-solucion-paso-a-paso"
-      ]
-    },
-    {
-      "normalized": "tiendas online",
-      "count": 2,
-      "forms": [
-        "Tiendas online"
-      ],
-      "articles": [
-        "/problemas-canon-digital-ecommerce",
-        "/seo-para-ecommerce"
-      ]
-    },
-    {
-      "normalized": "velocidad web",
-      "count": 2,
-      "forms": [
-        "Velocidad web"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-wordpress",
-        "/prestashop-va-lento-como-optimizarlo"
-      ]
-    },
-    {
-      "normalized": "2025",
-      "count": 1,
-      "forms": [
-        "2025"
-      ],
-      "articles": [
-        "/checklist-ia-y-seo-para-2025"
-      ]
-    },
-    {
-      "normalized": "api",
-      "count": 1,
-      "forms": [
-        "API"
-      ],
-      "articles": [
-        "/que-es-una-api-y-para-que-sirve"
-      ]
-    },
-    {
-      "normalized": "auditoria",
-      "count": 1,
-      "forms": [
-        "Auditoría"
-      ],
-      "articles": [
-        "/auditoria-tecnica-rapida-de-una-web"
-      ]
-    },
-    {
-      "normalized": "auditoria de contenidos",
-      "count": 1,
-      "forms": [
-        "Auditoría de contenidos"
-      ],
-      "articles": [
-        "/auditoria-contenidos-antes-de-septiembre"
-      ]
-    },
-    {
-      "normalized": "auditoria seo con ia",
-      "count": 1,
-      "forms": [
-        "Auditoría SEO con IA"
-      ],
-      "articles": [
-        "/auditoria-seo-con-ia"
-      ]
-    },
-    {
-      "normalized": "autoridad de dominio",
-      "count": 1,
-      "forms": [
-        "Autoridad de dominio"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
-      "normalized": "b2b",
-      "count": 1,
-      "forms": [
-        "B2B"
-      ],
-      "articles": [
-        "/estrategias-de-captacion-b2b"
-      ]
-    },
-    {
-      "normalized": "backoffice",
-      "count": 1,
-      "forms": [
-        "Backoffice"
-      ],
-      "articles": [
-        "/error-country-module-list-xml-prestashop"
-      ]
-    },
-    {
-      "normalized": "bigquery",
-      "count": 1,
-      "forms": [
-        "BigQuery"
-      ],
-      "articles": [
-        "/ga4-y-bigquery-primer-enfoque"
-      ]
-    },
-    {
-      "normalized": "blogs",
-      "count": 1,
-      "forms": [
-        "Blogs"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
       "normalized": "bluetooth",
       "count": 1,
       "forms": [
@@ -1817,76 +793,6 @@
       ],
       "articles": [
         "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "briefing",
-      "count": 1,
-      "forms": [
-        "Briefing"
-      ],
-      "articles": [
-        "/como-crear-briefings-web-mas-claros"
-      ]
-    },
-    {
-      "normalized": "busqueda multimodal",
-      "count": 1,
-      "forms": [
-        "Búsqueda multimodal"
-      ],
-      "articles": [
-        "/busqueda-multimodal-seo-visual-google-lens"
-      ]
-    },
-    {
-      "normalized": "canibalizacion",
-      "count": 1,
-      "forms": [
-        "Canibalización"
-      ],
-      "articles": [
-        "/auditoria-contenidos-antes-de-septiembre"
-      ]
-    },
-    {
-      "normalized": "canon digital",
-      "count": 1,
-      "forms": [
-        "Canon digital"
-      ],
-      "articles": [
-        "/problemas-canon-digital-ecommerce"
-      ]
-    },
-    {
-      "normalized": "chatgpt",
-      "count": 1,
-      "forms": [
-        "ChatGPT"
-      ],
-      "articles": [
-        "/chatgpt-y-marketing-digital"
-      ]
-    },
-    {
-      "normalized": "checklist",
-      "count": 1,
-      "forms": [
-        "Checklist"
-      ],
-      "articles": [
-        "/checklist-seo-de-fin-de-ano"
-      ]
-    },
-    {
-      "normalized": "cms",
-      "count": 1,
-      "forms": [
-        "CMS"
-      ],
-      "articles": [
-        "/wordpress-o-desarrollo-a-medida"
       ]
     },
     {
@@ -1900,86 +806,6 @@
       ]
     },
     {
-      "normalized": "conversiones",
-      "count": 1,
-      "forms": [
-        "Conversiones"
-      ],
-      "articles": [
-        "/ga4-eventos-y-conversiones"
-      ]
-    },
-    {
-      "normalized": "copywriting",
-      "count": 1,
-      "forms": [
-        "Copywriting"
-      ],
-      "articles": [
-        "/copywriting-web-para-vender-mas"
-      ]
-    },
-    {
-      "normalized": "core web vitals",
-      "count": 1,
-      "forms": [
-        "Core Web Vitals"
-      ],
-      "articles": [
-        "/seo-tecnico-core-web-vitals-2026"
-      ]
-    },
-    {
-      "normalized": "dashboard",
-      "count": 1,
-      "forms": [
-        "Dashboard"
-      ],
-      "articles": [
-        "/dashboard-ga4-para-direccion"
-      ]
-    },
-    {
-      "normalized": "e-commerce",
-      "count": 1,
-      "forms": [
-        "E-commerce"
-      ],
-      "articles": [
-        "/problemas-canon-digital-ecommerce"
-      ]
-    },
-    {
-      "normalized": "e-e-a-t",
-      "count": 1,
-      "forms": [
-        "E-E-A-T"
-      ],
-      "articles": [
-        "/contenidos-utiles-y-eeat"
-      ]
-    },
-    {
-      "normalized": "email marketing",
-      "count": 1,
-      "forms": [
-        "Email marketing"
-      ],
-      "articles": [
-        "/email-marketing-para-pymes"
-      ]
-    },
-    {
-      "normalized": "enlaces",
-      "count": 1,
-      "forms": [
-        "Enlaces"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
       "normalized": "enlazado interno",
       "count": 1,
       "forms": [
@@ -1987,76 +813,6 @@
       ],
       "articles": [
         "/enlazado-interno-para-seo"
-      ]
-    },
-    {
-      "normalized": "equipos",
-      "count": 1,
-      "forms": [
-        "Equipos"
-      ],
-      "articles": [
-        "/productividad-digital-en-equipos-pequenos"
-      ]
-    },
-    {
-      "normalized": "error xml",
-      "count": 1,
-      "forms": [
-        "Error XML"
-      ],
-      "articles": [
-        "/error-country-module-list-xml-prestashop"
-      ]
-    },
-    {
-      "normalized": "errores frecuentes",
-      "count": 1,
-      "forms": [
-        "Errores frecuentes"
-      ],
-      "articles": [
-        "/errores-al-elegir-dominio-y-hosting"
-      ]
-    },
-    {
-      "normalized": "express.js",
-      "count": 1,
-      "forms": [
-        "Express.js"
-      ],
-      "articles": [
-        "/express-js-para-que-sirve"
-      ]
-    },
-    {
-      "normalized": "fichas de producto",
-      "count": 1,
-      "forms": [
-        "Fichas de producto"
-      ],
-      "articles": [
-        "/optimizacion-de-fichas-de-producto"
-      ]
-    },
-    {
-      "normalized": "frontend",
-      "count": 1,
-      "forms": [
-        "Frontend"
-      ],
-      "articles": [
-        "/vue-js-que-es"
-      ]
-    },
-    {
-      "normalized": "fundamentos",
-      "count": 1,
-      "forms": [
-        "Fundamentos"
-      ],
-      "articles": [
-        "/conceptos-basicos-programacion"
       ]
     },
     {
@@ -2080,226 +836,6 @@
       ]
     },
     {
-      "normalized": "google lens",
-      "count": 1,
-      "forms": [
-        "Google Lens"
-      ],
-      "articles": [
-        "/busqueda-multimodal-seo-visual-google-lens"
-      ]
-    },
-    {
-      "normalized": "google my business",
-      "count": 1,
-      "forms": [
-        "Google My Business"
-      ],
-      "articles": [
-        "/google-my-business-para-negocios-locales"
-      ]
-    },
-    {
-      "normalized": "google shopping",
-      "count": 1,
-      "forms": [
-        "Google Shopping"
-      ],
-      "articles": [
-        "/google-shopping-actions"
-      ]
-    },
-    {
-      "normalized": "google trends",
-      "count": 1,
-      "forms": [
-        "Google Trends"
-      ],
-      "articles": [
-        "/seo-estacional-busquedas-de-verano"
-      ]
-    },
-    {
-      "normalized": "herramientas de desarrollo",
-      "count": 1,
-      "forms": [
-        "Herramientas de desarrollo"
-      ],
-      "articles": [
-        "/editores-con-ia-y-agentes-de-desarrollo"
-      ]
-    },
-    {
-      "normalized": "herramientas digitales",
-      "count": 1,
-      "forms": [
-        "Herramientas digitales"
-      ],
-      "articles": [
-        "/productividad-digital-en-equipos-pequenos"
-      ]
-    },
-    {
-      "normalized": "html",
-      "count": 1,
-      "forms": [
-        "HTML"
-      ],
-      "articles": [
-        "/html-css-y-javascript-por-donde-empezar"
-      ]
-    },
-    {
-      "normalized": "ia y seo",
-      "count": 1,
-      "forms": [
-        "IA y SEO"
-      ],
-      "articles": [
-        "/checklist-ia-y-seo-para-2025"
-      ]
-    },
-    {
-      "normalized": "informes",
-      "count": 1,
-      "forms": [
-        "Informes"
-      ],
-      "articles": [
-        "/automatizar-informes-seo"
-      ]
-    },
-    {
-      "normalized": "internet",
-      "count": 1,
-      "forms": [
-        "Internet"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
-      "normalized": "landing pages",
-      "count": 1,
-      "forms": [
-        "Landing pages"
-      ],
-      "articles": [
-        "/landings-que-convierten"
-      ]
-    },
-    {
-      "normalized": "lanzamiento web",
-      "count": 1,
-      "forms": [
-        "Lanzamiento web"
-      ],
-      "articles": [
-        "/checklist-lanzamiento-web-2026"
-      ]
-    },
-    {
-      "normalized": "logs",
-      "count": 1,
-      "forms": [
-        "Logs"
-      ],
-      "articles": [
-        "/analisis-de-logs-para-seo"
-      ]
-    },
-    {
-      "normalized": "malware",
-      "count": 1,
-      "forms": [
-        "Malware"
-      ],
-      "articles": [
-        "/mi-web-wordpress-ha-sido-hackeada"
-      ]
-    },
-    {
-      "normalized": "mantenimiento",
-      "count": 1,
-      "forms": [
-        "Mantenimiento"
-      ],
-      "articles": [
-        "/seguridad-basica-en-wordpress"
-      ]
-    },
-    {
-      "normalized": "mantenimiento web proactivo",
-      "count": 1,
-      "forms": [
-        "Mantenimiento Web Proactivo"
-      ],
-      "articles": [
-        "/mantenimiento-web-proactivo"
-      ]
-    },
-    {
-      "normalized": "marketing online",
-      "count": 1,
-      "forms": [
-        "Marketing online"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
-      "normalized": "microsoft 365",
-      "count": 1,
-      "forms": [
-        "Microsoft 365"
-      ],
-      "articles": [
-        "/microsoft-365-para-pymes"
-      ]
-    },
-    {
-      "normalized": "migracion",
-      "count": 1,
-      "forms": [
-        "Migración"
-      ],
-      "articles": [
-        "/checklist-seo-antes-de-redisenar-una-web"
-      ]
-    },
-    {
-      "normalized": "migracion web",
-      "count": 1,
-      "forms": [
-        "Migración web"
-      ],
-      "articles": [
-        "/como-planificar-una-migracion-web"
-      ]
-    },
-    {
-      "normalized": "modulos",
-      "count": 1,
-      "forms": [
-        "Módulos"
-      ],
-      "articles": [
-        "/error-country-module-list-xml-prestashop"
-      ]
-    },
-    {
-      "normalized": "negocios",
-      "count": 1,
-      "forms": [
-        "Negocios"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
       "normalized": "optimizacion",
       "count": 1,
       "forms": [
@@ -2307,346 +843,6 @@
       ],
       "articles": [
         "/como-mejorar-la-velocidad-de-tu-web"
-      ]
-    },
-    {
-      "normalized": "optimizacion de google busin",
-      "count": 1,
-      "forms": [
-        "Optimizacion De Google Busin"
-      ],
-      "articles": [
-        "/optimizacion-de-google-business-profile"
-      ]
-    },
-    {
-      "normalized": "optimizacion web",
-      "count": 1,
-      "forms": [
-        "Optimización web"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-wordpress"
-      ]
-    },
-    {
-      "normalized": "pagespeed",
-      "count": 1,
-      "forms": [
-        "PageSpeed"
-      ],
-      "articles": [
-        "/seo-tecnico-core-web-vitals-2026"
-      ]
-    },
-    {
-      "normalized": "palabras clave",
-      "count": 1,
-      "forms": [
-        "Palabras clave"
-      ],
-      "articles": [
-        "/investigacion-palabras-clave"
-      ]
-    },
-    {
-      "normalized": "pipelines de contenido con i",
-      "count": 1,
-      "forms": [
-        "Pipelines De Contenido Con I"
-      ],
-      "articles": [
-        "/pipelines-de-contenido-con-ia"
-      ]
-    },
-    {
-      "normalized": "plan seo y contenidos para 2",
-      "count": 1,
-      "forms": [
-        "Plan SEO Y Contenidos Para 2"
-      ],
-      "articles": [
-        "/plan-seo-y-contenidos-para-2026"
-      ]
-    },
-    {
-      "normalized": "planificacion",
-      "count": 1,
-      "forms": [
-        "Planificación"
-      ],
-      "articles": [
-        "/balance-web-y-seo-del-ano"
-      ]
-    },
-    {
-      "normalized": "posicionamiento web",
-      "count": 1,
-      "forms": [
-        "Posicionamiento web"
-      ],
-      "articles": [
-        "/autoridad-de-dominio"
-      ]
-    },
-    {
-      "normalized": "procesos",
-      "count": 1,
-      "forms": [
-        "Procesos"
-      ],
-      "articles": [
-        "/automatizacion-de-respuestas-y-procesos"
-      ]
-    },
-    {
-      "normalized": "prompts",
-      "count": 1,
-      "forms": [
-        "Prompts"
-      ],
-      "articles": [
-        "/prompts-para-redactar-mejor-con-ia"
-      ]
-    },
-    {
-      "normalized": "proyectos",
-      "count": 1,
-      "forms": [
-        "Proyectos"
-      ],
-      "articles": [
-        "/ventajas-de-tener-una-web"
-      ]
-    },
-    {
-      "normalized": "qa",
-      "count": 1,
-      "forms": [
-        "QA"
-      ],
-      "articles": [
-        "/checklist-lanzamiento-web-2026"
-      ]
-    },
-    {
-      "normalized": "rastreo",
-      "count": 1,
-      "forms": [
-        "Rastreo"
-      ],
-      "articles": [
-        "/analisis-de-logs-para-seo"
-      ]
-    },
-    {
-      "normalized": "redaccion",
-      "count": 1,
-      "forms": [
-        "Redacción"
-      ],
-      "articles": [
-        "/prompts-para-redactar-mejor-con-ia"
-      ]
-    },
-    {
-      "normalized": "redirecciones",
-      "count": 1,
-      "forms": [
-        "Redirecciones"
-      ],
-      "articles": [
-        "/auditoria-contenidos-antes-de-septiembre"
-      ]
-    },
-    {
-      "normalized": "rediseno web",
-      "count": 1,
-      "forms": [
-        "Rediseño web"
-      ],
-      "articles": [
-        "/checklist-seo-antes-de-redisenar-una-web"
-      ]
-    },
-    {
-      "normalized": "rendimiento",
-      "count": 1,
-      "forms": [
-        "Rendimiento"
-      ],
-      "articles": [
-        "/puesta-a-punto-web-antes-del-verano"
-      ]
-    },
-    {
-      "normalized": "responsive design",
-      "count": 1,
-      "forms": [
-        "Responsive design"
-      ],
-      "articles": [
-        "/responsive-design-buenas-practicas"
-      ]
-    },
-    {
-      "normalized": "seguridad",
-      "count": 1,
-      "forms": [
-        "Seguridad"
-      ],
-      "articles": [
-        "/seguridad-basica-en-wordpress"
-      ]
-    },
-    {
-      "normalized": "seo estacional",
-      "count": 1,
-      "forms": [
-        "SEO estacional"
-      ],
-      "articles": [
-        "/seo-estacional-busquedas-de-verano"
-      ]
-    },
-    {
-      "normalized": "seo local avanzado para pyme",
-      "count": 1,
-      "forms": [
-        "SEO Local Avanzado Para pyme"
-      ],
-      "articles": [
-        "/seo-local-avanzado-para-pymes"
-      ]
-    },
-    {
-      "normalized": "seo local y visibilidad para",
-      "count": 1,
-      "forms": [
-        "SEO Local Y Visibilidad Para"
-      ],
-      "articles": [
-        "/seo-local-y-visibilidad-para-pymes-2026"
-      ]
-    },
-    {
-      "normalized": "seo visual",
-      "count": 1,
-      "forms": [
-        "SEO visual"
-      ],
-      "articles": [
-        "/busqueda-multimodal-seo-visual-google-lens"
-      ]
-    },
-    {
-      "normalized": "soporte web",
-      "count": 1,
-      "forms": [
-        "Soporte web"
-      ],
-      "articles": [
-        "/error-500-solucion-rapida-5-pasos"
-      ]
-    },
-    {
-      "normalized": "tecnologia",
-      "count": 1,
-      "forms": [
-        "Tecnología"
-      ],
-      "articles": [
-        "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "transformacion digital",
-      "count": 1,
-      "forms": [
-        "Transformación digital"
-      ],
-      "articles": [
-        "/copilots-y-agentes-para-pymes"
-      ]
-    },
-    {
-      "normalized": "tutorial",
-      "count": 1,
-      "forms": [
-        "Tutorial"
-      ],
-      "articles": [
-        "/codigo-traductor-google-blog"
-      ]
-    },
-    {
-      "normalized": "usabilidad",
-      "count": 1,
-      "forms": [
-        "Usabilidad"
-      ],
-      "articles": [
-        "/errores-de-usabilidad-que-bajan-conversiones"
-      ]
-    },
-    {
-      "normalized": "videollamadas",
-      "count": 1,
-      "forms": [
-        "Videollamadas"
-      ],
-      "articles": [
-        "/herramientas-para-videollamadas-y-colaboracion"
-      ]
-    },
-    {
-      "normalized": "vue.js",
-      "count": 1,
-      "forms": [
-        "Vue.js"
-      ],
-      "articles": [
-        "/vue-js-que-es"
-      ]
-    },
-    {
-      "normalized": "web corporativa",
-      "count": 1,
-      "forms": [
-        "Web corporativa"
-      ],
-      "articles": [
-        "/errores-comunes-en-webs-corporativas"
-      ]
-    },
-    {
-      "normalized": "web hackeada",
-      "count": 1,
-      "forms": [
-        "Web hackeada"
-      ],
-      "articles": [
-        "/mi-web-wordpress-ha-sido-hackeada"
-      ]
-    },
-    {
-      "normalized": "woocommerce",
-      "count": 1,
-      "forms": [
-        "WooCommerce"
-      ],
-      "articles": [
-        "/problemas-canon-digital-ecommerce"
-      ]
-    },
-    {
-      "normalized": "wpo",
-      "count": 1,
-      "forms": [
-        "WPO"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-wordpress"
       ]
     }
   ],
@@ -2670,7 +866,8 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "Auditoría SEO con IA"
+        "Auditoría SEO",
+        "IA"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -2681,7 +878,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO técnico",
-        "Auditoría",
+        "Auditoría SEO",
         "Web"
       ],
       "incomingContextualLinks": 0,
@@ -2693,8 +890,7 @@
       "category": "tutoriales",
       "tags": [
         "Automatización",
-        "Productividad",
-        "Procesos"
+        "Productividad"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2705,10 +901,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Autoridad de dominio",
-        "Posicionamiento web",
-        "Enlaces",
-        "Marketing online"
+        "Backlinks",
+        "Marketing digital"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2729,10 +923,8 @@
       "title": "Búsqueda multimodal y SEO visual: cómo preparar tu web para Google Lens y medirlo en Search Console",
       "category": "tutoriales",
       "tags": [
-        "SEO visual",
-        "Google Lens",
-        "Search Console",
-        "Búsqueda multimodal"
+        "SEO",
+        "Search Console"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -2744,8 +936,7 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "IA y SEO",
-        "2025"
+        "IA"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2755,9 +946,8 @@
       "title": "Checklist de lanzamiento web en 2026: todo lo que revisar antes de publicar",
       "category": "tutoriales",
       "tags": [
-        "Lanzamiento web",
-        "SEO técnico",
-        "QA"
+        "Web",
+        "SEO técnico"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -2768,8 +958,7 @@
       "category": "tutoriales",
       "tags": [
         "Desarrollo web",
-        "Google",
-        "Tutorial"
+        "Google"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2780,8 +969,7 @@
       "category": "tutoriales",
       "tags": [
         "Web",
-        "Gestión de proyectos",
-        "Briefing"
+        "Gestión de proyectos"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2792,10 +980,7 @@
       "category": "tutoriales",
       "tags": [
         "WordPress",
-        "Velocidad web",
-        "Rendimiento web",
-        "WPO",
-        "Optimización web"
+        "Rendimiento web"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 2
@@ -2806,8 +991,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Contenidos",
-        "E-E-A-T"
+        "Contenidos"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2821,7 +1005,7 @@
         "Pymes",
         "Automatización",
         "Productividad",
-        "Transformación digital"
+        "Estrategia digital"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2832,8 +1016,7 @@
       "category": "tutoriales",
       "tags": [
         "GA4",
-        "Analítica",
-        "Dashboard"
+        "Analítica web"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2845,8 +1028,7 @@
       "tags": [
         "IA",
         "Programación",
-        "Productividad",
-        "Herramientas de desarrollo"
+        "Productividad"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -2868,9 +1050,8 @@
       "title": "Email marketing para pymes: una base sencilla y sostenible",
       "category": "tutoriales",
       "tags": [
-        "Email marketing",
-        "Pymes",
-        "Marketing digital"
+        "Marketing digital",
+        "Pymes"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -2894,10 +1075,7 @@
       "title": "Error country_module_list.xml en PrestaShop: cómo diagnosticarlo",
       "category": "tutoriales",
       "tags": [
-        "PrestaShop",
-        "Error XML",
-        "Módulos",
-        "Backoffice"
+        "PrestaShop"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 4
@@ -2907,7 +1085,7 @@
       "title": "Errores comunes en webs corporativas",
       "category": "tutoriales",
       "tags": [
-        "Web corporativa",
+        "Web",
         "UX",
         "Conversión"
       ],
@@ -2932,7 +1110,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Backlinks"
+        "Backlinks",
+        "UX"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -2942,7 +1121,6 @@
       "title": "Express.js: para qué sirve y cuándo usarlo",
       "category": "tutoriales",
       "tags": [
-        "Express.js",
         "Node.js",
         "JavaScript",
         "Backend",
@@ -2957,7 +1135,6 @@
       "category": "tutoriales",
       "tags": [
         "Ecommerce",
-        "Google Shopping",
         "Marketing digital"
       ],
       "incomingContextualLinks": 0,
@@ -2983,7 +1160,6 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Herramientas",
         "Marketing digital"
       ],
       "incomingContextualLinks": 0,
@@ -2995,7 +1171,6 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Herramientas",
         "Marketing digital"
       ],
       "incomingContextualLinks": 0,
@@ -3008,7 +1183,7 @@
       "tags": [
         "IA",
         "SEO",
-        "Contenido"
+        "Contenidos"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -3056,7 +1231,7 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "Plan SEO Y Contenidos Para 2"
+        "Contenidos"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 2
@@ -3066,11 +1241,9 @@
       "title": "Problemas con el canon digital en las tiendas online",
       "category": "tutoriales",
       "tags": [
-        "E-commerce",
-        "Canon digital",
-        "WooCommerce",
-        "PrestaShop",
-        "Tiendas online"
+        "Ecommerce",
+        "WordPress",
+        "PrestaShop"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -3092,8 +1265,6 @@
       "category": "tutoriales",
       "tags": [
         "IA",
-        "Prompts",
-        "Redacción",
         "Contenidos",
         "Productividad"
       ],
@@ -3108,7 +1279,7 @@
         "Mantenimiento web",
         "SEO técnico",
         "Seguridad web",
-        "Rendimiento"
+        "Rendimiento web"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -3130,9 +1301,9 @@
       "title": "Qué es una API y para qué sirve",
       "category": "tutoriales",
       "tags": [
-        "API",
         "Programación",
-        "Desarrollo web"
+        "Desarrollo web",
+        "Tecnología"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 2
@@ -3180,7 +1351,7 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "SEO Local Y Visibilidad Para"
+        "SEO local"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 3
@@ -3190,7 +1361,8 @@
       "title": "SEO on-page: aspectos técnicos",
       "category": "tutoriales",
       "tags": [
-        "SEO"
+        "SEO",
+        "SEO técnico"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 0
@@ -3201,8 +1373,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Ecommerce",
-        "Tiendas online"
+        "Ecommerce"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 2
@@ -3213,7 +1384,6 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Guía",
         "Marketing digital"
       ],
       "incomingContextualLinks": 0,
@@ -3225,9 +1395,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO técnico",
-        "Core Web Vitals",
         "Rendimiento web",
-        "PageSpeed",
         "Search Console"
       ],
       "incomingContextualLinks": 0,
@@ -3251,10 +1419,7 @@
       "category": "tutoriales",
       "tags": [
         "Web",
-        "Proyectos",
-        "Negocios",
-        "Blogs",
-        "Internet"
+        "Contenidos"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 1
@@ -3264,9 +1429,8 @@
       "title": "¿Qué es Vue.js y para qué sirve? Guía práctica",
       "category": "tutoriales",
       "tags": [
-        "Vue.js",
         "JavaScript",
-        "Frontend"
+        "Desarrollo web"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 2
@@ -3276,7 +1440,9 @@
       "title": "WordPress lento: diagnóstico real paso a paso",
       "category": "tutoriales",
       "tags": [
-        "wordpress"
+        "WordPress",
+        "Rendimiento web",
+        "Mantenimiento web"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 3
@@ -3288,7 +1454,7 @@
       "tags": [
         "WordPress",
         "Desarrollo web",
-        "CMS"
+        "Web"
       ],
       "incomingContextualLinks": 0,
       "outgoingInternalLinks": 2
@@ -3311,7 +1477,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Informes",
+        "Analítica web",
         "Automatización"
       ],
       "incomingContextualLinks": 1,
@@ -3323,8 +1489,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Analítica",
-        "Planificación"
+        "Analítica web",
+        "Estrategia digital"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -3334,7 +1500,7 @@
       "title": "ChatGPT y marketing digital: primeros usos prácticos",
       "category": "tutoriales",
       "tags": [
-        "ChatGPT",
+        "IA",
         "Marketing digital",
         "Contenidos"
       ],
@@ -3347,8 +1513,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Rediseño web",
-        "Migración"
+        "Web",
+        "Migración web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -3359,8 +1525,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Auditoría SEO",
-        "Checklist"
+        "Auditoría SEO"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -3371,7 +1536,6 @@
       "category": "tutoriales",
       "tags": [
         "Desarrollo web",
-        "Guía",
         "SEO"
       ],
       "incomingContextualLinks": 1,
@@ -3383,7 +1547,6 @@
       "category": "tutoriales",
       "tags": [
         "Analítica web",
-        "Google Analytics",
         "Search Console",
         "SEO"
       ],
@@ -3408,7 +1571,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Contenido"
+        "Contenidos"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 0
@@ -3418,7 +1581,7 @@
       "title": "Copywriting web para vender más: claridad antes que adornos",
       "category": "tutoriales",
       "tags": [
-        "Copywriting",
+        "Contenidos",
         "Conversión",
         "Web"
       ],
@@ -3432,8 +1595,7 @@
       "tags": [
         "Error 500",
         "Servidor",
-        "Errores web",
-        "Soporte web"
+        "Errores web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 3
@@ -3443,9 +1605,8 @@
       "title": "Errores de usabilidad que bajan conversiones",
       "category": "tutoriales",
       "tags": [
-        "Usabilidad",
-        "Conversión",
-        "UX"
+        "UX",
+        "Conversión"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -3455,9 +1616,8 @@
       "title": "Estrategias de captación B2B: guía práctica",
       "category": "tutoriales",
       "tags": [
-        "B2B",
-        "Marketing digital",
-        "Captación"
+        "Captación",
+        "Marketing digital"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -3467,7 +1627,6 @@
       "title": "Google Analytics 4: primeros pasos",
       "category": "tutoriales",
       "tags": [
-        "Google Analytics",
         "Analítica web",
         "GA4"
       ],
@@ -3480,7 +1639,6 @@
       "category": "tutoriales",
       "tags": [
         "GA4",
-        "BigQuery",
         "Analítica web"
       ],
       "incomingContextualLinks": 1,
@@ -3490,7 +1648,10 @@
       "path": "/git-y-github-para-principiantes",
       "title": "Git y GitHub para principiantes: guía paso a paso",
       "category": "tutoriales",
-      "tags": [],
+      "tags": [
+        "Programación",
+        "Desarrollo web"
+      ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
     },
@@ -3499,9 +1660,7 @@
       "title": "Google My Business para negocios locales",
       "category": "tutoriales",
       "tags": [
-        "SEO local",
-        "Google My Business",
-        "Negocios locales"
+        "SEO local"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -3512,7 +1671,6 @@
       "category": "tutoriales",
       "tags": [
         "Colaboración",
-        "Videollamadas",
         "Productividad"
       ],
       "incomingContextualLinks": 1,
@@ -3536,7 +1694,7 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "Mantenimiento Web Proactivo"
+        "Mantenimiento web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -3545,7 +1703,11 @@
       "path": "/mi-web-no-carga-que-hacer-10-minutos",
       "title": "Mi web no carga: qué revisar en los primeros 10 minutos",
       "category": "tutoriales",
-      "tags": [],
+      "tags": [
+        "Errores web",
+        "Mantenimiento web",
+        "Servidor"
+      ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 3
     },
@@ -3556,8 +1718,6 @@
       "tags": [
         "WordPress",
         "Seguridad web",
-        "Web hackeada",
-        "Malware",
         "Errores web"
       ],
       "incomingContextualLinks": 1,
@@ -3570,7 +1730,9 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "Pipelines De Contenido Con I"
+        "IA",
+        "Contenidos",
+        "Automatización"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -3592,10 +1754,9 @@
       "title": "SEO estacional: cómo descubrir qué busca tu público en verano y aprovechar esas búsquedas",
       "category": "tutoriales",
       "tags": [
-        "SEO estacional",
-        "Google Trends",
-        "Search Console",
-        "Contenidos"
+        "SEO",
+        "Contenidos",
+        "Search Console"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -3607,7 +1768,7 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "SEO Local Avanzado Para pyme"
+        "SEO local"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -3641,9 +1802,7 @@
       "title": "Análisis de logs para SEO: cómo entender el rastreo real",
       "category": "tutoriales",
       "tags": [
-        "SEO técnico",
-        "Logs",
-        "Rastreo"
+        "SEO técnico"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
@@ -3653,10 +1812,10 @@
       "title": "Auditoría de contenidos: qué actualizar, fusionar, redirigir o eliminar antes de septiembre",
       "category": "tutoriales",
       "tags": [
-        "Auditoría de contenidos",
+        "Contenidos",
+        "Auditoría SEO",
         "SEO",
-        "Canibalización",
-        "Redirecciones"
+        "SEO técnico"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
@@ -3691,7 +1850,6 @@
       "category": "tutoriales",
       "tags": [
         "Programación",
-        "Fundamentos",
         "Desarrollo web"
       ],
       "incomingContextualLinks": 2,
@@ -3703,10 +1861,9 @@
       "category": "tutoriales",
       "tags": [
         "Dominios",
-        "Hosting",
-        "Web",
         "Alojamiento web",
-        "Errores frecuentes"
+        "Web",
+        "Errores web"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
@@ -3740,9 +1897,9 @@
       "title": "Microsoft 365 para pymes: organización y colaboración",
       "category": "tutoriales",
       "tags": [
-        "Microsoft 365",
+        "Productividad",
         "Pymes",
-        "Productividad"
+        "Tecnología"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
@@ -3765,9 +1922,8 @@
       "category": "tutoriales",
       "tags": [
         "PrestaShop",
-        "Velocidad web",
-        "Ecommerce",
-        "Rendimiento web"
+        "Rendimiento web",
+        "Ecommerce"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 4
@@ -3777,9 +1933,7 @@
       "title": "Productividad digital en equipos pequeños",
       "category": "tutoriales",
       "tags": [
-        "Productividad",
-        "Equipos",
-        "Herramientas digitales"
+        "Productividad"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 3
@@ -3802,8 +1956,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "SEO local",
-        "Negocios locales"
+        "SEO local"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
@@ -3861,10 +2014,9 @@
       "title": "Cómo elegir un buen hosting para tu web",
       "category": "tutoriales",
       "tags": [
-        "Hosting",
+        "Alojamiento web",
         "Web",
         "Dominios",
-        "Alojamiento web",
         "WordPress"
       ],
       "incomingContextualLinks": 3,
@@ -3877,7 +2029,7 @@
       "tags": [
         "GA4",
         "Analítica web",
-        "Conversiones"
+        "Conversión"
       ],
       "incomingContextualLinks": 3,
       "outgoingInternalLinks": 2
@@ -3888,7 +2040,6 @@
       "category": "tutoriales",
       "tags": [
         "Desarrollo web",
-        "HTML",
         "CSS",
         "JavaScript"
       ],
@@ -3901,8 +2052,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Palabras clave",
-        "Contenido"
+        "Contenidos"
       ],
       "incomingContextualLinks": 3,
       "outgoingInternalLinks": 0
@@ -3914,7 +2064,7 @@
       "tags": [
         "SEO",
         "Estrategia digital",
-        "Optimizacion De Google Busin"
+        "SEO local"
       ],
       "incomingContextualLinks": 3,
       "outgoingInternalLinks": 2
@@ -3925,8 +2075,8 @@
       "category": "tutoriales",
       "tags": [
         "WordPress",
-        "Seguridad",
-        "Mantenimiento"
+        "Seguridad web",
+        "Mantenimiento web"
       ],
       "incomingContextualLinks": 3,
       "outgoingInternalLinks": 1
@@ -3984,7 +2134,6 @@
       "title": "Landing pages que convierten",
       "category": "tutoriales",
       "tags": [
-        "Landing pages",
         "Conversión",
         "Marketing digital"
       ],
@@ -3996,9 +2145,9 @@
       "title": "Responsive design: buenas prácticas",
       "category": "tutoriales",
       "tags": [
-        "Responsive design",
-        "CSS",
-        "Diseño web"
+        "Diseño web",
+        "UX",
+        "CSS"
       ],
       "incomingContextualLinks": 4,
       "outgoingInternalLinks": 2
@@ -4067,45 +2216,11 @@
       "category": "tutoriales",
       "tags": [
         "Ecommerce",
-        "SEO",
-        "Fichas de producto"
+        "SEO"
       ],
       "incomingContextualLinks": 5,
       "outgoingInternalLinks": 2
     }
   ],
-  "brokenInternalLinks": [
-    {
-      "from": "/como-mejorar-la-velocidad-de-wordpress",
-      "to": "/contacto \"Contactar para mejorar la velocidad de WordPress\""
-    },
-    {
-      "from": "/error-500-solucion-rapida-5-pasos",
-      "to": "/contacto"
-    },
-    {
-      "from": "/error-500-wordpress-solucion-paso-a-paso",
-      "to": "/contacto \"Contactar para solucionar error 500 en WordPress\""
-    },
-    {
-      "from": "/error-country-module-list-xml-prestashop",
-      "to": "/contacto"
-    },
-    {
-      "from": "/git-y-github-para-principiantes",
-      "to": "/contacto"
-    },
-    {
-      "from": "/mi-web-no-carga-que-hacer-10-minutos",
-      "to": "/contacto"
-    },
-    {
-      "from": "/prestashop-va-lento-como-optimizarlo",
-      "to": "/contacto"
-    },
-    {
-      "from": "/wordpress-lento-diagnostico-real-paso-a-paso",
-      "to": "/contacto"
-    }
-  ]
+  "brokenInternalLinks": []
 }

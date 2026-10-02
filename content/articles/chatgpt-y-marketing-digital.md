@@ -5,7 +5,7 @@ excerpt: "ChatGPT puede acelerar la preparación de contenidos, pero la estrateg
 author: "Sucender"
 canonical: "/chatgpt-y-marketing-digital"
 category: "tutoriales"
-tags: ["ChatGPT", "Marketing digital", "Contenidos"]
+tags: ["IA", "Marketing digital", "Contenidos"]
 publishedDate: "2023-01-12"
 featuredImage: "/img/articulo/chatgpt-y-marketing-digital-featured.svg"
 heroClass: "bg-red"

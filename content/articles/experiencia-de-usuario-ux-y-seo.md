@@ -4,7 +4,7 @@ description: "El mundo de la programación web ha evolucionado mucho desde mis p
 author: "Sucender"
 canonical: "/experiencia-de-usuario-ux-y-seo"
 category: "tutoriales"
-tags: ["SEO", "Backlinks"]
+tags: ["SEO", "Backlinks", "UX"]
 publishedDate: "2019-05-16"
 featuredImage: "/img/articulo/experiencia-de-usuario-ux-y-seo-featured.svg"
 heroClass: "bg-purple"

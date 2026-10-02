@@ -5,7 +5,7 @@ excerpt: "Un briefing claro reduce suposiciones, cambios tardíos y diferencias 
 author: "Sucender"
 canonical: "/como-crear-briefings-web-mas-claros"
 category: "tutoriales"
-tags: ["Web", "Gestión de proyectos", "Briefing"]
+tags: ["Web", "Gestión de proyectos"]
 publishedDate: "2023-05-11"
 featuredImage: "/img/articulo/como-crear-briefings-web-mas-claros-featured.svg"
 heroClass: "bg-orange"

@@ -4,7 +4,7 @@ description: "Buenas prácticas de diseño responsive con layouts flexibles, vie
 author: "Sucender"
 canonical: "/responsive-design-buenas-practicas"
 category: "tutoriales"
-tags: ["Responsive design", "CSS", "Diseño web"]
+tags: ["Diseño web", "UX", "CSS"]
 publishedDate: "2021-06-10"
 featuredImage: "/img/articulo/responsive-design-buenas-practicas-featured.svg"
 heroClass: "bg-blue"

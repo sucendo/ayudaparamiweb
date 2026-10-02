@@ -5,7 +5,7 @@ excerpt: "Una guía clara para entender qué pueden hacer los copilots y agentes
 author: "Sucender"
 canonical: "/copilots-y-agentes-para-pymes"
 category: "tutoriales"
-tags: ["IA", "Pymes", "Automatización", "Productividad", "Transformación digital"]
+tags: ["IA", "Pymes", "Automatización", "Productividad", "Estrategia digital"]
 publishedDate: "2024-08-08"
 featuredImage: "/img/articulo/copilots-y-agentes-para-pymes-featured.svg"
 heroClass: "bg-purple"

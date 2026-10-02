@@ -4,7 +4,7 @@ description: "Guía introductoria para entender qué es el SEO, cómo funciona y
 author: "Sucender"
 canonical: "/seo-que-es"
 category: "tutoriales"
-tags: ["SEO", "Guía", "Marketing digital"]
+tags: ["SEO", "Marketing digital"]
 publishedDate: "2018-10-01"
 featuredImage: "/img/articulo/seo-que-es-featured.svg"
 heroClass: "bg-blue"

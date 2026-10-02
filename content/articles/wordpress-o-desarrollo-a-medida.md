@@ -4,7 +4,7 @@ description: "Cómo decidir entre WordPress y un desarrollo a medida según requ
 author: "Sucender"
 canonical: "/wordpress-o-desarrollo-a-medida"
 category: "tutoriales"
-tags: ["WordPress", "Desarrollo web", "CMS"]
+tags: ["WordPress", "Desarrollo web", "Web"]
 publishedDate: "2020-01-16"
 featuredImage: "/img/articulo/wordpress-o-desarrollo-a-medida-featured.svg"
 heroClass: "bg-purple"

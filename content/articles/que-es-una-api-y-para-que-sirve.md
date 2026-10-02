@@ -5,7 +5,7 @@ excerpt: "Una API define un contrato para que dos aplicaciones intercambien dato
 author: "Sucender"
 canonical: "/que-es-una-api-y-para-que-sirve"
 category: "tutoriales"
-tags: ["API", "Programación", "Desarrollo web"]
+tags: ["Programación", "Desarrollo web", "Tecnología"]
 publishedDate: "2021-03-11"
 featuredImage: "/img/articulo/que-es-una-api-y-para-que-sirve-featured.svg"
 heroClass: "bg-purple"

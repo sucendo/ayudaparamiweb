@@ -4,7 +4,7 @@ description: "Descubre las principales ventajas de tener una web para tu proyect
 author: "Sucender"
 canonical: "/ventajas-de-tener-una-web"
 category: "tutoriales"
-tags: ["Web", "Proyectos", "Negocios", "Blogs", "Internet"]
+tags: ["Web", "Contenidos"]
 publishedDate: "2017-11-08"
 featuredImage: "/img/articulo/ventajas-de-tener-una-web-featured.svg"
 heroClass: "bg-green"

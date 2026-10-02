@@ -5,7 +5,7 @@ excerpt: "Un buen plan prioriza estructura y páginas de negocio antes de multip
 author: "Sucender"
 canonical: "/plan-seo-y-contenidos-para-2026"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "Plan SEO Y Contenidos Para 2"]
+tags: ["SEO", "Estrategia digital", "Contenidos"]
 publishedDate: "2025-12-11"
 featuredImage: "/img/articulo/plan-seo-y-contenidos-para-2026-featured.svg"
 heroClass: "bg-orange"

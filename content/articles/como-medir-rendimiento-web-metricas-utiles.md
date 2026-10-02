@@ -5,7 +5,7 @@ excerpt: "No necesitas revisar cincuenta informes para saber si una web funciona
 author: "Sucender"
 canonical: "/como-medir-rendimiento-web-metricas-utiles"
 category: "tutoriales"
-tags: ["Analítica web", "Google Analytics", "Search Console", "SEO"]
+tags: ["Analítica web", "Search Console", "SEO"]
 publishedDate: "2026-06-18"
 featuredImage: "/img/articulo/como-medir-rendimiento-web-metricas-utiles-featured.svg"
 heroClass: "bg-blue"

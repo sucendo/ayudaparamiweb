@@ -5,7 +5,7 @@ excerpt: "Qué ofrece Shopping Actions y cómo valorar catálogo, operativa y re
 author: "Sucender"
 canonical: "/google-shopping-actions"
 category: "tutoriales"
-tags: ["Ecommerce", "Google Shopping", "Marketing digital"]
+tags: ["Ecommerce", "Marketing digital"]
 publishedDate: "2019-08-21"
 featuredImage: "/img/articulo/google-shopping-actions-featured.svg"
 heroClass: "bg-orange"

@@ -5,7 +5,7 @@ excerpt: "La búsqueda ya no empieza siempre escribiendo. Desde septiembre de 20
 author: "Sucender"
 canonical: "/busqueda-multimodal-seo-visual-google-lens"
 category: "tutoriales"
-tags: ["SEO visual", "Google Lens", "Search Console", "Búsqueda multimodal"]
+tags: ["SEO", "Search Console"]
 publishedDate: "2026-09-25"
 featuredImage: "/img/articulo/busqueda-multimodal-seo-visual-google-lens-featured.svg"
 heroClass: "bg-purple"

@@ -5,7 +5,7 @@ excerpt: "La calidad editorial se construye con utilidad, experiencia verificabl
 author: "Sucender"
 canonical: "/contenidos-utiles-y-eeat"
 category: "tutoriales"
-tags: ["SEO", "Contenidos", "E-E-A-T"]
+tags: ["SEO", "Contenidos"]
 publishedDate: "2025-04-10"
 featuredImage: "/img/articulo/contenidos-utiles-y-eeat-featured.svg"
 heroClass: "bg-purple"

@@ -5,7 +5,7 @@ excerpt: "Una landing eficaz guía a una persona concreta hacia una acción conc
 author: "Sucender"
 canonical: "/landings-que-convierten"
 category: "tutoriales"
-tags: ["Landing pages", "Conversión", "Marketing digital"]
+tags: ["Conversión", "Marketing digital"]
 publishedDate: "2023-09-14"
 featuredImage: "/img/articulo/landings-que-convierten-featured.svg"
 heroClass: "bg-purple"

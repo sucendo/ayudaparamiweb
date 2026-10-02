@@ -5,7 +5,7 @@ excerpt: "Automatiza la recogida y preparación de datos, pero conserva una capa
 author: "Sucender"
 canonical: "/automatizar-informes-seo"
 category: "tutoriales"
-tags: ["SEO", "Informes", "Automatización"]
+tags: ["SEO", "Analítica web", "Automatización"]
 publishedDate: "2025-03-13"
 featuredImage: "/img/articulo/automatizar-informes-seo-featured.svg"
 heroClass: "bg-green"

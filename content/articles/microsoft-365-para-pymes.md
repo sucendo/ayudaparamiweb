@@ -5,7 +5,7 @@ excerpt: "Correo, documentos y tareas funcionan mejor cuando la empresa define q
 author: "Sucender"
 canonical: "/microsoft-365-para-pymes"
 category: "tutoriales"
-tags: ["Microsoft 365", "Pymes", "Productividad"]
+tags: ["Productividad", "Pymes", "Tecnología"]
 publishedDate: "2022-04-14"
 featuredImage: "/img/articulo/microsoft-365-para-pymes-featured.svg"
 heroClass: "bg-blue"

@@ -5,7 +5,7 @@ excerpt: "Lanzar una web sin checklist suele salir caro. Esta guía te ayuda a p
 author: "Sucender"
 canonical: "/checklist-lanzamiento-web-2026"
 category: "tutoriales"
-tags: ["Lanzamiento web", "SEO técnico", "QA"]
+tags: ["Web", "SEO técnico"]
 publishedDate: "2026-03-12"
 featuredImage: "/img/articulo/checklist-lanzamiento-web-2026-featured.svg"
 heroClass: "bg-yellow"

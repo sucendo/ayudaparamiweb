@@ -5,7 +5,7 @@ excerpt: "Un flujo automático debe saber cuándo actuar, cuándo detenerse y c�
 author: "Sucender"
 canonical: "/automatizacion-de-respuestas-y-procesos"
 category: "tutoriales"
-tags: ["Automatización", "Productividad", "Procesos"]
+tags: ["Automatización", "Productividad"]
 publishedDate: "2023-04-13"
 featuredImage: "/img/articulo/automatizacion-de-respuestas-y-procesos-featured.svg"
 heroClass: "bg-purple"

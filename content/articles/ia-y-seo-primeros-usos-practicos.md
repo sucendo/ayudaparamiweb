@@ -5,7 +5,7 @@ excerpt: "La IA puede acelerar tareas de preparación SEO, pero fuentes, intenci
 author: "Sucender"
 canonical: "/ia-y-seo-primeros-usos-practicos"
 category: "tutoriales"
-tags: ["IA", "SEO", "Contenido"]
+tags: ["IA", "SEO", "Contenidos"]
 publishedDate: "2023-02-09"
 featuredImage: "/img/articulo/ia-seo-primeros-usos-featured.svg"
 heroClass: "bg-red"

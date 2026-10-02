@@ -4,7 +4,7 @@ description: "Descubre qué es la autoridad de dominio, por qué se tiene en cue
 author: "Sucender"
 canonical: "/autoridad-de-dominio"
 category: "tutoriales"
-tags: ["SEO", "Autoridad de dominio", "Posicionamiento web", "Enlaces", "Marketing online"]
+tags: ["SEO", "Backlinks", "Marketing digital"]
 publishedDate: "2019-01-20"
 featuredImage: "/img/articulo/autoridad-de-dominio-featured.svg"
 heroClass: "bg-orange"

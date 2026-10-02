@@ -5,7 +5,7 @@ excerpt: "No todo el contenido antiguo necesita una nueva fecha. Aprende a audit
 author: "Sucender"
 canonical: "/auditoria-contenidos-antes-de-septiembre"
 category: "tutoriales"
-tags: ["Auditoría de contenidos", "SEO", "Canibalización", "Redirecciones"]
+tags: ["Contenidos", "Auditoría SEO", "SEO", "SEO técnico"]
 publishedDate: "2026-08-20"
 featuredImage: "/img/articulo/auditoria-contenidos-antes-de-septiembre-featured.svg"
 heroClass: "bg-red"

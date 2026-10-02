@@ -5,7 +5,7 @@ excerpt: "Cómo usar inteligencia artificial en una auditoría SEO sin perder cr
 author: "Sucender"
 canonical: "/auditoria-seo-con-ia"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "Auditoría SEO con IA"]
+tags: ["SEO", "Estrategia digital", "Auditoría SEO", "IA"]
 publishedDate: "2024-10-10"
 featuredImage: "/img/articulo/auditoria-seo-con-ia-featured.svg"
 heroClass: "bg-red"

@@ -5,7 +5,7 @@ excerpt: "Qué herramientas gratuitas sí aportan valor y cómo integrarlas en u
 author: "Sucender"
 canonical: "/herramientas-seo-gratuitas"
 category: "tutoriales"
-tags: ["SEO", "Herramientas", "Marketing digital"]
+tags: ["SEO", "Marketing digital"]
 publishedDate: "2022-05-08"
 featuredImage: "/img/articulo/herramientas-seo-gratuitas-featured.svg"
 heroClass: "bg-green"

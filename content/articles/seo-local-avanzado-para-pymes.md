@@ -5,7 +5,7 @@ excerpt: "El SEO local avanzado conecta mejor la realidad de cada sede, sus serv
 author: "Sucender"
 canonical: "/seo-local-avanzado-para-pymes"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "SEO Local Avanzado Para pyme"]
+tags: ["SEO", "Estrategia digital", "SEO local"]
 publishedDate: "2025-01-16"
 featuredImage: "/img/articulo/seo-local-avanzado-para-pymes-featured.svg"
 heroClass: "bg-orange"

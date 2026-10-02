@@ -4,7 +4,7 @@ description: "Herramientas SEO prácticas en 2018: Search Console, Google Analyt
 author: "Sucender"
 canonical: "/herramientas-seo"
 category: "tutoriales"
-tags: ["SEO", "Herramientas", "Marketing digital"]
+tags: ["SEO", "Marketing digital"]
 publishedDate: "2018-12-15"
 featuredImage: "/img/articulo/herramientas-seo-featured.svg"
 heroClass: "bg-blue"

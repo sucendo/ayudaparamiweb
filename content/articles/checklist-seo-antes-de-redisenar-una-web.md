@@ -5,7 +5,7 @@ excerpt: "El SEO del rediseño empieza antes de tocar plantillas: primero hay qu
 author: "Sucender"
 canonical: "/checklist-seo-antes-de-redisenar-una-web"
 category: "tutoriales"
-tags: ["SEO", "Rediseño web", "Migración"]
+tags: ["SEO", "Web", "Migración web"]
 publishedDate: "2021-12-09"
 featuredImage: "/img/articulo/checklist-seo-antes-de-redisenar-una-web-featured.svg"
 heroClass: "bg-yellow"

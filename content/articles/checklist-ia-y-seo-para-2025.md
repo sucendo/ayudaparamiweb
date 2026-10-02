@@ -5,7 +5,7 @@ excerpt: "Qué conviene revisar antes de 2025 para integrar IA en el trabajo SEO
 author: "Sucender"
 canonical: "/checklist-ia-y-seo-para-2025"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "IA y SEO", "2025"]
+tags: ["SEO", "Estrategia digital", "IA"]
 publishedDate: "2024-12-12"
 featuredImage: "/img/articulo/checklist-ia-y-seo-para-2025-featured.svg"
 heroClass: "bg-purple"

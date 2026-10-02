@@ -4,7 +4,7 @@ description: "Conceptos básicos para investigar palabras clave, interpretar dem
 author: "Sucender"
 canonical: "/investigacion-palabras-clave"
 category: "tutoriales"
-tags: ["SEO", "Palabras clave", "Contenido"]
+tags: ["SEO", "Contenidos"]
 publishedDate: "2019-04-26"
 featuredImage: "/img/articulo/investigacion-palabras-clave-featured.svg"
 heroClass: "bg-blue"

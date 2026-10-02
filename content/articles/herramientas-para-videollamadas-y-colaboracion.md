@@ -5,7 +5,7 @@ excerpt: "Criterios prácticos para reuniones, chat, archivos, permisos y trabaj
 author: "Sucender"
 canonical: "/herramientas-para-videollamadas-y-colaboracion"
 category: "tutoriales"
-tags: ["Colaboración", "Videollamadas", "Productividad"]
+tags: ["Colaboración", "Productividad"]
 publishedDate: "2020-04-09"
 featuredImage: "/img/articulo/herramientas-para-videollamadas-y-colaboracion-featured.svg"
 heroClass: "bg-blue"

@@ -5,7 +5,7 @@ excerpt: "La mayor parte de la seguridad cotidiana depende de mantener software,
 author: "Sucender"
 canonical: "/seguridad-basica-en-wordpress"
 category: "tutoriales"
-tags: ["WordPress", "Seguridad", "Mantenimiento"]
+tags: ["WordPress", "Seguridad web", "Mantenimiento web"]
 publishedDate: "2020-05-14"
 featuredImage: "/img/articulo/seguridad-basica-en-wordpress-featured.svg"
 heroClass: "bg-red"

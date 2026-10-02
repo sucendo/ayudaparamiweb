@@ -4,7 +4,7 @@ description: "¿Son el contenido y el SEO dos términos independientes? Muchos p
 author: "Sucender"
 canonical: "/contenido-y-seo"
 category: "tutoriales"
-tags: ["SEO", "Contenido"]
+tags: ["SEO", "Contenidos"]
 publishedDate: "2019-04-02"
 featuredImage: "/img/articulo/contenido-y-seo-featured.svg"
 heroClass: "bg-blue"

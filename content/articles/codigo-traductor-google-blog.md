@@ -5,7 +5,7 @@ excerpt: "Un ejemplo sencillo para ofrecer traducción automática desde tu blog
 author: "Sucender"
 canonical: "/codigo-traductor-google-blog"
 category: "tutoriales"
-tags: ["Desarrollo web", "Google", "Tutorial"]
+tags: ["Desarrollo web", "Google"]
 publishedDate: "2018-02-21"
 featuredImage: "/img/articulo/codigo-traductor-google-blog-featured.svg"
 heroClass: "bg-blue"

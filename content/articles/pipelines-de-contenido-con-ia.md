@@ -5,7 +5,7 @@ excerpt: "La IA puede acelerar partes del proceso editorial si cada fase tiene e
 author: "Sucender"
 canonical: "/pipelines-de-contenido-con-ia"
 category: "tutoriales"
-tags: ["SEO", "Estrategia digital", "Pipelines De Contenido Con I"]
+tags: ["SEO", "Estrategia digital", "IA", "Contenidos", "Automatización"]
 publishedDate: "2024-11-14"
 featuredImage: "/img/articulo/pipelines-de-contenido-con-ia-featured.svg"
 heroClass: "bg-purple"

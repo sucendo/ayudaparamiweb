@@ -4,7 +4,7 @@ description: "Cómo diseñar eventos y conversiones en GA4: nomenclatura, parám
 author: "Sucender"
 canonical: "/ga4-eventos-y-conversiones"
 category: "tutoriales"
-tags: ["GA4", "Analítica web", "Conversiones"]
+tags: ["GA4", "Analítica web", "Conversión"]
 publishedDate: "2023-08-10"
 featuredImage: "/img/articulo/ga4-eventos-y-conversiones-featured.svg"
 heroClass: "bg-orange"

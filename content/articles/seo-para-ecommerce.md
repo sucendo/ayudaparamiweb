@@ -4,7 +4,7 @@ description: "SEO para ecommerce en 2019: arquitectura, categorías, fichas, fil
 author: "Sucender"
 canonical: "/seo-para-ecommerce"
 category: "tutoriales"
-tags: ["SEO", "Ecommerce", "Tiendas online"]
+tags: ["SEO", "Ecommerce"]
 publishedDate: "2019-09-12"
 featuredImage: "/img/articulo/seo-ecommerce-featured.svg"
 heroClass: "bg-orange"

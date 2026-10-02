@@ -5,7 +5,7 @@ excerpt: "Una recuperación fiable no consiste solo en borrar el archivo sospech
 author: "Sucender"
 canonical: "/mi-web-wordpress-ha-sido-hackeada"
 category: "tutoriales"
-tags: ["WordPress", "Seguridad web", "Web hackeada", "Malware", "Errores web"]
+tags: ["WordPress", "Seguridad web", "Errores web"]
 publishedDate: "2024-02-02"
 featuredImage: "/img/articulo/mi-web-wordpress-ha-sido-hackeada-featured.svg"
 heroClass: "bg-red"

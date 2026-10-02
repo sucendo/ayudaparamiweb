@@ -4,7 +4,7 @@ description: "Aspectos técnicos del SEO on-page: etiquetas meta, encabezados, U
 author: "Sucender"
 canonical: "/seo-on-page-aspectos-tecnicos"
 category: "tutoriales"
-tags: ["SEO"]
+tags: ["SEO", "SEO técnico"]
 publishedDate: "2019-03-25"
 featuredImage: "/img/articulo/seo-on-page-aspectos-tecnicos-featured.svg"
 heroClass: "bg-green"

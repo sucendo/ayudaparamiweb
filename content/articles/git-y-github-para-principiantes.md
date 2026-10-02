@@ -5,7 +5,7 @@ excerpt: "Git y GitHub son dos herramientas fundamentales en el desarrollo web a
 author: "Sucender"
 canonical: "/git-y-github-para-principiantes"
 category: "tutoriales"
-tags: []
+tags: ["Programación", "Desarrollo web"]
 publishedDate: "2018-01-01"
 featuredImage: "/img/articulo/git-y-github-para-principiantes-featured.svg"
 heroClass: "bg-orange"

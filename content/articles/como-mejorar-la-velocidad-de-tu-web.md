@@ -5,7 +5,7 @@ excerpt: "Mide primero, identifica el cuello de botella y optimiza servidor y re
 author: "Sucender"
 canonical: "/como-mejorar-la-velocidad-de-tu-web"
 category: "tutoriales"
-tags: ["Rendimiento web", "Desarrollo web", "Optimización"]
+tags: ["Rendimiento web", "Desarrollo web"]
 publishedDate: "2020-06-11"
 featuredImage: "/img/articulo/como-mejorar-la-velocidad-de-tu-web-featured.svg"
 heroClass: "bg-blue"

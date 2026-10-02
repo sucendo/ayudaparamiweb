@@ -5,7 +5,7 @@ excerpt: "La arquitectura de un catálogo grande debe limitar combinaciones inne
 author: "Sucender"
 canonical: "/arquitectura-web-para-catalogos-grandes"
 category: "tutoriales"
-tags: ["SEO técnico", "Arquitectura web", "Ecommerce"]
+tags: ["SEO técnico", "Arquitectura web", "Ecommerce", "Enlazado interno"]
 publishedDate: "2025-05-15"
 featuredImage: "/img/articulo/arquitectura-web-para-catalogos-grandes-featured.svg"
 heroClass: "bg-orange"

@@ -4,7 +4,7 @@ description: "Cómo organizar clusters de contenido con una página principal, p
 author: "Sucender"
 canonical: "/clusters-de-contenido-y-seo"
 category: "tutoriales"
-tags: ["SEO", "Contenidos", "Arquitectura web"]
+tags: ["SEO", "Contenidos", "Arquitectura web", "Enlazado interno"]
 publishedDate: "2023-03-09"
 featuredImage: "/img/articulo/clusters-de-contenido-y-seo-featured.svg"
 heroClass: "bg-green"

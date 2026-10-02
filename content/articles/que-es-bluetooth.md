@@ -5,7 +5,7 @@ excerpt: "La mayoría de la gente ha oído hablar de Bluetooth, pero muchos desc
 author: "Sucender"
 canonical: "/que-es-bluetooth"
 category: "tutoriales"
-tags: ["Tecnología", "Bluetooth", "Conectividad"]
+tags: ["Tecnología"]
 publishedDate: "2018-08-21"
 featuredImage: "/img/articulo/que-es-bluetooth-featured.svg"
 heroClass: "bg-blue"

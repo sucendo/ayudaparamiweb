@@ -1,78 +1,17 @@
 {
-  "generatedAt": "2026-10-02T13:42:48.020Z",
+  "generatedAt": "2026-10-02T13:51:32.597Z",
   "summary": {
     "articles": 117,
-    "normalizedTags": 50,
-    "singletonTags": 6,
+    "normalizedTags": 45,
+    "singletonTags": 0,
     "variantTags": 0,
-    "pagesWithNoContextualIncomingLinks": 52,
-    "pagesWithOneOrFewerContextualIncomingLinks": 81,
+    "pagesWithNoContextualIncomingLinks": 1,
+    "pagesWithOneOrFewerContextualIncomingLinks": 74,
     "brokenInternalLinks": 0,
-    "totalContextualArticleLinks": 137
+    "totalContextualArticleLinks": 201
   },
   "tagVariants": [],
-  "singletonTags": [
-    {
-      "normalized": "bluetooth",
-      "count": 1,
-      "forms": [
-        "Bluetooth"
-      ],
-      "articles": [
-        "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "conectividad",
-      "count": 1,
-      "forms": [
-        "Conectividad"
-      ],
-      "articles": [
-        "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "enlazado interno",
-      "count": 1,
-      "forms": [
-        "Enlazado interno"
-      ],
-      "articles": [
-        "/enlazado-interno-para-seo"
-      ]
-    },
-    {
-      "normalized": "gestion de proyectos",
-      "count": 1,
-      "forms": [
-        "Gestión de proyectos"
-      ],
-      "articles": [
-        "/como-crear-briefings-web-mas-claros"
-      ]
-    },
-    {
-      "normalized": "google",
-      "count": 1,
-      "forms": [
-        "Google"
-      ],
-      "articles": [
-        "/codigo-traductor-google-blog"
-      ]
-    },
-    {
-      "normalized": "optimizacion",
-      "count": 1,
-      "forms": [
-        "Optimización"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-tu-web"
-      ]
-    }
-  ],
+  "singletonTags": [],
   "tags": [
     {
       "normalized": "seo",
@@ -136,6 +75,39 @@
       ]
     },
     {
+      "normalized": "estrategia digital",
+      "count": 24,
+      "forms": [
+        "Estrategia digital"
+      ],
+      "articles": [
+        "/auditoria-seo-con-ia",
+        "/balance-web-y-seo-del-ano",
+        "/checklist-ia-y-seo-para-2025",
+        "/como-crear-briefings-web-mas-claros",
+        "/copilots-y-agentes-para-pymes",
+        "/guia-seo-pymes-2026",
+        "/mantenimiento-web-proactivo",
+        "/optimizacion-de-google-business-profile",
+        "/pipelines-de-contenido-con-ia",
+        "/plan-digital-para-pymes-2023",
+        "/plan-seo-y-contenidos-para-2026",
+        "/rendimiento-web-que-medir",
+        "/rich-snippets-y-datos-estructurados",
+        "/schema-org-basico-para-pymes",
+        "/scraping-web-etico-y-util",
+        "/seo-local-avanzado-para-pymes",
+        "/seo-local-y-visibilidad-para-pymes-2026",
+        "/seo-para-categorias-de-ecommerce",
+        "/seo-para-negocios-locales",
+        "/seo-para-tiendas-online",
+        "/seo-y-core-web-vitals",
+        "/teletrabajo-y-productividad-digital",
+        "/tendencias-seo-y-contenidos-2024",
+        "/velocidad-web-y-experiencia-de-pagina"
+      ]
+    },
+    {
       "normalized": "web",
       "count": 24,
       "forms": [
@@ -166,38 +138,6 @@
         "/velocidad-web-y-experiencia-de-pagina",
         "/ventajas-de-tener-una-web",
         "/wordpress-o-desarrollo-a-medida"
-      ]
-    },
-    {
-      "normalized": "estrategia digital",
-      "count": 23,
-      "forms": [
-        "Estrategia digital"
-      ],
-      "articles": [
-        "/auditoria-seo-con-ia",
-        "/balance-web-y-seo-del-ano",
-        "/checklist-ia-y-seo-para-2025",
-        "/copilots-y-agentes-para-pymes",
-        "/guia-seo-pymes-2026",
-        "/mantenimiento-web-proactivo",
-        "/optimizacion-de-google-business-profile",
-        "/pipelines-de-contenido-con-ia",
-        "/plan-digital-para-pymes-2023",
-        "/plan-seo-y-contenidos-para-2026",
-        "/rendimiento-web-que-medir",
-        "/rich-snippets-y-datos-estructurados",
-        "/schema-org-basico-para-pymes",
-        "/scraping-web-etico-y-util",
-        "/seo-local-avanzado-para-pymes",
-        "/seo-local-y-visibilidad-para-pymes-2026",
-        "/seo-para-categorias-de-ecommerce",
-        "/seo-para-negocios-locales",
-        "/seo-para-tiendas-online",
-        "/seo-y-core-web-vitals",
-        "/teletrabajo-y-productividad-digital",
-        "/tendencias-seo-y-contenidos-2024",
-        "/velocidad-web-y-experiencia-de-pagina"
       ]
     },
     {
@@ -629,6 +569,18 @@
       ]
     },
     {
+      "normalized": "enlazado interno",
+      "count": 3,
+      "forms": [
+        "Enlazado interno"
+      ],
+      "articles": [
+        "/arquitectura-web-para-catalogos-grandes",
+        "/clusters-de-contenido-y-seo",
+        "/enlazado-interno-para-seo"
+      ]
+    },
+    {
       "normalized": "seguridad web",
       "count": 3,
       "forms": [
@@ -784,69 +736,31 @@
         "/automatizaciones-con-python-para-seo",
         "/primeros-pasos-python"
       ]
-    },
-    {
-      "normalized": "bluetooth",
-      "count": 1,
-      "forms": [
-        "Bluetooth"
-      ],
-      "articles": [
-        "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "conectividad",
-      "count": 1,
-      "forms": [
-        "Conectividad"
-      ],
-      "articles": [
-        "/que-es-bluetooth"
-      ]
-    },
-    {
-      "normalized": "enlazado interno",
-      "count": 1,
-      "forms": [
-        "Enlazado interno"
-      ],
-      "articles": [
-        "/enlazado-interno-para-seo"
-      ]
-    },
-    {
-      "normalized": "gestion de proyectos",
-      "count": 1,
-      "forms": [
-        "Gestión de proyectos"
-      ],
-      "articles": [
-        "/como-crear-briefings-web-mas-claros"
-      ]
-    },
-    {
-      "normalized": "google",
-      "count": 1,
-      "forms": [
-        "Google"
-      ],
-      "articles": [
-        "/codigo-traductor-google-blog"
-      ]
-    },
-    {
-      "normalized": "optimizacion",
-      "count": 1,
-      "forms": [
-        "Optimización"
-      ],
-      "articles": [
-        "/como-mejorar-la-velocidad-de-tu-web"
-      ]
     }
   ],
   "pages": [
+    {
+      "path": "/que-es-bluetooth",
+      "title": "Qué es Bluetooth?",
+      "category": "tutoriales",
+      "tags": [
+        "Tecnología"
+      ],
+      "incomingContextualLinks": 0,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/accesibilidad-y-seo",
+      "title": "Accesibilidad y SEO: cómo mejorar la web para personas y buscadores",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Accesibilidad",
+        "Desarrollo web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
     {
       "path": "/arquitectura-web-para-catalogos-grandes",
       "title": "Arquitectura web para catálogos grandes",
@@ -854,9 +768,10 @@
       "tags": [
         "SEO técnico",
         "Arquitectura web",
-        "Ecommerce"
+        "Ecommerce",
+        "Enlazado interno"
       ],
-      "incomingContextualLinks": 0,
+      "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
     },
     {
@@ -869,8 +784,8 @@
         "Auditoría SEO",
         "IA"
       ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
     },
     {
       "path": "/auditoria-tecnica-rapida-de-una-web",
@@ -881,7 +796,7 @@
         "Auditoría SEO",
         "Web"
       ],
-      "incomingContextualLinks": 0,
+      "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
     },
     {
@@ -891,582 +806,6 @@
       "tags": [
         "Automatización",
         "Productividad"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/autoridad-de-dominio",
-      "title": "Autoridad de dominio: qué es y cómo mejorarla",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Backlinks",
-        "Marketing digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/backlink-que-es-como-construir-red-de-enlaces",
-      "title": "Backlinks: qué son y cómo construir una red de enlaces",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Backlinks"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/busqueda-multimodal-seo-visual-google-lens",
-      "title": "Búsqueda multimodal y SEO visual: cómo preparar tu web para Google Lens y medirlo en Search Console",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Search Console"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/checklist-ia-y-seo-para-2025",
-      "title": "Checklist de IA y SEO para 2025",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Estrategia digital",
-        "IA"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/checklist-lanzamiento-web-2026",
-      "title": "Checklist de lanzamiento web en 2026: todo lo que revisar antes de publicar",
-      "category": "tutoriales",
-      "tags": [
-        "Web",
-        "SEO técnico"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/codigo-traductor-google-blog",
-      "title": "Código para añadir Google Translate a tu blog",
-      "category": "tutoriales",
-      "tags": [
-        "Desarrollo web",
-        "Google"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/como-crear-briefings-web-mas-claros",
-      "title": "Cómo crear briefings web más claros",
-      "category": "tutoriales",
-      "tags": [
-        "Web",
-        "Gestión de proyectos"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/como-mejorar-la-velocidad-de-wordpress",
-      "title": "Cómo mejorar la velocidad de WordPress paso a paso",
-      "category": "tutoriales",
-      "tags": [
-        "WordPress",
-        "Rendimiento web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/contenidos-utiles-y-eeat",
-      "title": "Contenidos útiles y E-E-A-T: cómo aplicar criterio editorial",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Contenidos"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/copilots-y-agentes-para-pymes",
-      "title": "Copilots y agentes para pymes: qué automatizar y qué no",
-      "category": "tutoriales",
-      "tags": [
-        "IA",
-        "Pymes",
-        "Automatización",
-        "Productividad",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/dashboard-ga4-para-direccion",
-      "title": "Dashboard de GA4 para dirección: qué métricas mostrar",
-      "category": "tutoriales",
-      "tags": [
-        "GA4",
-        "Analítica web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/editores-con-ia-y-agentes-de-desarrollo",
-      "title": "Editores con IA y agentes de desarrollo: ventajas, inconvenientes, modelos y costes reales",
-      "category": "tutoriales",
-      "tags": [
-        "IA",
-        "Programación",
-        "Productividad"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/el-mundo-del-programador-web",
-      "title": "El mundo del programador Web",
-      "category": "tutoriales",
-      "tags": [
-        "Desarrollo web",
-        "Programación",
-        "Productividad"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/email-marketing-para-pymes",
-      "title": "Email marketing para pymes: una base sencilla y sostenible",
-      "category": "tutoriales",
-      "tags": [
-        "Marketing digital",
-        "Pymes"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/error-500-wordpress-solucion-paso-a-paso",
-      "title": "Error 500 en WordPress: causas y solución paso a paso",
-      "category": "tutoriales",
-      "tags": [
-        "WordPress",
-        "Error 500",
-        "Errores web",
-        "Servidor",
-        "Mantenimiento web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/error-country-module-list-xml-prestashop",
-      "title": "Error country_module_list.xml en PrestaShop: cómo diagnosticarlo",
-      "category": "tutoriales",
-      "tags": [
-        "PrestaShop"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 4
-    },
-    {
-      "path": "/errores-comunes-en-webs-corporativas",
-      "title": "Errores comunes en webs corporativas",
-      "category": "tutoriales",
-      "tags": [
-        "Web",
-        "UX",
-        "Conversión"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/errores-frecuentes-al-crear-una-web",
-      "title": "Errores frecuentes al crear una web",
-      "category": "tutoriales",
-      "tags": [
-        "Desarrollo web",
-        "Diseño web",
-        "Web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/experiencia-de-usuario-ux-y-seo",
-      "title": "Experiencia de usuario (UX) y SEO",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Backlinks",
-        "UX"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/express-js-para-que-sirve",
-      "title": "Express.js: para qué sirve y cuándo usarlo",
-      "category": "tutoriales",
-      "tags": [
-        "Node.js",
-        "JavaScript",
-        "Backend",
-        "Desarrollo web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/google-shopping-actions",
-      "title": "Google Shopping Actions: qué es y cómo puede encajar en un ecommerce",
-      "category": "tutoriales",
-      "tags": [
-        "Ecommerce",
-        "Marketing digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/guia-seo-pymes-2026",
-      "title": "Guía SEO para pymes en 2026: plan realista para crecer con foco",
-      "category": "guias",
-      "tags": [
-        "SEO",
-        "Pymes",
-        "SEO técnico",
-        "SEO local",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/herramientas-seo",
-      "title": "Herramientas SEO imprescindibles (edición práctica)",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Marketing digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/herramientas-seo-gratuitas",
-      "title": "Herramientas SEO gratuitas recomendadas",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Marketing digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/ia-y-seo-primeros-usos-practicos",
-      "title": "IA y SEO: primeros usos prácticos",
-      "category": "tutoriales",
-      "tags": [
-        "IA",
-        "SEO",
-        "Contenidos"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/motores-de-busqueda",
-      "title": "Motores de búsqueda",
-      "category": "tutoriales",
-      "tags": [
-        "SEO"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/node-js-que-es",
-      "title": "¿Qué es Node.js? Guía práctica con ejemplos",
-      "category": "tutoriales",
-      "tags": [
-        "Node.js",
-        "JavaScript",
-        "Desarrollo web",
-        "Backend",
-        "Programación"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/plan-digital-para-pymes-2023",
-      "title": "Plan digital para pymes: hoja de ruta práctica",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/plan-seo-y-contenidos-para-2026",
-      "title": "Plan SEO y contenidos: hoja de ruta práctica",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Estrategia digital",
-        "Contenidos"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/problemas-canon-digital-ecommerce",
-      "title": "Problemas con el canon digital en las tiendas online",
-      "category": "tutoriales",
-      "tags": [
-        "Ecommerce",
-        "WordPress",
-        "PrestaShop"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/programacion-asistida-por-ia",
-      "title": "Programación asistida por IA: qué agiliza y qué depende del desarrollador",
-      "category": "tutoriales",
-      "tags": [
-        "Programación",
-        "IA"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/prompts-para-redactar-mejor-con-ia",
-      "title": "Prompts para redactar mejor con IA",
-      "category": "tutoriales",
-      "tags": [
-        "IA",
-        "Contenidos",
-        "Productividad"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/puesta-a-punto-web-antes-del-verano",
-      "title": "Puesta a punto de tu web antes del verano: qué revisar y qué puede esperar",
-      "category": "tutoriales",
-      "tags": [
-        "Mantenimiento web",
-        "SEO técnico",
-        "Seguridad web",
-        "Rendimiento web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/que-es-bluetooth",
-      "title": "Qué es Bluetooth?",
-      "category": "tutoriales",
-      "tags": [
-        "Tecnología",
-        "Bluetooth",
-        "Conectividad"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/que-es-una-api-y-para-que-sirve",
-      "title": "Qué es una API y para qué sirve",
-      "category": "tutoriales",
-      "tags": [
-        "Programación",
-        "Desarrollo web",
-        "Tecnología"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/rendimiento-web-que-medir",
-      "title": "Rendimiento web: qué medir y cómo interpretar los datos",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/rich-snippets-y-datos-estructurados",
-      "title": "Rich snippets y datos estructurados: guía práctica",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/scraping-web-etico-y-util",
-      "title": "Scraping web ético y útil: cómo extraer datos con criterio",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/seo-local-y-visibilidad-para-pymes-2026",
-      "title": "SEO local y visibilidad para pymes en 2026",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Estrategia digital",
-        "SEO local"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 3
-    },
-    {
-      "path": "/seo-on-page-aspectos-tecnicos",
-      "title": "SEO on-page: aspectos técnicos",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "SEO técnico"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/seo-para-ecommerce",
-      "title": "SEO para ecommerce: fundamentos para una tienda online",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Ecommerce"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/seo-que-es",
-      "title": "SEO ¿Qué es?",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Marketing digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/seo-tecnico-core-web-vitals-2026",
-      "title": "SEO técnico y Core Web Vitals en 2026",
-      "category": "tutoriales",
-      "tags": [
-        "SEO técnico",
-        "Rendimiento web",
-        "Search Console"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
-    {
-      "path": "/tendencias-seo-y-contenidos-2024",
-      "title": "Tendencias SEO y contenidos en 2024",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/ventajas-de-tener-una-web",
-      "title": "Ventajas de tener una web para tu proyecto o negocio",
-      "category": "tutoriales",
-      "tags": [
-        "Web",
-        "Contenidos"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/vue-js-que-es",
-      "title": "¿Qué es Vue.js y para qué sirve? Guía práctica",
-      "category": "tutoriales",
-      "tags": [
-        "JavaScript",
-        "Desarrollo web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/wordpress-lento-diagnostico-real-paso-a-paso",
-      "title": "WordPress lento: diagnóstico real paso a paso",
-      "category": "tutoriales",
-      "tags": [
-        "WordPress",
-        "Rendimiento web",
-        "Mantenimiento web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 3
-    },
-    {
-      "path": "/wordpress-o-desarrollo-a-medida",
-      "title": "WordPress o desarrollo a medida",
-      "category": "tutoriales",
-      "tags": [
-        "WordPress",
-        "Desarrollo web",
-        "Web"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/accesibilidad-y-seo",
-      "title": "Accesibilidad y SEO: cómo mejorar la web para personas y buscadores",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Accesibilidad",
-        "Desarrollo web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -1484,6 +823,29 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/autoridad-de-dominio",
+      "title": "Autoridad de dominio: qué es y cómo mejorarla",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Backlinks",
+        "Marketing digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/backlink-que-es-como-construir-red-de-enlaces",
+      "title": "Backlinks: qué son y cómo construir una red de enlaces",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Backlinks"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
       "path": "/balance-web-y-seo-del-ano",
       "title": "Cómo hacer un balance anual de web y SEO",
       "category": "tutoriales",
@@ -1496,6 +858,17 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/busqueda-multimodal-seo-visual-google-lens",
+      "title": "Búsqueda multimodal y SEO visual: cómo preparar tu web para Google Lens y medirlo en Search Console",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Search Console"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
       "path": "/chatgpt-y-marketing-digital",
       "title": "ChatGPT y marketing digital: primeros usos prácticos",
       "category": "tutoriales",
@@ -1503,6 +876,29 @@
         "IA",
         "Marketing digital",
         "Contenidos"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/checklist-ia-y-seo-para-2025",
+      "title": "Checklist de IA y SEO para 2025",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Estrategia digital",
+        "IA"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/checklist-lanzamiento-web-2026",
+      "title": "Checklist de lanzamiento web en 2026: todo lo que revisar antes de publicar",
+      "category": "tutoriales",
+      "tags": [
+        "Web",
+        "SEO técnico"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 0
@@ -1531,6 +927,27 @@
       "outgoingInternalLinks": 2
     },
     {
+      "path": "/codigo-traductor-google-blog",
+      "title": "Código para añadir Google Translate a tu blog",
+      "category": "tutoriales",
+      "tags": [
+        "Desarrollo web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/como-crear-briefings-web-mas-claros",
+      "title": "Cómo crear briefings web más claros",
+      "category": "tutoriales",
+      "tags": [
+        "Web",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
       "path": "/como-crear-una-pagina-web",
       "title": "¿Cómo crear una página web?",
       "category": "tutoriales",
@@ -1539,7 +956,7 @@
         "SEO"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 5
+      "outgoingInternalLinks": 10
     },
     {
       "path": "/como-medir-rendimiento-web-metricas-utiles",
@@ -1552,6 +969,17 @@
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/como-mejorar-la-velocidad-de-wordpress",
+      "title": "Cómo mejorar la velocidad de WordPress paso a paso",
+      "category": "tutoriales",
+      "tags": [
+        "WordPress",
+        "Rendimiento web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
     },
     {
       "path": "/comunicacion-interna-y-herramientas-digitales",
@@ -1574,7 +1002,32 @@
         "Contenidos"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 0
+      "outgoingInternalLinks": 5
+    },
+    {
+      "path": "/contenidos-utiles-y-eeat",
+      "title": "Contenidos útiles y E-E-A-T: cómo aplicar criterio editorial",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Contenidos"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/copilots-y-agentes-para-pymes",
+      "title": "Copilots y agentes para pymes: qué automatizar y qué no",
+      "category": "tutoriales",
+      "tags": [
+        "IA",
+        "Pymes",
+        "Automatización",
+        "Productividad",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
     },
     {
       "path": "/copywriting-web-para-vender-mas",
@@ -1589,6 +1042,52 @@
       "outgoingInternalLinks": 2
     },
     {
+      "path": "/dashboard-ga4-para-direccion",
+      "title": "Dashboard de GA4 para dirección: qué métricas mostrar",
+      "category": "tutoriales",
+      "tags": [
+        "GA4",
+        "Analítica web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/editores-con-ia-y-agentes-de-desarrollo",
+      "title": "Editores con IA y agentes de desarrollo: ventajas, inconvenientes, modelos y costes reales",
+      "category": "tutoriales",
+      "tags": [
+        "IA",
+        "Programación",
+        "Productividad"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/el-mundo-del-programador-web",
+      "title": "El mundo del programador Web",
+      "category": "tutoriales",
+      "tags": [
+        "Desarrollo web",
+        "Programación",
+        "Productividad"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/email-marketing-para-pymes",
+      "title": "Email marketing para pymes: una base sencilla y sostenible",
+      "category": "tutoriales",
+      "tags": [
+        "Marketing digital",
+        "Pymes"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
       "path": "/error-500-solucion-rapida-5-pasos",
       "title": "Error 500: solución rápida en 5 pasos",
       "category": "tutoriales",
@@ -1601,26 +1100,77 @@
       "outgoingInternalLinks": 3
     },
     {
-      "path": "/errores-de-usabilidad-que-bajan-conversiones",
-      "title": "Errores de usabilidad que bajan conversiones",
+      "path": "/error-500-wordpress-solucion-paso-a-paso",
+      "title": "Error 500 en WordPress: causas y solución paso a paso",
       "category": "tutoriales",
       "tags": [
-        "UX",
-        "Conversión"
+        "WordPress",
+        "Error 500",
+        "Errores web",
+        "Servidor",
+        "Mantenimiento web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
     },
     {
-      "path": "/estrategias-de-captacion-b2b",
-      "title": "Estrategias de captación B2B: guía práctica",
+      "path": "/error-country-module-list-xml-prestashop",
+      "title": "Error country_module_list.xml en PrestaShop: cómo diagnosticarlo",
       "category": "tutoriales",
       "tags": [
-        "Captación",
-        "Marketing digital"
+        "PrestaShop"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 4
+    },
+    {
+      "path": "/errores-comunes-en-webs-corporativas",
+      "title": "Errores comunes en webs corporativas",
+      "category": "tutoriales",
+      "tags": [
+        "Web",
+        "UX",
+        "Conversión"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/errores-frecuentes-al-crear-una-web",
+      "title": "Errores frecuentes al crear una web",
+      "category": "tutoriales",
+      "tags": [
+        "Desarrollo web",
+        "Diseño web",
+        "Web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/experiencia-de-usuario-ux-y-seo",
+      "title": "Experiencia de usuario (UX) y SEO",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Backlinks",
+        "UX"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/express-js-para-que-sirve",
+      "title": "Express.js: para qué sirve y cuándo usarlo",
+      "category": "tutoriales",
+      "tags": [
+        "Node.js",
+        "JavaScript",
+        "Backend",
+        "Desarrollo web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
     },
     {
       "path": "/ga4-primeros-pasos",
@@ -1631,18 +1181,7 @@
         "GA4"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/ga4-y-bigquery-primer-enfoque",
-      "title": "GA4 y BigQuery: primer enfoque",
-      "category": "tutoriales",
-      "tags": [
-        "GA4",
-        "Analítica web"
-      ],
-      "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 1
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/git-y-github-para-principiantes",
@@ -1666,6 +1205,31 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/google-shopping-actions",
+      "title": "Google Shopping Actions: qué es y cómo puede encajar en un ecommerce",
+      "category": "tutoriales",
+      "tags": [
+        "Ecommerce",
+        "Marketing digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/guia-seo-pymes-2026",
+      "title": "Guía SEO para pymes en 2026: plan realista para crecer con foco",
+      "category": "guias",
+      "tags": [
+        "SEO",
+        "Pymes",
+        "SEO técnico",
+        "SEO local",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
       "path": "/herramientas-para-videollamadas-y-colaboracion",
       "title": "Herramientas para videollamadas y colaboración",
       "category": "tutoriales",
@@ -1677,6 +1241,28 @@
       "outgoingInternalLinks": 2
     },
     {
+      "path": "/herramientas-seo",
+      "title": "Herramientas SEO imprescindibles (edición práctica)",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Marketing digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/herramientas-seo-gratuitas",
+      "title": "Herramientas SEO gratuitas recomendadas",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Marketing digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
       "path": "/ia-generativa-estrategia-contenidos-seo",
       "title": "IA generativa y contenidos SEO: cómo usarla sin perder calidad",
       "category": "tutoriales",
@@ -1685,7 +1271,19 @@
         "SEO"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 3
+      "outgoingInternalLinks": 7
+    },
+    {
+      "path": "/ia-y-seo-primeros-usos-practicos",
+      "title": "IA y SEO: primeros usos prácticos",
+      "category": "tutoriales",
+      "tags": [
+        "IA",
+        "SEO",
+        "Contenidos"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
     },
     {
       "path": "/mantenimiento-web-proactivo",
@@ -1697,19 +1295,7 @@
         "Mantenimiento web"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/mi-web-no-carga-que-hacer-10-minutos",
-      "title": "Mi web no carga: qué revisar en los primeros 10 minutos",
-      "category": "tutoriales",
-      "tags": [
-        "Errores web",
-        "Mantenimiento web",
-        "Servidor"
-      ],
-      "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 3
+      "outgoingInternalLinks": 4
     },
     {
       "path": "/mi-web-wordpress-ha-sido-hackeada",
@@ -1722,6 +1308,30 @@
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/motores-de-busqueda",
+      "title": "Motores de búsqueda",
+      "category": "tutoriales",
+      "tags": [
+        "SEO"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/node-js-que-es",
+      "title": "¿Qué es Node.js? Guía práctica con ejemplos",
+      "category": "tutoriales",
+      "tags": [
+        "Node.js",
+        "JavaScript",
+        "Desarrollo web",
+        "Backend",
+        "Programación"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
     },
     {
       "path": "/pipelines-de-contenido-con-ia",
@@ -1738,6 +1348,18 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/plan-digital-para-pymes-2023",
+      "title": "Plan digital para pymes: hoja de ruta práctica",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Web",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
       "path": "/primeros-pasos-python",
       "title": "Primeros pasos en Python: guía completa con ejemplos de código",
       "category": "tutoriales",
@@ -1748,6 +1370,90 @@
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/programacion-asistida-por-ia",
+      "title": "Programación asistida por IA: qué agiliza y qué depende del desarrollador",
+      "category": "tutoriales",
+      "tags": [
+        "Programación",
+        "IA"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/prompts-para-redactar-mejor-con-ia",
+      "title": "Prompts para redactar mejor con IA",
+      "category": "tutoriales",
+      "tags": [
+        "IA",
+        "Contenidos",
+        "Productividad"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/puesta-a-punto-web-antes-del-verano",
+      "title": "Puesta a punto de tu web antes del verano: qué revisar y qué puede esperar",
+      "category": "tutoriales",
+      "tags": [
+        "Mantenimiento web",
+        "SEO técnico",
+        "Seguridad web",
+        "Rendimiento web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
+      "path": "/que-es-una-api-y-para-que-sirve",
+      "title": "Qué es una API y para qué sirve",
+      "category": "tutoriales",
+      "tags": [
+        "Programación",
+        "Desarrollo web",
+        "Tecnología"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/rendimiento-web-que-medir",
+      "title": "Rendimiento web: qué medir y cómo interpretar los datos",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Web",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/rich-snippets-y-datos-estructurados",
+      "title": "Rich snippets y datos estructurados: guía práctica",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Web",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/scraping-web-etico-y-util",
+      "title": "Scraping web ético y útil: cómo extraer datos con criterio",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Web",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
     },
     {
       "path": "/seo-estacional-busquedas-de-verano",
@@ -1774,6 +1480,52 @@
       "outgoingInternalLinks": 2
     },
     {
+      "path": "/seo-local-y-visibilidad-para-pymes-2026",
+      "title": "SEO local y visibilidad para pymes en 2026",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Estrategia digital",
+        "SEO local"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 3
+    },
+    {
+      "path": "/seo-para-ecommerce",
+      "title": "SEO para ecommerce: fundamentos para una tienda online",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Ecommerce"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/seo-que-es",
+      "title": "SEO ¿Qué es?",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Marketing digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 6
+    },
+    {
+      "path": "/seo-tecnico-core-web-vitals-2026",
+      "title": "SEO técnico y Core Web Vitals en 2026",
+      "category": "tutoriales",
+      "tags": [
+        "SEO técnico",
+        "Rendimiento web",
+        "Search Console"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
       "path": "/seo-y-core-web-vitals",
       "title": "SEO y Core Web Vitals: LCP, FID y CLS",
       "category": "tutoriales",
@@ -1793,6 +1545,64 @@
         "SEO",
         "Web",
         "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/tendencias-seo-y-contenidos-2024",
+      "title": "Tendencias SEO y contenidos en 2024",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Web",
+        "Estrategia digital"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/ventajas-de-tener-una-web",
+      "title": "Ventajas de tener una web para tu proyecto o negocio",
+      "category": "tutoriales",
+      "tags": [
+        "Web",
+        "Contenidos"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/vue-js-que-es",
+      "title": "¿Qué es Vue.js y para qué sirve? Guía práctica",
+      "category": "tutoriales",
+      "tags": [
+        "JavaScript",
+        "Desarrollo web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/wordpress-lento-diagnostico-real-paso-a-paso",
+      "title": "WordPress lento: diagnóstico real paso a paso",
+      "category": "tutoriales",
+      "tags": [
+        "WordPress",
+        "Rendimiento web",
+        "Mantenimiento web"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 3
+    },
+    {
+      "path": "/wordpress-o-desarrollo-a-medida",
+      "title": "WordPress o desarrollo a medida",
+      "category": "tutoriales",
+      "tags": [
+        "WordPress",
+        "Desarrollo web",
+        "Web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -1830,7 +1640,7 @@
         "Automatización"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 1
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/como-planificar-una-migracion-web",
@@ -1853,7 +1663,7 @@
         "Desarrollo web"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 0
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/errores-al-elegir-dominio-y-hosting",
@@ -1864,6 +1674,39 @@
         "Alojamiento web",
         "Web",
         "Errores web"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 1
+    },
+    {
+      "path": "/errores-de-usabilidad-que-bajan-conversiones",
+      "title": "Errores de usabilidad que bajan conversiones",
+      "category": "tutoriales",
+      "tags": [
+        "UX",
+        "Conversión"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/estrategias-de-captacion-b2b",
+      "title": "Estrategias de captación B2B: guía práctica",
+      "category": "tutoriales",
+      "tags": [
+        "Captación",
+        "Marketing digital"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/ga4-y-bigquery-primer-enfoque",
+      "title": "GA4 y BigQuery: primer enfoque",
+      "category": "tutoriales",
+      "tags": [
+        "GA4",
+        "Analítica web"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
@@ -1890,7 +1733,19 @@
         "Desarrollo web"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 2
+      "outgoingInternalLinks": 5
+    },
+    {
+      "path": "/mi-web-no-carga-que-hacer-10-minutos",
+      "title": "Mi web no carga: qué revisar en los primeros 10 minutos",
+      "category": "tutoriales",
+      "tags": [
+        "Errores web",
+        "Mantenimiento web",
+        "Servidor"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/microsoft-365-para-pymes",
@@ -1905,6 +1760,18 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/plan-seo-y-contenidos-para-2026",
+      "title": "Plan SEO y contenidos: hoja de ruta práctica",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Estrategia digital",
+        "Contenidos"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 2
+    },
+    {
       "path": "/prestashop-que-es-y-cuando-usarlo",
       "title": "PrestaShop: qué es y cuándo usarlo",
       "category": "tutoriales",
@@ -1914,19 +1781,19 @@
         "Desarrollo web"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 3
+      "outgoingInternalLinks": 5
     },
     {
-      "path": "/prestashop-va-lento-como-optimizarlo",
-      "title": "PrestaShop va lento: cómo optimizarlo y detectar el problema real",
+      "path": "/problemas-canon-digital-ecommerce",
+      "title": "Problemas con el canon digital en las tiendas online",
       "category": "tutoriales",
       "tags": [
-        "PrestaShop",
-        "Rendimiento web",
-        "Ecommerce"
+        "Ecommerce",
+        "WordPress",
+        "PrestaShop"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 4
+      "outgoingInternalLinks": 0
     },
     {
       "path": "/productividad-digital-en-equipos-pequenos",
@@ -1948,7 +1815,7 @@
         "Estrategia digital"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 2
+      "outgoingInternalLinks": 4
     },
     {
       "path": "/seo-local-que-es-y-como-empezar",
@@ -1959,7 +1826,18 @@
         "SEO local"
       ],
       "incomingContextualLinks": 2,
-      "outgoingInternalLinks": 1
+      "outgoingInternalLinks": 4
+    },
+    {
+      "path": "/seo-on-page-aspectos-tecnicos",
+      "title": "SEO on-page: aspectos técnicos",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "SEO técnico"
+      ],
+      "incomingContextualLinks": 2,
+      "outgoingInternalLinks": 0
     },
     {
       "path": "/velocidad-web-y-experiencia-de-pagina",
@@ -2023,18 +1901,6 @@
       "outgoingInternalLinks": 1
     },
     {
-      "path": "/ga4-eventos-y-conversiones",
-      "title": "GA4: eventos y conversiones",
-      "category": "tutoriales",
-      "tags": [
-        "GA4",
-        "Analítica web",
-        "Conversión"
-      ],
-      "incomingContextualLinks": 3,
-      "outgoingInternalLinks": 2
-    },
-    {
       "path": "/html-css-y-javascript-por-donde-empezar",
       "title": "HTML, CSS y JavaScript: por dónde empezar",
       "category": "tutoriales",
@@ -2058,40 +1924,16 @@
       "outgoingInternalLinks": 0
     },
     {
-      "path": "/optimizacion-de-google-business-profile",
-      "title": "Optimización de Google Business Profile: guía práctica",
+      "path": "/prestashop-va-lento-como-optimizarlo",
+      "title": "PrestaShop va lento: cómo optimizarlo y detectar el problema real",
       "category": "tutoriales",
       "tags": [
-        "SEO",
-        "Estrategia digital",
-        "SEO local"
+        "PrestaShop",
+        "Rendimiento web",
+        "Ecommerce"
       ],
       "incomingContextualLinks": 3,
-      "outgoingInternalLinks": 2
-    },
-    {
-      "path": "/seguridad-basica-en-wordpress",
-      "title": "Seguridad básica en WordPress: medidas que conviene aplicar",
-      "category": "tutoriales",
-      "tags": [
-        "WordPress",
-        "Seguridad web",
-        "Mantenimiento web"
-      ],
-      "incomingContextualLinks": 3,
-      "outgoingInternalLinks": 1
-    },
-    {
-      "path": "/auditoria-seo-paso-a-paso",
-      "title": "Auditoría SEO paso a paso",
-      "category": "tutoriales",
-      "tags": [
-        "SEO",
-        "Auditoría SEO",
-        "SEO técnico"
-      ],
-      "incomingContextualLinks": 4,
-      "outgoingInternalLinks": 1
+      "outgoingInternalLinks": 4
     },
     {
       "path": "/como-mejorar-la-velocidad-de-tu-web",
@@ -2099,11 +1941,10 @@
       "category": "tutoriales",
       "tags": [
         "Rendimiento web",
-        "Desarrollo web",
-        "Optimización"
+        "Desarrollo web"
       ],
       "incomingContextualLinks": 4,
-      "outgoingInternalLinks": 1
+      "outgoingInternalLinks": 5
     },
     {
       "path": "/contenido-que-ayuda-a-captar-clientes",
@@ -2115,7 +1956,7 @@
         "Marketing digital"
       ],
       "incomingContextualLinks": 4,
-      "outgoingInternalLinks": 2
+      "outgoingInternalLinks": 4
     },
     {
       "path": "/enlazado-interno-para-seo",
@@ -2130,12 +1971,25 @@
       "outgoingInternalLinks": 2
     },
     {
-      "path": "/landings-que-convierten",
-      "title": "Landing pages que convierten",
+      "path": "/ga4-eventos-y-conversiones",
+      "title": "GA4: eventos y conversiones",
       "category": "tutoriales",
       "tags": [
-        "Conversión",
-        "Marketing digital"
+        "GA4",
+        "Analítica web",
+        "Conversión"
+      ],
+      "incomingContextualLinks": 4,
+      "outgoingInternalLinks": 2
+    },
+    {
+      "path": "/optimizacion-de-google-business-profile",
+      "title": "Optimización de Google Business Profile: guía práctica",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Estrategia digital",
+        "SEO local"
       ],
       "incomingContextualLinks": 4,
       "outgoingInternalLinks": 2
@@ -2150,7 +2004,19 @@
         "CSS"
       ],
       "incomingContextualLinks": 4,
-      "outgoingInternalLinks": 2
+      "outgoingInternalLinks": 4
+    },
+    {
+      "path": "/seguridad-basica-en-wordpress",
+      "title": "Seguridad básica en WordPress: medidas que conviene aplicar",
+      "category": "tutoriales",
+      "tags": [
+        "WordPress",
+        "Seguridad web",
+        "Mantenimiento web"
+      ],
+      "incomingContextualLinks": 4,
+      "outgoingInternalLinks": 1
     },
     {
       "path": "/seo-para-categorias-de-ecommerce",
@@ -2189,13 +2055,26 @@
       "outgoingInternalLinks": 3
     },
     {
+      "path": "/auditoria-seo-paso-a-paso",
+      "title": "Auditoría SEO paso a paso",
+      "category": "tutoriales",
+      "tags": [
+        "SEO",
+        "Auditoría SEO",
+        "SEO técnico"
+      ],
+      "incomingContextualLinks": 5,
+      "outgoingInternalLinks": 5
+    },
+    {
       "path": "/clusters-de-contenido-y-seo",
       "title": "Clusters de contenido y SEO: cómo organizar temas relacionados",
       "category": "tutoriales",
       "tags": [
         "SEO",
         "Contenidos",
-        "Arquitectura web"
+        "Arquitectura web",
+        "Enlazado interno"
       ],
       "incomingContextualLinks": 5,
       "outgoingInternalLinks": 2
@@ -2211,6 +2090,17 @@
       "outgoingInternalLinks": 2
     },
     {
+      "path": "/landings-que-convierten",
+      "title": "Landing pages que convierten",
+      "category": "tutoriales",
+      "tags": [
+        "Conversión",
+        "Marketing digital"
+      ],
+      "incomingContextualLinks": 5,
+      "outgoingInternalLinks": 2
+    },
+    {
       "path": "/optimizacion-de-fichas-de-producto",
       "title": "Optimización de fichas de producto",
       "category": "tutoriales",
@@ -2219,7 +2109,7 @@
         "SEO"
       ],
       "incomingContextualLinks": 5,
-      "outgoingInternalLinks": 2
+      "outgoingInternalLinks": 7
     }
   ],
   "brokenInternalLinks": []

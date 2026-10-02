@@ -119,3 +119,5 @@ Un artículo que capta clientes puede perder valor si cambia el servicio o se qu
 Puedes complementar esta estrategia con [copywriting web para vender más](/copywriting-web-para-vender-mas) y [estrategias de captación B2B](/estrategias-de-captacion-b2b).
 
 El contenido comercial más efectivo no fuerza una venta. Reduce incertidumbre, demuestra criterio y facilita que la persona avance cuando ya tiene motivos para hacerlo.
+
+**Para seguir profundizando:** una estrategia de contenidos puede complementarse con [email marketing para pymes](/email-marketing-para-pymes), páginas de [landing que convierten](/landings-que-convierten) y una estrategia más amplia de [captación B2B](/estrategias-de-captacion-b2b).

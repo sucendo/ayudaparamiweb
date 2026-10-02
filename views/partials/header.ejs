@@ -2,8 +2,58 @@
   const headerSearchQuery = typeof searchQuery !== "undefined"
     ? searchQuery
     : (typeof query !== "undefined" ? query : "");
+
+  const resolveHeaderToneClass = function(pageMetadata) {
+    if (!pageMetadata) return "";
+
+    if (pageMetadata.type === "tool") {
+      return pageMetadata.toolToneClass || "ct-red";
+    }
+
+    if (pageMetadata.type === "laboratory") {
+      return pageMetadata.labToneClass || pageMetadata.toolToneClass || "ct-purple";
+    }
+
+    if (pageMetadata.type === "article") {
+      const heroClass = String(pageMetadata.heroClass || "").toLowerCase();
+      const themeColor = String(pageMetadata.themeColor || "").toLowerCase();
+      const toneByHero = {
+        "bg-purple": "ct-purple",
+        "bg-orange": "ct-orange",
+        "bg-blue": "ct-blue",
+        "bg-green": "ct-green",
+        "bg-red": "ct-red",
+        "bg-yellow": "ct-yellow",
+        "bg-teal": "ct-green"
+      };
+      const toneByTheme = {
+        "#64448f": "ct-purple",
+        "#7a45e8": "ct-purple",
+        "#e2674a": "ct-orange",
+        "#ee9e2d": "ct-orange",
+        "#ef6a00": "ct-orange",
+        "#46a4da": "ct-blue",
+        "#47a3da": "ct-blue",
+        "#1678f2": "ct-blue",
+        "#58b391": "ct-green",
+        "#2fa06a": "ct-green",
+        "#16b864": "ct-green",
+        "#537b7b": "ct-green",
+        "#f06a6a": "ct-red",
+        "#d25565": "ct-red",
+        "#d4bf4a": "ct-yellow",
+        "#f1c40f": "ct-yellow"
+      };
+
+      return toneByTheme[themeColor] || toneByHero[heroClass] || "ct-purple";
+    }
+
+    return "";
+  };
+
+  const headerToneClass = resolveHeaderToneClass(typeof metadata !== "undefined" ? metadata : null);
 %>
-<header class="ct-header">
+<header class="ct-header<%= headerToneClass ? " " + headerToneClass : "" %>">
   <div class="ct-inner ct-cf">
     <div class="ct-branding">
       <a class="ct-logo" href="/" rel="home">Ayuda para mi Web</a>

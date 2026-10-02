@@ -94,3 +94,5 @@ Introduce títulos largos, números grandes, mensajes de error, imágenes vertic
 Esos casos revelan fallos que no aparecen con contenido de ejemplo. También ayudan a evitar que una traducción o un dato inesperado rompa la interfaz.
 
 La guía [accesibilidad web: principios básicos](/accesibilidad-web-principios-basicos) complementa estas pruebas. Un responsive bien resuelto no solo cabe en distintas pantallas: conserva jerarquía, legibilidad y capacidad de uso cuando cambian espacio, contenido y forma de interacción.
+
+**Para seguir profundizando:** el diseño adaptable también forma parte de la experiencia global de la página; puedes ampliar esta parte con [experiencia de usuario (UX) y SEO](/experiencia-de-usuario-ux-y-seo) y con los [errores de usabilidad que reducen conversiones](/errores-de-usabilidad-que-bajan-conversiones).

@@ -1,39 +1,57 @@
 <!doctype html>
-<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resultados de búsqueda | Ayuda para mi Web</title>
-    <meta name="description" content="Resultados de búsqueda en Ayuda para mi Web" />
-    <meta name="author" content="Sucender" />
-    <%- include('../partials/head.ejs') %>
-  </head>
+<html dir="ltr" lang="es" xml:lang="es" class="js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscar | Ayuda para mi Web</title>
+  <meta name="description" content="Busca artículos, tutoriales, herramientas y contenidos en Ayuda para mi Web.">
+  <meta name="author" content="Sucender">
+  <link rel="canonical" href="https://www.ayudaparamiweb.com/buscar">
+  <%- include('../partials/head.ejs') %>
+</head>
+<body id="apmw-body" class="page-type-archive search-page-v2">
+  <div class="ct-container">
+    <%- include('../partials/header.ejs', { metadata: { type: 'article', themeColor: '#47a3da' }, searchQuery: query || '' }) %>
 
-  <body id="apmw-body">
-    <div class="ct-container">
-      <%- include('../partials/header.ejs', { searchQuery: query || '' }) %>
+    <div class="ct-content">
+      <div class="ct-inner">
+        <main class="ct-main ct-main-archive" id="ct-main" role="main">
+          <section class="ct-archive search-archive" aria-labelledby="search-page-title">
+            <div class="search-intro-card ct-blue">
+              <nav class="article-breadcrumbs search-breadcrumbs" aria-label="Migas de pan">
+                <a href="/">Inicio</a>
+                <span aria-hidden="true">›</span>
+                <span aria-current="page">Buscar</span>
+              </nav>
 
-      <div class="ct-content">
-        <div class="ct-inner">
-          <div class="ct-main ct-main-archive" role="main">
-            <div class="ct-archive">
-              <h1>Resultados de búsqueda</h1>
-              <div class="ct-cat-desc">
-                <p>Busca por título, extracto, etiquetas y URL. Los resultados se actualizan automáticamente.</p>
-              </div>
-              <form method="get" action="/buscar" class="ct-search-page-form">
-                <input
-                  id="search-page-input"
-                  class="ct-search-page-input"
-                  type="search"
-                  name="q"
-                  value="<%= query || '' %>"
-                  placeholder="Ejemplo: bluetooth, seo local, wordpress..."
-                  autocomplete="off"
-                />
+              <header class="search-archive-header">
+                <span class="article-v2-category">Buscador</span>
+                <h1 id="search-page-title">Encuentra contenido</h1>
+                <p>Busca por título, extracto, etiquetas o URL entre los contenidos publicados en Ayuda para mi Web.</p>
+              </header>
+
+              <form method="get" action="/buscar" class="ct-search-page-form" role="search">
+                <label class="search-page-label" for="search-page-input">¿Qué estás buscando?</label>
+                <div class="search-page-control">
+                  <input
+                    id="search-page-input"
+                    class="ct-search-page-input"
+                    type="search"
+                    name="q"
+                    value="<%= query || '' %>"
+                    placeholder="Ejemplo: SEO, WordPress, rendimiento..."
+                    autocomplete="off"
+                    spellcheck="false"
+                  >
+                  <button type="submit" class="search-page-button">Buscar</button>
+                </div>
               </form>
-              <div class="ct-cat-desc">
+            </div>
+
+            <div class="search-results-heading">
+              <div>
+                <h2>Resultados</h2>
                 <p id="search-status-text">
                   <% if (!query) { %>
                     Escribe un término para buscar contenido en la web.
@@ -44,25 +62,30 @@
                   <% } %>
                 </p>
               </div>
-              <div id="search-results-container" class="ct-archive-container">
-                <%- include('../partials/content-grid.ejs', { items: results || [], categories: categories || {} }) %>
-              </div>
             </div>
-          </div>
-          <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
-          <div class="clr"></div>
-        </div>
-      </div>
 
-      <footer class="ct-footer"><%- include('../partials/footer.ejs') %></footer>
+            <div id="search-results-container" class="ct-archive-container">
+              <%- include('../partials/content-grid.ejs', { items: results || [], categories: categories || {} }) %>
+            </div>
+            <div class="clr"></div>
+          </section>
+        </main>
+
+        <aside class="ct-sidebar article-sidebar"><%- include('../partials/aside.ejs') %></aside>
+        <div class="clr"></div>
+      </div>
     </div>
-<script>
-      window.__SEARCH_BOOTSTRAP__ = {
-        query: <%- JSON.stringify(query || '') %>,
-        results: <%- JSON.stringify(results || []) %>,
-        categories: <%- JSON.stringify(categories || {}) %>
-      };
-    </script>
-    <script src="/js/search-page.js"></script>
-  </body>
+
+    <footer class="ct-footer"><%- include('../partials/footer.ejs') %></footer>
+  </div>
+
+  <script>
+    window.__SEARCH_BOOTSTRAP__ = {
+      query: <%- JSON.stringify(query || '') %>,
+      results: <%- JSON.stringify(results || []) %>,
+      categories: <%- JSON.stringify(categories || {}) %>
+    };
+  </script>
+  <script src="/js/search-page.js"></script>
+</body>
 </html>

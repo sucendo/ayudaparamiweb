@@ -147,3 +147,5 @@ Si aún estás ordenando las bases, puede ayudarte la guía [HTML, CSS y JavaScr
 Una vez que controles estas piezas, el siguiente paso puede ser profundizar en objetos, métodos de arrays, módulos, peticiones de red y asincronía. No hace falta aprenderlo todo a la vez. Intenta incorporar cada concepto cuando un proyecto concreto lo necesite.
 
 La mejor señal de progreso no es saber muchas palabras del lenguaje, sino ser capaz de explicar por qué tu código funciona, detectar dónde falla y modificarlo sin tener que sustituirlo entero.
+
+**Para seguir profundizando:** desde aquí puedes pasar a [Express.js](/express-js-para-que-sirve), conocer [Vue.js](/vue-js-que-es) y revisar un ejemplo sencillo de integración con el [código para añadir Google Translate a un blog](/codigo-traductor-google-blog).

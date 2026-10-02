@@ -109,15 +109,21 @@
                 <%
                   let tocH2 = 0;
                   let tocH3 = 0;
+                  let tocH4 = 0;
                   metadata.toc.forEach(function(item) {
                     let tocNumber = '';
                     if (item.level === 2) {
                       tocH2 += 1;
                       tocH3 = 0;
+                      tocH4 = 0;
                       tocNumber = tocH2 + '.';
                     } else if (item.level === 3) {
                       tocH3 += 1;
+                      tocH4 = 0;
                       tocNumber = tocH2 + '.' + tocH3;
+                    } else if (item.level === 4) {
+                      tocH4 += 1;
+                      tocNumber = tocH2 + '.' + tocH3 + '.' + tocH4;
                     }
                 %>
                   <li class="toc-level-<%= item.level %>">

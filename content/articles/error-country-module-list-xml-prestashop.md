@@ -73,7 +73,7 @@ Input is not proper UTF-8</code></pre>
 <h3>En resumen</h3>
 								<p>El error country_module_list.xml puede parecer complejo, pero suele tener solución si se revisa con orden. La clave está en detectar si el problema viene del XML, del servidor o de algún módulo.</p>
 
-								<p>Si este error está bloqueando tu tienda y no sabes cómo solucionarlo, puedes <a href="/contacto">contactar conmigo</a> y reviso tu caso para ayudarte a resolverlo correctamente.</p>
+								<p>Si este error está bloqueando tu tienda y no sabes cómo solucionarlo, puedes <a href="/sucender">contactar conmigo</a> y reviso tu caso para ayudarte a resolverlo correctamente.</p>
 
 								<p>En <a href="/">Ayuda para mi Web</a> puedes encontrar más soluciones a errores reales de PrestaShop y WordPress.</p>
 ## Diagnóstico inicial

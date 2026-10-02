@@ -1345,3 +1345,93 @@ html {
     top: 0;
   }
 }
+
+
+/* Useful sidebar navigation widgets */
+.ct-sidebar .ct-quick-tools {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ct-sidebar .ct-quick-tools li {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eef2f4;
+}
+
+.ct-sidebar .ct-quick-tools li:first-child {
+  border-top: 0;
+}
+
+.ct-sidebar .ct-quick-tools a {
+  display: block;
+  padding: 12px 0;
+  color: #263943;
+  text-decoration: none;
+}
+
+.ct-sidebar .ct-quick-tools li:first-child a {
+  padding-top: 0;
+}
+
+.ct-sidebar .ct-quick-tools strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: .94rem;
+  line-height: 1.35;
+}
+
+.ct-sidebar .ct-quick-tools span {
+  display: block;
+  color: #74838d;
+  font-size: .8rem;
+  line-height: 1.45;
+}
+
+.ct-sidebar .ct-quick-tools a:hover strong,
+.ct-sidebar .ct-quick-tools a:focus strong {
+  color: #1d6f97;
+}
+
+.ct-sidebar .ct-widget-more {
+  display: block;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e8edf0;
+  color: #456272;
+  font-size: .82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ct-sidebar .ct-widget-more:hover,
+.ct-sidebar .ct-widget-more:focus {
+  color: #1d6f97;
+  text-decoration: underline;
+}
+
+.ct-sidebar .ct-topic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.ct-sidebar .ct-topic-links a {
+  display: inline-block;
+  padding: 6px 9px;
+  border: 1px solid #dbe3e8;
+  background: #f8fafb;
+  color: #435967;
+  font-size: .78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.ct-sidebar .ct-topic-links a:hover,
+.ct-sidebar .ct-topic-links a:focus {
+  border-color: #9eb4c1;
+  background: #fff;
+  color: #1d6f97;
+}

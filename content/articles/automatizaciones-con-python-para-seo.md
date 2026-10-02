@@ -129,3 +129,5 @@ Utiliza el script para localizar y organizar problemas. Mantén el análisis edi
 Si estás empezando con el lenguaje, [primeros pasos en Python](/primeros-pasos-python) proporciona una base más general.
 
 La mejor automatización SEO es pequeña, verificable y fácil de volver a ejecutar. Cuanto más claro sea el formato de entrada y salida, más valor tendrá después de la primera ejecución.
+
+**Para seguir profundizando:** estas automatizaciones pueden complementarse con técnicas de [scraping web ético y útil](/scraping-web-etico-y-util) y con una visión más general sobre [automatización de respuestas y procesos](/automatizacion-de-respuestas-y-procesos).

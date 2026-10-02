@@ -5,7 +5,7 @@ description: "Qué medir en rendimiento web en 2021: TTFB, LCP, FID, CLS, peso, 
 author: "Sucender"
 canonical: "/rendimiento-web-que-medir"
 category: "tutoriales"
-tags: ["Rendimiento web","Analítica web","SEO técnico"]
+tags: ["Rendimiento web", "Analítica web", "SEO técnico"]
 publishedDate: "2021-08-12"
 featuredImage: "/img/articulo/rendimiento-web-que-medir-featured.svg"
 heroClass: "bg-yellow"

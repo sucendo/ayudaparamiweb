@@ -5,7 +5,7 @@ description: "Guía de SEO para tiendas online: arquitectura, categorías, filtr
 author: "Sucender"
 canonical: "/seo-para-tiendas-online"
 category: "tutoriales"
-tags: ["SEO","Ecommerce","SEO técnico"]
+tags: ["SEO", "Ecommerce", "SEO técnico"]
 publishedDate: "2020-07-09"
 featuredImage: "/img/articulo/seo-para-tiendas-online-featured.svg"
 heroClass: "bg-green"

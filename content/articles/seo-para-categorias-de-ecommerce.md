@@ -5,7 +5,7 @@ excerpt: "Las categorías deben ayudar a explorar catálogo y concentrar demanda
 author: "Sucender"
 canonical: "/seo-para-categorias-de-ecommerce"
 category: "tutoriales"
-tags: ["SEO","Ecommerce","Arquitectura web"]
+tags: ["SEO", "Ecommerce", "Arquitectura web"]
 publishedDate: "2023-10-12"
 featuredImage: "/img/articulo/seo-para-categorias-de-ecommerce-featured.svg"
 heroClass: "bg-purple"

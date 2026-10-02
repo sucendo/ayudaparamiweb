@@ -5,7 +5,7 @@ excerpt: "El teletrabajo funciona mejor cuando comunicación, documentos y respo
 author: "Sucender"
 canonical: "/teletrabajo-y-productividad-digital"
 category: "tutoriales"
-tags: ["Productividad","Colaboración","Tecnología"]
+tags: ["Productividad", "Colaboración", "Tecnología"]
 publishedDate: "2020-03-12"
 featuredImage: "/img/articulo/teletrabajo-y-productividad-digital-featured.svg"
 heroClass: "bg-purple"

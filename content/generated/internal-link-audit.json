@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-02T13:58:49.223Z",
+  "generatedAt": "2026-10-02T14:48:34.564Z",
   "summary": {
     "articles": 117,
-    "normalizedTags": 45,
+    "normalizedTags": 46,
     "singletonTags": 0,
     "variantTags": 0,
-    "pagesWithNoContextualIncomingLinks": 1,
+    "pagesWithNoContextualIncomingLinks": 0,
     "pagesWithOneOrFewerContextualIncomingLinks": 72,
     "brokenInternalLinks": 0,
-    "totalContextualArticleLinks": 206
+    "totalContextualArticleLinks": 207
   },
   "tagVariants": [],
   "singletonTags": [],
   "tags": [
     {
       "normalized": "seo",
-      "count": 52,
+      "count": 50,
       "forms": [
         "SEO"
       ],
@@ -40,6 +40,7 @@
         "/contenidos-utiles-y-eeat",
         "/enlazado-interno-para-seo",
         "/experiencia-de-usuario-ux-y-seo",
+        "/google-my-business-para-negocios-locales",
         "/guia-seo-pymes-2026",
         "/guias-y-tutoriales-como-organizar-tu-contenido",
         "/herramientas-seo",
@@ -54,7 +55,6 @@
         "/pipelines-de-contenido-con-ia",
         "/plan-digital-para-pymes-2023",
         "/plan-seo-y-contenidos-para-2026",
-        "/rendimiento-web-que-medir",
         "/rich-snippets-y-datos-estructurados",
         "/schema-org-basico-para-pymes",
         "/scraping-web-etico-y-util",
@@ -69,80 +69,12 @@
         "/seo-para-tiendas-online",
         "/seo-que-es",
         "/seo-y-core-web-vitals",
-        "/teletrabajo-y-productividad-digital",
-        "/tendencias-seo-y-contenidos-2024",
-        "/velocidad-web-y-experiencia-de-pagina"
-      ]
-    },
-    {
-      "normalized": "estrategia digital",
-      "count": 24,
-      "forms": [
-        "Estrategia digital"
-      ],
-      "articles": [
-        "/auditoria-seo-con-ia",
-        "/balance-web-y-seo-del-ano",
-        "/checklist-ia-y-seo-para-2025",
-        "/como-crear-briefings-web-mas-claros",
-        "/copilots-y-agentes-para-pymes",
-        "/guia-seo-pymes-2026",
-        "/mantenimiento-web-proactivo",
-        "/optimizacion-de-google-business-profile",
-        "/pipelines-de-contenido-con-ia",
-        "/plan-digital-para-pymes-2023",
-        "/plan-seo-y-contenidos-para-2026",
-        "/rendimiento-web-que-medir",
-        "/rich-snippets-y-datos-estructurados",
-        "/schema-org-basico-para-pymes",
-        "/scraping-web-etico-y-util",
-        "/seo-local-avanzado-para-pymes",
-        "/seo-local-y-visibilidad-para-pymes-2026",
-        "/seo-para-categorias-de-ecommerce",
-        "/seo-para-negocios-locales",
-        "/seo-para-tiendas-online",
-        "/seo-y-core-web-vitals",
-        "/teletrabajo-y-productividad-digital",
-        "/tendencias-seo-y-contenidos-2024",
-        "/velocidad-web-y-experiencia-de-pagina"
-      ]
-    },
-    {
-      "normalized": "web",
-      "count": 24,
-      "forms": [
-        "Web"
-      ],
-      "articles": [
-        "/auditoria-tecnica-rapida-de-una-web",
-        "/auditoria-web-basica-para-pymes",
-        "/checklist-lanzamiento-web-2026",
-        "/checklist-seo-antes-de-redisenar-una-web",
-        "/como-crear-briefings-web-mas-claros",
-        "/como-elegir-un-buen-hosting",
-        "/copywriting-web-para-vender-mas",
-        "/errores-al-elegir-dominio-y-hosting",
-        "/errores-comunes-en-webs-corporativas",
-        "/errores-frecuentes-al-crear-una-web",
-        "/plan-digital-para-pymes-2023",
-        "/rendimiento-web-que-medir",
-        "/rich-snippets-y-datos-estructurados",
-        "/schema-org-basico-para-pymes",
-        "/scraping-web-etico-y-util",
-        "/seo-para-categorias-de-ecommerce",
-        "/seo-para-negocios-locales",
-        "/seo-para-tiendas-online",
-        "/seo-y-core-web-vitals",
-        "/teletrabajo-y-productividad-digital",
-        "/tendencias-seo-y-contenidos-2024",
-        "/velocidad-web-y-experiencia-de-pagina",
-        "/ventajas-de-tener-una-web",
-        "/wordpress-o-desarrollo-a-medida"
+        "/tendencias-seo-y-contenidos-2024"
       ]
     },
     {
       "normalized": "desarrollo web",
-      "count": 18,
+      "count": 19,
       "forms": [
         "Desarrollo web"
       ],
@@ -156,6 +88,7 @@
         "/conceptos-basicos-programacion",
         "/el-mundo-del-programador-web",
         "/errores-frecuentes-al-crear-una-web",
+        "/experiencia-de-usuario-ux-y-seo",
         "/express-js-para-que-sirve",
         "/git-y-github-para-principiantes",
         "/html-css-y-javascript-por-donde-empezar",
@@ -168,8 +101,35 @@
       ]
     },
     {
+      "normalized": "seo tecnico",
+      "count": 18,
+      "forms": [
+        "SEO técnico"
+      ],
+      "articles": [
+        "/analisis-de-logs-para-seo",
+        "/arquitectura-web-para-catalogos-grandes",
+        "/auditoria-contenidos-antes-de-septiembre",
+        "/auditoria-seo-paso-a-paso",
+        "/auditoria-tecnica-rapida-de-una-web",
+        "/automatizaciones-con-python-para-seo",
+        "/checklist-lanzamiento-web-2026",
+        "/como-planificar-una-migracion-web",
+        "/guia-seo-pymes-2026",
+        "/puesta-a-punto-web-antes-del-verano",
+        "/rendimiento-web-que-medir",
+        "/rich-snippets-y-datos-estructurados",
+        "/schema-org-basico-para-pymes",
+        "/seo-on-page-aspectos-tecnicos",
+        "/seo-para-tiendas-online",
+        "/seo-tecnico-core-web-vitals-2026",
+        "/seo-y-core-web-vitals",
+        "/velocidad-web-y-experiencia-de-pagina"
+      ]
+    },
+    {
       "normalized": "contenidos",
-      "count": 15,
+      "count": 16,
       "forms": [
         "Contenidos"
       ],
@@ -188,28 +148,75 @@
         "/plan-seo-y-contenidos-para-2026",
         "/prompts-para-redactar-mejor-con-ia",
         "/seo-estacional-busquedas-de-verano",
+        "/tendencias-seo-y-contenidos-2024",
         "/ventajas-de-tener-una-web"
       ]
     },
     {
-      "normalized": "seo tecnico",
-      "count": 12,
+      "normalized": "estrategia digital",
+      "count": 15,
       "forms": [
-        "SEO técnico"
+        "Estrategia digital"
       ],
       "articles": [
-        "/analisis-de-logs-para-seo",
-        "/arquitectura-web-para-catalogos-grandes",
-        "/auditoria-contenidos-antes-de-septiembre",
-        "/auditoria-seo-paso-a-paso",
-        "/auditoria-tecnica-rapida-de-una-web",
-        "/automatizaciones-con-python-para-seo",
-        "/checklist-lanzamiento-web-2026",
-        "/como-planificar-una-migracion-web",
+        "/auditoria-seo-con-ia",
+        "/balance-web-y-seo-del-ano",
+        "/checklist-ia-y-seo-para-2025",
+        "/como-crear-briefings-web-mas-claros",
+        "/copilots-y-agentes-para-pymes",
         "/guia-seo-pymes-2026",
-        "/puesta-a-punto-web-antes-del-verano",
-        "/seo-on-page-aspectos-tecnicos",
-        "/seo-tecnico-core-web-vitals-2026"
+        "/mantenimiento-web-proactivo",
+        "/optimizacion-de-google-business-profile",
+        "/pipelines-de-contenido-con-ia",
+        "/plan-digital-para-pymes-2023",
+        "/plan-seo-y-contenidos-para-2026",
+        "/scraping-web-etico-y-util",
+        "/seo-local-avanzado-para-pymes",
+        "/seo-local-y-visibilidad-para-pymes-2026",
+        "/tendencias-seo-y-contenidos-2024"
+      ]
+    },
+    {
+      "normalized": "web",
+      "count": 14,
+      "forms": [
+        "Web"
+      ],
+      "articles": [
+        "/auditoria-tecnica-rapida-de-una-web",
+        "/auditoria-web-basica-para-pymes",
+        "/checklist-lanzamiento-web-2026",
+        "/checklist-seo-antes-de-redisenar-una-web",
+        "/como-crear-briefings-web-mas-claros",
+        "/como-elegir-un-buen-hosting",
+        "/copywriting-web-para-vender-mas",
+        "/errores-al-elegir-dominio-y-hosting",
+        "/errores-comunes-en-webs-corporativas",
+        "/errores-frecuentes-al-crear-una-web",
+        "/plan-digital-para-pymes-2023",
+        "/scraping-web-etico-y-util",
+        "/ventajas-de-tener-una-web",
+        "/wordpress-o-desarrollo-a-medida"
+      ]
+    },
+    {
+      "normalized": "productividad",
+      "count": 11,
+      "forms": [
+        "Productividad"
+      ],
+      "articles": [
+        "/automatizacion-de-respuestas-y-procesos",
+        "/automatizacion-de-tareas-en-la-empresa",
+        "/comunicacion-interna-y-herramientas-digitales",
+        "/copilots-y-agentes-para-pymes",
+        "/editores-con-ia-y-agentes-de-desarrollo",
+        "/el-mundo-del-programador-web",
+        "/herramientas-para-videollamadas-y-colaboracion",
+        "/microsoft-365-para-pymes",
+        "/productividad-digital-en-equipos-pequenos",
+        "/prompts-para-redactar-mejor-con-ia",
+        "/teletrabajo-y-productividad-digital"
       ]
     },
     {
@@ -251,22 +258,21 @@
       ]
     },
     {
-      "normalized": "productividad",
-      "count": 10,
+      "normalized": "ecommerce",
+      "count": 9,
       "forms": [
-        "Productividad"
+        "Ecommerce"
       ],
       "articles": [
-        "/automatizacion-de-respuestas-y-procesos",
-        "/automatizacion-de-tareas-en-la-empresa",
-        "/comunicacion-interna-y-herramientas-digitales",
-        "/copilots-y-agentes-para-pymes",
-        "/editores-con-ia-y-agentes-de-desarrollo",
-        "/el-mundo-del-programador-web",
-        "/herramientas-para-videollamadas-y-colaboracion",
-        "/microsoft-365-para-pymes",
-        "/productividad-digital-en-equipos-pequenos",
-        "/prompts-para-redactar-mejor-con-ia"
+        "/arquitectura-web-para-catalogos-grandes",
+        "/google-shopping-actions",
+        "/optimizacion-de-fichas-de-producto",
+        "/prestashop-que-es-y-cuando-usarlo",
+        "/prestashop-va-lento-como-optimizarlo",
+        "/problemas-canon-digital-ecommerce",
+        "/seo-para-categorias-de-ecommerce",
+        "/seo-para-ecommerce",
+        "/seo-para-tiendas-online"
       ]
     },
     {
@@ -288,6 +294,58 @@
       ]
     },
     {
+      "normalized": "rendimiento web",
+      "count": 9,
+      "forms": [
+        "Rendimiento web"
+      ],
+      "articles": [
+        "/como-mejorar-la-velocidad-de-tu-web",
+        "/como-mejorar-la-velocidad-de-wordpress",
+        "/prestashop-va-lento-como-optimizarlo",
+        "/puesta-a-punto-web-antes-del-verano",
+        "/rendimiento-web-que-medir",
+        "/seo-tecnico-core-web-vitals-2026",
+        "/seo-y-core-web-vitals",
+        "/velocidad-web-y-experiencia-de-pagina",
+        "/wordpress-lento-diagnostico-real-paso-a-paso"
+      ]
+    },
+    {
+      "normalized": "analitica web",
+      "count": 8,
+      "forms": [
+        "Analítica web"
+      ],
+      "articles": [
+        "/automatizar-informes-seo",
+        "/balance-web-y-seo-del-ano",
+        "/como-medir-rendimiento-web-metricas-utiles",
+        "/dashboard-ga4-para-direccion",
+        "/ga4-eventos-y-conversiones",
+        "/ga4-primeros-pasos",
+        "/ga4-y-bigquery-primer-enfoque",
+        "/rendimiento-web-que-medir"
+      ]
+    },
+    {
+      "normalized": "pymes",
+      "count": 8,
+      "forms": [
+        "Pymes"
+      ],
+      "articles": [
+        "/auditoria-web-basica-para-pymes",
+        "/copilots-y-agentes-para-pymes",
+        "/email-marketing-para-pymes",
+        "/google-my-business-para-negocios-locales",
+        "/guia-seo-pymes-2026",
+        "/microsoft-365-para-pymes",
+        "/schema-org-basico-para-pymes",
+        "/seo-para-negocios-locales"
+      ]
+    },
+    {
       "normalized": "wordpress",
       "count": 8,
       "forms": [
@@ -305,35 +363,19 @@
       ]
     },
     {
-      "normalized": "analitica web",
+      "normalized": "seo local",
       "count": 7,
       "forms": [
-        "Analítica web"
+        "SEO local"
       ],
       "articles": [
-        "/automatizar-informes-seo",
-        "/balance-web-y-seo-del-ano",
-        "/como-medir-rendimiento-web-metricas-utiles",
-        "/dashboard-ga4-para-direccion",
-        "/ga4-eventos-y-conversiones",
-        "/ga4-primeros-pasos",
-        "/ga4-y-bigquery-primer-enfoque"
-      ]
-    },
-    {
-      "normalized": "ecommerce",
-      "count": 7,
-      "forms": [
-        "Ecommerce"
-      ],
-      "articles": [
-        "/arquitectura-web-para-catalogos-grandes",
-        "/google-shopping-actions",
-        "/optimizacion-de-fichas-de-producto",
-        "/prestashop-que-es-y-cuando-usarlo",
-        "/prestashop-va-lento-como-optimizarlo",
-        "/problemas-canon-digital-ecommerce",
-        "/seo-para-ecommerce"
+        "/google-my-business-para-negocios-locales",
+        "/guia-seo-pymes-2026",
+        "/optimizacion-de-google-business-profile",
+        "/seo-local-avanzado-para-pymes",
+        "/seo-local-que-es-y-como-empezar",
+        "/seo-local-y-visibilidad-para-pymes-2026",
+        "/seo-para-negocios-locales"
       ]
     },
     {
@@ -367,33 +409,32 @@
       ]
     },
     {
-      "normalized": "rendimiento web",
+      "normalized": "ux",
       "count": 6,
       "forms": [
-        "Rendimiento web"
+        "UX"
       ],
       "articles": [
-        "/como-mejorar-la-velocidad-de-tu-web",
-        "/como-mejorar-la-velocidad-de-wordpress",
-        "/prestashop-va-lento-como-optimizarlo",
-        "/puesta-a-punto-web-antes-del-verano",
-        "/seo-tecnico-core-web-vitals-2026",
-        "/wordpress-lento-diagnostico-real-paso-a-paso"
+        "/accesibilidad-web-principios-basicos",
+        "/errores-comunes-en-webs-corporativas",
+        "/errores-de-usabilidad-que-bajan-conversiones",
+        "/experiencia-de-usuario-ux-y-seo",
+        "/responsive-design-buenas-practicas",
+        "/velocidad-web-y-experiencia-de-pagina"
       ]
     },
     {
-      "normalized": "seo local",
-      "count": 6,
+      "normalized": "arquitectura web",
+      "count": 5,
       "forms": [
-        "SEO local"
+        "Arquitectura web"
       ],
       "articles": [
-        "/google-my-business-para-negocios-locales",
-        "/guia-seo-pymes-2026",
-        "/optimizacion-de-google-business-profile",
-        "/seo-local-avanzado-para-pymes",
-        "/seo-local-que-es-y-como-empezar",
-        "/seo-local-y-visibilidad-para-pymes-2026"
+        "/arquitectura-web-para-catalogos-grandes",
+        "/clusters-de-contenido-y-seo",
+        "/enlazado-interno-para-seo",
+        "/guias-y-tutoriales-como-organizar-tu-contenido",
+        "/seo-para-categorias-de-ecommerce"
       ]
     },
     {
@@ -453,44 +494,16 @@
       ]
     },
     {
-      "normalized": "pymes",
-      "count": 5,
-      "forms": [
-        "Pymes"
-      ],
-      "articles": [
-        "/auditoria-web-basica-para-pymes",
-        "/copilots-y-agentes-para-pymes",
-        "/email-marketing-para-pymes",
-        "/guia-seo-pymes-2026",
-        "/microsoft-365-para-pymes"
-      ]
-    },
-    {
-      "normalized": "ux",
-      "count": 5,
-      "forms": [
-        "UX"
-      ],
-      "articles": [
-        "/accesibilidad-web-principios-basicos",
-        "/errores-comunes-en-webs-corporativas",
-        "/errores-de-usabilidad-que-bajan-conversiones",
-        "/experiencia-de-usuario-ux-y-seo",
-        "/responsive-design-buenas-practicas"
-      ]
-    },
-    {
-      "normalized": "arquitectura web",
+      "normalized": "colaboracion",
       "count": 4,
       "forms": [
-        "Arquitectura web"
+        "Colaboración"
       ],
       "articles": [
-        "/arquitectura-web-para-catalogos-grandes",
-        "/clusters-de-contenido-y-seo",
-        "/enlazado-interno-para-seo",
-        "/guias-y-tutoriales-como-organizar-tu-contenido"
+        "/comunicacion-interna-y-herramientas-digitales",
+        "/entornos-colaborativos",
+        "/herramientas-para-videollamadas-y-colaboracion",
+        "/teletrabajo-y-productividad-digital"
       ]
     },
     {
@@ -533,6 +546,19 @@
       ]
     },
     {
+      "normalized": "tecnologia",
+      "count": 4,
+      "forms": [
+        "Tecnología"
+      ],
+      "articles": [
+        "/microsoft-365-para-pymes",
+        "/que-es-bluetooth",
+        "/que-es-una-api-y-para-que-sirve",
+        "/teletrabajo-y-productividad-digital"
+      ]
+    },
+    {
       "normalized": "backend",
       "count": 3,
       "forms": [
@@ -542,30 +568,6 @@
         "/express-js-para-que-sirve",
         "/node-js-que-es",
         "/primeros-pasos-python"
-      ]
-    },
-    {
-      "normalized": "backlinks",
-      "count": 3,
-      "forms": [
-        "Backlinks"
-      ],
-      "articles": [
-        "/autoridad-de-dominio",
-        "/backlink-que-es-como-construir-red-de-enlaces",
-        "/experiencia-de-usuario-ux-y-seo"
-      ]
-    },
-    {
-      "normalized": "colaboracion",
-      "count": 3,
-      "forms": [
-        "Colaboración"
-      ],
-      "articles": [
-        "/comunicacion-interna-y-herramientas-digitales",
-        "/entornos-colaborativos",
-        "/herramientas-para-videollamadas-y-colaboracion"
       ]
     },
     {
@@ -605,18 +607,6 @@
       ]
     },
     {
-      "normalized": "tecnologia",
-      "count": 3,
-      "forms": [
-        "Tecnología"
-      ],
-      "articles": [
-        "/microsoft-365-para-pymes",
-        "/que-es-bluetooth",
-        "/que-es-una-api-y-para-que-sirve"
-      ]
-    },
-    {
       "normalized": "accesibilidad",
       "count": 2,
       "forms": [
@@ -639,6 +629,17 @@
       ]
     },
     {
+      "normalized": "backlinks",
+      "count": 2,
+      "forms": [
+        "Backlinks"
+      ],
+      "articles": [
+        "/autoridad-de-dominio",
+        "/backlink-que-es-como-construir-red-de-enlaces"
+      ]
+    },
+    {
       "normalized": "captacion",
       "count": 2,
       "forms": [
@@ -658,6 +659,17 @@
       "articles": [
         "/html-css-y-javascript-por-donde-empezar",
         "/responsive-design-buenas-practicas"
+      ]
+    },
+    {
+      "normalized": "datos estructurados",
+      "count": 2,
+      "forms": [
+        "Datos estructurados"
+      ],
+      "articles": [
+        "/rich-snippets-y-datos-estructurados",
+        "/schema-org-basico-para-pymes"
       ]
     },
     {
@@ -739,16 +751,6 @@
     }
   ],
   "pages": [
-    {
-      "path": "/que-es-bluetooth",
-      "title": "Qué es Bluetooth?",
-      "category": "tutoriales",
-      "tags": [
-        "Tecnología"
-      ],
-      "incomingContextualLinks": 0,
-      "outgoingInternalLinks": 0
-    },
     {
       "path": "/accesibilidad-y-seo",
       "title": "Accesibilidad y SEO: cómo mejorar la web para personas y buscadores",
@@ -1141,8 +1143,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Backlinks",
-        "UX"
+        "UX",
+        "Desarrollo web"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 0
@@ -1386,6 +1388,16 @@
       "outgoingInternalLinks": 1
     },
     {
+      "path": "/que-es-bluetooth",
+      "title": "Qué es Bluetooth?",
+      "category": "tutoriales",
+      "tags": [
+        "Tecnología"
+      ],
+      "incomingContextualLinks": 1,
+      "outgoingInternalLinks": 0
+    },
+    {
       "path": "/que-es-una-api-y-para-que-sirve",
       "title": "Qué es una API y para qué sirve",
       "category": "tutoriales",
@@ -1395,16 +1407,16 @@
         "Tecnología"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 2
+      "outgoingInternalLinks": 3
     },
     {
       "path": "/rendimiento-web-que-medir",
       "title": "Rendimiento web: qué medir y cómo interpretar los datos",
       "category": "tutoriales",
       "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
+        "Rendimiento web",
+        "Analítica web",
+        "SEO técnico"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -1415,8 +1427,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Web",
-        "Estrategia digital"
+        "SEO técnico",
+        "Datos estructurados"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 1
@@ -1509,8 +1521,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Web",
-        "Estrategia digital"
+        "Rendimiento web",
+        "SEO técnico"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -1520,9 +1532,9 @@
       "title": "Teletrabajo y productividad digital: organización práctica",
       "category": "tutoriales",
       "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
+        "Productividad",
+        "Colaboración",
+        "Tecnología"
       ],
       "incomingContextualLinks": 1,
       "outgoingInternalLinks": 2
@@ -1533,7 +1545,7 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Web",
+        "Contenidos",
         "Estrategia digital"
       ],
       "incomingContextualLinks": 1,
@@ -1706,7 +1718,9 @@
       "title": "Google My Business para negocios locales",
       "category": "tutoriales",
       "tags": [
-        "SEO local"
+        "SEO",
+        "SEO local",
+        "Pymes"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 1
@@ -1811,8 +1825,9 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Web",
-        "Estrategia digital"
+        "SEO técnico",
+        "Datos estructurados",
+        "Pymes"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 4
@@ -1844,9 +1859,9 @@
       "title": "Velocidad web y experiencia de página: qué optimizar",
       "category": "tutoriales",
       "tags": [
-        "SEO",
-        "Web",
-        "Estrategia digital"
+        "Rendimiento web",
+        "UX",
+        "SEO técnico"
       ],
       "incomingContextualLinks": 2,
       "outgoingInternalLinks": 2
@@ -2012,8 +2027,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Web",
-        "Estrategia digital"
+        "Ecommerce",
+        "Arquitectura web"
       ],
       "incomingContextualLinks": 4,
       "outgoingInternalLinks": 2
@@ -2024,8 +2039,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Web",
-        "Estrategia digital"
+        "Ecommerce",
+        "SEO técnico"
       ],
       "incomingContextualLinks": 4,
       "outgoingInternalLinks": 3
@@ -2105,8 +2120,8 @@
       "category": "tutoriales",
       "tags": [
         "SEO",
-        "Web",
-        "Estrategia digital"
+        "SEO local",
+        "Pymes"
       ],
       "incomingContextualLinks": 5,
       "outgoingInternalLinks": 3

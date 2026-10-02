@@ -5,7 +5,7 @@ excerpt: "La tendencia clave en 2024 no es publicar más, sino producir contenid
 author: "Sucender"
 canonical: "/tendencias-seo-y-contenidos-2024"
 category: "tutoriales"
-tags: ["SEO","Contenidos","Estrategia digital"]
+tags: ["SEO", "Contenidos", "Estrategia digital"]
 publishedDate: "2024-01-11"
 featuredImage: "/img/articulo/tendencias-seo-y-contenidos-2024-featured.svg"
 heroClass: "bg-yellow"

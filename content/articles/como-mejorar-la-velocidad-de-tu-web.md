@@ -114,3 +114,5 @@ El rendimiento sirve para que la web sea más fácil de usar. No elimines imáge
 Puedes relacionar estas mejoras con [responsive design: buenas prácticas](/responsive-design-buenas-practicas), ya que tamaño de pantalla y forma de cargar recursos deben trabajar juntos.
 
 La optimización más mantenible consiste en medir, simplificar y volver a medir. Una página con pocos recursos bien elegidos suele necesitar menos trucos para seguir siendo rápida.
+
+**Para seguir profundizando:** si trabajas con WordPress, revisa [cómo mejorar su velocidad paso a paso](/como-mejorar-la-velocidad-de-wordpress) y este [diagnóstico real de un WordPress lento](/wordpress-lento-diagnostico-real-paso-a-paso). Para una visión más amplia, consulta [qué medir en rendimiento web](/rendimiento-web-que-medir) y la [puesta a punto de una web antes del verano](/puesta-a-punto-web-antes-del-verano).

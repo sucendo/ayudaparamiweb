@@ -751,7 +751,7 @@
 .page-type-article .article-toc-list a {
   display: flex;
   align-items: flex-start;
-  gap: 0.22rem;
+  gap: 0.35rem;
 }
 
 .page-type-article .article-toc-number {

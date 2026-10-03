@@ -18,7 +18,7 @@ const CATEGORY_DEFINITIONS = {
 };
 
 const CATEGORY_BY_SLUG = {
-  'guia-seo-pymes-2026': 'guias','seo-tecnico-core-web-vitals-2026': 'guias','checklist-lanzamiento-web-2026': 'guias','investigacion-palabras-clave': 'guias','contenido-y-seo': 'guias','seo-on-page-aspectos-tecnicos': 'guias','motores-de-busqueda': 'guias','seo-que-es': 'guias','como-crear-una-pagina-web': 'guias','conceptos-basicos-programacion': 'guias','node-js-que-es': 'guias','express-js-para-que-sirve': 'guias','vue-js-que-es': 'guias',
+  'guia-seo-pymes-2026': 'guias','seo-tecnico-core-web-vitals-2026': 'guias','checklist-lanzamiento-web-2026': 'guias','investigacion-palabras-clave': 'guias','contenido-y-seo': 'guias','seo-on-page-aspectos-tecnicos': 'guias','motores-de-busqueda': 'guias','seo-que-es': 'guias','como-crear-una-pagina-web': 'tutoriales','conceptos-basicos-programacion': 'guias','node-js-que-es': 'guias','express-js-para-que-sirve': 'guias','vue-js-que-es': 'guias',
   'primeros-pasos-python': 'tutoriales','codigo-traductor-google-blog': 'tutoriales','entornos-colaborativos': 'tutoriales',
   'contador-caracteres-seo': 'herramientas','conversor-binario': 'herramientas','analizador-seo-url': 'herramientas',
   'quantum-pacific-group': 'laboratorio','calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019': 'laboratorio',

@@ -3,7 +3,7 @@ title: "Cómo elegir un buen hosting para tu web"
 description: "Consejos para elegir un buen hosting para tu web: qué debes mirar, qué errores evitar y cómo acertar con el alojamiento según tu proyecto."
 author: "Sucender"
 canonical: "/como-elegir-un-buen-hosting"
-category: "tutoriales"
+category: "guias"
 tags: ["Alojamiento web", "Web", "Dominios", "WordPress"]
 publishedDate: "2018-07-24"
 featuredImage: "/img/articulo/como-elegir-un-buen-hosting-featured.svg"

@@ -4,7 +4,7 @@ description: "Ideas prácticas para adaptar una tienda online al canon digital s
 excerpt: "Adaptar una tienda online al canon digital puede convertirse en un problema técnico y operativo si no se plantea con calma. La buena noticia es que, en muchos casos, se puede resolver sin tocar demasiado código y sin complicar la tienda más de la cuenta."
 author: "Sucender"
 canonical: "/problemas-canon-digital-ecommerce"
-category: "tutoriales"
+category: "guias"
 tags: ["Ecommerce", "WordPress", "PrestaShop"]
 publishedDate: "2018-06-16"
 featuredImage: "/img/articulo/problemas-canon-digital-ecommerce-featured.svg"

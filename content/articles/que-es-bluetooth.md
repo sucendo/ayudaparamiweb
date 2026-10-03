@@ -4,7 +4,7 @@ description: "¿Que es la tecnoligía Bluetooth? ¿Para que sirve? ¿Para que pu
 excerpt: "La mayoría de la gente ha oído hablar de Bluetooth, pero muchos desconocen qué es, cómo funciona y qué pueden hacer con él. Tratemos de llenar los vacíos con nuestra guía completa, que incluye usos comunes para Bluetooth y explicaciones sobre cómo configurarlo."
 author: "Sucender"
 canonical: "/que-es-bluetooth"
-category: "tutoriales"
+category: "guias"
 tags: ["Tecnología"]
 publishedDate: "2018-08-21"
 featuredImage: "/img/articulo/que-es-bluetooth-featured.svg"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T14:48:34.564Z",
+  "generatedAt": "2026-10-03T10:46:27.884Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 46,
@@ -1057,7 +1057,7 @@
     {
       "path": "/el-mundo-del-programador-web",
       "title": "El mundo del programador Web",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Desarrollo web",
         "Programación",
@@ -1223,7 +1223,7 @@
     {
       "path": "/herramientas-seo",
       "title": "Herramientas SEO imprescindibles (edición práctica)",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "Marketing digital"
@@ -1280,7 +1280,7 @@
     {
       "path": "/motores-de-busqueda",
       "title": "Motores de búsqueda",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO"
       ],
@@ -1390,7 +1390,7 @@
     {
       "path": "/que-es-bluetooth",
       "title": "Qué es Bluetooth?",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Tecnología"
       ],
@@ -1495,7 +1495,7 @@
     {
       "path": "/seo-que-es",
       "title": "SEO ¿Qué es?",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "Marketing digital"
@@ -1554,7 +1554,7 @@
     {
       "path": "/ventajas-de-tener-una-web",
       "title": "Ventajas de tener una web para tu proyecto o negocio",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Web",
         "Contenidos"
@@ -1659,7 +1659,7 @@
     {
       "path": "/conceptos-basicos-programacion",
       "title": "Conceptos básicos de programación: guía base para empezar",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Programación",
         "Desarrollo web"
@@ -1670,7 +1670,7 @@
     {
       "path": "/errores-al-elegir-dominio-y-hosting",
       "title": "Errores al elegir dominio y hosting",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Dominios",
         "Alojamiento web",
@@ -1800,7 +1800,7 @@
     {
       "path": "/problemas-canon-digital-ecommerce",
       "title": "Problemas con el canon digital en las tiendas online",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Ecommerce",
         "WordPress",
@@ -1905,7 +1905,7 @@
     {
       "path": "/como-elegir-un-buen-hosting",
       "title": "Cómo elegir un buen hosting para tu web",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Alojamiento web",
         "Web",

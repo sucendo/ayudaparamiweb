@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:47:07.781Z",
+  "generatedAt": "2026-10-04T08:48:13.517Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 46,
@@ -908,7 +908,7 @@
     {
       "path": "/checklist-seo-de-fin-de-ano",
       "title": "Checklist SEO de fin de año",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "Auditoría SEO"
@@ -1022,7 +1022,7 @@
     {
       "path": "/copywriting-web-para-vender-mas",
       "title": "Copywriting web para vender más: claridad antes que adornos",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Contenidos",
         "Conversión",
@@ -1069,7 +1069,7 @@
     {
       "path": "/email-marketing-para-pymes",
       "title": "Email marketing para pymes: una base sencilla y sostenible",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Marketing digital",
         "Pymes"
@@ -1128,7 +1128,7 @@
     {
       "path": "/errores-frecuentes-al-crear-una-web",
       "title": "Errores frecuentes al crear una web",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Desarrollo web",
         "Diseño web",
@@ -1212,7 +1212,7 @@
     {
       "path": "/herramientas-para-videollamadas-y-colaboracion",
       "title": "Herramientas para videollamadas y colaboración",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Colaboración",
         "Productividad"
@@ -1424,7 +1424,7 @@
     {
       "path": "/rich-snippets-y-datos-estructurados",
       "title": "Rich snippets y datos estructurados: guía práctica",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "SEO técnico",
@@ -1484,7 +1484,7 @@
     {
       "path": "/seo-para-ecommerce",
       "title": "SEO para ecommerce: fundamentos para una tienda online",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "Ecommerce"
@@ -1530,7 +1530,7 @@
     {
       "path": "/teletrabajo-y-productividad-digital",
       "title": "Teletrabajo y productividad digital: organización práctica",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Productividad",
         "Colaboración",
@@ -1588,7 +1588,7 @@
     {
       "path": "/wordpress-o-desarrollo-a-medida",
       "title": "WordPress o desarrollo a medida",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "WordPress",
         "Desarrollo web",
@@ -1683,7 +1683,7 @@
     {
       "path": "/errores-de-usabilidad-que-bajan-conversiones",
       "title": "Errores de usabilidad que bajan conversiones",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "UX",
         "Conversión"
@@ -1716,7 +1716,7 @@
     {
       "path": "/google-my-business-para-negocios-locales",
       "title": "Google My Business para negocios locales",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "SEO local",
@@ -1788,7 +1788,7 @@
     {
       "path": "/prestashop-que-es-y-cuando-usarlo",
       "title": "PrestaShop: qué es y cuándo usarlo",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "PrestaShop",
         "Ecommerce",
@@ -1835,7 +1835,7 @@
     {
       "path": "/seo-local-que-es-y-como-empezar",
       "title": "SEO local: qué es y cómo empezar",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "SEO local"
@@ -1857,7 +1857,7 @@
     {
       "path": "/velocidad-web-y-experiencia-de-pagina",
       "title": "Velocidad web y experiencia de página: qué optimizar",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "Rendimiento web",
         "UX",
@@ -2012,7 +2012,7 @@
     {
       "path": "/seguridad-basica-en-wordpress",
       "title": "Seguridad básica en WordPress: medidas que conviene aplicar",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "WordPress",
         "Seguridad web",
@@ -2036,7 +2036,7 @@
     {
       "path": "/seo-para-tiendas-online",
       "title": "SEO para tiendas online: arquitectura, categorías y fichas",
-      "category": "tutoriales",
+      "category": "guias",
       "tags": [
         "SEO",
         "Ecommerce",

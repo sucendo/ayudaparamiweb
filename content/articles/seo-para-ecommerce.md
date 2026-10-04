@@ -3,7 +3,7 @@ title: "SEO para ecommerce: fundamentos para una tienda online"
 description: "SEO para ecommerce en 2019: arquitectura, categorías, fichas, filtros, parámetros, duplicados, productos agotados, datos estructurados, móvil y medición."
 author: "Sucender"
 canonical: "/seo-para-ecommerce"
-category: "guias"
+category: "articulos"
 tags: ["SEO", "Ecommerce"]
 publishedDate: "2019-09-12"
 featuredImage: "/img/articulo/seo-ecommerce-featured.svg"

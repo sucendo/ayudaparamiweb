@@ -4,7 +4,7 @@ excerpt: "El SEO de un ecommerce depende de controlar catálogo y URLs, no solo 
 description: "Guía de SEO para tiendas online: arquitectura, categorías, filtros, fichas, productos agotados, enlazado, rendimiento y medición por plantilla."
 author: "Sucender"
 canonical: "/seo-para-tiendas-online"
-category: "guias"
+category: "articulos"
 tags: ["SEO", "Ecommerce", "SEO técnico"]
 publishedDate: "2020-07-09"
 featuredImage: "/img/articulo/seo-para-tiendas-online-featured.svg"

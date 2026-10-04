@@ -3,7 +3,7 @@ title: "Ventajas de tener una web para tu proyecto o negocio"
 description: "Descubre las principales ventajas de tener una web para tu proyecto o negocio: más visibilidad, mejor imagen, un espacio propio en Internet y nuevas oportunidades de crecimiento."
 author: "Sucender"
 canonical: "/ventajas-de-tener-una-web"
-category: "guias"
+category: "articulos"
 tags: ["Web", "Contenidos"]
 publishedDate: "2017-11-08"
 featuredImage: "/img/articulo/ventajas-de-tener-una-web-featured.svg"

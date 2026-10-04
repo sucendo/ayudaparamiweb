@@ -4,7 +4,7 @@ excerpt: "Una web rápida prioriza contenido útil y controla servidor, peso y s
 description: "Cómo mejorar la velocidad web desde servidor, imágenes, CSS, JavaScript, caché, fuentes y recursos de terceros."
 author: "Sucender"
 canonical: "/velocidad-web-y-experiencia-de-pagina"
-category: "guias"
+category: "articulos"
 tags: ["Rendimiento web", "UX", "SEO técnico"]
 publishedDate: "2019-10-10"
 featuredImage: "/img/articulo/velocidad-web-y-experiencia-de-pagina-featured.svg"

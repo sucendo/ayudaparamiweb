@@ -4,7 +4,7 @@ description: "Cómo organizar teletrabajo con canales claros, trabajo asíncrono
 excerpt: "El teletrabajo funciona mejor cuando comunicación, documentos y responsabilidades tienen reglas sencillas y previsibles."
 author: "Sucender"
 canonical: "/teletrabajo-y-productividad-digital"
-category: "guias"
+category: "articulos"
 tags: ["Productividad", "Colaboración", "Tecnología"]
 publishedDate: "2020-03-12"
 featuredImage: "/img/articulo/teletrabajo-y-productividad-digital-featured.svg"

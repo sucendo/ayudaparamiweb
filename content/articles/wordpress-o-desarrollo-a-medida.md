@@ -3,7 +3,7 @@ title: "WordPress o desarrollo a medida"
 description: "Cómo decidir entre WordPress y un desarrollo a medida según requisitos, mantenimiento, integraciones, coste y capacidad técnica."
 author: "Sucender"
 canonical: "/wordpress-o-desarrollo-a-medida"
-category: "guias"
+category: "articulos"
 tags: ["WordPress", "Desarrollo web", "Web"]
 publishedDate: "2020-01-16"
 featuredImage: "/img/articulo/wordpress-o-desarrollo-a-medida-featured.svg"

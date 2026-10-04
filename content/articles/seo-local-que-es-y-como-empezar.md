@@ -3,7 +3,7 @@ title: "SEO local: qué es y cómo empezar"
 description: "SEO local en 2019: cómo trabajar Google My Business, datos consistentes, páginas de ubicación, reseñas, enlaces locales, móvil y medición."
 author: "Sucender"
 canonical: "/seo-local-que-es-y-como-empezar"
-category: "guias"
+category: "articulos"
 tags: ["SEO", "SEO local"]
 publishedDate: "2019-06-07"
 featuredImage: "/img/articulo/seo-local-que-es-featured.svg"

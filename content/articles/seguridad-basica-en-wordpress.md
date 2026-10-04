@@ -4,7 +4,7 @@ description: "Seguridad básica en WordPress: actualizaciones, plugins, usuarios
 excerpt: "La mayor parte de la seguridad cotidiana depende de mantener software, accesos y copias bajo control."
 author: "Sucender"
 canonical: "/seguridad-basica-en-wordpress"
-category: "tutoriales"
+category: "guias"
 tags: ["WordPress", "Seguridad web", "Mantenimiento web"]
 publishedDate: "2020-05-14"
 featuredImage: "/img/articulo/seguridad-basica-en-wordpress-featured.svg"

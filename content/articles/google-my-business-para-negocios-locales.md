@@ -3,7 +3,7 @@ title: "Google My Business para negocios locales"
 description: "Cómo completar y mantener una ficha de Google My Business con datos, categorías, horarios, fotos, reseñas, publicaciones y relación con la web."
 author: "Sucender"
 canonical: "/google-my-business-para-negocios-locales"
-category: "tutoriales"
+category: "guias"
 tags: ["SEO", "SEO local", "Pymes"]
 publishedDate: "2020-08-13"
 featuredImage: "/img/articulo/google-my-business-para-negocios-locales-featured.svg"

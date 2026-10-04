@@ -3,7 +3,7 @@ title: "Errores frecuentes al crear una web"
 description: "Errores frecuentes al crear una web: objetivos, dominio y hosting, responsive, estructura, imágenes, SEO básico, copias, formularios y mantenimiento."
 author: "Sucender"
 canonical: "/errores-frecuentes-al-crear-una-web"
-category: "tutoriales"
+category: "guias"
 tags: ["Desarrollo web", "Diseño web", "Web"]
 publishedDate: "2019-12-12"
 featuredImage: "/img/articulo/errores-frecuentes-al-crear-una-web-featured.svg"

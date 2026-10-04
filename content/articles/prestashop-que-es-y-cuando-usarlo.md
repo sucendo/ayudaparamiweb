@@ -4,7 +4,7 @@ description: "Qué es PrestaShop, qué necesita para funcionar y cuándo puede e
 excerpt: "PrestaShop ofrece control sobre catálogo y reglas comerciales, pero necesita un hosting adecuado y mantenimiento técnico continuado."
 author: "Sucender"
 canonical: "/prestashop-que-es-y-cuando-usarlo"
-category: "tutoriales"
+category: "guias"
 tags: ["PrestaShop", "Ecommerce", "Desarrollo web"]
 publishedDate: "2020-02-13"
 featuredImage: "/img/articulo/prestashop-que-es-y-cuando-usarlo-featured.svg"

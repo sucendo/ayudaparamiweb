@@ -4,7 +4,7 @@ excerpt: "Los datos estructurados describen el contenido de una página; un resu
 description: "Cómo utilizar datos estructurados y Schema.org con JSON-LD para describir artículos, productos, organizaciones y migas de pan sin marcado engañoso."
 author: "Sucender"
 canonical: "/rich-snippets-y-datos-estructurados"
-category: "tutoriales"
+category: "guias"
 tags: ["SEO", "SEO técnico", "Datos estructurados"]
 publishedDate: "2019-07-04"
 featuredImage: "/img/articulo/rich-snippets-y-datos-estructurados-featured.svg"

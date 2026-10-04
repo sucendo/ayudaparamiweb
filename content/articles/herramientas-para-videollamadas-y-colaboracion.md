@@ -4,7 +4,7 @@ description: "Cómo elegir herramientas de videollamada, chat y documentos compa
 excerpt: "Criterios prácticos para reuniones, chat, archivos, permisos y trabajo asíncrono."
 author: "Sucender"
 canonical: "/herramientas-para-videollamadas-y-colaboracion"
-category: "tutoriales"
+category: "guias"
 tags: ["Colaboración", "Productividad"]
 publishedDate: "2020-04-09"
 featuredImage: "/img/articulo/herramientas-para-videollamadas-y-colaboracion-featured.svg"

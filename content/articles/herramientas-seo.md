@@ -3,7 +3,7 @@ title: "Herramientas SEO imprescindibles (edición práctica)"
 description: "Herramientas SEO prácticas en 2018: Search Console, Google Analytics, Keyword Planner, Trends, PageSpeed Insights, Screaming Frog y hojas de cálculo."
 author: "Sucender"
 canonical: "/herramientas-seo"
-category: "guias"
+category: "articulos"
 tags: ["SEO", "Marketing digital"]
 publishedDate: "2018-12-15"
 featuredImage: "/img/articulo/herramientas-seo-featured.svg"

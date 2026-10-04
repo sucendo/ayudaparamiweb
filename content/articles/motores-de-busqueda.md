@@ -3,7 +3,7 @@ title: "Motores de búsqueda"
 description: "¿Cómo funcionan los motores de búsqueda? Echemoles un vistazo más de cerca y veamos cuáles son los factores de clasificación más típicos en los que debería centrarse."
 author: "Sucender"
 canonical: "/motores-de-busqueda"
-category: "guias"
+category: "articulos"
 tags: ["SEO"]
 publishedDate: "2018-11-11"
 featuredImage: "/img/articulo/motores-de-busqueda-featured.svg"

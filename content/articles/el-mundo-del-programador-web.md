@@ -3,7 +3,7 @@ title: "El mundo del programador Web"
 description: "El mundo de la programación web ha evolucionado mucho desde mis primeros años como desarrollador. En este artículo expongo las herramientas y áreas que considero más importantes para desarrollar."
 author: "Sucender"
 canonical: "/el-mundo-del-programador-web"
-category: "guias"
+category: "articulos"
 tags: ["Desarrollo web", "Programación", "Productividad"]
 publishedDate: "2018-05-22"
 featuredImage: "/img/articulo/el-mundo-del-programador-web-featured.svg"

@@ -3,7 +3,7 @@ title: "Errores al elegir dominio y hosting"
 description: "Descubre los errores más comunes al elegir dominio y hosting para una web y aprende qué conviene revisar antes de contratar para evitar problemas."
 author: "Sucender"
 canonical: "/errores-al-elegir-dominio-y-hosting"
-category: "guias"
+category: "articulos"
 tags: ["Dominios", "Alojamiento web", "Web", "Errores web"]
 publishedDate: "2018-09-19"
 featuredImage: "/img/articulo/errores-al-elegir-dominio-y-hosting-featured.svg"

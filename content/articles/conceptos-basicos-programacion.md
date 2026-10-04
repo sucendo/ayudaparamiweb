@@ -3,7 +3,7 @@ title: "Conceptos básicos de programación: guía base para empezar"
 description: "Guía práctica de 24/06/2018 con fundamentos de programación, lógica y ejemplos de código para principiantes."
 author: "Sucender"
 canonical: "/conceptos-basicos-programacion"
-category: "guias"
+category: "articulos"
 tags: ["Programación", "Desarrollo web"]
 publishedDate: "2018-03-24"
 featuredImage: "/img/articulo/conceptos-basicos-programacion-featured.svg"

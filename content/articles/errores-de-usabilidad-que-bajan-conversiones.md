@@ -3,7 +3,7 @@ title: "Errores de usabilidad que bajan conversiones"
 description: "Errores de usabilidad que reducen conversiones: llamadas a la acción, formularios, navegación, móvil, velocidad, mensajes, confianza y pruebas de tareas."
 author: "Sucender"
 canonical: "/errores-de-usabilidad-que-bajan-conversiones"
-category: "guias"
+category: "articulos"
 tags: ["UX", "Conversión"]
 publishedDate: "2020-10-08"
 featuredImage: "/img/articulo/errores-de-usabilidad-que-bajan-conversiones-featured.svg"

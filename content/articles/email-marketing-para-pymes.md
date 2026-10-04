@@ -3,7 +3,7 @@ title: "Email marketing para pymes: una base sencilla y sostenible"
 description: "Cómo organizar email marketing para pymes con consentimiento, segmentación sencilla, contenido útil, automatizaciones, frecuencia, entregabilidad y medición."
 author: "Sucender"
 canonical: "/email-marketing-para-pymes"
-category: "guias"
+category: "articulos"
 tags: ["Marketing digital", "Pymes"]
 publishedDate: "2020-09-10"
 featuredImage: "/img/articulo/email-marketing-para-pymes-featured.svg"

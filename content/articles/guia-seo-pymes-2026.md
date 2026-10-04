@@ -3,7 +3,7 @@ title: "Guía SEO para pymes en 2026: plan realista para crecer con foco"
 description: "Guía práctica de SEO para pymes en 2026: cómo priorizar SEO técnico, contenidos, SEO local y medición sin dispersar recursos ni perder foco."
 author: "Sucender"
 canonical: "/guia-seo-pymes-2026"
-category: "guias"
+category: "articulos"
 tags: ["SEO", "Pymes", "SEO técnico", "SEO local", "Estrategia digital"]
 publishedDate: "2026-04-09"
 modifiedDate: "2026-04-23"

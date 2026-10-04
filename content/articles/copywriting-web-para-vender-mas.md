@@ -3,7 +3,7 @@ title: "Copywriting web para vender más: claridad antes que adornos"
 description: "Cómo escribir copy web claro: propuesta de valor, beneficios, objeciones, pruebas, llamadas a la acción, formularios y revisión del mensaje."
 author: "Sucender"
 canonical: "/copywriting-web-para-vender-mas"
-category: "guias"
+category: "articulos"
 tags: ["Contenidos", "Conversión", "Web"]
 publishedDate: "2020-11-12"
 featuredImage: "/img/articulo/copywriting-web-para-vender-mas-featured.svg"

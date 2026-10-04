@@ -11,18 +11,18 @@ const FALLBACK_IMAGE = '/img/logo-color.svg';
 const FALLBACK_ACCENT = '#537b7b';
 
 const CATEGORY_DEFINITIONS = {
-  guias: { slug: 'articulos', name: 'Artículos', description: 'Guías y análisis de referencia para desarrollo web y SEO.' },
+  articulos: { slug: 'articulos', name: 'Artículos', description: 'Guías y análisis de referencia para desarrollo web y SEO.' },
   tutoriales: { slug: 'tutoriales', name: 'Tutoriales', description: 'Contenido paso a paso para aprender haciendo.' },
   herramientas: { slug: 'herramientas', name: 'Herramientas', description: 'Utilidades prácticas e interactivas.' },
   laboratorio: { slug: 'laboratorio', name: 'Laboratorio', description: 'Pruebas, demos y experimentos editoriales.' }
 };
 
 const CATEGORY_BY_SLUG = {
-  'guia-seo-pymes-2026': 'guias','seo-tecnico-core-web-vitals-2026': 'guias','checklist-lanzamiento-web-2026': 'guias','investigacion-palabras-clave': 'guias','contenido-y-seo': 'guias','seo-on-page-aspectos-tecnicos': 'guias','motores-de-busqueda': 'guias','seo-que-es': 'guias','como-crear-una-pagina-web': 'tutoriales','conceptos-basicos-programacion': 'guias','node-js-que-es': 'guias','express-js-para-que-sirve': 'guias','vue-js-que-es': 'guias',
+  'guia-seo-pymes-2026': 'articulos','seo-tecnico-core-web-vitals-2026': 'articulos','checklist-lanzamiento-web-2026': 'articulos','investigacion-palabras-clave': 'articulos','contenido-y-seo': 'articulos','seo-on-page-aspectos-tecnicos': 'articulos','motores-de-busqueda': 'articulos','seo-que-es': 'articulos','como-crear-una-pagina-web': 'tutoriales','conceptos-basicos-programacion': 'articulos','node-js-que-es': 'articulos','express-js-para-que-sirve': 'articulos','vue-js-que-es': 'articulos',
   'primeros-pasos-python': 'tutoriales','codigo-traductor-google-blog': 'tutoriales','entornos-colaborativos': 'tutoriales',
   'contador-caracteres-seo': 'herramientas','conversor-binario': 'herramientas','analizador-seo-url': 'herramientas',
   'quantum-pacific-group': 'laboratorio','calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019': 'laboratorio',
-  'google-shopping-actions': 'guias','problemas-canon-digital-ecommerce': 'guias','que-es-bluetooth': 'guias','el-mundo-del-programador-web': 'guias','backlink-que-es-como-construir-red-de-enlaces': 'guias','experiencia-de-usuario-ux-y-seo': 'guias','herramientas-seo': 'guias','autoridad-de-dominio': 'guias','herramientas-seo-gratuitas': 'guias','ia-generativa-estrategia-contenidos-seo': 'guias'
+  'google-shopping-actions': 'articulos','problemas-canon-digital-ecommerce': 'articulos','que-es-bluetooth': 'articulos','el-mundo-del-programador-web': 'articulos','backlink-que-es-como-construir-red-de-enlaces': 'articulos','experiencia-de-usuario-ux-y-seo': 'articulos','herramientas-seo': 'articulos','autoridad-de-dominio': 'articulos','herramientas-seo-gratuitas': 'articulos','ia-generativa-estrategia-contenidos-seo': 'articulos'
 };
 
 const COLOR_CACHE = Object.create(null);
@@ -354,7 +354,7 @@ function normalizeCatalogItem(item) {
   const publishedDate = item.publishedDate || date;
   const modifiedDate = item.modifiedDate || date;
   const tags = Array.isArray(item.tags) ? item.tags : [];
-  const category = item.category || 'guias';
+  const category = item.category || 'articulos';
 
   return {
     title: item.title || '',
@@ -401,7 +401,7 @@ function mapLegacyRouteToCatalogItem(route) {
     excerpt: extractExcerpt(source),
     author: extractAuthor(source),
     tags: extractTags(source),
-    category: CATEGORY_BY_SLUG[slug] || (LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'guias' : 'laboratorio'),
+    category: CATEGORY_BY_SLUG[slug] || (LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'articulos' : 'laboratorio'),
     type: LEGACY_ARTICLE_VIEW_PATTERN.test(route.view) ? 'article' : 'content',
     image,
     colorClass: extractToolCtClass(source) || CT_CLASS_BY_BG_CLASS[extractBgClass(source)] || 'ct-red',
@@ -426,7 +426,7 @@ function loadArticles() {
   return routes.map((route) => {
     const metadata = contentLoader.loadArticle(route.contentSlug);
     const slug = metadata.slug || route.contentSlug;
-    const category = CATEGORY_BY_SLUG[slug] || metadata.category || 'guias';
+    const category = CATEGORY_BY_SLUG[slug] || metadata.category || 'articulos';
     const date = metadata.modifiedDate || metadata.publishedDate || '1970-01-01';
     const image = metadata.featuredImage || FALLBACK_IMAGE;
     const heroClass = metadata.heroClass || 'bg-purple';

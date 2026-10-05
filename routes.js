@@ -42,6 +42,7 @@ const managedContentRoutes = [
 
 const staticRoutes = [
   { path: '/', view: 'pages/index' },
+  { path: '/home-demo', view: 'pages/home-demo', catalog: false, sitemap: false },
   { path: '/guias', view: 'pages/articles' },
   { path: '/tutoriales', view: 'pages/tutoriales' },
   { path: '/herramientas', view: 'pages/herramientas' },

@@ -4,7 +4,7 @@ description: "Cómo integrar IA generativa en una estrategia de contenidos SEO c
 excerpt: "La IA puede acelerar investigación y borradores, pero la estrategia, la verificación y la experiencia propia siguen siendo humanas."
 author: "Sucender"
 canonical: "/ia-generativa-estrategia-contenidos-seo"
-category: "tutoriales"
+category: "articulos"
 tags: ["IA", "SEO"]
 publishedDate: "2024-02-14"
 featuredImage: "/img/articulo/ia-generativa-estrategia-contenidos-seo-featured.svg"

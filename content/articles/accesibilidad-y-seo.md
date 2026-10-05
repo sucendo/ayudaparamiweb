@@ -4,7 +4,7 @@ description: "Cómo trabajar accesibilidad y SEO juntos mediante HTML semántico
 excerpt: "Accesibilidad y SEO comparten una base: contenido comprensible, estructura semántica y navegación que funciona sin depender de trucos visuales."
 author: "Sucender"
 canonical: "/accesibilidad-y-seo"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Accesibilidad", "Desarrollo web"]
 publishedDate: "2025-08-14"
 featuredImage: "/img/articulo/accesibilidad-y-seo-featured.svg"

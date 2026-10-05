@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T07:35:00.935Z",
+  "generatedAt": "2026-10-05T07:35:20.974Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 46,
@@ -1389,13 +1389,13 @@
     },
     {
       "path": "/que-es-bluetooth",
-      "title": "Qué es Bluetooth?",
+      "title": "¿Qué es Bluetooth?",
       "category": "articulos",
       "tags": [
         "Tecnología"
       ],
       "incomingContextualLinks": 1,
-      "outgoingInternalLinks": 0
+      "outgoingInternalLinks": 1
     },
     {
       "path": "/que-es-una-api-y-para-que-sirve",

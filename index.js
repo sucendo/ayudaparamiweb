@@ -65,7 +65,6 @@ function resolvePageContext(route, allContent) {
     '/herramientas': contentCatalog.filterByCategory(allContent, 'herramientas'),
     '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/articulos': articles,
-    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/tags': allContent,
     '/sucender': allContent
   };
@@ -94,6 +93,20 @@ async function bootstrap() {
 
   app.use(express.static(__dirname + '/public'));
 
+  routes
+    .filter(function(route) { return route.staticSource; })
+    .forEach(function(route) {
+      app.use(route.path, express.static(path.join(__dirname, 'public', route.staticSource)));
+    });
+
+  routes
+    .filter(function(route) { return route.redirectTo; })
+    .forEach(function(route) {
+      app.get(route.path, function(request, response) {
+        response.redirect(301, route.redirectTo);
+      });
+    });
+
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
 
@@ -116,7 +129,7 @@ async function bootstrap() {
     });
   });
 
-  routes.filter(function(route) { return route.staticOnly !== true; }).forEach(function(route) {
+  routes.filter(function(route) { return route.staticOnly !== true && !route.redirectTo; }).forEach(function(route) {
     app.get(route.path, function(request, response) {
       if (route.path === '/' && typeof request.query.s === 'string' && request.query.s.trim()) {
         response.redirect('/buscar?s=' + encodeURIComponent(request.query.s.trim()));

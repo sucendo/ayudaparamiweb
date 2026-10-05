@@ -3,7 +3,7 @@ title: "Errores comunes en webs corporativas"
 description: "Errores frecuentes en webs corporativas: propuesta poco clara, navegación interna, servicios pobres, formularios, móvil, rendimiento, confianza y medición."
 author: "Sucender"
 canonical: "/errores-comunes-en-webs-corporativas"
-category: "tutoriales"
+category: "articulos"
 tags: ["Web", "UX", "Conversión"]
 publishedDate: "2022-10-13"
 featuredImage: "/img/articulo/errores-comunes-en-webs-corporativas-featured.svg"

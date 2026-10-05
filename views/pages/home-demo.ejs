@@ -1,0 +1,190 @@
+<%
+  const all = contentItems || [];
+  const pick = function(slug) { return all.find(function(item) { return item.slug === slug; }); };
+  const startItems = [
+    pick('como-crear-una-pagina-web'),
+    pick('seo-que-es'),
+    pick('checklist-lanzamiento-web-2026')
+  ].filter(Boolean);
+  const tools = all.filter(function(item) { return item.category === 'herramientas'; }).slice(0, 3);
+  const labs = all.filter(function(item) { return item.category === 'laboratorio'; }).slice(0, 2);
+  const latest = all.slice(0, 8);
+%>
+<!doctype html>
+<html dir="ltr" lang="es" xml:lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo de portada | Ayuda para mi Web</title>
+    <meta name="description" content="Demo visual privada de una posible nueva portada para Ayuda para mi Web." />
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="author" content="Sucender" />
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/home-demo.css">
+  </head>
+  <body id="apmw-body" class="home-demo">
+    <div class="ct-container">
+      <%- include('../partials/header.ejs') %>
+
+      <div class="home-demo__shell">
+        <main class="home-demo__main" role="main">
+          <section class="home-demo-hero">
+            <div class="home-demo-hero__copy">
+              <span class="home-demo-kicker">Ayuda para mi Web</span>
+              <h1>Aprende, construye y mejora tu web con criterio</h1>
+              <p>Guías, tutoriales, herramientas y experimentos reales para resolver problemas de desarrollo web y SEO sin perderte entre teoría innecesaria.</p>
+              <div class="home-demo-hero__actions">
+                <a class="home-demo-btn home-demo-btn--primary" href="/tutoriales">Quiero aprender haciendo</a>
+                <a class="home-demo-btn home-demo-btn--ghost" href="/herramientas">Usar herramientas</a>
+              </div>
+            </div>
+            <div class="home-demo-hero__panel" aria-label="Secciones de Ayuda para mi Web">
+              <div class="home-demo-orbit home-demo-orbit--blue">
+                <span>01</span><strong>Artículos</strong><small>Entender y decidir</small>
+              </div>
+              <div class="home-demo-orbit home-demo-orbit--orange">
+                <span>02</span><strong>Tutoriales</strong><small>Hacer paso a paso</small>
+              </div>
+              <div class="home-demo-orbit home-demo-orbit--purple">
+                <span>03</span><strong>Herramientas</strong><small>Resolver una tarea</small>
+              </div>
+              <div class="home-demo-orbit home-demo-orbit--red">
+                <span>04</span><strong>Laboratorio</strong><small>Probar y aprender</small>
+              </div>
+            </div>
+          </section>
+
+          <section class="home-demo-section home-demo-section--paths" aria-labelledby="demo-paths-title">
+            <header class="home-demo-section__head">
+              <div>
+                <span class="home-demo-kicker">Elige tu camino</span>
+                <h2 id="demo-paths-title">¿Qué necesitas hacer hoy?</h2>
+              </div>
+              <p>La portada deja de ser un simple archivo cronológico y te lleva directamente al tipo de contenido que necesitas.</p>
+            </header>
+
+            <div class="home-demo-paths">
+              <a class="home-demo-path home-demo-path--blue" href="/articulos">
+                <span class="home-demo-path__num">01</span>
+                <strong>Entender</strong>
+                <h3>Artículos</h3>
+                <p>Conceptos, análisis, comparativas y criterios para tomar mejores decisiones.</p>
+                <span class="home-demo-path__link">Explorar artículos →</span>
+              </a>
+              <a class="home-demo-path home-demo-path--orange" href="/tutoriales">
+                <span class="home-demo-path__num">02</span>
+                <strong>Hacer</strong>
+                <h3>Tutoriales</h3>
+                <p>Procesos claros y accionables para configurar, corregir o construir algo concreto.</p>
+                <span class="home-demo-path__link">Seguir un tutorial →</span>
+              </a>
+              <a class="home-demo-path home-demo-path--purple" href="/herramientas">
+                <span class="home-demo-path__num">03</span>
+                <strong>Resolver</strong>
+                <h3>Herramientas</h3>
+                <p>Utilidades propias para analizar, validar y acelerar tareas habituales de una web.</p>
+                <span class="home-demo-path__link">Abrir herramientas →</span>
+              </a>
+              <a class="home-demo-path home-demo-path--red" href="/laboratorio">
+                <span class="home-demo-path__num">04</span>
+                <strong>Experimentar</strong>
+                <h3>Laboratorio</h3>
+                <p>Pruebas reales con hipótesis, desarrollo, resultados y experimentos que puedes abrir.</p>
+                <span class="home-demo-path__link">Entrar al laboratorio →</span>
+              </a>
+            </div>
+          </section>
+
+          <% if (startItems.length) { %>
+          <section class="home-demo-section" aria-labelledby="demo-start-title">
+            <header class="home-demo-section__head">
+              <div>
+                <span class="home-demo-kicker">Empieza por aquí</span>
+                <h2 id="demo-start-title">Tres buenas puertas de entrada</h2>
+              </div>
+              <p>Una selección fija para quien llega por primera vez y todavía no sabe qué buscar.</p>
+            </header>
+            <div class="home-demo-featured-grid">
+              <% startItems.forEach(function(item, index) { %>
+                <article class="home-demo-featured <%= item.colorClass || 'ct-blue' %>">
+                  <span class="home-demo-featured__meta"><%= categories[item.category] ? categories[item.category].name : item.category %></span>
+                  <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
+                  <p><%= item.excerpt %></p>
+                  <a class="home-demo-featured__link" href="<%= item.path %>">Leer contenido →</a>
+                </article>
+              <% }); %>
+            </div>
+          </section>
+          <% } %>
+
+          <% if (tools.length) { %>
+          <section class="home-demo-tools" aria-labelledby="demo-tools-title">
+            <div class="home-demo-tools__intro">
+              <span class="home-demo-kicker">Herramientas propias</span>
+              <h2 id="demo-tools-title">No todo tiene que ser leer</h2>
+              <p>Una parte de la web sirve para hacer cosas directamente: analizar, comprobar, generar o validar.</p>
+              <a href="/herramientas">Ver todas las herramientas →</a>
+            </div>
+            <div class="home-demo-tools__list">
+              <% tools.forEach(function(item, index) { %>
+                <a href="<%= item.path %>" class="home-demo-tool">
+                  <span><%= String(index + 1).padStart(2, '0') %></span>
+                  <strong><%= item.title %></strong>
+                  <small><%= item.excerpt %></small>
+                  <b aria-hidden="true">↗</b>
+                </a>
+              <% }); %>
+            </div>
+          </section>
+          <% } %>
+
+          <% if (labs.length) { %>
+          <section class="home-demo-lab" aria-labelledby="demo-lab-title">
+            <div class="home-demo-lab__label">
+              <span>LAB</span>
+              <small>Ideas puestas a prueba</small>
+            </div>
+            <div class="home-demo-lab__content">
+              <span class="home-demo-kicker">Laboratorio</span>
+              <h2 id="demo-lab-title">La parte más experimental de Ayuda para mi Web</h2>
+              <p>Aquí no solo contamos cómo debería funcionar algo: documentamos por qué lo probamos, qué esperábamos y qué ocurrió.</p>
+              <div class="home-demo-lab__cards">
+                <% labs.forEach(function(item) { %>
+                  <a href="<%= item.path %>">
+                    <strong><%= item.title %></strong>
+                    <span>Ver experimento →</span>
+                  </a>
+                <% }); %>
+              </div>
+              <a class="home-demo-lab__all" href="/laboratorio">Explorar todo el Laboratorio</a>
+            </div>
+          </section>
+          <% } %>
+
+          <section class="home-demo-section home-demo-section--latest" aria-labelledby="demo-latest-title">
+            <header class="home-demo-section__head">
+              <div>
+                <span class="home-demo-kicker">Archivo reciente</span>
+                <h2 id="demo-latest-title">Últimas publicaciones</h2>
+              </div>
+              <p>El orden cronológico sigue existiendo, pero pasa a un segundo nivel después de orientar al visitante.</p>
+            </header>
+            <div class="home-demo-latest-grid">
+              <% latest.forEach(function(item) { %>
+                <article class="home-demo-latest-card">
+                  <span class="home-demo-latest-card__category"><%= categories[item.category] ? categories[item.category].name : item.category %></span>
+                  <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
+                  <p><%= item.excerpt %></p>
+                  <a href="<%= item.path %>">Abrir →</a>
+                </article>
+              <% }); %>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="ct-footer"><%- include('../partials/footer.ejs') %></footer>
+    </div>
+  </body>
+</html>

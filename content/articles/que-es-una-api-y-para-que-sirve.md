@@ -4,7 +4,7 @@ description: "Qué es una API, cómo se comunican dos sistemas y qué conceptos 
 excerpt: "Una API define un contrato para que dos aplicaciones intercambien datos o ejecuten acciones sin acceder directamente a su lógica interna."
 author: "Sucender"
 canonical: "/que-es-una-api-y-para-que-sirve"
-category: "tutoriales"
+category: "articulos"
 tags: ["Programación", "Desarrollo web", "Tecnología"]
 publishedDate: "2021-03-11"
 featuredImage: "/img/articulo/que-es-una-api-y-para-que-sirve-featured.svg"

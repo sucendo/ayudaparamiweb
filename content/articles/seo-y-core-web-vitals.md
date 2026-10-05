@@ -4,7 +4,7 @@ description: "Cómo entender y mejorar los Core Web Vitals en 2021: LCP, FID y C
 excerpt: "LCP, FID y CLS permiten convertir problemas de carga, respuesta y estabilidad en métricas que pueden diagnosticarse."
 author: "Sucender"
 canonical: "/seo-y-core-web-vitals"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Rendimiento web", "SEO técnico"]
 publishedDate: "2021-09-09"
 featuredImage: "/img/articulo/seo-y-core-web-vitals-featured.svg"

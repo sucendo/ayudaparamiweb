@@ -3,7 +3,7 @@ title: "Clusters de contenido y SEO: cómo organizar temas relacionados"
 description: "Cómo organizar clusters de contenido con una página principal, piezas de apoyo, intenciones diferenciadas, enlaces internos y mantenimiento conjunto."
 author: "Sucender"
 canonical: "/clusters-de-contenido-y-seo"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Contenidos", "Arquitectura web", "Enlazado interno"]
 publishedDate: "2023-03-09"
 featuredImage: "/img/articulo/clusters-de-contenido-y-seo-featured.svg"

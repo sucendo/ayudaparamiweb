@@ -3,7 +3,7 @@ title: "Accesibilidad web: principios básicos"
 description: "Principios de accesibilidad web en 2021: HTML semántico, teclado, foco, contraste, imágenes, formularios, ARIA, zoom, multimedia y pruebas manuales."
 author: "Sucender"
 canonical: "/accesibilidad-web-principios-basicos"
-category: "tutoriales"
+category: "articulos"
 tags: ["Accesibilidad", "Desarrollo web", "UX"]
 publishedDate: "2021-07-08"
 featuredImage: "/img/articulo/accesibilidad-web-principios-basicos-featured.svg"

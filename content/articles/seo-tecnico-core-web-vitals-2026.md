@@ -4,7 +4,7 @@ description: "Guía práctica de SEO técnico y Core Web Vitals en 2026: qué m�
 excerpt: "El SEO técnico sigue siendo una de las bases más importantes para que una web funcione bien en buscadores y también para que el usuario tenga una experiencia razonable. En 2026, hablar de SEO técnico sin hablar de Core Web Vitals ya no tiene mucho sentido."
 author: "Sucender"
 canonical: "/seo-tecnico-core-web-vitals-2026"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO técnico", "Rendimiento web", "Search Console"]
 publishedDate: "2026-01-18"
 featuredImage: "/img/articulo/seo-tecnico-core-web-vitals-2026-featured.svg"

@@ -4,7 +4,7 @@ description: "Cómo optimizar categorías de ecommerce: intención, arquitectura
 excerpt: "Las categorías deben ayudar a explorar catálogo y concentrar demanda sin generar miles de URLs innecesarias."
 author: "Sucender"
 canonical: "/seo-para-categorias-de-ecommerce"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Ecommerce", "Arquitectura web"]
 publishedDate: "2023-10-12"
 featuredImage: "/img/articulo/seo-para-categorias-de-ecommerce-featured.svg"

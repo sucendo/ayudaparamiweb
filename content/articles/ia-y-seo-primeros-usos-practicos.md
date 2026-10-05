@@ -4,7 +4,7 @@ description: "Primeros usos de IA aplicada al SEO en 2023: ideación, agrupació
 excerpt: "La IA puede acelerar tareas de preparación SEO, pero fuentes, intención y decisiones de publicación siguen necesitando revisión."
 author: "Sucender"
 canonical: "/ia-y-seo-primeros-usos-practicos"
-category: "tutoriales"
+category: "articulos"
 tags: ["IA", "SEO", "Contenidos"]
 publishedDate: "2023-02-09"
 featuredImage: "/img/articulo/ia-seo-primeros-usos-featured.svg"

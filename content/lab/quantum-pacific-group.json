@@ -2,7 +2,7 @@
   "title": "Publicar una noticia bomba antes que nadie: el experimento Quantum Pacific Group",
   "description": "Un experimento de inmediatez SEO: publicar una noticia recién conocida para comprobar si llegar antes que otros medios podía abrir una ventana de posicionamiento orgánico.",
   "author": "Sucender",
-  "canonical": "/laboratorio/quantum-pacific-group",
+  "canonical": "/publicar-una-noticia-bomba-antes-que-nadie",
   "category": "laboratorio",
   "tags": [
     "Laboratorio",
@@ -58,7 +58,7 @@
       ]
     }
   ],
-  "experimentUrl": "/experimento/quantum-pacific-group/",
+  "experimentUrl": "/quantum-pacific-group-atletico-de-madrid/",
   "experimentTitle": "Leer la publicación",
   "experimentDescription": "La publicación original se abre como una página independiente, con aspecto y contenido propios, tal y como corresponde a una noticia real.",
   "experimentLabel": "Abrir publicación",

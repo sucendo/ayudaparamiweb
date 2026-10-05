@@ -6,7 +6,7 @@ author: "Sucender"
 canonical: "/wordpress-lento-diagnostico-real-paso-a-paso"
 category: "tutoriales"
 tags: ["WordPress", "Rendimiento web", "Mantenimiento web"]
-publishedDate: "2018-01-01"
+publishedDate: "2018-01-25"
 featuredImage: "/img/articulo/wordpress-lento-diagnostico-real-paso-a-paso-featured.svg"
 heroClass: "bg-red"
 themeColor: "#d25565"

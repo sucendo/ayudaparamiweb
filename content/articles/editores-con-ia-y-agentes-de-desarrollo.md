@@ -4,7 +4,7 @@ description: "Qué son hoy los editores con IA, qué modelos ofrecen, cuánto pu
 excerpt: "No todo lo que escribe código con IA es un editor: aquí separamos editores, agentes y herramientas clave para trabajar mejor sin perder control."
 author: "Sucender"
 canonical: "/editores-con-ia-y-agentes-de-desarrollo"
-category: "tutoriales"
+category: "articulos"
 tags: ["IA", "Programación", "Productividad"]
 publishedDate: "2026-04-28"
 featuredImage: "/img/articulo/editores-con-ia-y-agentes-de-desarrollo-featured.svg"

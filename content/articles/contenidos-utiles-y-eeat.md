@@ -4,7 +4,7 @@ description: "Cómo trabajar contenidos útiles y E-E-A-T con intención clara, 
 excerpt: "La calidad editorial se construye con utilidad, experiencia verificable y responsabilidad, no con una supuesta puntuación de E-E-A-T."
 author: "Sucender"
 canonical: "/contenidos-utiles-y-eeat"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Contenidos"]
 publishedDate: "2025-04-10"
 featuredImage: "/img/articulo/contenidos-utiles-y-eeat-featured.svg"

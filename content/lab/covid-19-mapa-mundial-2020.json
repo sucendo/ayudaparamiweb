@@ -2,7 +2,7 @@
   "title": "Un año de pandemia en movimiento: mapamundi de la expansión de la COVID-19",
   "description": "Una visualización temporal con datos reales para comprobar si ver la pandemia avanzar día a día permitía entender mejor el desplazamiento de las olas que una colección de cifras estáticas.",
   "author": "Sucender",
-  "canonical": "/laboratorio/covid-19-mapa-mundial-2020",
+  "canonical": "/un-ano-de-pandemia-en-movimiento",
   "category": "laboratorio",
   "tags": [
     "Laboratorio",
@@ -105,7 +105,7 @@
       }
     }
   ],
-  "experimentUrl": "/experimento/covid-19-mapa-mundial-2020/",
+  "experimentUrl": "/covid-19-mapa-mundial-2020/",
   "experimentTitle": "COVID-19 · Evolución mundial 2020",
   "experimentDescription": "Abre el mapamundi, mueve la barra temporal o pulsa Play para recorrer los datos diarios desde enero hasta diciembre de 2020.",
   "experimentLabel": "Abrir mapamundi",

@@ -3,7 +3,7 @@ title: "Contenido que ayuda a captar clientes"
 description: "Cómo crear contenido que ayude a captar clientes: preguntas de ventas, etapas de decisión, experiencia propia, objeciones, enlaces a servicios y medición."
 author: "Sucender"
 canonical: "/contenido-que-ayuda-a-captar-clientes"
-category: "tutoriales"
+category: "articulos"
 tags: ["Contenidos", "Captación", "Marketing digital"]
 publishedDate: "2022-09-08"
 featuredImage: "/img/articulo/contenido-que-ayuda-a-captar-clientes-featured.svg"

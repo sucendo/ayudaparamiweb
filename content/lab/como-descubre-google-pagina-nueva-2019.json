@@ -2,7 +2,7 @@
   "title": "¿Cómo descubre Google una página nueva? Cuatro formas de publicarla",
   "description": "Una reconstrucción de un experimento de 2019 para comparar cuánto podía tardar Google en descubrir e indexar cuatro páginas nuevas según cómo se daban a conocer.",
   "author": "Sucender",
-  "canonical": "/laboratorio/como-descubre-google-pagina-nueva-2019",
+  "canonical": "/como-descubre-google-pagina-nueva-2019",
   "category": "laboratorio",
   "tags": [
     "Laboratorio",
@@ -100,19 +100,19 @@
   "experimentLinks": [
     {
       "label": "Página A · Imágenes web",
-      "url": "/experimento/indexacion-google-2019/optimizar-imagenes-web/"
+      "url": "/optimizar-imagenes-web/"
     },
     {
       "label": "Página B · Meta description",
-      "url": "/experimento/indexacion-google-2019/meta-description-seo/"
+      "url": "/meta-description-seo/"
     },
     {
       "label": "Página C · Enlaces internos",
-      "url": "/experimento/indexacion-google-2019/enlaces-internos-seo/"
+      "url": "/enlaces-internos-seo/"
     },
     {
       "label": "Página D · Página rápida",
-      "url": "/experimento/indexacion-google-2019/pagina-web-rapida/"
+      "url": "/pagina-web-rapida/"
     }
   ],
   "resultsSections": [

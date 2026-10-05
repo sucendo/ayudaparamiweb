@@ -21,7 +21,7 @@ const CATEGORY_BY_SLUG = {
   'guia-seo-pymes-2026': 'articulos','seo-tecnico-core-web-vitals-2026': 'articulos','investigacion-palabras-clave': 'articulos','contenido-y-seo': 'articulos','seo-on-page-aspectos-tecnicos': 'articulos','motores-de-busqueda': 'articulos','seo-que-es': 'articulos','como-crear-una-pagina-web': 'tutoriales','conceptos-basicos-programacion': 'articulos','node-js-que-es': 'articulos','express-js-para-que-sirve': 'articulos','vue-js-que-es': 'articulos',
   'primeros-pasos-python': 'tutoriales','codigo-traductor-google-blog': 'tutoriales',
   'contador-caracteres-seo': 'herramientas','conversor-binario': 'herramientas','analizador-seo-url': 'herramientas',
-  'google-shopping-actions': 'articulos','problemas-canon-digital-ecommerce': 'articulos','que-es-bluetooth': 'articulos','el-mundo-del-programador-web': 'articulos','backlink-que-es-como-construir-red-de-enlaces': 'articulos','experiencia-de-usuario-ux-y-seo': 'articulos','herramientas-seo': 'articulos','autoridad-de-dominio': 'articulos','herramientas-seo-gratuitas': 'articulos','ia-generativa-estrategia-contenidos-seo': 'articulos'
+  'google-shopping-actions': 'articulos','problemas-canon-digital-ecommerce': 'articulos','el-mundo-del-programador-web': 'articulos','backlink-que-es-como-construir-red-de-enlaces': 'articulos','experiencia-de-usuario-ux-y-seo': 'articulos','herramientas-seo': 'articulos','autoridad-de-dominio': 'articulos','herramientas-seo-gratuitas': 'articulos','ia-generativa-estrategia-contenidos-seo': 'articulos'
 };
 
 const COLOR_CACHE = Object.create(null);

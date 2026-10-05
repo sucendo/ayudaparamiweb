@@ -4,7 +4,7 @@ description: "Cómo estructurar guías, tutoriales y referencias para facilitar 
 excerpt: "Organiza una biblioteca de contenidos para que cada artículo tenga función y siguiente paso."
 author: "Sucender"
 canonical: "/guias-y-tutoriales-como-organizar-tu-contenido"
-category: "tutoriales"
+category: "articulos"
 tags: ["Contenidos", "SEO", "Arquitectura web"]
 publishedDate: "2023-06-08"
 featuredImage: "/img/articulo/guias-y-tutoriales-como-organizar-tu-contenido-featured.svg"

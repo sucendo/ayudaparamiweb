@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T06:54:49.556Z",
+  "generatedAt": "2026-10-05T06:55:37.515Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 46,
@@ -1045,7 +1045,7 @@
     {
       "path": "/editores-con-ia-y-agentes-de-desarrollo",
       "title": "Editores con IA y agentes de desarrollo: ventajas, inconvenientes, modelos y costes reales",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "IA",
         "Programación",
@@ -1472,7 +1472,7 @@
     {
       "path": "/seo-local-y-visibilidad-para-pymes-2026",
       "title": "SEO local y visibilidad para pymes en 2026",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Estrategia digital",
@@ -1506,7 +1506,7 @@
     {
       "path": "/seo-tecnico-core-web-vitals-2026",
       "title": "SEO técnico y Core Web Vitals en 2026",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO técnico",
         "Rendimiento web",

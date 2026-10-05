@@ -600,3 +600,21 @@
     border-left: 0;
   }
 }
+
+
+.home-demo-latest-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.home-demo-latest-card__meta time {
+  color: #9aa7ae;
+  font-size: .74rem;
+}
+
+.home-demo-latest-card__category {
+  margin-bottom: 0;
+}

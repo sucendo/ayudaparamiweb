@@ -4,7 +4,7 @@ description: "Cómo ordenar herramientas, tareas, comunicación y automatizacion
 excerpt: "Menos herramientas y mejores reglas pueden reducir coordinación y retrabajo."
 author: "Sucender"
 canonical: "/productividad-digital-en-equipos-pequenos"
-category: "tutoriales"
+category: "articulos"
 tags: ["Productividad"]
 publishedDate: "2022-06-09"
 featuredImage: "/img/articulo/productividad-digital-en-equipos-pequenos-featured.svg"

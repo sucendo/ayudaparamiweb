@@ -4,7 +4,7 @@ description: "Cómo organizar catálogos grandes con jerarquía, categorías, fi
 excerpt: "La arquitectura de un catálogo grande debe limitar combinaciones innecesarias y dar prioridad a las páginas que usuarios y buscadores necesitan descubrir."
 author: "Sucender"
 canonical: "/arquitectura-web-para-catalogos-grandes"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO técnico", "Arquitectura web", "Ecommerce", "Enlazado interno"]
 publishedDate: "2025-05-15"
 featuredImage: "/img/articulo/arquitectura-web-para-catalogos-grandes-featured.svg"

@@ -4,7 +4,7 @@ description: "Cómo plantear scraping web de forma ética y mantenible: propósi
 excerpt: "Extraer solo los datos necesarios y con una finalidad clara hace el scraping más seguro, reproducible y fácil de mantener."
 author: "Sucender"
 canonical: "/scraping-web-etico-y-util"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Web", "Estrategia digital"]
 publishedDate: "2024-05-09"
 featuredImage: "/img/articulo/scraping-web-etico-y-util-featured.svg"

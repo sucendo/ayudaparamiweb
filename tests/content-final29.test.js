@@ -17,7 +17,6 @@ const finalBatch = [
   'plan-seo-y-contenidos-para-2026',
   'programacion-asistida-por-ia',
   'prompts-para-redactar-mejor-con-ia',
-  'que-es-bluetooth',
   'rendimiento-web-que-medir',
   'rich-snippets-y-datos-estructurados',
   'schema-org-basico-para-pymes',
@@ -49,7 +48,6 @@ const expectedColors = {
   'plan-seo-y-contenidos-para-2026': 'ct-orange',
   'programacion-asistida-por-ia': 'ct-red',
   'prompts-para-redactar-mejor-con-ia': 'ct-yellow',
-  'que-es-bluetooth': 'ct-blue',
   'rendimiento-web-que-medir': 'ct-yellow',
   'rich-snippets-y-datos-estructurados': 'ct-orange',
   'schema-org-basico-para-pymes': 'ct-green',
@@ -78,7 +76,7 @@ function frontmatterValue(source, key) {
   return match ? match[1].trim() : '';
 }
 
-test('final 29 articles respect their effective date in visible title, description and body, allowing explicit prospective editorial framing', () => {
+test('remaining final-batch articles respect their effective date in visible title, description and body, allowing explicit prospective editorial framing', () => {
   const allowedProspectiveYears = {
     'checklist-ia-y-seo-para-2025': [2025]
   };
@@ -95,7 +93,7 @@ test('final 29 articles respect their effective date in visible title, descripti
   });
 });
 
-test('final 29 use local 1200x630 SVG featured images and no retired ratings', () => {
+test('remaining final-batch articles use local 1200x630 SVG featured images and no retired ratings', () => {
   finalBatch.forEach((slug) => {
     const source = sourceFor(slug);
     const article = contentLoader.loadArticle(slug);
@@ -113,7 +111,7 @@ test('final 29 use local 1200x630 SVG featured images and no retired ratings', (
   });
 });
 
-test('final 29 no longer contain generic review filler', () => {
+test('remaining final-batch articles no longer contain generic review filler', () => {
   finalBatch.forEach((slug) => {
     const source = sourceFor(slug);
     assert.doesNotMatch(source, /<h2>Contexto y objetivos<\/h2>/i, slug);

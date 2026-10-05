@@ -91,14 +91,6 @@ async function bootstrap() {
     return;
   }
 
-  app.use(express.static(__dirname + '/public'));
-
-  routes
-    .filter(function(route) { return route.staticSource; })
-    .forEach(function(route) {
-      app.use(route.path, express.static(path.join(__dirname, 'public', route.staticSource)));
-    });
-
   routes
     .filter(function(route) { return route.redirectTo; })
     .forEach(function(route) {
@@ -106,6 +98,14 @@ async function bootstrap() {
         response.redirect(301, route.redirectTo);
       });
     });
+
+  routes
+    .filter(function(route) { return route.staticSource; })
+    .forEach(function(route) {
+      app.use(route.path, express.static(path.join(__dirname, 'public', route.staticSource)));
+    });
+
+  app.use(express.static(__dirname + '/public'));
 
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');

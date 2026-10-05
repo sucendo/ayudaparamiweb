@@ -54,6 +54,7 @@ const staticRoutes = [
   { path: '/acerca-de', view: 'pages/acerca-de' },
   { path: '/privacidad', view: 'pages/privacidad' },
   { path: '/quantum-pacific-group-atletico-de-madrid', view: 'standalone', catalog: false, staticOnly: true, staticSource: 'experimento/quantum-pacific-group' },
+  { path: '/que-es-bluetooth', view: 'standalone', catalog: false, staticOnly: true, staticSource: 'experimento/que-es-bluetooth' },
   { path: '/ope-medico-familia-2019', view: 'standalone', catalog: false, staticOnly: true, staticSource: 'experimento/ope-medico-familia-2019' },
   { path: '/optimizar-imagenes-web', view: 'standalone', catalog: false, staticOnly: true, staticSource: 'experimento/indexacion-google-2019/optimizar-imagenes-web' },
   { path: '/meta-description-seo', view: 'standalone', catalog: false, staticOnly: true, staticSource: 'experimento/indexacion-google-2019/meta-description-seo' },

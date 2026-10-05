@@ -4,7 +4,7 @@ description: "Cómo organizar Microsoft 365 en una pyme con Outlook, Teams, OneD
 excerpt: "Correo, documentos y tareas funcionan mejor cuando la empresa define qué herramienta utiliza para cada tipo de información."
 author: "Sucender"
 canonical: "/microsoft-365-para-pymes"
-category: "tutoriales"
+category: "articulos"
 tags: ["Productividad", "Pymes", "Tecnología"]
 publishedDate: "2022-04-14"
 featuredImage: "/img/articulo/microsoft-365-para-pymes-featured.svg"

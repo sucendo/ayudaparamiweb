@@ -425,7 +425,7 @@ function loadArticles() {
   return routes.map((route) => {
     const metadata = contentLoader.loadArticle(route.contentSlug);
     const slug = metadata.slug || route.contentSlug;
-    const category = CATEGORY_BY_SLUG[slug] || metadata.category || 'articulos';
+    const category = metadata.category || CATEGORY_BY_SLUG[slug] || 'articulos';
     const date = metadata.modifiedDate || metadata.publishedDate || '1970-01-01';
     const image = metadata.featuredImage || FALLBACK_IMAGE;
     const heroClass = metadata.heroClass || 'bg-purple';

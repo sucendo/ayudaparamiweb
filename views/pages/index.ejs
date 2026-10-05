@@ -1,8 +1,89 @@
-<%- include('../partials/archive-page.ejs', {
-  pageTitle: 'Ayuda para mi Web',
-  pageDescription: 'Todas las publicaciones, herramientas y experimentos en un único índice editorial.',
-  heading: 'Ayuda para mi Web',
-  subtitle: 'Todo el contenido publicado, ordenado por fecha.',
-  items: contentItems,
-  categories: categories
-}) %>
+<!doctype html>
+<html dir="ltr" lang="es" xml:lang="es" class="js js canvas fontface generatedcontent wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-brandongrotesque-n7-active wf-active">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ayuda para mi Web</title>
+    <meta name="description" content="Artículos, tutoriales, herramientas y experimentos para crear, mantener y mejorar una web con criterio." />
+    <meta name="author" content="Sucender" />
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body id="apmw-body" class="home-page-v2">
+    <div class="ct-container">
+      <%- include('../partials/header.ejs') %>
+
+      <div class="ct-content">
+        <div class="ct-inner">
+          <main class="ct-main ct-main-archive home-main" role="main">
+            <section class="home-hero ct-green">
+              <span class="home-hero__eyebrow">Ayuda para mi Web</span>
+              <h1>Aprender, resolver y experimentar con la web</h1>
+              <p>Contenido práctico sobre desarrollo web, SEO y mantenimiento. Puedes aprender conceptos, seguir procesos paso a paso, utilizar herramientas propias o explorar pruebas reales del Laboratorio.</p>
+              <div class="home-hero__actions">
+                <a href="/articulos">Explorar artículos</a>
+                <a href="/buscar">Buscar en la web</a>
+              </div>
+            </section>
+
+            <section class="home-paths" aria-labelledby="home-paths-title">
+              <header class="home-section-heading">
+                <span>¿Qué necesitas?</span>
+                <h2 id="home-paths-title">Cuatro formas de entrar</h2>
+                <p>No hace falta recorrer todo el archivo. Empieza por el tipo de contenido que mejor encaja con lo que quieres hacer.</p>
+              </header>
+
+              <div class="home-paths__grid">
+                <a class="home-path-card ct-blue" href="/articulos">
+                  <span class="home-path-card__kicker">Aprende</span>
+                  <strong>Artículos</strong>
+                  <p>Conceptos, criterios, comparativas y decisiones para entender mejor la web y el SEO.</p>
+                  <span class="home-path-card__link">Ver artículos →</span>
+                </a>
+
+                <a class="home-path-card ct-orange" href="/tutoriales">
+                  <span class="home-path-card__kicker">Hazlo paso a paso</span>
+                  <strong>Tutoriales</strong>
+                  <p>Procesos prácticos para configurar, corregir, lanzar o mejorar una web con un objetivo concreto.</p>
+                  <span class="home-path-card__link">Ver tutoriales →</span>
+                </a>
+
+                <a class="home-path-card ct-purple" href="/herramientas">
+                  <span class="home-path-card__kicker">Resuelve una tarea</span>
+                  <strong>Herramientas</strong>
+                  <p>Utilidades interactivas para SEO técnico, análisis, validación y tareas habituales de una web.</p>
+                  <span class="home-path-card__link">Abrir herramientas →</span>
+                </a>
+
+                <a class="home-path-card ct-red" href="/laboratorio">
+                  <span class="home-path-card__kicker">Prueba y observa</span>
+                  <strong>Laboratorio</strong>
+                  <p>Experimentos reales con hipótesis, desarrollo, resultados y, cuando es posible, la prueba original.</p>
+                  <span class="home-path-card__link">Entrar al Laboratorio →</span>
+                </a>
+              </div>
+            </section>
+
+            <section class="home-latest" aria-labelledby="home-latest-title">
+              <header class="home-section-heading home-section-heading--latest">
+                <span>Archivo</span>
+                <h2 id="home-latest-title">Últimas publicaciones</h2>
+                <p>El contenido más reciente de todas las secciones, ordenado por fecha.</p>
+              </header>
+
+              <div class="ct-archive-container">
+                <%- include('../partials/content-grid.ejs', { items: contentItems, categories: categories }) %>
+              </div>
+              <div class="clr"></div>
+            </section>
+          </main>
+
+          <aside class="ct-sidebar"><%- include('../partials/aside.ejs') %></aside>
+          <div class="clr"></div>
+        </div>
+      </div>
+
+      <footer class="ct-footer"><%- include('../partials/footer.ejs') %></footer>
+    </div>
+  </body>
+</html>

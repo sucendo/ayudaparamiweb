@@ -6,10 +6,10 @@ const path = require('path');
 const routes = require('../routes');
 
 test('Laboratorio separa ficha editorial y experimento ejecutable', () => {
-  const quantumArticle = routes.find((route) => route.path === '/laboratorio/quantum-pacific-group');
-  const opeArticle = routes.find((route) => route.path === '/laboratorio/calculo-posicion-provisional-ope-medico-familia-2019');
-  const quantumExperiment = routes.find((route) => route.path === '/quantum-pacific-group');
-  const opeExperiment = routes.find((route) => route.path === '/calculo-posicion-provisional-pruebas-selectivas-comunidad-de-madrid-medico-familia-atencion-primaria-2019');
+  const quantumArticle = routes.find((route) => route.path === '/publicar-una-noticia-bomba-antes-que-nadie');
+  const opeArticle = routes.find((route) => route.path === '/calculo-posicion-provisional-ope-medico-familia-2019');
+  const quantumExperiment = routes.find((route) => route.path === '/quantum-pacific-group-atletico-de-madrid');
+  const opeExperiment = routes.find((route) => route.path === '/ope-medico-familia-2019');
 
   assert.equal(quantumArticle.contentType, 'laboratory');
   assert.equal(opeArticle.contentType, 'laboratory');
@@ -108,8 +108,8 @@ test('las fichas de laboratorio enlazan a las carpetas independientes de los exp
   const quantum = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'quantum-pacific-group.json'), 'utf8'));
   const ope = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'calculo-posicion-provisional-ope-medico-familia-2019.json'), 'utf8'));
 
-  assert.equal(quantum.experimentUrl, '/experimento/quantum-pacific-group/');
-  assert.equal(ope.experimentUrl, '/experimento/ope-medico-familia-2019/');
+  assert.equal(quantum.experimentUrl, '/quantum-pacific-group-atletico-de-madrid/');
+  assert.equal(ope.experimentUrl, '/ope-medico-familia-2019/');
 });
 
 
@@ -128,7 +128,7 @@ test('las páginas independientes se presentan como contenido real y solo remite
 
 
 test('el experimento histórico de indexación de 2019 está publicado con cuatro páginas reales', () => {
-  const route = routes.find((item) => item.path === '/laboratorio/como-descubre-google-pagina-nueva-2019');
+  const route = routes.find((item) => item.path === '/como-descubre-google-pagina-nueva-2019');
   assert.ok(route);
   assert.equal(route.contentType, 'laboratory');
 
@@ -140,7 +140,7 @@ test('el experimento histórico de indexación de 2019 está publicado con cuatr
   assert.ok(lab.sections.some((section) => section.table && section.table.rows.length === 4));
 
   lab.experimentLinks.forEach((item) => {
-    const relative = item.url.replace(/^\/experimento\/indexacion-google-2019\//, '').replace(/\/$/, '');
+    const relative = item.url.replace(/^\//, '').replace(/\/$/, '');
     const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'indexacion-google-2019', relative, 'index.html'), 'utf8');
     const beforeNote = html.split('<aside class="archive-note">')[0];
     assert.doesNotMatch(beforeNote, /experimento/i);
@@ -162,14 +162,14 @@ test('el layout de Laboratorio soporta varios enlaces y tabla de resultados', ()
 
 
 test('el mapamundi COVID-19 de 2020 usa datos históricos reales y controles temporales', () => {
-  const route = routes.find((item) => item.path === '/laboratorio/covid-19-mapa-mundial-2020');
+  const route = routes.find((item) => item.path === '/un-ano-de-pandemia-en-movimiento');
   assert.ok(route);
   assert.equal(route.contentType, 'laboratory');
 
   const lab = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'covid-19-mapa-mundial-2020.json'), 'utf8'));
   assert.equal(lab.publishedDate, '2020-12-28');
   assert.equal(lab.modifiedDate, '2021-01-08');
-  assert.equal(lab.experimentUrl, '/experimento/covid-19-mapa-mundial-2020/');
+  assert.equal(lab.experimentUrl, '/covid-19-mapa-mundial-2020/');
   assert.match(lab.hypothesis, /mapamundi/i);
 
   const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'covid-19-mapa-mundial-2020', 'index.html'), 'utf8');
@@ -189,4 +189,25 @@ test('el mapamundi COVID-19 de 2020 usa datos históricos reales y controles tem
   assert.ok(data.countries.length >= 190);
   assert.equal(data.globalCases[data.globalCases.length - 1], 83778622);
   assert.equal(data.globalDeaths[data.globalDeaths.length - 1], 1901777);
+});
+
+
+test('Bluetooth se conserva como experimento independiente y su ficha está en Laboratorio', () => {
+  const labRoute = routes.find((item) => item.path === '/posicionar-palabra-poca-competencia-bluetooth');
+  const experimentRoute = routes.find((item) => item.path === '/que-es-bluetooth');
+
+  assert.ok(labRoute);
+  assert.equal(labRoute.contentType, 'laboratory');
+  assert.ok(experimentRoute);
+  assert.equal(experimentRoute.catalog, false);
+  assert.equal(experimentRoute.staticSource, 'experimento/que-es-bluetooth');
+
+  const lab = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'content', 'lab', 'experimento-seo-bluetooth-2018.json'), 'utf8'));
+  assert.equal(lab.experimentUrl, '/que-es-bluetooth');
+  assert.equal(lab.canonical, '/posicionar-palabra-poca-competencia-bluetooth');
+
+  const html = fs.readFileSync(path.join(__dirname, '..', 'public', 'experimento', 'que-es-bluetooth', 'index.html'), 'utf8');
+  assert.doesNotMatch(html, /partials\/header|class="ct-footer"/);
+  assert.match(html, /EXPERIMENTO SEO · ARCHIVO 2018/);
+  assert.match(html, /\/posicionar-palabra-poca-competencia-bluetooth/);
 });

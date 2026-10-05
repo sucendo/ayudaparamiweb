@@ -4,7 +4,7 @@ excerpt: "Una base práctica para que ficha, web y reputación local trabajen co
 description: "Cómo mejorar el SEO de un negocio local con Google Business Profile, páginas de ubicación, reseñas, menciones, móvil y medición de contactos."
 author: "Sucender"
 canonical: "/seo-para-negocios-locales"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "SEO local", "Pymes"]
 publishedDate: "2022-07-14"
 featuredImage: "/img/articulo/seo-para-negocios-locales-featured.svg"

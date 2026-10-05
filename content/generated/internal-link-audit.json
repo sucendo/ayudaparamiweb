@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T06:53:25.253Z",
+  "generatedAt": "2026-10-05T06:54:49.556Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 46,
@@ -754,7 +754,7 @@
     {
       "path": "/accesibilidad-y-seo",
       "title": "Accesibilidad y SEO: cómo mejorar la web para personas y buscadores",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Accesibilidad",
@@ -766,7 +766,7 @@
     {
       "path": "/arquitectura-web-para-catalogos-grandes",
       "title": "Arquitectura web para catálogos grandes",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO técnico",
         "Arquitectura web",
@@ -997,7 +997,7 @@
     {
       "path": "/contenidos-utiles-y-eeat",
       "title": "Contenidos útiles y E-E-A-T: cómo aplicar criterio editorial",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Contenidos"
@@ -1460,7 +1460,7 @@
     {
       "path": "/seo-local-avanzado-para-pymes",
       "title": "SEO local avanzado para pymes: sedes, servicios y reputación",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Estrategia digital",
@@ -1694,7 +1694,7 @@
     {
       "path": "/estrategias-de-captacion-b2b",
       "title": "Estrategias de captación B2B: guía práctica",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Captación",
         "Marketing digital"

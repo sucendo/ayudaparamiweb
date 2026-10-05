@@ -3,7 +3,7 @@ title: "Enlazado interno para SEO: cómo conectar mejor tus páginas"
 description: "Cómo mejorar el enlazado interno para SEO: arquitectura, anchors, páginas estratégicas, huérfanas, profundidad, redirecciones y revisión periódica."
 author: "Sucender"
 canonical: "/enlazado-interno-para-seo"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Enlazado interno", "Arquitectura web"]
 publishedDate: "2023-07-13"
 featuredImage: "/img/articulo/enlazado-interno-para-seo-featured.svg"

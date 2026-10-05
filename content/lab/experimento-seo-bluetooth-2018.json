@@ -1,0 +1,80 @@
+{
+  "title": "¿Se puede posicionar una palabra con poca competencia? El experimento “Bluetooth”",
+  "description": "Un experimento SEO de 2018: detectar una búsqueda que parecía tener poca competencia y publicar una página específica para comprobar si una web pequeña podía ganar visibilidad.",
+  "author": "Sucender",
+  "canonical": "/posicionar-palabra-poca-competencia-bluetooth",
+  "category": "laboratorio",
+  "tags": [
+    "Laboratorio",
+    "SEO",
+    "Palabras clave",
+    "Posicionamiento",
+    "Experimentos"
+  ],
+  "publishedDate": "2018-08-21",
+  "featuredImage": "/img/articulo/que-es-bluetooth-featured.svg",
+  "themeColor": "#47a3da",
+  "labToneClass": "ct-blue",
+  "status": "Histórico · experimento SEO",
+  "hypothesis": "Si detecto una búsqueda que en ese momento parece tener poca competencia y publico una página centrada en resolverla, ¿puede una web pequeña conseguir visibilidad aunque el tema quede fuera de su línea editorial habitual?",
+  "sections": [
+    {
+      "title": "El motivo",
+      "paragraphs": [
+        "En 2018 estaba buscando oportunidades sencillas para probar cómo funcionaba el posicionamiento orgánico en la práctica. Al revisar distintas búsquedas me llamó la atención «Bluetooth»: mi impresión en aquel momento era que había menos páginas realmente centradas en responder de forma clara a esa consulta de las que cabría esperar para una palabra tan conocida.",
+        "Eso la convertía en una candidata interesante para una prueba. No tenía relación directa con la temática habitual de Ayuda para mi Web, pero precisamente por eso permitía aislar una pregunta muy concreta: ¿hasta qué punto puede ayudar una competencia aparentemente baja?"
+      ]
+    },
+    {
+      "title": "La idea",
+      "paragraphs": [
+        "La prueba consistía en crear una página específica alrededor de la consulta «qué es Bluetooth», explicar qué era la tecnología, para qué servía, cómo se utilizaba y resolver algunas dudas relacionadas.",
+        "El objetivo no era abrir una nueva línea editorial sobre electrónica de consumo. Era publicar una única página, observar su comportamiento y comprobar si haber detectado una oportunidad de búsqueda podía compensar el hecho de que el sitio no tuviera una autoridad temática especial sobre Bluetooth."
+      ]
+    },
+    {
+      "title": "Cómo lo planteé",
+      "steps": [
+        "Elegir una consulta que, al revisar los resultados de búsqueda, pareciera tener una competencia asumible.",
+        "Crear una URL dedicada y un título que respondiera de forma directa a la intención de búsqueda.",
+        "Redactar una explicación amplia con preguntas relacionadas: funcionamiento, versiones, NFC, emparejamiento y usos habituales.",
+        "Publicar la página dentro del sitio aunque el tema no perteneciera a su línea editorial principal.",
+        "Observar si Google llegaba a mostrarla para la consulta objetivo y para búsquedas relacionadas."
+      ]
+    },
+    {
+      "title": "La rareza era parte del experimento",
+      "paragraphs": [
+        "Visto dentro del archivo de la web, el artículo resulta extraño: entre contenidos sobre páginas web, programación y SEO aparece de repente una guía sobre Bluetooth. Esa incoherencia temática no fue accidental.",
+        "La página nació como una prueba de posicionamiento, no como una decisión editorial de convertir la web en un sitio de tecnología general. Por eso hoy tiene más sentido conservarla vinculada al Laboratorio y explicar el contexto que dejarla como si fuera un artículo normal sin ninguna justificación."
+      ]
+    },
+    {
+      "title": "Qué datos conservaría si repitiera la prueba",
+      "paragraphs": [
+        "No conservo un registro histórico suficientemente completo como para afirmar hoy una posición exacta, el volumen de impresiones conseguido o cuánto tiempo pudo mantenerse la página para la consulta objetivo. Sería incorrecto reconstruir esas cifras de memoria.",
+        "Si repitiera el experimento, guardaría desde el primer día el número aproximado de resultados, las páginas que ocupaban las primeras posiciones, la fecha de indexación, impresiones, clics, posición media y consultas reales de Search Console. También anotaría los cambios de contenido para separar el efecto de cada modificación."
+      ]
+    }
+  ],
+  "experimentUrl": "/que-es-bluetooth",
+  "experimentTitle": "¿Qué es Bluetooth?",
+  "experimentDescription": "Abre el artículo original utilizado para la prueba. Se conserva como pieza histórica y mantiene el enfoque con el que fue publicado en 2018.",
+  "experimentLabel": "Abrir artículo original",
+  "resultsSections": [
+    {
+      "title": "Lo que sí deja claro la prueba",
+      "paragraphs": [
+        "El experimento sirve para recordar que una idea de contenido puede nacer de observar una oportunidad de búsqueda y no necesariamente de seguir el calendario editorial habitual. También muestra el límite de esa estrategia: conseguir una oportunidad puntual no convierte automáticamente ese tema en adecuado para el resto del sitio.",
+        "Hoy prefiero conservar la página por su valor histórico, pero acompañada de este contexto. Así no parece un contenido aleatorio dentro de Ayuda para mi Web y queda documentada la razón por la que se publicó."
+      ]
+    },
+    {
+      "title": "La lección",
+      "paragraphs": [
+        "Buscar consultas con menor competencia puede ser una forma útil de experimentar, pero no debería convertirse en la única forma de elegir temas. La relación con la web, la utilidad real del contenido y la capacidad de mantenerlo actualizado también importan.",
+        "En este caso, «Bluetooth» fue una prueba concreta. El artículo se mantiene porque forma parte de la historia del proyecto, mientras que el Laboratorio explica por qué existe."
+      ]
+    }
+  ]
+}

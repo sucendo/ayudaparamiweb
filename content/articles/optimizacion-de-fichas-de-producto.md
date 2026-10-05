@@ -4,7 +4,7 @@ description: "Cómo mejorar fichas de producto con títulos, descripciones, imá
 excerpt: "Una ficha debe ayudar a comparar, resolver dudas y facilitar la compra."
 author: "Sucender"
 canonical: "/optimizacion-de-fichas-de-producto"
-category: "tutoriales"
+category: "articulos"
 tags: ["Ecommerce", "SEO"]
 publishedDate: "2022-11-10"
 featuredImage: "/img/articulo/optimizacion-de-fichas-de-producto-featured.svg"

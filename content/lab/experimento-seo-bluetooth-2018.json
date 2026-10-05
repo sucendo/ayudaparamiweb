@@ -45,7 +45,7 @@
     {
       "title": "La rareza era parte del experimento",
       "paragraphs": [
-        "Visto dentro del archivo de la web, el artículo resulta extraño: entre contenidos sobre páginas web, programación y SEO aparece de repente una guía sobre Bluetooth. Esa incoherencia temática no fue accidental.",
+        "Visto dentro del archivo de la web, la página resulta extraña: entre contenidos sobre páginas web, programación y SEO aparece de repente una guía sobre Bluetooth. Esa incoherencia temática no fue accidental.",
         "La página nació como una prueba de posicionamiento, no como una decisión editorial de convertir la web en un sitio de tecnología general. Por eso hoy tiene más sentido conservarla vinculada al Laboratorio y explicar el contexto que dejarla como si fuera un artículo normal sin ninguna justificación."
       ]
     },
@@ -59,8 +59,8 @@
   ],
   "experimentUrl": "/que-es-bluetooth",
   "experimentTitle": "¿Qué es Bluetooth?",
-  "experimentDescription": "Abre el artículo original utilizado para la prueba. Se conserva como pieza histórica y mantiene el enfoque con el que fue publicado en 2018.",
-  "experimentLabel": "Abrir artículo original",
+  "experimentDescription": "Abre la página original utilizada en la prueba. Se conserva como experimento histórico y mantiene el enfoque con el que fue publicada en 2018.",
+  "experimentLabel": "Abrir experimento",
   "resultsSections": [
     {
       "title": "Lo que sí deja claro la prueba",
@@ -73,7 +73,7 @@
       "title": "La lección",
       "paragraphs": [
         "Buscar consultas con menor competencia puede ser una forma útil de experimentar, pero no debería convertirse en la única forma de elegir temas. La relación con la web, la utilidad real del contenido y la capacidad de mantenerlo actualizado también importan.",
-        "En este caso, «Bluetooth» fue una prueba concreta. El artículo se mantiene porque forma parte de la historia del proyecto, mientras que el Laboratorio explica por qué existe."
+        "En este caso, «Bluetooth» fue una prueba concreta. La página se mantiene porque forma parte de la historia del proyecto, mientras que el Laboratorio explica por qué existe."
       ]
     }
   ]

@@ -4,7 +4,7 @@ description: "Introducción a Vue.js 3 en 2021: componentes, reactividad, Option
 excerpt: "Vue 3 permite construir interfaces por componentes y adoptar el framework de forma progresiva, desde una parte de una página hasta una aplicación completa."
 author: "Sucender"
 canonical: "/vue-js-que-es"
-category: "tutoriales"
+category: "articulos"
 tags: ["JavaScript", "Desarrollo web"]
 publishedDate: "2021-04-07"
 featuredImage: "/img/articulo/vue-js-que-es-featured.svg"

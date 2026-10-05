@@ -4,7 +4,7 @@ description: "Cómo organizar captación B2B con cliente objetivo, propuesta, ou
 excerpt: "Captar B2B no consiste en acumular leads: consiste en generar conversaciones con empresas que tienen encaje y una necesidad real."
 author: "Sucender"
 canonical: "/estrategias-de-captacion-b2b"
-category: "tutoriales"
+category: "articulos"
 tags: ["Captación", "Marketing digital"]
 publishedDate: "2025-07-10"
 featuredImage: "/img/articulo/estrategias-de-captacion-b2b-featured.svg"

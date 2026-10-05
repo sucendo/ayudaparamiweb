@@ -4,7 +4,7 @@ excerpt: "Las métricas de rendimiento sirven para localizar el origen de una ma
 description: "Qué medir en rendimiento web en 2021: TTFB, LCP, FID, CLS, peso, peticiones, JavaScript, caché y diferencias entre laboratorio y usuarios reales."
 author: "Sucender"
 canonical: "/rendimiento-web-que-medir"
-category: "tutoriales"
+category: "articulos"
 tags: ["Rendimiento web", "Analítica web", "SEO técnico"]
 publishedDate: "2021-08-12"
 featuredImage: "/img/articulo/rendimiento-web-que-medir-featured.svg"

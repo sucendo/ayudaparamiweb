@@ -3,7 +3,7 @@ title: "Responsive design: buenas prácticas"
 description: "Buenas prácticas de diseño responsive con layouts flexibles, viewport, breakpoints, controles táctiles, imágenes y pruebas en distintos anchos."
 author: "Sucender"
 canonical: "/responsive-design-buenas-practicas"
-category: "tutoriales"
+category: "articulos"
 tags: ["Diseño web", "UX", "CSS"]
 publishedDate: "2021-06-10"
 featuredImage: "/img/articulo/responsive-design-buenas-practicas-featured.svg"

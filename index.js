@@ -60,6 +60,7 @@ function resolvePageContext(route, allContent) {
   var articles = contentCatalog.filterByCategory(allContent, 'articulos').concat(contentCatalog.filterByCategory(allContent, 'analisis'));
   var sectionByPath = {
     '/': allContent,
+    '/home-demo': allContent,
     '/guias': articles,
     '/tutoriales': contentCatalog.filterByCategory(allContent, 'tutoriales'),
     '/herramientas': contentCatalog.filterByCategory(allContent, 'herramientas'),

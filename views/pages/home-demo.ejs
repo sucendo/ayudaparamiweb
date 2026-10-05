@@ -10,7 +10,7 @@
   const labs = all.filter(function(item) { return item.category === 'laboratorio'; }).slice(0, 2);
   const latest = all.slice().sort(function(a, b) {
     return new Date(b.publishedDate || '1970-01-01').getTime() - new Date(a.publishedDate || '1970-01-01').getTime();
-  }).slice(0, 8);
+  }).slice(0, 6);
 %>
 <!doctype html>
 <html dir="ltr" lang="es" xml:lang="es">
@@ -173,12 +173,22 @@
               <p>El orden cronológico sigue existiendo, pero pasa a un segundo nivel después de orientar al visitante.</p>
             </header>
             <div class="home-demo-latest-grid">
-              <% latest.forEach(function(item) { %>
-                <article class="home-demo-latest-card">
-                  <div class="home-demo-latest-card__meta"><span class="home-demo-latest-card__category"><%= categories[item.category] ? categories[item.category].name : item.category %></span><time datetime="<%= item.publishedDate %>"><%= item.displayPublishedDate || item.publishedDate %></time></div>
-                  <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
-                  <p><%= item.excerpt %></p>
-                  <a href="<%= item.path %>">Abrir →</a>
+              <% latest.forEach(function(item, index) { %>
+                <article class="home-demo-latest-card <%= item.colorClass || 'ct-blue' %> <%= index === 0 ? 'home-demo-latest-card--lead' : '' %>">
+                  <% if (item.featuredImage) { %>
+                    <a class="home-demo-latest-card__image" href="<%= item.path %>" aria-label="<%= item.title %>">
+                      <img src="<%= item.featuredImage %>" alt="" loading="<%= index === 0 ? 'eager' : 'lazy' %>">
+                    </a>
+                  <% } %>
+                  <div class="home-demo-latest-card__body">
+                    <div class="home-demo-latest-card__meta">
+                      <span class="home-demo-latest-card__category"><%= categories[item.category] ? categories[item.category].name : item.category %></span>
+                      <time datetime="<%= item.publishedDate %>"><%= item.displayPublishedDate || item.publishedDate %></time>
+                    </div>
+                    <h3><a href="<%= item.path %>"><%= item.title %></a></h3>
+                    <p><%= item.excerpt %></p>
+                    <a class="home-demo-latest-card__link" href="<%= item.path %>">Leer publicación →</a>
+                  </div>
                 </article>
               <% }); %>
             </div>

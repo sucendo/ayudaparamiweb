@@ -4,7 +4,7 @@ description: "Guía práctica de SEO local para pymes en 2026: ficha de empresa,
 excerpt: "Una estrategia local sostenible combina información exacta, una web útil y una reputación construida con clientes reales."
 author: "Sucender"
 canonical: "/seo-local-y-visibilidad-para-pymes-2026"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Estrategia digital", "SEO local"]
 publishedDate: "2026-02-14"
 featuredImage: "/img/articulo/seo-local-y-visibilidad-para-pymes-2026-featured.svg"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T09:00:35.485Z",
+  "generatedAt": "2026-10-05T06:53:25.253Z",
   "summary": {
     "articles": 117,
     "normalizedTags": 46,
@@ -861,7 +861,7 @@
     {
       "path": "/chatgpt-y-marketing-digital",
       "title": "ChatGPT y marketing digital: primeros usos prácticos",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "IA",
         "Marketing digital",
@@ -974,7 +974,7 @@
     {
       "path": "/comunicacion-interna-y-herramientas-digitales",
       "title": "Comunicación interna y herramientas digitales",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Productividad",
         "Colaboración",
@@ -1008,7 +1008,7 @@
     {
       "path": "/copilots-y-agentes-para-pymes",
       "title": "Copilots y agentes para pymes: qué automatizar y qué no",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "IA",
         "Pymes",
@@ -1116,7 +1116,7 @@
     {
       "path": "/errores-comunes-en-webs-corporativas",
       "title": "Errores comunes en webs corporativas",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Web",
         "UX",
@@ -1234,7 +1234,7 @@
     {
       "path": "/herramientas-seo-gratuitas",
       "title": "Herramientas SEO gratuitas recomendadas",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Marketing digital"
@@ -1245,7 +1245,7 @@
     {
       "path": "/ia-generativa-estrategia-contenidos-seo",
       "title": "IA generativa y contenidos SEO: cómo usarla sin perder calidad",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "IA",
         "SEO"
@@ -1354,7 +1354,7 @@
     {
       "path": "/programacion-asistida-por-ia",
       "title": "Programación asistida por IA: qué agiliza y qué depende del desarrollador",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Programación",
         "IA"
@@ -1400,7 +1400,7 @@
     {
       "path": "/que-es-una-api-y-para-que-sirve",
       "title": "Qué es una API y para qué sirve",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Programación",
         "Desarrollo web",
@@ -1412,7 +1412,7 @@
     {
       "path": "/rendimiento-web-que-medir",
       "title": "Rendimiento web: qué medir y cómo interpretar los datos",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Rendimiento web",
         "Analítica web",
@@ -1436,7 +1436,7 @@
     {
       "path": "/scraping-web-etico-y-util",
       "title": "Scraping web ético y útil: cómo extraer datos con criterio",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Web",
@@ -1518,7 +1518,7 @@
     {
       "path": "/seo-y-core-web-vitals",
       "title": "SEO y Core Web Vitals: LCP, FID y CLS",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Rendimiento web",
@@ -1542,7 +1542,7 @@
     {
       "path": "/tendencias-seo-y-contenidos-2024",
       "title": "Tendencias SEO y contenidos en 2024",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Contenidos",
@@ -1565,7 +1565,7 @@
     {
       "path": "/vue-js-que-es",
       "title": "¿Qué es Vue.js y para qué sirve? Guía práctica",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "JavaScript",
         "Desarrollo web"
@@ -1728,7 +1728,7 @@
     {
       "path": "/guias-y-tutoriales-como-organizar-tu-contenido",
       "title": "Guías y tutoriales: cómo organizar tu contenido",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Contenidos",
         "SEO",
@@ -1740,7 +1740,7 @@
     {
       "path": "/ia-y-seo-primeros-usos-practicos",
       "title": "IA y SEO: primeros usos prácticos",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "IA",
         "SEO",
@@ -1776,7 +1776,7 @@
     {
       "path": "/microsoft-365-para-pymes",
       "title": "Microsoft 365 para pymes: organización y colaboración",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Productividad",
         "Pymes",
@@ -1812,7 +1812,7 @@
     {
       "path": "/productividad-digital-en-equipos-pequenos",
       "title": "Productividad digital en equipos pequeños",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Productividad"
       ],
@@ -1869,7 +1869,7 @@
     {
       "path": "/accesibilidad-web-principios-basicos",
       "title": "Accesibilidad web: principios básicos",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Accesibilidad",
         "Desarrollo web",
@@ -1953,7 +1953,7 @@
     {
       "path": "/contenido-que-ayuda-a-captar-clientes",
       "title": "Contenido que ayuda a captar clientes",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Contenidos",
         "Captación",
@@ -2000,7 +2000,7 @@
     {
       "path": "/responsive-design-buenas-practicas",
       "title": "Responsive design: buenas prácticas",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Diseño web",
         "UX",
@@ -2024,7 +2024,7 @@
     {
       "path": "/seo-para-categorias-de-ecommerce",
       "title": "SEO para categorías de ecommerce: arquitectura, filtros y contenido",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Ecommerce",
@@ -2060,7 +2060,7 @@
     {
       "path": "/clusters-de-contenido-y-seo",
       "title": "Clusters de contenido y SEO: cómo organizar temas relacionados",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Contenidos",
@@ -2073,7 +2073,7 @@
     {
       "path": "/enlazado-interno-para-seo",
       "title": "Enlazado interno para SEO: cómo conectar mejor tus páginas",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "Enlazado interno",
@@ -2085,7 +2085,7 @@
     {
       "path": "/entornos-colaborativos",
       "title": "Entornos colaborativos: cómo organizar el trabajo en equipo",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Colaboración"
       ],
@@ -2095,7 +2095,7 @@
     {
       "path": "/landings-que-convierten",
       "title": "Landing pages que convierten",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Conversión",
         "Marketing digital"
@@ -2106,7 +2106,7 @@
     {
       "path": "/optimizacion-de-fichas-de-producto",
       "title": "Optimización de fichas de producto",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "Ecommerce",
         "SEO"
@@ -2117,7 +2117,7 @@
     {
       "path": "/seo-para-negocios-locales",
       "title": "SEO para negocios locales: guía práctica",
-      "category": "tutoriales",
+      "category": "articulos",
       "tags": [
         "SEO",
         "SEO local",

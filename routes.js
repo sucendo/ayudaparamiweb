@@ -34,6 +34,7 @@ const managedContentRoutes = [
   { path: '/analizador-enlaces-html', view: 'content/render', contentType: 'tool', contentSlug: 'analizador-enlaces-html' },
   { path: '/auditor-seo-tecnico', view: 'content/render', contentType: 'tool', contentSlug: 'auditor-seo-tecnico' },
   { path: '/publicar-una-noticia-bomba-antes-que-nadie', view: 'content/render', contentType: 'laboratory', contentSlug: 'quantum-pacific-group' },
+  { path: '/posicionar-palabra-poca-competencia-bluetooth', view: 'content/render', contentType: 'laboratory', contentSlug: 'experimento-seo-bluetooth-2018' },
   { path: '/calculo-posicion-provisional-ope-medico-familia-2019', view: 'content/render', contentType: 'laboratory', contentSlug: 'calculo-posicion-provisional-ope-medico-familia-2019' },
   { path: '/como-descubre-google-pagina-nueva-2019', view: 'content/render', contentType: 'laboratory', contentSlug: 'como-descubre-google-pagina-nueva-2019' },
   { path: '/un-ano-de-pandemia-en-movimiento', view: 'content/render', contentType: 'laboratory', contentSlug: 'covid-19-mapa-mundial-2020' },

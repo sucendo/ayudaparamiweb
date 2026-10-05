@@ -6,7 +6,7 @@ author: "Sucender"
 canonical: "/git-y-github-para-principiantes"
 category: "tutoriales"
 tags: ["Programación", "Desarrollo web"]
-publishedDate: "2018-01-01"
+publishedDate: "2017-12-21"
 featuredImage: "/img/articulo/git-y-github-para-principiantes-featured.svg"
 heroClass: "bg-orange"
 themeColor: "#ee9e2d"

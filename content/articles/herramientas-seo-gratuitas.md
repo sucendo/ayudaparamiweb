@@ -4,7 +4,7 @@ description: "Guía de herramientas SEO gratuitas recomendadas y cómo sacarles 
 excerpt: "Qué herramientas gratuitas sí aportan valor y cómo integrarlas en un flujo SEO profesional."
 author: "Sucender"
 canonical: "/herramientas-seo-gratuitas"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Marketing digital"]
 publishedDate: "2022-05-08"
 featuredImage: "/img/articulo/herramientas-seo-gratuitas-featured.svg"

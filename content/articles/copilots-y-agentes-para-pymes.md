@@ -4,7 +4,7 @@ description: "Descubre cómo pueden ayudar los copilots y agentes a una pyme, qu
 excerpt: "Una guía clara para entender qué pueden hacer los copilots y agentes en una pyme, qué tareas conviene automatizar y por qué la supervisión humana sigue siendo clave."
 author: "Sucender"
 canonical: "/copilots-y-agentes-para-pymes"
-category: "tutoriales"
+category: "articulos"
 tags: ["IA", "Pymes", "Automatización", "Productividad", "Estrategia digital"]
 publishedDate: "2024-08-08"
 featuredImage: "/img/articulo/copilots-y-agentes-para-pymes-featured.svg"

@@ -4,7 +4,7 @@ description: "Primeros usos de ChatGPT en marketing digital en 2023: ideas, esqu
 excerpt: "ChatGPT puede acelerar la preparación de contenidos, pero la estrategia, los datos y la publicación siguen necesitando criterio humano."
 author: "Sucender"
 canonical: "/chatgpt-y-marketing-digital"
-category: "tutoriales"
+category: "articulos"
 tags: ["IA", "Marketing digital", "Contenidos"]
 publishedDate: "2023-01-12"
 featuredImage: "/img/articulo/chatgpt-y-marketing-digital-featured.svg"

@@ -248,7 +248,6 @@ function resolvePageContext(route, allContent) {
     '/herramientas': contentCatalog.filterByCategory(allContent, 'herramientas'),
     '/laboratorio': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/articulos': articles,
-    '/experimentos': contentCatalog.filterByCategory(allContent, 'laboratorio'),
     '/tags': allContent,
     '/sucender': allContent
   };

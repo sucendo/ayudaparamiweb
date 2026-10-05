@@ -4,7 +4,7 @@ description: "Descubre qué aporta realmente la programación asistida por IA, e
 excerpt: "Una guía clara para entender qué aporta realmente la programación asistida por IA, en qué tareas acelera el trabajo y por qué el criterio técnico sigue siendo irremplazable."
 author: "Sucender"
 canonical: "/programacion-asistida-por-ia"
-category: "tutoriales"
+category: "articulos"
 tags: ["Programación", "IA"]
 publishedDate: "2024-09-12"
 featuredImage: "/img/articulo/programacion-asistida-por-ia-featured.svg"

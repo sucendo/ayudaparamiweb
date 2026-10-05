@@ -2,7 +2,7 @@
   "title": "Crear una clasificación provisional donde la convocatoria no la ofrecía: experimento OPE Médico de Familia 2019",
   "description": "Una herramienta nacida de una carencia real: calcular una posible clasificación provisional de la OPE de Médico de Familia y comprobar si los candidatos encontraban útil consultarla.",
   "author": "Sucender",
-  "canonical": "/laboratorio/calculo-posicion-provisional-ope-medico-familia-2019",
+  "canonical": "/calculo-posicion-provisional-ope-medico-familia-2019",
   "category": "laboratorio",
   "tags": [
     "Laboratorio",
@@ -59,7 +59,7 @@
       ]
     }
   ],
-  "experimentUrl": "/experimento/ope-medico-familia-2019/",
+  "experimentUrl": "/ope-medico-familia-2019/",
   "experimentTitle": "Consultar la clasificación provisional",
   "experimentDescription": "La clasificación se abre como una herramienta independiente, centrada únicamente en buscar el número de registro y consultar la posible posición provisional.",
   "experimentLabel": "Abrir clasificación",

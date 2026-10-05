@@ -4,7 +4,7 @@ description: "Cómo avanzar en SEO local para pymes con páginas de sede y servi
 excerpt: "El SEO local avanzado conecta mejor la realidad de cada sede, sus servicios y su reputación con la estructura de la web."
 author: "Sucender"
 canonical: "/seo-local-avanzado-para-pymes"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Estrategia digital", "SEO local"]
 publishedDate: "2025-01-16"
 featuredImage: "/img/articulo/seo-local-avanzado-para-pymes-featured.svg"

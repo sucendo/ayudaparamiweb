@@ -2011,3 +2011,209 @@ html {
     width: auto;
   }
 }
+
+
+/* Home page v2 */
+.home-page-v2 .home-main {
+  min-width: 0;
+}
+
+.home-page-v2 .home-hero {
+  box-sizing: border-box;
+  margin: 0 0 28px;
+  padding: clamp(30px, 5vw, 56px);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(255,255,255,.16), transparent 18rem),
+    linear-gradient(135deg, #263943 0%, #315969 58%, #2fa06a 100%);
+  border-bottom: 10px solid #16b864;
+  box-shadow: 0 10px 30px rgba(17,32,43,.13);
+  color: #fff;
+}
+
+.home-page-v2 .home-hero__eyebrow,
+.home-page-v2 .home-section-heading > span,
+.home-page-v2 .home-path-card__kicker {
+  display: block;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.home-page-v2 .home-hero__eyebrow {
+  margin-bottom: 12px;
+  color: rgba(255,255,255,.74);
+}
+
+.home-page-v2 .home-hero h1 {
+  margin: 0;
+  max-width: 780px;
+  padding: 0;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.04;
+}
+
+.home-page-v2 .home-hero p {
+  margin: 20px 0 0;
+  max-width: 760px;
+  color: rgba(255,255,255,.88);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.home-page-v2 .home-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.home-page-v2 .home-hero__actions a {
+  display: inline-block;
+  padding: 11px 16px;
+  border: 1px solid rgba(255,255,255,.34);
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  font-size: .88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.home-page-v2 .home-hero__actions a:first-child {
+  background: #fff;
+  border-color: #fff;
+  color: #263943;
+}
+
+.home-page-v2 .home-hero__actions a:hover,
+.home-page-v2 .home-hero__actions a:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(17,32,43,.16);
+}
+
+.home-page-v2 .home-paths,
+.home-page-v2 .home-latest {
+  margin-bottom: 30px;
+}
+
+.home-page-v2 .home-section-heading {
+  margin: 0 0 16px;
+}
+
+.home-page-v2 .home-section-heading > span {
+  margin-bottom: 5px;
+  color: #7b8b95;
+}
+
+.home-page-v2 .home-section-heading h2 {
+  margin: 0 0 7px;
+  color: #f3f6f8;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.home-page-v2 .home-section-heading p {
+  margin: 0;
+  max-width: 760px;
+  color: #b9c7cf;
+  line-height: 1.55;
+}
+
+.home-page-v2 .home-paths__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.home-page-v2 .home-path-card {
+  box-sizing: border-box;
+  display: block;
+  min-width: 0;
+  padding: 24px 26px 26px;
+  background: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  color: #263943;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(17,32,43,.09);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+
+.home-page-v2 .home-path-card.ct-blue { border-bottom-color: #47a3da; }
+.home-page-v2 .home-path-card.ct-orange { border-bottom-color: #ee9e2d; }
+.home-page-v2 .home-path-card.ct-purple { border-bottom-color: #7a45e8; }
+.home-page-v2 .home-path-card.ct-red { border-bottom-color: #d25565; }
+
+.home-page-v2 .home-path-card:hover,
+.home-page-v2 .home-path-card:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 13px 28px rgba(17,32,43,.13);
+}
+
+.home-page-v2 .home-path-card__kicker {
+  margin-bottom: 7px;
+  color: #7a8992;
+}
+
+.home-page-v2 .home-path-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #263943;
+  font-size: 1.22rem;
+}
+
+.home-page-v2 .home-path-card p {
+  margin: 0 0 16px;
+  color: #60717c;
+  font-size: .94rem;
+  line-height: 1.58;
+}
+
+.home-page-v2 .home-path-card__link {
+  color: #34596d;
+  font-size: .86rem;
+  font-weight: 800;
+}
+
+.home-page-v2 .home-section-heading--latest {
+  margin-top: 6px;
+}
+
+.home-page-v2 .home-latest .ct-archive-container {
+  padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 720px) {
+  .home-page-v2 .home-hero {
+    margin-bottom: 24px;
+    padding: 26px 22px 28px;
+    border-bottom-width: 8px;
+  }
+
+  .home-page-v2 .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-page-v2 .home-hero p {
+    font-size: .98rem;
+  }
+
+  .home-page-v2 .home-hero__actions {
+    display: block;
+  }
+
+  .home-page-v2 .home-hero__actions a {
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .home-page-v2 .home-paths__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page-v2 .home-path-card {
+    padding: 21px 20px 22px;
+  }
+}

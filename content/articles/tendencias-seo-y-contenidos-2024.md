@@ -4,7 +4,7 @@ description: "Tendencias SEO y de contenidos en 2024: utilidad real, IA generati
 excerpt: "La tendencia clave en 2024 no es publicar más, sino producir contenido útil, verificable y mejor conectado con la experiencia real del proyecto."
 author: "Sucender"
 canonical: "/tendencias-seo-y-contenidos-2024"
-category: "tutoriales"
+category: "articulos"
 tags: ["SEO", "Contenidos", "Estrategia digital"]
 publishedDate: "2024-01-11"
 featuredImage: "/img/articulo/tendencias-seo-y-contenidos-2024-featured.svg"

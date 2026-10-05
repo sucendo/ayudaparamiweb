@@ -6,7 +6,7 @@ author: "Sucender"
 canonical: "/mi-web-no-carga-que-hacer-10-minutos"
 category: "tutoriales"
 tags: ["Errores web", "Mantenimiento web", "Servidor"]
-publishedDate: "2018-01-01"
+publishedDate: "2017-11-30"
 featuredImage: "/img/articulo/mi-web-no-carga-que-hacer-10-minutos-featured.svg"
 heroClass: "bg-red"
 themeColor: "#d25565"

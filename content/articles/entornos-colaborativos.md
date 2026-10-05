@@ -4,7 +4,7 @@ description: "Qué son los entornos colaborativos y cómo organizar comunicació
 excerpt: "Colaborar bien no consiste en añadir más herramientas, sino en compartir información, responsabilidades y decisiones de una forma predecible."
 author: "Sucender"
 canonical: "/entornos-colaborativos"
-category: "tutoriales"
+category: "articulos"
 tags: ["Colaboración"]
 publishedDate: "2022-02-10"
 featuredImage: "/img/articulo/entornos-colaborativos-featured.svg"

@@ -4,7 +4,7 @@ description: "Cómo organizar comunicación interna con chat, correo, documentos
 excerpt: "Definir para qué sirve cada canal reduce mensajes duplicados, interrupciones y decisiones perdidas."
 author: "Sucender"
 canonical: "/comunicacion-interna-y-herramientas-digitales"
-category: "tutoriales"
+category: "articulos"
 tags: ["Productividad", "Colaboración", "Empresa"]
 publishedDate: "2022-03-10"
 featuredImage: "/img/articulo/comunicacion-interna-y-herramientas-digitales-featured.svg"

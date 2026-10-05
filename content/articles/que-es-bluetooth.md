@@ -1,6 +1,6 @@
 ---
-title: "Qué es Bluetooth?"
-description: "¿Que es la tecnoligía Bluetooth? ¿Para que sirve? ¿Para que puedes usar el bluetooth?"
+title: "¿Qué es Bluetooth?"
+description: "¿Qué es la tecnología Bluetooth, para qué sirve y para qué puedes utilizarla?"
 excerpt: "La mayoría de la gente ha oído hablar de Bluetooth, pero muchos desconocen qué es, cómo funciona y qué pueden hacer con él. Tratemos de llenar los vacíos con nuestra guía completa, que incluye usos comunes para Bluetooth y explicaciones sobre cómo configurarlo."
 author: "Sucender"
 canonical: "/que-es-bluetooth"
@@ -79,3 +79,12 @@ El problema más común que tienen los usuarios con Bluetooth es que no se conec
 A pesar de los reclamos del alcance de 200 pies de Bluetooth, en la práctica, generalmente es mucho menos que esto. Las paredes, las superficies y las interferencias eléctricas pueden limitarlo. Si tiene problemas para conectar dispositivos, antes que nada asegúrese de que ambos dispositivos tengan Bluetooth encendido y que estén cerca el uno del otro.
 
 Otro problema común es que los dispositivos no se encuentran o no se reconocen. En la mayoría de los casos, esto se cura simplemente reiniciando el dispositivo o activando y desactivando su función Bluetooth. Suena demasiado fácil, pero en general es la solución más efectiva.
+
+
+## Nota de archivo: este artículo nació como un experimento SEO
+
+Este contenido se publicó en 2018 a partir de una prueba muy concreta: había detectado que la búsqueda relacionada con Bluetooth parecía tener una competencia asumible y quise comprobar si una web pequeña podía conseguir visibilidad publicando una página centrada en esa consulta, aunque el tema no perteneciera a la línea editorial habitual de Ayuda para mi Web.
+
+Por eso este artículo puede resultar extraño dentro del resto del sitio. Se conserva como pieza histórica y como página utilizada en aquella prueba, no porque Ayuda para mi Web se haya convertido en una web sobre tecnología de consumo.
+
+[Puedes ver el planteamiento completo en el Laboratorio: «¿Se puede posicionar una palabra con poca competencia? El experimento “Bluetooth”»](/posicionar-palabra-poca-competencia-bluetooth).

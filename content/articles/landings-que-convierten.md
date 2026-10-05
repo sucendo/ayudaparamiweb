@@ -4,7 +4,7 @@ description: "Cómo crear landing pages claras: propuesta, llamada a la acción,
 excerpt: "Una landing eficaz guía a una persona concreta hacia una acción concreta."
 author: "Sucender"
 canonical: "/landings-que-convierten"
-category: "tutoriales"
+category: "articulos"
 tags: ["Conversión", "Marketing digital"]
 publishedDate: "2023-09-14"
 featuredImage: "/img/articulo/landings-que-convierten-featured.svg"

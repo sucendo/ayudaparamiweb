@@ -78,6 +78,22 @@ function copyPublic() {
   fs.cpSync(publicDir, outputDir, { recursive: true });
 }
 
+function copyStandaloneRoutes() {
+  routes
+    .filter((route) => route.staticSource)
+    .forEach((route) => {
+      const sourceDir = path.join(publicDir, route.staticSource);
+      const targetDir = path.join(outputDir, route.path.replace(/^\/+/, ''));
+
+      if (!fs.existsSync(sourceDir)) {
+        throw new Error(`No existe el origen estático para ${route.path}: ${sourceDir}`);
+      }
+
+      fs.mkdirSync(targetDir, { recursive: true });
+      fs.cpSync(sourceDir, targetDir, { recursive: true });
+    });
+}
+
 function copyGeneratedContent() {
   const generatedDir = path.join(projectRoot, 'content', 'generated');
   if (!fs.existsSync(generatedDir)) return;
@@ -129,7 +145,7 @@ function writeRobots() {
 
 function writeSitemap() {
   const entries = routes
-    .filter((route) => route.path && route.path !== '/404' && route.path !== '/buscar' && route.sitemap !== false)
+    .filter((route) => route.path && route.path !== '/404' && route.path !== '/buscar' && route.sitemap !== false && !route.redirectTo)
     .map((route) => {
       let lastmod = '';
 
@@ -247,6 +263,33 @@ function resolvePageContext(route, allContent) {
   };
 }
 
+function writeRedirects() {
+  routes
+    .filter((route) => route.redirectTo)
+    .forEach((route) => {
+      const outputFile = toOutputFile(route.path);
+      const target = route.redirectTo;
+      const targetAbsolute = absoluteUrl(target);
+      const html = [
+        '<!doctype html>',
+        '<html lang="es">',
+        '<head>',
+        '  <meta charset="utf-8">',
+        '  <meta name="robots" content="noindex,follow">',
+        `  <meta http-equiv="refresh" content="0; url=${target}">`,
+        `  <link rel="canonical" href="${targetAbsolute}">`,
+        '  <title>Redirección</title>',
+        '</head>',
+        `<body><p>Esta página se ha movido a <a href="${target}">${target}</a>.</p></body>`,
+        '</html>',
+        ''
+      ].join('\n');
+
+      fs.mkdirSync(path.dirname(outputFile), { recursive: true });
+      fs.writeFileSync(outputFile, html, 'utf8');
+    });
+}
+
 function renderRoute(route, allContent) {
   const viewFile = toViewFile(route.view);
   const outputFile = toOutputFile(route.path);
@@ -272,7 +315,11 @@ async function build() {
   copyGeneratedContent();
   const allContent = await contentCatalog.buildCatalog();
   writeContentIndex(allContent);
-  routes.filter((route) => route.staticOnly !== true).forEach((route) => renderRoute(route, allContent));
+  routes
+    .filter((route) => route.staticOnly !== true && !route.redirectTo)
+    .forEach((route) => renderRoute(route, allContent));
+  copyStandaloneRoutes();
+  writeRedirects();
   writeRobots();
   writeSitemap();
   writeNoJekyll();

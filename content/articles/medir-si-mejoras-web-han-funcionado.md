@@ -280,3 +280,5 @@ No necesitas un sistema enorme. Una web pequeña puede gestionar todo este proce
 Lo importante es abandonar la idea de que "hemos hecho cambios" equivale a "hemos mejorado".
 
 Una mejora empieza con una hipótesis y termina cuando tienes suficiente evidencia para decidir si merece quedarse.
+
+**Serie completa:** [Cómo auditar una web antes de empezar a mejorarla](/auditar-web-antes-de-mejorarla) → [Cómo priorizar los problemas después de la auditoría](/priorizar-problemas-web-despues-auditoria) → **Cómo medir si las mejoras han funcionado**.

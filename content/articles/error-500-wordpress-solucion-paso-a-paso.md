@@ -55,14 +55,13 @@ El archivo `.htaccess` también da problemas con más frecuencia de la que parec
 
 Una prueba sencilla es renombrarlo temporalmente y comprobar si la web vuelve a cargar. Si ese era el problema, se puede regenerar después desde WordPress o creando un archivo limpio con la configuración básica.
 
-```
-Comprobaciones recomendadas:
-- Desactivar plugins temporalmente
-- Probar con un theme por defecto
-- Renombrar .htaccess
-- Revisar límites de memoria PHP
-- Consultar el log de errores del servidor
-```
+**Comprobaciones recomendadas:**
+
+- Desactivar plugins temporalmente.
+- Probar con un theme por defecto.
+- Renombrar `.htaccess`.
+- Revisar límites de memoria PHP.
+- Consultar el log de errores del servidor.
 
 ### La memoria PHP también puede quedarse corta
 

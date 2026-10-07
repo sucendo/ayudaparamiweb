@@ -63,12 +63,13 @@ Durante años han existido métodos para intentar inflar artificialmente la auto
 
 A corto plazo pueden dar la sensación de que algo mejora, pero a medio plazo suelen dejar un perfil de enlaces poco natural, una estrategia débil y una dependencia excesiva de tácticas que no siempre aportan valor real al proyecto.
 
-<pre><code>Lo que conviene evitar:
-								- Comprar enlaces sin criterio
-								- Buscar cantidad en lugar de calidad
-								- Conseguir menciones en webs sin relación temática
-								- Repetir patrones artificiales de anchor text
-								- Obsesionarse con la métrica y descuidar el contenido</code></pre>
+**Lo que conviene evitar:**
+
+- Comprar enlaces sin criterio.
+- Buscar cantidad en lugar de calidad.
+- Conseguir menciones en webs sin relación temática.
+- Repetir patrones artificiales de anchor text.
+- Obsesionarse con la métrica y descuidar el contenido.
 
 ### El contenido también influye más de lo que a veces se piensa
 

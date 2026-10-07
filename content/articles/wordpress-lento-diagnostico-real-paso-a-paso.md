@@ -84,11 +84,11 @@ Muchos temas modernos incluyen:
 
 Un theme mal optimizado puede ralentizar la web incluso sin plugins.
 
-<pre><code>Señales de problema en el theme:
-- Muchas peticiones JS y CSS
-- Alto peso inicial
-- Renderizado lento
-</code></pre>
+**Señales de problema en el theme:**
+
+- Muchas peticiones JS y CSS.
+- Alto peso inicial.
+- Renderizado lento.
 
 ## Recursos y caché
 

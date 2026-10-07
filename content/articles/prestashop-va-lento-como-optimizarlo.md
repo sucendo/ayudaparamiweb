@@ -50,12 +50,14 @@ robots: "index,follow"
 <h3>Optimizar imágenes y recursos</h3>
 								<p>Las imágenes de producto suelen ser uno de los elementos más pesados. Si no están optimizadas, pueden ralentizar mucho la carga.</p>
 
-								<pre><code>Acciones recomendadas:
-- Reducir peso de imágenes
-- Eliminar módulos innecesarios
-- Activar caché
-- Revisar hosting
-- Optimizar base de datos</code></pre>
+								<p><strong>Acciones recomendadas:</strong></p>
+<ul>
+<li>Reducir el peso de las imágenes.</li>
+<li>Eliminar módulos innecesarios.</li>
+<li>Activar la caché.</li>
+<li>Revisar el hosting.</li>
+<li>Optimizar la base de datos.</li>
+</ul>
 
 								<h3>Activar y configurar la caché correctamente</h3>
 								<p>La caché ayuda a reducir carga del servidor y mejorar tiempos de respuesta. Pero debe estar bien configurada para que realmente funcione.</p>

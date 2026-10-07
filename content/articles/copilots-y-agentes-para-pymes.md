@@ -73,11 +73,13 @@ robots: "index,follow"
 							<h4>Una forma razonable de empezar</h4>
 							<p>Puedes elegir una tarea de bajo riesgo pero muy repetitiva. Por ejemplo, preparar respuestas base, resumir mensajes largos, generar una primera propuesta comercial o clasificar solicitudes entrantes.</p>
 						
-							<pre><code>Paso 1: elegir una tarea repetitiva
-						Paso 2: medir cuánto tiempo consume hoy
-						Paso 3: probar una asistencia o automatización simple
-						Paso 4: revisar calidad, errores y ahorro real
-						Paso 5: decidir si merece ampliarse</code></pre>
+							<ol>
+<li>Elegir una tarea repetitiva.</li>
+<li>Medir cuánto tiempo consume hoy.</li>
+<li>Probar una asistencia o automatización simple.</li>
+<li>Revisar calidad, errores y ahorro real.</li>
+<li>Decidir si merece ampliarse.</li>
+</ol>
 						
 							<h3>La clave no está solo en la herramienta, sino en cómo se integra en el trabajo real</h3>
 							<p>Una solución puede ser técnicamente buena y aun así fracasar si no encaja con la forma de trabajar del equipo. Por eso conviene pensar desde el principio en el uso real: quién la va a utilizar, en qué momento, con qué supervisión y qué pasa si el resultado no es correcto.</p>
@@ -129,9 +131,7 @@ robots: "index,follow"
 						
 							<p>Cuando una prueba funciona, ya puedes plantearte ampliarla: conectar más procesos, definir reglas algo más sofisticadas o crear varios flujos con tareas bien separadas. Pero conviene hacerlo paso a paso, no por entusiasmo.</p>
 						
-							<pre><code>Pregunta útil para decidir:
-						¿esta automatización reduce trabajo real,
-						o solo añade una capa nueva que luego alguien tendrá que vigilar?</code></pre>
+							<blockquote><p><strong>Pregunta útil para decidir:</strong> ¿esta automatización reduce trabajo real, o solo añade una capa nueva que luego alguien tendrá que vigilar?</p></blockquote>
 						
 							<h3>En resumen: una pyme no necesita más tecnología, necesita mejor criterio para aplicarla</h3>
 							<p>Los copilots y agentes pueden ayudar mucho a una pyme, pero su valor no está en parecer avanzados, sino en resolver tareas concretas con sentido. Bien elegidos, ahorran tiempo, reducen fricción y permiten que un equipo pequeño trabaje con más orden y más foco.</p>

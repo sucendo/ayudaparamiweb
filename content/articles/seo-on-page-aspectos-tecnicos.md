@@ -70,11 +70,11 @@ Persuadir tanto a los usuarios como a los motores de búsqueda de que se haga cl
 
 Evite utilizar URL generadas automáticamente con figuras y caracteres:
 
-<pre>www.example.com/2017/post318e7a349f6</pre>
+`www.example.com/2017/post318e7a349f6`
 
 Utilice las URL correspondientes a su contenido y su título:
 
-<pre>www.example.com/how-to-bake-pizza</pre>
+`www.example.com/how-to-bake-pizza`
 
 Si usa WordPress, puede establecer permalinks en configuraciones comunes.
 
@@ -173,7 +173,7 @@ Consejos rápidos:
 - El Sitemap no debe contener más de 50,000 URL y no puede exceder los 50 MB
 - Coloque el mapa del sitio en el directorio raíz del sitio web:
 
-<pre>https://example.com/sitemap.xml</pre>
+`https://example.com/sitemap.xml`
 
 ### 5. Robots.txt
 
@@ -183,9 +183,10 @@ Es útil cuando no desea que se indexen algunos scripts, archivos innecesarios o
 
 Sintaxis de robots.txt:
 
-<pre>Usuario-agente: * (por ejemplo, Googlebot)
-
-								No permitir: /   (por ejemplo, /images/pizza.png)</pre>
+```text
+User-agent: *
+Disallow: /images/pizza.png
+```
 
 Consejos rápidos:
 
@@ -214,5 +215,4 @@ Sin embargo, la seguridad es un factor psicológico fuerte. Google Chrome, por e
 
 Canonicalización de URL / IP: la canonicalización de IP es importante cuando un sitio web está indexado tanto con su dirección IP como con su nombre de dominio. La canonicalización de URL significa que:
 
-<pre>https://example.com y https://www.example.com/ deben resolverse en la misma URL
-								</pre>
+`https://example.com` y `https://www.example.com/` deben resolverse en la misma URL.

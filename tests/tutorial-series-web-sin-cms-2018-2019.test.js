@@ -52,3 +52,11 @@ test('Prism aporta toolbar y resaltado por tokens a los bloques de código', () 
   assert.match(prismCss, /\.token\.tag/);
   assert.match(prismJs, /code-toolbar/);
 });
+
+test('el código HTML inline usa language-html para que Prism genere tokens', () => {
+  const article = contentLoader.loadArticle('crear-web-desde-cero-html-css-sin-cms');
+
+  assert.match(article.bodyHtml, /<code class="language-html">&lt;!DOCTYPE html&gt;<\/code>/);
+  assert.match(article.bodyHtml, /<code class="language-html">&lt;head&gt;<\/code>/);
+  assert.match(article.bodyHtml, /<code class="language-html">&lt;body&gt;<\/code>/);
+});

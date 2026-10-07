@@ -62,14 +62,13 @@ No todas las webs necesitan lo mismo. Sin embargo, muchas personas contratan un 
 
 El error aquí no es solo quedarse corto. A veces también ocurre lo contrario: contratar un servicio mucho mayor del necesario y pagar por recursos que no se van a usar durante bastante tiempo. Lo importante es ajustar la elección al proyecto real y dejar abierta la posibilidad de ampliar más adelante si hace falta.
 
-```
-Antes de contratar conviene revisar:
-						- Qué tipo de web vas a crear
-						- Si usarás WordPress u otro CMS
-						- Si necesitas correo con tu dominio
-						- Cuántas visitas esperas al principio
-						- Si podrías necesitar ampliar recursos después
-```
+**Antes de contratar conviene revisar:**
+
+- Qué tipo de web vas a crear.
+- Si usarás WordPress u otro CMS.
+- Si necesitas correo con tu dominio.
+- Cuántas visitas esperas al principio.
+- Si podrías necesitar ampliar recursos después.
 
 ## Soporte y copias de seguridad
 

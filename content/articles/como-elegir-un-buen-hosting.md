@@ -73,16 +73,15 @@ Muchas personas no piensan en esto hasta que pierden información o algo se romp
 
 Por eso conviene comprobar si el hosting hace backups automáticos, con qué frecuencia y de qué manera se pueden recuperar. Es un detalle que puede parecer secundario al contratar, pero que tiene mucha importancia con el tiempo.
 
-```
-Checklist básica antes de contratar:
-						- Tipo de web que vas a alojar
-						- Soporte técnico y idioma
-						- Copias de seguridad
-						- Facilidad para ampliar el plan
-						- Gestión de correo y bases de datos
-						- Instalación sencilla de WordPress o del CMS elegido
-						- Certificado SSL y seguridad básica
-```
+**Checklist básica antes de contratar:**
+
+- Tipo de web que vas a alojar.
+- Soporte técnico y idioma.
+- Copias de seguridad.
+- Facilidad para ampliar el plan.
+- Gestión de correo y bases de datos.
+- Instalación sencilla de WordPress o del CMS elegido.
+- Certificado SSL y seguridad básica.
 
 ### Si vas a usar WordPress, conviene tenerlo en cuenta desde el principio
 

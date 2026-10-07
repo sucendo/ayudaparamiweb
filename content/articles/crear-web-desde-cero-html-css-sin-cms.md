@@ -107,17 +107,17 @@ No hace falta tener todavía un servidor para trabajar con este ejemplo. HTML y 
 
 ### El DOCTYPE
 
-Esta primera línea:
+La declaración `<!DOCTYPE html>` indica al navegador que el documento utiliza HTML5.
+
+También puedes verla dentro del ejemplo completo:
 
 ```html
 <!DOCTYPE html>
 ```
 
-indica al navegador que el documento utiliza HTML5.
-
 ### El head
 
-Dentro de `head` colocamos información sobre la página que no forma parte directamente del contenido visible.
+Dentro de `<head>` colocamos información sobre la página que no forma parte directamente del contenido visible.
 
 Ahí aparecen:
 
@@ -129,9 +129,9 @@ Ahí aparecen:
 
 ### El body
 
-Dentro de `body` está lo que verá el visitante.
+Dentro de `<body>` está lo que verá el visitante.
 
-En nuestro caso tenemos tres grandes zonas:
+En nuestro caso tenemos tres grandes zonas: `<header>`, `<main>` y `<footer>`.
 
 ```html
 <header>...</header>
@@ -378,7 +378,7 @@ Por ejemplo, para herramientas:
   content="Pequeñas herramientas web creadas con JavaScript.">
 ```
 
-No copies exactamente el mismo `title` en todas las páginas.
+No copies exactamente el mismo `<title>` en todas las páginas.
 
 Si quieres entender mejor por qué merece la pena pensar en buscadores desde el principio, puedes leer [SEO ¿Qué es?](/seo-que-es).
 

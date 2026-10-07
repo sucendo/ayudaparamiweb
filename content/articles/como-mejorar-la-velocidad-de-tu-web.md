@@ -1,118 +1,225 @@
 ---
 title: "Cómo mejorar la velocidad de tu web"
-description: "Cómo mejorar la velocidad de una web en 2020 revisando servidor, imágenes, CSS, JavaScript, caché, fuentes, terceros y páginas representativas."
-excerpt: "Mide primero, identifica el cuello de botella y optimiza servidor y recursos sin sacrificar funciones necesarias."
+description: "Cómo diagnosticar una web lenta en 2020 revisando tiempos de respuesta, peso, peticiones, imágenes, CSS, JavaScript y recursos de terceros."
+excerpt: "Antes de optimizar una web conviene medirla y localizar el cuello de botella. Esta primera parte ordena el diagnóstico sin aplicar cambios a ciegas."
 author: "Sucender"
 canonical: "/como-mejorar-la-velocidad-de-tu-web"
 category: "tutoriales"
-tags: ["Rendimiento web", "Desarrollo web"]
+tags: ["Rendimiento web", "Desarrollo web", "Velocidad web"]
 publishedDate: "2020-06-11"
 featuredImage: "/img/articulo/como-mejorar-la-velocidad-de-tu-web-featured.svg"
 heroClass: "bg-blue"
 themeColor: "#47a3da"
 robots: "index,follow"
 ---
-Una web rápida no depende de un único ajuste. El tiempo de carga es el resultado del servidor, el peso de los recursos, el código que ejecuta el navegador y el orden en que se solicita cada elemento. Por eso conviene medir antes de empezar a instalar soluciones.
+Una web lenta rara vez tiene una única causa. Puede tardar el servidor, pueden pesar demasiado las imágenes, puede haber demasiadas peticiones o puede ser el propio navegador el que esté ocupado procesando hojas de estilo y JavaScript.
 
-## Medición inicial
+Por eso, antes de instalar un plugin de caché, cambiar de hosting o comprimir archivos al azar, conviene hacer algo más sencillo: **medir y averiguar dónde se pierde el tiempo**.
 
-### Mide una página representativa
-Prueba la portada y, sobre todo, las páginas que realmente utilizan los clientes: categorías, productos, artículos o formularios. Haz varias mediciones porque una sola prueba puede verse afectada por la red o la caché.
+Esta es la primera parte de una pequeña serie dedicada a mejorar el rendimiento de una web. En esta entrega vamos a centrarnos en el diagnóstico. Las optimizaciones vendrán después.
 
-Observa qué recursos pesan más y cuáles bloquean la visualización inicial.
+## Empieza por una página real
 
-## Imágenes y servidor
+La portada no siempre es la página más importante ni la más pesada.
 
-### Optimiza imágenes
-Las imágenes suelen representar una parte importante del peso total. Ajusta sus dimensiones al tamaño real de visualización y comprímelas antes de subirlas.
+Si tienes una tienda, prueba una categoría y una ficha de producto. Si tienes un blog, prueba una entrada larga. Si la web recibe contactos, revisa también la página donde está el formulario.
 
-Evita cargar una fotografía enorme para mostrarla como una miniatura. También es útil diferir la carga de imágenes que están muy por debajo del primer bloque visible.
+Conviene medir varias plantillas porque cada una puede cargar recursos diferentes.
 
-### Revisa el servidor
-Si el HTML tarda demasiado en empezar a llegar, el navegador no puede compensarlo. Revisa alojamiento, consultas lentas, extensiones innecesarias y procesos que se ejecutan en cada petición.
+Haz al menos dos tipos de prueba:
 
-La caché del servidor puede reducir mucho el trabajo repetitivo cuando el contenido no cambia en cada visita.
+- una primera visita sin caché;
+- una segunda visita con recursos ya guardados por el navegador.
 
-## CSS, JavaScript y caché
+Si la segunda carga mejora mucho, la caché está haciendo parte de su trabajo. Si ambas son lentas, probablemente exista un problema más profundo.
 
-### Reduce CSS y JavaScript innecesarios
-Cada archivo adicional necesita descargarse y procesarse. Elimina librerías que ya no se utilizan y evita cargar scripts en páginas donde no hacen falta.
+## Utiliza más de una herramienta
 
-Minificar puede ayudar, pero antes de comprimir un archivo enorme conviene preguntarse si realmente debe existir.
+PageSpeed Insights y Lighthouse son buenos puntos de partida, pero no deberían convertirse en un examen que hay que aprobar con una nota concreta.
 
-### Aprovecha la caché del navegador
-Los recursos estáticos como imágenes, hojas de estilo y scripts pueden guardarse durante un tiempo para no descargarse en cada visita. Configura cabeceras adecuadas y utiliza nombres versionados cuando necesites forzar una actualización.
+También merece la pena abrir las herramientas de desarrollo del navegador y revisar la pestaña **Network**. Ahí puedes ver cada petición, cuánto pesa, cuánto tarda y en qué orden se descarga.
 
-## Prioridad y terceros
+En Chrome DevTools puedes desactivar temporalmente la caché mientras las herramientas están abiertas. Esto ayuda a reproducir la experiencia de una primera visita.
 
-### Carga primero lo importante
-El contenido inicial debería aparecer sin esperar a widgets secundarios, mapas, vídeos o herramientas externas. Retrasa lo que no sea imprescindible para que la página sea utilizable cuanto antes.
+Lo importante es responder preguntas concretas:
 
-### Vigila servicios de terceros
-Analítica, chat, publicidad, fuentes y otros servicios pueden añadir peticiones y JavaScript. Revisa periódicamente si cada integración sigue aportando suficiente valor para justificar su coste de rendimiento.
+- ¿cuánto tarda en empezar a llegar el HTML?;
+- ¿qué archivos pesan más?;
+- ¿cuántas peticiones se realizan?;
+- ¿qué recursos bloquean la visualización?;
+- ¿qué scripts tardan más en descargarse o ejecutarse?;
+- ¿hay peticiones a servicios externos que retrasan la página?
 
-### Optimiza de forma progresiva
-Haz un cambio, mide de nuevo y registra el resultado. Así sabrás qué optimizaciones tienen impacto real y podrás evitar combinaciones difíciles de mantener.
+Una puntuación aislada no responde por sí sola a ninguna de ellas.
 
-La velocidad mejora más con una web sencilla y disciplinada que acumulando plugins de optimización sobre una base demasiado pesada.
-## Caché e imágenes reales
+## Mira primero el tiempo de respuesta del servidor
 
-### Comprueba la primera visita y las siguientes
-La caché puede hacer que una segunda carga parezca mucho más rápida. Prueba también una visita sin recursos guardados para conocer la experiencia de alguien que llega por primera vez.
+Si el navegador tarda demasiado en recibir el primer byte, todavía no hay imagen, CSS o JavaScript que optimizar: el problema está ocurriendo antes.
 
-Después compara con una visita repetida. Si la diferencia es mínima, quizá los recursos estáticos no estén aprovechando bien la caché del navegador.
+Un tiempo de respuesta elevado puede venir de:
 
-### Ajusta el tamaño real de las imágenes
-No basta con comprimir. Una fotografía de 2000 píxeles sigue siendo excesiva si se muestra a 400. Genera tamaños acordes con las plantillas y evita descargar el original para reducirlo únicamente con CSS.
+- alojamiento con pocos recursos;
+- consultas lentas a base de datos;
+- plugins o módulos que ejecutan demasiado código;
+- llamadas externas realizadas desde el servidor;
+- páginas generadas de nuevo en cada visita cuando podrían cachearse.
 
-En imágenes fotográficas puedes utilizar una compresión mayor que en capturas con texto. Comprueba siempre el resultado visual antes de sustituir los archivos.
+Haz varias mediciones antes de sacar conclusiones. En alojamientos compartidos el resultado puede variar bastante de una prueba a otra.
 
-## Carga diferida y fuentes
+Si todas las páginas muestran un retraso parecido antes de empezar a descargar contenido, merece la pena investigar esta parte antes que cualquier detalle visual.
 
-### Carga diferida para contenido fuera de pantalla
-Imágenes y recursos situados muy por debajo del primer bloque no necesitan competir con el contenido inicial. Puedes retrasar su carga hasta que el usuario se acerque a ellos.
+## Ordena los recursos por peso
 
-Prueba el comportamiento en navegadores y dispositivos que utilice tu público. Una optimización no debe dejar espacios vacíos o impedir que se cargue una imagen al desplazarse.
+En la pestaña Network puedes ordenar las peticiones por tamaño.
 
-### Revisa las fuentes web
-Cada familia y cada peso puede implicar otra descarga. Si utilizas regular, semibold, bold, italic y varias familias, el coste puede crecer rápidamente.
+Es habitual encontrar una fotografía de varios megabytes utilizada en un bloque de pocos cientos de píxeles, una fuente con muchos pesos o un archivo JavaScript que se carga en todas las páginas aunque solo se utilice en una.
 
-Limita las variantes a las que realmente aparecen en el diseño y define fuentes de respaldo para que el texto siga siendo legible mientras se descarga la tipografía principal.
+Haz una lista de los recursos más pesados y anota para qué sirven.
 
-## Dependencias y orden de carga
+No borres todavía. El objetivo de esta primera fase es distinguir entre:
 
-### Evita cargar bibliotecas completas para una función pequeña
-Un carrusel, un efecto o un selector pueden introducir una biblioteca grande en todas las páginas. Revisa si esa dependencia sigue siendo necesaria.
+- recursos necesarios y razonables;
+- recursos necesarios pero demasiado pesados;
+- recursos que podrían cargarse más tarde;
+- recursos que ya no parecen necesarios.
 
-No cambies una librería solo por ahorrar unos kilobytes sin probar compatibilidad. Prioriza recursos que realmente tengan peso o tiempo de ejecución significativo.
+Esta clasificación evita romper funciones por intentar ahorrar unos kilobytes.
 
-### Cuida el orden de CSS y JavaScript
-El navegador necesita determinados estilos para dibujar la parte inicial. Scripts que no intervienen en ese momento pueden cargarse de forma que no bloqueen el renderizado.
+## Cuenta peticiones, pero no persigas un número mágico
 
-Haz los cambios gradualmente: alterar el orden de scripts puede romper funcionalidades que dependen unas de otras.
+Cada imagen, hoja de estilo, script, fuente o llamada externa puede generar una petición.
 
-## Hosting, medición y cambios
+Reducir peticiones sigue siendo útil, especialmente cuando una página carga decenas de archivos pequeños, pero no todas tienen el mismo coste. Con HTTP/2, disponible ya en muchos alojamientos, varias peticiones pueden gestionarse de forma más eficiente que con conexiones HTTP/1.1 tradicionales.
 
-### Hosting compartido y recursos disponibles
-En un alojamiento compartido, otros procesos del servidor pueden influir en los tiempos. Si el rendimiento varía mucho entre mediciones sin cambios en la web, revisa recursos y límites del plan.
+Por eso no merece la pena unir archivos de forma indiscriminada solo para reducir el contador.
 
-Antes de migrar, comprueba que la aplicación está razonablemente optimizada. Un servidor más potente puede ocultar temporalmente un problema de código o base de datos.
+Mira el conjunto:
 
-### Mide páginas reales
-No optimices solo una página de prueba. Revisa una entrada larga, una categoría, una ficha de producto o un formulario si forman parte del sitio.
+- número de peticiones;
+- tamaño transferido;
+- tiempo de descarga;
+- dependencia entre recursos;
+- trabajo que realiza el navegador después de descargarlos.
 
-Cada plantilla puede cargar recursos distintos. Una portada rápida no garantiza que el proceso de compra tenga el mismo rendimiento.
+Una página con 40 peticiones pequeñas puede funcionar mejor que otra con 12 archivos enormes.
 
-### Registra cada cambio
-Anota fecha, página probada y resultado aproximado. Si después aparece un problema, podrás relacionarlo con una modificación concreta.
+## Comprueba si las imágenes son el principal problema
 
-Este hábito es especialmente útil cuando intervienen plugins, caché o servicios externos, porque varias optimizaciones simultáneas pueden ser difíciles de deshacer.
+Las imágenes suelen ocupar una parte importante del peso total de una página.
 
-### No sacrifiques claridad por unos milisegundos
-El rendimiento sirve para que la web sea más fácil de usar. No elimines imágenes informativas, confirmaciones o funciones necesarias solo para reducir una puntuación.
+Revisa tres cosas.
 
-Puedes relacionar estas mejoras con [responsive design: buenas prácticas](/responsive-design-buenas-practicas), ya que tamaño de pantalla y forma de cargar recursos deben trabajar juntos.
+### Dimensiones
 
-La optimización más mantenible consiste en medir, simplificar y volver a medir. Una página con pocos recursos bien elegidos suele necesitar menos trucos para seguir siendo rápida.
+No cargues una fotografía de 2500 píxeles para mostrarla a 500.
 
-**Para seguir profundizando:** si trabajas con WordPress, revisa [cómo mejorar su velocidad paso a paso](/como-mejorar-la-velocidad-de-wordpress) y este [diagnóstico real de un WordPress lento](/wordpress-lento-diagnostico-real-paso-a-paso). Para una visión más amplia, consulta [qué medir en rendimiento web](/rendimiento-web-que-medir) y la [puesta a punto de una web antes del verano](/puesta-a-punto-web-antes-del-verano).
+Si el diseño utiliza varios tamaños, genera versiones adecuadas para cada caso en lugar de depender únicamente de CSS para reducirlas visualmente.
+
+### Compresión
+
+JPEG sigue siendo una opción razonable para fotografías y PNG para gráficos que necesitan transparencia o una reproducción muy limpia.
+
+WebP puede reducir bastante el peso en muchos casos y ya tiene buen soporte en varios navegadores, pero no conviene depender de un único formato sin comprobar compatibilidad. En una optimización real, el ahorro debe ir acompañado de una alternativa cuando sea necesaria.
+
+### Imágenes fuera de pantalla
+
+Una página larga no necesita descargar con la misma prioridad todas las imágenes que están varios desplazamientos por debajo.
+
+La carga diferida puede ayudar, pero en esta primera fase simplemente identifica cuántas imágenes se cargan sin ser visibles al entrar.
+
+## Revisa CSS y JavaScript por separado
+
+Una hoja CSS pesada y un JavaScript pesado producen problemas distintos.
+
+El CSS necesario para dibujar la página puede retrasar la visualización si está fragmentado o contiene mucho código que no se utiliza.
+
+JavaScript, además de descargarse, debe analizarse y ejecutarse. Un archivo relativamente pequeño puede causar más trabajo que una imagen mayor.
+
+En DevTools fíjate en:
+
+- scripts cargados desde terceros;
+- librerías completas utilizadas para una función pequeña;
+- plugins que añaden sus archivos en todas las páginas;
+- scripts situados en el encabezado que podrían no ser necesarios al inicio;
+- errores de consola que provoquen trabajo adicional.
+
+No cambies todavía el orden de carga si no conoces las dependencias. Un script puede necesitar que otro se haya ejecutado antes.
+
+## No olvides las fuentes web
+
+Las tipografías también son recursos.
+
+Una familia con regular, medium, semibold, bold, italic y varias variantes puede generar muchas descargas.
+
+Comprueba cuántos archivos de fuente se solicitan realmente y si todos se usan.
+
+También observa qué ocurre mientras llegan. Si el texto permanece invisible demasiado tiempo, el usuario percibirá la página como lenta aunque el resto de elementos ya esté disponible.
+
+## Vigila los servicios de terceros
+
+Analítica, publicidad, chats, vídeos incrustados, mapas, redes sociales y herramientas de seguimiento añaden recursos que no siempre controlas.
+
+Haz una prueba sencilla: identifica cuáles pertenecen a tu dominio y cuáles proceden de terceros.
+
+Después pregunta por cada integración:
+
+- ¿es imprescindible en todas las páginas?;
+- ¿puede cargarse solo cuando se necesita?;
+- ¿sigue utilizándose?;
+- ¿su coste de rendimiento está justificado?
+
+No se trata de eliminar Analytics o cualquier servicio útil. Se trata de saber cuánto cuestan antes de seguir añadiendo más.
+
+## Las nuevas Web Vitals sirven como referencia, no como único objetivo
+
+Google presentó en mayo de este año la iniciativa **Web Vitals**, con la intención de simplificar algunas métricas relacionadas con la experiencia de usuario.
+
+Entre las métricas principales aparecen LCP para la carga del contenido principal, FID para la respuesta a la primera interacción y CLS para la estabilidad visual.
+
+Son una referencia interesante, especialmente porque obligan a mirar aspectos que una simple medición de tiempo total no explica.
+
+Aun así, no conviene reducir toda la optimización a tres cifras. Si un formulario no funciona, una imagen aparece tarde o el servidor responde de forma irregular, el usuario seguirá teniendo un problema aunque una herramienta muestre una buena puntuación.
+
+## Crea una pequeña ficha de diagnóstico
+
+Antes de empezar a optimizar, guarda los datos.
+
+Puedes utilizar una tabla sencilla:
+
+| Dato | Resultado |
+| --- | --- |
+| URL probada | |
+| Fecha de prueba | |
+| Primera carga | |
+| Segunda carga | |
+| Peso total aproximado | |
+| Número de peticiones | |
+| Recurso más pesado | |
+| Tiempo de respuesta del servidor | |
+| Scripts de terceros detectados | |
+| Problema principal sospechado | |
+
+No necesitas precisión de laboratorio. Necesitas una referencia para comparar después.
+
+## Decide por dónde empezar
+
+Al terminar esta revisión deberías poder colocar el problema principal en uno de estos grupos:
+
+- servidor;
+- imágenes;
+- CSS;
+- JavaScript;
+- fuentes;
+- terceros;
+- caché;
+- una combinación de varios.
+
+Ese diagnóstico determina el siguiente paso.
+
+Si el peso está concentrado en imágenes y recursos de la parte visible, no tiene sentido empezar migrando el servidor. Si el HTML tarda varios segundos en llegar, comprimir un icono tampoco resolverá el problema.
+
+La regla más útil es sencilla: **mide, cambia una cosa y vuelve a medir**.
+
+En la siguiente parte vamos a trabajar sobre los recursos que descarga el navegador: imágenes, CSS y JavaScript.
+
+**Siguiente tutorial de la serie:** [Cómo optimizar imágenes, CSS y JavaScript para acelerar una web](/optimizar-imagenes-css-javascript-web).

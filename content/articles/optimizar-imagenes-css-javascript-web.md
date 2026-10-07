@@ -46,7 +46,7 @@ Para imágenes que se muestran a distintos tamaños puedes utilizar srcset y dej
 
 Por ejemplo:
 
-~~~html
+```html
 <img
   src="/img/foto-800.jpg"
   srcset="/img/foto-400.jpg 400w,
@@ -54,7 +54,7 @@ Por ejemplo:
           /img/foto-1200.jpg 1200w"
   sizes="(max-width: 600px) 100vw, 800px"
   alt="Ejemplo de imagen adaptable">
-~~~
+```
 
 Esto evita enviar siempre la versión más grande.
 
@@ -68,12 +68,12 @@ En julio de 2020 su compatibilidad es buena en Chrome, Firefox y Edge. Apple ha 
 
 El elemento picture permite ofrecer una alternativa:
 
-~~~html
+```html
 <picture>
   <source srcset="/img/foto.webp" type="image/webp">
   <img src="/img/foto.jpg" alt="Ejemplo de fotografía">
 </picture>
-~~~
+```
 
 Un navegador compatible utilizará WebP. El resto podrá cargar el JPEG.
 
@@ -103,14 +103,14 @@ La carga diferida o lazy loading permite posponer parte de ese trabajo.
 
 Los navegadores están empezando a incorporar soporte nativo mediante el atributo loading:
 
-~~~html
+```html
 <img
   src="/img/ejemplo.jpg"
   loading="lazy"
   width="800"
   height="500"
   alt="Imagen situada más abajo en la página">
-~~~
+```
 
 Utilízalo en imágenes situadas fuera de la primera pantalla y prueba siempre el resultado en los navegadores que utilice tu público.
 
@@ -124,13 +124,13 @@ Cuando el navegador no conoce el espacio que ocupará una imagen, el texto y otr
 
 Indicar width y height ayuda al navegador a reservar espacio.
 
-~~~html
+```html
 <img
   src="/img/producto.jpg"
   width="640"
   height="480"
   alt="Producto">
-~~~
+```
 
 Además de mejorar la sensación de estabilidad, esta práctica facilita que el diseño se comporte de forma más previsible mientras llegan los recursos.
 
@@ -183,17 +183,17 @@ Los scripts tradicionales colocados en el head pueden detener el análisis del H
 
 Para scripts que no necesiten ejecutarse inmediatamente puedes valorar defer:
 
-~~~html
+```html
 <script src="/js/menu.js" defer></script>
-~~~
+```
 
 Con defer, el navegador puede seguir procesando el documento y ejecutar el script cuando el HTML ya ha sido analizado.
 
 async tiene un comportamiento distinto:
 
-~~~html
+```html
 <script src="https://ejemplo.com/estadisticas.js" async></script>
-~~~
+```
 
 Puede ser apropiado para scripts independientes que no dependen del orden de otros archivos.
 
@@ -246,13 +246,13 @@ Si la web usa regular y bold, cargar también light, medium, semibold y tres cur
 
 font-display: swap puede evitar que el texto permanezca invisible durante demasiado tiempo mientras llega la fuente:
 
-~~~css
+```css
 @font-face {
   font-family: "MiFuente";
   src: url("/fonts/mifuente.woff2") format("woff2");
   font-display: swap;
 }
-~~~
+```
 
 Comprueba el cambio visual cuando se sustituye la fuente de sistema por la definitiva.
 

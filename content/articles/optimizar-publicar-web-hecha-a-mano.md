@@ -61,7 +61,7 @@ mi-caja-web/
 
 Cuanto más sencilla sea la estructura, más fácil será detectar después un enlace roto o un archivo que falta.
 
-## Revisa cada `<title>` y cada meta description
+## Revisa cada `<title>` y cada `<meta name="description">`
 
 Cada página debería describirse por sí misma.
 

@@ -5,7 +5,7 @@ excerpt: "Una web hecha a mano puede hacer mucho más que mostrar contenido. En 
 author: "Sucender"
 canonical: "/crear-herramientas-javascript-web"
 category: "tutoriales"
-tags: ["Desarrollo web", "JavaScript", "HTML", "Herramientas"]
+tags: ["Desarrollo web", "JavaScript"]
 publishedDate: "2019-06-13"
 featuredImage: "/img/articulo/crear-herramientas-javascript-web-featured.svg"
 heroClass: "bg-yellow"

@@ -86,12 +86,14 @@ robots: "index,follow"
 
 <p>Desactívalos temporalmente y comprueba si la web vuelve a funcionar.</p>
 
-<pre><code>Checklist rápido:
-- Desactivar plugins
-- Revisar theme
-- Comprobar hosting
-- Analizar error
-- Revisar logs</code></pre>
+<p><strong>Checklist rápido:</strong></p>
+<ul>
+<li>Desactivar plugins.</li>
+<li>Revisar el theme.</li>
+<li>Comprobar el hosting.</li>
+<li>Analizar el error.</li>
+<li>Revisar logs.</li>
+</ul>
 
 <h3>6. Activa modo debug o revisa logs</h3>
 

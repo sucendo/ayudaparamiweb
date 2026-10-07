@@ -13,8 +13,8 @@ test('la demo de home es una ruta aislada y no indexable', () => {
 
   const html = fs.readFileSync(path.join(__dirname, '..', 'views', 'pages', 'home-demo.ejs'), 'utf8');
   assert.match(html, /noindex,nofollow/);
-  assert.match(html, /Aprende, construye y mejora tu web con criterio/);
-  assert.match(html, /Herramientas propias/);
+  assert.match(html, /Aprende, crea y mejora tu web/);
+  assert.match(html, /Herramientas/);
   assert.match(html, /Laboratorio/);
 });
 

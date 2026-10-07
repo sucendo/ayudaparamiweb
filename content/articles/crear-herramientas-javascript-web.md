@@ -29,7 +29,7 @@ En `herramientas.html` podemos crear dos bloques:
 
 La estructura inicial puede ser:
 
-~~~html
+```html
 <main class="contenido">
   <h1>Herramientas</h1>
 
@@ -61,13 +61,13 @@ La estructura inicial puede ser:
 </main>
 
 <script src="js/herramientas.js"></script>
-~~~
+```
 
 Crea ahora:
 
-~~~text
+```text
 js/herramientas.js
-~~~
+```
 
 y empezaremos con la primera utilidad.
 
@@ -82,18 +82,18 @@ Un contador es un buen ejemplo porque permite aprender a:
 
 El HTML ya contiene:
 
-~~~html
+```html
 <textarea id="texto-contador" rows="8"></textarea>
 
 <p>
   Caracteres:
   <strong id="resultado-caracteres">0</strong>
 </p>
-~~~
+```
 
 El JavaScript puede ser:
 
-~~~javascript
+```javascript
 var campoTexto = document.getElementById('texto-contador');
 var salidaCaracteres = document.getElementById('resultado-caracteres');
 
@@ -102,7 +102,7 @@ if (campoTexto && salidaCaracteres) {
     salidaCaracteres.textContent = campoTexto.value.length;
   });
 }
-~~~
+```
 
 Cada vez que cambia el contenido del textarea, JavaScript cuenta la longitud del texto y actualiza el resultado.
 
@@ -112,17 +112,17 @@ Podemos aprovechar el mismo evento para mostrar más información.
 
 Cambia el HTML:
 
-~~~html
+```html
 <div class="resultados-texto">
   <p>Caracteres: <strong id="resultado-caracteres">0</strong></p>
   <p>Palabras: <strong id="resultado-palabras">0</strong></p>
   <p>Líneas: <strong id="resultado-lineas">0</strong></p>
 </div>
-~~~
+```
 
 Y amplía el JavaScript:
 
-~~~javascript
+```javascript
 var campoTexto = document.getElementById('texto-contador');
 var salidaCaracteres = document.getElementById('resultado-caracteres');
 var salidaPalabras = document.getElementById('resultado-palabras');
@@ -149,7 +149,7 @@ if (
       : 0;
   });
 }
-~~~
+```
 
 Ya tenemos una herramienta que responde al instante y no envía ningún dato a ningún sitio.
 
@@ -157,7 +157,7 @@ Ya tenemos una herramienta que responde al instante y no envía ningún dato a n
 
 Añade a `css/herramientas.css`:
 
-~~~css
+```css
 textarea,
 input,
 button {
@@ -187,7 +187,7 @@ button {
 .resultados-texto p {
   margin: 0;
 }
-~~~
+```
 
 No necesitamos un diseño complicado. La herramienta debe ser clara antes que decorativa.
 
@@ -197,21 +197,21 @@ Un slug es la parte legible de una URL.
 
 Por ejemplo:
 
-~~~text
+```text
 Cómo crear una web sin CMS
-~~~
+```
 
 puede convertirse en:
 
-~~~text
+```text
 como-crear-una-web-sin-cms
-~~~
+```
 
 Podemos generar uno de forma sencilla.
 
 En JavaScript:
 
-~~~javascript
+```javascript
 var textoSlug = document.getElementById('texto-slug');
 var botonSlug = document.getElementById('generar-slug');
 var resultadoSlug = document.getElementById('resultado-slug');
@@ -234,7 +234,7 @@ if (textoSlug && botonSlug && resultadoSlug) {
     resultadoSlug.textContent = crearSlug(textoSlug.value);
   });
 }
-~~~
+```
 
 Hemos evitado depender de librerías externas.
 
@@ -246,18 +246,18 @@ Podríamos complicar la herramienta intentando acceder al portapapeles, pero no 
 
 Una solución sencilla y compatible consiste en mostrar el resultado dentro de un campo:
 
-~~~html
+```html
 <input
   id="resultado-slug"
   type="text"
   readonly>
-~~~
+```
 
 Y en JavaScript:
 
-~~~javascript
+```javascript
 resultadoSlug.value = crearSlug(textoSlug.value);
-~~~
+```
 
 El usuario puede seleccionar el contenido y copiarlo normalmente.
 
@@ -269,7 +269,7 @@ Podemos añadir una tercera utilidad sin mucho código.
 
 HTML:
 
-~~~html
+```html
 <section class="tarjeta-herramienta">
   <h2>Convertir mayúsculas y minúsculas</h2>
 
@@ -283,11 +283,11 @@ HTML:
     minúsculas
   </button>
 </section>
-~~~
+```
 
 JavaScript:
 
-~~~javascript
+```javascript
 var textoConvertir = document.getElementById('texto-convertir');
 var botonMayusculas = document.getElementById('a-mayusculas');
 var botonMinusculas = document.getElementById('a-minusculas');
@@ -301,7 +301,7 @@ if (textoConvertir && botonMayusculas && botonMinusculas) {
     textoConvertir.value = textoConvertir.value.toLowerCase();
   });
 }
-~~~
+```
 
 Con unas pocas líneas ya hemos convertido una página informativa en una pequeña caja de herramientas.
 
@@ -309,11 +309,11 @@ Con unas pocas líneas ya hemos convertido una página informativa en una peque�
 
 Nuestra web empieza a tener:
 
-~~~text
+```text
 js/
 ├── app.js
 └── herramientas.js
-~~~
+```
 
 `app.js` puede cargarse en todo el sitio.
 
@@ -329,7 +329,7 @@ Si empiezas a añadir varias utilidades, evita escribir todo el código seguido.
 
 Puedes separar cada una:
 
-~~~javascript
+```javascript
 function iniciarContador() {
   var campo = document.getElementById('texto-contador');
 
@@ -352,7 +352,7 @@ function iniciarSlug() {
 
 iniciarContador();
 iniciarSlug();
-~~~
+```
 
 Esto facilita localizar errores y añadir nuevas funciones.
 
@@ -362,16 +362,16 @@ Aunque una herramienta se ejecute solo en el navegador, no debes asumir que el u
 
 Si una calculadora espera números:
 
-~~~html
+```html
 <input id="numero-a" type="number">
 <input id="numero-b" type="number">
 <button id="sumar" type="button">Sumar</button>
 <p id="resultado-suma"></p>
-~~~
+```
 
 puedes comprobarlos así:
 
-~~~javascript
+```javascript
 var numeroA = document.getElementById('numero-a');
 var numeroB = document.getElementById('numero-b');
 var botonSumar = document.getElementById('sumar');
@@ -390,7 +390,7 @@ if (numeroA && numeroB && botonSumar && resultadoSuma) {
     resultadoSuma.textContent = a + b;
   });
 }
-~~~
+```
 
 Esta validación no sustituye a la del servidor cuando existen datos sensibles o formularios reales, pero para una herramienta local evita resultados confusos.
 
@@ -400,15 +400,15 @@ Cuando algo no funcione, abre las herramientas de desarrollo del navegador y rev
 
 También puedes escribir mensajes temporalmente:
 
-~~~javascript
+```javascript
 console.log('Herramientas cargadas correctamente');
-~~~
+```
 
 o inspeccionar una variable:
 
-~~~javascript
+```javascript
 console.log(campoTexto.value);
-~~~
+```
 
 No conviertas la depuración en una sucesión de cambios al azar.
 

@@ -25,7 +25,7 @@ Este enfoque tiene una consecuencia muy útil: antes de escribir código, convie
 ### 2) Variables: guardar información para poder trabajar
 Una variable es una caja con nombre donde guardas un dato. Puede ser un número, un texto o un valor de verdadero/falso. Sin variables no puedes trabajar, porque no tienes dónde almacenar resultados intermedios. Imagina que estás construyendo una calculadora y necesitas recordar los números introducidos por el usuario: ahí entran las variables.
 
-```
+```javascript
 var nombre = "Laura";
 var edad = 23;
 var activo = true;
@@ -51,7 +51,7 @@ Comprender esto evita errores típicos como sumar dos textos esperando un númer
 ### 4) Operadores: herramientas para transformar datos
 Los operadores te permiten hacer cálculos y comparaciones. Los aritméticos (sumar, restar, multiplicar, dividir) son los primeros que conoces. Luego vienen los de comparación (`>`, `<`, `==`) y los lógicos (`&&`, `||`, `!`), que se usan para construir reglas.
 
-```
+```javascript
 var a = 10;
 var b = 5;
 
@@ -65,7 +65,7 @@ No memorices operadores sin contexto. Practica con ejemplos donde puedas ver el 
 ### 5) Condicionales: tomar decisiones en el programa
 Un programa útil siempre toma decisiones. Si el usuario tiene contraseña válida, entra; si no, se muestra error. Esa lógica se expresa con condicionales. El más conocido es `if`, acompañado de `else` cuando hay caminos alternativos.
 
-```
+```javascript
 var edad = 17;
 
 if (edad >= 18) {
@@ -82,7 +82,7 @@ Un error común al comenzar es anidar demasiados `if`. Si una regla se vuelve mu
 ### 6) Bucles: repetir tareas sin copiar código
 Si necesitas mostrar 100 elementos, no vas a escribir 100 líneas iguales. Para eso existen los bucles. Permiten repetir una acción mientras se cumpla una condición. Los más usados al empezar son `for` y `while`.
 
-```
+```javascript
 for (var i = 1; i <= 5; i++) {
   console.log("Vuelta número: " + i);
 }
@@ -93,7 +93,7 @@ La repetición es potente, pero también peligrosa si no controlas la condición
 ### 7) Arrays y objetos: organizar conjuntos de datos
 Cuando trabajas con varios elementos relacionados, necesitas estructuras. Un array guarda una lista ordenada; un objeto guarda pares clave/valor. Ambas estructuras aparecen constantemente en desarrollo web.
 
-```
+```javascript
 var frutas = ["manzana", "pera", "plátano"];
 var usuario = {
   nombre: "Marta",
@@ -110,7 +110,7 @@ Aprender a recorrer arrays y leer objetos te abre la puerta a procesar datos de 
 ### 8) Funciones: encapsular lógica y reutilizar
 Una función agrupa instrucciones que puedes ejecutar cuando quieras. Te permite evitar duplicación y hacer el código más limpio. En lugar de repetir una fórmula en varios sitios, la escribes una vez y la llamas con distintos valores.
 
-```
+```javascript
 function calcularIva(precio) {
   return precio * 0.21;
 }
@@ -146,7 +146,7 @@ Piensa que tu código lo leerá otra persona… o tú dentro de seis meses. Si c
 ### 12) Mini proyecto guiado: lista de tareas
 La mejor forma de aprender es construir algo pequeño. Un buen primer proyecto es una lista de tareas: crear tarea, mostrar tareas y marcar completada. Este proyecto toca variables, arrays, funciones, condicionales y eventos de interfaz.
 
-```
+```javascript
 var tareas = [];
 
 function agregarTarea(texto) {
@@ -198,7 +198,7 @@ También es útil crear tu propio cuaderno de aprendizaje: un archivo con concep
 ### 17) Versionado básico con Git desde el inicio
 Aunque estés empezando, conviene usar control de versiones. Git te permite guardar cambios, volver atrás y trabajar sin miedo a romper todo. El error típico del principiante es copiar carpetas con nombres como “proyecto-final-ahora-si”. Con Git ese caos desaparece: cada avance queda registrado con un mensaje claro.
 
-```
+```bash
 git init
 git add .
 git commit -m "Primer commit: estructura inicial"

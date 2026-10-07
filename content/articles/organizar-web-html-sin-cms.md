@@ -5,7 +5,7 @@ excerpt: "Una web estática puede crecer sin convertirse en un caos si separas b
 author: "Sucender"
 canonical: "/organizar-web-html-sin-cms"
 category: "tutoriales"
-tags: ["Desarrollo web", "HTML", "CSS", "JavaScript"]
+tags: ["Desarrollo web", "CSS", "JavaScript"]
 publishedDate: "2019-01-31"
 featuredImage: "/img/articulo/organizar-web-html-sin-cms-featured.svg"
 heroClass: "bg-blue"

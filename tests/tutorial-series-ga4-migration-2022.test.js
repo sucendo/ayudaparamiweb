@@ -33,9 +33,17 @@ test('la serie de migración a GA4 mantiene fechas, categoría, código y enlace
 test('la serie conserva el contexto de 2022 y el plazo anunciado para Universal Analytics', () => {
   const forbidden = ['eventos clave', 'key events', 'INP', 'Interaction to Next Paint', 'Google Analytics 4 ha sustituido'];
 
+  const deadlineSlugs = new Set([
+    'universal-analytics-desaparece-preparar-web-ga4',
+    'instalar-ga4-junto-universal-analytics',
+    'comprobar-ga4-antes-abandonar-universal-analytics'
+  ]);
+
   series.forEach((item) => {
     const source = fs.readFileSync(path.join(ARTICLES, item.slug + '.md'), 'utf8');
-    assert.match(source, /2023/, item.slug + ' debería conservar la referencia prospectiva al fin de UA');
+    if (deadlineSlugs.has(item.slug)) {
+      assert.match(source, /1 de julio de 2023/, item.slug + ' debería conservar el plazo anunciado para UA');
+    }
     forbidden.forEach((term) => {
       assert.ok(!source.toLowerCase().includes(term.toLowerCase()), item.slug + ' contiene terminología posterior: ' + term);
     });

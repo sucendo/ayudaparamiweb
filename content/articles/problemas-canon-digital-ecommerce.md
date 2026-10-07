@@ -38,12 +38,14 @@ robots: "index,follow"
 								
 									<p>Si en cambio los productos están mezclados, mal categorizados o no existe una forma clara de saber cuáles requieren tratamiento especial, cualquier automatización termina siendo frágil. Por eso merece la pena empezar ordenando el catálogo y definiendo una regla simple.</p>
 								
-									<pre><code>Regla base recomendada:
-								1. Identificar productos afectados
-								2. Marcar esos productos con una categoría, etiqueta o atributo
-								3. Decidir si el canon va incluido en el precio o se mostrará aparte
-								4. Preparar una excepción clara para clientes profesionales si aplica
-								5. Documentar la lógica para no depender de la memoria</code></pre>
+									<p><strong>Regla base recomendada:</strong></p>
+<ol>
+<li>Identificar los productos afectados.</li>
+<li>Marcarlos con una categoría, etiqueta o atributo.</li>
+<li>Decidir si el canon va incluido en el precio o se mostrará aparte.</li>
+<li>Preparar una excepción clara para clientes profesionales si aplica.</li>
+<li>Documentar la lógica para no depender de la memoria.</li>
+</ol>
 								
 									<h2>Precio y presentación</h2>
 
@@ -70,15 +72,16 @@ robots: "index,follow"
 								
 									<p>Este enfoque no sirve para todos los casos, pero como base es razonable. Además, permite introducir más adelante condiciones adicionales, como excluir a determinados clientes marcados como profesionales.</p>
 								
-									<pre><code>// Ejemplo simple para WooCommerce
+									```php
+// Ejemplo simple para WooCommerce
 								// Añade un cargo fijo por cada producto de una categoría concreta
 								
 								add_action('woocommerce_cart_calculate_fees', function($cart) {
-									if (is_admin() &amp;&amp; !defined('DOING_AJAX')) return;
+									if (is_admin() && !defined('DOING_AJAX')) return;
 								
 									$canon_total = 0;
 								
-									foreach ($cart-&gt;get_cart() as $cart_item) {
+									foreach ($cart->get_cart() as $cart_item) {
 										$product_id = $cart_item['product_id'];
 								
 										if (has_term('canon-digital', 'product_cat', $product_id)) {
@@ -90,11 +93,11 @@ robots: "index,follow"
 									// Ejemplo de exclusión para cliente profesional marcado en user_meta
 									$exento = is_user_logged_in() ? get_user_meta(get_current_user_id(), '_canon_exento', true) : '';
 								
-									if ($canon_total &gt; 0 &amp;&amp; !$exento) {
-										$cart-&gt;add_fee('Canon digital', $canon_total, true);
+									if ($canon_total > 0 && !$exento) {
+										$cart->add_fee('Canon digital', $canon_total, true);
 									}
 								});
-								</code></pre>
+```
 								
 									<p>La ventaja de esta idea es que se apoya en la estructura del catálogo y no obliga a rehacer la tienda. La desventaja es que conviene revisar muy bien descuentos, impuestos y casos mixtos para no generar resultados inesperados.</p>
 								
@@ -103,7 +106,8 @@ robots: "index,follow"
 								
 									<p>Esto no resuelve por sí solo el desglose en carrito o factura, pero sí permite empezar con una solución clara, mantenible y compatible con futuras mejoras.</p>
 								
-									<pre><code>{* Ejemplo simple en product.tpl o plantilla equivalente *}
+									```smarty
+{* Ejemplo simple en product.tpl o plantilla equivalente *}
 								{foreach from=$features item=feature}
 									{if $feature.name == 'Canon digital'}
 										<div class="alert alert-info canon-digital-note">
@@ -111,7 +115,7 @@ robots: "index,follow"
 										</div>
 									{/if}
 								{/foreach}
-								</code></pre>
+```
 								
 									<p>Este enfoque funciona especialmente bien cuando el objetivo inicial es informar correctamente sin complicar todavía el cálculo en el carrito. Más adelante, si la tienda lo necesita, ya se puede estudiar un módulo específico o una ampliación más completa.</p>
 								
@@ -133,7 +137,7 @@ robots: "index,follow"
 								
 									<p>En la práctica, casi siempre compensa apoyarse en un dato fácil de mantener:</p>
 								
-									<pre><code>SKU / categoría / etiqueta / atributo / campo personalizado</code></pre>
+									<p><strong>Dato de control recomendado:</strong> <code>SKU</code>, categoría, etiqueta, atributo o campo personalizado.</p>
 								
 									<p>Con eso se pueden construir reglas pequeñas, visibles y fáciles de corregir sin depender de retoques repartidos por toda la tienda.</p>
 								

@@ -205,3 +205,5 @@ Una buena auditoría inicial no necesita encontrar absolutamente todo. Necesita 
 Con esa información ya puedes dejar de trabajar por intuición.
 
 En una próxima entrega veremos el paso que suele resultar más difícil: **cómo convertir esta lista de problemas en un orden de trabajo realista**, para no dedicar una semana a detalles pequeños mientras los problemas de mayor impacto siguen esperando.
+
+**Siguiente tutorial de la serie:** [Cómo priorizar los problemas de una web después de una auditoría](/priorizar-problemas-web-despues-auditoria).

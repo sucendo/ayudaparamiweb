@@ -180,7 +180,7 @@ Si decides cambiar el diseño del aviso, solo modificas una regla.
 
 Vamos a crear `js/app.js`.
 
-Aunque todavía tengamos pocas funciones, es mejor no llenar cada página de bloques `script`.
+Aunque todavía tengamos pocas funciones, es mejor no llenar cada página de bloques `<script>`.
 
 Podemos empezar con algo tan sencillo como marcar el año del pie:
 

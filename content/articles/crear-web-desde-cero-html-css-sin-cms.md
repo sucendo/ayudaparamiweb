@@ -365,7 +365,7 @@ Más adelante, si necesitamos recibir esos datos, tendremos que añadir una part
 
 Es importante distinguir estas dos capas: HTML puede crear el formulario, pero hace falta algún sistema que procese realmente el envío.
 
-## No olvides title y description
+## No olvides `<title>` y `<meta name="description">`
 
 Aunque todavía estamos construyendo, cada página debería tener su propio título y descripción.
 

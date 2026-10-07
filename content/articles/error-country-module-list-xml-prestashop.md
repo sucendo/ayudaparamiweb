@@ -38,20 +38,24 @@ robots: "index,follow"
 
 								<p>Esto provoca mensajes como:</p>
 
-								<pre><code>StartTag: invalid element name
+								```text
+StartTag: invalid element name
 Extra content at the end of the document
-Input is not proper UTF-8</code></pre>
+Input is not proper UTF-8
+```
 
 								<h2>Resolución paso a paso</h2>
 
 <h3>Cómo solucionarlo paso a paso</h3>
 
-								<pre><code>Pasos recomendados:
-- Revisar logs del servidor
-- Comprobar codificación UTF-8
-- Sustituir archivo XML si está corrupto
-- Revisar módulos instalados recientemente
-- Limpiar caché de PrestaShop</code></pre>
+								<p><strong>Pasos recomendados:</strong></p>
+<ul>
+<li>Revisar logs del servidor.</li>
+<li>Comprobar codificación UTF-8.</li>
+<li>Sustituir el archivo XML si está corrupto.</li>
+<li>Revisar módulos instalados recientemente.</li>
+<li>Limpiar la caché de PrestaShop.</li>
+</ul>
 
 								<h2>Logs, módulos y caché</h2>
 

@@ -35,7 +35,7 @@ No vamos a utilizar base de datos. Cada página será un archivo HTML y el dise�
 
 La estructura inicial será esta:
 
-~~~text
+```text
 mi-caja-web/
 ├── index.html
 ├── acerca.html
@@ -45,7 +45,7 @@ mi-caja-web/
 │   └── estilos.css
 └── img/
     └── logo.png
-~~~
+```
 
 Puedes crear estas carpetas con el explorador de archivos y editar los documentos con cualquier editor de texto. Conviene utilizar un editor que destaque HTML y CSS para detectar errores con más facilidad.
 
@@ -57,7 +57,7 @@ HTML define la estructura del documento.
 
 Crea un archivo llamado `index.html` y escribe:
 
-~~~html
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -97,7 +97,7 @@ Crea un archivo llamado `index.html` y escribe:
 
 </body>
 </html>
-~~~
+```
 
 Guarda el archivo y haz doble clic sobre él. El navegador debería abrir la página directamente.
 
@@ -109,9 +109,9 @@ No hace falta tener todavía un servidor para trabajar con este ejemplo. HTML y 
 
 Esta primera línea:
 
-~~~html
+```html
 <!DOCTYPE html>
-~~~
+```
 
 indica al navegador que el documento utiliza HTML5.
 
@@ -133,11 +133,11 @@ Dentro de `body` está lo que verá el visitante.
 
 En nuestro caso tenemos tres grandes zonas:
 
-~~~html
+```html
 <header>...</header>
 <main>...</main>
 <footer>...</footer>
-~~~
+```
 
 Utilizar etiquetas que describen la función de cada bloque hace el código más fácil de leer y mantener.
 
@@ -147,7 +147,7 @@ Ahora crea `css/estilos.css`.
 
 Empieza con algo sencillo:
 
-~~~css
+```css
 * {
   box-sizing: border-box;
 }
@@ -202,7 +202,7 @@ nav a {
   text-align: center;
   color: #666;
 }
-~~~
+```
 
 Actualiza la página en el navegador.
 
@@ -222,7 +222,7 @@ Después cambia el contenido de cada `main`.
 
 Por ejemplo, en `acerca.html`:
 
-~~~html
+```html
 <main class="contenido">
   <h1>Acerca de esta web</h1>
 
@@ -239,11 +239,11 @@ Por ejemplo, en `acerca.html`:
     <li>Notas sobre desarrollo web.</li>
   </ul>
 </main>
-~~~
+```
 
 En `herramientas.html` podemos dejar preparado el espacio que utilizaremos más adelante:
 
-~~~html
+```html
 <main class="contenido">
   <h1>Herramientas</h1>
 
@@ -257,11 +257,11 @@ En `herramientas.html` podemos dejar preparado el espacio que utilizaremos más 
     <p>Esta zona también funcionará directamente en el navegador.</p>
   </section>
 </main>
-~~~
+```
 
 Añade al CSS:
 
-~~~css
+```css
 .tarjeta {
   margin: 20px 0;
   padding: 20px;
@@ -272,7 +272,7 @@ Añade al CSS:
 .tarjeta h2 {
   margin-top: 0;
 }
-~~~
+```
 
 Todavía no hacen nada. El objetivo ahora es disponer de una estructura sobre la que podamos trabajar.
 
@@ -282,15 +282,15 @@ En una web pequeña no necesitas escribir la dirección completa cada vez.
 
 Desde `index.html` puedes enlazar otra página así:
 
-~~~html
+```html
 <a href="contacto.html">Contacto</a>
-~~~
+```
 
 Y para cargar la hoja de estilos:
 
-~~~html
+```html
 <link rel="stylesheet" href="css/estilos.css">
-~~~
+```
 
 Estas son rutas relativas: el navegador busca el archivo respecto a la ubicación del documento actual.
 
@@ -302,13 +302,13 @@ Una web hecha a mano también debe poder leerse desde un teléfono.
 
 Nuestro diseño ya incluye:
 
-~~~html
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
-~~~
+```
 
 Ahora podemos añadir una media query sencilla:
 
-~~~css
+```css
 @media (max-width: 650px) {
   .cabecera {
     padding: 15px 20px;
@@ -324,7 +324,7 @@ Ahora podemos añadir una media query sencilla:
     padding: 22px;
   }
 }
-~~~
+```
 
 Reduce el ancho de la ventana del navegador y observa cómo cambia el menú.
 
@@ -336,7 +336,7 @@ Sin PHP ni otro lenguaje de servidor, un formulario HTML no puede enviar por sí
 
 Pero podemos dejar preparada la interfaz:
 
-~~~html
+```html
 <main class="contenido">
   <h1>Contacto</h1>
 
@@ -359,7 +359,7 @@ Pero podemos dejar preparada la interfaz:
     <button type="submit">Enviar</button>
   </form>
 </main>
-~~~
+```
 
 Más adelante, si necesitamos recibir esos datos, tendremos que añadir una parte de servidor o utilizar un servicio externo.
 
@@ -371,12 +371,12 @@ Aunque todavía estamos construyendo, cada página debería tener su propio tít
 
 Por ejemplo, para herramientas:
 
-~~~html
+```html
 <title>Herramientas | Mi Caja Web</title>
 <meta
   name="description"
   content="Pequeñas herramientas web creadas con JavaScript.">
-~~~
+```
 
 No copies exactamente el mismo `title` en todas las páginas.
 

@@ -55,7 +55,7 @@ La hoja `estilos.css` puede contener:
 - botones;
 - contenedores;
 - tarjetas;
-- footer;
+- `<footer>`;
 - reglas responsive comunes.
 
 Si una sección empieza a necesitar muchas reglas propias, puedes darle su propio archivo.
@@ -101,7 +101,7 @@ Todas las páginas deberían compartir al menos:
 - hoja de estilos;
 - cabecera;
 - navegación;
-- footer.
+- `<footer>`.
 
 Una plantilla básica puede quedar así:
 

@@ -16,7 +16,7 @@ Mejorar una web sin haberla revisado antes suele producir un problema muy concre
 
 Esta auditoría está pensada como una **primera fotografía del sitio antes de tocar nada**. No pretende sustituir una auditoría SEO exhaustiva ni una revisión de seguridad, sino establecer un orden de trabajo. Al terminar deberías tener tres cosas: una lista de problemas, la evidencia que demuestra cada uno y una idea clara de qué merece atención primero.
 
-## 1. Guarda una referencia antes de cambiar nada
+## Guarda una referencia antes de cambiar nada
 
 Antes de corregir, documenta el estado actual. Parece burocrático, pero después será la única forma de saber si una mejora realmente funcionó.
 
@@ -34,7 +34,7 @@ No necesitas crear un informe enorme. Una hoja con URL, problema, evidencia y ob
 
 Si estás auditando una web de un cliente, añade también el objetivo real del sitio. Una tienda quiere vender; una web de servicios quiere contactos; un medio quiere lectura y recurrencia. Sin ese contexto es fácil priorizar métricas que no tienen relación con el negocio.
 
-## 2. Comprueba que las páginas importantes pueden encontrarse
+## Comprueba que las páginas importantes pueden encontrarse
 
 Empieza por la capa más básica: ¿las páginas que deberían existir están accesibles?
 
@@ -50,7 +50,7 @@ Después compara ese recorrido con el sitemap. El sitemap debería contener las 
 
 Una discrepancia aquí ya es una señal útil: si una URL está en el sitemap pero ningún usuario puede llegar a ella mediante enlaces normales, merece revisión.
 
-## 3. Revisa indexación, robots y canonical antes del contenido
+## Revisa indexación, robots y canonical antes del contenido
 
 No empieces cambiando títulos si la página ni siquiera puede indexarse correctamente.
 
@@ -69,7 +69,7 @@ También debes buscar versiones duplicadas: parámetros innecesarios, rutas anti
 
 En Ayuda para mi Web ya tenemos utilidades como el [validador de canonical y hreflang](/validador-canonical-hreflang) y el [auditor SEO técnico](/auditor-seo-tecnico), que pueden servir como apoyo en esta parte de la revisión.
 
-## 4. Haz una pasada por títulos, encabezados y propósito de cada URL
+## Haz una pasada por títulos, encabezados y propósito de cada URL
 
 Ahora sí entra el contenido.
 
@@ -86,7 +86,7 @@ Una revisión práctica consiste en comprobar:
 
 El [analizador de encabezados HTML](/analizador-encabezados-html) puede ayudarte a detectar saltos o jerarquías extrañas, pero la decisión final sigue siendo editorial. Una estructura técnicamente válida puede seguir siendo confusa.
 
-## 5. Busca contenido duplicado, débil o que compite consigo mismo
+## Busca contenido duplicado, débil o que compite consigo mismo
 
 La siguiente pregunta es si tienes varias páginas intentando resolver lo mismo.
 
@@ -103,7 +103,7 @@ Marca como candidatos a revisión los contenidos que:
 - llevan tiempo sin utilidad aparente;
 - incluyen información que ya no representa el servicio o producto actual.
 
-## 6. Comprueba los enlaces internos y los destinos rotos
+## Comprueba los enlaces internos y los destinos rotos
 
 Los enlaces internos dicen qué páginas consideras relacionadas e importantes. También son una de las formas más fáciles de crear problemas cuando una web lleva años creciendo.
 
@@ -119,7 +119,7 @@ Puedes utilizar el [analizador de enlaces HTML](/analizador-enlaces-html) para r
 
 Un error habitual es arreglar una URL con una redirección y dejar cientos de enlaces internos apuntando a la dirección antigua. La redirección evita el error, pero no corrige la arquitectura.
 
-## 7. Prueba la experiencia móvil como usuario, no solo con una herramienta
+## Prueba la experiencia móvil como usuario, no solo con una herramienta
 
 Abre el sitio desde un móvil real y completa las acciones importantes.
 
@@ -138,7 +138,7 @@ Muchas incidencias móviles no aparecen en un análisis automático porque depen
 
 Anota cada problema con una captura o una descripción reproducible. "En móvil se ve mal" no es una tarea accionable; "el botón de enviar queda debajo del aviso de cookies a 390 px de ancho" sí lo es.
 
-## 8. Mide rendimiento en páginas representativas
+## Mide rendimiento en páginas representativas
 
 No midas únicamente la portada. Elige distintos tipos de página: una entrada, una herramienta, una categoría y una página comercial si existe.
 
@@ -155,7 +155,7 @@ El objetivo no es perseguir una puntuación perfecta. Es detectar cuellos de bot
 
 Si una incidencia aparece en cien páginas porque pertenece al layout común, tendrá más prioridad que un detalle menor en una única URL.
 
-## 9. Verifica formularios, búsquedas y funciones que generan valor
+## Verifica formularios, búsquedas y funciones que generan valor
 
 Esta parte suele olvidarse en auditorías demasiado centradas en SEO.
 
@@ -171,7 +171,7 @@ Documenta cada flujo con tres estados:
 
 Eso te permitirá separar fallos críticos de mejoras de experiencia.
 
-## 10. Contrasta los problemas con datos antes de priorizar
+## Contrasta los problemas con datos antes de priorizar
 
 Hasta aquí has reunido observaciones. Ahora comprueba cuáles tienen impacto real.
 
@@ -179,7 +179,7 @@ Search Console puede ayudarte a detectar páginas con impresiones que pierden cl
 
 No conviertas una métrica aislada en una conclusión. Una página con poco tráfico puede ser crítica si genera contactos de alto valor. Una página con mucho tráfico puede ser secundaria si no ayuda al objetivo del sitio.
 
-## 11. Cierra la auditoría con una lista que se pueda ejecutar
+## Cierra la auditoría con una lista que se pueda ejecutar
 
 No termines con un documento de cincuenta páginas sin orden. Convierte cada hallazgo en una tarea.
 

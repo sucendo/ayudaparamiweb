@@ -337,7 +337,7 @@ En nuestro ejemplo hemos colocado los scripts al final del body:
 
 Así el navegador puede procesar primero buena parte del HTML.
 
-También existe el atributo `defer`:
+También puedes utilizar el atributo `defer` directamente en `<script>`:
 
 ```html
 <script src="js/app.js" defer></script>

@@ -62,7 +62,7 @@ El primer paso es instalar Git en tu equipo. El proceso es bastante sencillo y, 
 
 Después de instalarlo, es recomendable configurar tu usuario:
 
-```
+```bash
 git config --global user.name "Tu Nombre"
 git config --global user.email "tu@email.com"
 ```
@@ -75,7 +75,7 @@ Un repositorio es el espacio donde Git guarda toda la información del proyecto:
 
 Crear un repositorio es muy sencillo:
 
-```
+```bash
 git init
 ```
 
@@ -100,7 +100,7 @@ Un commit es una especie de “foto” del proyecto en un momento concreto. Guar
 
 Un flujo básico sería:
 
-```
+```bash
 git add .
 git commit -m "Primer commit"
 ```
@@ -116,7 +116,7 @@ Una vez tienes tu repositorio local, puedes subirlo a GitHub para guardarlo en l
 
 El proceso básico es:
 
-```
+```bash
 git remote add origin https://github.com/usuario/repositorio.git
 git push -u origin main
 ```

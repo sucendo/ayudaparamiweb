@@ -54,7 +54,9 @@ robots: "index,follow"
 
 <p>Renómbralo temporalmente y comprueba si la web carga. Si es así, puedes regenerarlo desde WordPress o crear uno nuevo básico.</p>
 
-<pre><code>Ejemplo básico de .htaccess:
+<p>Ejemplo básico de <code>.htaccess</code>:</p>
+
+```apacheconf
 # BEGIN WordPress
 RewriteEngine On
 RewriteBase /
@@ -62,7 +64,8 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
-# END WordPress</code></pre>
+# END WordPress
+```
 
 <h3>Paso 4: aumentar memoria PHP</h3>
 
@@ -70,7 +73,9 @@ RewriteRule . /index.php [L]
 
 <p>Puedes aumentar la memoria editando el archivo <code>wp-config.php</code>:</p>
 
-<pre><code>define('WP_MEMORY_LIMIT', '256M');</code></pre>
+```php
+define('WP_MEMORY_LIMIT', '256M');
+```
 
 <p>Si el problema era este, la web volverá a funcionar correctamente.</p>
 

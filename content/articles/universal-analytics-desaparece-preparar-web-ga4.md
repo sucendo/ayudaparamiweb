@@ -5,7 +5,7 @@ excerpt: "Google ha puesto fecha al final de Universal Analytics. No hace falta 
 author: "Sucender"
 canonical: "/universal-analytics-desaparece-preparar-web-ga4"
 category: "tutoriales"
-tags: ["GA4", "Analítica web", "Universal Analytics", "Google Analytics"]
+tags: ["GA4", "Analítica web", "Universal Analytics"]
 publishedDate: "2022-03-24"
 featuredImage: "/img/articulo/universal-analytics-desaparece-preparar-web-ga4-featured.svg"
 heroClass: "bg-orange"

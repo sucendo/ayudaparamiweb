@@ -5,7 +5,7 @@ excerpt: "Una web pequeña puede construirse a mano con unos pocos archivos. En 
 author: "Sucender"
 canonical: "/crear-web-desde-cero-html-css-sin-cms"
 category: "tutoriales"
-tags: ["Desarrollo web", "HTML", "CSS", "Web"]
+tags: ["Desarrollo web", "CSS", "Web"]
 publishedDate: "2018-10-25"
 featuredImage: "/img/articulo/crear-web-desde-cero-html-css-sin-cms-featured.svg"
 heroClass: "bg-green"

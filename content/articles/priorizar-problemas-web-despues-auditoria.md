@@ -18,7 +18,7 @@ El error habitual es empezar por lo que parece más fácil. Eso da sensación de
 
 En este tutorial vamos a convertir la auditoría en un **orden de trabajo defendible**.
 
-## 1. Separa errores de mejoras
+## Separa errores de mejoras
 
 No metas todo en la misma columna.
 
@@ -33,7 +33,7 @@ Crea dos grandes grupos:
 - **Corregir:** algo está roto, contradice la arquitectura o impide completar una tarea.
 - **Mejorar:** funciona, pero existe una oportunidad clara de aumentar calidad, rendimiento o utilidad.
 
-## 2. Puntúa el impacto
+## Puntúa el impacto
 
 El impacto responde a una pregunta: **si lo soluciono, qué cambia realmente?**
 
@@ -49,7 +49,7 @@ Un formulario roto en la página de contacto tendrá impacto 3. Un H3 que visual
 
 No intentes hacer una ciencia exacta de esta puntuación. Su función es ayudarte a comparar tareas.
 
-## 3. Añade urgencia
+## Añade urgencia
 
 Impacto y urgencia no son lo mismo.
 
@@ -63,7 +63,7 @@ También puedes utilizar 1 a 3:
 
 Esta distinción es especialmente útil cuando una web combina mantenimiento continuo con campañas, lanzamientos o cambios de catálogo.
 
-## 4. Calcula el alcance
+## Calcula el alcance
 
 Pregunta cuántas páginas o usuarios están afectados.
 
@@ -77,7 +77,7 @@ Clasifica el alcance como:
 
 El alcance cambia completamente la prioridad. Arreglar una causa común suele ser mejor que reparar manualmente cada síntoma.
 
-## 5. Estima esfuerzo sin intentar adivinar horas exactas
+## Estima esfuerzo sin intentar adivinar horas exactas
 
 Las estimaciones muy detalladas suelen fallar cuando todavía no has investigado la causa.
 
@@ -91,7 +91,7 @@ Aquí aparece una de las oportunidades más útiles de una auditoría: los **qui
 
 Por ejemplo, eliminar un noindex accidental en una página importante puede ser una tarea pequeña con un efecto mucho mayor que reescribir una guía de dos mil palabras.
 
-## 6. Ten en cuenta las dependencias
+## Ten en cuenta las dependencias
 
 Hay tareas que no pueden hacerse todavía porque dependen de otras.
 
@@ -112,7 +112,7 @@ Marca dependencias explícitas:
 
 Esta pequeña disciplina reduce mucho el retrabajo.
 
-## 7. Construye una matriz de prioridad
+## Construye una matriz de prioridad
 
 Puedes crear una puntuación sencilla:
 
@@ -131,7 +131,7 @@ Ejemplo:
 
 No ordenes únicamente por la cifra. Si una tarea con puntuación menor desbloquea tres de las superiores, puede tener que adelantarse.
 
-## 8. Crea cuatro colas de trabajo
+## Crea cuatro colas de trabajo
 
 Una forma muy práctica de pasar de la matriz al día a día es dividir las tareas en cuatro colas.
 
@@ -153,7 +153,7 @@ Tareas repetitivas: revisar enlaces, actualizar contenido, optimizar imágenes, 
 
 Cambios interesantes que todavía no tienen evidencia suficiente. Guardarlos evita perderlos sin permitir que desplacen trabajo más importante.
 
-## 9. Prioriza por causa, no por número de incidencias
+## Prioriza por causa, no por número de incidencias
 
 Imagina que una herramienta detecta 120 títulos duplicados.
 
@@ -172,7 +172,7 @@ Agrupa incidencias que compartan causa:
 
 Así conviertes cientos de alertas en un conjunto manejable de decisiones.
 
-## 10. Define cómo sabrás que una tarea está terminada
+## Define cómo sabrás que una tarea está terminada
 
 "Corregir SEO de la página" no es una tarea cerrable.
 
@@ -194,7 +194,7 @@ Ejemplo:
 
 Esto reduce discusiones posteriores sobre si algo está "más o menos hecho".
 
-## 11. Trabaja en lotes pequeños
+## Trabaja en lotes pequeños
 
 No conviertas la auditoría en un proyecto de seis meses que solo entrega valor al final.
 
@@ -210,7 +210,7 @@ Después de cada lote, valida.
 
 Este método ayuda a detectar regresiones y permite observar efectos antes de acumular demasiados cambios simultáneos.
 
-## 12. No mezcles todos los cambios en una misma página
+## No mezcles todos los cambios en una misma página
 
 Si una URL importante necesita título nuevo, reescritura completa, cambios de enlaces y modificación de plantilla, intenta distinguir qué objetivo persigue cada cambio.
 
@@ -218,7 +218,7 @@ Modificar diez variables a la vez puede dejar una página mejor, pero hará much
 
 No siempre es posible aislarlo todo, especialmente cuando existe un error claro. Pero cuando estás optimizando y no reparando, los cambios progresivos dan información más útil.
 
-## 13. Reserva capacidad para incidencias nuevas
+## Reserva capacidad para incidencias nuevas
 
 Una planificación demasiado cerrada falla en cuanto aparece el primer problema inesperado.
 

@@ -5,7 +5,7 @@ excerpt: "Antes de optimizar una web conviene medirla y localizar el cuello de b
 author: "Sucender"
 canonical: "/como-mejorar-la-velocidad-de-tu-web"
 category: "tutoriales"
-tags: ["Rendimiento web", "Desarrollo web", "Velocidad web"]
+tags: ["Rendimiento web", "Desarrollo web"]
 publishedDate: "2020-06-11"
 featuredImage: "/img/articulo/como-mejorar-la-velocidad-de-tu-web-featured.svg"
 heroClass: "bg-blue"

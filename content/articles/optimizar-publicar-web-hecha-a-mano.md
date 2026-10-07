@@ -26,13 +26,13 @@ Durante el desarrollo es normal acumular archivos de prueba.
 
 Busca cosas como:
 
-~~~text
+```text
 index-viejo.html
 pruebas.html
 estilos-copia.css
 app-final2.js
 imagen-original-4000px.jpg
-~~~
+```
 
 No deberían acabar en la web pública si ya no sirven.
 
@@ -40,7 +40,7 @@ Mantén únicamente los archivos necesarios.
 
 Una estructura razonable podría quedar así:
 
-~~~text
+```text
 mi-caja-web/
 ├── index.html
 ├── acerca.html
@@ -57,7 +57,7 @@ mi-caja-web/
 │   └── herramientas.js
 └── img/
     └── ...
-~~~
+```
 
 Cuanto más sencilla sea la estructura, más fácil será detectar después un enlace roto o un archivo que falta.
 
@@ -67,28 +67,28 @@ Cada página debería describirse por sí misma.
 
 No copies esto en todo el sitio:
 
-~~~html
+```html
 <title>Mi Caja Web</title>
 <meta name="description" content="Mi página web">
-~~~
+```
 
 Para la sección de herramientas podríamos utilizar:
 
-~~~html
+```html
 <title>Herramientas web sencillas | Mi Caja Web</title>
 <meta
   name="description"
   content="Pequeñas herramientas de texto y utilidades creadas con JavaScript.">
-~~~
+```
 
 Y para contacto:
 
-~~~html
+```html
 <title>Contacto | Mi Caja Web</title>
 <meta
   name="description"
   content="Formulario y datos de contacto de Mi Caja Web.">
-~~~
+```
 
 El título ayuda al usuario a identificar la página en el navegador y también es una de las señales que utiliza Google para entender el contenido.
 
@@ -100,7 +100,7 @@ La estructura de encabezados debería seguir una lógica sencilla.
 
 Por ejemplo:
 
-~~~html
+```html
 <h1>Herramientas web</h1>
 
 <section>
@@ -112,7 +112,7 @@ Por ejemplo:
   <h2>Generador de slug</h2>
   ...
 </section>
-~~~
+```
 
 No utilices un H2 solo porque visualmente te gusta su tamaño.
 
@@ -124,11 +124,11 @@ En una web pequeña puede parecer innecesario, pero ayuda a indicar cuál es la 
 
 En el head:
 
-~~~html
+```html
 <link
   rel="canonical"
   href="https://www.ejemplo.com/herramientas.html">
-~~~
+```
 
 Utiliza siempre la URL definitiva.
 
@@ -154,15 +154,15 @@ Un error muy común en una web estática es renombrar un archivo y olvidar actua
 
 Si cambias:
 
-~~~text
+```text
 acerca.html
-~~~
+```
 
 por:
 
-~~~text
+```text
 sobre-mi.html
-~~~
+```
 
 cualquier enlace antiguo a `acerca.html` dejará de funcionar.
 
@@ -172,7 +172,7 @@ Si tu alojamiento permite una página de error personalizada, prepara `404.html`
 
 Por ejemplo:
 
-~~~html
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -199,7 +199,7 @@ Por ejemplo:
 
 </body>
 </html>
-~~~
+```
 
 El servidor debe devolver realmente un código 404. No basta con mostrar una página que diga "no encontrada" si técnicamente responde como una página normal.
 
@@ -207,12 +207,12 @@ El servidor debe devolver realmente un código 404. No basta con mostrar una pá
 
 En la raíz del sitio puedes crear:
 
-~~~text
+```text
 User-agent: *
 Allow: /
 
 Sitemap: https://www.ejemplo.com/sitemap.xml
-~~~
+```
 
 Este archivo no sirve para ocultar información privada.
 
@@ -226,7 +226,7 @@ Para una web pequeña podemos escribirlo a mano.
 
 Por ejemplo:
 
-~~~xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -247,13 +247,13 @@ Por ejemplo:
   </url>
 
 </urlset>
-~~~
+```
 
 Guárdalo como:
 
-~~~text
+```text
 sitemap.xml
-~~~
+```
 
 y colócalo en la raíz.
 
@@ -273,25 +273,25 @@ Antes de subirlas, revisa:
 
 Una imagen:
 
-~~~text
+```text
 IMG_8248.JPG
-~~~
+```
 
 puede convertirse en:
 
-~~~text
+```text
 contador-caracteres.jpg
-~~~
+```
 
 si ese nombre describe realmente su contenido.
 
 En HTML:
 
-~~~html
+```html
 <img
   src="img/contador-caracteres.jpg"
   alt="Ejemplo del contador de caracteres">
-~~~
+```
 
 No llenes el atributo alt de palabras clave.
 
@@ -305,24 +305,24 @@ No minifiques mientras todavía estás desarrollando.
 
 Primero guarda una versión legible:
 
-~~~text
+```text
 css/estilos.css
 js/herramientas.js
-~~~
+```
 
 y después, si quieres publicar una versión comprimida, puedes generar algo como:
 
-~~~text
+```text
 css/estilos.min.css
 js/herramientas.min.js
-~~~
+```
 
 Entonces actualizarías el HTML:
 
-~~~html
+```html
 <link rel="stylesheet" href="css/estilos.min.css">
 <script src="js/herramientas.min.js"></script>
-~~~
+```
 
 No borres los archivos fuente legibles. Los necesitarás cuando quieras modificar algo.
 
@@ -330,18 +330,18 @@ No borres los archivos fuente legibles. Los necesitarás cuando quieras modifica
 
 En nuestro ejemplo hemos colocado los scripts al final del body:
 
-~~~html
+```html
 <script src="js/app.js"></script>
 <script src="js/herramientas.js"></script>
-~~~
+```
 
 Así el navegador puede procesar primero buena parte del HTML.
 
 También existe el atributo `defer`:
 
-~~~html
+```html
 <script src="js/app.js" defer></script>
-~~~
+```
 
 pero no cambies la forma de carga sin comprobar que tus scripts siguen encontrando los elementos y ejecutándose en el orden esperado.
 
@@ -397,15 +397,15 @@ Si tu proveedor ofrece certificado SSL, utiliza HTTPS para toda la web.
 
 Después comprueba que:
 
-~~~text
+```text
 http://www.ejemplo.com
-~~~
+```
 
 redirige a:
 
-~~~text
+```text
 https://www.ejemplo.com
-~~~
+```
 
 y que imágenes, CSS, JavaScript y otros recursos también cargan mediante HTTPS.
 
@@ -417,9 +417,9 @@ Si ya tienes una web pública, no reemplaces todo sin comprobarlo.
 
 Puedes subir el proyecto a una carpeta temporal:
 
-~~~text
+```text
 https://www.ejemplo.com/pruebas/
-~~~
+```
 
 o utilizar un subdominio de pruebas si tu alojamiento lo permite.
 
@@ -458,9 +458,9 @@ La guía de [herramientas SEO imprescindibles](/herramientas-seo) puede ayudarte
 
 Una comprobación sencilla es utilizar:
 
-~~~text
+```text
 site:ejemplo.com
-~~~
+```
 
 en Google.
 
@@ -479,7 +479,7 @@ Si una página importante no aparece, revisa antes de nada:
 
 Antes de considerar terminada la web, revisa:
 
-~~~text
+```text
 [ ] Todas las páginas abren
 [ ] No hay enlaces rotos
 [ ] Cada página tiene title propio
@@ -493,7 +493,7 @@ Antes de considerar terminada la web, revisa:
 [ ] sitemap.xml está actualizado
 [ ] HTTPS funciona
 [ ] El sitemap se ha enviado a Search Console
-~~~
+```
 
 Guarda esta lista.
 

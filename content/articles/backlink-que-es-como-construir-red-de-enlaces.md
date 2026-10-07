@@ -70,11 +70,15 @@ En términos generales, hay dos tipos de backlinks:
 
 Siga los enlaces de retroceso para pasar la autoridad de la fuente externa al sitio web vinculado. Imagine el vínculo de retroceso como un punto que fomenta el SEO del sitio web, a menudo llamado el "jugo de enlace". Siga los enlaces que se ven así en el código HTML:
 
-<pre><em>&lt;a href="http://ejemplo.com"&gt; Enlace de texto &lt;/a&gt; </em></pre>
+```html
+<a href="http://ejemplo.com">Enlace de texto</a>
+```
 
 No seguir backlinks no puntúa ningún punto al sitio web vinculado. No pasan la autoridad de origen externo debido a la etiqueta HTML específica que le dice a los rastreadores que no lo cuenten:
 
-<pre><em>&lt;a href="http://ejemplo.com" </em><em>rel="nofollow"&gt;</em><em> Enlace de texto &lt;/a&gt;</em></pre>
+```html
+<a href="http://ejemplo.com" rel="nofollow">Enlace de texto</a>
+```
 
 Cuando Google introdujo el PageRank en 1990, el número de backlinks se usó como una métrica importante de la clasificación general. Cuantos más enlaces obtuviste, mejor fue tu ranking.
 

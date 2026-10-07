@@ -105,7 +105,7 @@ No hace falta tener todavía un servidor para trabajar con este ejemplo. HTML y 
 
 ## Entiende qué hace cada parte
 
-### El DOCTYPE
+### La declaración `<!DOCTYPE html>`
 
 La declaración `<!DOCTYPE html>` indica al navegador que el documento utiliza HTML5.
 
@@ -115,7 +115,7 @@ También puedes verla dentro del ejemplo completo:
 <!DOCTYPE html>
 ```
 
-### El head
+### El elemento `<head>`
 
 Dentro de `<head>` colocamos información sobre la página que no forma parte directamente del contenido visible.
 
@@ -127,7 +127,7 @@ Ahí aparecen:
 - la descripción;
 - el enlace a la hoja de estilos.
 
-### El body
+### El elemento `<body>`
 
 Dentro de `<body>` está lo que verá el visitante.
 
@@ -218,7 +218,7 @@ Ahora copia `index.html` y crea:
 - `herramientas.html`;
 - `contacto.html`.
 
-Después cambia el contenido de cada `main`.
+Después cambia el contenido de cada `<main>`.
 
 Por ejemplo, en `acerca.html`:
 

@@ -77,9 +77,9 @@ Puedes indicar al navegador que conserve estos archivos durante un tiempo median
 
 Una respuesta puede incluir, por ejemplo:
 
-~~~http
+```http
 Cache-Control: public, max-age=2592000
-~~~
+```
 
 En este ejemplo, el recurso puede mantenerse durante 30 días.
 
@@ -91,15 +91,15 @@ Una caché larga funciona bien si el navegador puede distinguir una versión nue
 
 Una técnica sencilla consiste en cambiar el nombre del archivo cuando cambia su contenido:
 
-~~~html
+```html
 <link rel="stylesheet" href="/css/app.20200827.css">
-~~~
+```
 
 o utilizar una versión en la URL:
 
-~~~html
+```html
 <link rel="stylesheet" href="/css/app.css?v=4">
-~~~
+```
 
 El nombre versionado suele ser más sencillo de controlar con proxies y CDN.
 
@@ -113,7 +113,7 @@ Gzip reduce los datos enviados por la red y está ampliamente soportado.
 
 En Apache, una configuración típica con mod_deflate puede ser:
 
-~~~apache
+```apache
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html
   AddOutputFilterByType DEFLATE text/css
@@ -121,15 +121,15 @@ En Apache, una configuración típica con mod_deflate puede ser:
   AddOutputFilterByType DEFLATE application/json
   AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
-~~~
+```
 
 No copies una configuración en producción sin comprobar qué módulos tiene habilitados tu servidor.
 
 Después de activarla revisa las cabeceras de respuesta y confirma que aparece algo similar a:
 
-~~~http
+```http
 Content-Encoding: gzip
-~~~
+```
 
 ## Brotli puede comprimir todavía más
 
@@ -143,15 +143,15 @@ El navegador indica los formatos que entiende mediante la cabecera Accept-Encodi
 
 Una petición puede incluir:
 
-~~~http
+```http
 Accept-Encoding: gzip, deflate, br
-~~~
+```
 
 Si el servidor responde con Brotli:
 
-~~~http
+```http
 Content-Encoding: br
-~~~
+```
 
 La configuración depende bastante del hosting. En servidores administrados puede estar ya disponible; en otros necesitarás soporte del proveedor o módulos adicionales.
 
@@ -199,11 +199,11 @@ Todas deberían terminar en una única versión canónica con el menor número d
 
 Una cadena como:
 
-~~~text
+```text
 http://ejemplo.com
 → http://www.ejemplo.com
 → https://www.ejemplo.com
-~~~
+```
 
 puede simplificarse normalmente enviando la primera variante directamente al destino final.
 

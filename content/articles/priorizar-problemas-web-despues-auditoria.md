@@ -257,3 +257,5 @@ Al finalizar esta segunda parte deberías tener:
 La auditoría ya no es un documento. Se ha convertido en un plan.
 
 En una próxima entrega cerraremos el proceso con la parte que suele faltar: **cómo medir si las mejoras realmente han funcionado**, evitando atribuir cualquier subida o bajada a los cambios que acabamos de hacer.
+
+**Siguiente tutorial de la serie:** [Cómo medir si las mejoras de una web realmente han funcionado](/medir-si-mejoras-web-han-funcionado).

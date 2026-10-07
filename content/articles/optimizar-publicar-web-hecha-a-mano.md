@@ -5,7 +5,7 @@ excerpt: "La última parte de la serie convierte una web local en un sitio prepa
 author: "Sucender"
 canonical: "/optimizar-publicar-web-hecha-a-mano"
 category: "tutoriales"
-tags: ["Desarrollo web", "SEO", "Rendimiento web", "HTML"]
+tags: ["Desarrollo web", "SEO", "Rendimiento web"]
 publishedDate: "2019-10-03"
 featuredImage: "/img/articulo/optimizar-publicar-web-hecha-a-mano-featured.svg"
 heroClass: "bg-purple"

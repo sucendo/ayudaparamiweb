@@ -54,9 +54,20 @@ test('Prism aporta toolbar y resaltado por tokens a los bloques de código', () 
 });
 
 test('el código HTML inline usa language-html para que Prism genere tokens', () => {
-  const article = contentLoader.loadArticle('crear-web-desde-cero-html-css-sin-cms');
+  const first = contentLoader.loadArticle('crear-web-desde-cero-html-css-sin-cms');
+  const second = contentLoader.loadArticle('organizar-web-html-sin-cms');
+  const third = contentLoader.loadArticle('crear-herramientas-javascript-web');
+  const fourth = contentLoader.loadArticle('optimizar-publicar-web-hecha-a-mano');
 
-  assert.match(article.bodyHtml, /<code class="language-html">&lt;!DOCTYPE html&gt;<\/code>/);
-  assert.match(article.bodyHtml, /<code class="language-html">&lt;head&gt;<\/code>/);
-  assert.match(article.bodyHtml, /<code class="language-html">&lt;body&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;!DOCTYPE html&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;head&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;body&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;header&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;main&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;footer&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;title&gt;<\/code>/);
+  assert.match(first.bodyHtml, /<code class="language-html">&lt;meta name=&quot;description&quot;&gt;<\/code>/);
+  assert.match(second.bodyHtml, /<code class="language-html">&lt;script&gt;<\/code>/);
+  assert.match(third.bodyHtml, /<code class="language-html">&lt;textarea&gt;<\/code>/);
+  assert.match(fourth.bodyHtml, /<code class="language-html">&lt;script&gt;<\/code>/);
 });

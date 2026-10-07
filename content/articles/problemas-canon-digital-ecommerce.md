@@ -72,7 +72,7 @@ robots: "index,follow"
 								
 									<p>Este enfoque no sirve para todos los casos, pero como base es razonable. Además, permite introducir más adelante condiciones adicionales, como excluir a determinados clientes marcados como profesionales.</p>
 								
-									```php
+```php
 // Ejemplo simple para WooCommerce
 								// Añade un cargo fijo por cada producto de una categoría concreta
 								
@@ -106,7 +106,7 @@ robots: "index,follow"
 								
 									<p>Esto no resuelve por sí solo el desglose en carrito o factura, pero sí permite empezar con una solución clara, mantenible y compatible con futuras mejoras.</p>
 								
-									```smarty
+```smarty
 {* Ejemplo simple en product.tpl o plantilla equivalente *}
 								{foreach from=$features item=feature}
 									{if $feature.name == 'Canon digital'}

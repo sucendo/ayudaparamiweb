@@ -57,14 +57,13 @@ Hay themes muy visuales que, a cambio, cargan mucho código, muchos scripts y mu
 
 Un theme más limpio, mejor optimizado o más adecuado para el proyecto puede suponer una mejora clara, sobre todo si el actual está sobrecargado de elementos visuales o integraciones innecesarias.
 
-```
-Aspectos que conviene revisar:
-- Imágenes demasiado pesadas
-- Plugins innecesarios o duplicados
-- Theme con exceso de scripts
-- Falta de caché
-- Hosting insuficiente para la web
-```
+**Aspectos que conviene revisar:**
+
+- Imágenes demasiado pesadas.
+- Plugins innecesarios o duplicados.
+- Theme con exceso de scripts.
+- Falta de caché.
+- Hosting insuficiente para la web.
 
 ### La caché bien configurada suele ayudar mucho
 

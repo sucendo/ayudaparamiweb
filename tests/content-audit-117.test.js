@@ -12,13 +12,13 @@ function sourceFor(slug) {
   return fs.readFileSync(path.join(ARTICLES_DIR, `${slug}.md`), 'utf8');
 }
 
-test('auditoría global: 119 contenidos editoriales, canonicals e imágenes únicas', () => {
+test('auditoría global: 121 contenidos editoriales, canonicals e imágenes únicas', () => {
   const slugs = fs.readdirSync(ARTICLES_DIR)
     .filter((filename) => filename.endsWith('.md'))
     .map((filename) => filename.replace(/\.md$/, ''))
     .sort();
 
-  assert.equal(slugs.length, 119);
+  assert.equal(slugs.length, 121);
 
   const canonicals = new Set();
   const images = new Set();
@@ -42,8 +42,8 @@ test('auditoría global: 119 contenidos editoriales, canonicals e imágenes úni
     assert.doesNotMatch(source, /^ratingValue:/m, slug);
   });
 
-  assert.equal(canonicals.size, 119);
-  assert.equal(images.size, 119);
+  assert.equal(canonicals.size, 121);
+  assert.equal(images.size, 121);
 });
 
 test('auditoría global: ningún artículo contiene años visibles posteriores a su fecha efectiva salvo referencias prospectivas explícitas', () => {

@@ -18,7 +18,7 @@ Falta el paso que decide si todo ese trabajo ha servido para algo: **medir el re
 
 La tentación es sencilla. Hacemos cambios, vemos que una gráfica sube y concluimos que hemos acertado. Pero una web recibe tráfico de muchas fuentes, la demanda cambia, hay estacionalidad y los buscadores actualizan constantemente sus resultados. Medir bien significa reducir esa incertidumbre.
 
-## 1. Empieza por la línea base, no por el resultado
+## Empieza por la línea base, no por el resultado
 
 La medición empieza antes de desplegar.
 
@@ -40,7 +40,7 @@ No necesitas registrar veinte métricas. Elige las que tengan relación directa 
 
 Si has mejorado un formulario, la métrica principal no debería ser el tráfico orgánico. Si has corregido indexación, probablemente te interesan cobertura, impresiones y páginas que empiezan a aparecer.
 
-## 2. Escribe qué esperas que ocurra
+## Escribe qué esperas que ocurra
 
 Antes de mirar datos después del cambio, anota una expectativa.
 
@@ -54,7 +54,7 @@ Otro caso:
 
 Esto parece un detalle menor, pero evita reinterpretar el objetivo después. Si la métrica principal no mejora, no deberíamos sustituirla por otra que sí haya subido para declarar éxito.
 
-## 3. Asocia cada cambio con una fecha
+## Asocia cada cambio con una fecha
 
 Mantén un registro de despliegues o modificaciones relevantes.
 
@@ -70,7 +70,7 @@ Sin estas fechas resulta difícil interpretar después una gráfica.
 
 No necesitas registrar cada corrección ortográfica. Documenta los cambios que razonablemente puedan alterar tráfico, conversión, experiencia o funcionamiento.
 
-## 4. Diferencia métricas de visibilidad y de negocio
+## Diferencia métricas de visibilidad y de negocio
 
 Una web puede mejorar en Google y no generar más oportunidades. También puede recibir menos visitas y convertir mejor.
 
@@ -99,7 +99,7 @@ Search Console explica bastante bien la primera capa. GA4 y los eventos propios 
 
 La lectura útil aparece cuando conectas ambas.
 
-## 5. Utiliza Search Console para cambios SEO, pero compara periodos razonables
+## Utiliza Search Console para cambios SEO, pero compara periodos razonables
 
 Después de una mejora de SEO no esperes una reacción instantánea.
 
@@ -115,7 +115,7 @@ Compara periodos equivalentes siempre que puedas. Un lunes frente a un domingo p
 
 También evita obsesionarte con la posición media de una única consulta. Una página puede empezar a aparecer para muchas búsquedas nuevas y hacer que la media cambie aunque su visibilidad global esté mejorando.
 
-## 6. En GA4 mide acciones, no solo páginas vistas
+## En GA4 mide acciones, no solo páginas vistas
 
 Las páginas vistas responden a "cuánta actividad hubo". No responden a "qué hizo la gente".
 
@@ -134,7 +134,7 @@ Cuanto más específica sea la acción, más fácil será relacionarla con una m
 
 Por ejemplo, si rediseñas una herramienta SEO, medir únicamente sus visitas no te dice si la gente consigue utilizarla. Un evento de uso sí.
 
-## 7. Diseña nombres de eventos que puedas mantener
+## Diseña nombres de eventos que puedas mantener
 
 No crees un nombre distinto para cada botón si todos representan el mismo tipo de interacción.
 
@@ -144,7 +144,7 @@ Así puedes analizar todas las interacciones con una estructura estable y añadi
 
 La ventaja aparece meses después: no necesitas recordar veinte convenciones diferentes para entender los datos.
 
-## 8. Mide el embudo completo cuando exista
+## Mide el embudo completo cuando exista
 
 Un formulario puede tener estas etapas:
 
@@ -158,7 +158,7 @@ Si solo mides la visita y el envío final, sabes cuántos llegaron y cuántos te
 
 No todos los procesos necesitan instrumentación detallada. Resérvala para acciones importantes o para flujos que estás intentando mejorar.
 
-## 9. Comprueba rendimiento antes y después en las mismas condiciones
+## Comprueba rendimiento antes y después en las mismas condiciones
 
 Si el cambio pretende mejorar velocidad, intenta comparar páginas equivalentes y condiciones similares.
 
@@ -175,7 +175,7 @@ Una mejora pequeña en una puntuación no importa demasiado si el usuario sigue 
 
 En cambio, una reducción clara del peso de imágenes o del JavaScript ejecutado puede tener valor aunque la puntuación global apenas se mueva.
 
-## 10. No atribuyas automáticamente una subida al último cambio
+## No atribuyas automáticamente una subida al último cambio
 
 Este es uno de los errores más comunes.
 
@@ -193,7 +193,7 @@ Busca señales que refuercen la relación.
 
 Si cambiaste el título de una página para ajustarlo mejor a una intención y después aumenta el CTR en las mismas consultas con impresiones similares, la explicación es más razonable que si simplemente crece todo el tráfico del sitio.
 
-## 11. Compara con páginas o secciones que no hayas tocado
+## Compara con páginas o secciones que no hayas tocado
 
 Cuando sea posible, utiliza un grupo de referencia.
 
@@ -203,7 +203,7 @@ No será un experimento científico perfecto, pero da contexto.
 
 Si todo el sitio crece un 20 %, una subida del 18 % en las páginas modificadas no demuestra necesariamente que el cambio haya funcionado. Si las modificadas crecen mucho más que las equivalentes, la señal es más interesante.
 
-## 12. Define ventanas de observación distintas según el cambio
+## Define ventanas de observación distintas según el cambio
 
 No todas las mejoras necesitan el mismo tiempo.
 
@@ -221,7 +221,7 @@ Define de antemano cuándo revisar:
 
 Evita mirar una métrica cada hora. Aumenta ruido y facilita tomar decisiones precipitadas.
 
-## 13. Registra efectos secundarios
+## Registra efectos secundarios
 
 Una mejora puede resolver un problema y crear otro.
 
@@ -240,7 +240,7 @@ Esto es especialmente importante cuando modificas componentes compartidos.
 
 Si cambias el menú para mejorar accesibilidad y el CTR de navegación sube, perfecto. Pero si el menú deja de funcionar en un navegador concreto, el cambio no puede considerarse terminado.
 
-## 14. Decide qué hacer con el resultado
+## Decide qué hacer con el resultado
 
 Al finalizar el periodo de observación clasifica cada cambio.
 
@@ -260,7 +260,7 @@ La hipótesis no se cumple o aparece un efecto negativo. Revisa la causa, ajusta
 
 Mejora una parte, pero el objetivo principal sigue bloqueado. Esto suele indicar que has solucionado un síntoma, no toda la causa.
 
-## 15. Cierra el ciclo y vuelve a empezar
+## Cierra el ciclo y vuelve a empezar
 
 Auditar, priorizar y medir forman un ciclo.
 

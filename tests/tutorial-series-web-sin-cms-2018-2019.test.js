@@ -21,7 +21,8 @@ test('la serie web sin CMS mantiene fechas, categoría, código y navegación in
 
     assert.equal(article.publishedDate, item.date, item.slug);
     assert.equal(article.category, 'tutoriales', item.slug);
-    assert.match(source, /~~~(?:html|css|javascript|text|xml|http|apache)/, item.slug + ' debería incluir bloques de código');
+    assert.match(source, /```(?:html|css|javascript|text|xml|http|apache)/, item.slug + ' debería incluir bloques de código Prism');
+    assert.match(article.bodyHtml, /<pre><code class="language-(?:html|css|javascript|text|xml|http|apache)">/, item.slug + ' debería renderizar clases language-* para Prism');
 
     item.links.forEach((target) => {
       assert.ok(source.includes('](/' + target + ')'), item.slug + ' debería enlazar a ' + target);
@@ -38,4 +39,16 @@ test('la serie web sin CMS evita referencias tecnológicas posteriores a 2019', 
       assert.ok(!source.includes(term), item.slug + ' contiene una referencia posterior: ' + term);
     });
   });
+});
+
+test('Prism aporta toolbar y resaltado por tokens a los bloques de código', () => {
+  const head = fs.readFileSync(path.join(ROOT, 'views', 'partials', 'head.ejs'), 'utf8');
+  const prismCss = fs.readFileSync(path.join(ROOT, 'public', 'css', 'prism.css'), 'utf8');
+  const prismJs = fs.readFileSync(path.join(ROOT, 'public', 'js', 'prism.js'), 'utf8');
+
+  assert.match(head, /\/css\/prism\.css/);
+  assert.match(head, /\/js\/prism\.js/);
+  assert.match(prismCss, /div\.code-toolbar/);
+  assert.match(prismCss, /\.token\.tag/);
+  assert.match(prismJs, /code-toolbar/);
 });

@@ -61,7 +61,7 @@ mi-caja-web/
 
 Cuanto más sencilla sea la estructura, más fácil será detectar después un enlace roto o un archivo que falta.
 
-## Revisa cada title y cada description
+## Revisa cada `<title>` y cada meta description
 
 Cada página debería describirse por sí misma.
 
@@ -122,7 +122,7 @@ Si necesitas que un texto parezca más grande o más pequeño, hazlo con CSS.
 
 En una web pequeña puede parecer innecesario, pero ayuda a indicar cuál es la dirección preferida de una página.
 
-En el head:
+En el `<head>`:
 
 ```html
 <link
@@ -146,7 +146,7 @@ Revisa:
 - botones;
 - imágenes enlazadas;
 - navegación;
-- footer;
+- `<footer>`;
 - enlaces entre herramientas;
 - enlaces hacia páginas antiguas.
 
@@ -328,7 +328,7 @@ No borres los archivos fuente legibles. Los necesitarás cuando quieras modifica
 
 ## Carga JavaScript al final o con cuidado
 
-En nuestro ejemplo hemos colocado los scripts al final del body:
+En nuestro ejemplo hemos colocado los `<script>` al final de `<body>`:
 
 ```html
 <script src="js/app.js"></script>
@@ -482,7 +482,7 @@ Antes de considerar terminada la web, revisa:
 ```text
 [ ] Todas las páginas abren
 [ ] No hay enlaces rotos
-[ ] Cada página tiene title propio
+[ ] Cada página tiene `<title>` propio
 [ ] Cada página tiene description
 [ ] Los H1 y H2 tienen sentido
 [ ] Las imágenes están comprimidas

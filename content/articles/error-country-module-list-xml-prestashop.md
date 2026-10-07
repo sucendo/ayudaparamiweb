@@ -38,7 +38,7 @@ robots: "index,follow"
 
 								<p>Esto provoca mensajes como:</p>
 
-								```text
+```text
 StartTag: invalid element name
 Extra content at the end of the document
 Input is not proper UTF-8

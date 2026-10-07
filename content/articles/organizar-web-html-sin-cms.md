@@ -24,7 +24,7 @@ En esta segunda parte vamos a preparar el proyecto para que pueda crecer sin nec
 
 Una estructura sencilla puede ser suficiente:
 
-~~~text
+```text
 mi-caja-web/
 ├── index.html
 ├── acerca.html
@@ -39,7 +39,7 @@ mi-caja-web/
 │   ├── logo.png
 │   └── iconos/
 └── docs/
-~~~
+```
 
 No hace falta crear carpetas por crear.
 
@@ -62,10 +62,10 @@ Si una sección empieza a necesitar muchas reglas propias, puedes darle su propi
 
 Por ejemplo:
 
-~~~html
+```html
 <link rel="stylesheet" href="css/estilos.css">
 <link rel="stylesheet" href="css/herramientas.css">
-~~~
+```
 
 No conviertas cada componente en un archivo distinto. En una web pequeña eso puede complicar más de lo que ayuda.
 
@@ -73,22 +73,22 @@ No conviertas cada componente en un archivo distinto. En una web pequeña eso pu
 
 Evita nombres como:
 
-~~~css
+```css
 .caja1 { }
 .caja2 { }
 .texto-rojo-grande { }
-~~~
+```
 
 Funcionan al principio, pero dejan de tener sentido cuando cambia el diseño.
 
 Es mejor utilizar nombres relacionados con la función:
 
-~~~css
+```css
 .tarjeta-herramienta { }
 .resultado-herramienta { }
 .aviso-error { }
 .navegacion-principal { }
-~~~
+```
 
 Así puedes cambiar el aspecto sin tener que renombrar media web.
 
@@ -105,7 +105,7 @@ Todas las páginas deberían compartir al menos:
 
 Una plantilla básica puede quedar así:
 
-~~~html
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -141,7 +141,7 @@ Una plantilla básica puede quedar así:
   <script src="js/app.js"></script>
 </body>
 </html>
-~~~
+```
 
 Guarda una copia limpia de esta estructura para crear futuras páginas.
 
@@ -151,28 +151,28 @@ No es un sistema de plantillas automático, pero evita empezar desde cero cada v
 
 Es posible escribir:
 
-~~~html
+```html
 <p style="color:red;font-size:18px;">Aviso importante</p>
-~~~
+```
 
 pero si repites esto muchas veces acabarás teniendo estilos repartidos por todo el proyecto.
 
 Es mejor:
 
-~~~html
+```html
 <p class="aviso-importante">Aviso importante</p>
-~~~
+```
 
 y en CSS:
 
-~~~css
+```css
 .aviso-importante {
   padding: 12px;
   color: #8b1e1e;
   background: #ffeaea;
   border-left: 4px solid #c0392b;
 }
-~~~
+```
 
 Si decides cambiar el diseño del aviso, solo modificas una regla.
 
@@ -184,21 +184,21 @@ Aunque todavía tengamos pocas funciones, es mejor no llenar cada página de blo
 
 Podemos empezar con algo tan sencillo como marcar el año del pie:
 
-~~~html
+```html
 <footer class="pie">
   <p>Mi Caja Web · <span id="anio"></span></p>
 </footer>
-~~~
+```
 
 Y en `app.js`:
 
-~~~javascript
+```javascript
 var anio = document.getElementById('anio');
 
 if (anio) {
   anio.textContent = new Date().getFullYear();
 }
-~~~
+```
 
 La comprobación `if (anio)` es importante porque no todas las páginas tienen por qué contener ese elemento.
 
@@ -208,15 +208,15 @@ Cuando una web crece, un mismo archivo JavaScript puede cargarse en varias pági
 
 Imagina que en herramientas tenemos:
 
-~~~html
+```html
 <button id="calcular">Calcular</button>
-~~~
+```
 
 Si el script intenta acceder a ese botón desde todas las páginas y no comprueba antes si existe, puede producir errores.
 
 Una forma sencilla de evitarlo:
 
-~~~javascript
+```javascript
 var boton = document.getElementById('calcular');
 
 if (boton) {
@@ -224,7 +224,7 @@ if (boton) {
     alert('Herramienta preparada');
   });
 }
-~~~
+```
 
 Este patrón nos será útil en la siguiente parte, cuando añadamos herramientas reales.
 
@@ -232,24 +232,24 @@ Este patrón nos será útil en la siguiente parte, cuando añadamos herramienta
 
 No mezcles archivos como:
 
-~~~text
+```text
 MiPagina.html
 mi_pagina2.html
 paginaNuevaFINAL.html
 pagina-contacto-definitiva.html
-~~~
+```
 
 Es mejor elegir una convención y mantenerla.
 
 Por ejemplo:
 
-~~~text
+```text
 acerca.html
 contacto.html
 herramientas.html
 guia-html.html
 guia-css.html
-~~~
+```
 
 Minúsculas, sin espacios y con guiones cuando haga falta.
 
@@ -265,14 +265,14 @@ Antes de publicar cambios importantes, busca en todos los archivos una parte com
 
 Por ejemplo:
 
-~~~html
+```html
 <nav class="navegacion-principal">
   <a href="index.html">Inicio</a>
   <a href="acerca.html">Acerca de</a>
   <a href="herramientas.html">Herramientas</a>
   <a href="contacto.html">Contacto</a>
 </nav>
-~~~
+```
 
 Si añades una sección nueva, recuerda actualizar todas las páginas que utilicen esta navegación.
 
@@ -282,18 +282,18 @@ Podemos indicar visualmente dónde está el usuario.
 
 En `herramientas.html`:
 
-~~~html
+```html
 <a href="herramientas.html" class="activo">Herramientas</a>
-~~~
+```
 
 Y en CSS:
 
-~~~css
+```css
 .navegacion-principal a.activo {
   font-weight: bold;
   text-decoration: underline;
 }
-~~~
+```
 
 Es una mejora pequeña, pero ayuda mucho cuando la navegación empieza a crecer.
 
@@ -303,7 +303,7 @@ La página de herramientas puede empezar a tener varias utilidades.
 
 Conviene darles una estructura común:
 
-~~~html
+```html
 <section class="tarjeta-herramienta">
   <h2>Contador de caracteres</h2>
 
@@ -315,11 +315,11 @@ Conviene darles una estructura común:
     <!-- controles -->
   </div>
 </section>
-~~~
+```
 
 Otra herramienta utilizaría la misma clase:
 
-~~~html
+```html
 <section class="tarjeta-herramienta">
   <h2>Conversor de texto</h2>
 
@@ -331,11 +331,11 @@ Otra herramienta utilizaría la misma clase:
     <!-- controles -->
   </div>
 </section>
-~~~
+```
 
 Y el CSS puede aplicarse a todas:
 
-~~~css
+```css
 .tarjeta-herramienta {
   margin-bottom: 25px;
   padding: 20px;
@@ -348,7 +348,7 @@ Y el CSS puede aplicarse a todas:
   padding-top: 15px;
   border-top: 1px solid #eee;
 }
-~~~
+```
 
 Esta pequeña disciplina nos permitirá añadir nuevas utilidades sin inventar un diseño distinto cada vez.
 
@@ -366,23 +366,23 @@ Si todavía estás aprendiendo SEO, puedes repasar [cómo funcionan los motores 
 
 Si desde una página situada en la raíz escribes:
 
-~~~html
+```html
 <img src="img/logo.png" alt="Mi Caja Web">
-~~~
+```
 
 funciona.
 
 Pero si más adelante creas:
 
-~~~text
+```text
 guias/html.html
-~~~
+```
 
 esa misma ruta buscaría:
 
-~~~text
+```text
 guias/img/logo.png
-~~~
+```
 
 y dejaría de funcionar.
 
@@ -392,9 +392,9 @@ Otra es aprender bien cómo funcionan `../` y las rutas relativas antes de reorg
 
 Por ejemplo, desde `guias/html.html`:
 
-~~~html
+```html
 <img src="../img/logo.png" alt="Mi Caja Web">
-~~~
+```
 
 Cuanto más estable sea la estructura, menos enlaces tendrás que corregir después.
 
@@ -406,12 +406,12 @@ Como mínimo, guarda copias periódicas del proyecto.
 
 Puedes crear carpetas:
 
-~~~text
+```text
 copias/
 ├── 2019-01-10/
 ├── 2019-01-20/
 └── 2019-01-31/
-~~~
+```
 
 No es la solución más avanzada, pero es mucho mejor que tener únicamente una copia.
 
@@ -423,15 +423,15 @@ No pruebes cambios grandes directamente sobre la página principal.
 
 Puedes crear:
 
-~~~text
+```text
 pruebas.html
-~~~
+```
 
 o una carpeta:
 
-~~~text
+```text
 pruebas/
-~~~
+```
 
 Ahí puedes probar CSS, formularios o scripts sin romper la web pública.
 

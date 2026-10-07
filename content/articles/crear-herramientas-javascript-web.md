@@ -104,7 +104,7 @@ if (campoTexto && salidaCaracteres) {
 }
 ```
 
-Cada vez que cambia el contenido del textarea, JavaScript cuenta la longitud del texto y actualiza el resultado.
+Cada vez que cambia el contenido del `<textarea>`, JavaScript cuenta la longitud del texto y actualiza el resultado.
 
 ## Añade también palabras y líneas
 
